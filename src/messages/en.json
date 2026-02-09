@@ -1,0 +1,270 @@
+{
+  "common": {
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "sending": "Sending...",
+    "perNight": "per night",
+    "perPerson": "per person",
+    "perDay": "per day",
+    "from": "From",
+    "seeMore": "See More",
+    "propertyInfo": "Property Info"
+  },
+  "navigation": {
+    "home": "Home",
+    "properties": "All Properties",
+    "tours": "Tours",
+    "carHire": "Car Hire",
+    "about": "About",
+    "contact": "Contact",
+    "recommendations": "Recommendations"
+  },
+  "hero": {
+    "tagline": "GUARANTEED LOWEST PRICE ON DIRECT BOOKING",
+    "title": "Urban Elephant",
+    "subtitle": "At Urban Elephant Hotel & Tours, it's the season to unwind and soak up the city's best views. Best deals direct — always.",
+    "scrollDown": "Scroll to explore",
+    "bestRate": "Best Rate Guarantee",
+    "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
+  },
+  "welcome": {
+    "tagline": "4 STAR GRADED",
+    "title": "Welcome to 4 Star Service at Cape Town's Hidden Gems!",
+    "description": "Discover our award winning Accommodation and the best hospitality that Cape Town has to offer.",
+    "body": "Whether you crave the vibrancy of the city or the serenity of the sea, Urban Elephant's 4 Star Graded hotels offer diverse options to cater to your desires. Join us in redefining hospitality, where your comfort and enjoyment take centre stage. At Urban Elephant, you're not just a guest; you're a part of our family."
+  },
+  "properties": {
+    "title": "Explore Our Locations",
+    "subtitle": "BOOK YOUR STAY TODAY",
+    "description": "Each of our carefully curated properties offers a unique Cape Town experience",
+    "viewProperty": "Property Info",
+    "starRating": "Star Rating",
+    "amenities": "Amenities",
+    "gallery": "Gallery",
+    "location": "Location",
+    "bookThisProperty": "Book This Property",
+    "checkAvailability": "Check Availability",
+    "nearbyAttractions": "Nearby Attractions",
+    "onBree": {
+      "name": "Urban Elephant on Bree",
+      "tagline": "16 On Bree",
+      "description": "Urban Elephant takes immense pride in welcoming you to the exceptional building, 16 On Bree.",
+      "body": "The 27th floor boasts an outdoor pool and bar, offering unparalleled views of Table Mountain, cradling this magnificent city. Within this establishment, you'll find stunning apartments, complete with the high-end features you've come to expect from us."
+    },
+    "docklands": {
+      "name": "Urban Elephant at The Docklands",
+      "tagline": "De Waterkant District",
+      "description": "The Docklands is an extraordinary building nestled in the heart of the vibrant De Waterkant district.",
+      "body": "Our rooftop pool and breathtaking panoramic views consistently leave a lasting impression on our guests, making it an ideal destination for both leisure and business travellers. Secure your reservation at The Docklands today and experience the ultimate in convenience, prime location, breathtaking views, and the signature high-end amenities you've come to anticipate from us."
+    },
+    "flamingo": {
+      "name": "Urban Elephant at The Flamingo",
+      "tagline": "Seaside Escape",
+      "description": "Your seaside escape with effortless elegance.",
+      "body": "Each unit features a simple, elegant design with luxury touches - ideal for working professionals, leisure travellers, or anyone seeking a stylish base near the sea."
+    },
+    "rose": {
+      "name": "Urban Elephant at The Rose",
+      "tagline": "117 Strand Street",
+      "description": "Meet The Rose - Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
+      "body": "From Table Mountain to Lion's Head, the colourful Bo-Kaap to the endless Atlantic, the 360 degree scenery is seriously next level. Sunrise coffee or sunset views? Yes, please."
+    }
+  },
+  "tours": {
+    "title": "Tours & Experiences",
+    "subtitle": "DISCOVER CAPE TOWN",
+    "description": "Book your Urban Elephant Tours & Transfers directly with us and let our team handle every detail while you relax by the pool.",
+    "viewTour": "View Tour",
+    "duration": "Duration",
+    "groupSize": "Group Size",
+    "includes": "What's Included",
+    "excludes": "What's Not Included",
+    "highlights": "Highlights",
+    "meetingPoint": "Meeting Point",
+    "bookTour": "Book This Tour",
+    "categories": {
+      "all": "All Tours",
+      "adventure": "Adventure",
+      "wildlife": "Wildlife",
+      "cultural": "Cultural",
+      "wine-food": "Wine & Food",
+      "sightseeing": "Sightseeing",
+      "water-sports": "Water Sports"
+    }
+  },
+  "carHire": {
+    "title": "Car Hire",
+    "subtitle": "EXPLORE AT YOUR PACE",
+    "description": "Premium vehicle rentals for your Cape Town adventure",
+    "viewVehicle": "View Details",
+    "features": "Features",
+    "specs": "Specifications",
+    "passengers": "Passengers",
+    "luggage": "Luggage",
+    "transmission": "Transmission",
+    "inquire": "Inquire About This Vehicle",
+    "categories": {
+      "all": "All Vehicles",
+      "compact": "Compact",
+      "sedan": "Sedan",
+      "suv": "SUV",
+      "luxury": "Luxury",
+      "van": "Van",
+      "convertible": "Convertible"
+    }
+  },
+  "testimonials": {
+    "title": "Guest Experiences",
+    "subtitle": "WHAT OUR GUESTS SAY",
+    "readMore": "Read More Reviews"
+  },
+  "about": {
+    "title": "A Very Warm Welcome!",
+    "subtitle": "MEET THE FOUNDER",
+    "tagline": "The Brand That Loves You Back",
+    "founderQuote": "Hospitality is more than just a job for me—it's my jam.",
+    "founderName": "Niles",
+    "founderTitle": "Founder & Chief Elephant Wrangler",
+    "intro": "Hey there! I'm Niles—founder, owner, and self-appointed Chief Elephant Wrangler at Urban Elephant. Originally from the UK (where the weather builds character), I made the move to Cape Town back in 2007.",
+    "story1": "After globe-trotting and seeing the best (and worst) the world has to offer, I knew I'd found something truly special in the Mother City. So, I unpacked my bags, ditched the umbrella, and set out to build something a little different in the world of hospitality.",
+    "story2": "That's how Urban Elephant was born—a place where luxury meets comfort, where style doesn't break the bank, and where every guest feels like a rockstar (or at the very least, a very well-looked-after human).",
+    "story3": "I genuinely love meeting new people, hearing their stories, and helping them create incredible memories while they're in Cape Town. I've built Urban Elephant around this idea: personalised, thoughtful service that goes the extra mile (and sometimes the extra bottle of wine).",
+    "story4": "Every apartment is designed to make you feel at home—but better. Because let's be honest, who wants to do housekeeping at home?",
+    "team": "Of course, none of this would be possible without my amazing team. From our superstar Guest Relations Managers to the housekeeping heroes who keep everything spotless, they're the heart of Urban Elephant. They're friendly, professional, and always up for a good laugh—or a restaurant recommendation.",
+    "zola": {
+      "title": "Zola's Story",
+      "subtitle": "The Spirit of Zola",
+      "imageAlt": "Zola - The Pink Elephant",
+      "intro": "Every story begins somewhere — ours began with a pink elephant named Zola.",
+      "story1": "When I was six years old, Zola was my constant companion. She brought comfort, calm, and a quiet reminder that standing out could be something beautiful. While I was captivated by Africa's wild animals, it was this small pink elephant that taught me the power of individuality and warmth.",
+      "story2": "Years later, that simple lesson became the heart and emblem of Urban Elephant — a brand built on care, character, and connection.",
+      "story3": "Zola now lives on in our emblem. Her name, which means 'peaceful' and 'calm' in Xhosa, reflects the feeling we want every guest to experience.",
+      "closing": "At Urban Elephant, you're more than a visitor. You're part of a story that celebrates comfort, creativity, and belonging — the same feeling Zola once gave me."
+    },
+    "values": {
+      "title": "Our Values",
+      "subtitle": "These principles guide everything we do, from how we design our spaces to how we welcome our guests.",
+      "authentic": {
+        "title": "Authentic Hospitality",
+        "description": "We believe in genuine connections. Every interaction is an opportunity to share our love for Cape Town and create memorable experiences."
+      },
+      "detail": {
+        "title": "Attention to Detail",
+        "description": "From the thread count of our linens to the local coffee in your kitchen, we sweat the small stuff so you can simply enjoy."
+      },
+      "local": {
+        "title": "Local Expertise",
+        "description": "Born and raised in Cape Town, we share insider knowledge that transforms good trips into extraordinary ones."
+      },
+      "sustainable": {
+        "title": "Sustainable Luxury",
+        "description": "Luxury and responsibility can coexist. We're committed to sustainable practices that protect the Cape Town we love."
+      }
+    },
+    "cta": {
+      "title": "Ready to Experience Cape Town?",
+      "description": "Let us show you our city through local eyes. Browse our properties or get in touch to plan your perfect Cape Town stay."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "COMPLETE EXPERIENCE",
+    "accommodation": {
+      "title": "Luxury Accommodation",
+      "description": "Premium 4 Star graded apartments with stunning views and world-class amenities"
+    },
+    "tours": {
+      "title": "Tours & Transfers",
+      "description": "Explore Cape Town's best attractions with our expert team handling every detail"
+    },
+    "carHire": {
+      "title": "Car Hire",
+      "description": "Quality vehicles for your adventure around the Western Cape"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "GET IN TOUCH",
+    "description": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "subject": "Subject",
+      "message": "Message",
+      "property": "Interested Property",
+      "selectProperty": "Select a property",
+      "dates": "Preferred Dates",
+      "guests": "Number of Guests",
+      "submit": "Send Message",
+      "success": "Thank you! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Operations & Reservations",
+      "whatsapp": "After Hours Guest Relations",
+      "address": "Address",
+      "hours": "Office Hours",
+      "hoursValue": "Mon-Fri 9am-5pm"
+    },
+    "details": {
+      "phone": "+27 21 300 1044",
+      "afterHours": "+27 72 618 8140",
+      "emailKarin": "karin@urbanelephant.co.za",
+      "emailNiles": "niles@urbanelephant.co.za"
+    }
+  },
+  "footer": {
+    "description": "Urban Elephant has fast become one of the top Destination Apartment Hotels in Cape Town. Graded 4 Star by the South African Grading Council. All of our locations are close to all major attractions that tourists and visitors love to visit.",
+    "sections": {
+      "properties": "Properties",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "links": {
+      "tours": "Tours",
+      "carHire": "Car Hire",
+      "about": "About Us",
+      "contact": "Contact",
+      "viewAll": "View All Properties",
+      "bookingPolicy": "Booking Policy",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms & Conditions"
+    },
+    "newsletter": {
+      "title": "Follow Us",
+      "description": "Follow us on social media for the latest updates",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "success": "Thanks for subscribing!"
+    },
+    "copyright": "All rights reserved."
+  },
+  "cta": {
+    "title": "Ready to Experience Cape Town?",
+    "description": "Book your Urban Elephant stay today. Best deals direct — always.",
+    "primary": "Book Now",
+    "secondary": "View Properties"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
+  },
+  "meta": {
+    "siteName": "Urban Elephant",
+    "defaultTitle": "Urban Elephant | Exclusive Properties in Cape Town",
+    "defaultDescription": "Discover Urban Elephant's bespoke 4 STAR Luxurious stays in Cape Town. Explore beautifully decorated properties with premium amenities for a memorable stay. Award winning."
+  }
+}

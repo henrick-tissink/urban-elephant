@@ -1,0 +1,270 @@
+{
+  "common": {
+    "bookNow": "Bespreek Nou",
+    "viewDetails": "Sien Besonderhede",
+    "learnMore": "Leer Meer",
+    "contactUs": "Kontak Ons",
+    "viewAll": "Sien Alles",
+    "loading": "Laai tans...",
+    "error": "Iets het skeefgeloop",
+    "close": "Maak Toe",
+    "back": "Terug",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "submit": "Indien",
+    "sending": "Stuur tans...",
+    "perNight": "per nag",
+    "perPerson": "per persoon",
+    "perDay": "per dag",
+    "from": "Vanaf",
+    "seeMore": "Sien Meer",
+    "propertyInfo": "Eiendom Inligting"
+  },
+  "navigation": {
+    "home": "Tuis",
+    "properties": "Alle Eiendomme",
+    "tours": "Toere",
+    "carHire": "Motorhuur",
+    "about": "Oor Ons",
+    "contact": "Kontak",
+    "recommendations": "Aanbevelings"
+  },
+  "hero": {
+    "tagline": "GEWAARBORGDE LAAGSTE PRYS OP DIREKTE BESPREKING",
+    "title": "Urban Elephant",
+    "subtitle": "By Urban Elephant Hotel & Toere is dit die seisoen om te ontspan en die stad se beste uitsigte in te drink. Beste aanbiedings direk — altyd.",
+    "scrollDown": "Rol om te verken",
+    "bestRate": "Beste Tarief Waarborg",
+    "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
+  },
+  "welcome": {
+    "tagline": "4 STER GEGRADEER",
+    "title": "Welkom by 4 Ster Diens by Kaapstad se Verborge Juwele!",
+    "description": "Ontdek ons bekroonde akkommodasie en die beste gasvryheid wat Kaapstad te bied het.",
+    "body": "Of jy nou die lewendigheid van die stad of die sereniteit van die see begeer, Urban Elephant se 4 Ster Gegradeerde hotelle bied diverse opsies om aan jou begeertes te voldoen. Sluit by ons aan in die herdefiniëring van gasvryheid, waar jou gemak en genot middelpunt staan. By Urban Elephant is jy nie net 'n gas nie; jy is deel van ons familie."
+  },
+  "properties": {
+    "title": "Verken Ons Liggings",
+    "subtitle": "BESPREEK JOU VERBLYF VANDAG",
+    "description": "Elk van ons sorgvuldig gekose eiendomme bied 'n unieke Kaapstad-ervaring",
+    "viewProperty": "Eiendom Inligting",
+    "starRating": "Stergradering",
+    "amenities": "Geriewe",
+    "gallery": "Galery",
+    "location": "Ligging",
+    "bookThisProperty": "Bespreek Hierdie Eiendom",
+    "checkAvailability": "Kyk Beskikbaarheid",
+    "nearbyAttractions": "Nabygeleë Attraksies",
+    "onBree": {
+      "name": "Urban Elephant on Bree",
+      "tagline": "16 On Bree",
+      "description": "Urban Elephant is uiters trots om jou te verwelkom by die uitsonderlike gebou, 16 On Bree.",
+      "body": "Die 27ste vloer spog met 'n buitelug swembad en kroeg, wat ongeëwenaarde uitsigte oor Tafelberg bied, wat hierdie manjifieke stad omhels. Binne hierdie instelling sal jy pragtige woonstelle vind, voltooi met die hoë-end kenmerke wat jy van ons verwag het."
+    },
+    "docklands": {
+      "name": "Urban Elephant at The Docklands",
+      "tagline": "De Waterkant Distrik",
+      "description": "The Docklands is 'n buitengewone gebou genesteld in die hart van die lewendige De Waterkant-distrik.",
+      "body": "Ons dakswembad en asemrowende panoramiese uitsigte laat konstant 'n blywende indruk op ons gaste, wat dit 'n ideale bestemming maak vir beide ontspanning- en sakereisigers."
+    },
+    "flamingo": {
+      "name": "Urban Elephant at The Flamingo",
+      "tagline": "Seekant Ontvlugting",
+      "description": "Jou seekant-ontvlugting met moeitelose elegansie.",
+      "body": "Elke eenheid bevat 'n eenvoudige, elegante ontwerp met luukse aanrakings - ideaal vir werkende professionele mense, ontspanningsreisigers, of enigiemand wat 'n stylvolle basis naby die see soek."
+    },
+    "rose": {
+      "name": "Urban Elephant at The Rose",
+      "tagline": "117 Strand Straat",
+      "description": "Ontmoet The Rose - Urban Elephant se nuutste blikvanger by 117 Strand Straat, Kaapstad.",
+      "body": "Van Tafelberg tot Leeukop, die kleurvolle Bo-Kaap tot die eindelose Atlantiese Oseaan, die 360-grade toneel is ernstig volgende vlak. Sonopkoms koffie of sonsondergang uitsigte? Ja, asseblief."
+    }
+  },
+  "tours": {
+    "title": "Toere & Ervarings",
+    "subtitle": "ONTDEK KAAPSTAD",
+    "description": "Bespreek jou Urban Elephant Toere & Vervoer direk by ons en laat ons span elke detail hanteer terwyl jy by die swembad ontspan.",
+    "viewTour": "Sien Toer",
+    "duration": "Duur",
+    "groupSize": "Groepgrootte",
+    "includes": "Wat Ingesluit Is",
+    "excludes": "Wat Nie Ingesluit Is Nie",
+    "highlights": "Hoogtepunte",
+    "meetingPoint": "Ontmoetingspunt",
+    "bookTour": "Bespreek Hierdie Toer",
+    "categories": {
+      "all": "Alle Toere",
+      "adventure": "Avontuur",
+      "wildlife": "Wildlewe",
+      "cultural": "Kultureel",
+      "wine-food": "Wyn & Kos",
+      "sightseeing": "Besigtiging",
+      "water-sports": "Watersport"
+    }
+  },
+  "carHire": {
+    "title": "Motorhuur",
+    "subtitle": "VERKEN OP JOU TEMPO",
+    "description": "Premium voertuighuur vir jou Kaapstad-avontuur",
+    "viewVehicle": "Sien Besonderhede",
+    "features": "Kenmerke",
+    "specs": "Spesifikasies",
+    "passengers": "Passasiers",
+    "luggage": "Bagasie",
+    "transmission": "Ratkas",
+    "inquire": "Navraag Oor Hierdie Voertuig",
+    "categories": {
+      "all": "Alle Voertuie",
+      "compact": "Kompak",
+      "sedan": "Sedan",
+      "suv": "SUV",
+      "luxury": "Luuks",
+      "van": "Bus",
+      "convertible": "Oopmotor"
+    }
+  },
+  "testimonials": {
+    "title": "Gas-ervarings",
+    "subtitle": "WAT ONS GASTE SÊ",
+    "readMore": "Lees Meer Resensies"
+  },
+  "about": {
+    "title": "'n Baie Warm Welkom!",
+    "subtitle": "ONTMOET DIE STIGTER",
+    "tagline": "Die Handelsmerk Wat Jou Terugliefhet",
+    "founderQuote": "Gasvryheid is meer as net 'n werk vir my—dit is my passie.",
+    "founderName": "Niles",
+    "founderTitle": "Stigter & Hoof Olifant Tammer",
+    "intro": "Haai daar! Ek is Niles—stigter, eienaar, en selfaangestelde Hoof Olifant Tammer by Urban Elephant. Oorspronklik van die VK (waar die weer karakter bou), het ek die skuif na Kaapstad gemaak in 2007.",
+    "story1": "Na wêreldreis en die beste (en slegste) wat die wêreld te bied het gesien het, het ek geweet ek het iets werklik spesiaals in die Moederstad gevind. So, ek het my tasse uitgepak, die sambreel gelos, en begin om iets 'n bietjie anders in die wêreld van gasvryheid te bou.",
+    "story2": "Dit is hoe Urban Elephant gebore is—'n plek waar luuksheid gemak ontmoet, waar styl nie die bank breek nie, en waar elke gas soos 'n rockster voel (of ten minste, 'n baie goed versorgde mens).",
+    "story3": "Ek hou opreg daarvan om nuwe mense te ontmoet, hul stories te hoor, en hulle te help om ongelooflike herinneringe te skep terwyl hulle in Kaapstad is.",
+    "story4": "Elke woonstel is ontwerp om jou tuis te laat voel—maar beter. Want kom ons wees eerlik, wie wil huishouding by die huis doen?",
+    "team": "Natuurlik sou niks hiervan moontlik wees sonder my ongelooflike span nie. Van ons superster Gasverbintenisbestuurders tot die huishouding helde wat alles vlekloos hou, hulle is die hart van Urban Elephant.",
+    "zola": {
+      "title": "Zola se Storie",
+      "subtitle": "Die Gees van Zola",
+      "imageAlt": "Zola - Die Pienk Olifant",
+      "intro": "Elke storie begin iewers — ons s'n het begin met 'n pienk olifant genaamd Zola.",
+      "story1": "Toe ek ses jaar oud was, was Zola my konstante metgesel. Sy het gemak, kalmte, en 'n stil herinnering gebring dat uitstaan iets moois kan wees.",
+      "story2": "Jare later het daardie eenvoudige les die hart en embleem van Urban Elephant geword — 'n handelsmerk gebou op sorg, karakter, en verbinding.",
+      "story3": "Zola leef nou voort in ons embleem. Haar naam, wat 'vreedsaam' en 'kalm' in Xhosa beteken, weerspieël die gevoel wat ons wil hê elke gas moet ervaar.",
+      "closing": "By Urban Elephant is jy meer as 'n besoeker. Jy is deel van 'n storie wat gemak, kreatiwiteit, en behoort vier — dieselfde gevoel wat Zola my eens gegee het."
+    },
+    "values": {
+      "title": "Ons Waardes",
+      "subtitle": "Hierdie beginsels lei alles wat ons doen, van hoe ons ons ruimtes ontwerp tot hoe ons ons gaste verwelkom.",
+      "authentic": {
+        "title": "Egte Gasvryheid",
+        "description": "Ons glo in opregte verbindings. Elke interaksie is 'n geleentheid om ons liefde vir Kaapstad te deel en onvergeetlike ervarings te skep."
+      },
+      "detail": {
+        "title": "Aandag aan Detail",
+        "description": "Van die draadtelling van ons linne tot die plaaslike koffie in jou kombuis, ons sweet die klein goedjies sodat jy net kan geniet."
+      },
+      "local": {
+        "title": "Plaaslike Kundigheid",
+        "description": "Gebore en getoë in Kaapstad, deel ons binnekringkennis wat goeie reise in buitengewone reise verander."
+      },
+      "sustainable": {
+        "title": "Volhoubare Luuksheid",
+        "description": "Luuksheid en verantwoordelikheid kan saam bestaan. Ons is verbind tot volhoubare praktyke wat die Kaapstad wat ons liefhet, beskerm."
+      }
+    },
+    "cta": {
+      "title": "Gereed om Kaapstad te Ervaar?",
+      "description": "Laat ons jou ons stad deur plaaslike oë wys. Blaai deur ons eiendomme of kontak ons om jou perfekte Kaapstad-verblyf te beplan."
+    }
+  },
+  "services": {
+    "title": "Ons Dienste",
+    "subtitle": "VOLLEDIGE ERVARING",
+    "accommodation": {
+      "title": "Luukse Akkommodasie",
+      "description": "Premium 4 Ster gegradeerde woonstelle met pragtige uitsigte en wêreldklas-geriewe"
+    },
+    "tours": {
+      "title": "Toere & Vervoer",
+      "description": "Verken Kaapstad se beste attraksies met ons kundige span wat elke detail hanteer"
+    },
+    "carHire": {
+      "title": "Motorhuur",
+      "description": "Gehalte voertuie vir jou avontuur rondom die Wes-Kaap"
+    }
+  },
+  "contact": {
+    "title": "Kontak Ons",
+    "subtitle": "KOM IN AANRAKING",
+    "description": "Ons sal graag van jou wil hoor. Stuur vir ons 'n boodskap en ons sal so gou moontlik reageer.",
+    "form": {
+      "name": "Volle Naam",
+      "email": "E-posadres",
+      "phone": "Telefoonnommer",
+      "subject": "Onderwerp",
+      "message": "Boodskap",
+      "property": "Belangstellende Eiendom",
+      "selectProperty": "Kies 'n eiendom",
+      "dates": "Voorkeur Datums",
+      "guests": "Aantal Gaste",
+      "submit": "Stuur Boodskap",
+      "success": "Dankie! Ons sal binnekort terugkom na jou.",
+      "error": "Iets het skeefgeloop. Probeer asseblief weer."
+    },
+    "info": {
+      "email": "E-pos",
+      "phone": "Bedrywighede & Besprekings",
+      "whatsapp": "Na-ure Gasverbintenisse",
+      "address": "Adres",
+      "hours": "Kantoorure",
+      "hoursValue": "Ma-Vr 9vm-5nm"
+    },
+    "details": {
+      "phone": "+27 21 300 1044",
+      "afterHours": "+27 72 618 8140",
+      "emailKarin": "karin@urbanelephant.co.za",
+      "emailNiles": "niles@urbanelephant.co.za"
+    }
+  },
+  "footer": {
+    "description": "Urban Elephant het vinnig een van die top Bestemming Woonstelhotelle in Kaapstad geword. 4 Ster gegradeer deur die Suid-Afrikaanse Graderingsraad. Al ons liggings is naby aan alle groot attraksies wat toeriste en besoekers graag besoek.",
+    "sections": {
+      "properties": "Eiendomme",
+      "services": "Dienste",
+      "contact": "Kontak"
+    },
+    "links": {
+      "tours": "Toere",
+      "carHire": "Motorhuur",
+      "about": "Oor Ons",
+      "contact": "Kontak",
+      "viewAll": "Sien Alle Eiendomme",
+      "bookingPolicy": "Besprekingsbeleid",
+      "privacyPolicy": "Privaatheidsbeleid",
+      "terms": "Terme & Voorwaardes"
+    },
+    "newsletter": {
+      "title": "Volg Ons",
+      "description": "Volg ons op sosiale media vir die nuutste opdaterings",
+      "placeholder": "Voer jou e-pos in",
+      "subscribe": "Teken In",
+      "success": "Dankie dat jy ingeteken het!"
+    },
+    "copyright": "Alle regte voorbehou."
+  },
+  "cta": {
+    "title": "Gereed om Kaapstad te Ervaar?",
+    "description": "Bespreek vandag jou Urban Elephant verblyf. Beste aanbiedings direk — altyd.",
+    "primary": "Bespreek Nou",
+    "secondary": "Sien Eiendomme"
+  },
+  "notFound": {
+    "title": "Bladsy Nie Gevind",
+    "description": "Die bladsy waarna jy soek bestaan nie of is geskuif.",
+    "backHome": "Terug na Tuis"
+  },
+  "meta": {
+    "siteName": "Urban Elephant",
+    "defaultTitle": "Urban Elephant | Eksklusiewe Eiendomme in Kaapstad",
+    "defaultDescription": "Ontdek Urban Elephant se bespreekte 4 STER Luukse verblywe in Kaapstad. Verken pragtig versierdo eiendomme met premium geriewe vir 'n onvergeetlike verblyf. Bekroon."
+  }
+}

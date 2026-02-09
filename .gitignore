@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# scraped content (already imported to Sanity)
+/scraped-content
+/scraped-media
+/sanity-import
+/test-results
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

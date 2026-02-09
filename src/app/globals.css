@@ -1,26 +1,173 @@
 @import "tailwindcss";
 
+@theme inline {
+  /* Urban Elephant Brand Colors */
+  --color-pink-50: #fff0ff;
+  --color-pink-100: #ffe6ff;
+  --color-pink-200: #ffc6ff;
+  --color-pink-300: #ff9eff;
+  --color-pink-400: #ff6eff;
+  --color-pink-500: #ff00ff;
+  --color-pink-600: #e600e6;
+  --color-pink-700: #cc00cc;
+  --color-pink-800: #990099;
+  --color-pink-900: #660066;
+
+  /* Charcoal/Dark colors */
+  --color-charcoal-50: #f5f5f5;
+  --color-charcoal-100: #e5e5e5;
+  --color-charcoal-200: #cccccc;
+  --color-charcoal-300: #999999;
+  --color-charcoal-400: #666666;
+  --color-charcoal-500: #444444;
+  --color-charcoal-600: #333333;
+  --color-charcoal-700: #24272a;
+  --color-charcoal-800: #1a1c1e;
+  --color-charcoal-900: #0f1012;
+
+  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-biko), var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+}
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #24272a;
+  --accent: #ff00ff;
+  --accent-light: #fff0ff;
+  --accent-dark: #cc00cc;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+/* Selection - Pink highlight */
+::selection {
+  background-color: #ff00ff;
+  color: white;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff00ff;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cc00cc;
+}
+
+/* Focus styles - Pink */
+:focus-visible {
+  outline: 2px solid #ff00ff;
+  outline-offset: 2px;
+}
+
+/* Image loading animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.image-loading {
+  background: linear-gradient(
+    90deg,
+    #fff0ff 25%,
+    #ffffff 50%,
+    #fff0ff 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Smooth transitions for interactive elements */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Container utility */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Pink gradient text utility */
+.text-gradient-pink {
+  background: linear-gradient(180deg, #ffffff 18%, #ffefff 23%, #ffc6ff 32%, #ff83ff 46%, #ff28ff 63%, #ff00ff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Dark section styling */
+.section-dark {
+  background-color: #24272a;
+  color: #ffffff;
+}
+
+/* Pink button styles */
+.btn-pink {
+  background-color: #ff00ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-pink:hover {
+  background-color: #cc00cc;
+}
+
+.btn-outline-pink {
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.btn-outline-pink:hover {
+  background-color: #ff00ff;
+  color: white;
 }
