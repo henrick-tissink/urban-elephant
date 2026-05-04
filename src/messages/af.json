@@ -24,10 +24,27 @@
     "home": "Tuis",
     "properties": "Alle Eiendomme",
     "tours": "Toere",
+    "explore": "Verken",
     "carHire": "Motorhuur",
     "about": "Oor Ons",
-    "contact": "Kontak",
-    "recommendations": "Aanbevelings"
+    "contact": "Kontak"
+  },
+  "recommendations": {
+    "title": "Buite die Voordeur",
+    "description": "Drie uitsigte wat elke gas behoort te sien, drie plekke waarheen ons 'n vriend sou stuur om te eet — Urban Elephant se gids vir Kaapstad.",
+    "eyebrow": "Saamgestel deur Urban Elephant",
+    "subtitle": "Wat ons gaste uitstuur om te sien, te eet, en te verken — die Kaapstad wat ons aan 'n vriend sou aanbeveel.",
+    "letterEyebrow": "Van die gasheer",
+    "attractionsEyebrow": "Kaapstadse Ikone",
+    "attractionsTitle": "Drie uitsigte wat jy nie moet mis nie.",
+    "attractionsDescription": "Die berg, die hawe, en die strate wat elke twee blokke buurt verander. Begin hier.",
+    "restaurantsEyebrow": "Waar Ons Eet",
+    "restaurantsTitle": "Waarheen ons 'n vriend sou stuur.",
+    "restaurantsDescription": "'n Kort lys van drie plekke — een vir ontbyt, een vir middagete, een vir aandete. Nie een van hulle betaal ons nie.",
+    "hostNote": "Gasheer se nota",
+    "ctaEyebrow": "Wil jy meer?",
+    "ctaTitle": "Stuur ons 'n nota. Ons stuur 'n langer lys terug.",
+    "ctaButton": "Kontak ons"
   },
   "hero": {
     "tagline": "GEWAARBORGDE LAAGSTE PRYS OP DIREKTE BESPREKING",
@@ -234,6 +251,7 @@
     },
     "links": {
       "tours": "Toere",
+      "explore": "Verken",
       "carHire": "Motorhuur",
       "about": "Oor Ons",
       "contact": "Kontak",

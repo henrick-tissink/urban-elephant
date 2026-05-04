@@ -86,6 +86,7 @@ export interface Attraction {
   slug: string;
   name: string;
   description?: string;
+  hostNote?: string;
   image?: string;
   category?: "dining" | "sightseeing" | "activity" | "shopping" | "nightlife" | "culture";
   distance?: string;
@@ -97,6 +98,7 @@ export interface Restaurant {
   slug: string;
   name: string;
   description?: string;
+  hostNote?: string;
   image?: string;
   cuisineType?: string;
   mealType?: "breakfast" | "lunch" | "dinner";

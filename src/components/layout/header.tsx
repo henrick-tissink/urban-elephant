@@ -12,6 +12,7 @@ import Image from "next/image";
 const navigation = [
   { key: "properties", href: "/properties" },
   { key: "tours", href: "/tours" },
+  { key: "explore", href: "/recommendations" },
   { key: "carHire", href: "/car-hire" },
   { key: "about", href: "/about" },
   { key: "contact", href: "/contact" },

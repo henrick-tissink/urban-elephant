@@ -24,10 +24,27 @@
     "home": "Home",
     "properties": "All Properties",
     "tours": "Tours",
+    "explore": "Explore",
     "carHire": "Car Hire",
     "about": "About",
-    "contact": "Contact",
-    "recommendations": "Recommendations"
+    "contact": "Contact"
+  },
+  "recommendations": {
+    "title": "Beyond the Front Door",
+    "description": "Three views every guest should see, three places we'd send a friend to eat — Urban Elephant's curator's note for Cape Town.",
+    "eyebrow": "Curated by Urban Elephant",
+    "subtitle": "What we send guests out to see, eat, and explore — the Cape Town we'd recommend to a friend.",
+    "letterEyebrow": "From the host",
+    "attractionsEyebrow": "Cape Town Icons",
+    "attractionsTitle": "Three views you shouldn't miss.",
+    "attractionsDescription": "The mountain, the harbour, the streets that change neighbourhood every two blocks. Start here.",
+    "restaurantsEyebrow": "Where We Eat",
+    "restaurantsTitle": "Where we'd send a friend.",
+    "restaurantsDescription": "A short list of three places — one for breakfast, one for lunch, one for dinner. None of them pay us to be here.",
+    "hostNote": "Host's note",
+    "ctaEyebrow": "Want more?",
+    "ctaTitle": "Send us a note. We'll send back a longer list.",
+    "ctaButton": "Get in touch"
   },
   "hero": {
     "tagline": "GUARANTEED LOWEST PRICE ON DIRECT BOOKING",
@@ -234,6 +251,7 @@
     },
     "links": {
       "tours": "Tours",
+      "explore": "Explore",
       "carHire": "Car Hire",
       "about": "About Us",
       "contact": "Contact",

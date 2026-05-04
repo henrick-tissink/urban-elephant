@@ -361,7 +361,9 @@ export const attractions: Attraction[] = [
     category: "sightseeing",
     image: "/images/attractions/v-and-a-waterfront.png",
     description:
-      "Cape Town's iconic working harbour and the most-visited destination in South Africa, with shops, restaurants and entertainment along the water.",
+      "Cape Town's working harbour and the most-visited destination in South Africa — shops, restaurants, and the original Robben Island ferry, all along the water.",
+    hostNote:
+      "Go at golden hour. Stay on the harbour wall for sunset.",
   },
   {
     _id: "attraction-table-mountain",
@@ -370,7 +372,9 @@ export const attractions: Attraction[] = [
     category: "sightseeing",
     image: "/images/attractions/table-mountain.jpg",
     description:
-      "A New 7 Wonder of Nature and the city's defining landmark — take the cableway up or hike one of the trails for unbeatable views.",
+      "A New 7 Wonder of Nature and the city's defining landmark — take the cableway up, or hike Platteklip if your knees can take it.",
+    hostNote:
+      "Catch the first cable car at 8am — beat the wind, beat the queue.",
   },
   {
     _id: "attraction-bo-kaap",
@@ -379,7 +383,9 @@ export const attractions: Attraction[] = [
     category: "culture",
     image: "/images/attractions/bo-kaap.jpg",
     description:
-      "The colourful, cobble-stoned heart of Cape Malay culture — vibrant houses, warm hospitality and centuries of history a short walk from the CBD.",
+      "The colourful, cobble-stoned heart of Cape Malay culture — vibrant houses, warm hospitality and centuries of history a short walk from our CBD properties.",
+    hostNote:
+      "Sunday morning, after a coffee. Bring a camera; you'll need it.",
   },
 ];
 
@@ -392,6 +398,8 @@ export const restaurants: Restaurant[] = [
     image: "/images/restaurants/villa-47.jpg",
     description:
       "Bree Street brunch institution — light-filled rooms, all-day breakfast, and one of the city's best coffee menus.",
+    hostNote:
+      "Order the breakfast platter. Sit on the rooftop if there's space.",
   },
   {
     _id: "restaurant-belthazar",
@@ -400,7 +408,9 @@ export const restaurants: Restaurant[] = [
     mealType: "lunch",
     image: "/images/restaurants/belthazar.jpg",
     description:
-      "Award-winning V&A Waterfront steakhouse and wine bar, with a 600-strong wine list and harbour views.",
+      "Award-winning V&A Waterfront steakhouse and wine bar, with a 600-strong wine list and unobstructed harbour views.",
+    hostNote:
+      "The wine list runs 600 bottles deep — trust the sommelier.",
   },
   {
     _id: "restaurant-vixi-social-house",
@@ -409,9 +419,24 @@ export const restaurants: Restaurant[] = [
     mealType: "dinner",
     image: "/images/restaurants/vixi-social-house.jpg",
     description:
-      "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere.",
+      "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
+    hostNote:
+      "Go for the small plates. Stay for the music.",
   },
 ];
+
+/**
+ * Founder's letter for the /recommendations page — first-person voice
+ * from Niles, used as the editorial intro to the curator's selections.
+ */
+export const recommendationsLetter = {
+  intro: [
+    "Cape Town gives you more than somewhere to stay. The mountain, the harbour, the streets that change neighbourhood every two blocks. We've been here long enough to know where to send guests, and what to skip.",
+    "This is our short list — three views every guest should see at least once, and three places we'd recommend to a friend for breakfast, lunch, and dinner. None of them pay us to be here.",
+  ],
+  signature: "— Niles",
+  signatureRole: "Founder & Chief Elephant Wrangler",
+};
 
 export const carHireVehicles: CarHireVehicle[] = [];
 

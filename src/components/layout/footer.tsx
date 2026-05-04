@@ -16,6 +16,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
 
   const serviceLinks = [
     { key: "tours", href: "/tours" },
+    { key: "explore", href: "/recommendations" },
     { key: "carHire", href: "/car-hire" },
     { key: "about", href: "/about" },
     { key: "contact", href: "/contact" },
