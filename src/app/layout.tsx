@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/site/og.jpg",
         width: 1200,
         height: 630,
         alt: "Urban Elephant - Luxury Apartment Hotels",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Urban Elephant | Luxury Apartment Hotels in Cape Town",
     description:
       "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service.",
-    images: ["/og-image.jpg"],
+    images: ["/images/site/og.jpg"],
   },
   robots: {
     index: true,

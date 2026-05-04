@@ -1,8 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { sanityFetch } from "@/lib/sanity";
-import { propertiesQuery } from "@/lib/sanity/queries";
-import type { PropertyCard } from "@/types";
+import { properties } from "@/data/content";
 import { PropertiesPageContent } from "@/components/property/properties-page-content";
 
 type Props = {
@@ -22,11 +20,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function PropertiesPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  const properties = await sanityFetch<PropertyCard[]>({
-    query: propertiesQuery,
-    tags: ["property"],
-  });
 
   return <PropertiesPageContent properties={properties} />;
 }

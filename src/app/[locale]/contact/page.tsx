@@ -1,8 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { sanityFetch } from "@/lib/sanity";
-import { siteSettingsQuery, propertiesQuery } from "@/lib/sanity/queries";
-import type { SiteSettings, PropertyCard } from "@/types";
+import { properties, siteSettings } from "@/data/content";
 import { ContactPageContent } from "@/components/contact/contact-page-content";
 
 type Props = {
@@ -23,16 +21,5 @@ export default async function ContactPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const [settings, properties] = await Promise.all([
-    sanityFetch<SiteSettings>({
-      query: siteSettingsQuery,
-      tags: ["siteSettings"],
-    }),
-    sanityFetch<PropertyCard[]>({
-      query: propertiesQuery,
-      tags: ["property"],
-    }),
-  ]);
-
-  return <ContactPageContent settings={settings} properties={properties} />;
+  return <ContactPageContent settings={siteSettings} properties={properties} />;
 }

@@ -7,9 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/global/smooth-scroll";
 import { ScrollProgress } from "@/components/global/scroll-progress";
 import { Toaster } from "sonner";
-import { sanityFetch } from "@/lib/sanity/client";
-import { siteSettingsQuery, propertiesQuery } from "@/lib/sanity/queries";
-import type { SiteSettings, PropertyCard } from "@/types";
+import { properties, siteSettings } from "@/data/content";
 
 type Props = {
   children: React.ReactNode;
@@ -23,26 +21,13 @@ export function generateStaticParams() {
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
-  // Validate locale
-  if (!routing.locales.includes(locale as typeof routing.locales[number])) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
 
-  // Enable static rendering
   setRequestLocale(locale);
 
-  // Get messages and data in parallel
-  const [messages, settings, properties] = await Promise.all([
-    getMessages(),
-    sanityFetch<SiteSettings | null>({
-      query: siteSettingsQuery,
-      tags: ["siteSettings"],
-    }),
-    sanityFetch<PropertyCard[]>({
-      query: propertiesQuery,
-      tags: ["property"],
-    }),
-  ]);
+  const messages = await getMessages();
 
   return (
     <NextIntlClientProvider messages={messages}>
@@ -50,7 +35,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <ScrollProgress />
         <Header />
         <main className="min-h-screen">{children}</main>
-        <Footer settings={settings} properties={properties} />
+        <Footer settings={siteSettings} properties={properties} />
         <Toaster
           position="bottom-right"
           toastOptions={{

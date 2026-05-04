@@ -6,7 +6,6 @@ import { Users, Briefcase, Cog } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { urlFor } from "@/lib/sanity";
 import { cn } from "@/lib/utils";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { CarHireVehicle } from "@/types";
@@ -82,7 +81,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
                   <div className="relative aspect-[4/3] overflow-hidden">
                     {vehicle.image ? (
                       <Image
-                        src={urlFor(vehicle.image).width(600).height(450).url()}
+                        src={vehicle.image}
                         alt={vehicle.name}
                         fill
                         className="object-cover"

@@ -5,8 +5,6 @@ import { Clock, Users, MapPin, Check, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
-import { urlFor } from "@/lib/sanity";
-import { PortableText } from "@/lib/sanity/portable-text";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { Tour } from "@/types";
 
@@ -24,7 +22,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
       <section className="relative h-[50vh] min-h-[400px]">
         {tour.image ? (
           <Image
-            src={urlFor(tour.image).width(1920).height(800).url()}
+            src={tour.image}
             alt={tour.name}
             fill
             priority
@@ -78,9 +76,13 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Description */}
-              {tour.description && (
+              {tour.description && tour.description.length > 0 && (
                 <ScrollReveal className="mb-12">
-                  <PortableText value={tour.description} className="prose max-w-none" />
+                  <div className="prose max-w-none space-y-4 text-gray-600 leading-relaxed">
+                    {tour.description.map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
                 </ScrollReveal>
               )}
 

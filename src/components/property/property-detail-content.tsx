@@ -4,8 +4,6 @@ import Image from "next/image";
 import { MapPin, Star, ExternalLink, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import { urlFor } from "@/lib/sanity";
-import { PortableText } from "@/lib/sanity/portable-text";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { Property } from "@/types";
 
@@ -15,7 +13,6 @@ interface PropertyDetailContentProps {
 
 export function PropertyDetailContent({ property }: PropertyDetailContentProps) {
   const t = useTranslations("properties");
-  const tCommon = useTranslations("common");
 
   return (
     <>
@@ -23,7 +20,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
       <section className="relative h-[60vh] min-h-[500px]">
         {property.heroImage ? (
           <Image
-            src={urlFor(property.heroImage).width(1920).height(1080).url()}
+            src={property.heroImage}
             alt={property.name}
             fill
             priority
@@ -66,10 +63,14 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Description */}
-              {property.description && (
+              {property.description && property.description.length > 0 && (
                 <ScrollReveal className="mb-12">
                   <h2 className="text-2xl font-light text-[#24272a] mb-6">About This Property</h2>
-                  <PortableText value={property.description} className="prose max-w-none" />
+                  <div className="prose max-w-none space-y-4 text-gray-600 leading-relaxed">
+                    {property.description.map((paragraph, i) => (
+                      <p key={i}>{paragraph}</p>
+                    ))}
+                  </div>
                 </ScrollReveal>
               )}
 
@@ -98,9 +99,10 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
                     {property.gallery.slice(0, 6).map((image, index) => (
                       <div key={index} className="aspect-square relative overflow-hidden bg-gray-100">
                         <Image
-                          src={urlFor(image).width(400).height(400).url()}
-                          alt={image.alt || `${property.name} gallery ${index + 1}`}
+                          src={image}
+                          alt={`${property.name} gallery ${index + 1}`}
                           fill
+                          sizes="(max-width: 768px) 50vw, 33vw"
                           className="object-cover hover:scale-105 transition-transform duration-500"
                         />
                       </div>
@@ -132,7 +134,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
                     asChild
                   >
                     <a
-                      href={property.nightsBridgeUrl || "https://book.nightsbridge.com"}
+                      href={property.bookingUrl || "https://book.nightsbridge.com"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

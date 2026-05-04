@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Clock, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { urlFor } from "@/lib/sanity";
 import { cn } from "@/lib/utils";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { TourCard } from "@/types";
@@ -79,11 +78,11 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
           <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredTours.map((tour) => (
               <StaggerItem key={tour._id}>
-                <Link href={`/tours/${tour.slug.current}`} className="group block">
+                <Link href={`/tours/${tour.slug}`} className="group block">
                   <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 mb-4">
                     {tour.image ? (
                       <Image
-                        src={urlFor(tour.image).width(600).height(450).url()}
+                        src={tour.image}
                         alt={tour.name}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"

@@ -34,17 +34,8 @@ export function Testimonials({ reviews }: TestimonialsProps) {
     setCurrentIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
   };
 
-  // Fallback to static data if no reviews from Sanity
-  const displayReviews = reviews.length > 0 ? reviews : [
-    {
-      _id: "1",
-      author: "Sarah M.",
-      content: "Absolutely stunning apartment with the most incredible views of Table Mountain. The attention to detail was impeccable.",
-      rating: 5,
-      source: "google" as const,
-      property: { name: "16 On Bree", slug: { _type: "slug" as const, current: "16-on-bree" } },
-    },
-  ];
+  const displayReviews = reviews;
+  if (displayReviews.length === 0) return null;
 
   return (
     <section className="py-24 lg:py-32 bg-[#24272a] text-white" ref={ref}>

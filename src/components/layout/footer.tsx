@@ -104,7 +104,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                 properties.slice(0, 5).map((property) => (
                   <li key={property._id}>
                     <Link
-                      href={`/properties/${property.slug.current}`}
+                      href={`/properties/${property.slug}`}
                       className="text-gray-400 hover:text-[#ff00ff] transition-colors"
                     >
                       {property.name}

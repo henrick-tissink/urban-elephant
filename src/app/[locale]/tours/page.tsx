@@ -1,8 +1,6 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { sanityFetch } from "@/lib/sanity";
-import { toursQuery } from "@/lib/sanity/queries";
-import type { TourCard } from "@/types";
+import { tours } from "@/data/content";
 import { ToursPageContent } from "@/components/tour/tours-page-content";
 
 type Props = {
@@ -22,11 +20,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ToursPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
-
-  const tours = await sanityFetch<TourCard[]>({
-    query: toursQuery,
-    tags: ["tour"],
-  });
 
   return <ToursPageContent tours={tours} />;
 }

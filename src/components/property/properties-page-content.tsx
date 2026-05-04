@@ -4,7 +4,6 @@ import Image from "next/image";
 import { MapPin, Star, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { urlFor } from "@/lib/sanity";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { PropertyCard } from "@/types";
 
@@ -40,11 +39,11 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
           <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {properties.map((property) => (
               <StaggerItem key={property._id}>
-                <Link href={`/properties/${property.slug.current}`} className="group block">
+                <Link href={`/properties/${property.slug}`} className="group block">
                   <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
                     {property.heroImage ? (
                       <Image
-                        src={urlFor(property.heroImage).width(800).height(600).url()}
+                        src={property.heroImage}
                         alt={property.name}
                         fill
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
