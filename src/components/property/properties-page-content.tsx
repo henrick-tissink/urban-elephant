@@ -1,10 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { MapPin, Star, ArrowRight } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+} from "@/components/animations/scroll-reveal";
 import type { PropertyCard } from "@/types";
 
 interface PropertiesPageContentProps {
@@ -16,72 +20,80 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-16 bg-[#24272a]">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="pt-32 pb-20 bg-[#24272a] relative overflow-hidden">
+        <div
+          className="absolute -top-1/2 -right-1/3 w-[60%] h-[180%] opacity-20 blur-3xl pointer-events-none"
+          style={{ background: "var(--gradient-brand)" }}
+        />
+        <div className="container mx-auto px-6 lg:px-12 relative">
           <ScrollReveal className="max-w-3xl">
-            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-[var(--color-brand-soft)] uppercase tracking-[0.3em] text-xs mb-5">
               {t("subtitle")}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 tracking-tight text-balance">
               {t("title")}
             </h1>
-            <p className="text-white/70 text-lg">
+            <p className="text-white/60 text-lg max-w-xl text-balance">
               {t("description")}
             </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Properties Grid */}
-      <section className="py-16 lg:py-24 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
-          <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <StaggerChildren
+            staggerDelay={0.1}
+            className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-16"
+          >
             {properties.map((property) => (
               <StaggerItem key={property._id}>
-                <Link href={`/properties/${property.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
-                    {property.heroImage ? (
+                <Link
+                  href={`/properties/${property.slug}`}
+                  className="group block"
+                >
+                  <div className="relative aspect-[5/4] overflow-hidden bg-stone-100">
+                    {property.heroImage && (
                       <Image
                         src={property.heroImage}
                         alt={property.name}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300" />
                     )}
+                  </div>
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-
-                    {property.starRating && (
-                      <div className="absolute top-4 right-4 flex items-center gap-1 bg-[var(--color-brand-anchor)] text-white px-2.5 py-1 text-xs font-medium">
-                        <Star className="w-3 h-3 fill-current" />
-                        <span>{property.starRating} Star</span>
+                  <div className="pt-6 flex items-baseline justify-between gap-6">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-3 mb-2">
+                        {property.starRating && (
+                          <div className="flex items-center gap-0.5 text-[var(--color-brand-anchor)]">
+                            {Array.from({ length: property.starRating }).map((_, i) => (
+                              <Star key={i} className="w-3 h-3 fill-current" />
+                            ))}
+                          </div>
+                        )}
+                        <span className="text-stone-400 text-xs uppercase tracking-[0.2em]">
+                          {property.location}
+                        </span>
                       </div>
-                    )}
 
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h2 className="text-2xl md:text-3xl font-light text-white mb-2">
+                      <h2 className="text-3xl md:text-4xl text-[#24272a] tracking-tight group-hover:text-[var(--color-brand-anchor)] transition-colors duration-500">
                         {property.name}
                       </h2>
+
                       {property.tagline && (
-                        <p className="text-white/80 text-sm mb-3">{property.tagline}</p>
+                        <p className="text-stone-500 text-sm mt-3 line-clamp-2 max-w-md">
+                          {property.tagline}
+                        </p>
                       )}
-                      <div className="flex items-center gap-1.5 text-white/60 text-sm">
-                        <MapPin className="w-4 h-4" />
-                        <span>{property.location}</span>
-                      </div>
                     </div>
+
+                    <ArrowRight className="w-5 h-5 text-[#24272a] flex-shrink-0 mt-2 group-hover:translate-x-1 group-hover:text-[var(--color-brand-anchor)] transition-all duration-500" />
                   </div>
 
-                  <div className="pt-4 flex items-center justify-between">
-                    <div className="flex items-center text-[var(--color-brand-anchor)] font-medium text-sm">
-                      <span>{t("viewProperty")}</span>
-                      <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
-                    </div>
-                  </div>
+                  <span className="sr-only">{t("viewProperty")}</span>
                 </Link>
               </StaggerItem>
             ))}

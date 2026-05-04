@@ -6,7 +6,11 @@ import { Clock, ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
-import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
+import {
+  ScrollReveal,
+  StaggerChildren,
+  StaggerItem,
+} from "@/components/animations/scroll-reveal";
 import type { TourCard } from "@/types";
 
 interface ToursPageContentProps {
@@ -34,100 +38,112 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-16 bg-[#24272a]">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="pt-32 pb-20 bg-[#24272a] relative overflow-hidden">
+        <div
+          className="absolute -top-1/2 -right-1/3 w-[60%] h-[180%] opacity-20 blur-3xl pointer-events-none"
+          style={{ background: "var(--gradient-brand)" }}
+        />
+        <div className="container mx-auto px-6 lg:px-12 relative">
           <ScrollReveal className="max-w-3xl">
-            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-[var(--color-brand-soft)] uppercase tracking-[0.3em] text-xs mb-5">
               {t("subtitle")}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-6 tracking-tight text-balance">
               {t("title")}
             </h1>
-            <p className="text-white/70 text-lg">
+            <p className="text-white/60 text-lg max-w-xl text-balance">
               {t("description")}
             </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* Filters & Content */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
-          {/* Category Filters */}
-          <ScrollReveal className="mb-12">
-            <div className="flex flex-wrap gap-3">
-              {categories.map((cat) => (
-                <button
-                  key={cat.key}
-                  onClick={() => setActiveCategory(cat.value)}
-                  className={cn(
-                    "px-4 py-2 text-sm font-medium transition-all",
-                    activeCategory === cat.value
-                      ? "bg-[var(--color-brand-anchor)] text-white"
-                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
-                  )}
-                >
-                  {t(`categories.${cat.key}`)}
-                </button>
-              ))}
+          <ScrollReveal className="mb-14 border-b border-stone-200">
+            <div className="flex flex-wrap items-center gap-x-8 gap-y-3 pb-1">
+              {categories.map((cat) => {
+                const isActive = activeCategory === cat.value;
+                return (
+                  <button
+                    key={cat.key}
+                    onClick={() => setActiveCategory(cat.value)}
+                    className={cn(
+                      "relative pb-3 -mb-px text-xs uppercase tracking-[0.2em] font-medium transition-colors duration-300",
+                      isActive
+                        ? "text-[var(--color-brand-anchor)]"
+                        : "text-stone-500 hover:text-[#24272a]"
+                    )}
+                  >
+                    {t(`categories.${cat.key}`)}
+                    {isActive && (
+                      <span className="absolute left-0 right-0 -bottom-px h-px bg-[var(--color-brand-anchor)]" />
+                    )}
+                  </button>
+                );
+              })}
             </div>
           </ScrollReveal>
 
-          {/* Tours Grid */}
-          <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <StaggerChildren
+            staggerDelay={0.08}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14"
+          >
             {filteredTours.map((tour) => (
               <StaggerItem key={tour._id}>
                 <Link href={`/tours/${tour.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-stone-100 mb-4">
-                    {tour.image ? (
+                  <div className="relative aspect-[5/4] overflow-hidden bg-stone-100">
+                    {tour.image && (
                       <Image
                         src={tour.image}
                         alt={tour.name}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300" />
-                    )}
-
-                    {tour.category && (
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-medium text-[#24272a] capitalize">
-                        {tour.category.replace("-", " & ")}
-                      </div>
                     )}
                   </div>
 
-                  <h3 className="text-xl text-[#24272a] group-hover:text-[var(--color-brand-anchor)] transition-colors mb-2">
-                    {tour.name}
-                  </h3>
+                  <div className="pt-5">
+                    {tour.category && (
+                      <p className="text-stone-400 text-[10px] uppercase tracking-[0.25em] mb-2">
+                        {tour.category.replace("-", " & ")}
+                      </p>
+                    )}
 
-                  {tour.shortDescription && (
-                    <p className="text-stone-600 text-sm mb-3 line-clamp-2">
-                      {tour.shortDescription}
-                    </p>
-                  )}
+                    <h3 className="text-2xl text-[#24272a] tracking-tight group-hover:text-[var(--color-brand-anchor)] transition-colors duration-500 mb-2">
+                      {tour.name}
+                    </h3>
 
-                  <div className="flex items-center justify-between text-sm">
-                    <div className="flex items-center gap-4 text-stone-500">
-                      {tour.duration && (
-                        <span className="flex items-center gap-1.5">
-                          <Clock className="w-4 h-4" />
-                          {tour.duration}
-                        </span>
+                    {tour.shortDescription && (
+                      <p className="text-stone-500 text-sm mb-4 line-clamp-2">
+                        {tour.shortDescription}
+                      </p>
+                    )}
+
+                    <div className="flex items-baseline justify-between text-sm pt-3 border-t border-stone-100">
+                      <div className="flex items-center gap-1.5 text-stone-500">
+                        {tour.duration ? (
+                          <>
+                            <Clock className="w-3.5 h-3.5" />
+                            <span className="text-xs">{tour.duration}</span>
+                          </>
+                        ) : (
+                          <span className="inline-flex items-center gap-1.5 text-[var(--color-brand-anchor)] font-medium">
+                            {t("viewTour")}
+                            <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                          </span>
+                        )}
+                      </div>
+                      {tour.price && (
+                        <div className="text-[#24272a] font-medium text-sm">
+                          <span className="text-stone-400 text-xs uppercase tracking-wider mr-1.5">
+                            {tCommon("from")}
+                          </span>
+                          R{tour.price.toLocaleString()}
+                        </div>
                       )}
                     </div>
-                    {tour.price && (
-                      <div className="text-[var(--color-brand-anchor)] font-medium">
-                        {tCommon("from")} R{tour.price.toLocaleString()}
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="flex items-center text-[var(--color-brand-anchor)] font-medium text-sm mt-4">
-                    <span>{t("viewTour")}</span>
-                    <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </Link>
               </StaggerItem>
