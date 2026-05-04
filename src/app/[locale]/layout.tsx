@@ -31,10 +31,11 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <NextIntlClientProvider messages={messages}>
+      <a href="#main" className="skip-link">Skip to content</a>
       <SmoothScroll>
         <ScrollProgress />
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main id="main" className="min-h-screen">{children}</main>
         <Footer settings={siteSettings} properties={properties} />
         <Toaster
           position="bottom-right"

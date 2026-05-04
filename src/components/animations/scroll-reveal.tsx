@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView, type Variants } from "framer-motion";
+import { motion, useInView, useReducedMotion, type Variants } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 type Direction = "up" | "down" | "left" | "right" | "none";
@@ -35,6 +35,7 @@ export function ScrollReveal({
   threshold = 0,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
   const isInView = useInView(ref, {
     once,
     amount: threshold,
@@ -42,6 +43,7 @@ export function ScrollReveal({
   });
 
   const getInitialPosition = (): { x: number; y: number } => {
+    if (reduceMotion) return { x: 0, y: 0 };
     switch (direction) {
       case "up":
         return { x: 0, y: distance };
