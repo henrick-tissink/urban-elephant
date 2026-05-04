@@ -21,17 +21,17 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
   useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 lg:py-32 bg-gray-50" ref={ref}>
+    <section className="py-24 lg:py-32 bg-stone-50" ref={ref}>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <ScrollReveal className="text-center mb-16">
-          <p className="text-[#cc00cc] uppercase tracking-[0.3em] text-sm mb-4">
+          <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-sm mb-4">
             {t("subtitle")}
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#24272a] mb-6">
             {t("title")}
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="text-stone-600 text-lg max-w-2xl mx-auto">
             {t("description")}
           </p>
         </ScrollReveal>
@@ -41,7 +41,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
           {properties.map((property) => (
             <StaggerItem key={property._id}>
               <Link href={`/properties/${property.slug}`} className="group block">
-                <div className="relative aspect-[4/3] overflow-hidden bg-gray-200">
+                <div className="relative aspect-[4/3] overflow-hidden bg-stone-200">
                   {property.heroImage ? (
                     <Image
                       src={property.heroImage}
@@ -51,8 +51,8 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
-                      <span className="text-gray-500 text-sm">{property.name}</span>
+                    <div className="absolute inset-0 bg-gradient-to-br from-stone-300 to-stone-400 flex items-center justify-center">
+                      <span className="text-stone-500 text-sm">{property.name}</span>
                     </div>
                   )}
 
@@ -68,7 +68,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
 
                   {/* Rating */}
                   {property.starRating && (
-                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-[#ff00ff] text-white px-2.5 py-1 text-xs font-medium">
+                    <div className="absolute top-4 right-4 flex items-center gap-1 bg-[var(--color-brand-anchor)] text-white px-2.5 py-1 text-xs font-medium">
                       <Star className="w-3 h-3 fill-current" />
                       <span>{property.starRating} Star</span>
                     </div>
@@ -76,7 +76,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
 
                   {/* Bottom Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-2xl font-light text-white mb-1">
+                    <h3 className="text-2xl text-white mb-1">
                       {property.name}
                     </h3>
                     {property.tagline && (
@@ -86,12 +86,12 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                 </div>
 
                 <div className="pt-4 pb-2 flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 text-gray-500 text-sm">
+                  <div className="flex items-center gap-1.5 text-stone-500 text-sm">
                     <MapPin className="w-4 h-4" />
                     <span>{property.location}</span>
                   </div>
 
-                  <div className="flex items-center text-[#cc00cc] text-sm font-medium">
+                  <div className="flex items-center text-[var(--color-brand-anchor)] text-sm font-medium">
                     <span>{t("viewProperty")}</span>
                     <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                   </div>

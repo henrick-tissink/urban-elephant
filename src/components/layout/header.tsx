@@ -97,9 +97,9 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "text-sm font-bold tracking-wide uppercase transition-colors duration-300 hover:text-[#ff00ff]",
+                      "text-sm font-bold tracking-wide uppercase transition-colors duration-300 hover:text-[var(--color-brand-anchor)]",
                       isScrolled ? "text-[#24272a]" : "text-white",
-                      pathname === item.href && "text-[#ff00ff]"
+                      pathname === item.href && "text-[var(--color-brand-anchor)]"
                     )}
                   >
                     {t(item.key)}
@@ -115,7 +115,7 @@ export function Header() {
                 onClick={toggleLocale}
                 className={cn(
                   "flex items-center gap-1.5 text-sm font-medium transition-colors",
-                  isScrolled ? "text-[#24272a] hover:text-[#ff00ff]" : "text-white/80 hover:text-white"
+                  isScrolled ? "text-[#24272a] hover:text-[var(--color-brand-anchor)]" : "text-white/80 hover:text-white"
                 )}
               >
                 <Globe className="w-4 h-4" />
@@ -182,8 +182,8 @@ export function Header() {
                     <Link
                       href={item.href}
                       className={cn(
-                        "text-3xl font-bold uppercase text-white hover:text-[#ff00ff] transition-colors block py-2",
-                        pathname === item.href && "text-[#ff00ff]"
+                        "text-3xl font-bold uppercase text-white hover:text-[var(--color-brand-anchor)] transition-colors block py-2",
+                        pathname === item.href && "text-[var(--color-brand-anchor)]"
                       )}
                     >
                       {t(item.key)}
@@ -199,7 +199,7 @@ export function Header() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                   onClick={toggleLocale}
-                  className="flex items-center gap-2 text-white/70 hover:text-[#ff00ff] transition-colors"
+                  className="flex items-center gap-2 text-white/70 hover:text-[var(--color-brand-anchor)] transition-colors"
                 >
                   <Globe className="w-5 h-5" />
                   {locale === "en" ? "Afrikaans" : "English"}

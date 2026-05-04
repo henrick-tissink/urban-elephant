@@ -1,12 +1,19 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Urban Elephant Brand Colors */
-  --color-pink-50: #fff0ff;
+  /* Brand palette — gradient stops from logo-full.svg wordmark */
+  --color-brand-anchor:    #ff00ff;
+  --color-brand-saturated: #ff28ff;
+  --color-brand-mid:       #ff83ff;
+  --color-brand-soft:      #ffc6ff;
+  --color-brand-wash:      #ffefff;
+
+  /* Legacy pink ramp — kept for existing utilities */
+  --color-pink-50:  #ffefff;
   --color-pink-100: #ffe6ff;
   --color-pink-200: #ffc6ff;
   --color-pink-300: #ff9eff;
-  --color-pink-400: #ff6eff;
+  --color-pink-400: #ff83ff;
   --color-pink-500: #ff00ff;
   --color-pink-600: #e600e6;
   --color-pink-700: #cc00cc;
@@ -26,15 +33,24 @@
   --color-charcoal-900: #0f1012;
 
   --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-biko), var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #24272a;
   --accent: #ff00ff;
-  --accent-light: #fff0ff;
+  --accent-light: #ffefff;
   --accent-dark: #cc00cc;
+
+  /* Brand mark gradient — usable as background */
+  --gradient-brand: linear-gradient(135deg,
+    #ff00ff 0%,
+    #ff28ff 12%,
+    #ff83ff 38%,
+    #ffc6ff 65%,
+    #ffefff 100%
+  );
 }
 
 * {
@@ -53,12 +69,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography */
+/* Typography — editorial defaults for headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), system-ui, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  font-variation-settings: "opsz" 72;
+}
+h1 {
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  font-variation-settings: "opsz" 144;
+}
+h3, h4, h5, h6 {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  font-variation-settings: "opsz" 36;
 }
 
 /* Selection - Pink highlight */
@@ -125,8 +151,15 @@ a, button {
   margin-right: auto;
 }
 
-/* Pink gradient text utility */
-.text-gradient-pink {
+/* Brand gradient text utility — clips the logo gradient onto type */
+.text-gradient-brand {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-pink { /* backwards-compat alias */
   background: linear-gradient(180deg, #ffffff 18%, #ffefff 23%, #ffc6ff 32%, #ff83ff 46%, #ff28ff 63%, #ff00ff 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

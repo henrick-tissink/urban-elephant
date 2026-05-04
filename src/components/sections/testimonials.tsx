@@ -42,7 +42,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <ScrollReveal className="text-center mb-16">
-          <p className="text-[#ff6eff] uppercase tracking-[0.3em] text-sm mb-4">
+          <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
             {t("subtitle")}
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-light">
@@ -64,7 +64,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
             transition={{ delay: 0.3, type: "spring" }}
             className="absolute -top-4 left-0"
           >
-            <Quote className="w-16 h-16 text-[#ff00ff]/20" />
+            <Quote className="w-16 h-16 text-[var(--color-brand-anchor)]/20" />
           </motion.div>
 
           <div className="relative overflow-hidden min-h-[280px] pt-8">
@@ -86,8 +86,8 @@ export function Testimonials({ reviews }: TestimonialsProps) {
                       className={cn(
                         "w-5 h-5 transition-colors",
                         i < displayReviews[currentIndex].rating
-                          ? "text-[#ff6eff] fill-[#ff6eff]"
-                          : "text-gray-600"
+                          ? "text-[var(--color-brand-mid)] fill-[var(--color-brand-mid)]"
+                          : "text-stone-600"
                       )}
                     />
                   ))}
@@ -100,10 +100,10 @@ export function Testimonials({ reviews }: TestimonialsProps) {
 
                 {/* Author */}
                 <div>
-                  <p className="text-[#ff6eff] font-medium text-lg">
+                  <p className="text-[var(--color-brand-mid)] font-medium text-lg">
                     {displayReviews[currentIndex].author}
                   </p>
-                  <p className="text-gray-400 text-sm mt-1">
+                  <p className="text-stone-400 text-sm mt-1">
                     {displayReviews[currentIndex].property?.name}
                     {displayReviews[currentIndex].source && (
                       <> · via {sourceLabels[displayReviews[currentIndex].source!] || displayReviews[currentIndex].source}</>
@@ -119,7 +119,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
             <div className="flex justify-center items-center gap-4 mt-8">
               <button
                 onClick={prev}
-                className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[#ff00ff] hover:text-[#ff6eff] transition-colors"
+                className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[var(--color-brand-anchor)] hover:text-[var(--color-brand-mid)] transition-colors"
                 aria-label="Previous review"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -134,8 +134,8 @@ export function Testimonials({ reviews }: TestimonialsProps) {
                     className={cn(
                       "h-2 rounded-full transition-all duration-300",
                       index === currentIndex
-                        ? "bg-[#ff00ff] w-8"
-                        : "bg-[#24272a] w-2 hover:bg-gray-600"
+                        ? "bg-[var(--color-brand-anchor)] w-8"
+                        : "bg-[#24272a] w-2 hover:bg-stone-600"
                     )}
                     aria-label={`Go to review ${index + 1}`}
                   />
@@ -144,7 +144,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
 
               <button
                 onClick={next}
-                className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[#ff00ff] hover:text-[#ff6eff] transition-colors"
+                className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[var(--color-brand-anchor)] hover:text-[var(--color-brand-mid)] transition-colors"
                 aria-label="Next review"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -173,8 +173,8 @@ export function Testimonials({ reviews }: TestimonialsProps) {
               transition={{ delay: 0.5 + index * 0.1 }}
               className="text-center"
             >
-              <p className="text-3xl font-light text-[#ff6eff]">{stat.value}</p>
-              <p className="text-gray-400 text-sm">{stat.label}</p>
+              <p className="text-3xl font-light text-[var(--color-brand-mid)]">{stat.value}</p>
+              <p className="text-stone-400 text-sm">{stat.label}</p>
             </motion.div>
           ))}
         </motion.div>

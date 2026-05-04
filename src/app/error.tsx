@@ -16,13 +16,13 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-stone-50">
       <div className="text-center px-4">
         <h1 className="text-6xl font-serif text-[#24272a] mb-4">Oops!</h1>
         <h2 className="text-2xl font-medium text-[#333333] mb-4">
           Something went wrong
         </h2>
-        <p className="text-gray-600 mb-8 max-w-md mx-auto">
+        <p className="text-stone-600 mb-8 max-w-md mx-auto">
           We apologize for the inconvenience. Please try again or contact us if
           the problem persists.
         </p>

@@ -38,7 +38,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
       <section className="pt-32 pb-16 bg-[#24272a]">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="max-w-3xl">
-            <p className="text-[#ff6eff] uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
               {t("subtitle")}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
@@ -64,8 +64,8 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                   className={cn(
                     "px-4 py-2 text-sm font-medium transition-all",
                     activeCategory === cat.value
-                      ? "bg-[#ff00ff] text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      ? "bg-[var(--color-brand-anchor)] text-white"
+                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
                   )}
                 >
                   {t(`categories.${cat.key}`)}
@@ -79,7 +79,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
             {filteredTours.map((tour) => (
               <StaggerItem key={tour._id}>
                 <Link href={`/tours/${tour.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-gray-100 mb-4">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-stone-100 mb-4">
                     {tour.image ? (
                       <Image
                         src={tour.image}
@@ -89,7 +89,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300" />
                     )}
 
                     {tour.category && (
@@ -99,18 +99,18 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                     )}
                   </div>
 
-                  <h3 className="text-xl font-light text-[#24272a] group-hover:text-[#cc00cc] transition-colors mb-2">
+                  <h3 className="text-xl text-[#24272a] group-hover:text-[var(--color-brand-anchor)] transition-colors mb-2">
                     {tour.name}
                   </h3>
 
                   {tour.shortDescription && (
-                    <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                    <p className="text-stone-600 text-sm mb-3 line-clamp-2">
                       {tour.shortDescription}
                     </p>
                   )}
 
                   <div className="flex items-center justify-between text-sm">
-                    <div className="flex items-center gap-4 text-gray-500">
+                    <div className="flex items-center gap-4 text-stone-500">
                       {tour.duration && (
                         <span className="flex items-center gap-1.5">
                           <Clock className="w-4 h-4" />
@@ -119,13 +119,13 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                       )}
                     </div>
                     {tour.price && (
-                      <div className="text-[#cc00cc] font-medium">
+                      <div className="text-[var(--color-brand-anchor)] font-medium">
                         {tCommon("from")} R{tour.price.toLocaleString()}
                       </div>
                     )}
                   </div>
 
-                  <div className="flex items-center text-[#cc00cc] font-medium text-sm mt-4">
+                  <div className="flex items-center text-[var(--color-brand-anchor)] font-medium text-sm mt-4">
                     <span>{t("viewTour")}</span>
                     <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -136,7 +136,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
 
           {filteredTours.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-gray-500">No tours found in this category.</p>
+              <p className="text-stone-500">No tours found in this category.</p>
             </div>
           )}
         </div>

@@ -8,29 +8,29 @@ interface VehicleCardSkeletonProps {
 
 export function VehicleCardSkeleton({ className }: VehicleCardSkeletonProps) {
   return (
-    <div className={cn("bg-gray-50 overflow-hidden", className)}>
+    <div className={cn("bg-stone-50 overflow-hidden", className)}>
       {/* Image skeleton */}
-      <div className="relative aspect-[4/3] bg-gray-200 animate-pulse" />
+      <div className="relative aspect-[4/3] bg-stone-200 animate-pulse" />
 
       {/* Content skeleton */}
       <div className="p-6 space-y-4">
         {/* Title */}
-        <div className="h-6 bg-gray-200 animate-pulse rounded w-3/4" />
+        <div className="h-6 bg-stone-200 animate-pulse rounded w-3/4" />
 
         {/* Specs */}
         <div className="flex items-center gap-4">
-          <div className="h-4 bg-gray-100 animate-pulse rounded w-12" />
-          <div className="h-4 bg-gray-100 animate-pulse rounded w-12" />
-          <div className="h-4 bg-gray-100 animate-pulse rounded w-16" />
+          <div className="h-4 bg-stone-100 animate-pulse rounded w-12" />
+          <div className="h-4 bg-stone-100 animate-pulse rounded w-12" />
+          <div className="h-4 bg-stone-100 animate-pulse rounded w-16" />
         </div>
 
         {/* Price and button */}
         <div className="flex items-center justify-between pt-2">
           <div className="space-y-1">
-            <div className="h-8 bg-gray-200 animate-pulse rounded w-28" />
-            <div className="h-3 bg-gray-100 animate-pulse rounded w-16" />
+            <div className="h-8 bg-stone-200 animate-pulse rounded w-28" />
+            <div className="h-3 bg-stone-100 animate-pulse rounded w-16" />
           </div>
-          <div className="h-10 bg-gray-200 animate-pulse rounded w-24" />
+          <div className="h-10 bg-stone-200 animate-pulse rounded w-24" />
         </div>
       </div>
     </div>

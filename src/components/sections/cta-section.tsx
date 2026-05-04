@@ -17,7 +17,7 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
     <section className="relative py-32 lg:py-40 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#ff00ff] to-[#cc00cc]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-brand-anchor)] to-[var(--color-brand-anchor)]" />
         {/* Pattern Overlay */}
         <div
           className="absolute inset-0 opacity-10"
@@ -47,7 +47,7 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
               <MagneticButton>
                 <Button
                   size="xl"
-                  className="bg-white text-[#ff00ff] hover:bg-[#fff0ff]"
+                  className="bg-white text-[var(--color-brand-anchor)] hover:bg-[var(--color-brand-wash)]"
                   asChild
                 >
                   <a href={bookNowUrl || "https://book.nightsbridge.com"} target="_blank" rel="noopener noreferrer">

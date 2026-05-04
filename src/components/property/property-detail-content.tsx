@@ -27,7 +27,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             className="object-cover"
           />
         ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-400" />
+          <div className="absolute inset-0 bg-gradient-to-br from-stone-300 to-stone-400" />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
@@ -35,7 +35,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
           <div className="container mx-auto px-6 lg:px-12 pb-12">
             <ScrollReveal>
               {property.starRating && (
-                <div className="flex items-center gap-1 text-[#ff6eff] mb-4">
+                <div className="flex items-center gap-1 text-[var(--color-brand-mid)] mb-4">
                   {Array.from({ length: property.starRating }).map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-current" />
                   ))}
@@ -65,8 +65,8 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
               {/* Description */}
               {property.description && property.description.length > 0 && (
                 <ScrollReveal className="mb-12">
-                  <h2 className="text-2xl font-light text-[#24272a] mb-6">About This Property</h2>
-                  <div className="prose max-w-none space-y-4 text-gray-600 leading-relaxed">
+                  <h2 className="text-2xl text-[#24272a] mb-6">About This Property</h2>
+                  <div className="prose max-w-none space-y-4 text-stone-600 leading-relaxed">
                     {property.description.map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}
@@ -77,14 +77,14 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
               {/* Amenities */}
               {property.amenities && property.amenities.length > 0 && (
                 <ScrollReveal className="mb-12">
-                  <h2 className="text-2xl font-light text-[#24272a] mb-6">{t("amenities")}</h2>
+                  <h2 className="text-2xl text-[#24272a] mb-6">{t("amenities")}</h2>
                   <StaggerChildren staggerDelay={0.05} className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {property.amenities.map((amenity, index) => (
                       <StaggerItem key={index} className="flex items-center gap-3">
-                        <div className="w-8 h-8 bg-[#fff0ff] rounded-full flex items-center justify-center flex-shrink-0">
-                          <Check className="w-4 h-4 text-[#cc00cc]" />
+                        <div className="w-8 h-8 bg-[var(--color-brand-wash)] rounded-full flex items-center justify-center flex-shrink-0">
+                          <Check className="w-4 h-4 text-[var(--color-brand-anchor)]" />
                         </div>
-                        <span className="text-gray-600">{amenity.name}</span>
+                        <span className="text-stone-600">{amenity.name}</span>
                       </StaggerItem>
                     ))}
                   </StaggerChildren>
@@ -94,10 +94,10 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
               {/* Gallery */}
               {property.gallery && property.gallery.length > 0 && (
                 <ScrollReveal className="mb-12">
-                  <h2 className="text-2xl font-light text-[#24272a] mb-6">{t("gallery")}</h2>
+                  <h2 className="text-2xl text-[#24272a] mb-6">{t("gallery")}</h2>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                     {property.gallery.slice(0, 6).map((image, index) => (
-                      <div key={index} className="aspect-square relative overflow-hidden bg-gray-100">
+                      <div key={index} className="aspect-square relative overflow-hidden bg-stone-100">
                         <Image
                           src={image}
                           alt={`${property.name} gallery ${index + 1}`}
@@ -115,14 +115,14 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             {/* Sidebar */}
             <div className="lg:col-span-1">
               <div className="sticky top-32">
-                <ScrollReveal className="bg-gray-50 p-6 lg:p-8">
+                <ScrollReveal className="bg-stone-50 p-6 lg:p-8">
                   <h3 className="text-xl font-medium text-[#24272a] mb-6">
                     {t("bookThisProperty")}
                   </h3>
 
                   {property.address && (
                     <div className="mb-6">
-                      <p className="text-sm text-gray-500 mb-1">{t("location")}</p>
+                      <p className="text-sm text-stone-500 mb-1">{t("location")}</p>
                       <p className="text-[#24272a]">{property.address}</p>
                     </div>
                   )}
@@ -143,7 +143,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
                     </a>
                   </Button>
 
-                  <p className="text-xs text-gray-500 text-center mt-4">
+                  <p className="text-xs text-stone-500 text-center mt-4">
                     Book direct for best rate guarantee
                   </p>
                 </ScrollReveal>

@@ -115,7 +115,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[#ff00ff] uppercase tracking-[0.3em] text-xs md:text-sm mb-6 font-bold"
+            className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs md:text-sm mb-6 font-bold"
           >
             {t("tagline")}
           </motion.p>
@@ -218,7 +218,7 @@ export function Hero() {
           transition={{ delay: 2 }}
           className="absolute bottom-24 right-6 hidden md:block"
         >
-          <div className="bg-[#ff00ff] text-white px-4 py-3 rounded-lg shadow-lg shadow-[#ff00ff]/30">
+          <div className="bg-[var(--color-brand-anchor)] text-white px-4 py-3 rounded-lg shadow-lg shadow-[var(--color-brand-anchor)]/30">
             <p className="text-[10px] uppercase tracking-widest mb-0.5 opacity-90">Guaranteed</p>
             <p className="text-sm font-bold uppercase">{t("bestRate")}</p>
           </div>

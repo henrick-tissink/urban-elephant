@@ -23,8 +23,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             className={cn(
               "absolute left-4 transition-all duration-200 pointer-events-none",
               isFocused || hasValue
-                ? "top-2 text-xs text-[#cc00cc]"
-                : "top-1/2 -translate-y-1/2 text-gray-400"
+                ? "top-2 text-xs text-[var(--color-brand-anchor)]"
+                : "top-1/2 -translate-y-1/2 text-stone-400"
             )}
           >
             {label}
@@ -34,10 +34,10 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           id={inputId}
           type={type}
           className={cn(
-            "flex h-14 w-full border border-gray-200 bg-white px-4 text-base text-[#24272a] transition-all duration-200",
-            "placeholder:text-gray-400",
-            "focus:outline-none focus:border-[#ff00ff] focus:ring-2 focus:ring-[#ff00ff]/20",
-            "disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-gray-50",
+            "flex h-14 w-full border border-stone-200 bg-white px-4 text-base text-[#24272a] transition-all duration-200",
+            "placeholder:text-stone-400",
+            "focus:outline-none focus:border-[var(--color-brand-anchor)] focus:ring-2 focus:ring-[var(--color-brand-anchor)]/20",
+            "disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-stone-50",
             label && "pt-6 pb-2",
             error && "border-red-500 focus:border-red-500 focus:ring-red-500/20",
             className

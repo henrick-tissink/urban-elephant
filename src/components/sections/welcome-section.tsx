@@ -21,7 +21,7 @@ export function WelcomeSection() {
                 className="object-cover"
               />
               {/* 4 Star Badge */}
-              <div className="absolute bottom-6 left-6 bg-[#ff00ff] text-white px-4 py-2 rounded">
+              <div className="absolute bottom-6 left-6 bg-[var(--color-brand-anchor)] text-white px-4 py-2 rounded">
                 <p className="text-xs uppercase tracking-widest font-bold">{t("tagline")}</p>
               </div>
             </div>
@@ -32,10 +32,10 @@ export function WelcomeSection() {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-[#24272a] mb-6 leading-tight">
               {t("title")}
             </h2>
-            <p className="text-[#ff00ff] font-bold text-lg mb-4">
+            <p className="text-[var(--color-brand-anchor)] font-bold text-lg mb-4">
               {t("description")}
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-stone-600 leading-relaxed">
               {t("body")}
             </p>
           </ScrollReveal>

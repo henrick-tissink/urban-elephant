@@ -37,7 +37,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
       <section className="pt-32 pb-16 bg-[#24272a]">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="max-w-3xl">
-            <p className="text-[#ff6eff] uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
               {t("subtitle")}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
@@ -63,8 +63,8 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
                   className={cn(
                     "px-4 py-2 text-sm font-medium transition-all",
                     activeCategory === cat.value
-                      ? "bg-[#ff00ff] text-white"
-                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                      ? "bg-[var(--color-brand-anchor)] text-white"
+                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
                   )}
                 >
                   {t(`categories.${cat.key}`)}
@@ -77,7 +77,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
           <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredVehicles.map((vehicle) => (
               <StaggerItem key={vehicle._id}>
-                <div className="bg-gray-50 overflow-hidden">
+                <div className="bg-stone-50 overflow-hidden">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     {vehicle.image ? (
                       <Image
@@ -88,8 +88,8 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                        <span className="text-gray-400">{vehicle.name}</span>
+                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center">
+                        <span className="text-stone-400">{vehicle.name}</span>
                       </div>
                     )}
 
@@ -106,7 +106,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
                     </h3>
 
                     {vehicle.specs && (
-                      <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                      <div className="flex items-center gap-4 text-sm text-stone-500 mb-4">
                         {vehicle.specs.passengers && (
                           <span className="flex items-center gap-1.5">
                             <Users className="w-4 h-4" />
@@ -134,7 +134,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
                           <span className="text-2xl font-light text-[#24272a]">
                             R{vehicle.pricePerDay.toLocaleString()}
                           </span>
-                          <span className="text-gray-500 text-sm">/{tCommon("perDay")}</span>
+                          <span className="text-stone-500 text-sm">/{tCommon("perDay")}</span>
                         </div>
                       )}
                       <Button variant="outline" size="sm" asChild>
@@ -149,7 +149,7 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
 
           {filteredVehicles.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-gray-500">No vehicles found in this category.</p>
+              <p className="text-stone-500">No vehicles found in this category.</p>
             </div>
           )}
         </div>

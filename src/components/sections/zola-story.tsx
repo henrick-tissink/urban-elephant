@@ -13,14 +13,14 @@ export function ZolaStory() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Content Side */}
           <ScrollReveal direction="left">
-            <p className="text-[#ff00ff] uppercase tracking-[0.3em] text-sm mb-4 font-bold">
+            <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-sm mb-4 font-bold">
               {t("subtitle")}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-8 leading-tight">
               {t("title")}
             </h2>
 
-            <div className="space-y-4 text-gray-300 leading-relaxed">
+            <div className="space-y-4 text-stone-300 leading-relaxed">
               <p className="text-white font-medium">{t("intro")}</p>
               <p>{t("story1")}</p>
               <p>{t("story2")}</p>
@@ -33,10 +33,10 @@ export function ZolaStory() {
           <ScrollReveal direction="right" className="flex justify-center">
             <div className="relative">
               {/* Decorative pink glow */}
-              <div className="absolute inset-0 bg-[#ff00ff]/20 blur-3xl rounded-full" />
+              <div className="absolute inset-0 bg-[var(--color-brand-anchor)]/20 blur-3xl rounded-full" />
 
               {/* Elephant Icon */}
-              <div className="relative bg-gradient-to-br from-[#fff0ff] to-[#ff00ff] p-12 rounded-full">
+              <div className="relative bg-gradient-to-br from-[var(--color-brand-wash)] to-[var(--color-brand-anchor)] p-12 rounded-full">
                 <Image
                   src="/elephant-icon.svg"
                   alt={t("imageAlt")}

@@ -20,7 +20,7 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
       <section className="pt-32 pb-16 bg-[#24272a]">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="max-w-3xl">
-            <p className="text-[#ff6eff] uppercase tracking-[0.3em] text-sm mb-4">
+            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
               {t("subtitle")}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
@@ -40,7 +40,7 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
             {properties.map((property) => (
               <StaggerItem key={property._id}>
                 <Link href={`/properties/${property.slug}`} className="group block">
-                  <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                     {property.heroImage ? (
                       <Image
                         src={property.heroImage}
@@ -50,13 +50,13 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-gray-200 to-gray-300" />
+                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300" />
                     )}
 
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                     {property.starRating && (
-                      <div className="absolute top-4 right-4 flex items-center gap-1 bg-[#ff00ff] text-white px-2.5 py-1 text-xs font-medium">
+                      <div className="absolute top-4 right-4 flex items-center gap-1 bg-[var(--color-brand-anchor)] text-white px-2.5 py-1 text-xs font-medium">
                         <Star className="w-3 h-3 fill-current" />
                         <span>{property.starRating} Star</span>
                       </div>
@@ -77,7 +77,7 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
                   </div>
 
                   <div className="pt-4 flex items-center justify-between">
-                    <div className="flex items-center text-[#cc00cc] font-medium text-sm">
+                    <div className="flex items-center text-[var(--color-brand-anchor)] font-medium text-sm">
                       <span>{t("viewProperty")}</span>
                       <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                     </div>

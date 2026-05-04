@@ -14,15 +14,15 @@ const buttonVariants = cva(
         default:
           "bg-[#24272a] text-white hover:bg-[#1a1c1e] focus-visible:ring-[#24272a]",
         primary:
-          "bg-[#ff00ff] text-white hover:bg-[#cc00cc] focus-visible:ring-[#ff00ff] shadow-lg shadow-[#ff00ff]/25 hover:shadow-[#cc00cc]/30",
+          "bg-[var(--color-brand-anchor)] text-white hover:bg-[var(--color-brand-anchor)] focus-visible:ring-[var(--color-brand-anchor)] shadow-lg shadow-[var(--color-brand-anchor)]/25 hover:shadow-[var(--color-brand-anchor)]/30",
         secondary:
-          "bg-[#fff0ff] text-[#24272a] hover:bg-[#ffc6ff] focus-visible:ring-[#ff00ff]",
+          "bg-[var(--color-brand-wash)] text-[#24272a] hover:bg-[var(--color-brand-soft)] focus-visible:ring-[var(--color-brand-anchor)]",
         outline:
-          "border-2 border-[#ff00ff] bg-transparent text-[#ff00ff] hover:bg-[#ff00ff] hover:text-white",
+          "border-2 border-[var(--color-brand-anchor)] bg-transparent text-[var(--color-brand-anchor)] hover:bg-[var(--color-brand-anchor)] hover:text-white",
         outlineLight:
           "border-2 border-white bg-transparent text-white hover:bg-white hover:text-[#24272a]",
-        ghost: "text-[#24272a] hover:bg-[#fff0ff]",
-        link: "text-[#ff00ff] underline-offset-4 hover:underline p-0 h-auto",
+        ghost: "text-[#24272a] hover:bg-[var(--color-brand-wash)]",
+        link: "text-[var(--color-brand-anchor)] underline-offset-4 hover:underline p-0 h-auto",
         destructive:
           "bg-red-600 text-white hover:bg-red-700 focus-visible:ring-red-600",
       },

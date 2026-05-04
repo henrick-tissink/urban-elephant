@@ -12,23 +12,23 @@ export function TestimonialSkeleton({ className }: TestimonialSkeletonProps) {
       {/* Stars skeleton */}
       <div className="flex gap-1 mb-6">
         {[...Array(5)].map((_, i) => (
-          <div key={i} className="w-5 h-5 bg-[#ffc6ff] animate-pulse rounded" />
+          <div key={i} className="w-5 h-5 bg-[var(--color-brand-soft)] animate-pulse rounded" />
         ))}
       </div>
 
       {/* Quote skeleton */}
       <div className="space-y-2 mb-8">
-        <div className="h-4 bg-gray-100 animate-pulse rounded w-full" />
-        <div className="h-4 bg-gray-100 animate-pulse rounded w-full" />
-        <div className="h-4 bg-gray-100 animate-pulse rounded w-3/4" />
+        <div className="h-4 bg-stone-100 animate-pulse rounded w-full" />
+        <div className="h-4 bg-stone-100 animate-pulse rounded w-full" />
+        <div className="h-4 bg-stone-100 animate-pulse rounded w-3/4" />
       </div>
 
       {/* Author skeleton */}
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 bg-gray-200 animate-pulse rounded-full" />
+        <div className="w-12 h-12 bg-stone-200 animate-pulse rounded-full" />
         <div className="space-y-2">
-          <div className="h-4 bg-gray-200 animate-pulse rounded w-24" />
-          <div className="h-3 bg-gray-100 animate-pulse rounded w-32" />
+          <div className="h-4 bg-stone-200 animate-pulse rounded w-24" />
+          <div className="h-3 bg-stone-100 animate-pulse rounded w-32" />
         </div>
       </div>
     </div>

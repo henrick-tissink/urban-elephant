@@ -42,7 +42,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                 className="h-14 w-auto"
               />
             </Link>
-            <p className="text-gray-400 mb-6 max-w-sm leading-relaxed">
+            <p className="text-stone-400 mb-6 max-w-sm leading-relaxed">
               {t("description")}
             </p>
             <div className="flex gap-4">
@@ -52,7 +52,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[#ff00ff] transition-colors"
+                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
@@ -63,7 +63,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[#ff00ff] transition-colors"
+                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
@@ -76,7 +76,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[#ff00ff] transition-colors"
+                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
@@ -85,7 +85,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
-                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[#ff00ff] transition-colors"
+                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                   >
                     <Facebook className="w-5 h-5" />
                   </a>
@@ -105,7 +105,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                   <li key={property._id}>
                     <Link
                       href={`/properties/${property.slug}`}
-                      className="text-gray-400 hover:text-[#ff00ff] transition-colors"
+                      className="text-stone-400 hover:text-[var(--color-brand-anchor)] transition-colors"
                     >
                       {property.name}
                     </Link>
@@ -115,7 +115,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                 <li>
                   <Link
                     href="/properties"
-                    className="text-gray-400 hover:text-[#ff00ff] transition-colors"
+                    className="text-stone-400 hover:text-[var(--color-brand-anchor)] transition-colors"
                   >
                     {t("links.viewAll")}
                   </Link>
@@ -134,7 +134,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-[#ff00ff] transition-colors"
+                    className="text-stone-400 hover:text-[var(--color-brand-anchor)] transition-colors"
                   >
                     {t(`links.${link.key}`)}
                   </Link>
@@ -150,27 +150,27 @@ export function Footer({ settings, properties = [] }: FooterProps) {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#ff00ff] flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400">
+                <MapPin className="w-5 h-5 text-[var(--color-brand-anchor)] flex-shrink-0 mt-0.5" />
+                <span className="text-stone-400">
                   {settings?.address
                     ? `${settings.address.city}, ${settings.address.country}`
                     : "Cape Town, South Africa"}
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[#ff00ff] flex-shrink-0" />
+                <Phone className="w-5 h-5 text-[var(--color-brand-anchor)] flex-shrink-0" />
                 <a
                   href={`tel:${settings?.contact?.phone || "+27213001044"}`}
-                  className="text-gray-400 hover:text-[#ff00ff] transition-colors"
+                  className="text-stone-400 hover:text-[var(--color-brand-anchor)] transition-colors"
                 >
                   {settings?.contact?.phone || "+27 21 300 1044"}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#ff00ff] flex-shrink-0" />
+                <Mail className="w-5 h-5 text-[var(--color-brand-anchor)] flex-shrink-0" />
                 <a
                   href={`mailto:${settings?.contact?.email || "karin@urbanelephant.co.za"}`}
-                  className="text-gray-400 hover:text-[#ff00ff] transition-colors"
+                  className="text-stone-400 hover:text-[var(--color-brand-anchor)] transition-colors"
                 >
                   {settings?.contact?.email || "karin@urbanelephant.co.za"}
                 </a>
@@ -181,7 +181,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
 
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-[#1a1c1e] flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm">
+          <p className="text-stone-500 text-sm">
             &copy; {new Date().getFullYear()} Urban Elephant. {t("copyright")}
           </p>
           <div className="flex flex-wrap justify-center gap-6">
@@ -189,7 +189,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
               <Link
                 key={link.key}
                 href={link.href}
-                className="text-gray-500 text-sm hover:text-[#ff00ff] transition-colors"
+                className="text-stone-500 text-sm hover:text-[var(--color-brand-anchor)] transition-colors"
               >
                 {t(`links.${link.key}`)}
               </Link>
