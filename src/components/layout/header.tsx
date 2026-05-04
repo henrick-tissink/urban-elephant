@@ -69,7 +69,7 @@ export function Header() {
                     alt="Urban Elephant"
                     width={180}
                     height={50}
-                    className="h-12 w-auto"
+                    className="h-9 lg:h-10 w-auto max-w-[180px]"
                     priority
                   />
                 ) : (
@@ -78,7 +78,7 @@ export function Header() {
                     alt="Urban Elephant"
                     width={180}
                     height={50}
-                    className="h-12 w-auto"
+                    className="h-9 lg:h-10 w-auto max-w-[180px]"
                     priority
                   />
                 )}

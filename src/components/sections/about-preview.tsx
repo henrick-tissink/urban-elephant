@@ -18,32 +18,33 @@ export function AboutPreview() {
           {/* Image Side */}
           <ScrollReveal direction="left" className="relative">
             <div className="relative">
-              {/* Main Image - Placeholder */}
-              <div className="aspect-[4/5] relative overflow-hidden bg-gradient-to-br from-[var(--color-brand-wash)] to-[var(--color-brand-soft)] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Image
-                    src="/elephant-icon.svg"
-                    alt="Urban Elephant"
-                    width={120}
-                    height={120}
-                    className="mx-auto mb-4 opacity-60"
-                  />
-                  <p className="text-[var(--color-brand-anchor)]/60 text-sm uppercase tracking-widest">Founder Image</p>
-                </div>
+              {/* Main Image */}
+              <div className="aspect-[4/5] relative overflow-hidden bg-stone-100">
+                <Image
+                  src="/images/site/about.jpg"
+                  alt="Urban Elephant — Cape Town hospitality"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  loading="eager"
+                />
               </div>
 
-              {/* Decorative Element - Pink */}
+              {/* Decorative gradient wash — references the logo without shouting */}
               <Parallax speed={0.2} direction="up" className="absolute -bottom-8 -right-8 w-48 h-48 -z-10">
-                <div className="w-full h-full bg-[var(--color-brand-anchor)]" />
+                <div
+                  className="w-full h-full opacity-60"
+                  style={{ background: "var(--gradient-brand)" }}
+                />
               </Parallax>
 
               {/* Quote Card */}
               <ScrollReveal delay={0.4} className="absolute -bottom-6 left-6 right-6 lg:left-12 lg:-right-12">
                 <div className="bg-white p-6 shadow-xl">
-                  <p className="text-stone-600 italic mb-3">
+                  <p className="text-stone-600 italic mb-3 text-balance">
                     &ldquo;{t("founderQuote")}&rdquo;
                   </p>
-                  <p className="text-[var(--color-brand-anchor)] font-bold">— {t("founderName")}, {t("founderTitle")}</p>
+                  <p className="text-[var(--color-brand-anchor)] font-medium">— {t("founderName")}, {t("founderTitle")}</p>
                 </div>
               </ScrollReveal>
             </div>
@@ -54,7 +55,7 @@ export function AboutPreview() {
             <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-sm mb-4 font-bold">
               {t("subtitle")}
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold uppercase text-[#24272a] mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl font-light text-[#24272a] mb-6 leading-tight tracking-tight text-balance">
               {t("title")}
             </h2>
 

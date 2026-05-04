@@ -52,16 +52,16 @@ export function Testimonials({ reviews }: TestimonialsProps) {
 
         {/* Testimonial Carousel */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          initial={{ opacity: 1, y: 16 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 16 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
           className="relative max-w-4xl mx-auto"
         >
           {/* Quote Icon */}
           <motion.div
-            initial={{ scale: 0, rotate: -20 }}
-            animate={isInView ? { scale: 1, rotate: 0 } : {}}
-            transition={{ delay: 0.3, type: "spring" }}
+            initial={{ scale: 1, rotate: 0 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ delay: 0.2 }}
             className="absolute -top-4 left-0"
           >
             <Quote className="w-16 h-16 text-[var(--color-brand-anchor)]/20" />
@@ -155,9 +155,9 @@ export function Testimonials({ reviews }: TestimonialsProps) {
 
         {/* Trust Badges */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          initial={{ opacity: 1, y: 12 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 12 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           className="flex flex-wrap justify-center items-center gap-8 mt-16 pt-16 border-t border-[#1a1c1e]"
         >
           {[
@@ -168,9 +168,9 @@ export function Testimonials({ reviews }: TestimonialsProps) {
           ].map((stat, index) => (
             <motion.div
               key={stat.label}
-              initial={{ opacity: 0, y: 10 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.5 + index * 0.1 }}
+              initial={{ opacity: 1, y: 6 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 1, y: 6 }}
+              transition={{ delay: 0.4 + index * 0.08 }}
               className="text-center"
             >
               <p className="text-3xl font-light text-[var(--color-brand-mid)]">{stat.value}</p>

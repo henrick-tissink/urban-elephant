@@ -15,21 +15,24 @@ export function WelcomeSection() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/hero-poster.jpg"
-                alt="Cape Town cityscape"
+                src="/images/site/welcome.png"
+                alt="Cape Town"
                 fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
+                loading="eager"
               />
-              {/* 4 Star Badge */}
-              <div className="absolute bottom-6 left-6 bg-[var(--color-brand-anchor)] text-white px-4 py-2 rounded">
-                <p className="text-xs uppercase tracking-widest font-bold">{t("tagline")}</p>
+              {/* 4 Star eyebrow — restrained */}
+              <div className="absolute bottom-6 left-6 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full">
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-anchor)]" />
+                <p className="text-[11px] uppercase tracking-[0.2em] text-white/95">{t("tagline")}</p>
               </div>
             </div>
           </ScrollReveal>
 
           {/* Content Side */}
           <ScrollReveal direction="right">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase text-[#24272a] mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#24272a] mb-6 leading-tight tracking-tight text-balance">
               {t("title")}
             </h2>
             <p className="text-[var(--color-brand-anchor)] font-bold text-lg mb-4">

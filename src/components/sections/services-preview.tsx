@@ -34,7 +34,7 @@ export function ServicesPreview() {
           <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-sm mb-4">
             {t("subtitle")}
           </p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#24272a]">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#24272a] tracking-tight text-balance">
             {t("title")}
           </h2>
         </ScrollReveal>
@@ -47,8 +47,8 @@ export function ServicesPreview() {
               <StaggerItem key={service.key}>
                 <Link href={service.href} className="group block h-full">
                   <div className="bg-white p-8 lg:p-10 h-full border border-stone-200 hover:border-[var(--color-brand-anchor)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div className="w-14 h-14 bg-[var(--color-brand-wash)] rounded-full flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-anchor)] transition-colors duration-300">
-                      <Icon className="w-6 h-6 text-[var(--color-brand-anchor)] group-hover:text-white transition-colors duration-300" />
+                    <div className="w-14 h-14 bg-[var(--color-brand-wash)] rounded-full flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-soft)] transition-colors duration-300">
+                      <Icon className="w-6 h-6 text-[var(--color-brand-anchor)] transition-colors duration-300" />
                     </div>
 
                     <h3 className="text-2xl text-[#24272a] mb-4 group-hover:text-[var(--color-brand-anchor)] transition-colors">

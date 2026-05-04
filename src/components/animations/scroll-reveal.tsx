@@ -17,18 +17,29 @@ interface ScrollRevealProps {
   threshold?: number;
 }
 
+/**
+ * Visible-by-default scroll reveal. Content is always rendered with
+ * opacity 1; the only animated property is a small translate. This means
+ * if the IntersectionObserver hasn't fired yet (slow-scroll, smooth-scroll
+ * libraries, screenshot tools), content is still readable instead of
+ * stuck invisible. The translate gives a subtle "settling" motion.
+ */
 export function ScrollReveal({
   children,
   direction = "up",
   delay = 0,
-  duration = 0.6,
-  distance = 40,
+  duration = 0.5,
+  distance = 16,
   once = true,
   className,
-  threshold = 0.2,
+  threshold = 0,
 }: ScrollRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, amount: threshold });
+  const isInView = useInView(ref, {
+    once,
+    amount: threshold,
+    margin: "0px 0px 200px 0px",
+  });
 
   const getInitialPosition = (): { x: number; y: number } => {
     switch (direction) {
@@ -50,7 +61,7 @@ export function ScrollReveal({
 
   const variants: Variants = {
     hidden: {
-      opacity: 0,
+      opacity: 1,
       x: initial.x,
       y: initial.y,
     },
@@ -79,7 +90,6 @@ export function ScrollReveal({
   );
 }
 
-// Staggered children wrapper
 interface StaggerChildrenProps {
   children: React.ReactNode;
   staggerDelay?: number;
@@ -89,12 +99,16 @@ interface StaggerChildrenProps {
 
 export function StaggerChildren({
   children,
-  staggerDelay = 0.1,
+  staggerDelay = 0.08,
   className,
   once = true,
 }: StaggerChildrenProps) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once, amount: 0.2 });
+  const isInView = useInView(ref, {
+    once,
+    amount: 0,
+    margin: "0px 0px 200px 0px",
+  });
 
   const containerVariants: Variants = {
     hidden: {},
@@ -118,7 +132,6 @@ export function StaggerChildren({
   );
 }
 
-// Child item for staggered animations
 interface StaggerItemProps {
   children: React.ReactNode;
   direction?: Direction;
@@ -133,9 +146,9 @@ export function StaggerItem({
   const getInitialY = () => {
     switch (direction) {
       case "up":
-        return 30;
+        return 12;
       case "down":
-        return -30;
+        return -12;
       default:
         return 0;
     }
@@ -144,9 +157,9 @@ export function StaggerItem({
   const getInitialX = () => {
     switch (direction) {
       case "left":
-        return 30;
+        return 12;
       case "right":
-        return -30;
+        return -12;
       default:
         return 0;
     }
@@ -154,7 +167,7 @@ export function StaggerItem({
 
   const itemVariants: Variants = {
     hidden: {
-      opacity: 0,
+      opacity: 1,
       y: getInitialY(),
       x: getInitialX(),
     },
@@ -163,7 +176,7 @@ export function StaggerItem({
       y: 0,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.4,
         ease: [0.25, 0.1, 0.25, 1],
       },
     },
