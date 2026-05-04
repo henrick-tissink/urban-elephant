@@ -12,6 +12,12 @@
 
 # testing
 /coverage
+/test-results
+/screenshots
+/.playwright-mcp
+
+# design preview artifact (regenerable)
+/design-preview.html
 
 # next.js
 /.next/
