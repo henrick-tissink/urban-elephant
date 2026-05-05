@@ -47,23 +47,31 @@
     "ctaButton": "Get in touch"
   },
   "hero": {
-    "tagline": "GUARANTEED LOWEST PRICE ON DIRECT BOOKING",
+    "tagline": "OFFICIALLY GRADED · CAPE TOWN",
     "title": "Urban Elephant",
-    "subtitle": "At Urban Elephant Hotel & Tours, it's the season to unwind and soak up the city's best views. Best deals direct — always.",
+    "subtitle": "Officially graded apartment hotels in Cape Town's best locations. The space of an apartment, the standards of a hotel — and a family who looks after every guest like one of our own.",
     "scrollDown": "Scroll to explore",
     "bestRate": "Best Rate Guarantee",
     "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
   },
+  "trust": {
+    "gradedTitle": "Officially TGCSA Graded",
+    "gradedDescription": "Tourism Grading Council of South Africa",
+    "managedTitle": "Professionally Managed",
+    "managedDescription": "Hotel-grade systems, owner-led care",
+    "directTitle": "Best Rate, Booked Direct",
+    "directDescription": "We'll match it — or beat it by 10%"
+  },
   "welcome": {
-    "tagline": "4 STAR GRADED",
-    "title": "Welcome to 4 Star Service at Cape Town's Hidden Gems!",
-    "description": "Discover our award winning Accommodation and the best hospitality that Cape Town has to offer.",
-    "body": "Whether you crave the vibrancy of the city or the serenity of the sea, Urban Elephant's 4 Star Graded hotels offer diverse options to cater to your desires. Join us in redefining hospitality, where your comfort and enjoyment take centre stage. At Urban Elephant, you're not just a guest; you're a part of our family."
+    "tagline": "OFFICIALLY GRADED",
+    "title": "Hidden gems, hotel-grade hospitality.",
+    "description": "Officially graded by the Tourism Grading Council of South Africa, professionally managed, and run by a family who looks after every guest like their own.",
+    "body": "Whether you crave the vibrancy of the city or the serenity of the sea, every Urban Elephant property is officially graded — so what you book is exactly what you'll find. And then, because we're family-run, you get the bit no grading covers: people who actually look after you. At Urban Elephant, you're not just a guest; you're part of our family."
   },
   "properties": {
     "title": "Explore Our Locations",
     "subtitle": "BOOK YOUR STAY TODAY",
-    "description": "Each of our carefully curated properties offers a unique Cape Town experience",
+    "description": "Each property is officially graded — see the rating on every card.",
     "viewProperty": "Property Info",
     "starRating": "Star Rating",
     "amenities": "Amenities",
@@ -198,7 +206,7 @@
     "subtitle": "COMPLETE EXPERIENCE",
     "accommodation": {
       "title": "Luxury Accommodation",
-      "description": "Premium 4 Star graded apartments with stunning views and world-class amenities"
+      "description": "Officially graded apartments with stunning views, premium finishes, and hotel-style servicing."
     },
     "tours": {
       "title": "Tours & Transfers",
@@ -243,7 +251,7 @@
     }
   },
   "footer": {
-    "description": "Urban Elephant has fast become one of the top Destination Apartment Hotels in Cape Town. Graded 4 Star by the South African Grading Council. All of our locations are close to all major attractions that tourists and visitors love to visit.",
+    "description": "Urban Elephant has fast become one of Cape Town's top apartment hotels — officially graded by the Tourism Grading Council of South Africa, professionally managed, and a short walk from everything you came to see.",
     "sections": {
       "properties": "Properties",
       "services": "Services",
@@ -270,10 +278,15 @@
     "copyright": "All rights reserved."
   },
   "cta": {
-    "title": "Ready to Experience Cape Town?",
-    "description": "Book your Urban Elephant stay today. Best deals direct — always.",
+    "title": "Book direct. Stay graded.",
+    "description": "Best available rates, direct support, and the peace of mind that comes with officially graded accommodation.",
     "primary": "Book Now",
-    "secondary": "View Properties"
+    "secondary": "View Properties",
+    "trust": {
+      "graded": "Officially TGCSA Graded",
+      "bestRate": "Best Rate Guarantee",
+      "flexible": "Flexible Cancellation"
+    }
   },
   "notFound": {
     "title": "Page Not Found",

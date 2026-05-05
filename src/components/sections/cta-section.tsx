@@ -59,24 +59,14 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
 
           {/* Trust Indicators */}
           <ScrollReveal delay={0.6} className="mt-12 flex flex-wrap justify-center gap-6 text-white/80 text-sm">
-            <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              Best Rate Guarantee
-            </span>
-            <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              Flexible Cancellation
-            </span>
-            <span className="flex items-center gap-2">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-              </svg>
-              No Hidden Fees
-            </span>
+            {(["graded", "bestRate", "flexible"] as const).map((key) => (
+              <span key={key} className="flex items-center gap-2">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                {t(`trust.${key}`)}
+              </span>
+            ))}
           </ScrollReveal>
         </div>
       </div>

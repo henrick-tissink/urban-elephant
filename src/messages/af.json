@@ -47,23 +47,31 @@
     "ctaButton": "Kontak ons"
   },
   "hero": {
-    "tagline": "GEWAARBORGDE LAAGSTE PRYS OP DIREKTE BESPREKING",
+    "tagline": "AMPTELIK GEGRADEER · KAAPSTAD",
     "title": "Urban Elephant",
-    "subtitle": "By Urban Elephant Hotel & Toere is dit die seisoen om te ontspan en die stad se beste uitsigte in te drink. Beste aanbiedings direk — altyd.",
+    "subtitle": "Amptelik gegradeerde woonstelhotelle in Kaapstad se beste areas. Die spasie van 'n woonstel, die standaarde van 'n hotel — en 'n familie wat elke gas soos een van hul eie versorg.",
     "scrollDown": "Rol om te verken",
     "bestRate": "Beste Tarief Waarborg",
     "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
   },
+  "trust": {
+    "gradedTitle": "Amptelik TGCSA Gegradeer",
+    "gradedDescription": "Toerisme-graderingsraad van Suid-Afrika",
+    "managedTitle": "Professioneel Bestuur",
+    "managedDescription": "Hotel-gehalte stelsels, eienaar-gelei sorg",
+    "directTitle": "Beste Tarief, Direk Bespreek",
+    "directDescription": "Ons sal dit klop — of met 10% verbeter"
+  },
   "welcome": {
-    "tagline": "4 STER GEGRADEER",
-    "title": "Welkom by 4 Ster Diens by Kaapstad se Verborge Juwele!",
-    "description": "Ontdek ons bekroonde akkommodasie en die beste gasvryheid wat Kaapstad te bied het.",
-    "body": "Of jy nou die lewendigheid van die stad of die sereniteit van die see begeer, Urban Elephant se 4 Ster Gegradeerde hotelle bied diverse opsies om aan jou begeertes te voldoen. Sluit by ons aan in die herdefiniëring van gasvryheid, waar jou gemak en genot middelpunt staan. By Urban Elephant is jy nie net 'n gas nie; jy is deel van ons familie."
+    "tagline": "AMPTELIK GEGRADEER",
+    "title": "Verskuilde juwele, hotel-gehalte gasvryheid.",
+    "description": "Amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en gerun deur 'n familie wat elke gas soos hul eie versorg.",
+    "body": "Of jy nou die opwinding van die stad of die rustigheid van die see verkies, elke Urban Elephant-eiendom is amptelik gegradeer — sodat wat jy bespreek presies is wat jy kry. En omdat ons 'n familie-onderneming is, kry jy ook die deel wat geen gradering kan dek nie: mense wat regtig na jou omsien. By Urban Elephant is jy nie net 'n gas nie; jy is deel van ons familie."
   },
   "properties": {
     "title": "Verken Ons Liggings",
     "subtitle": "BESPREEK JOU VERBLYF VANDAG",
-    "description": "Elk van ons sorgvuldig gekose eiendomme bied 'n unieke Kaapstad-ervaring",
+    "description": "Elke eiendom is amptelik gegradeer — sien die gradering op elke kaart.",
     "viewProperty": "Eiendom Inligting",
     "starRating": "Stergradering",
     "amenities": "Geriewe",
@@ -198,7 +206,7 @@
     "subtitle": "VOLLEDIGE ERVARING",
     "accommodation": {
       "title": "Luukse Akkommodasie",
-      "description": "Premium 4 Ster gegradeerde woonstelle met pragtige uitsigte en wêreldklas-geriewe"
+      "description": "Amptelik gegradeerde woonstelle met pragtige uitsigte, premium afwerkings, en hotelstyl-versorging."
     },
     "tours": {
       "title": "Toere & Vervoer",
@@ -243,7 +251,7 @@
     }
   },
   "footer": {
-    "description": "Urban Elephant het vinnig een van die top Bestemming Woonstelhotelle in Kaapstad geword. 4 Ster gegradeer deur die Suid-Afrikaanse Graderingsraad. Al ons liggings is naby aan alle groot attraksies wat toeriste en besoekers graag besoek.",
+    "description": "Urban Elephant het vinnig een van Kaapstad se top woonstelhotelle geword — amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en 'n kort entjie van alles wat jy kom besoek het.",
     "sections": {
       "properties": "Eiendomme",
       "services": "Dienste",
@@ -270,10 +278,15 @@
     "copyright": "Alle regte voorbehou."
   },
   "cta": {
-    "title": "Gereed om Kaapstad te Ervaar?",
-    "description": "Bespreek vandag jou Urban Elephant verblyf. Beste aanbiedings direk — altyd.",
+    "title": "Bespreek direk. Bly gegradeer.",
+    "description": "Beste beskikbare tariewe, direkte ondersteuning, en die gemoedsrus wat saamkom met amptelik gegradeerde akkommodasie.",
     "primary": "Bespreek Nou",
-    "secondary": "Sien Eiendomme"
+    "secondary": "Sien Eiendomme",
+    "trust": {
+      "graded": "Amptelik TGCSA Gegradeer",
+      "bestRate": "Beste Tarief Waarborg",
+      "flexible": "Buigsame Kansellasie"
+    }
   },
   "notFound": {
     "title": "Bladsy Nie Gevind",

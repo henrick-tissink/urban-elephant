@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Hero } from "@/components/sections/hero";
+import { TrustStrip } from "@/components/sections/trust-strip";
 import { PropertiesGrid } from "@/components/sections/properties-grid";
 import { AboutPreview } from "@/components/sections/about-preview";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -21,6 +22,7 @@ export default async function HomePage({ params }: Props) {
   return (
     <>
       <Hero />
+      <TrustStrip />
       <PropertiesGrid properties={properties} />
       <AboutPreview />
       <Testimonials reviews={reviews} />
