@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Lato, Fraunces } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -8,6 +8,14 @@ const lato = Lato({
   subsets: ["latin"],
   display: "swap",
   weight: ["100", "300", "400", "700", "900"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
+  subsets: ["latin"],
+  display: "swap",
+  style: ["normal", "italic"],
+  axes: ["opsz"],
 });
 
 const biko = localFont({
@@ -81,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${lato.variable} ${biko.variable}`} suppressHydrationWarning>
+    <html className={`${lato.variable} ${fraunces.variable} ${biko.variable}`} suppressHydrationWarning>
       <body className="antialiased">{children}</body>
     </html>
   );
