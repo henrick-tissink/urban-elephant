@@ -87,15 +87,24 @@ h3, h4, h5, h6 {
   font-variation-settings: "opsz" 36;
 }
 
-/* Biko accent — applied wherever bold is requested, mirroring the
-   original Astro site's `.font-bold { font-family: 'Biko' }` rule.
-   Biko is a single-weight display face, so the browser will faux-bold
-   it where heavier weights are needed. */
+/* Biko accent — mirrors the original Astro site's `.font-bold` rule
+   and extends it to the uppercase-tracked eyebrow pattern used across
+   the new site. Biko is a single-weight display face; the browser
+   faux-bolds where heavier weights are needed. Headings stay in
+   Fraunces because they are sentence-case, not uppercase, so they
+   never match these selectors. */
 .font-bold,
 .font-extrabold,
 .font-black,
 strong,
-b {
+b,
+.uppercase.tracking-wider,
+.uppercase.tracking-widest,
+.uppercase[class*="tracking-["] {
+  font-family: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-biko {
   font-family: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
 }
 
