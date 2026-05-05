@@ -33,7 +33,7 @@
   --color-charcoal-900: #0f1012;
 
   --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-display: var(--font-biko), ui-serif, Georgia, serif;
 }
 
 :root {
@@ -74,17 +74,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display), ui-serif, Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.015em;
-  font-variation-settings: "opsz" 72;
 }
 h1 {
-  font-weight: 300;
   letter-spacing: -0.025em;
-  font-variation-settings: "opsz" 144;
 }
 h3, h4, h5, h6 {
-  font-weight: 500;
   letter-spacing: -0.01em;
-  font-variation-settings: "opsz" 36;
 }
 
 /* Selection - Pink highlight */
@@ -156,11 +151,9 @@ a:focus-visible {
   }
 }
 
-/* Editorial drop cap — first letter of a paragraph in massive Fraunces */
+/* Editorial drop cap — first letter of a paragraph in display font */
 .drop-cap::first-letter {
   font-family: var(--font-display), serif;
-  font-weight: 300;
-  font-variation-settings: "opsz" 144;
   font-size: 5.5rem;
   line-height: 0.9;
   float: left;
@@ -170,12 +163,9 @@ a:focus-visible {
   letter-spacing: -0.04em;
 }
 
-/* Editorial pull quote — oversized italic Fraunces */
+/* Editorial pull quote — oversized display font */
 .pull-quote {
   font-family: var(--font-display), serif;
-  font-weight: 300;
-  font-style: italic;
-  font-variation-settings: "opsz" 144;
   font-size: clamp(2rem, 4.5vw, 3.5rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
