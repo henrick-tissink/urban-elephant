@@ -32,8 +32,8 @@
   --color-charcoal-800: #1a1c1e;
   --color-charcoal-900: #0f1012;
 
-  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -65,47 +65,50 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+  font-synthesis: weight style;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography — editorial defaults for headings */
+/* Typography — Biko is the only site font. It's a single-weight (400)
+   static OTF, so all "lighter than 400" requests render at 400 (browsers
+   don't synthesize lighter), and "heavier than 500" requests get
+   browser faux-bold. Heading defaults are bumped so strokes hold up at
+   display sizes. */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), ui-serif, Georgia, serif;
-  font-weight: 400;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
   letter-spacing: -0.015em;
-  font-variation-settings: "opsz" 72;
 }
 h1 {
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: -0.025em;
-  font-variation-settings: "opsz" 144;
 }
 h3, h4, h5, h6 {
   font-weight: 500;
   letter-spacing: -0.01em;
-  font-variation-settings: "opsz" 36;
 }
 
-/* Biko accent — mirrors the original Astro site's `.font-bold` rule
-   and extends it to the uppercase-tracked eyebrow pattern used across
-   the new site. Biko is a single-weight display face; the browser
-   faux-bolds where heavier weights are needed. Headings stay in
-   Fraunces because they are sentence-case, not uppercase, so they
-   never match these selectors. */
-.font-bold,
-.font-extrabold,
-.font-black,
-strong,
-b,
-.uppercase.tracking-wider,
-.uppercase.tracking-widest,
-.uppercase[class*="tracking-["] {
-  font-family: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
+/* Faux-bold rescue: any heading with a "lighter than normal" weight
+   class would otherwise render at Biko's native 400 and look spindly
+   at display sizes. Bump to 600 so the browser faux-bolds. Body
+   paragraphs using font-light stay at 400 — readable native Biko. */
+:is(h1, h2, h3, h4, h5, h6).font-thin,
+:is(h1, h2, h3, h4, h5, h6).font-extralight,
+:is(h1, h2, h3, h4, h5, h6).font-light,
+:is(h1, h2, h3, h4, h5, h6).font-normal {
+  font-weight: 600;
 }
 
-.font-biko {
-  font-family: var(--font-biko), ui-sans-serif, system-ui, sans-serif;
+/* Same rescue for non-heading elements rendered at display sizes
+   (404 page giant numerals, property hero name spans, drop caps, etc.) */
+[class*="text-5xl"].font-light,
+[class*="text-6xl"].font-light,
+[class*="text-7xl"].font-light,
+[class*="text-8xl"].font-light,
+[class*="text-9xl"].font-light,
+[class*="text-[clamp"].font-light {
+  font-weight: 600;
 }
 
 /* Selection - Pink highlight */
@@ -177,11 +180,10 @@ a:focus-visible {
   }
 }
 
-/* Editorial drop cap — first letter of a paragraph in massive Fraunces */
+/* Editorial drop cap — first letter in display Biko, faux-bold for stroke weight */
 .drop-cap::first-letter {
-  font-family: var(--font-display), serif;
-  font-weight: 300;
-  font-variation-settings: "opsz" 144;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
   font-size: 5.5rem;
   line-height: 0.9;
   float: left;
@@ -191,12 +193,10 @@ a:focus-visible {
   letter-spacing: -0.04em;
 }
 
-/* Editorial pull quote — oversized italic Fraunces */
+/* Editorial pull quote — oversized Biko, faux-bold for stroke weight */
 .pull-quote {
-  font-family: var(--font-display), serif;
-  font-weight: 300;
-  font-style: italic;
-  font-variation-settings: "opsz" 144;
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
   font-size: clamp(2rem, 4.5vw, 3.5rem);
   line-height: 1.1;
   letter-spacing: -0.02em;
