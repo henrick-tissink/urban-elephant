@@ -1,28 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Check, ShieldCheck } from "lucide-react";
+import { Check } from "lucide-react";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 
 function TGCSABadge() {
   return (
-    <div className="relative shrink-0">
-      <ShieldCheck
-        strokeWidth={1.4}
-        className="w-9 h-9 text-[var(--color-brand-anchor)]"
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 flex items-center justify-center pt-1">
-        <div className="flex gap-[1px]">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <span
-              key={i}
-              className="w-[3px] h-[3px] rounded-full bg-[var(--color-brand-anchor)]"
-            />
-          ))}
-        </div>
-      </div>
-    </div>
+    <Image
+      src="/badges/tgcsa-star.png"
+      alt="Tourism Grading Council of South Africa"
+      width={44}
+      height={44}
+      className="shrink-0 w-11 h-11 object-contain"
+      priority
+    />
   );
 }
 
