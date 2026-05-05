@@ -13,6 +13,7 @@ interface FooterProps {
 
 export function Footer({ settings, properties = [] }: FooterProps) {
   const t = useTranslations("footer");
+  const tCommon = useTranslations("common");
 
   const serviceLinks = [
     { key: "tours", href: "/tours" },
@@ -46,6 +47,21 @@ export function Footer({ settings, properties = [] }: FooterProps) {
             <p className="text-stone-400 mb-6 max-w-sm leading-relaxed">
               {t("description")}
             </p>
+
+            {/* TGCSA credential — visual proof for the prose above */}
+            <div className="flex items-center gap-3 mb-6">
+              <Image
+                src="/badges/tgcsa-star.png"
+                alt="Tourism Grading Council of South Africa"
+                width={36}
+                height={36}
+                className="w-9 h-9 object-contain shrink-0"
+              />
+              <p className="text-stone-500 text-[11px] uppercase tracking-[0.18em] leading-snug max-w-[16rem]">
+                {tCommon("gradedCredential")}
+              </p>
+            </div>
+
             <div className="flex gap-4">
               {settings?.social?.instagram && (
                 <a

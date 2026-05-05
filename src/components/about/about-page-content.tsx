@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -55,6 +56,20 @@ export function AboutPageContent() {
                 <p>{t("story3")}</p>
                 <p>{t("story4")}</p>
                 <p className="text-[#24272a]/80">{t("team")}</p>
+              </div>
+
+              {/* Credential — family voice meets official grading */}
+              <div className="mt-10 pt-8 border-t border-stone-200 flex items-center gap-4">
+                <Image
+                  src="/badges/tgcsa-star.png"
+                  alt="Tourism Grading Council of South Africa"
+                  width={48}
+                  height={48}
+                  className="w-12 h-12 object-contain shrink-0"
+                />
+                <p className="text-stone-500 text-xs uppercase tracking-[0.2em] leading-snug">
+                  {tCommon("gradedCredential")}
+                </p>
               </div>
             </ScrollReveal>
           </div>

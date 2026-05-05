@@ -18,7 +18,8 @@
     "perDay": "per dag",
     "from": "Vanaf",
     "seeMore": "Sien Meer",
-    "propertyInfo": "Eiendom Inligting"
+    "propertyInfo": "Eiendom Inligting",
+    "gradedCredential": "Amptelik Gegradeer deur die Toerisme-graderingsraad van Suid-Afrika"
   },
   "navigation": {
     "home": "Tuis",
@@ -295,7 +296,7 @@
   },
   "meta": {
     "siteName": "Urban Elephant",
-    "defaultTitle": "Urban Elephant | Eksklusiewe Eiendomme in Kaapstad",
-    "defaultDescription": "Ontdek Urban Elephant se bespreekte 4 STER Luukse verblywe in Kaapstad. Verken pragtig versierdo eiendomme met premium geriewe vir 'n onvergeetlike verblyf. Bekroon."
+    "defaultTitle": "Urban Elephant | Amptelik Gegradeerde Woonstelhotelle in Kaapstad",
+    "defaultDescription": "Amptelik gegradeerde woonstelhotelle in Kaapstad se beste areas — TGCSA-gegradeer, professioneel bestuur, en familie-bestuur. Bespreek direk vir die beste tarief."
   }
 }

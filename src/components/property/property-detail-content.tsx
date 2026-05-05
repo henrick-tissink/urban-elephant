@@ -62,10 +62,18 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-6">
                 {stars > 0 && (
-                  <div className="flex items-center gap-1 text-[var(--color-brand-soft)]">
-                    {Array.from({ length: stars }).map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                    ))}
+                  <div
+                    className="flex items-center gap-2"
+                    title="Officially graded by the Tourism Grading Council of South Africa"
+                  >
+                    <div className="flex items-center gap-1 text-[var(--color-brand-soft)]">
+                      {Array.from({ length: stars }).map((_, i) => (
+                        <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                      ))}
+                    </div>
+                    <span className="text-white/60 text-[10px] uppercase tracking-[0.2em] font-medium">
+                      TGCSA
+                    </span>
                   </div>
                 )}
                 <span className="text-white/70 text-xs uppercase tracking-[0.3em]">

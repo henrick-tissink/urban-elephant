@@ -92,10 +92,18 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                             № {indexLabel}
                           </span>
                           {stars > 0 && (
-                            <div className="flex items-center gap-0.5 text-[var(--color-brand-anchor)]">
-                              {Array.from({ length: stars }).map((_, i) => (
-                                <Star key={i} className="w-3 h-3 fill-current" />
-                              ))}
+                            <div
+                              className="flex items-center gap-1.5 text-[var(--color-brand-anchor)]"
+                              title="Officially graded by the Tourism Grading Council of South Africa"
+                            >
+                              <div className="flex items-center gap-0.5">
+                                {Array.from({ length: stars }).map((_, i) => (
+                                  <Star key={i} className="w-3 h-3 fill-current" />
+                                ))}
+                              </div>
+                              <span className="text-stone-400 text-[10px] uppercase tracking-[0.2em] font-medium">
+                                TGCSA
+                              </span>
                             </div>
                           )}
                           <span className="text-stone-400 text-xs uppercase tracking-[0.2em]">

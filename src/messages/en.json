@@ -18,7 +18,8 @@
     "perDay": "per day",
     "from": "From",
     "seeMore": "See More",
-    "propertyInfo": "Property Info"
+    "propertyInfo": "Property Info",
+    "gradedCredential": "Officially Graded by the Tourism Grading Council of South Africa"
   },
   "navigation": {
     "home": "Home",
@@ -295,7 +296,7 @@
   },
   "meta": {
     "siteName": "Urban Elephant",
-    "defaultTitle": "Urban Elephant | Exclusive Properties in Cape Town",
-    "defaultDescription": "Discover Urban Elephant's bespoke 4 STAR Luxurious stays in Cape Town. Explore beautifully decorated properties with premium amenities for a memorable stay. Award winning."
+    "defaultTitle": "Urban Elephant | Officially Graded Apartment Hotels in Cape Town",
+    "defaultDescription": "Officially graded apartment hotels in Cape Town's best locations — TGCSA-graded, professionally managed, and family-run. Book direct for the best rate."
   }
 }
