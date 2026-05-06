@@ -36,9 +36,14 @@ export function AboutPageContent() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <ScrollReveal direction="left" className="relative">
               <div className="aspect-[4/5] bg-stone-200 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-stone-300 to-stone-400 flex items-center justify-center">
-                  <span className="text-stone-500">Founder Image</span>
-                </div>
+                <Image
+                  src="/images/site/founder.jpg"
+                  alt={`${t("founderName")} — ${t("founderTitle")}`}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                  priority
+                />
               </div>
               <Parallax speed={0.2} direction="up" className="absolute -bottom-8 -right-8 w-48 h-48 -z-10">
                 <div className="w-full h-full bg-[var(--color-brand-anchor)]" />

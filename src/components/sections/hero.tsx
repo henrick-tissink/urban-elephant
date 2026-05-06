@@ -103,8 +103,9 @@ export function Hero() {
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/70" />
+        {/* Gradient Overlay — strengthened top scrim so the header logo and
+            pink tagline keep contrast against bright/golden video frames */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/75" />
       </div>
 
       {/* Content */}
@@ -115,7 +116,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs md:text-sm mb-6 font-bold"
+            className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs md:text-sm mb-6 font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
           >
             {t("tagline")}
           </motion.p>
