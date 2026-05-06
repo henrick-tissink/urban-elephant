@@ -49,8 +49,10 @@
   },
   "hero": {
     "tagline": "OFFICIALLY GRADED · CAPE TOWN",
-    "title": "Urban Elephant",
-    "subtitle": "Officially graded apartment hotels in Cape Town's best locations. The space of an apartment, the standards of a hotel — and a family who looks after every guest like one of our own.",
+    "title": "Luxury 4-Star Apartments in Cape Town",
+    "subtitle": "Hotel-style comfort. Design-led spaces. The freedom of apartment living with the care and consistency Urban Elephant is known for.",
+    "primaryCta": "Explore Apartments",
+    "secondaryCta": "Book Direct",
     "scrollDown": "Scroll to explore",
     "bestRate": "Best Rate Guarantee",
     "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
@@ -63,11 +65,33 @@
     "directTitle": "Best Rate, Booked Direct",
     "directDescription": "We'll match it — or beat it by 10%"
   },
+  "whyBook": {
+    "eyebrow": "WHY BOOK WITH US",
+    "title": "Hotel-grade hospitality, in apartment form.",
+    "items": {
+      "graded": {
+        "title": "4-Star Graded",
+        "description": "Consistent quality, professional hospitality standards and trusted service across every stay."
+      },
+      "locations": {
+        "title": "Prime Locations",
+        "description": "Stay in Cape Town's most desirable neighbourhoods, close to restaurants, beaches, nightlife and business hubs."
+      },
+      "comfort": {
+        "title": "Hotel-Style Comfort",
+        "description": "Luxury linens, fast WiFi, fully equipped kitchens, concierge support and seamless self check-in."
+      },
+      "managed": {
+        "title": "Professionally Managed",
+        "description": "Unlike ordinary short-term rentals, every Urban Elephant property is operated with dedicated hospitality teams and full guest support."
+      }
+    }
+  },
   "welcome": {
-    "tagline": "OFFICIALLY GRADED",
-    "title": "Hidden gems, hotel-grade hospitality.",
-    "description": "Officially graded by the Tourism Grading Council of South Africa, professionally managed, and run by a family who looks after every guest like their own.",
-    "body": "Whether you crave the vibrancy of the city or the serenity of the sea, every Urban Elephant property is officially graded — so what you book is exactly what you'll find. And then, because we're family-run, you get the bit no grading covers: people who actually look after you. At Urban Elephant, you're not just a guest; you're part of our family."
+    "tagline": "AT URBAN ELEPHANT",
+    "title": "Where you stay should feel as memorable as the city itself.",
+    "description": "From stylish city apartments to coastal escapes, every Urban Elephant stay is carefully designed to combine comfort, personality and hotel-level consistency.",
+    "body": "Professionally managed, beautifully located — this is Cape Town accommodation, the Urban Elephant way."
   },
   "properties": {
     "title": "Explore Our Locations",
@@ -199,14 +223,14 @@
     },
     "cta": {
       "title": "Ready to Experience Cape Town?",
-      "description": "Let us show you our city through local eyes. Browse our properties or get in touch to plan your perfect Cape Town stay."
+      "description": "Let us show you our city through local eyes. Browse our 4-star apartments or get in touch to plan your Cape Town stay."
     }
   },
   "services": {
     "title": "Our Services",
     "subtitle": "COMPLETE EXPERIENCE",
     "accommodation": {
-      "title": "Luxury Accommodation",
+      "title": "Luxury Apartments",
       "description": "Officially graded apartments with stunning views, premium finishes, and hotel-style servicing."
     },
     "tours": {
@@ -252,6 +276,7 @@
     }
   },
   "footer": {
+    "tagline": "The brand that loves you back.",
     "description": "Urban Elephant has fast become one of Cape Town's top apartment hotels — officially graded by the Tourism Grading Council of South Africa, professionally managed, and a short walk from everything you came to see.",
     "sections": {
       "properties": "Properties",

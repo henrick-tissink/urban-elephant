@@ -49,8 +49,10 @@
   },
   "hero": {
     "tagline": "AMPTELIK GEGRADEER · KAAPSTAD",
-    "title": "Urban Elephant",
-    "subtitle": "Amptelik gegradeerde woonstelhotelle in Kaapstad se beste areas. Die spasie van 'n woonstel, die standaarde van 'n hotel — en 'n familie wat elke gas soos een van hul eie versorg.",
+    "title": "Luukse 4-Ster Woonstelle in Kaapstad",
+    "subtitle": "Hotel-styl gemak. Ontwerp-gedrewe ruimtes. Die vryheid van woonstellewe met die sorg en konsekwentheid waarvoor Urban Elephant bekend is.",
+    "primaryCta": "Verken Woonstelle",
+    "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
     "bestRate": "Beste Tarief Waarborg",
     "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
@@ -63,11 +65,33 @@
     "directTitle": "Beste Tarief, Direk Bespreek",
     "directDescription": "Ons sal dit klop — of met 10% verbeter"
   },
+  "whyBook": {
+    "eyebrow": "WAAROM BESPREEK BY ONS",
+    "title": "Hotel-gehalte gasvryheid, in woonstelvorm.",
+    "items": {
+      "graded": {
+        "title": "4-Ster Gegradeer",
+        "description": "Konsekwente gehalte, professionele gasvryheidstandaarde en vertroude diens by elke verblyf."
+      },
+      "locations": {
+        "title": "Premium Liggings",
+        "description": "Bly in Kaapstad se gewildste woonbuurte, naby restaurante, strande, naglewe en sake-sentrums."
+      },
+      "comfort": {
+        "title": "Hotel-Styl Gemak",
+        "description": "Luukse linne, vinnige WiFi, volledig toegeruste kombuise, concierge-ondersteuning en naatlose self-aanmelding."
+      },
+      "managed": {
+        "title": "Professioneel Bestuur",
+        "description": "Anders as gewone korttermyn-verhurings, word elke Urban Elephant-eiendom bedryf met toegewyde gasvryheidspanne en volledige gas-ondersteuning."
+      }
+    }
+  },
   "welcome": {
-    "tagline": "AMPTELIK GEGRADEER",
-    "title": "Verskuilde juwele, hotel-gehalte gasvryheid.",
-    "description": "Amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en gerun deur 'n familie wat elke gas soos hul eie versorg.",
-    "body": "Of jy nou die opwinding van die stad of die rustigheid van die see verkies, elke Urban Elephant-eiendom is amptelik gegradeer — sodat wat jy bespreek presies is wat jy kry. En omdat ons 'n familie-onderneming is, kry jy ook die deel wat geen gradering kan dek nie: mense wat regtig na jou omsien. By Urban Elephant is jy nie net 'n gas nie; jy is deel van ons familie."
+    "tagline": "BY URBAN ELEPHANT",
+    "title": "Waar jy bly behoort net so onvergeetlik te voel soos die stad self.",
+    "description": "Van stylvolle stadswoonstelle tot kuswegtrekkings, elke Urban Elephant-verblyf is sorgvuldig ontwerp om gemak, persoonlikheid en hotel-vlak konsekwentheid te kombineer.",
+    "body": "Professioneel bestuur, pragtig geleë — dit is Kaapstad-akkommodasie, die Urban Elephant manier."
   },
   "properties": {
     "title": "Verken Ons Liggings",
@@ -199,14 +223,14 @@
     },
     "cta": {
       "title": "Gereed om Kaapstad te Ervaar?",
-      "description": "Laat ons jou ons stad deur plaaslike oë wys. Blaai deur ons eiendomme of kontak ons om jou perfekte Kaapstad-verblyf te beplan."
+      "description": "Laat ons jou ons stad deur plaaslike oë wys. Blaai deur ons 4-ster woonstelle of kontak ons om jou Kaapstad-verblyf te beplan."
     }
   },
   "services": {
     "title": "Ons Dienste",
     "subtitle": "VOLLEDIGE ERVARING",
     "accommodation": {
-      "title": "Luukse Akkommodasie",
+      "title": "Luukse Woonstelle",
       "description": "Amptelik gegradeerde woonstelle met pragtige uitsigte, premium afwerkings, en hotelstyl-versorging."
     },
     "tours": {
@@ -252,6 +276,7 @@
     }
   },
   "footer": {
+    "tagline": "Die handelsmerk wat jou terugliefhet.",
     "description": "Urban Elephant het vinnig een van Kaapstad se top woonstelhotelle geword — amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en 'n kort entjie van alles wat jy kom besoek het.",
     "sections": {
       "properties": "Eiendomme",

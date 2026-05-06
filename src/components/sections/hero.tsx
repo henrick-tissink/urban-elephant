@@ -11,7 +11,6 @@ import { MagneticButton } from "@/components/animations/magnetic-button";
 
 export function Hero() {
   const t = useTranslations("hero");
-  const tCommon = useTranslations("common");
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -150,13 +149,13 @@ export function Hero() {
           >
             <MagneticButton>
               <Button variant="primary" size="lg" asChild>
-                <Link href="/properties">{tCommon("viewDetails")}</Link>
+                <Link href="/properties">{t("primaryCta")}</Link>
               </Button>
             </MagneticButton>
             <MagneticButton>
               <Button variant="outlineLight" size="lg" asChild>
                 <a href="https://book.nightsbridge.com" target="_blank" rel="noopener noreferrer">
-                  {tCommon("bookNow")}
+                  {t("secondaryCta")}
                 </a>
               </Button>
             </MagneticButton>

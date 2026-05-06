@@ -35,7 +35,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-6">
+            <Link href="/" className="inline-block mb-4">
               <Image
                 src="/logo.svg"
                 alt="Urban Elephant"
@@ -44,6 +44,9 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                 className="h-14 w-auto"
               />
             </Link>
+            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.2em] text-xs font-bold mb-6">
+              {t("tagline")}
+            </p>
             <p className="text-stone-400 mb-6 max-w-sm leading-relaxed">
               {t("description")}
             </p>

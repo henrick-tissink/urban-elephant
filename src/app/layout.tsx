@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Urban Elephant",
   },
   description:
-    "Experience Cape Town like never before. Urban Elephant offers luxury apartment hotels with stunning views, personalized service, and unforgettable experiences in the Mother City.",
+    "Officially graded 4-star luxury apartments in Cape Town. Hotel-style comfort, design-led spaces, and the consistency of professional management — Urban Elephant.",
   keywords: [
     "Cape Town hotels",
     "luxury apartments",
