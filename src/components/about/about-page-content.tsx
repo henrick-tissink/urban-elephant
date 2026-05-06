@@ -37,7 +37,7 @@ export function AboutPageContent() {
             <ScrollReveal direction="left" className="relative">
               <div className="aspect-[4/5] bg-stone-200 relative overflow-hidden">
                 <Image
-                  src="/images/site/founder.jpg"
+                  src="/images/site/founder.png"
                   alt={`${t("founderName")} — ${t("founderTitle")}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
