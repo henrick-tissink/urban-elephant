@@ -8,11 +8,10 @@ import type {
   SiteSettings,
 } from "@/types";
 
-const propertyGallery = (slug: string, count: number, lastIsWebp = false): string[] =>
+const propertyGallery = (slug: string, count: number): string[] =>
   Array.from({ length: count }, (_, i) => {
     const num = String(i + 1).padStart(2, "0");
-    const ext = lastIsWebp && i === count - 1 ? "webp" : "jpg";
-    return `/images/properties/${slug}/${num}.${ext}`;
+    return `/images/properties/${slug}/${num}.jpg`;
   });
 
 const amenities = (names: string[]) => names.map((name) => ({ name }));
@@ -52,7 +51,7 @@ export const properties: Property[] = [
     ],
     location: "Cape Town CBD, South Africa",
     heroImage: "/images/properties/16-on-bree/hero.jpg",
-    gallery: propertyGallery("16-on-bree", 27, true),
+    gallery: propertyGallery("16-on-bree", 35),
     video: "/videos/properties/16-on-bree.mp4",
     amenities: amenities([
       "Daily Housekeeping",
@@ -89,7 +88,7 @@ export const properties: Property[] = [
     location: "117 Strand Street, Cape Town",
     address: "117 Strand Street, Cape Town, South Africa",
     heroImage: "/images/properties/the-rose/hero.jpg",
-    gallery: propertyGallery("the-rose", 5),
+    gallery: propertyGallery("the-rose", 8),
     amenities: amenities([
       "Daily Housekeeping",
       "Airconditioning",
@@ -122,7 +121,7 @@ export const properties: Property[] = [
     ],
     location: "De Waterkant, Cape Town",
     heroImage: "/images/properties/the-docklands/hero.jpg",
-    gallery: propertyGallery("the-docklands", 8),
+    gallery: propertyGallery("the-docklands", 12),
     video: "/videos/properties/the-docklands.mp4",
     amenities: amenities([
       "Daily Housekeeping",
@@ -156,7 +155,7 @@ export const properties: Property[] = [
     ],
     location: "Regent Road, Sea Point, Cape Town",
     heroImage: "/images/properties/the-flamingo/hero.jpg",
-    gallery: propertyGallery("the-flamingo", 8),
+    gallery: propertyGallery("the-flamingo", 15),
     amenities: amenities([
       "Daily Housekeeping",
       "Airconditioning",
