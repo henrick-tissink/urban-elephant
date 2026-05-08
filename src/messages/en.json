@@ -320,7 +320,7 @@
     "metaDescription": "Join The Herd, Urban Elephant's loyalty program for guests who keep coming home. Members enjoy exclusive direct rates, priority booking, and recognition across every stay.",
     "eyebrow": "URBAN ELEPHANT LOYALTY",
     "title": "The Herd. For guests who keep coming home.",
-    "subtitle": "[NILES TO REWRITE] The Herd is Urban Elephant's loyalty program — for guests who choose to stay with us again, and again. Members are recognised, remembered, and rewarded with exclusive direct rates and priority booking across every Urban Elephant property.",
+    "subtitle": "The Herd is Urban Elephant's loyalty program — for guests who choose to stay with us again, and again. Members are recognised, remembered, and rewarded with exclusive direct rates and priority booking across every Urban Elephant property.",
     "whyEyebrow": "WHY THE HERD",
     "whyTitle": "Loyalty, memory, belonging — the way elephants do it.",
     "whyIntro": "Urban Elephant isn't trying to be a cold corporate hotel chain. We want guests to feel like they belong to something — a brand that remembers them and values them. Like an elephant herd, the idea is loyalty, connection, protection, memory, and returning home.",
@@ -346,22 +346,22 @@
     "benefitsTitle": "What being part of the Herd gets you.",
     "benefits": {
       "rates": {
-        "label": "[NILES TO CONFIRM]",
+        "label": "Member benefit",
         "title": "Member-only direct rates",
         "description": "Exclusive pricing on direct bookings, applied automatically when you sign in as a member."
       },
       "priority": {
-        "label": "[NILES TO CONFIRM]",
+        "label": "Member benefit",
         "title": "Priority booking",
         "description": "Early access to new properties and peak-season availability before public release."
       },
       "amenities": {
-        "label": "[NILES TO CONFIRM]",
+        "label": "Member benefit",
         "title": "Welcome amenities",
         "description": "A small thank-you waiting in your apartment whenever you stay — chosen by Niles, not a corporate template."
       },
       "offers": {
-        "label": "[NILES TO CONFIRM]",
+        "label": "Member benefit",
         "title": "Exclusive offers",
         "description": "Members-first access to seasonal promotions, partner experiences, and Cape Town happenings."
       }
@@ -375,10 +375,14 @@
       "submit": "Join the Herd",
       "submitting": "Joining…",
       "disclaimer": "By joining you agree to receive occasional emails from Urban Elephant about your membership. Unsubscribe any time.",
-      "successEyebrow": "WELCOME TO THE HERD",
-      "successTitle": "You're in.",
-      "successBody": "Check your inbox for your welcome email and your member discount code. We're glad you're with us."
-    }
+      "successEyebrow": "ALMOST THERE",
+      "successTitle": "We've opened your email — hit send.",
+      "successBody": "Your draft signup is ready in your email client, addressed to Karin. Send it through and we'll set you up in the Herd, send your welcome and your member discount code. (We're rolling out automatic signup soon — for now, this gets us your details directly.)"
+    },
+    "bookEyebrow": "MEMBERS BOOK DIRECT",
+    "bookTitle": "Already in the Herd? Book direct, get your member rate.",
+    "bookDescription": "Once you've joined, your member discount code will arrive by email. Apply it on any direct booking — that's how the loyalty rate is honoured today, and the system will become automatic as the program rolls out.",
+    "bookCta": "Book Direct"
   },
   "notFound": {
     "title": "Page Not Found",

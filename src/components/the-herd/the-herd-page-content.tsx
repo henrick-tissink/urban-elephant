@@ -9,20 +9,28 @@ import { MagneticButton } from "@/components/animations/magnetic-button";
 const reasonKeys = ["loyalty", "protection", "belonging", "premium"] as const;
 const benefitKeys = ["rates", "priority", "amenities", "offers"] as const;
 
+const SIGNUP_RECIPIENT = "karin@urbanelephant.co.za";
+const BOOK_DIRECT_URL = "https://book.nightsbridge.com/30034";
+
 export function TheHerdPageContent() {
   const t = useTranslations("theHerd");
 
-  const [formState, setFormState] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [formState, setFormState] = useState<"idle" | "submitting" | "success">("idle");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // Stopgap until Marshall wires the backend: opens the user's email
+  // client with a pre-filled signup to Karin. Their email proves intent
+  // and gives Karin the data she needs to onboard them manually. The
+  // success state is honest — it tells the user the email was opened
+  // and asks them to send it.
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormState("submitting");
-    // TODO (Marshall): wire to backend / membership database. Until then,
-    // log the signup and show the success state so the page is fully
-    // navigable end-to-end.
-    console.info("[The Herd] join request:", { name, email });
+    const subject = encodeURIComponent("The Herd — new member signup");
+    const body = encodeURIComponent(
+      `New Herd member signup\n\nName: ${name}\nEmail: ${email}\n\n— Sent from urbanelephant.co.za/the-herd`,
+    );
+    window.location.href = `mailto:${SIGNUP_RECIPIENT}?subject=${subject}&body=${body}`;
     setFormState("success");
   };
 
@@ -185,6 +193,35 @@ export function TheHerdPageContent() {
               )}
             </ScrollReveal>
           </div>
+        </div>
+      </section>
+
+      {/* Book direct — closes the loop for existing/returning members */}
+      <section className="py-20 lg:py-28 bg-[#24272a] text-white relative overflow-hidden">
+        <div
+          className="absolute -top-1/3 -right-1/4 w-[80%] h-[160%] opacity-25 blur-3xl pointer-events-none"
+          style={{ background: "var(--gradient-brand)" }}
+          aria-hidden
+        />
+        <div className="relative container mx-auto px-6 lg:px-12 text-center">
+          <ScrollReveal className="max-w-2xl mx-auto">
+            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-xs md:text-sm font-bold mb-5">
+              {t("bookEyebrow")}
+            </p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-white leading-tight tracking-tight text-balance mb-6">
+              {t("bookTitle")}
+            </h2>
+            <p className="text-white/80 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+              {t("bookDescription")}
+            </p>
+            <MagneticButton>
+              <Button variant="primary" size="lg" asChild>
+                <a href={BOOK_DIRECT_URL} target="_blank" rel="noopener noreferrer">
+                  {t("bookCta")}
+                </a>
+              </Button>
+            </MagneticButton>
+          </ScrollReveal>
         </div>
       </section>
     </>

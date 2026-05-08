@@ -320,7 +320,7 @@
     "metaDescription": "Sluit aan by Die Trop, Urban Elephant se lojaliteitsprogram vir gaste wat aanhou tuis kom. Lede geniet eksklusiewe direkte tariewe, prioriteitsbesprekings, en herkenning by elke verblyf.",
     "eyebrow": "URBAN ELEPHANT LOJALITEIT",
     "title": "Die Trop. Vir gaste wat aanhou tuis kom.",
-    "subtitle": "[NILES MOET HERSKRYF] Die Trop is Urban Elephant se lojaliteitsprogram — vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
+    "subtitle": "Die Trop is Urban Elephant se lojaliteitsprogram — vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
     "whyEyebrow": "HOEKOM DIE TROP",
     "whyTitle": "Lojaliteit, geheue, behoort — die manier wat olifante dit doen.",
     "whyIntro": "Urban Elephant probeer nie 'n koue korporatiewe hotelketting wees nie. Ons wil hê gaste moet voel asof hulle aan iets behoort — 'n handelsmerk wat hulle onthou en waardeer. Soos 'n olifanttrop, gaan dit oor lojaliteit, verbinding, beskerming, geheue, en tuis terugkom.",
@@ -346,22 +346,22 @@
     "benefitsTitle": "Wat dit beteken om deel van Die Trop te wees.",
     "benefits": {
       "rates": {
-        "label": "[NILES MOET BEVESTIG]",
+        "label": "Lidvoordeel",
         "title": "Slegs-vir-lede direkte tariewe",
         "description": "Eksklusiewe pryse op direkte besprekings, outomaties toegepas wanneer jy as lid aanmeld."
       },
       "priority": {
-        "label": "[NILES MOET BEVESTIG]",
+        "label": "Lidvoordeel",
         "title": "Prioriteitsbesprekings",
         "description": "Vroeë toegang tot nuwe eiendomme en spitstyd-beskikbaarheid voor publieke vrystelling."
       },
       "amenities": {
-        "label": "[NILES MOET BEVESTIG]",
+        "label": "Lidvoordeel",
         "title": "Verwelkomingsgemakke",
         "description": "'n Klein dankie wat in jou woonstel wag wanneer jy bly — gekies deur Niles, nie 'n korporatiewe sjabloon nie."
       },
       "offers": {
-        "label": "[NILES MOET BEVESTIG]",
+        "label": "Lidvoordeel",
         "title": "Eksklusiewe aanbiedinge",
         "description": "Lede-eerste toegang tot seisoenale promosies, vennoot-ervarings, en Kaapstad-gebeure."
       }
@@ -375,10 +375,14 @@
       "submit": "Sluit aan by Die Trop",
       "submitting": "Sluit aan…",
       "disclaimer": "Deur aan te sluit stem jy in om af en toe e-posse van Urban Elephant te ontvang oor jou lidmaatskap. Skryf enige tyd uit.",
-      "successEyebrow": "WELKOM BY DIE TROP",
-      "successTitle": "Jy's in.",
-      "successBody": "Kyk in jou inbox vir jou verwelkomings-e-pos en jou lid-afslagkode. Ons is bly jy is by ons."
-    }
+      "successEyebrow": "AMPER DAAR",
+      "successTitle": "Ons het jou e-pos oopgemaak — druk stuur.",
+      "successBody": "Jou aanmeldings-e-pos is gereed in jou e-poskliënt, geadresseer aan Karin. Stuur dit deur en ons sal jou by Die Trop opstel, jou verwelkoming en jou lid-afslagkode stuur. (Outomatiese aanmelding kom binnekort — vir nou kry ons jou besonderhede direk.)"
+    },
+    "bookEyebrow": "LEDE BESPREEK DIREK",
+    "bookTitle": "Reeds deel van Die Trop? Bespreek direk, kry jou lidtarief.",
+    "bookDescription": "Sodra jy aangesluit het, sal jou lid-afslagkode per e-pos arriveer. Pas dit toe op enige direkte bespreking — dis hoe die lojaliteitstarief vandag toegepas word, en die stelsel word outomaties soos die program ontvou.",
+    "bookCta": "Bespreek Direk"
   },
   "notFound": {
     "title": "Bladsy Nie Gevind",
