@@ -34,7 +34,8 @@ const buttonVariants = cva(
         icon: "h-10 w-10",
       },
       rounded: {
-        default: "rounded-none",
+        none: "rounded-none",
+        default: "rounded-md",
         sm: "rounded-sm",
         md: "rounded-md",
         lg: "rounded-lg",

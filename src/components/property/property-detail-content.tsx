@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { Star, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
@@ -62,15 +63,8 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             <ScrollReveal>
               <div className="flex items-center gap-4 mb-6">
                 {stars > 0 && (
-                  <div
-                    className="flex items-center gap-2"
-                    title="Officially graded by the Tourism Grading Council of South Africa"
-                  >
-                    <div className="flex items-center gap-1 text-[var(--color-brand-soft)]">
-                      {Array.from({ length: stars }).map((_, i) => (
-                        <Star key={i} className="w-3.5 h-3.5 fill-current" />
-                      ))}
-                    </div>
+                  <div className="flex items-center gap-2">
+                    <TGCSAStars count={stars} size={16} />
                     <span className="text-white/60 text-[10px] uppercase tracking-[0.2em] font-medium">
                       TGCSA
                     </span>
@@ -214,11 +208,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
             </div>
             <div>
               <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">Grading</p>
-              <div className="flex items-center gap-1 text-[var(--color-brand-anchor)] mb-1">
-                {Array.from({ length: stars }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-current" />
-                ))}
-              </div>
+              <TGCSAStars count={stars} size={18} className="mb-2" />
               <p className="text-[#24272a] text-lg font-light leading-snug">
                 {stars} Star Apartment Hotel
               </p>

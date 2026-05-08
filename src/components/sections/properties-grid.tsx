@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { Star, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -92,15 +93,8 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                             № {indexLabel}
                           </span>
                           {stars > 0 && (
-                            <div
-                              className="flex items-center gap-1.5 text-[var(--color-brand-anchor)]"
-                              title="Officially graded by the Tourism Grading Council of South Africa"
-                            >
-                              <div className="flex items-center gap-0.5">
-                                {Array.from({ length: stars }).map((_, i) => (
-                                  <Star key={i} className="w-3 h-3 fill-current" />
-                                ))}
-                              </div>
+                            <div className="flex items-center gap-2">
+                              <TGCSAStars count={stars} size={14} />
                               <span className="text-stone-400 text-[10px] uppercase tracking-[0.2em] font-medium">
                                 TGCSA
                               </span>

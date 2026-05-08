@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import type { SiteSettings, PropertyCard } from "@/types";
 import Image from "next/image";
+import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 
 interface FooterProps {
   settings?: SiteSettings | null;
@@ -52,14 +53,8 @@ export function Footer({ settings, properties = [] }: FooterProps) {
             </p>
 
             {/* TGCSA credential — visual proof for the prose above */}
-            <div className="flex items-center gap-3 mb-6">
-              <Image
-                src="/badges/tgcsa-star.png"
-                alt="Tourism Grading Council of South Africa"
-                width={36}
-                height={36}
-                className="w-9 h-9 object-contain shrink-0"
-              />
+            <div className="flex items-start gap-3 mb-6">
+              <TGCSAStars count={4} size={20} className="mt-0.5" />
               <p className="text-stone-500 text-[11px] uppercase tracking-[0.18em] leading-snug max-w-[16rem]">
                 {tCommon("gradedCredential")}
               </p>

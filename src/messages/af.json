@@ -49,9 +49,10 @@
     "ctaButton": "Kontak ons"
   },
   "hero": {
-    "tagline": "AMPTELIK GEGRADEER · KAAPSTAD",
-    "title": "Luukse 4-Ster Woonstelle in Kaapstad",
+    "tagline": "URBAN ELEPHANT HOTELS · AMPTELIK GEGRADEER · KAAPSTAD",
+    "title": "Luukse 4-Ster Woonstelhotelle in Kaapstad",
     "subtitle": "Hotel-styl gemak. Ontwerp-gedrewe ruimtes. Die vryheid van woonstellewe met die sorg en konsekwentheid waarvoor Urban Elephant bekend is.",
+    "slipLine": "Die handelsmerk wat jou terugliefhet.",
     "primaryCta": "Verken Woonstelle",
     "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
@@ -347,8 +348,8 @@
     "benefits": {
       "rates": {
         "label": "Lidvoordeel",
-        "title": "Slegs-vir-lede direkte tariewe",
-        "description": "Eksklusiewe pryse op direkte besprekings, outomaties toegepas wanneer jy as lid aanmeld."
+        "title": "10% afslag op die laagste tarief",
+        "description": "Lede kry 10% afslag op die laagste beskikbare tarief wanneer hulle direk bespreek — toegepas met jou lidkode by uitklok."
       },
       "priority": {
         "label": "Lidvoordeel",
@@ -369,6 +370,7 @@
     "joinEyebrow": "SLUIT AAN BY DIE TROP",
     "joinTitle": "Teken in. Bly. Word onthou.",
     "joinDescription": "Los jou naam en e-pos en ons stuur jou ledeverwelkoming met jou direkte-bespreking-afslagkode. Geen vlakke, geen fynskrif, geen gemorspos nie — net 'n stiller, beter manier om by ons te bly.",
+    "eligibility": "Die Trop is vir gaste wat reeds ten minste een keer by ons gebly het. Ons bevestig jou verblyf voordat ons jou lidmaatskap aktiveer — dis hoe ons dit hou vir gaste wat ons reeds ken.",
     "form": {
       "nameLabel": "Voornaam",
       "emailLabel": "E-posadres",

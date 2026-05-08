@@ -160,6 +160,16 @@ export function Hero() {
               </Button>
             </MagneticButton>
           </motion.div>
+
+          {/* Brand slip-line — Niles' marketing tagline, present on every hero */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.8, duration: 0.6 }}
+            className="mt-10 text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-[11px] md:text-xs font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
+          >
+            {t("slipLine")}
+          </motion.p>
         </div>
 
         {/* Video Controls - Glass morphism style */}

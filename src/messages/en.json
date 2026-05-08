@@ -49,9 +49,10 @@
     "ctaButton": "Get in touch"
   },
   "hero": {
-    "tagline": "OFFICIALLY GRADED · CAPE TOWN",
-    "title": "Luxury 4-Star Apartments in Cape Town",
+    "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
+    "title": "Luxury 4-Star Apartment Hotels in Cape Town",
     "subtitle": "Hotel-style comfort. Design-led spaces. The freedom of apartment living with the care and consistency Urban Elephant is known for.",
+    "slipLine": "The brand that loves you back.",
     "primaryCta": "Explore Apartments",
     "secondaryCta": "Book Direct",
     "scrollDown": "Scroll to explore",
@@ -347,8 +348,8 @@
     "benefits": {
       "rates": {
         "label": "Member benefit",
-        "title": "Member-only direct rates",
-        "description": "Exclusive pricing on direct bookings, applied automatically when you sign in as a member."
+        "title": "10% off the lowest rate",
+        "description": "Members get 10% off the lowest available rate when booking direct — applied with your member code at checkout."
       },
       "priority": {
         "label": "Member benefit",
@@ -369,6 +370,7 @@
     "joinEyebrow": "JOIN THE HERD",
     "joinTitle": "Sign up. Stay. Be remembered.",
     "joinDescription": "Drop your name and email and we'll send your member welcome with your direct-booking discount code. No tiers, no fine print, no spam — just a quieter, better way to stay with us.",
+    "eligibility": "The Herd is for guests who've stayed with us at least once. We verify your stay before activating membership — that's how we keep it for guests we already know.",
     "form": {
       "nameLabel": "First name",
       "emailLabel": "Email address",

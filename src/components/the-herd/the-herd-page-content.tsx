@@ -133,9 +133,14 @@ export function TheHerdPageContent() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] leading-tight tracking-tight text-balance mb-6">
                 {t("joinTitle")}
               </h2>
-              <p className="text-stone-600 text-lg leading-relaxed">
+              <p className="text-stone-600 text-lg leading-relaxed mb-6">
                 {t("joinDescription")}
               </p>
+              <div className="border-l-2 border-[var(--color-brand-anchor)] pl-4 py-1">
+                <p className="text-[#24272a] text-sm leading-relaxed">
+                  {t("eligibility")}
+                </p>
+              </div>
             </ScrollReveal>
 
             <ScrollReveal direction="right">
