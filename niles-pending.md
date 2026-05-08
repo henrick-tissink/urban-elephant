@@ -1,40 +1,34 @@
-# WhatsApp message to Niles — pending items (updated)
+# WhatsApp message to Niles — pending items
 
-Resolved since the last message:
+Resolved over the past sessions:
 
 - 317 / 13th-floor → Bapata confirmed it's a Nightsbridge issue, off our list
-- Reviews → no external review-site links on the site; only source labels next to each pulled-in quote, exactly as Niles asked
-- Photos batch from the OneDrive share → 22 photos imported across the four properties (Bree +8, Rose +3, Docklands +4, Flamingo +7)
-- Founder photo → on the About page
-- The Herd page → live at /the-herd, joins now go to Karin's inbox via mailto until Marshall wires the database
-
-Just shipped (commit `aa973ea`):
-
-- All pink Lucide stars on property cards/heros replaced with the official TGCSA SA-flag stars — "awarded by TGCSA" now, not "added by us"
-- Footer & About credential blocks now show four TGCSA stars instead of one
-- All buttons rounded (no more square WordPress vibes)
-- Hero now reads "Urban Elephant Hotels · Officially Graded · Cape Town" + h1 "Luxury 4-Star Apartment Hotels in Cape Town" + the slip-line "The brand that loves you back." below the CTAs
-- The Herd: first benefit is now "10% off the lowest rate"; eligibility note ("must have stayed at least once") added under the join form description
+- Reviews → no external review-site links on the site (only source labels next to each pulled-in quote)
+- Photos batch from OneDrive → 22 photos imported across the four properties
+- Founder photo → live on the About page
+- The Herd page → /the-herd, with brand reasoning, 4 benefits (incl. "10% off the lowest rate"), eligibility note ("must have stayed at least once"), join form via mailto until backend ships, "Members Book Direct" CTA at the bottom
+- TGCSA stars: pink lucide stars replaced with the official SA-flag insignia everywhere; footer/about credential blocks now show four stars
+- Hero: "Urban Elephant Hotels · Officially Graded · Cape Town" + h1 "Luxury 4-Star Apartment Hotels in Cape Town" + slip-line "The brand that loves you back."
+- All buttons rounded
+- **Promo popup** built — homepage modal, version-keyed dismissal, on-brand placeholder copy until Niles posts a specific promo
+- **Docklands description** rewritten in best-effort brand voice (same Bree-pattern Niles approved verbatim)
 
 Copy-paste the block below into WhatsApp.
 
 ---
 
-Hi Niles 🙏 batch shipped — all your latest notes are live. Have a look on the lappy when you can.
+Hi Niles 🙏 short batch — most of last round's notes are live, plus a couple of new asks.
 
-*Done in this round:*
-• Pink stars are gone — replaced with the actual TGCSA insignia (the SA-flag star). Property cards now show 4 or 5 of the real stars depending on grading.
-• Footer credential block: four TGCSA stars next to "Officially graded by the Tourism Grading Council of South Africa" — same on the About page.
-• Rounded all buttons. No more WordPress squares 👌
-• Hero: "Urban Elephant Hotels · Officially Graded · Cape Town" + h1 reads "Luxury 4-Star Apartment Hotels in Cape Town" + your slip-line "The brand that loves you back." sits below the buttons in pink uppercase.
-• The Herd: first benefit is now "10% off the lowest rate" with a description that says it's applied with your member code. Eligibility note added: "The Herd is for guests who've stayed with us at least once. We verify your stay before activating membership."
+*Live on the site now:*
+• Promo popup is up — using your old `popup.png` artwork, "Welcome to Cape Town" headline + your slip-line + a pink rounded "Book Direct" button. Closes with X / ESC / outside-click. Once dismissed, it stays gone for that visitor until you launch a new promo (we bump a version flag and everyone sees the new one). To run a real promo, send the headline + body + CTA + the new image and I drop it in. Takes minutes.
+• I've drafted a Docklands description in the same voice as your Bree paragraphs (you approved those almost verbatim, so I'm using that calibration). Have a look at /properties/the-docklands — if anything reads off, send the rewrite and I'll swap it in.
 
-*Still need from you:*
-• *Promo popup* — coming next. I see the old `popup.png` artwork in the project. To wire it I need: (a) the headline/body copy you want it to launch with, (b) the call-to-action text + where the button should go (a property page? a booking link?), and (c) confirmation you want it on every page or just the home page.
-• *Docklands rewrite* — the only property still in old voice. Current paragraphs still have "elevated haven", "perfection", "invigorating vacation". Send me the brand-voice version when you have a moment.
+*Two small things still on Docklands:*
+• The Docklands tagline still says _"Your Urban Oasis… beacon of modern luxury"_. I haven't touched it — that's brand-voice copy that's yours to write. Want a punchy one-liner like Bree's?
+• Parking at Docklands — currently the amenity says "Secure Parking" (neutralised). If it's actually paid like Bree, say so and I'll change it to "Paid Secure Parking".
 
-*Big-picture question for Henry & you:*
-• You asked: _"This is the same platform as before Henry? I can make image and text corrections anytime currently will it be the same?"_ Honest answer: no, this is a brand-new Next.js site, content lives in code, so corrections currently mean we (Henry/me) edit and push. The old site had Sanity Studio where you could log in and edit. Three options going forward — (1) keep the current flow, send me notes on WhatsApp and I do the edits (fastest for the kind of polish we're doing now), (2) bolt Sanity onto this new site so you regain self-service editing for copy + images (a few hours of work, then permanent), or (3) something lighter like a simple admin dashboard for promo content only. Henry will have an opinion — let's pick a path together.
+*Big-picture question still on the table:*
+• You asked about being able to edit content yourself like the old site. Henry's preference is **Contentful** (over Sanity). Plan: ship the rest of the content polish first, then bolt Contentful on at the end so you regain self-service editing for promos, copy, photos, and Herd benefits. We'll lock that in once the content is settled.
 
 Happy to ship piece by piece as you reply 🐘
 
@@ -42,6 +36,7 @@ Happy to ship piece by piece as you reply 🐘
 
 ## Notes for Henry (not for WhatsApp)
 
-- The platform question is a real fork in the road. If Niles routinely changes promos and property text (sounds like he does), keeping him out of the codebase will slow you both down. My recommendation: bolt **Sanity** onto this Next.js site for the content collections that change most (properties array, promo popup, Herd benefits, hero copy), keep design/structure in code. The `urban-elephant-cms/` directory in the parent repo suggests Sanity was already set up for the old site — schemas might be reusable.
-- Promo popup design questions to lock down before I build: trigger (first visit only / every visit / based on date range?), placement (centred modal / bottom corner / banner?), dismissal behaviour (X button / ESC / outside click), localStorage key for "don't show again".
-- AF locale still calls The Herd "Die Trop" — Niles hasn't said one way or the other; safe to leave until he flags.
+- Docklands description draft uses the Bree pattern verbatim — set scene, 5-star apartments + rooftop pool, walkability + brand close, practical note. The pool/views are mentioned because they're the building's real differentiator (5-star vs The Rose's 4-star also in De Waterkant). If Niles wants more or less emphasis on the pool, easy to tweak.
+- Promo popup design choices: 1.5s delay before showing, centred modal with backdrop blur, dismissal stored in localStorage keyed by `version`. Bumping `promoConfig.version` re-engages dismissed users for the next promo — makes campaign management trivial.
+- CMS plan locked in as: ship remaining polish → bolt Contentful at the end. When we're ready, I'd want a 30-min look at the existing `urban-elephant-cms/` Sanity schemas first to see if any modelling is salvageable (probably not for Contentful directly, but the content shape is informative).
+- AF translation for "The Herd" still says "Die Trop" — Niles hasn't pushed back, leaving it.
