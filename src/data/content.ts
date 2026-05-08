@@ -114,10 +114,10 @@ export const properties: Property[] = [
     tagline:
       "The Docklands: Your Urban Oasis. Positioned in the heart of the chic De Waterkant district, The Docklands stands as a beacon of modern luxury.",
     description: [
-      "Boasting architectural brilliance, this building merges sophistication with a touch of contemporary elegance, providing an unmatched ambience for both leisure and business travellers.",
-      "One of the crowning jewels of The Docklands experience is our rooftop pool, which serves as a mesmerising vantage point for the city's panoramas. From here, guests can bask in breathtaking views stretching from the iconic Table Mountain to the renowned V&A Waterfront. It's not just a pool — it's an elevated haven where the city's horizon mingles with the sky, offering an awe-inspiring backdrop that continually captivates our guests.",
-      "Inside, each apartment epitomises modernity, crafted with thoughtful design elements and tailored to offer the utmost in comfort. Whether you're seeking an invigorating vacation or a serene business trip, The Docklands promises an experience that resonates with luxury and convenience.",
-      "Venturing out? The city's vast network of transport options ensures seamless exploration of Cape Town's treasures. Yet, after a day of adventures or meetings, many find solace atop our rooftop. Here, built-in Gas Braais await, offering a unique culinary experience. Imagine grilling to perfection as the sun sets, casting a golden hue over Table Mountain — it's the kind of memory-making The Docklands is renowned for.",
+      "In the heart of De Waterkant — Cape Town's most fashionable village quarter — Urban Elephant at The Docklands offers 5-star apartment-hotel living with rooftop views from Table Mountain to the V&A Waterfront.",
+      "Guests enjoy beautifully designed 5-star luxury apartments with secure access and hotel-style comfort throughout their stay, plus a rooftop pool deck where the city's skyline meets the harbour.",
+      "Located moments from the V&A Waterfront, Bree Street's restaurants and the heart of Cape Town's business district, The Docklands places the city at your doorstep while offering the comfort, privacy and consistency Urban Elephant is known for.",
+      "Secure on-site parking available.",
     ],
     location: "De Waterkant, Cape Town",
     heroImage: "/images/properties/the-docklands/hero.jpg",
