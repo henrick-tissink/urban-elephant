@@ -27,6 +27,7 @@
     "tours": "Tours",
     "explore": "Explore",
     "carHire": "Car Hire",
+    "theHerd": "The Herd",
     "about": "About",
     "contact": "Contact"
   },
@@ -312,6 +313,71 @@
       "graded": "Officially TGCSA Graded",
       "bestRate": "Best Rate Guarantee",
       "flexible": "Flexible Cancellation"
+    }
+  },
+  "theHerd": {
+    "metaTitle": "The Herd — Urban Elephant Loyalty Program",
+    "metaDescription": "Join The Herd, Urban Elephant's loyalty program for guests who keep coming home. Members enjoy exclusive direct rates, priority booking, and recognition across every stay.",
+    "eyebrow": "URBAN ELEPHANT LOYALTY",
+    "title": "The Herd. For guests who keep coming home.",
+    "subtitle": "[NILES TO REWRITE] The Herd is Urban Elephant's loyalty program — for guests who choose to stay with us again, and again. Members are recognised, remembered, and rewarded with exclusive direct rates and priority booking across every Urban Elephant property.",
+    "whyEyebrow": "WHY THE HERD",
+    "whyTitle": "Loyalty, memory, belonging — the way elephants do it.",
+    "whyIntro": "Urban Elephant isn't trying to be a cold corporate hotel chain. We want guests to feel like they belong to something — a brand that remembers them and values them. Like an elephant herd, the idea is loyalty, connection, protection, memory, and returning home.",
+    "reasons": {
+      "loyalty": {
+        "title": "Loyalty and memory",
+        "description": "Elephants are known for both. The Herd is built on the idea that a brand should remember its guests — and reward them for choosing to come back."
+      },
+      "protection": {
+        "title": "Protection and recognition",
+        "description": "Herds protect and recognise their own. Members are looked after across every Urban Elephant property, with the same standards and the same warmth, every stay."
+      },
+      "belonging": {
+        "title": "Returning home",
+        "description": "Guests who stay with us repeatedly become part of the Herd. It's less a points scheme and more a recognition that you've chosen Urban Elephant — and we've chosen you back."
+      },
+      "premium": {
+        "title": "Emotional, not transactional",
+        "description": "The Herd isn't about miles and tiers. It's about the small things — a familiar welcome, your usual booking quirks remembered, and an exclusive rate when you book direct."
+      }
+    },
+    "benefitsEyebrow": "MEMBER BENEFITS",
+    "benefitsTitle": "What being part of the Herd gets you.",
+    "benefits": {
+      "rates": {
+        "label": "[NILES TO CONFIRM]",
+        "title": "Member-only direct rates",
+        "description": "Exclusive pricing on direct bookings, applied automatically when you sign in as a member."
+      },
+      "priority": {
+        "label": "[NILES TO CONFIRM]",
+        "title": "Priority booking",
+        "description": "Early access to new properties and peak-season availability before public release."
+      },
+      "amenities": {
+        "label": "[NILES TO CONFIRM]",
+        "title": "Welcome amenities",
+        "description": "A small thank-you waiting in your apartment whenever you stay — chosen by Niles, not a corporate template."
+      },
+      "offers": {
+        "label": "[NILES TO CONFIRM]",
+        "title": "Exclusive offers",
+        "description": "Members-first access to seasonal promotions, partner experiences, and Cape Town happenings."
+      }
+    },
+    "joinEyebrow": "JOIN THE HERD",
+    "joinTitle": "Sign up. Stay. Be remembered.",
+    "joinDescription": "Drop your name and email and we'll send your member welcome with your direct-booking discount code. No tiers, no fine print, no spam — just a quieter, better way to stay with us.",
+    "form": {
+      "nameLabel": "First name",
+      "emailLabel": "Email address",
+      "submit": "Join the Herd",
+      "submitting": "Joining…",
+      "disclaimer": "By joining you agree to receive occasional emails from Urban Elephant about your membership. Unsubscribe any time.",
+      "successEyebrow": "WELCOME TO THE HERD",
+      "successTitle": "You're in.",
+      "successBody": "Check your inbox for your welcome email and your member discount code. We're glad you're with us."
     }
   },
   "notFound": {

@@ -14,6 +14,7 @@ const navigation = [
   { key: "tours", href: "/tours" },
   { key: "explore", href: "/recommendations" },
   { key: "carHire", href: "/car-hire" },
+  { key: "theHerd", href: "/the-herd" },
   { key: "about", href: "/about" },
   { key: "contact", href: "/contact" },
 ];

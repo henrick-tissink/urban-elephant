@@ -27,6 +27,7 @@
     "tours": "Toere",
     "explore": "Verken",
     "carHire": "Motorhuur",
+    "theHerd": "Die Trop",
     "about": "Oor Ons",
     "contact": "Kontak"
   },
@@ -312,6 +313,71 @@
       "graded": "Amptelik TGCSA Gegradeer",
       "bestRate": "Beste Tarief Waarborg",
       "flexible": "Buigsame Kansellasie"
+    }
+  },
+  "theHerd": {
+    "metaTitle": "Die Trop — Urban Elephant Lojaliteitsprogram",
+    "metaDescription": "Sluit aan by Die Trop, Urban Elephant se lojaliteitsprogram vir gaste wat aanhou tuis kom. Lede geniet eksklusiewe direkte tariewe, prioriteitsbesprekings, en herkenning by elke verblyf.",
+    "eyebrow": "URBAN ELEPHANT LOJALITEIT",
+    "title": "Die Trop. Vir gaste wat aanhou tuis kom.",
+    "subtitle": "[NILES MOET HERSKRYF] Die Trop is Urban Elephant se lojaliteitsprogram — vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
+    "whyEyebrow": "HOEKOM DIE TROP",
+    "whyTitle": "Lojaliteit, geheue, behoort — die manier wat olifante dit doen.",
+    "whyIntro": "Urban Elephant probeer nie 'n koue korporatiewe hotelketting wees nie. Ons wil hê gaste moet voel asof hulle aan iets behoort — 'n handelsmerk wat hulle onthou en waardeer. Soos 'n olifanttrop, gaan dit oor lojaliteit, verbinding, beskerming, geheue, en tuis terugkom.",
+    "reasons": {
+      "loyalty": {
+        "title": "Lojaliteit en geheue",
+        "description": "Olifante is bekend vir albei. Die Trop is gebou op die idee dat 'n handelsmerk sy gaste moet onthou — en hulle moet beloon vir die keuse om terug te kom."
+      },
+      "protection": {
+        "title": "Beskerming en herkenning",
+        "description": "Troppe beskerm en herken hul eie. Lede word by elke Urban Elephant-eiendom versorg, met dieselfde standaarde en dieselfde warmte, elke verblyf."
+      },
+      "belonging": {
+        "title": "Tuis terugkom",
+        "description": "Gaste wat herhaaldelik by ons bly, word deel van Die Trop. Dit is minder 'n puntestelsel en meer 'n erkenning dat jy Urban Elephant gekies het — en ons het jou ook gekies."
+      },
+      "premium": {
+        "title": "Emosioneel, nie transaksioneel nie",
+        "description": "Die Trop gaan nie oor myle en vlakke nie. Dit gaan oor die klein dingetjies — 'n bekende verwelkoming, jou gewone besprekingsvoorkeure onthou, en 'n eksklusiewe tarief wanneer jy direk bespreek."
+      }
+    },
+    "benefitsEyebrow": "LIDVOORDELE",
+    "benefitsTitle": "Wat dit beteken om deel van Die Trop te wees.",
+    "benefits": {
+      "rates": {
+        "label": "[NILES MOET BEVESTIG]",
+        "title": "Slegs-vir-lede direkte tariewe",
+        "description": "Eksklusiewe pryse op direkte besprekings, outomaties toegepas wanneer jy as lid aanmeld."
+      },
+      "priority": {
+        "label": "[NILES MOET BEVESTIG]",
+        "title": "Prioriteitsbesprekings",
+        "description": "Vroeë toegang tot nuwe eiendomme en spitstyd-beskikbaarheid voor publieke vrystelling."
+      },
+      "amenities": {
+        "label": "[NILES MOET BEVESTIG]",
+        "title": "Verwelkomingsgemakke",
+        "description": "'n Klein dankie wat in jou woonstel wag wanneer jy bly — gekies deur Niles, nie 'n korporatiewe sjabloon nie."
+      },
+      "offers": {
+        "label": "[NILES MOET BEVESTIG]",
+        "title": "Eksklusiewe aanbiedinge",
+        "description": "Lede-eerste toegang tot seisoenale promosies, vennoot-ervarings, en Kaapstad-gebeure."
+      }
+    },
+    "joinEyebrow": "SLUIT AAN BY DIE TROP",
+    "joinTitle": "Teken in. Bly. Word onthou.",
+    "joinDescription": "Los jou naam en e-pos en ons stuur jou ledeverwelkoming met jou direkte-bespreking-afslagkode. Geen vlakke, geen fynskrif, geen gemorspos nie — net 'n stiller, beter manier om by ons te bly.",
+    "form": {
+      "nameLabel": "Voornaam",
+      "emailLabel": "E-posadres",
+      "submit": "Sluit aan by Die Trop",
+      "submitting": "Sluit aan…",
+      "disclaimer": "Deur aan te sluit stem jy in om af en toe e-posse van Urban Elephant te ontvang oor jou lidmaatskap. Skryf enige tyd uit.",
+      "successEyebrow": "WELKOM BY DIE TROP",
+      "successTitle": "Jy's in.",
+      "successBody": "Kyk in jou inbox vir jou verwelkomings-e-pos en jou lid-afslagkode. Ons is bly jy is by ons."
     }
   },
   "notFound": {
