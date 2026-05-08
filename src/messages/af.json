@@ -59,6 +59,15 @@
     "bestRate": "Beste Tarief Waarborg",
     "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
   },
+  "promo": {
+    "imageAlt": "Urban Elephant Hotels promosie",
+    "eyebrow": "URBAN ELEPHANT HOTELS",
+    "title": "Welkom in Kaapstad.",
+    "body": "Amptelik gegradeerde 4-ster woonstelhotelle — bespreek direk vir die beste tarief. Die handelsmerk wat jou terugliefhet.",
+    "cta": "Bespreek Direk",
+    "ctaHref": "https://book.nightsbridge.com/30034",
+    "close": "Sluit promosie"
+  },
   "trust": {
     "gradedTitle": "Amptelik TGCSA Gegradeer",
     "gradedDescription": "Toerisme-graderingsraad van Suid-Afrika",

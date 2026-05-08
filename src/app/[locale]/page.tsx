@@ -8,6 +8,7 @@ import { AboutPreview } from "@/components/sections/about-preview";
 import { Testimonials } from "@/components/sections/testimonials";
 import { ServicesPreview } from "@/components/sections/services-preview";
 import { CTASection } from "@/components/sections/cta-section";
+import { PromoPopup } from "@/components/promo/promo-popup";
 import { getFeaturedProperties, getFeaturedReviews, siteSettings } from "@/data/content";
 
 type Props = {
@@ -32,6 +33,7 @@ export default async function HomePage({ params }: Props) {
       <Testimonials reviews={reviews} />
       <ServicesPreview />
       <CTASection bookNowUrl={siteSettings.bookNowUrl} />
+      <PromoPopup />
     </>
   );
 }
