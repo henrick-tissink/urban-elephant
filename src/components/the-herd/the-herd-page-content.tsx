@@ -10,7 +10,7 @@ const reasonKeys = ["loyalty", "protection", "belonging", "premium"] as const;
 const benefitKeys = ["rates", "priority", "amenities", "offers"] as const;
 
 const SIGNUP_RECIPIENT = "karin@urbanelephant.co.za";
-const BOOK_DIRECT_URL = "https://book.nightsbridge.com/30034";
+const BOOK_DIRECT_URL = "https://book.nightsbridge.com/30034?nbid=1040";
 
 export function TheHerdPageContent() {
   const t = useTranslations("theHerd");

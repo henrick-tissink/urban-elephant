@@ -33,7 +33,7 @@ export const siteSettings: SiteSettings = {
     instagram: "https://www.instagram.com/urbanelephantsa/",
     facebook: "https://www.facebook.com/urbanelephantsa/",
   },
-  bookNowUrl: "https://book.nightsbridge.com/30034",
+  bookNowUrl: "https://book.nightsbridge.com/30034?nbid=1040",
 };
 
 export const properties: Property[] = [
