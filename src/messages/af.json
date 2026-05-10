@@ -51,7 +51,7 @@
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · AMPTELIK GEGRADEER · KAAPSTAD",
     "title": "Luukse 4-Ster Woonstelhotelle in Kaapstad",
-    "subtitle": "Hotel-styl gemak. Ontwerp-gedrewe ruimtes. Die vryheid van woonstellewe met die sorg en konsekwentheid waarvoor Urban Elephant bekend is.",
+    "subtitle": "Hotelgemak. Ontwerp-gedrewe ruimtes. Die vryheid van woonstellewe met die sorg en konsekwentheid waarvoor Urban Elephant bekend is.",
     "slipLine": "Die handelsmerk wat jou terugliefhet.",
     "primaryCta": "Verken Woonstelle",
     "secondaryCta": "Bespreek Direk",
@@ -89,7 +89,7 @@
         "description": "Bly in Kaapstad se gewildste woonbuurte, naby restaurante, strande, naglewe en sake-sentrums."
       },
       "comfort": {
-        "title": "Hotel-Styl Gemak",
+        "title": "Hotelgemak",
         "description": "Luukse linne, vinnige WiFi, volledig toegeruste kombuise, concierge-ondersteuning en naatlose self-aanmelding."
       },
       "managed": {
@@ -105,9 +105,9 @@
     "body": "Professioneel bestuur, pragtig geleë — dit is Kaapstad-akkommodasie, die Urban Elephant manier."
   },
   "properties": {
-    "title": "Verken Ons Liggings",
+    "title": "Urban Elephant Hotels",
     "subtitle": "BESPREEK JOU VERBLYF VANDAG",
-    "description": "Elke eiendom is amptelik gegradeer — sien die gradering op elke kaart.",
+    "description": "Kies jou Hotel uit die lys hieronder. Boom — bespreek nou.",
     "viewProperty": "Eiendom Inligting",
     "starRating": "Stergradering",
     "amenities": "Geriewe",
@@ -242,7 +242,7 @@
     "subtitle": "VOLLEDIGE ERVARING",
     "accommodation": {
       "title": "Luukse Woonstelle",
-      "description": "Amptelik gegradeerde woonstelle met pragtige uitsigte, premium afwerkings, en hotelstyl-versorging."
+      "description": "Amptelik gegradeerde woonstelle met pragtige uitsigte, premium afwerkings, en hotelversorging."
     },
     "tours": {
       "title": "Toere & Vervoer",

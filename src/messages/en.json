@@ -51,7 +51,7 @@
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
     "title": "Luxury 4-Star Apartment Hotels in Cape Town",
-    "subtitle": "Hotel-style comfort. Design-led spaces. The freedom of apartment living with the care and consistency Urban Elephant is known for.",
+    "subtitle": "Hotel comfort. Design-led spaces. The freedom of apartment living with the care and consistency Urban Elephant is known for.",
     "slipLine": "The brand that loves you back.",
     "primaryCta": "Explore Apartments",
     "secondaryCta": "Book Direct",
@@ -89,7 +89,7 @@
         "description": "Stay in Cape Town's most desirable neighbourhoods, close to restaurants, beaches, nightlife and business hubs."
       },
       "comfort": {
-        "title": "Hotel-Style Comfort",
+        "title": "Hotel Comfort",
         "description": "Luxury linens, fast WiFi, fully equipped kitchens, concierge support and seamless self check-in."
       },
       "managed": {
@@ -105,9 +105,9 @@
     "body": "Professionally managed, beautifully located — this is Cape Town accommodation, the Urban Elephant way."
   },
   "properties": {
-    "title": "Explore Our Locations",
+    "title": "Urban Elephant Hotels",
     "subtitle": "BOOK YOUR STAY TODAY",
-    "description": "Each property is officially graded — see the rating on every card.",
+    "description": "Select your Hotel from the list below. Boom — book now.",
     "viewProperty": "Property Info",
     "starRating": "Star Rating",
     "amenities": "Amenities",
@@ -242,7 +242,7 @@
     "subtitle": "COMPLETE EXPERIENCE",
     "accommodation": {
       "title": "Luxury Apartments",
-      "description": "Officially graded apartments with stunning views, premium finishes, and hotel-style servicing."
+      "description": "Officially graded apartments with stunning views, premium finishes, and hotel servicing."
     },
     "tours": {
       "title": "Tours & Transfers",
