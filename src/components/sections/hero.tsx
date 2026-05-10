@@ -154,7 +154,7 @@ export function Hero() {
             </MagneticButton>
             <MagneticButton>
               <Button variant="outlineLight" size="lg" asChild>
-                <a href="https://book.nightsbridge.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://book.nightsbridge.com/30034?nbid=1040" target="_blank" rel="noopener noreferrer">
                   {t("secondaryCta")}
                 </a>
               </Button>

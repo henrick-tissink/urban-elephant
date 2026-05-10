@@ -44,7 +44,7 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
                   size="xl"
                   asChild
                 >
-                  <a href={bookNowUrl || "https://book.nightsbridge.com"} target="_blank" rel="noopener noreferrer">
+                  <a href={bookNowUrl || "https://book.nightsbridge.com/30034?nbid=1040"} target="_blank" rel="noopener noreferrer">
                     {t("primary")}
                   </a>
                 </Button>

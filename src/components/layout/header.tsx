@@ -135,7 +135,7 @@ export function Header() {
                   className="ml-4"
                   asChild
                 >
-                  <a href="https://book.nightsbridge.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://book.nightsbridge.com/30034?nbid=1040" target="_blank" rel="noopener noreferrer">
                     {t("home") === "Home" ? "Book Now" : "Bespreek Nou"}
                   </a>
                 </Button>
@@ -213,7 +213,7 @@ export function Header() {
                   transition={{ delay: 0.6 }}
                 >
                   <Button variant="primary" size="lg" className="w-full" asChild>
-                    <a href="https://book.nightsbridge.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://book.nightsbridge.com/30034?nbid=1040" target="_blank" rel="noopener noreferrer">
                       {t("home") === "Home" ? "Book Now" : "Bespreek Nou"}
                     </a>
                   </Button>
