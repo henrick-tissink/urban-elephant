@@ -71,7 +71,7 @@ export const properties: Property[] = [
       "Self Catering Welcome Starter Pack",
     ]),
     bookingUrl: "https://book.nightsbridge.com/30034?nbid=1040",
-    starRating: 5,
+    starRating: 4,
     featured: true,
     order: 1,
   },
@@ -114,8 +114,8 @@ export const properties: Property[] = [
     tagline:
       "The Docklands: Your Urban Oasis. Positioned in the heart of the chic De Waterkant district, The Docklands stands as a beacon of modern luxury.",
     description: [
-      "In the heart of De Waterkant — Cape Town's most fashionable village quarter — Urban Elephant at The Docklands offers 5-star apartment-hotel living with rooftop views from Table Mountain to the V&A Waterfront.",
-      "Guests enjoy beautifully designed 5-star luxury apartments with secure access and hotel comfort throughout their stay, plus a rooftop pool deck where the city's skyline meets the harbour.",
+      "In the heart of De Waterkant — Cape Town's most fashionable village quarter — Urban Elephant at The Docklands offers 4-star apartment-hotel living with rooftop views from Table Mountain to the V&A Waterfront.",
+      "Guests enjoy beautifully designed 4-star luxury apartments with secure access and hotel comfort throughout their stay, plus a rooftop pool deck where the city's skyline meets the harbour.",
       "Located moments from the V&A Waterfront, Bree Street's restaurants and the heart of Cape Town's business district, The Docklands places the city at your doorstep while offering the comfort, privacy and consistency Urban Elephant is known for.",
       "Secure on-site parking available.",
     ],
@@ -139,7 +139,7 @@ export const properties: Property[] = [
       "Self Catering Welcome Starter Pack",
     ]),
     bookingUrl: "https://book.nightsbridge.com/30034?nbid=1040",
-    starRating: 5,
+    starRating: 4,
     featured: true,
     order: 3,
   },
