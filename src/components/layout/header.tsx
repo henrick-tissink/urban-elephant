@@ -7,6 +7,8 @@ import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { BookingPicker } from "@/components/property/booking-picker";
+import { properties } from "@/data/content";
 import Image from "next/image";
 
 const navigation = [
@@ -27,6 +29,12 @@ export function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [pickerOpen, setPickerOpen] = useState(false);
+
+  const openPicker = () => {
+    setIsMobileMenuOpen(false);
+    setPickerOpen(true);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -133,11 +141,9 @@ export function Header() {
                   variant={isScrolled ? "primary" : "outlineLight"}
                   size="sm"
                   className="ml-4"
-                  asChild
+                  onClick={openPicker}
                 >
-                  <a href="https://book.nightsbridge.com/30034?nbid=1040" target="_blank" rel="noopener noreferrer">
-                    {t("home") === "Home" ? "Book Now" : "Bespreek Nou"}
-                  </a>
+                  {t("bookNow")}
                 </Button>
               </motion.div>
             </div>
@@ -212,10 +218,13 @@ export function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                 >
-                  <Button variant="primary" size="lg" className="w-full" asChild>
-                    <a href="https://book.nightsbridge.com/30034?nbid=1040" target="_blank" rel="noopener noreferrer">
-                      {t("home") === "Home" ? "Book Now" : "Bespreek Nou"}
-                    </a>
+                  <Button
+                    variant="primary"
+                    size="lg"
+                    className="w-full"
+                    onClick={openPicker}
+                  >
+                    {t("bookNow")}
                   </Button>
                 </motion.div>
               </div>
@@ -223,6 +232,12 @@ export function Header() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <BookingPicker
+        open={pickerOpen}
+        onClose={() => setPickerOpen(false)}
+        properties={properties}
+      />
     </>
   );
 }

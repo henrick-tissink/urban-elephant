@@ -9,7 +9,7 @@ import { Testimonials } from "@/components/sections/testimonials";
 import { ServicesPreview } from "@/components/sections/services-preview";
 import { CTASection } from "@/components/sections/cta-section";
 import { PromoPopup } from "@/components/promo/promo-popup";
-import { getFeaturedProperties, getFeaturedReviews, siteSettings } from "@/data/content";
+import { getFeaturedProperties, getFeaturedReviews } from "@/data/content";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -32,7 +32,7 @@ export default async function HomePage({ params }: Props) {
       <AboutPreview />
       <Testimonials reviews={reviews} />
       <ServicesPreview />
-      <CTASection bookNowUrl={siteSettings.bookNowUrl} />
+      <CTASection />
       <PromoPopup />
     </>
   );

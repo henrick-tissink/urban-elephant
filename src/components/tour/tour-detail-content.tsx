@@ -161,7 +161,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                   </Button>
 
                   <p className="text-xs text-stone-500 text-center">
-                    Contact us to book this tour
+                    {t("bookTourHint")}
                   </p>
                 </ScrollReveal>
               </div>

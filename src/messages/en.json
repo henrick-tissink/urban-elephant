@@ -29,7 +29,8 @@
     "carHire": "Car Hire",
     "theHerd": "The Herd",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "bookNow": "Book Now"
   },
   "recommendations": {
     "title": "Beyond the Front Door",
@@ -51,9 +52,7 @@
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
     "title": "Luxury 4-Star Apartment Hotels in Cape Town",
-    "subtitle": "Hotel comfort. Design-led spaces. The freedom of apartment living with the care and consistency Urban Elephant is known for.",
     "slipLine": "The brand that loves you back.",
-    "primaryCta": "Explore Apartments",
     "secondaryCta": "Book Direct",
     "scrollDown": "Scroll to explore",
     "bestRate": "Best Rate Guarantee",
@@ -160,6 +159,7 @@
     "highlights": "Highlights",
     "meetingPoint": "Meeting Point",
     "bookTour": "Book This Tour",
+    "bookTourHint": "Contact us to book this tour",
     "categories": {
       "all": "All Tours",
       "adventure": "Adventure",

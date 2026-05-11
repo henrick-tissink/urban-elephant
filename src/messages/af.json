@@ -29,7 +29,8 @@
     "carHire": "Motorhuur",
     "theHerd": "Die Trop",
     "about": "Oor Ons",
-    "contact": "Kontak"
+    "contact": "Kontak",
+    "bookNow": "Bespreek Nou"
   },
   "recommendations": {
     "title": "Buite die Voordeur",
@@ -51,9 +52,7 @@
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · AMPTELIK GEGRADEER · KAAPSTAD",
     "title": "Luukse 4-Ster Woonstelhotelle in Kaapstad",
-    "subtitle": "Hotelgemak. Ontwerp-gedrewe ruimtes. Die vryheid van woonstellewe met die sorg en konsekwentheid waarvoor Urban Elephant bekend is.",
     "slipLine": "Die handelsmerk wat jou terugliefhet.",
-    "primaryCta": "Verken Woonstelle",
     "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
     "bestRate": "Beste Tarief Waarborg",
@@ -160,6 +159,7 @@
     "highlights": "Hoogtepunte",
     "meetingPoint": "Ontmoetingspunt",
     "bookTour": "Bespreek Hierdie Toer",
+    "bookTourHint": "Kontak ons om hierdie toer te bespreek",
     "categories": {
       "all": "Alle Toere",
       "adventure": "Avontuur",

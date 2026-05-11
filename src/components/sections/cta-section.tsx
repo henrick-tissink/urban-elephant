@@ -1,17 +1,17 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
+import { BookingPicker } from "@/components/property/booking-picker";
+import { properties } from "@/data/content";
 
-interface CTASectionProps {
-  bookNowUrl?: string;
-}
-
-export function CTASection({ bookNowUrl }: CTASectionProps) {
+export function CTASection() {
   const t = useTranslations("cta");
+  const [pickerOpen, setPickerOpen] = useState(false);
 
   return (
     <section className="relative py-32 lg:py-40 overflow-hidden bg-[#24272a]">
@@ -42,11 +42,9 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
                 <Button
                   variant="primary"
                   size="xl"
-                  asChild
+                  onClick={() => setPickerOpen(true)}
                 >
-                  <a href={bookNowUrl || "https://book.nightsbridge.com/30034?nbid=1040"} target="_blank" rel="noopener noreferrer">
-                    {t("primary")}
-                  </a>
+                  {t("primary")}
                 </Button>
               </MagneticButton>
               <MagneticButton>
@@ -70,6 +68,12 @@ export function CTASection({ bookNowUrl }: CTASectionProps) {
           </ScrollReveal>
         </div>
       </div>
+
+      <BookingPicker
+        open={pickerOpen}
+        onClose={() => setPickerOpen(false)}
+        properties={properties}
+      />
     </section>
   );
 }
