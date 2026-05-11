@@ -59,6 +59,13 @@
     "bestRate": "Best Rate Guarantee",
     "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
   },
+  "bookingPicker": {
+    "eyebrow": "BOOK DIRECT",
+    "title": "Pick your apartment hotel.",
+    "subtitle": "Four officially graded apartment hotels in Cape Town. Choose where you'd like to stay and we'll take you straight to its booking page.",
+    "cardCta": "Book this one",
+    "close": "Close"
+  },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promo",
     "eyebrow": "URBAN ELEPHANT HOTELS",
@@ -107,7 +114,7 @@
   "properties": {
     "title": "Urban Elephant Hotels",
     "subtitle": "BOOK YOUR STAY TODAY",
-    "description": "Select your Hotel from the list below. Boom — book now.",
+    "description": "Select your Hotel from the list below.",
     "viewProperty": "Property Info",
     "starRating": "Star Rating",
     "amenities": "Amenities",

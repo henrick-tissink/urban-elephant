@@ -12,6 +12,9 @@ Resolved over the past sessions:
 - All buttons rounded
 - **Promo popup** built — homepage modal, version-keyed dismissal, on-brand placeholder copy until Niles posts a specific promo
 - **Docklands description** rewritten in best-effort brand voice (same Bree-pattern Niles approved verbatim)
+- **Hero simplified** — dropped the subtitle paragraph and the secondary "Explore Apartments" CTA; the hero is now Eyebrow + H1 + single Book Direct CTA + slip line (closer to the old urbanelephant.co.za hero feel)
+- **Book Direct picker** — clicking Book Direct on the homepage hero now opens a branded modal listing all four properties (image, name, location, TGCSA stars). Each card opens the property's `bookingUrl` in a new tab. No more landing on Bree by default.
+- **/properties hero copy** — removed the stray "Boom — book now." / "Boem — bespreek nou." that crept in; the description now ends at "Select your Hotel from the list below."
 
 Copy-paste the block below into WhatsApp.
 
@@ -40,3 +43,5 @@ Happy to ship piece by piece as you reply 🐘
 - Promo popup design choices: 1.5s delay before showing, centred modal with backdrop blur, dismissal stored in localStorage keyed by `version`. Bumping `promoConfig.version` re-engages dismissed users for the next promo — makes campaign management trivial.
 - CMS plan locked in as: ship remaining polish → bolt Contentful at the end. When we're ready, I'd want a 30-min look at the existing `urban-elephant-cms/` Sanity schemas first to see if any modelling is salvageable (probably not for Contentful directly, but the content shape is informative).
 - AF translation for "The Herd" still says "Die Trop" — Niles hasn't pushed back, leaving it.
+- All four properties currently share the same Nightsbridge URL (`/30034?nbid=1040`). The picker correctly lists each property and opens its `bookingUrl`, but until Karin sends property-specific Nightsbridge deep links, each card lands on the same shared booking page. Worth asking Karin: is there a `?bbid=` or `?roomid=` style deep link per property?
+- Picker copy I wrote myself (functional UI, not marketing prose): eyebrow "BOOK DIRECT", title "Pick your apartment hotel.", subtitle "Four officially graded apartment hotels in Cape Town. Choose where you'd like to stay and we'll take you straight to its booking page.", card CTA "Book this one". Easy to swap if Niles wants different phrasing.

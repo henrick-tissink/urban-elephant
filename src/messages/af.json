@@ -59,6 +59,13 @@
     "bestRate": "Beste Tarief Waarborg",
     "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
   },
+  "bookingPicker": {
+    "eyebrow": "BESPREEK DIREK",
+    "title": "Kies jou woonstelhotel.",
+    "subtitle": "Vier amptelik gegradeerde woonstelhotelle in Kaapstad. Kies waar jy wil bly en ons neem jou direk na sy besprekingsblad.",
+    "cardCta": "Bespreek hierdie een",
+    "close": "Sluit"
+  },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promosie",
     "eyebrow": "URBAN ELEPHANT HOTELS",
@@ -107,7 +114,7 @@
   "properties": {
     "title": "Urban Elephant Hotels",
     "subtitle": "BESPREEK JOU VERBLYF VANDAG",
-    "description": "Kies jou Hotel uit die lys hieronder. Boem — bespreek nou.",
+    "description": "Kies jou Hotel uit die lys hieronder.",
     "viewProperty": "Eiendom Inligting",
     "starRating": "Stergradering",
     "amenities": "Geriewe",
