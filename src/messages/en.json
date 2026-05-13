@@ -102,7 +102,7 @@
       },
       "concierge": {
         "title": "Personal Concierge Service",
-        "description": "A direct line to our team for bookings, recommendations, and on-the-ground support — before, during, and after your stay."
+        "description": "Experience the convenience of a true one-stop shop. From accommodation and airport transfers to tours, dining reservations, and local experiences, our team is here to assist with every part of your journey. Enjoy a direct line to our team for bookings, recommendations, and on-the-ground support — before, during, and after your stay."
       }
     }
   },
@@ -280,7 +280,9 @@
       "tgcsaCta": "View TGCSA certificate",
       "cttLabel": "Cape Town Tourism membership",
       "cttDescription": "Member of Cape Town Tourism — the city's official tourism authority.",
-      "cttCta": "View CTT membership"
+      "cttCta": "View CTT membership",
+      "ppraLabel": "PPRA Registered",
+      "ppraDescription": "Property Practitioners Regulatory Authority — Registration No. 1695928."
     }
   },
   "services": {

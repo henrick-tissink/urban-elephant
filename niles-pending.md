@@ -29,6 +29,11 @@ Resolved over the past sessions:
 - **Stats fixed in homepage Testimonials block** per Bapata + UE Hotels 13 May:
   - `9.4 → 9.3` Booking.com (3,000+ guest reviews per Bapata)
   - `500+ → 45,000+` Happy Guests (across 4 buildings per UE Hotels)
+- **Bapata reply 13 May 14:56–15:00** applied:
+  - Personal Concierge Service body copy replaced with Bapata's exact wording ("Experience the convenience of a true one-stop shop…")
+  - PPRA Registered added as a third credential card on the About page beside TGCSA and CTT (No. 1695928, no PDF — static text card with charcoal "PPRA" mark)
+  - TGCSA plaque photo replaced with the clean straight-on shot Bapata sent (`/images/about/tgcsa-plaque.png`, 1600×1200, 4:3) — old skew photo removed
+  - Google 4.9 confirmed accurate — staying on the homepage testimonials block
 
 Copy-paste the block below into WhatsApp.
 
@@ -56,8 +61,8 @@ Happy to ship piece by piece as you reply 🐘
 - **Why Book Direct body copy** — the client docx only provided the 4 benefit headings (Best Rates Guaranteed / Exclusive Offers / Flexible Cancellation / Personal Concierge Service), no supporting prose. I wrote one-line descriptions using existing approved phrases (e.g. the beat-rate-by-10% line from the hero, "member offers, promotions, and curated Cape Town experiences" lifted from your Herd welcome letter). The "Flexible Cancellation" and "Personal Concierge Service" descriptions are functional placeholders I drafted — please rewrite in your voice when you have a moment. Lives in `whyBookDirect.items.{flex,concierge}.description` in en.json/af.json.
 - **AF translations on new keys** — chrome and short labels are translated. The Herd welcome letter prose got a literal Afrikaans translation so the AF page doesn't render English mid-paragraph — review/replace if you want it in your own voice (`theHerd.welcomeBody{1..4}` in af.json).
 - **Pink master lockup** — saved to `/badges/urban-elephant-master-lockup.jpg` and now rendered as a small "Official master mark" card on the About credentials section beneath the plaque. NOT swapped into header/footer (Canva raster + non-Biko type doesn't fit the typographic system). Say the word if you want it more prominent.
-- **Google Rating (4.9)** — the homepage Testimonials block shows this but messages.txt doesn't mention it. Can you confirm the live Google rating so we're not displaying a stale number?
-- **PPRA Number 1695928** — Bapata mentioned this twice on 13 May ("we are PPRA registered", "Our PPRA Number is 1695928") but it's not surfaced anywhere on the site yet. PPRA registration is regulatory credential for property practitioners. Should it sit in the footer fine-print, or as a third item alongside TGCSA + CTT on the About credentials section? Your call on placement and label.
+- ~~**Google Rating (4.9)**~~ Bapata 13 May 15:00 — keep as-is.
+- ~~**PPRA Number 1695928**~~ Bapata 13 May 15:00 — added as third About credentials card.
 
 ## Notes for Henry (not for WhatsApp)
 

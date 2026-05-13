@@ -143,6 +143,20 @@ export function AboutPageContent() {
                     </div>
                   </a>
                 </li>
+                {/* PPRA — Property Practitioners Regulatory Authority. No PDF yet, just registration number. */}
+                <li className="flex items-start gap-4 p-4 bg-white border border-stone-200/70">
+                  <div className="shrink-0 w-12 h-12 flex items-center justify-center bg-[#24272a] text-white text-[11px] font-bold tracking-tight">
+                    PPRA
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-bold uppercase tracking-[0.18em] text-xs text-[#24272a]">
+                      {t("credentials.ppraLabel")}
+                    </p>
+                    <p className="text-stone-500 text-sm mt-1 leading-snug">
+                      {t("credentials.ppraDescription")}
+                    </p>
+                  </div>
+                </li>
               </ul>
             </ScrollReveal>
 
@@ -150,7 +164,7 @@ export function AboutPageContent() {
               <div className="bg-white p-4 lg:p-6 border border-stone-200/70 shadow-sm">
                 <div className="relative aspect-[4/3] bg-stone-100">
                   <Image
-                    src="/images/about/tgcsa-plaque.jpg"
+                    src="/images/about/tgcsa-plaque.png"
                     alt={t("credentials.plaqueAlt")}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"

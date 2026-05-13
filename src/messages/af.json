@@ -102,7 +102,7 @@
       },
       "concierge": {
         "title": "Persoonlike Concierge-diens",
-        "description": "'n Direkte lyn na ons span vir besprekings, aanbevelings en ondersteuning op die grond — voor, tydens en na jou verblyf."
+        "description": "Ervaar die gemak van 'n ware een-stop diens. Van akkommodasie en lughawe-vervoer tot toere, restaurantbesprekings en plaaslike ervarings — ons span help met elke deel van jou reis. Geniet 'n direkte lyn na ons span vir besprekings, aanbevelings en ondersteuning op die grond — voor, tydens en na jou verblyf."
       }
     }
   },
@@ -280,7 +280,9 @@
       "tgcsaCta": "Bekyk TGCSA-sertifikaat",
       "cttLabel": "Cape Town Tourism-lidmaatskap",
       "cttDescription": "Lid van Cape Town Tourism — die stad se amptelike toerismeowerheid.",
-      "cttCta": "Bekyk CTT-lidmaatskap"
+      "cttCta": "Bekyk CTT-lidmaatskap",
+      "ppraLabel": "PPRA Geregistreer",
+      "ppraDescription": "Property Practitioners Regulatory Authority — Registrasienommer 1695928."
     }
   },
   "services": {
