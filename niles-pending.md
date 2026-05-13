@@ -24,7 +24,11 @@ Resolved over the past sessions:
   - About page: new **Officially Graded** credentials section between Founder Story and Zola's Story — physical TGCSA "Apartment Hotel" plaque photo on the right, two downloadable certificate cards (TGCSA + CTT) on the left
   - /the-herd: Bapata's welcome letter prose surfaced verbatim as a new **Welcome to The Herd** section between hero and "Why The Herd". Form success message tweaked to reference the welcome letter ("the same warm welcome the Herd has been writing for years")
   - Homepage: new **WhyBookDirect** section (Why Book Direct, 4 client-approved benefits: Best Rates Guaranteed / Exclusive Offers / Flexible Cancellation / Personal Concierge Service) — inserted between WhyBook and AboutPreview
-  - New badge assets saved for future use: `/badges/tgcsa-4-stars.png` (official horizontal 4-star row) and `/badges/urban-elephant-master-lockup.jpg` (pink lockup) — neither is rendered yet; site logo stays as the existing wordmark per Henry's call
+  - About page credentials section also surfaces the pink **Urban Elephant master lockup** as a small "Official master mark" card beneath the plaque
+  - `/badges/tgcsa-4-stars.png` (official horizontal 4-star row) saved for future use but not yet rendered; site logo stays as the existing wordmark per Henry's call
+- **Stats fixed in homepage Testimonials block** per Bapata + UE Hotels 13 May:
+  - `9.4 → 9.3` Booking.com (3,000+ guest reviews per Bapata)
+  - `500+ → 45,000+` Happy Guests (across 4 buildings per UE Hotels)
 
 Copy-paste the block below into WhatsApp.
 
@@ -51,7 +55,9 @@ Happy to ship piece by piece as you reply 🐘
 
 - **Why Book Direct body copy** — the client docx only provided the 4 benefit headings (Best Rates Guaranteed / Exclusive Offers / Flexible Cancellation / Personal Concierge Service), no supporting prose. I wrote one-line descriptions using existing approved phrases (e.g. the beat-rate-by-10% line from the hero, "member offers, promotions, and curated Cape Town experiences" lifted from your Herd welcome letter). The "Flexible Cancellation" and "Personal Concierge Service" descriptions are functional placeholders I drafted — please rewrite in your voice when you have a moment. Lives in `whyBookDirect.items.{flex,concierge}.description` in en.json/af.json.
 - **AF translations on new keys** — chrome and short labels are translated. The Herd welcome letter prose got a literal Afrikaans translation so the AF page doesn't render English mid-paragraph — review/replace if you want it in your own voice (`theHerd.welcomeBody{1..4}` in af.json).
-- **Pink master lockup** — saved to `/badges/urban-elephant-master-lockup.jpg` but NOT swapped in as the site logo (Canva raster + non-Biko type doesn't fit the typographic system). About page surfaces the TGCSA plaque photo instead. If you want the pink lockup featured on About too (alongside the plaque), say the word.
+- **Pink master lockup** — saved to `/badges/urban-elephant-master-lockup.jpg` and now rendered as a small "Official master mark" card on the About credentials section beneath the plaque. NOT swapped into header/footer (Canva raster + non-Biko type doesn't fit the typographic system). Say the word if you want it more prominent.
+- **Google Rating (4.9)** — the homepage Testimonials block shows this but messages.txt doesn't mention it. Can you confirm the live Google rating so we're not displaying a stale number?
+- **PPRA Number 1695928** — Bapata mentioned this twice on 13 May ("we are PPRA registered", "Our PPRA Number is 1695928") but it's not surfaced anywhere on the site yet. PPRA registration is regulatory credential for property practitioners. Should it sit in the footer fine-print, or as a third item alongside TGCSA + CTT on the About credentials section? Your call on placement and label.
 
 ## Notes for Henry (not for WhatsApp)
 

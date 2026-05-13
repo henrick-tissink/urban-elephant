@@ -162,8 +162,8 @@ export function Testimonials({ reviews }: TestimonialsProps) {
         >
           {[
             { value: "4.9", label: "Google Rating" },
-            { value: "9.4", label: "Booking.com" },
-            { value: "500+", label: "Happy Guests" },
+            { value: "9.3", label: "Booking.com" },
+            { value: "45,000+", label: "Happy Guests" },
             { value: "4 Star", label: "TGCSA Graded" },
           ].map((stat, index) => (
             <motion.div

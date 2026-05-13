@@ -146,7 +146,7 @@ export function AboutPageContent() {
               </ul>
             </ScrollReveal>
 
-            <ScrollReveal direction="right">
+            <ScrollReveal direction="right" className="space-y-6">
               <div className="bg-white p-4 lg:p-6 border border-stone-200/70 shadow-sm">
                 <div className="relative aspect-[4/3] bg-stone-100">
                   <Image
@@ -160,6 +160,27 @@ export function AboutPageContent() {
                 <p className="mt-4 text-stone-500 text-xs uppercase tracking-[0.2em] text-center">
                   {t("credentials.plaqueAlt")}
                 </p>
+              </div>
+
+              {/* Official Urban Elephant master mark — pink lockup with TGCSA stars baked in */}
+              <div className="bg-white p-6 lg:p-8 border border-stone-200/70 shadow-sm flex items-center gap-6">
+                <div className="relative w-28 h-32 shrink-0">
+                  <Image
+                    src="/badges/urban-elephant-master-lockup.jpg"
+                    alt={t("credentials.lockupAlt")}
+                    fill
+                    sizes="112px"
+                    className="object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="font-bold uppercase tracking-[0.18em] text-xs text-[#24272a]">
+                    {t("credentials.lockupLabel")}
+                  </p>
+                  <p className="text-stone-500 text-sm mt-1 leading-snug">
+                    {t("credentials.lockupDescription")}
+                  </p>
+                </div>
               </div>
             </ScrollReveal>
           </div>
