@@ -59,7 +59,7 @@ export function TheHerdPageContent() {
       </section>
 
       {/* Welcome letter — verbatim from Bapata, the official member welcome */}
-      <section className="py-20 lg:py-28 bg-white">
+      <section className="py-20 lg:py-28 bg-stone-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-3xl mx-auto">
             <ScrollReveal>
