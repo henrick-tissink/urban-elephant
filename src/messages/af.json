@@ -77,10 +77,34 @@
   "trust": {
     "gradedTitle": "Amptelik TGCSA Gegradeer",
     "gradedDescription": "Toerisme-graderingsraad van Suid-Afrika",
+    "gradedCertLabel": "Bekyk sertifikaat",
     "managedTitle": "Professioneel Bestuur",
     "managedDescription": "Hotel-gehalte stelsels, eienaar-gelei sorg",
     "directTitle": "Beste Tarief, Direk Bespreek",
     "directDescription": "Ons sal dit klop — of met 10% verbeter"
+  },
+  "whyBookDirect": {
+    "eyebrow": "WAAROM DIREK BESPREEK",
+    "title": "Vier redes om derde partye oor te slaan.",
+    "intro": "Bespreek direk by Urban Elephant vir 'n beter tarief, 'n regte mens aan die lyn, en die klein ekstras wat hotelbesprekingswebwerwe nie kan deurgee nie.",
+    "items": {
+      "rates": {
+        "title": "Beste Tariewe Gewaarborg",
+        "description": "Kry jy 'n laer tarief aanlyn? Ons klop dit met 10%."
+      },
+      "offers": {
+        "title": "Eksklusiewe Aanbiedinge",
+        "description": "Lid-aanbiedinge, promosies en gekureerde Kaapstad-ervarings — net wanneer jy direk bespreek."
+      },
+      "flex": {
+        "title": "Buigsame Kansellasie",
+        "description": "Planne verander. Direkte besprekings kom met ons buigsaamste kansellasievoorwaardes."
+      },
+      "concierge": {
+        "title": "Persoonlike Concierge-diens",
+        "description": "'n Direkte lyn na ons span vir besprekings, aanbevelings en ondersteuning op die grond — voor, tydens en na jou verblyf."
+      }
+    }
   },
   "whyBook": {
     "eyebrow": "WAAROM BESPREEK BY ONS",
@@ -242,6 +266,19 @@
     "cta": {
       "title": "Gereed om Kaapstad te Ervaar?",
       "description": "Laat ons jou ons stad deur plaaslike oë wys. Blaai deur ons 4-ster woonstelle of kontak ons om jou Kaapstad-verblyf te beplan."
+    },
+    "credentials": {
+      "eyebrow": "AMPTELIK GEGRADEER",
+      "title": "Die plakkaat teen die muur, met die papierwerk om dit te staaf.",
+      "intro": "Urban Elephant is amptelik as 'n 4-ster Woonstelhotel gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, en is 'n lid van Cape Town Tourism. Albei sertifikate is openbaar — bekyk hulle hieronder.",
+      "plaqueAlt": "Toerisme-graderingsraad van Suid-Afrika — Woonstelhotel-graderingsplaket vir Urban Elephant",
+      "lockupAlt": "Urban Elephant Kaapstad — amptelike 4-ster meesterlogo",
+      "tgcsaLabel": "TGCSA-graderingsertifikaat",
+      "tgcsaDescription": "Amptelike 4-ster woonstelhotel-gradering deur die Toerisme-graderingsraad van Suid-Afrika.",
+      "tgcsaCta": "Bekyk TGCSA-sertifikaat",
+      "cttLabel": "Cape Town Tourism-lidmaatskap",
+      "cttDescription": "Lid van Cape Town Tourism — die stad se amptelike toerismeowerheid.",
+      "cttCta": "Bekyk CTT-lidmaatskap"
     }
   },
   "services": {
@@ -338,6 +375,12 @@
     "eyebrow": "URBAN ELEPHANT LOJALITEIT",
     "title": "Die Trop. Vir gaste wat aanhou tuis kom.",
     "subtitle": "Die Trop is Urban Elephant se lojaliteitsprogram — vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
+    "welcomeEyebrow": "WELKOM BY DIE TROP",
+    "welcomeTitle": "Welkom by die familie.",
+    "welcomeBody1": "Ons is bly om jou te verwelkom by 'n gemeenskap van reisigers, ontdekkers en stadliefhebbers wat deurdagte verblywe, outentieke ervarings en die lewendige gees van Kaapstad waardeer.",
+    "welcomeBody2": "As lid van Die Trop geniet jy toegang tot eksklusiewe voordele wat elke verblyf nog meer lonend maak, insluitend 10% afslag op die laagste beskikbare tarief wanneer jy direk bespreek, prioriteitstoegang tot nuwe eiendomme en spitsseisoenbeskikbaarheid, verwelkomingsgeskenke spesiaal vir jou verblyf voorberei, en eksklusiewe lid-aanbiedinge, promosies, en gekureerde Kaapstad-ervarings.",
+    "welcomeBody3": "By Urban Elephant glo ons gasvryheid moet persoonlik, moeiteloos en onvergeetlik voel. Of jy nou besig is om saak te doen, met vakansie is, of 'n lank-verwagte ontvlugting onderneem, ons span is verbind tot 'n uitsonderlike verblyf elke keer.",
+    "welcomeBody4": "Ons moedig jou aan om ons versameling eiendomme te verken, plaaslike ervarings te ontdek, en die baie voordele wat met Die Trop kom, te geniet. Sou jy enige tyd hulp benodig, is ons span altyd hier om te help.",
     "whyEyebrow": "HOEKOM DIE TROP",
     "whyTitle": "Lojaliteit, geheue, behoort — die manier wat olifante dit doen.",
     "whyIntro": "Urban Elephant probeer nie 'n koue korporatiewe hotelketting wees nie. Ons wil hê gaste moet voel asof hulle aan iets behoort — 'n handelsmerk wat hulle onthou en waardeer. Soos 'n olifanttrop, gaan dit oor lojaliteit, verbinding, beskerming, geheue, en tuis terugkom.",
@@ -395,7 +438,7 @@
       "disclaimer": "Deur aan te sluit stem jy in om af en toe e-posse van Urban Elephant te ontvang oor jou lidmaatskap. Skryf enige tyd uit.",
       "successEyebrow": "AMPER DAAR",
       "successTitle": "Ons het jou e-pos oopgemaak — druk stuur.",
-      "successBody": "Jou aanmeldings-e-pos is gereed in jou e-poskliënt, geadresseer aan Karin. Stuur dit deur en ons sal jou by Die Trop opstel, jou verwelkoming en jou lid-afslagkode stuur. (Outomatiese aanmelding kom binnekort — vir nou kry ons jou besonderhede direk.)"
+      "successBody": "Jou aanmeldings-e-pos is gereed in jou e-poskliënt, geadresseer aan Karin. Stuur dit deur en ons stel jou op by Die Trop, en dan kom jou verwelkomingsbrief en lid-afslagkode per e-pos — dieselfde warm verwelkoming wat Die Trop al jare geskryf het."
     },
     "bookEyebrow": "LEDE BESPREEK DIREK",
     "bookTitle": "Reeds deel van Die Trop? Bespreek direk, kry jou lidtarief.",

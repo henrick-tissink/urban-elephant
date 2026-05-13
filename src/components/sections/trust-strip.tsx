@@ -21,32 +21,6 @@ function TGCSABadge() {
 export function TrustStrip() {
   const t = useTranslations("trust");
 
-  const items = [
-    { titleKey: "gradedTitle", descKey: "gradedDescription", icon: <TGCSABadge /> },
-    {
-      titleKey: "managedTitle",
-      descKey: "managedDescription",
-      icon: (
-        <Check
-          strokeWidth={1.6}
-          className="w-9 h-9 text-[var(--color-brand-anchor)] shrink-0"
-          aria-hidden="true"
-        />
-      ),
-    },
-    {
-      titleKey: "directTitle",
-      descKey: "directDescription",
-      icon: (
-        <Check
-          strokeWidth={1.6}
-          className="w-9 h-9 text-[var(--color-brand-anchor)] shrink-0"
-          aria-hidden="true"
-        />
-      ),
-    },
-  ];
-
   return (
     <section
       aria-label="Credentials"
@@ -55,22 +29,60 @@ export function TrustStrip() {
       <div className="container mx-auto px-6 lg:px-12 py-8 lg:py-10">
         <ScrollReveal>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
-            {items.map((item) => (
-              <li
-                key={item.titleKey}
-                className="flex items-center gap-4 md:justify-center"
+            {/* TGCSA — links to the official certificate PDF so the credential is verifiable */}
+            <li className="flex items-center gap-4 md:justify-center">
+              <a
+                href="/documents/tgcsa-certificate.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-brand-anchor)]"
               >
-                {item.icon}
+                <TGCSABadge />
                 <div>
                   <p className="font-bold uppercase tracking-[0.18em] text-xs text-[#24272a]">
-                    {t(item.titleKey)}
+                    {t("gradedTitle")}
                   </p>
                   <p className="text-stone-500 text-[11px] mt-0.5 leading-snug">
-                    {t(item.descKey)}
+                    {t("gradedDescription")}
+                  </p>
+                  <p className="mt-1 text-[10px] uppercase tracking-[0.18em] text-[var(--color-brand-anchor)] group-hover:underline">
+                    {t("gradedCertLabel")} →
                   </p>
                 </div>
-              </li>
-            ))}
+              </a>
+            </li>
+
+            <li className="flex items-center gap-4 md:justify-center">
+              <Check
+                strokeWidth={1.6}
+                className="w-9 h-9 text-[var(--color-brand-anchor)] shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <p className="font-bold uppercase tracking-[0.18em] text-xs text-[#24272a]">
+                  {t("managedTitle")}
+                </p>
+                <p className="text-stone-500 text-[11px] mt-0.5 leading-snug">
+                  {t("managedDescription")}
+                </p>
+              </div>
+            </li>
+
+            <li className="flex items-center gap-4 md:justify-center">
+              <Check
+                strokeWidth={1.6}
+                className="w-9 h-9 text-[var(--color-brand-anchor)] shrink-0"
+                aria-hidden="true"
+              />
+              <div>
+                <p className="font-bold uppercase tracking-[0.18em] text-xs text-[#24272a]">
+                  {t("directTitle")}
+                </p>
+                <p className="text-stone-500 text-[11px] mt-0.5 leading-snug">
+                  {t("directDescription")}
+                </p>
+              </div>
+            </li>
           </ul>
         </ScrollReveal>
       </div>

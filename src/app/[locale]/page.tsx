@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WelcomeSection } from "@/components/sections/welcome-section";
 import { WhyBook } from "@/components/sections/why-book";
+import { WhyBookDirect } from "@/components/sections/why-book-direct";
 import { PropertiesGrid } from "@/components/sections/properties-grid";
 import { AboutPreview } from "@/components/sections/about-preview";
 import { Testimonials } from "@/components/sections/testimonials";
@@ -29,6 +30,7 @@ export default async function HomePage({ params }: Props) {
       <WelcomeSection />
       <PropertiesGrid properties={properties} />
       <WhyBook />
+      <WhyBookDirect />
       <AboutPreview />
       <Testimonials reviews={reviews} />
       <ServicesPreview />

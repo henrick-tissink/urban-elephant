@@ -18,6 +18,13 @@ Resolved over the past sessions:
 - **Star ratings corrected** — 16 On Bree and The Docklands had `starRating: 5` in data, which contradicted the "Luxury 4-Star" brand positioning and rendered "5 Star Apartment Hotel" on detail pages. Both now set to 4 across data + the Docklands description prose ("5-star apartment-hotel living" → "4-star…").
 - **Tours pulled across from old site** — every tour detail page used to render an empty middle (no description, just the price box). Twelve tours now have the proper marketing copy lifted from `urbanelephant.co.za/tours` (Aquila, Cape of Good Hope & Penguins, Boulders Beach, Wine Flies, Shark Cage Diving, Boat Cruises at the V&A, Surf Lessons Muizenberg, Kirstenbosch & Constantia, Kayaking, Harley & Cadillac, Full-Day Chauffeur, Faeeza's Bo-Kaap Cooking). Prices match the old site, with `priceNote` ("per person", "from", etc.) so the detail pages and cards read accurately. The two stub entries with no real content on the old site (`bo-kaap-walking-tour`, `table-mountain-hike`) were removed rather than left as ghosts.
 - **Per-property Nightsbridge URLs** — Rose now opens its own NB page (39237), Flamingo opens its own (39239), instead of every Book Direct landing on the shared Bree account.
+- **Client assets from OneDrive (13 May)** integrated across the site:
+  - `/documents/tgcsa-certificate.pdf` and `/documents/ctt-membership-certificate.pdf` saved as public downloads
+  - TrustStrip's TGCSA item now links to the official certificate PDF (small "View certificate →" affordance below the credential line)
+  - About page: new **Officially Graded** credentials section between Founder Story and Zola's Story — physical TGCSA "Apartment Hotel" plaque photo on the right, two downloadable certificate cards (TGCSA + CTT) on the left
+  - /the-herd: Bapata's welcome letter prose surfaced verbatim as a new **Welcome to The Herd** section between hero and "Why The Herd". Form success message tweaked to reference the welcome letter ("the same warm welcome the Herd has been writing for years")
+  - Homepage: new **WhyBookDirect** section (Why Book Direct, 4 client-approved benefits: Best Rates Guaranteed / Exclusive Offers / Flexible Cancellation / Personal Concierge Service) — inserted between WhyBook and AboutPreview
+  - New badge assets saved for future use: `/badges/tgcsa-4-stars.png` (official horizontal 4-star row) and `/badges/urban-elephant-master-lockup.jpg` (pink lockup) — neither is rendered yet; site logo stays as the existing wordmark per Henry's call
 
 Copy-paste the block below into WhatsApp.
 
@@ -39,6 +46,12 @@ Hi Niles 🙏 short batch — most of last round's notes are live, plus a couple
 Happy to ship piece by piece as you reply 🐘
 
 ---
+
+## Open questions for Niles (added 13 May after OneDrive drop)
+
+- **Why Book Direct body copy** — the client docx only provided the 4 benefit headings (Best Rates Guaranteed / Exclusive Offers / Flexible Cancellation / Personal Concierge Service), no supporting prose. I wrote one-line descriptions using existing approved phrases (e.g. the beat-rate-by-10% line from the hero, "member offers, promotions, and curated Cape Town experiences" lifted from your Herd welcome letter). The "Flexible Cancellation" and "Personal Concierge Service" descriptions are functional placeholders I drafted — please rewrite in your voice when you have a moment. Lives in `whyBookDirect.items.{flex,concierge}.description` in en.json/af.json.
+- **AF translations on new keys** — chrome and short labels are translated. The Herd welcome letter prose got a literal Afrikaans translation so the AF page doesn't render English mid-paragraph — review/replace if you want it in your own voice (`theHerd.welcomeBody{1..4}` in af.json).
+- **Pink master lockup** — saved to `/badges/urban-elephant-master-lockup.jpg` but NOT swapped in as the site logo (Canva raster + non-Biko type doesn't fit the typographic system). About page surfaces the TGCSA plaque photo instead. If you want the pink lockup featured on About too (alongside the plaque), say the word.
 
 ## Notes for Henry (not for WhatsApp)
 

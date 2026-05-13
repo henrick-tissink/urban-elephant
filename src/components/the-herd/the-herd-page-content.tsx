@@ -58,6 +58,31 @@ export function TheHerdPageContent() {
         </div>
       </section>
 
+      {/* Welcome letter — verbatim from Bapata, the official member welcome */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="container mx-auto px-6 lg:px-12">
+          <div className="max-w-3xl mx-auto">
+            <ScrollReveal>
+              <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs md:text-sm font-bold mb-5">
+                {t("welcomeEyebrow")}
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] leading-tight tracking-tight text-balance mb-8">
+                {t("welcomeTitle")}
+              </h2>
+              <div className="space-y-5 text-stone-700 text-base lg:text-lg leading-relaxed">
+                <p>{t("welcomeBody1")}</p>
+                <p>{t("welcomeBody2")}</p>
+                <p>{t("welcomeBody3")}</p>
+                <p>{t("welcomeBody4")}</p>
+              </div>
+              <p className="mt-10 text-stone-500 text-xs uppercase tracking-[0.2em]">
+                — Urban Elephant
+              </p>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Why The Herd — Bapata's brand reasoning bullets */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-6 lg:px-12">

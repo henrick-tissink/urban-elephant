@@ -77,10 +77,34 @@
   "trust": {
     "gradedTitle": "Officially TGCSA Graded",
     "gradedDescription": "Tourism Grading Council of South Africa",
+    "gradedCertLabel": "View certificate",
     "managedTitle": "Professionally Managed",
     "managedDescription": "Hotel-grade systems, owner-led care",
     "directTitle": "Best Rate, Booked Direct",
     "directDescription": "We'll match it — or beat it by 10%"
+  },
+  "whyBookDirect": {
+    "eyebrow": "WHY BOOK DIRECT",
+    "title": "Four reasons to skip the third parties.",
+    "intro": "Booking direct with Urban Elephant means a better rate, a real person on the line, and the small extras hotel booking sites can't pass through.",
+    "items": {
+      "rates": {
+        "title": "Best Rates Guaranteed",
+        "description": "Find a cheaper rate online and we'll beat it by 10%."
+      },
+      "offers": {
+        "title": "Exclusive Offers",
+        "description": "Member offers, promotions, and curated Cape Town experiences — only when you book direct."
+      },
+      "flex": {
+        "title": "Flexible Cancellation",
+        "description": "Plans change. Direct bookings come with our most flexible cancellation terms."
+      },
+      "concierge": {
+        "title": "Personal Concierge Service",
+        "description": "A direct line to our team for bookings, recommendations, and on-the-ground support — before, during, and after your stay."
+      }
+    }
   },
   "whyBook": {
     "eyebrow": "WHY BOOK WITH US",
@@ -242,6 +266,19 @@
     "cta": {
       "title": "Ready to Experience Cape Town?",
       "description": "Let us show you our city through local eyes. Browse our 4-star apartments or get in touch to plan your Cape Town stay."
+    },
+    "credentials": {
+      "eyebrow": "OFFICIALLY GRADED",
+      "title": "The plaque on the wall, the paperwork to back it up.",
+      "intro": "Urban Elephant is officially graded as a 4-Star Apartment Hotel by the Tourism Grading Council of South Africa, and a member of Cape Town Tourism. Both certificates are public — view them below.",
+      "plaqueAlt": "Tourism Grading Council of South Africa — Apartment Hotel grading plaque for Urban Elephant",
+      "lockupAlt": "Urban Elephant Cape Town — official 4-star master lockup",
+      "tgcsaLabel": "TGCSA grading certificate",
+      "tgcsaDescription": "Official 4-star apartment-hotel grading from the Tourism Grading Council of South Africa.",
+      "tgcsaCta": "View TGCSA certificate",
+      "cttLabel": "Cape Town Tourism membership",
+      "cttDescription": "Member of Cape Town Tourism — the city's official tourism authority.",
+      "cttCta": "View CTT membership"
     }
   },
   "services": {
@@ -338,6 +375,12 @@
     "eyebrow": "URBAN ELEPHANT LOYALTY",
     "title": "The Herd. For guests who keep coming home.",
     "subtitle": "The Herd is Urban Elephant's loyalty program — for guests who choose to stay with us again, and again. Members are recognised, remembered, and rewarded with exclusive direct rates and priority booking across every Urban Elephant property.",
+    "welcomeEyebrow": "WELCOME TO THE HERD",
+    "welcomeTitle": "Welcome to the family.",
+    "welcomeBody1": "We're delighted to have you join a community of travellers, explorers, and city lovers who appreciate thoughtful stays, authentic experiences, and the vibrant spirit of Cape Town.",
+    "welcomeBody2": "As a member of The Herd, you enjoy access to exclusive benefits designed to make every stay even more rewarding, including 10% off the lowest available rate when booking directly, priority booking access to new properties and peak-season availability, welcome amenities prepared especially for your stay, and exclusive member offers, promotions, and curated Cape Town experiences.",
+    "welcomeBody3": "At Urban Elephant, we believe hospitality should feel personal, effortless, and memorable. Whether you are visiting for business, leisure, or a long-awaited escape, our team is committed to making every stay exceptional.",
+    "welcomeBody4": "We encourage you to explore our collection of properties, discover local experiences, and enjoy the many advantages that come with being part of The Herd. Should you need assistance at any time, our team is always here to help.",
     "whyEyebrow": "WHY THE HERD",
     "whyTitle": "Loyalty, memory, belonging — the way elephants do it.",
     "whyIntro": "Urban Elephant isn't trying to be a cold corporate hotel chain. We want guests to feel like they belong to something — a brand that remembers them and values them. Like an elephant herd, the idea is loyalty, connection, protection, memory, and returning home.",
@@ -395,7 +438,7 @@
       "disclaimer": "By joining you agree to receive occasional emails from Urban Elephant about your membership. Unsubscribe any time.",
       "successEyebrow": "ALMOST THERE",
       "successTitle": "We've opened your email — hit send.",
-      "successBody": "Your draft signup is ready in your email client, addressed to Karin. Send it through and we'll set you up in the Herd, send your welcome and your member discount code. (We're rolling out automatic signup soon — for now, this gets us your details directly.)"
+      "successBody": "Your draft signup is ready in your email client, addressed to Karin. Send it through and we'll set you up in the Herd, then your welcome letter and member discount code arrive by email — the same warm welcome the Herd has been writing for years."
     },
     "bookEyebrow": "MEMBERS BOOK DIRECT",
     "bookTitle": "Already in the Herd? Book direct, get your member rate.",
