@@ -67,7 +67,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
-                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
+                  className="w-10 h-10 bg-[var(--color-brand-wash)]/10 rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
@@ -78,7 +78,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
-                  className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
+                  className="w-10 h-10 bg-[var(--color-brand-wash)]/10 rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
@@ -91,7 +91,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
+                    className="w-10 h-10 bg-[var(--color-brand-wash)]/10 rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                   >
                     <Instagram className="w-5 h-5" />
                   </a>
@@ -100,7 +100,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
-                    className="w-10 h-10 bg-[#1a1c1e] rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
+                    className="w-10 h-10 bg-[var(--color-brand-wash)]/10 rounded-full flex items-center justify-center hover:bg-[var(--color-brand-anchor)] transition-colors"
                   >
                     <Facebook className="w-5 h-5" />
                   </a>

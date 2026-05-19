@@ -74,6 +74,9 @@ export const properties: Property[] = [
     starRating: 4,
     featured: true,
     order: 1,
+    awards: [
+      { provider: "booking.com", score: 9.0, year: 2026, pdf: "/awards/16-on-bree.pdf" },
+    ],
   },
   {
     _id: "property-the-rose",
@@ -88,7 +91,7 @@ export const properties: Property[] = [
     location: "117 Strand Street, Cape Town",
     address: "117 Strand Street, Cape Town, South Africa",
     heroImage: "/images/properties/the-rose/hero.jpg",
-    gallery: propertyGallery("the-rose", 8),
+    gallery: propertyGallery("the-rose", 7),
     amenities: amenities([
       "Daily Housekeeping",
       "Airconditioning",
@@ -106,6 +109,9 @@ export const properties: Property[] = [
     starRating: 4,
     featured: true,
     order: 2,
+    awards: [
+      { provider: "booking.com", score: 9.0, year: 2026, pdf: "/awards/the-rose.pdf" },
+    ],
   },
   {
     _id: "property-the-docklands",
@@ -142,20 +148,23 @@ export const properties: Property[] = [
     starRating: 4,
     featured: true,
     order: 3,
+    awards: [
+      { provider: "booking.com", score: 8.4, year: 2026, pdf: "/awards/the-docklands.pdf" },
+    ],
   },
   {
     _id: "property-the-flamingo",
     slug: "the-flamingo",
-    name: "The Flamingo",
+    name: "Flamingo Express",
     tagline: "Your 4 Star seaside escape with effortless elegance.",
     description: [
-      "Urban Elephant at The Flamingo blends coastal calm with contemporary luxury in the heart of Sea Point.",
+      "Urban Elephant at Flamingo Express blends coastal calm with contemporary luxury in the heart of Sea Point.",
       "Designed for travellers who want more than just a place to sleep, these stylish 4-star apartments offer comfort, space and effortless access to Cape Town's famous promenade, cafés and beaches.",
       "Relaxed, secure and professionally managed — this is seaside living, the Urban Elephant way.",
     ],
     location: "Regent Road, Sea Point, Cape Town",
     heroImage: "/images/properties/the-flamingo/hero.jpg",
-    gallery: propertyGallery("the-flamingo", 15),
+    gallery: propertyGallery("the-flamingo", 13),
     amenities: amenities([
       "Daily Housekeeping",
       "Airconditioning",
@@ -172,6 +181,9 @@ export const properties: Property[] = [
     starRating: 4,
     featured: true,
     order: 4,
+    awards: [
+      { provider: "booking.com", score: 8.4, year: 2026, pdf: "/awards/flamingo-express.pdf" },
+    ],
   },
 ];
 
@@ -431,6 +443,18 @@ export const attractions: Attraction[] = [
 
 export const restaurants: Restaurant[] = [
   {
+    _id: "restaurant-vixi-social-house",
+    slug: "vixi-social-house",
+    name: "Vixi Social House",
+    mealType: "dinner",
+    image: "/images/restaurants/vixi-social-house.jpg",
+    description:
+      "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
+    hostNote:
+      "Go for the small plates. Stay for the music.",
+    perk: "Show your room key — free welcome drink with any meal.",
+  },
+  {
     _id: "restaurant-villa-47",
     slug: "villa-47",
     name: "Villa 47",
@@ -452,17 +476,6 @@ export const restaurants: Restaurant[] = [
     hostNote:
       "The wine list runs 600 bottles deep — trust the sommelier.",
   },
-  {
-    _id: "restaurant-vixi-social-house",
-    slug: "vixi-social-house",
-    name: "Vixi Social House",
-    mealType: "dinner",
-    image: "/images/restaurants/vixi-social-house.jpg",
-    description:
-      "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
-    hostNote:
-      "Go for the small plates. Stay for the music.",
-  },
 ];
 
 /**
@@ -479,6 +492,8 @@ export const recommendationsLetter = {
 };
 
 export const carHireVehicles: CarHireVehicle[] = [];
+
+export const enterpriseCarHireUrl = "";
 
 export const investorBrochureUrl = "/documents/investor-brochure.pdf";
 

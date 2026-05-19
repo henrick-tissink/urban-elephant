@@ -45,6 +45,7 @@
     "restaurantsTitle": "Waarheen ons 'n vriend sou stuur.",
     "restaurantsDescription": "'n Kort lys van drie plekke — een vir ontbyt, een vir middagete, een vir aandete. Nie een van hulle betaal ons nie.",
     "hostNote": "Gasheer se nota",
+    "perkLabel": "'n Geskenk van ons",
     "ctaEyebrow": "Wil jy meer?",
     "ctaTitle": "Stuur ons 'n nota. Ons stuur 'n langer lys terug.",
     "ctaButton": "Kontak ons"
@@ -159,7 +160,7 @@
       "body": "Ons dakswembad en asemrowende panoramiese uitsigte laat konstant 'n blywende indruk op ons gaste, wat dit 'n ideale bestemming maak vir beide ontspanning- en sakereisigers."
     },
     "flamingo": {
-      "name": "Urban Elephant at The Flamingo",
+      "name": "Urban Elephant at Flamingo Express",
       "tagline": "Seekant Ontvlugting",
       "description": "Jou seekant-ontvlugting met moeitelose elegansie.",
       "body": "Elke eenheid bevat 'n eenvoudige, elegante ontwerp met luukse aanrakings - ideaal vir werkende professionele mense, ontspanningsreisigers, of enigiemand wat 'n stylvolle basis naby die see soek."
@@ -213,7 +214,20 @@
       "luxury": "Luuks",
       "van": "Bus",
       "convertible": "Oopmotor"
+    },
+    "enterprise": {
+      "kicker": "ONS VENNOOT",
+      "title": "Bespreek deur ons vennoot — Enterprise.",
+      "body": "Urban Elephant-gaste kry Enterprise se volle Suid-Afrikaanse vloot teen voorkeurpryse, met aflewering by jou woonstelhotel gereël.",
+      "cta": "Bespreek met Enterprise",
+      "comingSoon": "Direkte skakel kom binnekort — kontak ons om 'n bespreking te reël."
     }
+  },
+  "awards": {
+    "eyebrow": "Erken deur gaste",
+    "bookingTitle": "Booking.com Reisiger Resensie-toekenning",
+    "scoreSuffix": "uit 10",
+    "viewCertificate": "Sien toekennings­sertifikaat"
   },
   "testimonials": {
     "title": "Gas-ervarings",

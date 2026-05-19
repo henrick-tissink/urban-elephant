@@ -1,7 +1,19 @@
 # WhatsApp message to Niles — pending items
 
+**Open asks back to Niles / Karin (added 19 May from latest WhatsApp batch):**
+
+- **Enterprise car-hire URL** — site now has a partner CTA block on `/car-hire` ("Reserve with Enterprise"). Button is disabled until you send the booking URL. Drop the URL into `enterpriseCarHireUrl` in `src/data/content.ts` to ship it.
+- **The Rose / Nightsbridge B&W** — confirmed code-side: all four properties hit Nightsbridge via the same URL pattern `https://book.nightsbridge.com/{id}?nbid=1040` with no theming params on our end. Bree (30034), Rose (39237), Docklands (30034), Flamingo Express (39239). The colour-vs-B&W rendering for The Rose is a Nightsbridge-side property setting on ID 39237 — Karin needs to flip it in the NB admin panel (or raise a ticket with NB support). Off our list, same pattern as the earlier 317 / 13th-floor issue.
+
 Resolved over the past sessions:
 
+- **Niles + Bapata batch (14 May)** applied:
+  - **"The Flamingo" → "Flamingo Express"** site-wide (display name only; URL slug `the-flamingo` preserved to keep existing links + bookings). The Booking.com 2026 award PDF was already issued to "Urban Elephant Express, The Flamingo" so the rename is consistent with their record.
+  - **AI artist-impression images removed** — Flamingo `01.jpg` (blue room w/ porthole + elephant painting) and `09.jpg` (blue pencil-sketch kitchen), and Rose `04.jpg` (blue bedroom w/ elephant plush). Remaining gallery files renumbered sequentially (Flamingo 15 → 13, Rose 8 → 7); `propertyGallery()` counts in `content.ts` updated.
+  - **Recommendations: Vixi first** — Niles asked for top spot ("we have a great deal with them"). Restaurants array reordered so Vixi is index 0; Villa 47 and Belthazar follow. Added a subtle pink "A gift from us" callout on the Vixi card surfacing the free welcome-drink-with-any-meal perk.
+  - **Booking.com 2026 awards live** — per-property Traveller Review Awards now show as a small badge on each property card (homepage editorial spreads, All Properties listing, Book Direct picker) and as a dedicated "Recognised by guests" block on each property detail page with a "View award certificate" PDF link. Scores: Bree 9.0, Rose 9.0, Flamingo Express 8.4, Docklands 8.4. PDFs at `public/awards/*.pdf`.
+  - **Pink threading** ("too white" — Niles + Bapata) — subtle wash tint (`bg-brand-wash/40`) added to WelcomeSection and AboutPreview; ServicesPreview cards get a soft pink left border; CTA section gradient wash opacity bumped 25% → 40%; footer social-icon backgrounds switched to brand-wash/10 with pink hover. Tokens unchanged.
+  - **Car Hire — Enterprise partner block** structured and ready; awaiting the actual Enterprise URL from Niles (currently disabled with "Direct link coming soon" copy).
 - 317 / 13th-floor → Bapata confirmed it's a Nightsbridge issue, off our list
 - Reviews → no external review-site links on the site (only source labels next to each pulled-in quote)
 - Photos batch from OneDrive → 22 photos imported across the four properties

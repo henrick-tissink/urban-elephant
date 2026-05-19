@@ -8,6 +8,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
+import { AwardBadge } from "@/components/property/award-badge";
 import type { PropertyCard } from "@/types";
 
 interface PropertiesGridProps {
@@ -113,6 +114,14 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                           <p className="mt-6 text-stone-600 text-base lg:text-lg leading-relaxed max-w-md text-balance font-light">
                             {property.tagline}
                           </p>
+                        )}
+
+                        {property.awards && property.awards.length > 0 && (
+                          <div className="mt-6 flex flex-wrap gap-2">
+                            {property.awards.map((award) => (
+                              <AwardBadge key={`${award.provider}-${award.year}`} award={award} />
+                            ))}
+                          </div>
                         )}
 
                         <span className="mt-8 inline-flex items-center gap-3 text-[#24272a] text-sm uppercase tracking-[0.25em] font-medium">

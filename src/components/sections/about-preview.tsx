@@ -12,7 +12,7 @@ export function AboutPreview() {
   const tCommon = useTranslations("common");
 
   return (
-    <section className="py-24 lg:py-32 bg-white overflow-hidden">
+    <section className="py-24 lg:py-32 bg-[var(--color-brand-wash)]/40 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image Side */}

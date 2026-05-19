@@ -8,7 +8,7 @@ export function WelcomeSection() {
   const t = useTranslations("welcome");
 
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section className="py-20 lg:py-28 bg-[var(--color-brand-wash)]/40">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Side */}

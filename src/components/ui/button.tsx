@@ -17,6 +17,8 @@ const buttonVariants = cva(
           "bg-[var(--color-brand-anchor)] text-white hover:bg-[var(--color-brand-anchor)] focus-visible:ring-[var(--color-brand-anchor)] shadow-lg shadow-[var(--color-brand-anchor)]/25 hover:shadow-[var(--color-brand-anchor)]/30",
         secondary:
           "bg-[var(--color-brand-wash)] text-[#24272a] hover:bg-[var(--color-brand-soft)] focus-visible:ring-[var(--color-brand-anchor)]",
+        tertiary:
+          "bg-[var(--color-brand-wash)] text-[var(--color-brand-anchor)] hover:bg-[var(--color-brand-soft)] focus-visible:ring-[var(--color-brand-anchor)]",
         outline:
           "border-2 border-[var(--color-brand-anchor)] bg-transparent text-[var(--color-brand-anchor)] hover:bg-[var(--color-brand-anchor)] hover:text-white",
         outlineLight:

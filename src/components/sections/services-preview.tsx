@@ -46,7 +46,7 @@ export function ServicesPreview() {
             return (
               <StaggerItem key={service.key}>
                 <Link href={service.href} className="group block h-full">
-                  <div className="bg-white p-8 lg:p-10 h-full border border-stone-200 hover:border-[var(--color-brand-anchor)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <div className="bg-white p-8 lg:p-10 h-full border border-stone-200 border-l-2 border-l-[var(--color-brand-anchor)]/30 hover:border-[var(--color-brand-anchor)] hover:border-l-[var(--color-brand-anchor)] hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                     <div className="w-14 h-14 bg-[var(--color-brand-wash)] rounded-full flex items-center justify-center mb-6 group-hover:bg-[var(--color-brand-soft)] transition-colors duration-300">
                       <Icon className="w-6 h-6 text-[var(--color-brand-anchor)] transition-colors duration-300" />
                     </div>

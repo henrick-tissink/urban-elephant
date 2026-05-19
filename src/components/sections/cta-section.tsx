@@ -17,7 +17,7 @@ export function CTASection() {
     <section className="relative py-32 lg:py-40 overflow-hidden bg-[#24272a]">
       {/* Brand-gradient wash anchored to one edge — references the logo without screaming */}
       <div
-        className="absolute -top-1/3 -right-1/4 w-[80%] h-[160%] opacity-25 blur-3xl pointer-events-none"
+        className="absolute -top-1/3 -right-1/4 w-[80%] h-[160%] opacity-40 blur-3xl pointer-events-none"
         style={{ background: "var(--gradient-brand)" }}
       />
 

@@ -10,6 +10,13 @@ export interface PropertyHighlight {
   icon?: string;
 }
 
+export interface PropertyAward {
+  provider: "booking.com";
+  score: number;
+  year: number;
+  pdf: string;
+}
+
 export interface Property {
   _id: string;
   slug: string;
@@ -28,6 +35,7 @@ export interface Property {
   starRating?: number;
   featured?: boolean;
   order?: number;
+  awards?: PropertyAward[];
 }
 
 export type PropertyCard = Property;
@@ -103,6 +111,7 @@ export interface Restaurant {
   cuisineType?: string;
   mealType?: "breakfast" | "lunch" | "dinner";
   website?: string;
+  perk?: string;
 }
 
 export interface VehicleSpecs {

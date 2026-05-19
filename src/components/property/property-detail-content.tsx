@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
+import { PropertyAwards } from "@/components/property/property-awards";
 import type { Property } from "@/types";
 
 interface PropertyDetailContentProps {
@@ -266,6 +267,14 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
               </ScrollReveal>
             </div>
           </section>
+        </>
+      )}
+
+      {/* Awards */}
+      {property.awards && property.awards.length > 0 && (
+        <>
+          <BrandDivider />
+          <PropertyAwards awards={property.awards} />
         </>
       )}
 

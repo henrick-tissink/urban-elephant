@@ -45,6 +45,7 @@
     "restaurantsTitle": "Where we'd send a friend.",
     "restaurantsDescription": "A short list of three places — one for breakfast, one for lunch, one for dinner. None of them pay us to be here.",
     "hostNote": "Host's note",
+    "perkLabel": "A gift from us",
     "ctaEyebrow": "Want more?",
     "ctaTitle": "Send us a note. We'll send back a longer list.",
     "ctaButton": "Get in touch"
@@ -159,7 +160,7 @@
       "body": "Our rooftop pool and breathtaking panoramic views consistently leave a lasting impression on our guests, making it an ideal destination for both leisure and business travellers. Secure your reservation at The Docklands today and experience the ultimate in convenience, prime location, breathtaking views, and the signature high-end amenities you've come to anticipate from us."
     },
     "flamingo": {
-      "name": "Urban Elephant at The Flamingo",
+      "name": "Urban Elephant at Flamingo Express",
       "tagline": "Seaside Escape",
       "description": "Your seaside escape with effortless elegance.",
       "body": "Each unit features a simple, elegant design with luxury touches - ideal for working professionals, leisure travellers, or anyone seeking a stylish base near the sea."
@@ -213,7 +214,20 @@
       "luxury": "Luxury",
       "van": "Van",
       "convertible": "Convertible"
+    },
+    "enterprise": {
+      "kicker": "OUR PARTNER",
+      "title": "Reserve through our partner — Enterprise.",
+      "body": "Urban Elephant guests get Enterprise's full South African fleet at preferred rates, with pickup arranged from your apartment hotel.",
+      "cta": "Reserve with Enterprise",
+      "comingSoon": "Direct link coming soon — contact us to arrange a booking."
     }
+  },
+  "awards": {
+    "eyebrow": "Recognised by guests",
+    "bookingTitle": "Booking.com Traveller Review Award",
+    "scoreSuffix": "out of 10",
+    "viewCertificate": "View award certificate"
   },
   "testimonials": {
     "title": "Guest Experiences",

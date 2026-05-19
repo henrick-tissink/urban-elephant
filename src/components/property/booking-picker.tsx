@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
+import { AwardBadge } from "@/components/property/award-badge";
 import type { Property } from "@/types";
 
 interface Props {
@@ -123,6 +124,13 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                           <p className="text-[#24272a] text-lg font-light tracking-tight group-hover:text-[var(--color-brand-anchor)] transition-colors">
                             {property.name}
                           </p>
+                          {property.awards && property.awards.length > 0 && (
+                            <div className="mt-2 flex flex-wrap gap-1.5">
+                              {property.awards.map((award) => (
+                                <AwardBadge key={`${award.provider}-${award.year}`} award={award} />
+                              ))}
+                            </div>
+                          )}
                           <span className="mt-2 inline-flex items-center gap-2 text-[#24272a] text-[11px] uppercase tracking-[0.25em] font-medium">
                             <span className="w-6 h-px bg-[#24272a] group-hover:w-10 group-hover:bg-[var(--color-brand-anchor)] transition-all duration-500" />
                             {t("cardCta")}

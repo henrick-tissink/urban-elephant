@@ -223,6 +223,17 @@ export function RecommendationsPageContent({
                     </p>
                   )}
 
+                  {restaurant.perk && (
+                    <div className="mb-5 bg-[var(--color-brand-wash)] border-l-2 border-[var(--color-brand-anchor)] px-4 py-3">
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--color-brand-anchor)] mb-1 font-bold">
+                        {t("perkLabel")}
+                      </p>
+                      <p className="text-[#24272a] text-sm leading-snug">
+                        {restaurant.perk}
+                      </p>
+                    </div>
+                  )}
+
                   {restaurant.hostNote && (
                     <div className="mt-auto pt-5 border-t border-stone-200">
                       <p className="text-[10px] uppercase tracking-[0.25em] text-[var(--color-brand-anchor)] mb-2">

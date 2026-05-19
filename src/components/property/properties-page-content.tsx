@@ -10,6 +10,7 @@ import {
   StaggerChildren,
   StaggerItem,
 } from "@/components/animations/scroll-reveal";
+import { AwardBadge } from "@/components/property/award-badge";
 import type { PropertyCard } from "@/types";
 
 interface PropertiesPageContentProps {
@@ -89,6 +90,14 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
                         <p className="text-stone-500 text-sm mt-3 line-clamp-2 max-w-md">
                           {property.tagline}
                         </p>
+                      )}
+
+                      {property.awards && property.awards.length > 0 && (
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {property.awards.map((award) => (
+                            <AwardBadge key={`${award.provider}-${award.year}`} award={award} />
+                          ))}
+                        </div>
                       )}
                     </div>
 

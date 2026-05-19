@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Users, Briefcase, Cog } from "lucide-react";
+import { Users, Briefcase, Cog, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
+import { enterpriseCarHireUrl } from "@/data/content";
 import type { CarHireVehicle } from "@/types";
 
 interface CarHirePageContentProps {
@@ -46,6 +47,42 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
             <p className="text-white/70 text-lg">
               {t("description")}
             </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Enterprise partner CTA */}
+      <section className="py-16 lg:py-20 bg-[var(--color-brand-wash)]/40">
+        <div className="container mx-auto px-6 lg:px-12">
+          <ScrollReveal>
+            <div className="max-w-3xl border-l-2 border-[var(--color-brand-anchor)] pl-8 lg:pl-12">
+              <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4 font-bold">
+                {t("enterprise.kicker")}
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#24272a] mb-5 tracking-tight text-balance">
+                {t("enterprise.title")}
+              </h2>
+              <p className="text-stone-600 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
+                {t("enterprise.body")}
+              </p>
+              {enterpriseCarHireUrl ? (
+                <Button variant="primary" size="lg" asChild>
+                  <a href={enterpriseCarHireUrl} target="_blank" rel="noopener noreferrer">
+                    {t("enterprise.cta")}
+                    <ArrowUpRight className="w-4 h-4" />
+                  </a>
+                </Button>
+              ) : (
+                <div className="flex flex-col gap-3">
+                  <Button variant="primary" size="lg" disabled>
+                    {t("enterprise.cta")}
+                  </Button>
+                  <p className="text-stone-500 text-sm italic">
+                    {t("enterprise.comingSoon")}
+                  </p>
+                </div>
+              )}
+            </div>
           </ScrollReveal>
         </div>
       </section>
