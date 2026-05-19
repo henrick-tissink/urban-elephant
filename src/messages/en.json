@@ -199,28 +199,11 @@
     "title": "Car Hire",
     "subtitle": "EXPLORE AT YOUR PACE",
     "description": "Premium vehicle rentals for your Cape Town adventure",
-    "viewVehicle": "View Details",
-    "features": "Features",
-    "specs": "Specifications",
-    "passengers": "Passengers",
-    "luggage": "Luggage",
-    "transmission": "Transmission",
-    "inquire": "Inquire About This Vehicle",
-    "categories": {
-      "all": "All Vehicles",
-      "compact": "Compact",
-      "sedan": "Sedan",
-      "suv": "SUV",
-      "luxury": "Luxury",
-      "van": "Van",
-      "convertible": "Convertible"
-    },
     "enterprise": {
-      "kicker": "OUR PARTNER",
-      "title": "Reserve through our partner — Enterprise.",
-      "body": "Urban Elephant guests get Enterprise's full South African fleet at preferred rates, with pickup arranged from your apartment hotel.",
-      "cta": "Reserve with Enterprise",
-      "comingSoon": "Direct link coming soon — contact us to arrange a booking."
+      "kicker": "POWERED BY ENTERPRISE",
+      "title": "Hire a car for your Cape Town adventure.",
+      "body": "Browse Enterprise's full South African fleet and book direct below. Best rates guaranteed — no booking fees, no hidden charges, and our team can arrange pickup from your apartment hotel.",
+      "footnote": "Prefer a personal touch? WhatsApp Karin on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
     }
   },
   "awards": {

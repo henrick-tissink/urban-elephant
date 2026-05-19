@@ -114,29 +114,6 @@ export interface Restaurant {
   perk?: string;
 }
 
-export interface VehicleSpecs {
-  transmission?: string;
-  passengers?: number;
-  luggage?: number;
-  doors?: number;
-  fuelType?: string;
-  airConditioning?: boolean;
-}
-
-export interface CarHireVehicle {
-  _id: string;
-  slug?: string;
-  name: string;
-  category?: "compact" | "sedan" | "suv" | "luxury" | "van" | "convertible";
-  image?: string;
-  gallery?: string[];
-  pricePerDay?: number;
-  features?: string[];
-  specs?: VehicleSpecs;
-  available?: boolean;
-  featured?: boolean;
-}
-
 export interface ContactInfo {
   email: string;
   phone: string;

@@ -1,6 +1,5 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { carHireVehicles } from "@/data/content";
 import { CarHirePageContent } from "@/components/car-hire/car-hire-page-content";
 
 type Props = {
@@ -21,5 +20,5 @@ export default async function CarHirePage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <CarHirePageContent vehicles={carHireVehicles} />;
+  return <CarHirePageContent />;
 }

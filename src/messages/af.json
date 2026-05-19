@@ -199,28 +199,11 @@
     "title": "Motorhuur",
     "subtitle": "VERKEN OP JOU TEMPO",
     "description": "Premium voertuighuur vir jou Kaapstad-avontuur",
-    "viewVehicle": "Sien Besonderhede",
-    "features": "Kenmerke",
-    "specs": "Spesifikasies",
-    "passengers": "Passasiers",
-    "luggage": "Bagasie",
-    "transmission": "Ratkas",
-    "inquire": "Navraag Oor Hierdie Voertuig",
-    "categories": {
-      "all": "Alle Voertuie",
-      "compact": "Kompak",
-      "sedan": "Sedan",
-      "suv": "SUV",
-      "luxury": "Luuks",
-      "van": "Bus",
-      "convertible": "Oopmotor"
-    },
     "enterprise": {
-      "kicker": "ONS VENNOOT",
-      "title": "Bespreek deur ons vennoot — Enterprise.",
-      "body": "Urban Elephant-gaste kry Enterprise se volle Suid-Afrikaanse vloot teen voorkeurpryse, met aflewering by jou woonstelhotel gereël.",
-      "cta": "Bespreek met Enterprise",
-      "comingSoon": "Direkte skakel kom binnekort — kontak ons om 'n bespreking te reël."
+      "kicker": "AANGEDRYF DEUR ENTERPRISE",
+      "title": "Huur 'n motor vir jou Kaapstad-avontuur.",
+      "body": "Blaai deur Enterprise se volle Suid-Afrikaanse vloot en bespreek direk hieronder. Beste pryse gewaarborg — geen besprekingsfooie, geen versteekte koste, en ons span kan aflewering by jou woonstelhotel reël.",
+      "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp Karin by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
     }
   },
   "awards": {

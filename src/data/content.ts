@@ -4,7 +4,6 @@ import type {
   Review,
   Attraction,
   Restaurant,
-  CarHireVehicle,
   SiteSettings,
 } from "@/types";
 
@@ -490,10 +489,6 @@ export const recommendationsLetter = {
   signature: "— Niles",
   signatureRole: "Founder & Chief Elephant Wrangler",
 };
-
-export const carHireVehicles: CarHireVehicle[] = [];
-
-export const enterpriseCarHireUrl = "";
 
 export const investorBrochureUrl = "/documents/investor-brochure.pdf";
 

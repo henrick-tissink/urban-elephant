@@ -1,36 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import Image from "next/image";
-import { Users, Briefcase, Cog, ArrowUpRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
-import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
-import { enterpriseCarHireUrl } from "@/data/content";
-import type { CarHireVehicle } from "@/types";
+import { ScrollReveal } from "@/components/animations/scroll-reveal";
+import { CarHireWidget } from "@/components/car-hire/car-hire-widget";
 
-interface CarHirePageContentProps {
-  vehicles: CarHireVehicle[];
-}
-
-const categories = [
-  { key: "all", value: undefined },
-  { key: "compact", value: "compact" },
-  { key: "sedan", value: "sedan" },
-  { key: "suv", value: "suv" },
-  { key: "luxury", value: "luxury" },
-];
-
-export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
+export function CarHirePageContent() {
   const t = useTranslations("carHire");
-  const tCommon = useTranslations("common");
-  const [activeCategory, setActiveCategory] = useState<string | undefined>(undefined);
-
-  const filteredVehicles = activeCategory
-    ? vehicles.filter((v) => v.category === activeCategory)
-    : vehicles;
 
   return (
     <>
@@ -51,144 +26,34 @@ export function CarHirePageContent({ vehicles }: CarHirePageContentProps) {
         </div>
       </section>
 
-      {/* Enterprise partner CTA */}
-      <section className="py-16 lg:py-20 bg-[var(--color-brand-wash)]/40">
+      {/* Enterprise partner intro + embedded booking widget */}
+      <section className="py-16 lg:py-24 bg-[var(--color-brand-wash)]/40">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal>
-            <div className="max-w-3xl border-l-2 border-[var(--color-brand-anchor)] pl-8 lg:pl-12">
+            <div className="max-w-3xl mx-auto mb-10 lg:mb-12 text-center">
               <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4 font-bold">
                 {t("enterprise.kicker")}
               </p>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-[#24272a] mb-5 tracking-tight text-balance">
                 {t("enterprise.title")}
               </h2>
-              <p className="text-stone-600 text-base md:text-lg mb-8 leading-relaxed max-w-2xl">
+              <p className="text-stone-600 text-base md:text-lg leading-relaxed text-balance">
                 {t("enterprise.body")}
               </p>
-              {enterpriseCarHireUrl ? (
-                <Button variant="primary" size="lg" asChild>
-                  <a href={enterpriseCarHireUrl} target="_blank" rel="noopener noreferrer">
-                    {t("enterprise.cta")}
-                    <ArrowUpRight className="w-4 h-4" />
-                  </a>
-                </Button>
-              ) : (
-                <div className="flex flex-col gap-3">
-                  <Button variant="primary" size="lg" disabled>
-                    {t("enterprise.cta")}
-                  </Button>
-                  <p className="text-stone-500 text-sm italic">
-                    {t("enterprise.comingSoon")}
-                  </p>
-                </div>
-              )}
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
-      {/* Filters & Content */}
-      <section className="py-16 lg:py-24 bg-white">
-        <div className="container mx-auto px-6 lg:px-12">
-          {/* Category Filters */}
-          <ScrollReveal className="mb-12">
-            <div className="flex flex-wrap gap-3">
-              {categories.map((cat) => (
-                <button
-                  key={cat.key}
-                  onClick={() => setActiveCategory(cat.value)}
-                  className={cn(
-                    "px-4 py-2 text-sm font-medium transition-all",
-                    activeCategory === cat.value
-                      ? "bg-[var(--color-brand-anchor)] text-white"
-                      : "bg-stone-100 text-stone-600 hover:bg-stone-200"
-                  )}
-                >
-                  {t(`categories.${cat.key}`)}
-                </button>
-              ))}
             </div>
           </ScrollReveal>
 
-          {/* Vehicles Grid */}
-          <StaggerChildren staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredVehicles.map((vehicle) => (
-              <StaggerItem key={vehicle._id}>
-                <div className="bg-stone-50 overflow-hidden">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    {vehicle.image ? (
-                      <Image
-                        src={vehicle.image}
-                        alt={vehicle.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center">
-                        <span className="text-stone-400">{vehicle.name}</span>
-                      </div>
-                    )}
-
-                    {vehicle.category && (
-                      <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 text-xs font-medium text-[#24272a] capitalize">
-                        {vehicle.category}
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-xl font-medium text-[#24272a] mb-3">
-                      {vehicle.name}
-                    </h3>
-
-                    {vehicle.specs && (
-                      <div className="flex items-center gap-4 text-sm text-stone-500 mb-4">
-                        {vehicle.specs.passengers && (
-                          <span className="flex items-center gap-1.5">
-                            <Users className="w-4 h-4" />
-                            {vehicle.specs.passengers}
-                          </span>
-                        )}
-                        {vehicle.specs.luggage && (
-                          <span className="flex items-center gap-1.5">
-                            <Briefcase className="w-4 h-4" />
-                            {vehicle.specs.luggage}
-                          </span>
-                        )}
-                        {vehicle.specs.transmission && (
-                          <span className="flex items-center gap-1.5">
-                            <Cog className="w-4 h-4" />
-                            {vehicle.specs.transmission}
-                          </span>
-                        )}
-                      </div>
-                    )}
-
-                    <div className="flex items-center justify-between">
-                      {vehicle.pricePerDay && (
-                        <div>
-                          <span className="text-2xl font-light text-[#24272a]">
-                            R{vehicle.pricePerDay.toLocaleString()}
-                          </span>
-                          <span className="text-stone-500 text-sm">/{tCommon("perDay")}</span>
-                        </div>
-                      )}
-                      <Button variant="outline" size="sm" asChild>
-                        <Link href="/contact">{t("inquire")}</Link>
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </StaggerItem>
-            ))}
-          </StaggerChildren>
-
-          {filteredVehicles.length === 0 && (
-            <div className="text-center py-12">
-              <p className="text-stone-500">No vehicles found in this category.</p>
+          <ScrollReveal>
+            <div className="max-w-5xl mx-auto bg-white shadow-sm border border-stone-200/70 p-4 sm:p-6 lg:p-8">
+              <CarHireWidget />
             </div>
-          )}
+          </ScrollReveal>
+
+          <ScrollReveal>
+            <p className="max-w-2xl mx-auto mt-10 lg:mt-12 text-center text-stone-500 text-sm leading-relaxed">
+              {t("enterprise.footnote")}
+            </p>
+          </ScrollReveal>
         </div>
       </section>
     </>
