@@ -66,7 +66,7 @@ export function CarHireWidget() {
     <div
       id={CONTAINER_ID}
       aria-label="Enterprise car hire booking"
-      className="min-h-[140px]"
+      className="min-h-[200px]"
     />
   );
 }

@@ -44,7 +44,7 @@ export function CarHirePageContent() {
           </ScrollReveal>
 
           <ScrollReveal>
-            <div className="max-w-5xl mx-auto bg-white shadow-sm border border-stone-200/70 p-4 sm:p-6 lg:p-8">
+            <div className="max-w-5xl mx-auto">
               <CarHireWidget />
             </div>
           </ScrollReveal>
