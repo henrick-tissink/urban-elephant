@@ -1,4 +1,5 @@
 import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WelcomeSection } from "@/components/sections/welcome-section";
@@ -11,10 +12,18 @@ import { ServicesPreview } from "@/components/sections/services-preview";
 import { CTASection } from "@/components/sections/cta-section";
 import { PromoPopup } from "@/components/promo/promo-popup";
 import { getFeaturedProperties, getFeaturedReviews } from "@/data/content";
+import { buildAlternates } from "@/lib/seo";
+import { JsonLd, itemListSchema } from "@/components/seo/structured-data";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    alternates: buildAlternates("/"),
+  };
+}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
@@ -25,6 +34,15 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={itemListSchema(
+          properties.map((p) => ({
+            name: `Urban Elephant at ${p.name}`,
+            path: `/properties/${p.slug}`,
+          })),
+          "Featured Urban Elephant Properties",
+        )}
+      />
       <Hero />
       <TrustStrip />
       <WelcomeSection />

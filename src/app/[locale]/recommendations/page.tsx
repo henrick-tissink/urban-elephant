@@ -2,6 +2,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { attractions, restaurants, recommendationsLetter } from "@/data/content";
 import { RecommendationsPageContent } from "@/components/recommendations/recommendations-page-content";
+import { buildAlternates } from "@/lib/seo";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -14,6 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t("title"),
     description: t("description"),
+    alternates: buildAlternates("/recommendations"),
   };
 }
 

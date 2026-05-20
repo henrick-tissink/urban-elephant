@@ -3,6 +3,12 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { properties, getPropertyBySlug } from "@/data/content";
 import { PropertyDetailContent } from "@/components/property/property-detail-content";
+import { buildAlternates, SITE_URL } from "@/lib/seo";
+import {
+  JsonLd,
+  hotelSchema,
+  breadcrumbSchema,
+} from "@/components/seo/structured-data";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -20,13 +26,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return { title: "Property Not Found" };
   }
 
+  const path = `/properties/${slug}`;
+  const alternates = buildAlternates(path);
+  const heroAbs = property.heroImage
+    ? `${SITE_URL}${property.heroImage}`
+    : undefined;
+
   return {
     title: property.name,
     description: property.tagline,
+    alternates,
     openGraph: {
       title: property.name,
       description: property.tagline,
-      images: property.heroImage ? [{ url: property.heroImage }] : undefined,
+      url: alternates.canonical,
+      images: heroAbs ? [{ url: heroAbs }] : undefined,
+      type: "website",
     },
   };
 }
@@ -38,5 +53,19 @@ export default async function PropertyDetailPage({ params }: Props) {
   const property = getPropertyBySlug(slug);
   if (!property) notFound();
 
-  return <PropertyDetailContent property={property} />;
+  return (
+    <>
+      <JsonLd
+        data={[
+          hotelSchema(property),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Properties", path: "/properties" },
+            { name: property.name, path: `/properties/${property.slug}` },
+          ]),
+        ]}
+      />
+      <PropertyDetailContent property={property} />
+    </>
+  );
 }

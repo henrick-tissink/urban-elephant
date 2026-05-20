@@ -1,34 +1,55 @@
 import type { MetadataRoute } from "next";
 import { properties, tours } from "@/data/content";
+import { routing } from "@/i18n/routing";
+import { localizedUrl } from "@/lib/seo";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za";
+type Entry = {
+  path: string;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  priority: number;
+};
+
+function withAlternates(entry: Entry, lastModified: Date) {
+  const languages: Record<string, string> = {};
+  for (const locale of routing.locales) {
+    languages[locale] = localizedUrl(locale, entry.path);
+  }
+  return {
+    url: localizedUrl(routing.defaultLocale, entry.path),
+    lastModified,
+    changeFrequency: entry.changeFrequency,
+    priority: entry.priority,
+    alternates: { languages },
+  };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
 
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1 },
-    { url: `${baseUrl}/properties`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/tours`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/recommendations`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/car-hire`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+  const entries: Entry[] = [
+    { path: "/", changeFrequency: "weekly", priority: 1 },
+    { path: "/properties", changeFrequency: "weekly", priority: 0.9 },
+    { path: "/the-herd", changeFrequency: "monthly", priority: 0.8 },
+    { path: "/tours", changeFrequency: "weekly", priority: 0.8 },
+    { path: "/recommendations", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/car-hire", changeFrequency: "weekly", priority: 0.7 },
+    { path: "/about", changeFrequency: "monthly", priority: 0.6 },
+    { path: "/contact", changeFrequency: "monthly", priority: 0.6 },
+    ...properties.map(
+      (p): Entry => ({
+        path: `/properties/${p.slug}`,
+        changeFrequency: "weekly",
+        priority: 0.8,
+      }),
+    ),
+    ...tours.map(
+      (t): Entry => ({
+        path: `/tours/${t.slug}`,
+        changeFrequency: "weekly",
+        priority: 0.7,
+      }),
+    ),
   ];
 
-  const propertyPages: MetadataRoute.Sitemap = properties.map((p) => ({
-    url: `${baseUrl}/properties/${p.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.8,
-  }));
-
-  const tourPages: MetadataRoute.Sitemap = tours.map((t) => ({
-    url: `${baseUrl}/tours/${t.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly" as const,
-    priority: 0.7,
-  }));
-
-  return [...staticPages, ...propertyPages, ...tourPages];
+  return entries.map((entry) => withAlternates(entry, now));
 }
