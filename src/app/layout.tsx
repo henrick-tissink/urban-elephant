@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@/components/global/analytics";
 import "./globals.css";
 
 const biko = localFont({
@@ -74,7 +75,10 @@ export default function RootLayout({
 }>) {
   return (
     <html className={biko.variable} suppressHydrationWarning>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
