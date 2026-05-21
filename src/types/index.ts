@@ -17,6 +17,24 @@ export interface PropertyAward {
   pdf: string;
 }
 
+export interface GeoCoordinates {
+  latitude: number;
+  longitude: number;
+}
+
+export interface PriceRange {
+  min: number;
+  max?: number;
+  currency: "ZAR";
+}
+
+export interface PostalAddress {
+  street: string;
+  locality: string;
+  postalCode?: string;
+  country: string;
+}
+
 export interface Property {
   _id: string;
   slug: string;
@@ -25,6 +43,9 @@ export interface Property {
   description?: string[];
   location?: string;
   address?: string;
+  postalAddress?: PostalAddress;
+  geo?: GeoCoordinates;
+  priceRange?: PriceRange;
   heroImage?: string;
   gallery?: string[];
   video?: string;
@@ -76,14 +97,16 @@ export interface Tour {
 
 export type TourCard = Tour;
 
-export type ReviewSource = "google" | "booking" | "tripadvisor" | "client" | "airbnb";
+export type ReviewSource = "google" | "booking" | "tripadvisor" | "client" | "airbnb" | "expedia";
 
 export interface Review {
   _id: string;
   author: string;
+  authorLocation?: string;
   content: string;
   rating: number;
   source?: ReviewSource;
+  sourceScore?: number;
   property?: { name: string; slug: string };
   date?: string;
   featured?: boolean;

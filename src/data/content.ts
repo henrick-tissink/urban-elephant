@@ -49,6 +49,15 @@ export const properties: Property[] = [
       "Secure on-site parking available.",
     ],
     location: "Cape Town CBD, South Africa",
+    address: "16 Bree Street, Cape Town City Centre, 8000, South Africa",
+    postalAddress: {
+      street: "16 Bree Street",
+      locality: "Cape Town City Centre",
+      postalCode: "8000",
+      country: "ZA",
+    },
+    geo: { latitude: -33.91771, longitude: 18.42152 },
+    priceRange: { min: 1500, max: 5500, currency: "ZAR" },
     heroImage: "/images/properties/16-on-bree/hero.jpg",
     gallery: propertyGallery("16-on-bree", 35),
     video: "/videos/properties/16-on-bree.mp4",
@@ -88,7 +97,15 @@ export const properties: Property[] = [
       "Stylish, central and full of character — a stay designed to feel uniquely Cape Town.",
     ],
     location: "117 Strand Street, Cape Town",
-    address: "117 Strand Street, Cape Town, South Africa",
+    address: "117 Strand Street, De Waterkant, Cape Town, 8000, South Africa",
+    postalAddress: {
+      street: "117 Strand Street",
+      locality: "De Waterkant, Cape Town",
+      postalCode: "8000",
+      country: "ZA",
+    },
+    geo: { latitude: -33.9188, longitude: 18.4209 },
+    priceRange: { min: 2000, currency: "ZAR" },
     heroImage: "/images/properties/the-rose/hero.jpg",
     gallery: propertyGallery("the-rose", 7),
     amenities: amenities([
@@ -125,6 +142,15 @@ export const properties: Property[] = [
       "Secure on-site parking available.",
     ],
     location: "De Waterkant, Cape Town",
+    address: "70 Prestwich Street, De Waterkant, Cape Town, 8005, South Africa",
+    postalAddress: {
+      street: "70 Prestwich Street",
+      locality: "De Waterkant, Cape Town",
+      postalCode: "8005",
+      country: "ZA",
+    },
+    geo: { latitude: -33.91283, longitude: 18.41836 },
+    priceRange: { min: 1750, currency: "ZAR" },
     heroImage: "/images/properties/the-docklands/hero.jpg",
     gallery: propertyGallery("the-docklands", 12),
     video: "/videos/properties/the-docklands.mp4",
@@ -162,6 +188,15 @@ export const properties: Property[] = [
       "Relaxed, secure and professionally managed — this is seaside living, the Urban Elephant way.",
     ],
     location: "Regent Road, Sea Point, Cape Town",
+    address: "6 Regent Road, Sea Point, Cape Town, 8000, South Africa",
+    postalAddress: {
+      street: "6 Regent Road",
+      locality: "Sea Point, Cape Town",
+      postalCode: "8000",
+      country: "ZA",
+    },
+    geo: { latitude: -33.9129, longitude: 18.3854 },
+    priceRange: { min: 1250, max: 1500, currency: "ZAR" },
     heroImage: "/images/properties/the-flamingo/hero.jpg",
     gallery: propertyGallery("the-flamingo", 13),
     amenities: amenities([
@@ -376,33 +411,154 @@ export const tours: Tour[] = [
 
 export const reviews: Review[] = [
   {
-    _id: "review-sarah-m",
-    author: "Sarah M.",
+    _id: "review-audreym26-16-on-bree",
+    author: "AudreyM26",
+    authorLocation: "France",
     content:
-      "Absolutely stunning property with breathtaking views of Table Mountain. The staff went above and beyond to make our stay special.",
-    rating: 5,
-    source: "google",
-    featured: true,
-  },
-  {
-    _id: "review-james-k",
-    author: "James K.",
-    content:
-      "Perfect location in the heart of Cape Town. The apartment was immaculate and had everything we needed.",
+      "The location is very convenient, close to the waterfront and the apartment matches the description. The welcome by the staff (Laz) was very good, very informative and caring. We recommend this establishment.",
     rating: 5,
     source: "booking",
+    sourceScore: 10,
+    property: { name: "16 On Bree", slug: "16-on-bree" },
     featured: true,
   },
   {
-    _id: "review-emma-l",
-    author: "Emma L.",
+    _id: "review-maryem-16-on-bree",
+    author: "Maryem",
+    authorLocation: "Germany",
     content:
-      "The rooftop pool is amazing! We loved watching the sunset over the city. Will definitely be back.",
+      "Wonderful apartment with a stunning view. Very well located in the heart of the city center, with everything at a walkable distance from you! The view is stunning and the room is clean and has all what you would need and more! The security of the building is very good and the overall experience was fantastic!",
     rating: 5,
-    source: "airbnb",
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "16 On Bree", slug: "16-on-bree" },
+    featured: true,
+  },
+  {
+    _id: "review-iris-16-on-bree",
+    author: "Iris",
+    authorLocation: "United States",
+    content:
+      "Perfection in all aspects. Very grateful for a wonderful experience.",
+    rating: 5,
+    source: "expedia",
+    sourceScore: 10,
+    property: { name: "16 On Bree", slug: "16-on-bree" },
+    featured: true,
+  },
+  {
+    _id: "review-ashutosh-the-rose",
+    author: "Ashutosh",
+    authorLocation: "India",
+    content:
+      "The host, Yam, was amazing and accommodating. I loved my stay at The Urban Elephant, The Rose.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Rose", slug: "the-rose" },
+    featured: true,
+  },
+  {
+    _id: "review-tan-the-rose",
+    author: "Tan",
+    authorLocation: "Singapore",
+    content:
+      "Definitely will stay there again when I come to Cape Town again. Fantastic location with a fantastic view of Table Mountain, Lion Heads and Signal Hill. Very clean, spacious and well maintained room with full facilities for cooking if needed. Security is also good with a guard on the ground floor and entry is only by photo image at the lift. Yam and Kenny are fast with respond to any questions and solved your issue immediately. Will definitely stay there again on my next visit.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Rose", slug: "the-rose" },
+    featured: true,
+  },
+  {
+    _id: "review-raymond-the-rose",
+    author: "Raymond",
+    authorLocation: "Tanzania",
+    content:
+      "What I really liked about Urban Elephant was the perfect balance between luxury and comfort. The apartment was modern, spotless, and beautifully furnished with amazing views of Cape Town and Table Mountain. The location was excellent — close to the V&A Waterfront, restaurants, cafés, and nightlife, yet still peaceful and secure. The staff were friendly and responsive, and the whole place felt safe, stylish, and ideal for both relaxing and working remotely. Small details like strong WiFi, comfortable beds, rooftop pool, Netflix, and a fully equipped kitchen made the stay even better. I'd definitely stay there again.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Rose", slug: "the-rose" },
+    featured: true,
+  },
+  {
+    _id: "review-gabrielle-docklands",
+    author: "Gabrielle",
+    authorLocation: "United States",
+    content:
+      "Fantastic apartment, wonderful hosts, extra amenities. The property was clean, a nice size, had a washer and dryer, and a beautiful patio. They provided extras such as coffee pods, tea, sugar, a bit of milk, and cold water in the refrigerator. There was dish soap and laundry detergent as well. There was also an extra blanket if needed. The hosts were wonderful. They provided a free parking space for our rental car and offered us early check-in and late check-out. They also checked on us regularly during our stay. There is security at the front so you feel safe as well.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Docklands", slug: "the-docklands" },
+    featured: true,
+  },
+  {
+    _id: "review-denise-docklands",
+    author: "Denise",
+    authorLocation: "Italy",
+    content:
+      "Best rooftop on V&A and Table Mountain. The safety first of all, there is always a guard at the reception. The location was super — in waterfront so near commercial and food services, the Table Mountain cable car is at 15min by car. The roof was amazing: best view of V&A, with barbecue and a pool to chill out. We had beautiful moments here! The apartment has all the necessary in the kitchen and it was really well cleaned.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Docklands", slug: "the-docklands" },
+    featured: true,
+  },
+  {
+    _id: "review-inga-docklands",
+    author: "Inga",
+    authorLocation: "Germany",
+    content:
+      "A comfortable place to stay, where nothing is lacking. Modern, fully equipped, clean and centrally located accommodation. The waterfront was within walking distance. We would come back anytime. The staff were very attentive and immediately brought a highchair for the baby upon request.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "The Docklands", slug: "the-docklands" },
+    featured: true,
+  },
+  {
+    _id: "review-liam-flamingo",
+    author: "Liam",
+    authorLocation: "Canada",
+    content:
+      "The room was the perfect size for me and had everything I needed. The building is basically brand new, and is in the perfect Sea Point location for walking to restaurants/cafes etc. I'd absolutely stay here again.",
+    rating: 5,
+    source: "expedia",
+    sourceScore: 10,
+    property: { name: "Flamingo Express", slug: "the-flamingo" },
+    featured: true,
+  },
+  {
+    _id: "review-mthokozisi-flamingo",
+    author: "Mthokozisi",
+    authorLocation: "South Africa",
+    content:
+      "I had an absolutely wonderful experience here. The apartment itself was exceptional — modern, clean, and very well-appointed. I was equally impressed by the facilities and the overall layout of the area, which felt incredibly safe and secure throughout my stay. What really set this place apart, however, was the staff. They are truly the best; you can tell they put genuine effort into making sure every guest is taken care of. I can't recommend this place enough, definitely gonna book again.",
+    rating: 5,
+    source: "booking",
+    sourceScore: 10,
+    property: { name: "Flamingo Express", slug: "the-flamingo" },
+    featured: true,
+  },
+  {
+    _id: "review-edson-flamingo",
+    author: "Edson",
+    authorLocation: "Brazil",
+    content:
+      "Accommodation with good facilities, with all the necessary utensils for cooking if needed. Comfortable room with amenities, bathrobes and towels available, which made everything ideal. Ironing board and iron available. Good wardrobe. Organized and cleaned every two days. Good location and staff and manager were super attentive and helpful at reception.",
+    rating: 5,
+    source: "expedia",
+    sourceScore: 10,
+    property: { name: "Flamingo Express", slug: "the-flamingo" },
     featured: true,
   },
 ];
+
+export function getReviewsForProperty(slug: string): Review[] {
+  return reviews.filter((r) => r.property?.slug === slug);
+}
 
 export const attractions: Attraction[] = [
   {

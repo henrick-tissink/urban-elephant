@@ -9,13 +9,57 @@ import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
 import { PropertyAwards } from "@/components/property/property-awards";
+import { Link } from "@/i18n/navigation";
+import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { getReviewsForProperty } from "@/data/content";
 import type { Property } from "@/types";
+import type { FaqEntry } from "@/lib/property-faq";
+import { cn } from "@/lib/utils";
 
 interface PropertyDetailContentProps {
   property: Property;
+  faqs?: FaqEntry[];
 }
 
-export function PropertyDetailContent({ property }: PropertyDetailContentProps) {
+function PropertyFaqItem({ q, a }: FaqEntry) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border-b border-stone-200">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="w-full flex items-start justify-between gap-6 py-5 text-left"
+        aria-expanded={open}
+      >
+        <span className="text-base md:text-lg text-[#24272a] font-medium leading-snug pr-4">
+          {q}
+        </span>
+        <ChevronDown
+          className={cn(
+            "w-5 h-5 text-stone-500 mt-1 shrink-0 transition-transform duration-300",
+            open && "rotate-180",
+          )}
+        />
+      </button>
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.28, ease: [0.25, 0.1, 0.25, 1] }}
+            className="overflow-hidden"
+          >
+            <p className="pb-5 pr-10 text-stone-600 leading-relaxed">{a}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailContentProps) {
   const t = useTranslations("properties");
 
   const [showBookingBar, setShowBookingBar] = useState(false);
@@ -42,6 +86,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
   const tailGallery = galleryImages.slice(2);
 
   const stars = property.starRating ?? 0;
+  const propertyReviews = getReviewsForProperty(property.slug);
 
   return (
     <article className="bg-white">
@@ -50,7 +95,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
         {property.heroImage && (
           <Image
             src={property.heroImage}
-            alt={property.name}
+            alt={`Urban Elephant at ${property.name} — 4-star apartment hotel in ${property.location ?? "Cape Town"}`}
             fill
             priority
             sizes="100vw"
@@ -133,7 +178,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
                     <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                       <Image
                         src={pair.image}
-                        alt={`${property.name} — view ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name} apartment interior, ${property.location ?? "Cape Town"} — view ${i + 1}`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 60vw"
                         className="object-cover"
@@ -202,7 +247,9 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-12 max-w-4xl mx-auto">
             <div>
-              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">Where</p>
+              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">
+                {t("addressLabel")}
+              </p>
               <p className="text-[#24272a] text-lg font-light leading-snug">
                 {property.address || property.location}
               </p>
@@ -215,19 +262,29 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
               </p>
             </div>
             <div>
-              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">Booking</p>
-              <p className="text-[#24272a] text-lg font-light leading-snug">
-                Direct rate guaranteed.
-                <br />
-                <a
-                  href={property.bookingUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity"
-                >
-                  Check availability →
-                </a>
+              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">
+                {t("ratesLabel")}
               </p>
+              {property.priceRange && (
+                <p className="text-[#24272a] text-lg font-light leading-snug">
+                  {property.priceRange.max
+                    ? t("ratesRange", {
+                        from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
+                        to: `R${property.priceRange.max.toLocaleString("en-ZA")}`,
+                      })
+                    : t("ratesFrom", {
+                        from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
+                      })}
+                </p>
+              )}
+              <a
+                href={property.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity text-sm mt-2 inline-block"
+              >
+                Check availability →
+              </a>
             </div>
           </div>
         </div>
@@ -270,6 +327,103 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
         </>
       )}
 
+      {/* Guest reviews — what real guests said about this property */}
+      {propertyReviews.length > 0 && (
+        <>
+          <BrandDivider />
+          <section className="py-20 lg:py-28 bg-[#24272a] text-white">
+            <div className="container mx-auto px-6 lg:px-12">
+              <ScrollReveal className="text-center mb-16">
+                <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-xs mb-4">
+                  Guests on this property
+                </p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-light">
+                  What people who stayed said.
+                </h2>
+              </ScrollReveal>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                {propertyReviews.map((review) => (
+                  <ScrollReveal key={review._id}>
+                    <figure className="h-full flex flex-col border border-white/10 bg-white/[0.03] p-8">
+                      <blockquote className="text-white/90 text-base leading-relaxed flex-1">
+                        <p>&ldquo;{review.content}&rdquo;</p>
+                      </blockquote>
+                      <figcaption className="mt-6 pt-6 border-t border-white/10">
+                        <p className="text-[var(--color-brand-mid)] font-medium">
+                          {review.author}
+                          {review.authorLocation && (
+                            <span className="text-white/50 font-light">
+                              {" "}— {review.authorLocation}
+                            </span>
+                          )}
+                        </p>
+                        {review.sourceScore !== undefined && review.source && (
+                          <p className="text-white/60 text-xs uppercase tracking-[0.2em] mt-2">
+                            {review.sourceScore}/10 ·{" "}
+                            {review.source === "booking"
+                              ? "Booking.com"
+                              : review.source === "expedia"
+                                ? "Expedia"
+                                : review.source}
+                          </p>
+                        )}
+                      </figcaption>
+                    </figure>
+                  </ScrollReveal>
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
+      {/* Property-specific FAQs — unique per-property content for SEO + UX */}
+      {faqs.length > 0 && (
+        <>
+          <BrandDivider />
+          <section className="py-20 lg:py-28 bg-white">
+            <div className="container mx-auto px-6 lg:px-12">
+              <ScrollReveal className="max-w-3xl mx-auto mb-12 text-center">
+                <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4">
+                  Common questions
+                </p>
+                <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] tracking-tight font-light">
+                  About a stay at {property.name}.
+                </h2>
+              </ScrollReveal>
+
+              <div className="max-w-3xl mx-auto">
+                <div className="border-t border-stone-200">
+                  {faqs.map((faq) => (
+                    <PropertyFaqItem key={faq.q} q={faq.q} a={faq.a} />
+                  ))}
+                </div>
+                <p className="mt-10 text-center text-stone-500">
+                  More questions? See the{" "}
+                  <Link
+                    href="/faq"
+                    className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
+                  >
+                    full FAQ
+                  </Link>
+                  {" "}or{" "}
+                  <a
+                    href="https://wa.me/27726188140"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
+                  >
+                    WhatsApp Karin
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
+
       {/* Awards */}
       {property.awards && property.awards.length > 0 && (
         <>
@@ -306,7 +460,7 @@ export function PropertyDetailContent({ property }: PropertyDetailContentProps) 
                     >
                       <Image
                         src={image}
-                        alt={`${property.name} — gallery ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name}, ${property.location ?? "Cape Town"} — apartment and amenities, image ${i + 1}`}
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
                         className="object-cover hover:scale-[1.02] transition-transform duration-700 ease-out"

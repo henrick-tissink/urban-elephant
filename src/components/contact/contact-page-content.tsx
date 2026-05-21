@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Mail, Phone, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, MessageCircle, Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
@@ -12,6 +12,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import type { SiteSettings, PropertyCard } from "@/types";
+
+const KARIN_WHATSAPP = "27726188140";
+
+function buildWaPrefill(data: ContactFormData): string {
+  const lines = [
+    `Hi Karin, this is ${data.name} — I just sent a message via the website.`,
+    data.property ? `Property: ${data.property}` : null,
+    `Subject: ${data.subject}`,
+  ].filter(Boolean) as string[];
+  return `https://wa.me/${KARIN_WHATSAPP}?text=${encodeURIComponent(lines.join("\n\n"))}`;
+}
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -32,6 +43,7 @@ interface ContactPageContentProps {
 export function ContactPageContent({ settings, properties }: ContactPageContentProps) {
   const t = useTranslations("contact");
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState<ContactFormData | null>(null);
 
   const {
     register,
@@ -53,7 +65,7 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
 
       if (!response.ok) throw new Error("Failed to send");
 
-      toast.success(t("form.success"));
+      setSubmitted(data);
       reset();
     } catch {
       toast.error(t("form.error"));
@@ -61,6 +73,8 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
       setIsSubmitting(false);
     }
   };
+
+  const sendAnother = () => setSubmitted(null);
 
   return (
     <>
@@ -85,8 +99,39 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
-            {/* Contact Form */}
+            {/* Contact Form (or success state with WhatsApp prefill) */}
             <ScrollReveal>
+              {submitted ? (
+                <div className="border border-stone-200 bg-stone-50 p-8 lg:p-10">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--color-brand-wash)] mb-6">
+                    <Check className="w-7 h-7 text-[var(--color-brand-anchor)]" />
+                  </div>
+                  <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-3">
+                    {t("form.successEyebrow")}
+                  </p>
+                  <h2 className="text-3xl lg:text-4xl font-light text-[#24272a] mb-4">
+                    {t("form.successHeading", { name: submitted.name })}
+                  </h2>
+                  <p className="text-stone-600 leading-relaxed mb-8">
+                    {t("form.successBody")}
+                  </p>
+                  <div className="flex flex-wrap gap-4">
+                    <Button variant="primary" size="lg" asChild>
+                      <a
+                        href={buildWaPrefill(submitted)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <MessageCircle className="w-4 h-4 mr-2" />
+                        {t("form.successWa")}
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="lg" onClick={sendAnother}>
+                      {t("form.successAgain")}
+                    </Button>
+                  </div>
+                </div>
+              ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-6">
                   <Input
@@ -150,6 +195,7 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
                   {isSubmitting ? t("form.submit") : t("form.submit")}
                 </Button>
               </form>
+              )}
             </ScrollReveal>
 
             {/* Contact Info */}

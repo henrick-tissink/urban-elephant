@@ -1,5 +1,5 @@
-import { siteSettings } from "@/data/content";
-import type { Property, Tour } from "@/types";
+import { properties, reviews as allReviews, siteSettings, getReviewsForProperty } from "@/data/content";
+import type { Property, Review, Tour } from "@/types";
 import { SITE_URL, localizedUrl } from "@/lib/seo";
 
 const ORG_ID = `${SITE_URL}#organization`;
@@ -20,24 +20,106 @@ export function JsonLd({ data }: { data: object | object[] }) {
   );
 }
 
+function brandAggregateRating() {
+  const scored = allReviews.filter((r) => r.sourceScore !== undefined);
+  if (!scored.length) return undefined;
+  const sum = scored.reduce((acc, r) => acc + (r.sourceScore ?? 0), 0);
+  const avg = sum / scored.length;
+  return {
+    "@type": "AggregateRating",
+    ratingValue: Number(avg.toFixed(1)),
+    bestRating: 10,
+    reviewCount: scored.length,
+  };
+}
+
 export function organizationSchema() {
+  const aggregate = brandAggregateRating();
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LodgingBusiness",
     "@id": ORG_ID,
     name: siteSettings.siteName,
+    alternateName: "Urban Elephant Hotels",
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.svg`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/logo.svg`,
+    },
+    image: `${SITE_URL}/images/site/og.jpg`,
     description:
       "Family-owned, officially TGCSA-graded luxury apartment hotels in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management.",
     email: siteSettings.contact.email,
     telephone: siteSettings.contact.phone,
+    priceRange: "R1,250 – R5,500",
+    currenciesAccepted: "ZAR",
+    paymentAccepted: "Credit Card, EFT",
     address: {
       "@type": "PostalAddress",
       addressLocality: siteSettings.address.city,
       addressRegion: "Western Cape",
       addressCountry: "ZA",
     },
+    areaServed: {
+      "@type": "City",
+      name: "Cape Town",
+    },
+    knowsAbout: [
+      "Apartment hotels in Cape Town",
+      "TGCSA grading",
+      "Tourism Grading Council of South Africa",
+      "V&A Waterfront accommodation",
+      "Table Mountain views",
+      "De Waterkant",
+      "Sea Point",
+      "Cape Town CBD",
+      "Cape Town airport transfers",
+      "Cape Town wine tours",
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+        ],
+        opens: "09:00",
+        closes: "17:00",
+        description: "Operations & reservations office hours",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "00:00",
+        closes: "23:59",
+        description: "24-hour concierge and guest relations",
+      },
+    ],
+    availableLanguage: ["English", "Afrikaans"],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Urban Elephant Apartment Hotels",
+      itemListElement: properties.map((p) => ({
+        "@type": "Offer",
+        url: localizedUrl("en", `/properties/${p.slug}`),
+        itemOffered: {
+          "@type": "Hotel",
+          name: `Urban Elephant at ${p.name}`,
+        },
+      })),
+    },
+    ...(aggregate && { aggregateRating: aggregate }),
     sameAs: [siteSettings.social.instagram, siteSettings.social.facebook].filter(
       Boolean,
     ),
@@ -62,13 +144,69 @@ function streetFromAddress(address?: string): string | undefined {
   return first && /\d/.test(first) ? first : undefined;
 }
 
+const SOURCE_PUBLISHER: Record<string, string> = {
+  booking: "Booking.com",
+  google: "Google",
+  tripadvisor: "TripAdvisor",
+  airbnb: "Airbnb",
+  expedia: "Expedia",
+  client: "Direct",
+};
+
+function formatPriceRange(property: Property): string | undefined {
+  const r = property.priceRange;
+  if (!r) return undefined;
+  const max = r.max ? `R${r.max}` : undefined;
+  return max ? `R${r.min} - ${max}` : `From R${r.min}`;
+}
+
+function reviewSchema(review: Review) {
+  return {
+    "@type": "Review",
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: review.sourceScore ?? review.rating,
+      bestRating: review.sourceScore ? 10 : 5,
+    },
+    author: {
+      "@type": "Person",
+      name: review.author,
+      ...(review.authorLocation && { address: review.authorLocation }),
+    },
+    reviewBody: review.content,
+    ...(review.source && {
+      publisher: {
+        "@type": "Organization",
+        name: SOURCE_PUBLISHER[review.source] ?? review.source,
+      },
+    }),
+  };
+}
+
+function aggregateRatingFromReviews(reviews: Review[]) {
+  if (!reviews.length) return undefined;
+  const scored = reviews.filter((r) => r.sourceScore !== undefined);
+  if (!scored.length) return undefined;
+  const sum = scored.reduce((acc, r) => acc + (r.sourceScore ?? 0), 0);
+  const avg = sum / scored.length;
+  return {
+    "@type": "AggregateRating",
+    ratingValue: Number(avg.toFixed(1)),
+    bestRating: 10,
+    reviewCount: scored.length,
+  };
+}
+
 export function hotelSchema(property: Property) {
   const url = localizedUrl("en", `/properties/${property.slug}`);
-  const street = streetFromAddress(property.address);
+  const street = property.postalAddress?.street ?? streetFromAddress(property.address);
   const galleryAbs = (property.gallery ?? [])
     .slice(0, 8)
     .map((g) => asAbsolute(g))
     .filter((u): u is string => Boolean(u));
+  const propertyReviews = getReviewsForProperty(property.slug);
+  const aggregate = aggregateRatingFromReviews(propertyReviews);
+  const priceRange = formatPriceRange(property);
 
   return {
     "@context": "https://schema.org",
@@ -88,10 +226,37 @@ export function hotelSchema(property: Property) {
     address: {
       "@type": "PostalAddress",
       ...(street && { streetAddress: street }),
-      addressLocality: "Cape Town",
+      addressLocality: property.postalAddress?.locality ?? "Cape Town",
+      ...(property.postalAddress?.postalCode && {
+        postalCode: property.postalAddress.postalCode,
+      }),
       addressRegion: "Western Cape",
       addressCountry: "ZA",
     },
+    ...(property.geo && {
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: property.geo.latitude,
+        longitude: property.geo.longitude,
+      },
+    }),
+    ...(priceRange && { priceRange }),
+    ...(property.priceRange && {
+      makesOffer: {
+        "@type": "Offer",
+        priceCurrency: property.priceRange.currency,
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: property.priceRange.min,
+          priceCurrency: property.priceRange.currency,
+          unitText: "night",
+          ...(property.priceRange.max && {
+            maxPrice: property.priceRange.max,
+            minPrice: property.priceRange.min,
+          }),
+        },
+      },
+    }),
     ...(property.amenities?.length && {
       amenityFeature: property.amenities.map((a) => ({
         "@type": "LocationFeatureSpecification",
@@ -99,17 +264,45 @@ export function hotelSchema(property: Property) {
         value: true,
       })),
     }),
+    ...(aggregate && { aggregateRating: aggregate }),
+    ...(propertyReviews.length && {
+      review: propertyReviews.map(reviewSchema),
+    }),
     telephone: siteSettings.contact.phone,
     email: siteSettings.contact.email,
     brand: { "@type": "Brand", name: siteSettings.siteName },
     parentOrganization: { "@id": ORG_ID },
     isAcceptingReservations: true,
+    checkinTime: "15:00",
+    checkoutTime: "10:30",
+    smokingAllowed: false,
+    currenciesAccepted: "ZAR",
+    paymentAccepted: "Credit Card, EFT",
+    availableLanguage: ["English", "Afrikaans"],
+    ...(property.geo && {
+      hasMap: `https://www.google.com/maps/search/?api=1&query=${property.geo.latitude},${property.geo.longitude}`,
+    }),
     ...(property.bookingUrl && {
       potentialAction: {
         "@type": "ReserveAction",
         target: property.bookingUrl,
       },
     }),
+  };
+}
+
+export function faqPageSchema(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 }
 

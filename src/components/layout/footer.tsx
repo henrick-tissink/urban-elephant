@@ -21,6 +21,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
     { key: "explore", href: "/recommendations" },
     { key: "carHire", href: "/car-hire" },
     { key: "about", href: "/about" },
+    { key: "faq", href: "/faq" },
     { key: "contact", href: "/contact" },
   ];
 

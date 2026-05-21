@@ -5,12 +5,13 @@ import { useTranslations } from "next-intl";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import { Button } from "@/components/ui/button";
 import { MagneticButton } from "@/components/animations/magnetic-button";
+import { BookingPicker } from "@/components/property/booking-picker";
+import { properties } from "@/data/content";
 
 const reasonKeys = ["loyalty", "protection", "belonging", "premium"] as const;
 const benefitKeys = ["rates", "priority", "amenities", "offers"] as const;
 
 const SIGNUP_RECIPIENT = "karin@urbanelephant.co.za";
-const BOOK_DIRECT_URL = "https://book.nightsbridge.com/30034?nbid=1040";
 
 export function TheHerdPageContent() {
   const t = useTranslations("theHerd");
@@ -18,6 +19,7 @@ export function TheHerdPageContent() {
   const [formState, setFormState] = useState<"idle" | "submitting" | "success">("idle");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [pickerOpen, setPickerOpen] = useState(false);
 
   // Stopgap until Marshall wires the backend: opens the user's email
   // client with a pre-filled signup to Karin. Their email proves intent
@@ -245,15 +247,23 @@ export function TheHerdPageContent() {
               {t("bookDescription")}
             </p>
             <MagneticButton>
-              <Button variant="primary" size="lg" asChild>
-                <a href={BOOK_DIRECT_URL} target="_blank" rel="noopener noreferrer">
-                  {t("bookCta")}
-                </a>
+              <Button
+                variant="primary"
+                size="lg"
+                onClick={() => setPickerOpen(true)}
+              >
+                {t("bookCta")}
               </Button>
             </MagneticButton>
           </ScrollReveal>
         </div>
       </section>
+
+      <BookingPicker
+        open={pickerOpen}
+        onClose={() => setPickerOpen(false)}
+        properties={properties}
+      />
     </>
   );
 }

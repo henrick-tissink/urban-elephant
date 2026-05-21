@@ -29,6 +29,7 @@
     "carHire": "Car Hire",
     "theHerd": "The Herd",
     "about": "About",
+    "faq": "FAQs",
     "contact": "Contact",
     "bookNow": "Book Now"
   },
@@ -147,6 +148,10 @@
     "bookThisProperty": "Book This Property",
     "checkAvailability": "Check Availability",
     "nearbyAttractions": "Nearby Attractions",
+    "addressLabel": "Address",
+    "ratesLabel": "Rates from",
+    "ratesRange": "{from} – {to} per night",
+    "ratesFrom": "From {from} per night",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -314,7 +319,12 @@
       "guests": "Number of Guests",
       "submit": "Send Message",
       "success": "Thank you! We'll get back to you soon.",
-      "error": "Something went wrong. Please try again."
+      "error": "Something went wrong. Please try again.",
+      "successEyebrow": "Message sent",
+      "successHeading": "Got it, {name}.",
+      "successBody": "Karin will reply within working hours. While you wait, message her on WhatsApp — she answers personally, usually within the hour.",
+      "successWa": "WhatsApp Karin",
+      "successAgain": "Send another message"
     },
     "info": {
       "email": "Email",
@@ -344,6 +354,7 @@
       "explore": "Explore",
       "carHire": "Car Hire",
       "about": "About Us",
+      "faq": "FAQs",
       "contact": "Contact",
       "viewAll": "View All Properties",
       "bookingPolicy": "Booking Policy",
@@ -450,6 +461,105 @@
     "title": "Page Not Found",
     "description": "The page you're looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "faq": {
+    "metaTitle": "Urban Elephant FAQs — Everything You Need to Know Before You Arrive",
+    "metaDescription": "Check-in, parking, Wi-Fi, housekeeping, airport transfers and more. The questions our guests ask most before and during a stay at Urban Elephant Cape Town.",
+    "eyebrow": "GUEST QUESTIONS",
+    "title": "Everything You Need to Know Before You Arrive",
+    "subtitle": "The questions our guests ask most often. If yours isn't here, send Karin a WhatsApp — she answers personally.",
+    "askLabel": "Still have a question?",
+    "askDescription": "WhatsApp Karin on +27 72 618 8140 or email karin@urbanelephant.co.za — we answer within working hours.",
+    "groups": {
+      "arrival": {
+        "title": "Arrival & Access",
+        "items": {
+          "checkIn": {
+            "q": "What time is check-in?",
+            "a": "Check-in is from 15h00. Early check-in may be arranged subject to availability."
+          },
+          "checkOut": {
+            "q": "What time is check-out?",
+            "a": "Check-out is at 10h30. Late check-out may be arranged subject to availability."
+          },
+          "reception": {
+            "q": "Do you have a reception?",
+            "a": "We have a 24-hour concierge available to assist you with check-in and general enquiries."
+          },
+          "keys": {
+            "q": "Do I use a lockbox or smart lock?",
+            "a": "Access is via a lockbox system. Your code arrives by email and WhatsApp ahead of your stay."
+          },
+          "parking": {
+            "q": "Is parking available?",
+            "a": "Yes, secure parking is available at an additional cost of R75 per night."
+          }
+        }
+      },
+      "stay": {
+        "title": "In Your Apartment",
+        "items": {
+          "wifi": {
+            "q": "Is there Wi-Fi?",
+            "a": "Yes, we provide high-speed Wi-Fi suitable for remote work and streaming at no extra cost."
+          },
+          "aircon": {
+            "q": "Do you have air conditioning?",
+            "a": "Yes, all apartments are equipped with air conditioning."
+          },
+          "housekeeping": {
+            "q": "Is housekeeping included?",
+            "a": "Housekeeping is available upon request, and fresh towels are provided every 3 days at no additional cost."
+          },
+          "laundry": {
+            "q": "Is laundry available?",
+            "a": "Yes, every apartment includes a washing machine, and a starter pack of laundry detergent is provided upon arrival."
+          },
+          "gymPool": {
+            "q": "Is there a gym and swimming pool?",
+            "a": "A gym is available at 16 On Bree and The Rose. Swimming pools are available at all properties except Flamingo Express."
+          },
+          "smoking": {
+            "q": "Can I smoke on the balcony?",
+            "a": "Smoking is strictly prohibited in all our properties, including balconies."
+          },
+          "views": {
+            "q": "Do all apartments have the same views?",
+            "a": "No, each apartment offers different views, depending on the unit selected."
+          }
+        }
+      },
+      "neighbourhood": {
+        "title": "Cape Town & Getting Around",
+        "items": {
+          "distances": {
+            "q": "How far is the property from the V&A Waterfront, Table Mountain and the beach?",
+            "a": "V&A Waterfront: approximately 20–30 minutes walking, or 5–10 minutes by car. Table Mountain: approximately 10–20 minutes by car. Camps Bay Beach: approximately 10–20 minutes by car."
+          },
+          "safety": {
+            "q": "Is the area safe?",
+            "a": "The area is generally safe to walk around during the day. For your convenience we recommend using Uber or your vehicle at night. The building also offers 24-hour security."
+          },
+          "amenitiesNearby": {
+            "q": "Are there restaurants, shops and cafés nearby?",
+            "a": "Yes, a variety of restaurants, cafés and shops are within walking distance of our properties."
+          },
+          "airportTours": {
+            "q": "Do you provide airport transfers and tours?",
+            "a": "Yes, we offer airport meet-and-greet services and tours at an additional charge. Speak to our team and we'll organise it before you arrive."
+          }
+        }
+      },
+      "family": {
+        "title": "Families & Extras",
+        "items": {
+          "cots": {
+            "q": "Do you provide baby cots?",
+            "a": "Yes, baby cots, high chairs and walking rings are available upon request at an extra cost."
+          }
+        }
+      }
+    }
   },
   "meta": {
     "siteName": "Urban Elephant",

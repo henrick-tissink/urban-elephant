@@ -29,6 +29,7 @@
     "carHire": "Motorhuur",
     "theHerd": "Die Trop",
     "about": "Oor Ons",
+    "faq": "Vrae",
     "contact": "Kontak",
     "bookNow": "Bespreek Nou"
   },
@@ -147,6 +148,10 @@
     "bookThisProperty": "Bespreek Hierdie Eiendom",
     "checkAvailability": "Kyk Beskikbaarheid",
     "nearbyAttractions": "Nabygeleë Attraksies",
+    "addressLabel": "Adres",
+    "ratesLabel": "Tariewe vanaf",
+    "ratesRange": "{from} – {to} per nag",
+    "ratesFrom": "Vanaf {from} per nag",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -314,7 +319,12 @@
       "guests": "Aantal Gaste",
       "submit": "Stuur Boodskap",
       "success": "Dankie! Ons sal binnekort terugkom na jou.",
-      "error": "Iets het skeefgeloop. Probeer asseblief weer."
+      "error": "Iets het skeefgeloop. Probeer asseblief weer.",
+      "successEyebrow": "Boodskap gestuur",
+      "successHeading": "Ontvang, {name}.",
+      "successBody": "Karin antwoord binne werksure. Terwyl jy wag, stuur haar 'n boodskap op WhatsApp — sy antwoord persoonlik, gewoonlik binne 'n uur.",
+      "successWa": "WhatsApp Karin",
+      "successAgain": "Stuur nog 'n boodskap"
     },
     "info": {
       "email": "E-pos",
@@ -344,6 +354,7 @@
       "explore": "Verken",
       "carHire": "Motorhuur",
       "about": "Oor Ons",
+      "faq": "Vrae",
       "contact": "Kontak",
       "viewAll": "Sien Alle Eiendomme",
       "bookingPolicy": "Besprekingsbeleid",
@@ -450,6 +461,105 @@
     "title": "Bladsy Nie Gevind",
     "description": "Die bladsy waarna jy soek bestaan nie of is geskuif.",
     "backHome": "Terug na Tuis"
+  },
+  "faq": {
+    "metaTitle": "Urban Elephant Vrae — Alles wat jy moet weet voor jy aankom",
+    "metaDescription": "Inklok, parkering, Wi-Fi, huishouding, lughawe-vervoer en meer. Die vrae wat ons gaste die meeste vra voor en tydens 'n verblyf by Urban Elephant Kaapstad.",
+    "eyebrow": "GAS-VRAE",
+    "title": "Alles wat jy moet weet voor jy aankom",
+    "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur Karin 'n WhatsApp — sy antwoord persoonlik.",
+    "askLabel": "Het jy nog 'n vraag?",
+    "askDescription": "WhatsApp Karin by +27 72 618 8140 of e-pos karin@urbanelephant.co.za — ons antwoord binne werksure.",
+    "groups": {
+      "arrival": {
+        "title": "Aankoms & Toegang",
+        "items": {
+          "checkIn": {
+            "q": "Hoe laat is inklok?",
+            "a": "Inklok is vanaf 15h00. Vroeë inklok kan gereël word, onderhewig aan beskikbaarheid."
+          },
+          "checkOut": {
+            "q": "Hoe laat is uitklok?",
+            "a": "Uitklok is om 10h30. Laat uitklok kan gereël word, onderhewig aan beskikbaarheid."
+          },
+          "reception": {
+            "q": "Het julle 'n ontvangs?",
+            "a": "Ons het 'n 24-uur concierge wat met inklok en algemene navrae kan help."
+          },
+          "keys": {
+            "q": "Gebruik ek 'n sleutelkluis of slimslot?",
+            "a": "Toegang is deur 'n sleutelkluis-stelsel. Jou kode kom per e-pos en WhatsApp voor jou verblyf."
+          },
+          "parking": {
+            "q": "Is daar parkering beskikbaar?",
+            "a": "Ja, veilige parkering is beskikbaar teen 'n bykomende koste van R75 per nag."
+          }
+        }
+      },
+      "stay": {
+        "title": "In Jou Woonstel",
+        "items": {
+          "wifi": {
+            "q": "Is daar Wi-Fi?",
+            "a": "Ja, ons bied hoëspoed Wi-Fi geskik vir afstandwerk en stroming sonder bykomende koste."
+          },
+          "aircon": {
+            "q": "Is daar lugversorging?",
+            "a": "Ja, alle woonstelle is met lugversorging toegerus."
+          },
+          "housekeeping": {
+            "q": "Is huishouding ingesluit?",
+            "a": "Huishouding is op versoek beskikbaar, en vars handdoeke word elke 3 dae sonder ekstra koste voorsien."
+          },
+          "laundry": {
+            "q": "Is wasgoeddienste beskikbaar?",
+            "a": "Ja, elke woonstel het 'n wasmasjien, en 'n beginpakkie wasgoedseep word by aankoms voorsien."
+          },
+          "gymPool": {
+            "q": "Is daar 'n gimnasium en swembad?",
+            "a": "'n Gimnasium is beskikbaar by 16 On Bree en The Rose. Swembaaie is by alle eiendomme beskikbaar, behalwe Flamingo Express."
+          },
+          "smoking": {
+            "q": "Mag ek op die balkon rook?",
+            "a": "Rook is streng verbode in al ons eiendomme, ook op balkonne."
+          },
+          "views": {
+            "q": "Het al die woonstelle dieselfde uitsigte?",
+            "a": "Nee, elke woonstel bied 'n ander uitsig, afhangend van die eenheid wat gekies word."
+          }
+        }
+      },
+      "neighbourhood": {
+        "title": "Kaapstad & Rondkom",
+        "items": {
+          "distances": {
+            "q": "Hoe ver is die eiendom van die V&A Waterfront, Tafelberg en die strand?",
+            "a": "V&A Waterfront: ongeveer 20–30 minute se stap of 5–10 minute per motor. Tafelberg: ongeveer 10–20 minute per motor. Camps Bay-strand: ongeveer 10–20 minute per motor."
+          },
+          "safety": {
+            "q": "Is die omgewing veilig?",
+            "a": "Die omgewing is gewoonlik veilig om bedags rond te stap. Vir jou gemak beveel ons aan om Uber of jou eie voertuig snags te gebruik. Die gebou bied ook 24-uur sekuriteit."
+          },
+          "amenitiesNearby": {
+            "q": "Is daar restaurante, winkels en koffiewinkels naby?",
+            "a": "Ja, 'n verskeidenheid restaurante, koffiewinkels en winkels is binne stapafstand van ons eiendomme."
+          },
+          "airportTours": {
+            "q": "Bied julle lughawe-vervoer en toere aan?",
+            "a": "Ja, ons bied lughawe-verwelkomingsdienste en toere teen 'n bykomende koste aan. Praat met ons span en ons reël dit voor jy aankom."
+          }
+        }
+      },
+      "family": {
+        "title": "Families & Ekstras",
+        "items": {
+          "cots": {
+            "q": "Voorsien julle babakatels?",
+            "a": "Ja, babakatels, hoë stoele en stapringe is op versoek beskikbaar teen 'n ekstra koste."
+          }
+        }
+      }
+    }
   },
   "meta": {
     "siteName": "Urban Elephant",
