@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { getLocale } from "next-intl/server";
 import { Analytics } from "@/components/global/analytics";
 import {
   JsonLd,
   organizationSchema,
   websiteSchema,
 } from "@/components/seo/structured-data";
+import { LOCALE_TO_BCP47 } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 import "./globals.css";
 
 const biko = localFont({
@@ -17,49 +20,9 @@ const biko = localFont({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-    template: "%s | Urban Elephant",
-  },
-  description:
-    "Officially graded 4-star luxury apartments in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management — Urban Elephant.",
-  keywords: [
-    "Cape Town hotels",
-    "luxury apartments",
-    "apartment hotel",
-    "Cape Town accommodation",
-    "Table Mountain views",
-    "South Africa travel",
-    "boutique hotel",
-    "Urban Elephant",
-  ],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za"),
   authors: [{ name: "Urban Elephant" }],
   creator: "Urban Elephant",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za"),
-  openGraph: {
-    type: "website",
-    locale: "en_ZA",
-    url: "https://www.urbanelephant.co.za",
-    siteName: "Urban Elephant",
-    title: "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-    description:
-      "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service.",
-    images: [
-      {
-        url: "/images/site/og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Urban Elephant - Luxury Apartment Hotels",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-    description:
-      "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service.",
-    images: ["/images/site/og.jpg"],
-  },
   robots: {
     index: true,
     follow: true,
@@ -73,13 +36,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const locale = (await getLocale()) as Locale;
+  const lang = LOCALE_TO_BCP47[locale] ?? "en-ZA";
   return (
-    <html className={biko.variable} suppressHydrationWarning>
+    <html lang={lang} className={biko.variable} suppressHydrationWarning>
       <body className="antialiased">
         <JsonLd data={[organizationSchema(), websiteSchema()]} />
         {children}
