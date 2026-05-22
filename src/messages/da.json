@@ -208,8 +208,9 @@
       "kicker": "POWERED BY ENTERPRISE",
       "title": "Hire a car for your Cape Town adventure.",
       "body": "Browse Enterprise's full South African fleet and book direct below. Best rates guaranteed — no booking fees, no hidden charges, and our team can arrange pickup from your apartment hotel.",
-      "footnote": "Prefer a personal touch? WhatsApp Karin on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
-    }
+      "footnote": "Prefer a personal touch? WhatsApp our Guest Relations team on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
+    },
+    "footnote": "Prefer a personal touch? WhatsApp our Guest Relations team on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
   },
   "awards": {
     "eyebrow": "Recognised by guests",
@@ -322,8 +323,8 @@
       "error": "Something went wrong. Please try again.",
       "successEyebrow": "Message sent",
       "successHeading": "Got it, {name}.",
-      "successBody": "Karin will reply within working hours. While you wait, message her on WhatsApp — she answers personally, usually within the hour.",
-      "successWa": "WhatsApp Karin",
+      "successBody": "Our Guest Relations team will reply within working hours. While you wait, message us on WhatsApp — we answer personally, usually within the hour.",
+      "successWa": "WhatsApp Guest Relations",
       "successAgain": "Send another message"
     },
     "info": {
@@ -467,9 +468,9 @@
     "metaDescription": "Check-in, parking, Wi-Fi, housekeeping, airport transfers and more. The questions our guests ask most before and during a stay at Urban Elephant Cape Town.",
     "eyebrow": "GUEST QUESTIONS",
     "title": "Everything You Need to Know Before You Arrive",
-    "subtitle": "The questions our guests ask most often. If yours isn't here, send Karin a WhatsApp — she answers personally.",
+    "subtitle": "The questions our guests ask most often. If yours isn't here, send our Guest Relations team a WhatsApp — we answer personally.",
     "askLabel": "Still have a question?",
-    "askDescription": "WhatsApp Karin on +27 72 618 8140 or email karin@urbanelephant.co.za — we answer within working hours.",
+    "askDescription": "WhatsApp our Guest Relations team on +27 72 618 8140 or email karin@urbanelephant.co.za — we answer within working hours.",
     "groups": {
       "arrival": {
         "title": "Arrival & Access",

@@ -202,7 +202,7 @@ export function FaqPageContent() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  WhatsApp Karin
+                  WhatsApp Guest Relations
                 </a>
               </Button>
             </div>

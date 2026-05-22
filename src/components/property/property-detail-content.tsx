@@ -431,7 +431,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     rel="noreferrer"
                     className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
                   >
-                    WhatsApp Karin
+                    WhatsApp Guest Relations
                   </a>
                   .
                 </p>

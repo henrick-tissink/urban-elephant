@@ -208,8 +208,9 @@
       "kicker": "AANGEDRYF DEUR ENTERPRISE",
       "title": "Huur 'n motor vir jou Kaapstad-avontuur.",
       "body": "Blaai deur Enterprise se volle Suid-Afrikaanse vloot en bespreek direk hieronder. Beste pryse gewaarborg — geen besprekingsfooie, geen versteekte koste, en ons span kan aflewering by jou woonstelhotel reël.",
-      "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp Karin by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
-    }
+      "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp ons Guest Relations-span by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
+    },
+    "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp ons Guest Relations-span by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
   },
   "awards": {
     "eyebrow": "Erken deur gaste",
@@ -322,8 +323,8 @@
       "error": "Iets het skeefgeloop. Probeer asseblief weer.",
       "successEyebrow": "Boodskap gestuur",
       "successHeading": "Ontvang, {name}.",
-      "successBody": "Karin antwoord binne werksure. Terwyl jy wag, stuur haar 'n boodskap op WhatsApp — sy antwoord persoonlik, gewoonlik binne 'n uur.",
-      "successWa": "WhatsApp Karin",
+      "successBody": "Ons Guest Relations-span antwoord binne werksure. Terwyl jy wag, stuur ons 'n boodskap op WhatsApp — ons antwoord persoonlik, gewoonlik binne 'n uur.",
+      "successWa": "WhatsApp Guest Relations",
       "successAgain": "Stuur nog 'n boodskap"
     },
     "info": {
@@ -467,9 +468,9 @@
     "metaDescription": "Inklok, parkering, Wi-Fi, huishouding, lughawe-vervoer en meer. Die vrae wat ons gaste die meeste vra voor en tydens 'n verblyf by Urban Elephant Kaapstad.",
     "eyebrow": "GAS-VRAE",
     "title": "Alles wat jy moet weet voor jy aankom",
-    "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur Karin 'n WhatsApp — sy antwoord persoonlik.",
+    "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur ons Guest Relations-span 'n WhatsApp — ons antwoord persoonlik.",
     "askLabel": "Het jy nog 'n vraag?",
-    "askDescription": "WhatsApp Karin by +27 72 618 8140 of e-pos karin@urbanelephant.co.za — ons antwoord binne werksure.",
+    "askDescription": "WhatsApp ons Guest Relations-span by +27 72 618 8140 of e-pos karin@urbanelephant.co.za — ons antwoord binne werksure.",
     "groups": {
       "arrival": {
         "title": "Aankoms & Toegang",

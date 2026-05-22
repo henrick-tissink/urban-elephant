@@ -13,15 +13,15 @@ import { Textarea } from "@/components/ui/textarea";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import type { SiteSettings, PropertyCard } from "@/types";
 
-const KARIN_WHATSAPP = "27726188140";
+const GUEST_RELATIONS_WHATSAPP = "27726188140";
 
 function buildWaPrefill(data: ContactFormData): string {
   const lines = [
-    `Hi Karin, this is ${data.name} — I just sent a message via the website.`,
+    `Dear Guest Relations, this is ${data.name} — I just sent a message via the website.`,
     data.property ? `Property: ${data.property}` : null,
     `Subject: ${data.subject}`,
   ].filter(Boolean) as string[];
-  return `https://wa.me/${KARIN_WHATSAPP}?text=${encodeURIComponent(lines.join("\n\n"))}`;
+  return `https://wa.me/${GUEST_RELATIONS_WHATSAPP}?text=${encodeURIComponent(lines.join("\n\n"))}`;
 }
 
 const contactSchema = z.object({
