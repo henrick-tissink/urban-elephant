@@ -17,7 +17,7 @@ import type { Property } from "@/types";
 import type { FaqEntry } from "@/lib/property-faq";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
-import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import { pickLocale, pickOptional, formatIndicative } from "@/lib/i18n-content";
 
 interface PropertyDetailContentProps {
   property: Property;
@@ -63,6 +63,7 @@ function PropertyFaqItem({ q, a }: { q: string; a: string }) {
 
 export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailContentProps) {
   const t = useTranslations("properties");
+  const tCurrency = useTranslations("currency");
   const locale = useLocale() as Locale;
 
   const [showBookingBar, setShowBookingBar] = useState(false);
@@ -269,16 +270,27 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 {t("ratesLabel")}
               </p>
               {property.priceRange && (
-                <p className="text-[#24272a] text-lg font-light leading-snug">
-                  {property.priceRange.max
-                    ? t("ratesRange", {
-                        from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
-                        to: `R${property.priceRange.max.toLocaleString("en-ZA")}`,
-                      })
-                    : t("ratesFrom", {
-                        from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
-                      })}
-                </p>
+                <>
+                  <p className="text-[#24272a] text-lg font-light leading-snug">
+                    {property.priceRange.max
+                      ? t("ratesRange", {
+                          from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
+                          to: `R${property.priceRange.max.toLocaleString("en-ZA")}`,
+                        })
+                      : t("ratesFrom", {
+                          from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
+                        })}
+                  </p>
+                  {(() => {
+                    const indicative = formatIndicative(property.priceRange.min, locale);
+                    if (!indicative) return null;
+                    return (
+                      <p className="text-stone-500 text-xs mt-1">
+                        {tCurrency("indicativeNote", { amount: `${indicative}+` })}
+                      </p>
+                    );
+                  })()}
+                </>
               )}
               <a
                 href={property.bookingUrl}

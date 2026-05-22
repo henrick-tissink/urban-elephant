@@ -14,6 +14,7 @@ import { properties } from "@/data/content";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
 import { pickOptional } from "@/lib/i18n-content";
+import { Price } from "@/components/atoms/price";
 
 type Group = {
   key: string;
@@ -170,7 +171,7 @@ export function FaqPageContent() {
                     <p className="text-stone-500 text-sm mb-3">{pickOptional(property.location, locale)}</p>
                     {property.priceRange && (
                       <p className="text-[var(--color-brand-anchor)] text-sm font-medium">
-                        From R{property.priceRange.min.toLocaleString("en-ZA")}/night
+                        From <Price zar={property.priceRange.min} suffix="/ night" />
                       </p>
                     )}
                   </div>
