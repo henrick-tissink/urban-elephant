@@ -2,12 +2,13 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Globe } from "lucide-react";
-import { useTranslations, useLocale } from "next-intl";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { Menu, X } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { BookingPicker } from "@/components/property/booking-picker";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { properties } from "@/data/content";
 import Image from "next/image";
 
@@ -24,9 +25,7 @@ const navigation = [
 
 export function Header() {
   const t = useTranslations("navigation");
-  const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,15 +44,9 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [pathname]);
-
-  const toggleLocale = () => {
-    const newLocale = locale === "en" ? "af" : "en";
-    router.replace(pathname, { locale: newLocale });
-  };
 
   return (
     <>
@@ -118,20 +111,18 @@ export function Header() {
                 </motion.div>
               ))}
 
-              {/* Language Switcher */}
-              <motion.button
+              <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                onClick={toggleLocale}
                 className={cn(
-                  "flex items-center gap-1.5 text-sm font-medium transition-colors",
-                  isScrolled ? "text-[#24272a] hover:text-[var(--color-brand-anchor)]" : "text-white/80 hover:text-white"
+                  isScrolled
+                    ? "text-[#24272a] hover:text-[var(--color-brand-anchor)]"
+                    : "text-white/80 hover:text-white",
                 )}
               >
-                <Globe className="w-4 h-4" />
-                {locale.toUpperCase()}
-              </motion.button>
+                <LanguageSwitcher />
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -202,17 +193,14 @@ export function Header() {
               </div>
 
               <div className="mt-auto space-y-4">
-                {/* Language Switcher Mobile */}
-                <motion.button
+                <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
-                  onClick={toggleLocale}
-                  className="flex items-center gap-2 text-white/70 hover:text-[var(--color-brand-anchor)] transition-colors"
+                  className="text-white/70"
                 >
-                  <Globe className="w-5 h-5" />
-                  {locale === "en" ? "Afrikaans" : "English"}
-                </motion.button>
+                  <LanguageSwitcher />
+                </motion.div>
 
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
