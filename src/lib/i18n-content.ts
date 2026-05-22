@@ -1,4 +1,7 @@
-import type { Locale } from "@/i18n/routing";
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { routing, type Locale } from "@/i18n/routing";
+import { buildAlternates, localizedUrl } from "@/lib/seo";
 
 export type Localized<T> = { en: T } & Partial<Record<Locale, T>>;
 
@@ -77,4 +80,72 @@ export function formatIndicative(zarAmount: number, locale: Locale): string | un
   const fx = INDICATIVE_FX[locale];
   if (fx.code === "ZAR") return undefined;
   return fx.format(zarAmount);
+}
+
+export async function pageMetadata(
+  namespace: string,
+  path: string,
+  locale: Locale,
+): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace });
+  const og = LOCALE_TO_OG[locale];
+  const alternates = routing.locales
+    .filter((l) => l !== locale)
+    .map((l) => LOCALE_TO_OG[l]);
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: buildAlternates(path),
+    openGraph: {
+      type: "website",
+      locale: og,
+      alternateLocale: alternates,
+      url: localizedUrl(locale, path),
+      siteName: "Urban Elephant",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: [{ url: "/images/site/og.jpg", width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("ogTitle"),
+      description: t("ogDescription"),
+      images: ["/images/site/og.jpg"],
+    },
+  };
+}
+
+export function detailPageMetadata(args: {
+  locale: Locale;
+  path: string;
+  title: string;
+  description: string;
+  image?: string;
+}): Metadata {
+  const og = LOCALE_TO_OG[args.locale];
+  const alternates = routing.locales
+    .filter((l) => l !== args.locale)
+    .map((l) => LOCALE_TO_OG[l]);
+  const image = args.image ?? "/images/site/og.jpg";
+  return {
+    title: args.title,
+    description: args.description,
+    alternates: buildAlternates(args.path),
+    openGraph: {
+      type: "website",
+      locale: og,
+      alternateLocale: alternates,
+      url: localizedUrl(args.locale, args.path),
+      siteName: "Urban Elephant",
+      title: args.title,
+      description: args.description,
+      images: [{ url: image, width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: args.title,
+      description: args.description,
+      images: [image],
+    },
+  };
 }
