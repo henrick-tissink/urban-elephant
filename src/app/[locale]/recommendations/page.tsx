@@ -1,22 +1,20 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import { attractions, restaurants, recommendationsLetter } from "@/data/content";
 import { RecommendationsPageContent } from "@/components/recommendations/recommendations-page-content";
-import { buildAlternates } from "@/lib/seo";
+import { pageMetadata } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<import("next").Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "recommendations" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-    alternates: buildAlternates("/recommendations"),
-  };
+  return pageMetadata("seo.recommendations", "/recommendations", locale as Locale);
 }
 
 export default async function RecommendationsPage({ params }: Props) {

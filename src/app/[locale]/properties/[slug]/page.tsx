@@ -1,9 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
 import { properties, getPropertyBySlug } from "@/data/content";
 import { PropertyDetailContent } from "@/components/property/property-detail-content";
-import { buildAlternates, SITE_URL } from "@/lib/seo";
 import { propertyFaqs } from "@/lib/property-faq";
 import {
   JsonLd,
@@ -11,7 +9,7 @@ import {
   breadcrumbSchema,
   faqPageSchema,
 } from "@/components/seo/structured-data";
-import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import { detailPageMetadata, pickLocale, pickOptional } from "@/lib/i18n-content";
 import type { Locale } from "@/i18n/routing";
 
 type Props = {
@@ -22,74 +20,27 @@ export function generateStaticParams() {
   return properties.map((p) => ({ slug: p.slug }));
 }
 
-function propertyMetaDescription(p: ReturnType<typeof getPropertyBySlug>): string | undefined {
-  if (!p) return undefined;
-  const tagline = pickOptional(p.tagline, "en")?.trim();
-  const price = p.priceRange
-    ? p.priceRange.max
-      ? ` From R${p.priceRange.min.toLocaleString("en-ZA")}–R${p.priceRange.max.toLocaleString("en-ZA")}/night.`
-      : ` From R${p.priceRange.min.toLocaleString("en-ZA")}/night.`
-    : "";
-  const location = pickOptional(p.location, "en");
-  const credential = ` Officially TGCSA-graded 4-star apartment hotel${location ? ` in ${location}` : ""}.`;
-  const cta = " Book direct for the best rate.";
-  return `${tagline ?? ""}${credential}${price}${cta}`.trim();
-}
-
-function propertyKeywords(p: ReturnType<typeof getPropertyBySlug>): string[] {
-  if (!p) return [];
-  const location = pickOptional(p.location, "en");
-  return [
-    `${p.name} Cape Town`,
-    `Urban Elephant at ${p.name}`,
-    `${p.name} apartment hotel`,
-    location ? `${location} accommodation` : "",
-    p.postalAddress?.locality ? `${p.postalAddress.locality} hotel` : "",
-    "Cape Town apartment hotel",
-    "TGCSA 4-star",
-    "book direct Cape Town",
-  ].filter(Boolean);
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<import("next").Metadata> {
+  const { locale, slug } = await params;
   const property = getPropertyBySlug(slug);
-
-  if (!property) {
-    return { title: "Property Not Found" };
-  }
-
-  const path = `/properties/${slug}`;
-  const alternates = buildAlternates(path);
-  const heroAbs = property.heroImage
-    ? `${SITE_URL}${property.heroImage}`
-    : undefined;
-  const description = propertyMetaDescription(property);
-  const ogTitle = `Urban Elephant at ${property.name} — 4-Star Apartment Hotel in Cape Town`;
-
-  return {
-    title: property.name,
+  if (!property) return {};
+  const lc = locale as Locale;
+  const title = `Urban Elephant at ${property.name}`;
+  const description =
+    pickOptional(property.tagline, lc)
+    ?? pickOptional(property.description, lc)?.[0]
+    ?? "Luxury apartment hotel in Cape Town.";
+  return detailPageMetadata({
+    locale: lc,
+    path: `/properties/${property.slug}`,
+    title,
     description,
-    keywords: propertyKeywords(property),
-    alternates,
-    openGraph: {
-      title: ogTitle,
-      description,
-      url: alternates.canonical,
-      images: heroAbs
-        ? [{ url: heroAbs, width: 1600, height: 900, alt: ogTitle }]
-        : undefined,
-      type: "website",
-      locale: "en_ZA",
-      siteName: "Urban Elephant",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: ogTitle,
-      description,
-      images: heroAbs ? [heroAbs] : undefined,
-    },
-  };
+    image: property.heroImage,
+  });
 }
 
 export default async function PropertyDetailPage({ params }: Props) {

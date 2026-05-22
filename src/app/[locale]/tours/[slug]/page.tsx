@@ -1,15 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
 import { tours, getTourBySlug } from "@/data/content";
 import { TourDetailContent } from "@/components/tour/tour-detail-content";
-import { buildAlternates, SITE_URL } from "@/lib/seo";
 import {
   JsonLd,
   touristTripSchema,
   breadcrumbSchema,
 } from "@/components/seo/structured-data";
-import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import { detailPageMetadata, pickLocale, pickOptional } from "@/lib/i18n-content";
 import type { Locale } from "@/i18n/routing";
 
 type Props = {
@@ -20,33 +18,27 @@ export function generateStaticParams() {
   return tours.map((t) => ({ slug: t.slug }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<import("next").Metadata> {
+  const { locale, slug } = await params;
   const tour = getTourBySlug(slug);
-
-  if (!tour) {
-    return { title: "Tour Not Found" };
-  }
-
-  const path = `/tours/${slug}`;
-  const alternates = buildAlternates(path);
-  const imageAbs = tour.image ? `${SITE_URL}${tour.image}` : undefined;
-
-  const tourName = pickLocale(tour.name, "en");
-  const tourShortDesc = pickOptional(tour.shortDescription, "en");
-
-  return {
-    title: tourName,
-    description: tourShortDesc,
-    alternates,
-    openGraph: {
-      title: tourName,
-      description: tourShortDesc,
-      url: alternates.canonical,
-      images: imageAbs ? [{ url: imageAbs }] : undefined,
-      type: "website",
-    },
-  };
+  if (!tour) return {};
+  const lc = locale as Locale;
+  const title = pickLocale(tour.name, lc);
+  const description =
+    pickOptional(tour.shortDescription, lc)
+    ?? pickOptional(tour.description, lc)?.[0]
+    ?? "A curated Cape Town experience.";
+  return detailPageMetadata({
+    locale: lc,
+    path: `/tours/${tour.slug}`,
+    title,
+    description,
+    image: tour.image,
+  });
 }
 
 export default async function TourDetailPage({ params }: Props) {

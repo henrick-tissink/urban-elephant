@@ -1,5 +1,4 @@
 import { setRequestLocale } from "next-intl/server";
-import type { Metadata } from "next";
 import { Hero } from "@/components/sections/hero";
 import { TrustStrip } from "@/components/sections/trust-strip";
 import { WelcomeSection } from "@/components/sections/welcome-section";
@@ -12,7 +11,7 @@ import { ServicesPreview } from "@/components/sections/services-preview";
 import { CTASection } from "@/components/sections/cta-section";
 import { PromoPopup } from "@/components/promo/promo-popup";
 import { getFeaturedProperties, getFeaturedReviews } from "@/data/content";
-import { buildAlternates } from "@/lib/seo";
+import { pageMetadata } from "@/lib/i18n-content";
 import { JsonLd, itemListSchema } from "@/components/seo/structured-data";
 import type { Locale } from "@/i18n/routing";
 
@@ -20,10 +19,13 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    alternates: buildAlternates("/"),
-  };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<import("next").Metadata> {
+  const { locale } = await params;
+  return pageMetadata("seo.home", "/", locale as Locale);
 }
 
 export default async function HomePage({ params }: Props) {

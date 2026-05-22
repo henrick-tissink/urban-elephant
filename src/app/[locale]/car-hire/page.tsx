@@ -1,21 +1,19 @@
-import { setRequestLocale, getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
+import { setRequestLocale } from "next-intl/server";
 import { CarHirePageContent } from "@/components/car-hire/car-hire-page-content";
-import { buildAlternates } from "@/lib/seo";
+import { pageMetadata } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<import("next").Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "carHire" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-    alternates: buildAlternates("/car-hire"),
-  };
+  return pageMetadata("seo.carHire", "/car-hire", locale as Locale);
 }
 
 export default async function CarHirePage({ params }: Props) {

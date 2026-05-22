@@ -1,13 +1,21 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import type { Metadata } from "next";
 import { FaqPageContent } from "@/components/faq/faq-page-content";
-import { buildAlternates } from "@/lib/seo";
 import { JsonLd, faqPageSchema, breadcrumbSchema } from "@/components/seo/structured-data";
+import { pageMetadata } from "@/lib/i18n-content";
 import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<import("next").Metadata> {
+  const { locale } = await params;
+  return pageMetadata("seo.faq", "/faq", locale as Locale);
+}
 
 const FAQ_GROUPS = [
   { key: "arrival", items: ["checkIn", "checkOut", "reception", "keys", "parking"] },
@@ -21,17 +29,6 @@ const FAQ_GROUPS = [
   },
   { key: "family", items: ["cots"] },
 ] as const;
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "faq" });
-
-  return {
-    title: t("metaTitle"),
-    description: t("metaDescription"),
-    alternates: buildAlternates("/faq"),
-  };
-}
 
 export default async function FaqPage({ params }: Props) {
   const { locale } = await params;
