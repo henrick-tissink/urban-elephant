@@ -3,13 +3,15 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
 import { AwardBadge } from "@/components/property/award-badge";
 import type { PropertyCard } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickOptional } from "@/lib/i18n-content";
 
 interface PropertiesGridProps {
   properties: PropertyCard[];
@@ -24,6 +26,7 @@ interface PropertiesGridProps {
 export function PropertiesGrid({ properties }: PropertiesGridProps) {
   const t = useTranslations("properties");
   const tCommon = useTranslations("common");
+  const locale = useLocale() as Locale;
 
   return (
     <section className="bg-stone-50">
@@ -102,7 +105,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                             </div>
                           )}
                           <span className="text-stone-400 text-xs uppercase tracking-[0.2em]">
-                            {property.location}
+                            {pickOptional(property.location, locale)}
                           </span>
                         </div>
 
@@ -112,7 +115,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
 
                         {property.tagline && (
                           <p className="mt-6 text-stone-600 text-base lg:text-lg leading-relaxed max-w-md text-balance font-light">
-                            {property.tagline}
+                            {pickOptional(property.tagline, locale)}
                           </p>
                         )}
 

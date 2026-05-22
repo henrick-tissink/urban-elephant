@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { properties } from "@/data/content";
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/i18n/routing";
+import { pickOptional } from "@/lib/i18n-content";
 
 type Group = {
   key: string;
@@ -76,6 +78,7 @@ function FaqItem({ question, answer, defaultOpen = false }: FaqItemProps) {
 
 export function FaqPageContent() {
   const t = useTranslations("faq");
+  const locale = useLocale() as Locale;
 
   return (
     <>
@@ -147,7 +150,7 @@ export function FaqPageContent() {
                     <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                       <Image
                         src={property.heroImage}
-                        alt={`Urban Elephant at ${property.name} — ${property.location ?? "Cape Town"}`}
+                        alt={`Urban Elephant at ${property.name} — ${pickOptional(property.location, locale) ?? "Cape Town"}`}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         className="object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
@@ -164,7 +167,7 @@ export function FaqPageContent() {
                     <p className="text-[#24272a] font-medium text-lg leading-tight mb-1">
                       {property.name}
                     </p>
-                    <p className="text-stone-500 text-sm mb-3">{property.location}</p>
+                    <p className="text-stone-500 text-sm mb-3">{pickOptional(property.location, locale)}</p>
                     {property.priceRange && (
                       <p className="text-[var(--color-brand-anchor)] text-sm font-medium">
                         From R{property.priceRange.min.toLocaleString("en-ZA")}/night

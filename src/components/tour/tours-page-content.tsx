@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Clock, ArrowRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import {
@@ -12,6 +12,8 @@ import {
   StaggerItem,
 } from "@/components/animations/scroll-reveal";
 import type { TourCard } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 interface ToursPageContentProps {
   tours: TourCard[];
@@ -30,6 +32,7 @@ const categories = [
 export function ToursPageContent({ tours }: ToursPageContentProps) {
   const t = useTranslations("tours");
   const tCommon = useTranslations("common");
+  const locale = useLocale() as Locale;
   const [activeCategory, setActiveCategory] = useState<string | undefined>(undefined);
 
   const filteredTours = activeCategory
@@ -96,7 +99,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                     {tour.image && (
                       <Image
                         src={tour.image}
-                        alt={tour.name}
+                        alt={pickLocale(tour.name, locale)}
                         fill
                         className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -112,12 +115,12 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                     )}
 
                     <h3 className="text-2xl text-[#24272a] tracking-tight group-hover:text-[var(--color-brand-anchor)] transition-colors duration-500 mb-2">
-                      {tour.name}
+                      {pickLocale(tour.name, locale)}
                     </h3>
 
                     {tour.shortDescription && (
                       <p className="text-stone-500 text-sm mb-4 line-clamp-2">
-                        {tour.shortDescription}
+                        {pickOptional(tour.shortDescription, locale)}
                       </p>
                     )}
 
@@ -126,7 +129,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                         {tour.duration ? (
                           <>
                             <Clock className="w-3.5 h-3.5" />
-                            <span className="text-xs">{tour.duration}</span>
+                            <span className="text-xs">{pickOptional(tour.duration, locale)}</span>
                           </>
                         ) : (
                           <span className="inline-flex items-center gap-1.5 text-[var(--color-brand-anchor)] font-medium">

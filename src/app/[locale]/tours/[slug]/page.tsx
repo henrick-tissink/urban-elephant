@@ -9,6 +9,7 @@ import {
   touristTripSchema,
   breadcrumbSchema,
 } from "@/components/seo/structured-data";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -30,13 +31,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const alternates = buildAlternates(path);
   const imageAbs = tour.image ? `${SITE_URL}${tour.image}` : undefined;
 
+  const tourName = pickLocale(tour.name, "en");
+  const tourShortDesc = pickOptional(tour.shortDescription, "en");
+
   return {
-    title: tour.name,
-    description: tour.shortDescription,
+    title: tourName,
+    description: tourShortDesc,
     alternates,
     openGraph: {
-      title: tour.name,
-      description: tour.shortDescription,
+      title: tourName,
+      description: tourShortDesc,
       url: alternates.canonical,
       images: imageAbs ? [{ url: imageAbs }] : undefined,
       type: "website",
@@ -59,7 +63,7 @@ export default async function TourDetailPage({ params }: Props) {
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Tours", path: "/tours" },
-            { name: tour.name, path: `/tours/${tour.slug}` },
+            { name: pickLocale(tour.name, "en"), path: `/tours/${tour.slug}` },
           ]),
         ]}
       />

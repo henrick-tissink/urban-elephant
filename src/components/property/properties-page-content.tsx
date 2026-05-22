@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
   ScrollReveal,
@@ -12,6 +12,8 @@ import {
 } from "@/components/animations/scroll-reveal";
 import { AwardBadge } from "@/components/property/award-badge";
 import type { PropertyCard } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickOptional } from "@/lib/i18n-content";
 
 interface PropertiesPageContentProps {
   properties: PropertyCard[];
@@ -19,6 +21,7 @@ interface PropertiesPageContentProps {
 
 export function PropertiesPageContent({ properties }: PropertiesPageContentProps) {
   const t = useTranslations("properties");
+  const locale = useLocale() as Locale;
 
   return (
     <>
@@ -78,7 +81,7 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
                           </div>
                         )}
                         <span className="text-stone-400 text-xs uppercase tracking-[0.2em]">
-                          {property.location}
+                          {pickOptional(property.location, locale)}
                         </span>
                       </div>
 
@@ -88,7 +91,7 @@ export function PropertiesPageContent({ properties }: PropertiesPageContentProps
 
                       {property.tagline && (
                         <p className="text-stone-500 text-sm mt-3 line-clamp-2 max-w-md">
-                          {property.tagline}
+                          {pickOptional(property.tagline, locale)}
                         </p>
                       )}
 

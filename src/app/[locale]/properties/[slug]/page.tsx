@@ -11,6 +11,7 @@ import {
   breadcrumbSchema,
   faqPageSchema,
 } from "@/components/seo/structured-data";
+import { pickOptional } from "@/lib/i18n-content";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -22,24 +23,26 @@ export function generateStaticParams() {
 
 function propertyMetaDescription(p: ReturnType<typeof getPropertyBySlug>): string | undefined {
   if (!p) return undefined;
-  const tagline = p.tagline?.trim();
+  const tagline = pickOptional(p.tagline, "en")?.trim();
   const price = p.priceRange
     ? p.priceRange.max
       ? ` From R${p.priceRange.min.toLocaleString("en-ZA")}–R${p.priceRange.max.toLocaleString("en-ZA")}/night.`
       : ` From R${p.priceRange.min.toLocaleString("en-ZA")}/night.`
     : "";
-  const credential = ` Officially TGCSA-graded 4-star apartment hotel${p.location ? ` in ${p.location}` : ""}.`;
+  const location = pickOptional(p.location, "en");
+  const credential = ` Officially TGCSA-graded 4-star apartment hotel${location ? ` in ${location}` : ""}.`;
   const cta = " Book direct for the best rate.";
   return `${tagline ?? ""}${credential}${price}${cta}`.trim();
 }
 
 function propertyKeywords(p: ReturnType<typeof getPropertyBySlug>): string[] {
   if (!p) return [];
+  const location = pickOptional(p.location, "en");
   return [
     `${p.name} Cape Town`,
     `Urban Elephant at ${p.name}`,
     `${p.name} apartment hotel`,
-    p.location ? `${p.location} accommodation` : "",
+    location ? `${location} accommodation` : "",
     p.postalAddress?.locality ? `${p.postalAddress.locality} hotel` : "",
     "Cape Town apartment hotel",
     "TGCSA 4-star",
@@ -108,7 +111,7 @@ export default async function PropertyDetailPage({ params }: Props) {
             { name: property.name, path: `/properties/${property.slug}` },
           ]),
           ...(locale === "en" && faqs.length
-            ? [faqPageSchema(faqs.map((f) => ({ question: f.q, answer: f.a })))]
+            ? [faqPageSchema(faqs.map((f) => ({ question: f.q.en, answer: f.a.en })))]
             : []),
         ]}
       />

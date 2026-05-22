@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +11,8 @@ import {
 } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
 import type { Attraction, Restaurant } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickOptional } from "@/lib/i18n-content";
 
 interface RecommendationsPageContentProps {
   attractions: Attraction[];
@@ -34,6 +36,7 @@ export function RecommendationsPageContent({
   letter,
 }: RecommendationsPageContentProps) {
   const t = useTranslations("recommendations");
+  const locale = useLocale() as Locale;
 
   return (
     <article className="bg-white">
@@ -145,7 +148,7 @@ export function RecommendationsPageContent({
 
                   {attraction.description && (
                     <p className="text-stone-500 text-sm leading-relaxed mb-5">
-                      {attraction.description}
+                      {pickOptional(attraction.description, locale)}
                     </p>
                   )}
 
@@ -155,7 +158,7 @@ export function RecommendationsPageContent({
                         {t("hostNote")}
                       </p>
                       <p className="font-display italic font-light text-[#24272a] text-base leading-snug text-balance">
-                        &ldquo;{attraction.hostNote}&rdquo;
+                        &ldquo;{pickOptional(attraction.hostNote, locale)}&rdquo;
                       </p>
                     </div>
                   )}
@@ -219,7 +222,7 @@ export function RecommendationsPageContent({
 
                   {restaurant.description && (
                     <p className="text-stone-500 text-sm leading-relaxed mb-5">
-                      {restaurant.description}
+                      {pickOptional(restaurant.description, locale)}
                     </p>
                   )}
 
@@ -229,7 +232,7 @@ export function RecommendationsPageContent({
                         {t("perkLabel")}
                       </p>
                       <p className="text-[#24272a] text-sm leading-snug">
-                        {restaurant.perk}
+                        {pickOptional(restaurant.perk, locale)}
                       </p>
                     </div>
                   )}
@@ -240,7 +243,7 @@ export function RecommendationsPageContent({
                         {t("hostNote")}
                       </p>
                       <p className="font-display italic font-light text-[#24272a] text-base leading-snug text-balance">
-                        &ldquo;{restaurant.hostNote}&rdquo;
+                        &ldquo;{pickOptional(restaurant.hostNote, locale)}&rdquo;
                       </p>
                     </div>
                   )}

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { BrandDivider } from "@/components/global/brand-divider";
@@ -16,13 +16,15 @@ import { getReviewsForProperty } from "@/data/content";
 import type { Property } from "@/types";
 import type { FaqEntry } from "@/lib/property-faq";
 import { cn } from "@/lib/utils";
+import type { Locale } from "@/i18n/routing";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 interface PropertyDetailContentProps {
   property: Property;
   faqs?: FaqEntry[];
 }
 
-function PropertyFaqItem({ q, a }: FaqEntry) {
+function PropertyFaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
     <div className="border-b border-stone-200">
@@ -61,6 +63,7 @@ function PropertyFaqItem({ q, a }: FaqEntry) {
 
 export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailContentProps) {
   const t = useTranslations("properties");
+  const locale = useLocale() as Locale;
 
   const [showBookingBar, setShowBookingBar] = useState(false);
   useEffect(() => {
@@ -70,7 +73,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  const description = property.description ?? [];
+  const description = pickOptional(property.description, locale) ?? [];
   const lead = description[0];
   const body = description.slice(1);
   const galleryImages = property.gallery ?? [];
@@ -95,7 +98,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         {property.heroImage && (
           <Image
             src={property.heroImage}
-            alt={`Urban Elephant at ${property.name} — 4-star apartment hotel in ${property.location ?? "Cape Town"}`}
+            alt={`Urban Elephant at ${property.name} — 4-star apartment hotel in ${pickOptional(property.location, locale) ?? "Cape Town"}`}
             fill
             priority
             sizes="100vw"
@@ -117,7 +120,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                   </div>
                 )}
                 <span className="text-white/70 text-xs uppercase tracking-[0.3em]">
-                  {property.location}
+                  {pickOptional(property.location, locale)}
                 </span>
               </div>
               <h1 className="text-white text-balance leading-[0.92]">
@@ -127,7 +130,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
               </h1>
               {property.tagline && (
                 <p className="text-white/80 text-base md:text-lg max-w-xl mt-6 text-balance font-light leading-relaxed">
-                  {property.tagline}
+                  {pickOptional(property.tagline, locale)}
                 </p>
               )}
             </ScrollReveal>
@@ -178,7 +181,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                       <Image
                         src={pair.image}
-                        alt={`Urban Elephant at ${property.name} apartment interior, ${property.location ?? "Cape Town"} — view ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name} apartment interior, ${pickOptional(property.location, locale) ?? "Cape Town"} — view ${i + 1}`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 60vw"
                         className="object-cover"
@@ -251,7 +254,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 {t("addressLabel")}
               </p>
               <p className="text-[#24272a] text-lg font-light leading-snug">
-                {property.address || property.location}
+                {property.address || pickOptional(property.location, locale)}
               </p>
             </div>
             <div>
@@ -315,7 +318,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     {property.amenities.map((amenity, i) => (
                       <li key={i}>
                         <span className="text-[#24272a] font-light text-lg">
-                          {amenity.name}
+                          {pickLocale(amenity.name, locale)}
                         </span>
                       </li>
                     ))}
@@ -395,9 +398,11 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
 
               <div className="max-w-3xl mx-auto">
                 <div className="border-t border-stone-200">
-                  {faqs.map((faq) => (
-                    <PropertyFaqItem key={faq.q} q={faq.q} a={faq.a} />
-                  ))}
+                  {faqs.map((faq, i) => {
+                    const q = pickLocale(faq.q, locale);
+                    const a = pickLocale(faq.a, locale);
+                    return <PropertyFaqItem key={i} q={q} a={a} />;
+                  })}
                 </div>
                 <p className="mt-10 text-center text-stone-500">
                   More questions? See the{" "}
@@ -460,7 +465,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     >
                       <Image
                         src={image}
-                        alt={`Urban Elephant at ${property.name}, ${property.location ?? "Cape Town"} — apartment and amenities, image ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name}, ${pickOptional(property.location, locale) ?? "Cape Town"} — apartment and amenities, image ${i + 1}`}
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
                         className="object-cover hover:scale-[1.02] transition-transform duration-700 ease-out"
@@ -488,7 +493,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
             <p className="text-[#24272a] text-base lg:text-lg font-light truncate">
               {property.name}
               <span className="text-stone-400 text-sm ml-2 hidden sm:inline">
-                · {property.location}
+                · {pickOptional(property.location, locale)}
               </span>
             </p>
           </div>

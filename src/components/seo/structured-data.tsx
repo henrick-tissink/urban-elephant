@@ -1,6 +1,7 @@
 import { properties, reviews as allReviews, siteSettings, getReviewsForProperty } from "@/data/content";
 import type { Property, Review, Tour } from "@/types";
 import { SITE_URL, localizedUrl } from "@/lib/seo";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 const ORG_ID = `${SITE_URL}#organization`;
 const WEBSITE_ID = `${SITE_URL}#website`;
@@ -213,7 +214,7 @@ export function hotelSchema(property: Property) {
     "@type": "Hotel",
     "@id": url,
     name: `Urban Elephant at ${property.name}`,
-    description: property.tagline ?? property.description?.[0],
+    description: pickOptional(property.tagline, "en") ?? pickOptional(property.description, "en")?.[0],
     url,
     image: galleryAbs.length ? galleryAbs : asAbsolute(property.heroImage),
     ...(property.starRating && {
@@ -260,7 +261,7 @@ export function hotelSchema(property: Property) {
     ...(property.amenities?.length && {
       amenityFeature: property.amenities.map((a) => ({
         "@type": "LocationFeatureSpecification",
-        name: a.name,
+        name: pickLocale(a.name, "en"),
         value: true,
       })),
     }),
@@ -312,8 +313,8 @@ export function touristTripSchema(tour: Tour) {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
     "@id": url,
-    name: tour.name,
-    description: tour.shortDescription ?? tour.description?.[0],
+    name: pickLocale(tour.name, "en"),
+    description: pickOptional(tour.shortDescription, "en") ?? pickOptional(tour.description, "en")?.[0],
     url,
     image: asAbsolute(tour.image),
     provider: { "@id": ORG_ID },

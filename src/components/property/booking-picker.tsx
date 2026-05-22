@@ -4,10 +4,12 @@ import { useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { AwardBadge } from "@/components/property/award-badge";
 import type { Property } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickOptional } from "@/lib/i18n-content";
 
 interface Props {
   open: boolean;
@@ -22,6 +24,7 @@ interface Props {
  */
 export function BookingPicker({ open, onClose, properties }: Props) {
   const t = useTranslations("bookingPicker");
+  const locale = useLocale() as Locale;
 
   useEffect(() => {
     if (!open) return;
@@ -117,7 +120,7 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                             {stars > 0 && <TGCSAStars count={stars} size={12} />}
                             {property.location && (
                               <span className="text-stone-400 text-[10px] uppercase tracking-[0.2em]">
-                                {property.location}
+                                {pickOptional(property.location, locale)}
                               </span>
                             )}
                           </div>

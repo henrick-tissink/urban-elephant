@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import { Clock, Users, MapPin, Check, X } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { Tour } from "@/types";
+import type { Locale } from "@/i18n/routing";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 interface TourDetailContentProps {
   tour: Tour;
@@ -15,6 +17,7 @@ interface TourDetailContentProps {
 export function TourDetailContent({ tour }: TourDetailContentProps) {
   const t = useTranslations("tours");
   const tCommon = useTranslations("common");
+  const locale = useLocale() as Locale;
 
   return (
     <>
@@ -23,7 +26,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
         {tour.image ? (
           <Image
             src={tour.image}
-            alt={tour.name}
+            alt={pickLocale(tour.name, locale)}
             fill
             priority
             className="object-cover"
@@ -42,13 +45,13 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                 </span>
               )}
               <h1 className="text-4xl md:text-5xl font-light text-white mb-4">
-                {tour.name}
+                {pickLocale(tour.name, locale)}
               </h1>
               <div className="flex flex-wrap items-center gap-6 text-white/80">
                 {tour.duration && (
                   <span className="flex items-center gap-2">
                     <Clock className="w-5 h-5" />
-                    {tour.duration}
+                    {pickOptional(tour.duration, locale)}
                   </span>
                 )}
                 {tour.groupSize && (
@@ -60,7 +63,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                 {tour.meetingPoint && (
                   <span className="flex items-center gap-2">
                     <MapPin className="w-5 h-5" />
-                    {tour.meetingPoint}
+                    {pickOptional(tour.meetingPoint, locale)}
                   </span>
                 )}
               </div>
@@ -76,10 +79,10 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
             {/* Main Content */}
             <div className="lg:col-span-2">
               {/* Description */}
-              {tour.description && tour.description.length > 0 && (
+              {tour.description && (pickOptional(tour.description, locale) ?? []).length > 0 && (
                 <ScrollReveal className="mb-12">
                   <div className="prose max-w-none space-y-4 text-stone-600 leading-relaxed">
-                    {tour.description.map((paragraph, i) => (
+                    {(pickOptional(tour.description, locale) ?? []).map((paragraph, i) => (
                       <p key={i}>{paragraph}</p>
                     ))}
                   </div>
@@ -87,11 +90,11 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
               )}
 
               {/* Highlights */}
-              {tour.highlights && tour.highlights.length > 0 && (
+              {tour.highlights && (pickOptional(tour.highlights, locale) ?? []).length > 0 && (
                 <ScrollReveal className="mb-12">
                   <h2 className="text-2xl text-[#24272a] mb-6">{t("highlights")}</h2>
                   <StaggerChildren staggerDelay={0.05} className="space-y-3">
-                    {tour.highlights.map((highlight, index) => (
+                    {(pickOptional(tour.highlights, locale) ?? []).map((highlight, index) => (
                       <StaggerItem key={index} className="flex items-start gap-3">
                         <div className="w-6 h-6 bg-[var(--color-brand-soft)] rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <Check className="w-4 h-4 text-[var(--color-brand-anchor)]" />
@@ -105,11 +108,11 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
 
               {/* What's Included / Excluded */}
               <div className="grid md:grid-cols-2 gap-8 mb-12">
-                {tour.includes && tour.includes.length > 0 && (
+                {tour.includes && (pickOptional(tour.includes, locale) ?? []).length > 0 && (
                   <ScrollReveal>
                     <h2 className="text-xl font-medium text-[#24272a] mb-4">{t("includes")}</h2>
                     <ul className="space-y-2">
-                      {tour.includes.map((item, index) => (
+                      {(pickOptional(tour.includes, locale) ?? []).map((item, index) => (
                         <li key={index} className="flex items-center gap-2 text-stone-600">
                           <Check className="w-4 h-4 text-green-500" />
                           {item}
@@ -119,11 +122,11 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                   </ScrollReveal>
                 )}
 
-                {tour.excludes && tour.excludes.length > 0 && (
+                {tour.excludes && (pickOptional(tour.excludes, locale) ?? []).length > 0 && (
                   <ScrollReveal delay={0.1}>
                     <h2 className="text-xl font-medium text-[#24272a] mb-4">{t("excludes")}</h2>
                     <ul className="space-y-2">
-                      {tour.excludes.map((item, index) => (
+                      {(pickOptional(tour.excludes, locale) ?? []).map((item, index) => (
                         <li key={index} className="flex items-center gap-2 text-stone-600">
                           <X className="w-4 h-4 text-red-500" />
                           {item}
@@ -146,7 +149,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                         R{tour.price.toLocaleString()}
                       </p>
                       {tour.priceNote && (
-                        <p className="text-sm text-stone-500">{tour.priceNote}</p>
+                        <p className="text-sm text-stone-500">{pickOptional(tour.priceNote, locale)}</p>
                       )}
                     </div>
                   )}

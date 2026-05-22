@@ -1,10 +1,15 @@
 import { properties, tours, siteSettings } from "@/data/content";
 import { SITE_URL, localizedUrl } from "@/lib/seo";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
 
 export const dynamic = "force-static";
 
 function propertyLine(p: (typeof properties)[number]): string {
-  const summary = p.tagline ?? p.description?.[0] ?? p.location ?? "";
+  const summary =
+    pickOptional(p.tagline, "en") ??
+    pickOptional(p.description, "en")?.[0] ??
+    pickOptional(p.location, "en") ??
+    "";
   const price = p.priceRange
     ? p.priceRange.max
       ? ` From R${p.priceRange.min}–R${p.priceRange.max}/night.`
@@ -16,15 +21,18 @@ function propertyLine(p: (typeof properties)[number]): string {
 
 function tourLine(t: (typeof tours)[number]): string {
   const summary =
-    t.shortDescription ?? t.description?.[0] ?? "Cape Town experience.";
+    pickOptional(t.shortDescription, "en") ??
+    pickOptional(t.description, "en")?.[0] ??
+    "Cape Town experience.";
   // Only append the priceNote if it adds info beyond "from R…"; e.g. "per person" is useful,
   // a bare "from" is redundant.
+  const priceNoteEn = pickOptional(t.priceNote, "en");
   const noteIsRedundant =
-    !t.priceNote || /^from$/i.test(t.priceNote.trim());
+    !priceNoteEn || /^from$/i.test(priceNoteEn.trim());
   const price = t.price
-    ? ` From R${t.price}${noteIsRedundant ? "" : ` (${t.priceNote})`}.`
+    ? ` From R${t.price}${noteIsRedundant ? "" : ` (${priceNoteEn})`}.`
     : "";
-  return `- [${t.name}](${localizedUrl("en", `/tours/${t.slug}`)}): ${summary}${price}`;
+  return `- [${pickLocale(t.name, "en")}](${localizedUrl("en", `/tours/${t.slug}`)}): ${summary}${price}`;
 }
 
 export function GET() {
