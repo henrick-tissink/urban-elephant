@@ -1,12 +1,14 @@
+import type { Localized } from "@/lib/i18n-content";
+
 export interface PropertyAmenity {
-  name: string;
+  name: Localized<string>;
   icon?: string;
   category?: "general" | "room" | "bathroom" | "kitchen" | "entertainment" | "building";
 }
 
 export interface PropertyHighlight {
-  title: string;
-  description?: string;
+  title: Localized<string>;
+  description?: Localized<string>;
   icon?: string;
 }
 
@@ -39,9 +41,9 @@ export interface Property {
   _id: string;
   slug: string;
   name: string;
-  tagline?: string;
-  description?: string[];
-  location?: string;
+  tagline?: Localized<string>;
+  description?: Localized<string[]>;
+  location?: Localized<string>;
   address?: string;
   postalAddress?: PostalAddress;
   geo?: GeoCoordinates;
@@ -77,19 +79,19 @@ export type TourCategory =
 export interface Tour {
   _id: string;
   slug: string;
-  name: string;
+  name: Localized<string>;
   category?: TourCategory;
-  shortDescription?: string;
-  description?: string[];
+  shortDescription?: Localized<string>;
+  description?: Localized<string[]>;
   image?: string;
   gallery?: string[];
-  duration?: string;
+  duration?: Localized<string>;
   price?: number;
-  priceNote?: string;
-  highlights?: string[];
-  includes?: string[];
-  excludes?: string[];
-  meetingPoint?: string;
+  priceNote?: Localized<string>;
+  highlights?: Localized<string[]>;
+  includes?: Localized<string[]>;
+  excludes?: Localized<string[]>;
+  meetingPoint?: Localized<string>;
   groupSize?: TourGroupSize;
   featured?: boolean;
   order?: number;
@@ -116,8 +118,8 @@ export interface Attraction {
   _id: string;
   slug: string;
   name: string;
-  description?: string;
-  hostNote?: string;
+  description?: Localized<string>;
+  hostNote?: Localized<string>;
   image?: string;
   category?: "dining" | "sightseeing" | "activity" | "shopping" | "nightlife" | "culture";
   distance?: string;
@@ -128,13 +130,13 @@ export interface Restaurant {
   _id: string;
   slug: string;
   name: string;
-  description?: string;
-  hostNote?: string;
+  description?: Localized<string>;
+  hostNote?: Localized<string>;
   image?: string;
-  cuisineType?: string;
+  cuisineType?: Localized<string>;
   mealType?: "breakfast" | "lunch" | "dinner";
   website?: string;
-  perk?: string;
+  perk?: Localized<string>;
 }
 
 export interface ContactInfo {
