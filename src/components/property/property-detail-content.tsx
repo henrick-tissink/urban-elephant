@@ -401,7 +401,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                   {faqs.map((faq, i) => {
                     const q = pickLocale(faq.q, locale);
                     const a = pickLocale(faq.a, locale);
-                    return <PropertyFaqItem key={i} q={q} a={a} />;
+                    return <PropertyFaqItem key={pickLocale(faq.q, "en")} q={q} a={a} />;
                   })}
                 </div>
                 <p className="mt-10 text-center text-stone-500">

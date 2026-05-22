@@ -11,7 +11,8 @@ import {
   breadcrumbSchema,
   faqPageSchema,
 } from "@/components/seo/structured-data";
-import { pickOptional } from "@/lib/i18n-content";
+import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -110,12 +111,19 @@ export default async function PropertyDetailPage({ params }: Props) {
             { name: "Properties", path: "/properties" },
             { name: property.name, path: `/properties/${property.slug}` },
           ]),
-          ...(locale === "en" && faqs.length
-            ? [faqPageSchema(faqs.map((f) => ({ question: f.q.en, answer: f.a.en })))]
+          ...(faqs.length
+            ? [
+                faqPageSchema(
+                  faqs.map((f) => ({
+                    question: pickLocale(f.q, locale as Locale),
+                    answer: pickLocale(f.a, locale as Locale),
+                  })),
+                ),
+              ]
             : []),
         ]}
       />
-      <PropertyDetailContent property={property} faqs={locale === "en" ? faqs : []} />
+      <PropertyDetailContent property={property} faqs={faqs} />
     </>
   );
 }
