@@ -3,6 +3,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Header } from "@/components/layout/header";
+import { LocaleBanner } from "@/components/global/locale-banner";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/global/smooth-scroll";
 import { ScrollProgress } from "@/components/global/scroll-progress";
@@ -32,6 +33,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider messages={messages}>
       <a href="#main" className="skip-link">Skip to content</a>
+      <LocaleBanner />
       <SmoothScroll>
         <ScrollProgress />
         <Header />
