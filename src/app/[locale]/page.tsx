@@ -14,6 +14,7 @@ import { PromoPopup } from "@/components/promo/promo-popup";
 import { getFeaturedProperties, getFeaturedReviews } from "@/data/content";
 import { buildAlternates } from "@/lib/seo";
 import { JsonLd, itemListSchema } from "@/components/seo/structured-data";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -40,6 +41,7 @@ export default async function HomePage({ params }: Props) {
             name: `Urban Elephant at ${p.name}`,
             path: `/properties/${p.slug}`,
           })),
+          locale as Locale,
           "Featured Urban Elephant Properties",
         )}
       />

@@ -2,6 +2,7 @@ import { properties, reviews as allReviews, siteSettings, getReviewsForProperty 
 import type { Property, Review, Tour } from "@/types";
 import { SITE_URL, localizedUrl } from "@/lib/seo";
 import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 const ORG_ID = `${SITE_URL}#organization`;
 const WEBSITE_ID = `${SITE_URL}#website`;
@@ -107,7 +108,7 @@ export function organizationSchema() {
         description: "24-hour concierge and guest relations",
       },
     ],
-    availableLanguage: ["English", "Afrikaans"],
+    availableLanguage: ["English", "Afrikaans", "German", "French", "Danish"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Urban Elephant Apartment Hotels",
@@ -134,7 +135,7 @@ export function websiteSchema() {
     "@id": WEBSITE_ID,
     url: SITE_URL,
     name: siteSettings.siteName,
-    inLanguage: ["en-ZA", "af-ZA"],
+    inLanguage: ["en-ZA", "af-ZA", "de-DE", "fr-FR", "da-DK"],
     publisher: { "@id": ORG_ID },
   };
 }
@@ -198,8 +199,9 @@ function aggregateRatingFromReviews(reviews: Review[]) {
   };
 }
 
-export function hotelSchema(property: Property) {
-  const url = localizedUrl("en", `/properties/${property.slug}`);
+export function hotelSchema(property: Property, locale: Locale) {
+  const url = localizedUrl(locale, `/properties/${property.slug}`);
+  const id = `${SITE_URL}/properties/${property.slug}#hotel`;
   const street = property.postalAddress?.street ?? streetFromAddress(property.address);
   const galleryAbs = (property.gallery ?? [])
     .slice(0, 8)
@@ -212,9 +214,9 @@ export function hotelSchema(property: Property) {
   return {
     "@context": "https://schema.org",
     "@type": "Hotel",
-    "@id": url,
+    "@id": id,
     name: `Urban Elephant at ${property.name}`,
-    description: pickOptional(property.tagline, "en") ?? pickOptional(property.description, "en")?.[0],
+    description: pickOptional(property.tagline, locale) ?? pickOptional(property.description, locale)?.[0],
     url,
     image: galleryAbs.length ? galleryAbs : asAbsolute(property.heroImage),
     ...(property.starRating && {
@@ -261,7 +263,7 @@ export function hotelSchema(property: Property) {
     ...(property.amenities?.length && {
       amenityFeature: property.amenities.map((a) => ({
         "@type": "LocationFeatureSpecification",
-        name: pickLocale(a.name, "en"),
+        name: pickLocale(a.name, locale),
         value: true,
       })),
     }),
@@ -279,7 +281,7 @@ export function hotelSchema(property: Property) {
     smokingAllowed: false,
     currenciesAccepted: "ZAR",
     paymentAccepted: "Credit Card, EFT",
-    availableLanguage: ["English", "Afrikaans"],
+    availableLanguage: ["English", "Afrikaans", "German", "French", "Danish"],
     ...(property.geo && {
       hasMap: `https://www.google.com/maps/search/?api=1&query=${property.geo.latitude},${property.geo.longitude}`,
     }),
@@ -307,14 +309,15 @@ export function faqPageSchema(items: { question: string; answer: string }[]) {
   };
 }
 
-export function touristTripSchema(tour: Tour) {
-  const url = localizedUrl("en", `/tours/${tour.slug}`);
+export function touristTripSchema(tour: Tour, locale: Locale) {
+  const url = localizedUrl(locale, `/tours/${tour.slug}`);
+  const id = `${SITE_URL}/tours/${tour.slug}#trip`;
   return {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "@id": url,
-    name: pickLocale(tour.name, "en"),
-    description: pickOptional(tour.shortDescription, "en") ?? pickOptional(tour.description, "en")?.[0],
+    "@id": id,
+    name: pickLocale(tour.name, locale),
+    description: pickOptional(tour.shortDescription, locale) ?? pickOptional(tour.description, locale)?.[0],
     url,
     image: asAbsolute(tour.image),
     provider: { "@id": ORG_ID },
@@ -332,7 +335,7 @@ export function touristTripSchema(tour: Tour) {
 
 type Crumb = { name: string; path: string };
 
-export function breadcrumbSchema(crumbs: Crumb[]) {
+export function breadcrumbSchema(crumbs: Crumb[], locale: Locale) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -340,14 +343,14 @@ export function breadcrumbSchema(crumbs: Crumb[]) {
       "@type": "ListItem",
       position: i + 1,
       name: c.name,
-      item: localizedUrl("en", c.path),
+      item: localizedUrl(locale, c.path),
     })),
   };
 }
 
 type ListItem = { name: string; path: string };
 
-export function itemListSchema(items: ListItem[], name?: string) {
+export function itemListSchema(items: ListItem[], locale: Locale, name?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -355,7 +358,7 @@ export function itemListSchema(items: ListItem[], name?: string) {
     itemListElement: items.map((item, i) => ({
       "@type": "ListItem",
       position: i + 1,
-      url: localizedUrl("en", item.path),
+      url: localizedUrl(locale, item.path),
       name: item.name,
     })),
   };

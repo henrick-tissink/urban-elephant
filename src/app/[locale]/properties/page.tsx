@@ -9,6 +9,7 @@ import {
   breadcrumbSchema,
   hotelSchema,
 } from "@/components/seo/structured-data";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -67,13 +68,14 @@ export default async function PropertiesPage({ params }: Props) {
               name: `Urban Elephant at ${p.name}`,
               path: `/properties/${p.slug}`,
             })),
+            locale as Locale,
             "Urban Elephant Properties",
           ),
           breadcrumbSchema([
             { name: tNav("home"), path: "/" },
             { name: tNav("properties"), path: "/properties" },
-          ]),
-          ...properties.map(hotelSchema),
+          ], locale as Locale),
+          ...properties.map((p) => hotelSchema(p, locale as Locale)),
         ]}
       />
       <PropertiesPageContent properties={properties} />

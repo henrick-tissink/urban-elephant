@@ -5,6 +5,7 @@ import { ToursPageContent } from "@/components/tour/tours-page-content";
 import { buildAlternates } from "@/lib/seo";
 import { JsonLd, itemListSchema } from "@/components/seo/structured-data";
 import { pickLocale } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -29,7 +30,8 @@ export default async function ToursPage({ params }: Props) {
     <>
       <JsonLd
         data={itemListSchema(
-          tours.map((t) => ({ name: pickLocale(t.name, "en"), path: `/tours/${t.slug}` })),
+          tours.map((t) => ({ name: pickLocale(t.name, locale as Locale), path: `/tours/${t.slug}` })),
+          locale as Locale,
           "Cape Town Tours and Experiences",
         )}
       />

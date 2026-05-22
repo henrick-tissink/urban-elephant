@@ -105,12 +105,12 @@ export default async function PropertyDetailPage({ params }: Props) {
     <>
       <JsonLd
         data={[
-          hotelSchema(property),
+          hotelSchema(property, locale as Locale),
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Properties", path: "/properties" },
             { name: property.name, path: `/properties/${property.slug}` },
-          ]),
+          ], locale as Locale),
           ...(faqs.length
             ? [
                 faqPageSchema(

@@ -10,6 +10,7 @@ import {
   breadcrumbSchema,
 } from "@/components/seo/structured-data";
 import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -59,12 +60,12 @@ export default async function TourDetailPage({ params }: Props) {
     <>
       <JsonLd
         data={[
-          touristTripSchema(tour),
+          touristTripSchema(tour, locale as Locale),
           breadcrumbSchema([
             { name: "Home", path: "/" },
             { name: "Tours", path: "/tours" },
-            { name: pickLocale(tour.name, "en"), path: `/tours/${tour.slug}` },
-          ]),
+            { name: pickLocale(tour.name, locale as Locale), path: `/tours/${tour.slug}` },
+          ], locale as Locale),
         ]}
       />
       <TourDetailContent tour={tour} />

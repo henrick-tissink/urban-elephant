@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { FaqPageContent } from "@/components/faq/faq-page-content";
 import { buildAlternates } from "@/lib/seo";
 import { JsonLd, faqPageSchema, breadcrumbSchema } from "@/components/seo/structured-data";
+import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -56,7 +57,7 @@ export default async function FaqPage({ params }: Props) {
           breadcrumbSchema([
             { name: tNav("home"), path: "/" },
             { name: tNav("faq"), path: "/faq" },
-          ]),
+          ], locale as Locale),
         ]}
       />
       <FaqPageContent />
