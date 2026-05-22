@@ -565,5 +565,79 @@
     "siteName": "Urban Elephant",
     "defaultTitle": "Urban Elephant | Officially Graded Apartment Hotels in Cape Town",
     "defaultDescription": "Officially graded apartment hotels in Cape Town's best locations — TGCSA-graded, professionally managed, and family-run. Book direct for the best rate."
+  },
+  "seo": {
+    "home": {
+      "title": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
+      "description": "Officially graded 4-star luxury apartments in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management — Urban Elephant.",
+      "ogTitle": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
+      "ogDescription": "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service."
+    },
+    "about": {
+      "title": "About",
+      "description": "The family behind Urban Elephant — Cape Town apartment hotels graded by the Tourism Grading Council of South Africa.",
+      "ogTitle": "About Urban Elephant",
+      "ogDescription": "Family-owned, TGCSA-graded apartment hotels in Cape Town."
+    },
+    "herd": {
+      "title": "The Herd",
+      "description": "Meet the operations team behind every Urban Elephant stay.",
+      "ogTitle": "The Herd | Urban Elephant",
+      "ogDescription": "The people who make every stay feel taken care of."
+    },
+    "properties": {
+      "title": "Properties",
+      "description": "Four design-led apartment hotels across Cape Town's most distinctive neighbourhoods.",
+      "ogTitle": "Cape Town Apartment Hotels | Urban Elephant",
+      "ogDescription": "Hotel comfort with apartment privacy across Cape Town."
+    },
+    "tours": {
+      "title": "Tours & Experiences",
+      "description": "Curated Cape Town day-trips and experiences, bookable through the Urban Elephant concierge.",
+      "ogTitle": "Cape Town Tours | Urban Elephant",
+      "ogDescription": "Concierge-curated Cape Town experiences for Urban Elephant guests."
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Check-in, parking, WiFi, housekeeping, airport transfers — the questions guests ask most often.",
+      "ogTitle": "FAQ | Urban Elephant",
+      "ogDescription": "Everything you need to know before your Cape Town stay."
+    },
+    "recommendations": {
+      "title": "Recommendations",
+      "description": "Restaurants, attractions, and neighbourhood insights from the Urban Elephant team.",
+      "ogTitle": "Cape Town Recommendations | Urban Elephant",
+      "ogDescription": "Where to eat, what to see, what to skip."
+    },
+    "carHire": {
+      "title": "Car Hire",
+      "description": "Vehicle hire for Urban Elephant guests via our Enterprise partnership.",
+      "ogTitle": "Car Hire | Urban Elephant",
+      "ogDescription": "Pick-up at the airport, drop-off at the apartment."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Direct booking and concierge enquiries for Urban Elephant apartment hotels.",
+      "ogTitle": "Contact Urban Elephant",
+      "ogDescription": "Direct booking gets the best rate and personal service."
+    }
+  },
+  "brand": {
+    "atConnector": "at"
+  },
+  "locale": {
+    "switcher": {
+      "label": "Language"
+    },
+    "banner": {
+      "promptDeutsch": "Diese Seite auf Deutsch ansehen?",
+      "promptFrancais": "Voir cette page en français ?",
+      "promptDansk": "Se denne side på dansk?",
+      "switch": "Switch",
+      "dismiss": "Dismiss"
+    }
+  },
+  "currency": {
+    "indicativeNote": "≈ {amount}, billed in ZAR"
   }
 }
