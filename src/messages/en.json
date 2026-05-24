@@ -49,7 +49,14 @@
     "perkLabel": "A gift from us",
     "ctaEyebrow": "Want more?",
     "ctaTitle": "Send us a note. We'll send back a longer list.",
-    "ctaButton": "Get in touch"
+    "ctaButton": "Get in touch",
+    "mealBreakfast": "Breakfast",
+    "mealLunch": "Lunch",
+    "mealDinner": "Dinner",
+    "categories": {
+      "sightseeing": "Sightseeing",
+      "culture": "Culture"
+    }
   },
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
@@ -58,7 +65,11 @@
     "secondaryCta": "Book Direct",
     "scrollDown": "Scroll to explore",
     "bestRate": "Best Rate Guarantee",
-    "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
+    "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%.",
+    "pauseVideo": "Pause video",
+    "playVideo": "Play video",
+    "muteVideo": "Mute video",
+    "unmuteVideo": "Unmute video"
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIRECT",
@@ -152,6 +163,21 @@
     "ratesLabel": "Rates from",
     "ratesRange": "{from} – {to} per night",
     "ratesFrom": "From {from} per night",
+    "aboutEyebrow": "About",
+    "propertyNo": "Property no. {number}",
+    "detailsEyebrow": "The Details",
+    "detailsHeading": "Practicalities",
+    "gradingLabel": "Grading",
+    "starApartmentHotel": "{stars} Star Apartment Hotel",
+    "amenitiesHeading": "Everything you need, considered.",
+    "reviewsEyebrow": "Guests on this property",
+    "reviewsHeading": "What people who stayed said.",
+    "faqEyebrow": "Common questions",
+    "faqHeading": "About a stay at {name}.",
+    "faqMore": "More questions? See the <faq>full FAQ</faq> or <wa>WhatsApp Guest Relations</wa>.",
+    "galleryEyebrow": "Gallery",
+    "galleryHeading": "More views.",
+    "bookDirectGuarantee": "Book direct · best rate guarantee",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -190,6 +216,7 @@
     "meetingPoint": "Meeting Point",
     "bookTour": "Book This Tour",
     "bookTourHint": "Contact us to book this tour",
+    "noneFound": "No tours found in this category.",
     "categories": {
       "all": "All Tours",
       "adventure": "Adventure",
@@ -221,7 +248,13 @@
   "testimonials": {
     "title": "Guest Experiences",
     "subtitle": "WHAT OUR GUESTS SAY",
-    "readMore": "Read More Reviews"
+    "readMore": "Read More Reviews",
+    "prevReview": "Previous review",
+    "nextReview": "Next review",
+    "goToReview": "Go to review {number}",
+    "statGoogleRating": "Google Rating",
+    "statHappyGuests": "Happy Guests",
+    "statTgcsaGraded": "TGCSA Graded"
   },
   "about": {
     "title": "A Very Warm Welcome!",
@@ -308,6 +341,7 @@
     "title": "Contact Us",
     "subtitle": "GET IN TOUCH",
     "description": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "infoHeading": "Contact Information",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
@@ -471,6 +505,8 @@
     "subtitle": "The questions our guests ask most often. If yours isn't here, send our Guest Relations team a WhatsApp — we answer personally.",
     "askLabel": "Still have a question?",
     "askDescription": "WhatsApp our Guest Relations team on +27 72 618 8140 or email karin@urbanelephant.co.za — we answer within working hours.",
+    "pickerEyebrow": "Pick your apartment hotel",
+    "pickerHeading": "Four officially graded hotels. One family running them.",
     "groups": {
       "arrival": {
         "title": "Arrival & Access",
@@ -640,5 +676,13 @@
   },
   "currency": {
     "indicativeNote": "≈ {amount}, billed in ZAR"
+  },
+  "a11y": {
+    "toggleMenu": "Toggle menu",
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "credentials": "Credentials",
+    "languageSuggestion": "Language suggestion",
+    "carHireBooking": "Enterprise car hire booking"
   }
 }

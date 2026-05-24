@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animations/scroll-reveal";
 import type { Tour } from "@/types";
 import type { Locale } from "@/i18n/routing";
-import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import { pickLocale, pickOptional, formatZar } from "@/lib/i18n-content";
 
 interface TourDetailContentProps {
   tour: Tour;
@@ -41,7 +41,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
             <ScrollReveal>
               {tour.category && (
                 <span className="inline-block bg-[var(--color-brand-anchor)] text-white px-3 py-1 text-sm mb-4 capitalize">
-                  {tour.category.replace("-", " & ")}
+                  {t(`categories.${tour.category}`)}
                 </span>
               )}
               <h1 className="text-4xl md:text-5xl font-light text-white mb-4">
@@ -146,7 +146,7 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                     <div className="mb-6">
                       <p className="text-sm text-stone-500">{tCommon("from")}</p>
                       <p className="text-4xl font-light text-[#24272a]">
-                        R{tour.price.toLocaleString()}
+                        {formatZar(tour.price)}
                       </p>
                       {tour.priceNote && (
                         <p className="text-sm text-stone-500">{pickOptional(tour.priceNote, locale)}</p>

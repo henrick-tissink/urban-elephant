@@ -1,6 +1,6 @@
 "use client";
 
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
 import {
   DropdownMenu,
@@ -15,6 +15,7 @@ import { LOCALE_NATIVE_NAME } from "@/lib/i18n-content";
 
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
+  const t = useTranslations("locale.switcher");
   const router = useRouter();
   const pathname = usePathname();
 
@@ -26,7 +27,7 @@ export function LanguageSwitcher() {
     <DropdownMenu>
       <DropdownMenuTrigger
         className="flex items-center gap-1.5 text-sm font-medium transition-colors outline-none"
-        aria-label="Language"
+        aria-label={t("label")}
       >
         <Globe className="size-4" />
         <span>{LOCALE_NATIVE_NAME[locale]}</span>

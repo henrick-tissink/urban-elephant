@@ -120,7 +120,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
               <button
                 onClick={prev}
                 className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[var(--color-brand-anchor)] hover:text-[var(--color-brand-mid)] transition-colors"
-                aria-label="Previous review"
+                aria-label={t("prevReview")}
               >
                 <ChevronLeft className="w-5 h-5" />
               </button>
@@ -137,7 +137,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
                         ? "bg-[var(--color-brand-anchor)] w-8"
                         : "bg-[#24272a] w-2 hover:bg-stone-600"
                     )}
-                    aria-label={`Go to review ${index + 1}`}
+                    aria-label={t("goToReview", { number: index + 1 })}
                   />
                 ))}
               </div>
@@ -145,7 +145,7 @@ export function Testimonials({ reviews }: TestimonialsProps) {
               <button
                 onClick={next}
                 className="w-12 h-12 border border-[#24272a] rounded-full flex items-center justify-center hover:border-[var(--color-brand-anchor)] hover:text-[var(--color-brand-mid)] transition-colors"
-                aria-label="Next review"
+                aria-label={t("nextReview")}
               >
                 <ChevronRight className="w-5 h-5" />
               </button>
@@ -161,10 +161,10 @@ export function Testimonials({ reviews }: TestimonialsProps) {
           className="flex flex-wrap justify-center items-center gap-8 mt-16 pt-16 border-t border-[#1a1c1e]"
         >
           {[
-            { value: "4.9", label: "Google Rating" },
+            { value: "4.9", label: t("statGoogleRating") },
             { value: "9.3", label: "Booking.com" },
-            { value: "45,000+", label: "Happy Guests" },
-            { value: "4 Star", label: "TGCSA Graded" },
+            { value: "45,000+", label: t("statHappyGuests") },
+            { value: "4 Star", label: t("statTgcsaGraded") },
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

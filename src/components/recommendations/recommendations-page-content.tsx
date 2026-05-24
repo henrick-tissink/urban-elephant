@@ -12,23 +12,17 @@ import {
 import { BrandDivider } from "@/components/global/brand-divider";
 import type { Attraction, Restaurant } from "@/types";
 import type { Locale } from "@/i18n/routing";
-import { pickOptional } from "@/lib/i18n-content";
+import { pickLocale, pickOptional, type Localized } from "@/lib/i18n-content";
 
 interface RecommendationsPageContentProps {
   attractions: Attraction[];
   restaurants: Restaurant[];
   letter: {
-    intro: string[];
+    intro: Localized<string[]>;
     signature: string;
-    signatureRole: string;
+    signatureRole: Localized<string>;
   };
 }
-
-const mealTimeLabel: Record<NonNullable<Restaurant["mealType"]>, string> = {
-  breakfast: "Breakfast",
-  lunch: "Lunch",
-  dinner: "Dinner",
-};
 
 export function RecommendationsPageContent({
   attractions,
@@ -37,6 +31,12 @@ export function RecommendationsPageContent({
 }: RecommendationsPageContentProps) {
   const t = useTranslations("recommendations");
   const locale = useLocale() as Locale;
+
+  const mealTimeLabel: Record<NonNullable<Restaurant["mealType"]>, string> = {
+    breakfast: t("mealBreakfast"),
+    lunch: t("mealLunch"),
+    dinner: t("mealDinner"),
+  };
 
   return (
     <article className="bg-white">
@@ -52,10 +52,8 @@ export function RecommendationsPageContent({
               {t("eyebrow")}
             </p>
             <h1 className="text-balance leading-[0.92]">
-              <span className="block text-[clamp(3.5rem,9vw,8rem)] font-light tracking-[-0.035em]">
-                Beyond the
-                <br />
-                <em className="not-italic text-gradient-brand">front door.</em>
+              <span className="block text-[clamp(3.5rem,9vw,8rem)] font-light tracking-[-0.035em] text-gradient-brand">
+                {t("title")}
               </span>
             </h1>
             <p className="text-white/65 text-base md:text-lg mt-8 max-w-xl text-balance leading-relaxed font-light">
@@ -76,7 +74,7 @@ export function RecommendationsPageContent({
             </ScrollReveal>
             <ScrollReveal className="lg:col-span-9">
               <div className="space-y-6 text-stone-700 text-xl md:text-2xl leading-[1.5] font-light">
-                {letter.intro.map((paragraph, i) => (
+                {pickLocale(letter.intro, locale).map((paragraph, i) => (
                   <p key={i} className={i === 0 ? "drop-cap" : undefined}>
                     {paragraph}
                   </p>
@@ -87,7 +85,7 @@ export function RecommendationsPageContent({
                   {letter.signature}
                 </p>
                 <p className="text-stone-400 text-xs uppercase tracking-[0.25em] mt-2">
-                  {letter.signatureRole}
+                  {pickLocale(letter.signatureRole, locale)}
                 </p>
               </div>
             </ScrollReveal>
@@ -137,7 +135,7 @@ export function RecommendationsPageContent({
                     </span>
                     {attraction.category && (
                       <span className="text-stone-400 text-[10px] uppercase tracking-[0.25em]">
-                        · {attraction.category}
+                        · {t(`categories.${attraction.category}`)}
                       </span>
                     )}
                   </div>

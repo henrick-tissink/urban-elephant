@@ -17,7 +17,7 @@ import type { Property } from "@/types";
 import type { FaqEntry } from "@/lib/property-faq";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
-import { pickLocale, pickOptional, formatIndicative } from "@/lib/i18n-content";
+import { pickLocale, pickOptional, formatIndicative, formatZar } from "@/lib/i18n-content";
 
 interface PropertyDetailContentProps {
   property: Property;
@@ -146,10 +146,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
             <div className="grid lg:grid-cols-12 gap-x-12 gap-y-8">
               <ScrollReveal className="lg:col-span-3">
                 <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs">
-                  About
+                  {t("aboutEyebrow")}
                 </p>
                 <p className="text-stone-400 text-xs uppercase tracking-[0.2em] mt-3">
-                  Property no. {String((property.order ?? 0)).padStart(2, "0")}
+                  {t("propertyNo", { number: String(property.order ?? 0).padStart(2, "0") })}
                 </p>
               </ScrollReveal>
               <ScrollReveal className="lg:col-span-9">
@@ -242,10 +242,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="text-center mb-16">
             <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4">
-              The Details
+              {t("detailsEyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] tracking-tight">
-              Practicalities
+              {t("detailsHeading")}
             </h2>
           </ScrollReveal>
 
@@ -259,10 +259,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
               </p>
             </div>
             <div>
-              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">Grading</p>
+              <p className="text-stone-400 text-[10px] uppercase tracking-[0.3em] mb-3">{t("gradingLabel")}</p>
               <TGCSAStars count={stars} size={18} className="mb-2" />
               <p className="text-[#24272a] text-lg font-light leading-snug">
-                {stars} Star Apartment Hotel
+                {t("starApartmentHotel", { stars })}
               </p>
             </div>
             <div>
@@ -274,11 +274,11 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                   <p className="text-[#24272a] text-lg font-light leading-snug">
                     {property.priceRange.max
                       ? t("ratesRange", {
-                          from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
-                          to: `R${property.priceRange.max.toLocaleString("en-ZA")}`,
+                          from: formatZar(property.priceRange.min),
+                          to: formatZar(property.priceRange.max),
                         })
                       : t("ratesFrom", {
-                          from: `R${property.priceRange.min.toLocaleString("en-ZA")}`,
+                          from: formatZar(property.priceRange.min),
                         })}
                   </p>
                   {(() => {
@@ -298,7 +298,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 rel="noopener noreferrer"
                 className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity text-sm mt-2 inline-block"
               >
-                Check availability →
+                {t("checkAvailability")} →
               </a>
             </div>
           </div>
@@ -319,7 +319,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 </div>
                 <div className="lg:col-span-9">
                   <h2 className="text-3xl md:text-4xl text-[#24272a] tracking-tight max-w-xl">
-                    Everything you need, considered.
+                    {t("amenitiesHeading")}
                   </h2>
                 </div>
               </ScrollReveal>
@@ -350,10 +350,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
             <div className="container mx-auto px-6 lg:px-12">
               <ScrollReveal className="text-center mb-16">
                 <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-xs mb-4">
-                  Guests on this property
+                  {t("reviewsEyebrow")}
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-light">
-                  What people who stayed said.
+                  {t("reviewsHeading")}
                 </h2>
               </ScrollReveal>
 
@@ -401,10 +401,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
             <div className="container mx-auto px-6 lg:px-12">
               <ScrollReveal className="max-w-3xl mx-auto mb-12 text-center">
                 <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4">
-                  Common questions
+                  {t("faqEyebrow")}
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] tracking-tight font-light">
-                  About a stay at {property.name}.
+                  {t("faqHeading", { name: property.name })}
                 </h2>
               </ScrollReveal>
 
@@ -417,23 +417,26 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                   })}
                 </div>
                 <p className="mt-10 text-center text-stone-500">
-                  More questions? See the{" "}
-                  <Link
-                    href="/faq"
-                    className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
-                  >
-                    full FAQ
-                  </Link>
-                  {" "}or{" "}
-                  <a
-                    href="https://wa.me/27726188140"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
-                  >
-                    WhatsApp Guest Relations
-                  </a>
-                  .
+                  {t.rich("faqMore", {
+                    faq: (chunks) => (
+                      <Link
+                        href="/faq"
+                        className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
+                      >
+                        {chunks}
+                      </Link>
+                    ),
+                    wa: (chunks) => (
+                      <a
+                        href="https://wa.me/27726188140"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity underline underline-offset-4"
+                      >
+                        {chunks}
+                      </a>
+                    ),
+                  })}
                 </p>
               </div>
             </div>
@@ -457,10 +460,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
             <div className="container mx-auto px-6 lg:px-12">
               <ScrollReveal className="text-center mb-16">
                 <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4">
-                  Gallery
+                  {t("galleryEyebrow")}
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] tracking-tight">
-                  More views.
+                  {t("galleryHeading")}
                 </h2>
               </ScrollReveal>
 
@@ -500,7 +503,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         <div className="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-4">
           <div className="min-w-0">
             <p className="text-[10px] uppercase tracking-[0.3em] text-stone-400">
-              Book direct · best rate guarantee
+              {t("bookDirectGuarantee")}
             </p>
             <p className="text-[#24272a] text-base lg:text-lg font-light truncate">
               {property.name}

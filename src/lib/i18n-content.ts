@@ -41,6 +41,20 @@ export const LOCALE_NATIVE_NAME = {
   da: "Dansk",
 } satisfies Record<string, string>;
 
+// Deterministic thousands grouping. We intentionally avoid Number.toLocaleString
+// for displayed prices: Node (full ICU) and the browser can group the same locale
+// differently (e.g. "1 500" vs "1,500"), which triggers React hydration mismatches.
+function groupDigits(n: number, separator: string): string {
+  return Math.round(n)
+    .toString()
+    .replace(/\B(?=(\d{3})+(?!\d))/g, separator);
+}
+
+/** ZAR price for display, e.g. formatZar(1500) → "R1 500". Deterministic across server/client. */
+export function formatZar(amount: number): string {
+  return `R${groupDigits(amount, " ")}`;
+}
+
 // Indicative FX rates from ZAR. UI-only — actual billing is in ZAR.
 // Update quarterly. Last updated: 2026-05-22.
 export const INDICATIVE_FX = {
@@ -48,31 +62,31 @@ export const INDICATIVE_FX = {
     code: "ZAR" as const,
     rate: 1,
     symbol: "R",
-    format: (n: number) => `R${n.toLocaleString("en-ZA")}`,
+    format: (n: number) => formatZar(n),
   },
   af: {
     code: "ZAR" as const,
     rate: 1,
     symbol: "R",
-    format: (n: number) => `R${n.toLocaleString("af-ZA")}`,
+    format: (n: number) => formatZar(n),
   },
   de: {
     code: "EUR" as const,
     rate: 0.050,
     symbol: "€",
-    format: (n: number) => `€${Math.round(n * 0.050).toLocaleString("de-DE")}`,
+    format: (n: number) => `€${groupDigits(n * 0.050, ".")}`,
   },
   fr: {
     code: "EUR" as const,
     rate: 0.050,
     symbol: "€",
-    format: (n: number) => `${Math.round(n * 0.050).toLocaleString("fr-FR")} €`,
+    format: (n: number) => `${groupDigits(n * 0.050, " ")} €`,
   },
   da: {
     code: "DKK" as const,
     rate: 0.37,
     symbol: "kr",
-    format: (n: number) => `${Math.round(n * 0.37).toLocaleString("da-DK")} kr`,
+    format: (n: number) => `${groupDigits(n * 0.37, ".")} kr`,
   },
 };
 
@@ -95,7 +109,7 @@ export async function pageMetadata(
   return {
     title: t("title"),
     description: t("description"),
-    alternates: buildAlternates(path),
+    alternates: buildAlternates(path, locale),
     openGraph: {
       type: "website",
       locale: og,
@@ -130,7 +144,7 @@ export function detailPageMetadata(args: {
   return {
     title: args.title,
     description: args.description,
-    alternates: buildAlternates(args.path),
+    alternates: buildAlternates(args.path, args.locale),
     openGraph: {
       type: "website",
       locale: og,

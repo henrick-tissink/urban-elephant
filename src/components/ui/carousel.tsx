@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel, { type UseEmblaCarouselType } from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
 type CarouselApi = UseEmblaCarouselType[1];
@@ -27,6 +28,7 @@ export function Carousel({
   showDots = true,
   loop = true,
 }: CarouselProps) {
+  const t = useTranslations("a11y");
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { loop, align: "start" },
     autoplay ? [Autoplay({ delay: autoplayDelay, stopOnInteraction: true })] : []
@@ -83,7 +85,7 @@ export function Carousel({
               "hover:bg-white transition-colors",
               "disabled:opacity-50 disabled:cursor-not-allowed"
             )}
-            aria-label="Previous slide"
+            aria-label={t("previousSlide")}
           >
             <ChevronLeft className="w-6 h-6 text-[#24272a]" />
           </button>
@@ -97,7 +99,7 @@ export function Carousel({
               "hover:bg-white transition-colors",
               "disabled:opacity-50 disabled:cursor-not-allowed"
             )}
-            aria-label="Next slide"
+            aria-label={t("nextSlide")}
           >
             <ChevronRight className="w-6 h-6 text-[#24272a]" />
           </button>

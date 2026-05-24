@@ -20,6 +20,7 @@ export function LocaleBanner() {
   const router = useRouter();
   const pathname = usePathname();
   const t = useTranslations("locale.banner");
+  const ta = useTranslations("a11y");
   const [suggested, setSuggested] = useState<Locale | null>(null);
 
   useEffect(() => {
@@ -52,7 +53,7 @@ export function LocaleBanner() {
   return (
     <div
       role="region"
-      aria-label="Language suggestion"
+      aria-label={ta("languageSuggestion")}
       className="bg-[#24272a] text-white px-4 py-2 flex items-center justify-center gap-4 text-sm"
     >
       <span lang={suggested}>{t(promptKey)}</span>

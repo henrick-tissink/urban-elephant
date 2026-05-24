@@ -49,7 +49,14 @@
     "perkLabel": "'n Geskenk van ons",
     "ctaEyebrow": "Wil jy meer?",
     "ctaTitle": "Stuur ons 'n nota. Ons stuur 'n langer lys terug.",
-    "ctaButton": "Kontak ons"
+    "ctaButton": "Kontak ons",
+    "mealBreakfast": "Ontbyt",
+    "mealLunch": "Middagete",
+    "mealDinner": "Aandete",
+    "categories": {
+      "sightseeing": "Besienswaardighede",
+      "culture": "Kultuur"
+    }
   },
   "hero": {
     "tagline": "URBAN ELEPHANT HOTELS · AMPTELIK GEGRADEER · KAAPSTAD",
@@ -58,7 +65,11 @@
     "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
     "bestRate": "Beste Tarief Waarborg",
-    "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop."
+    "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop.",
+    "pauseVideo": "Onderbreek video",
+    "playVideo": "Speel video",
+    "muteVideo": "Demp video",
+    "unmuteVideo": "Ontdemp video"
   },
   "bookingPicker": {
     "eyebrow": "BESPREEK DIREK",
@@ -152,6 +163,21 @@
     "ratesLabel": "Tariewe vanaf",
     "ratesRange": "{from} – {to} per nag",
     "ratesFrom": "Vanaf {from} per nag",
+    "aboutEyebrow": "Oor",
+    "propertyNo": "Eiendom nr. {number}",
+    "detailsEyebrow": "Die Besonderhede",
+    "detailsHeading": "Praktiese sake",
+    "gradingLabel": "Gradering",
+    "starApartmentHotel": "{stars}-Ster Woonstelhotel",
+    "amenitiesHeading": "Alles wat jy nodig het, deurdink.",
+    "reviewsEyebrow": "Gaste by hierdie eiendom",
+    "reviewsHeading": "Wat mense wat gebly het, gesê het.",
+    "faqEyebrow": "Algemene vrae",
+    "faqHeading": "Oor 'n verblyf by {name}.",
+    "faqMore": "Meer vrae? Sien die <faq>volledige Vrae</faq> of <wa>WhatsApp Guest Relations</wa>.",
+    "galleryEyebrow": "Galery",
+    "galleryHeading": "Meer uitsigte.",
+    "bookDirectGuarantee": "Bespreek direk · beste tarief waarborg",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -190,6 +216,7 @@
     "meetingPoint": "Ontmoetingspunt",
     "bookTour": "Bespreek Hierdie Toer",
     "bookTourHint": "Kontak ons om hierdie toer te bespreek",
+    "noneFound": "Geen toere in hierdie kategorie gevind nie.",
     "categories": {
       "all": "Alle Toere",
       "adventure": "Avontuur",
@@ -221,7 +248,13 @@
   "testimonials": {
     "title": "Gas-ervarings",
     "subtitle": "WAT ONS GASTE SÊ",
-    "readMore": "Lees Meer Resensies"
+    "readMore": "Lees Meer Resensies",
+    "prevReview": "Vorige resensie",
+    "nextReview": "Volgende resensie",
+    "goToReview": "Gaan na resensie {number}",
+    "statGoogleRating": "Google-gradering",
+    "statHappyGuests": "Gelukkige Gaste",
+    "statTgcsaGraded": "TGCSA Gegradeer"
   },
   "about": {
     "title": "'n Baie Warm Welkom!",
@@ -308,6 +341,7 @@
     "title": "Kontak Ons",
     "subtitle": "KOM IN AANRAKING",
     "description": "Ons sal graag van jou wil hoor. Stuur vir ons 'n boodskap en ons sal so gou moontlik reageer.",
+    "infoHeading": "Kontakinligting",
     "form": {
       "name": "Volle Naam",
       "email": "E-posadres",
@@ -471,6 +505,8 @@
     "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur ons Guest Relations-span 'n WhatsApp — ons antwoord persoonlik.",
     "askLabel": "Het jy nog 'n vraag?",
     "askDescription": "WhatsApp ons Guest Relations-span by +27 72 618 8140 of e-pos karin@urbanelephant.co.za — ons antwoord binne werksure.",
+    "pickerEyebrow": "Kies jou woonstelhotel",
+    "pickerHeading": "Vier amptelik gegradeerde hotelle. Een familie wat hulle bestuur.",
     "groups": {
       "arrival": {
         "title": "Aankoms & Toegang",
@@ -569,58 +605,58 @@
   },
   "seo": {
     "home": {
-      "title": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-      "description": "Officially graded 4-star luxury apartments in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management — Urban Elephant.",
-      "ogTitle": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-      "ogDescription": "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service."
+      "title": "Urban Elephant | Luukse Woonstelhotelle in Kaapstad",
+      "description": "Amptelik gegradeerde 4-ster luukse woonstelle in Kaapstad. Hotelgemak, ontwerp-gedrewe ruimtes, en die konsekwentheid van professionele bestuur — Urban Elephant.",
+      "ogTitle": "Urban Elephant | Luukse Woonstelhotelle in Kaapstad",
+      "ogDescription": "Ervaar Kaapstad soos nog nooit tevore nie. Luukse woonstelhotelle met pragtige uitsigte en persoonlike diens."
     },
     "about": {
-      "title": "About",
-      "description": "The family behind Urban Elephant — Cape Town apartment hotels graded by the Tourism Grading Council of South Africa.",
-      "ogTitle": "About Urban Elephant",
-      "ogDescription": "Family-owned, TGCSA-graded apartment hotels in Cape Town."
+      "title": "Oor Ons",
+      "description": "Die familie agter Urban Elephant — Kaapstadse woonstelhotelle gegradeer deur die Toerisme-graderingsraad van Suid-Afrika.",
+      "ogTitle": "Oor Urban Elephant",
+      "ogDescription": "Familie-besit, TGCSA-gegradeerde woonstelhotelle in Kaapstad."
     },
     "herd": {
-      "title": "The Herd",
-      "description": "Meet the operations team behind every Urban Elephant stay.",
-      "ogTitle": "The Herd | Urban Elephant",
-      "ogDescription": "The people who make every stay feel taken care of."
+      "title": "Die Trop",
+      "description": "Ontmoet die bedryfspan agter elke Urban Elephant-verblyf.",
+      "ogTitle": "Die Trop | Urban Elephant",
+      "ogDescription": "Die mense wat elke verblyf laat voel asof daar na jou omgesien word."
     },
     "properties": {
-      "title": "Properties",
-      "description": "Four design-led apartment hotels across Cape Town's most distinctive neighbourhoods.",
-      "ogTitle": "Cape Town Apartment Hotels | Urban Elephant",
-      "ogDescription": "Hotel comfort with apartment privacy across Cape Town."
+      "title": "Eiendomme",
+      "description": "Vier ontwerp-gedrewe woonstelhotelle oor Kaapstad se mees kenmerkende woonbuurte.",
+      "ogTitle": "Kaapstadse Woonstelhotelle | Urban Elephant",
+      "ogDescription": "Hotelgemak met woonstel-privaatheid oor Kaapstad."
     },
     "tours": {
-      "title": "Tours & Experiences",
-      "description": "Curated Cape Town day-trips and experiences, bookable through the Urban Elephant concierge.",
-      "ogTitle": "Cape Town Tours | Urban Elephant",
-      "ogDescription": "Concierge-curated Cape Town experiences for Urban Elephant guests."
+      "title": "Toere & Ervarings",
+      "description": "Gekureerde Kaapstadse dagreise en ervarings, besprekbaar deur die Urban Elephant-concierge.",
+      "ogTitle": "Kaapstadse Toere | Urban Elephant",
+      "ogDescription": "Concierge-gekureerde Kaapstadse ervarings vir Urban Elephant-gaste."
     },
     "faq": {
-      "title": "FAQ",
-      "description": "Check-in, parking, WiFi, housekeeping, airport transfers — the questions guests ask most often.",
-      "ogTitle": "FAQ | Urban Elephant",
-      "ogDescription": "Everything you need to know before your Cape Town stay."
+      "title": "Vrae",
+      "description": "Inklok, parkering, WiFi, huishouding, lughawe-vervoer — die vrae wat gaste die meeste vra.",
+      "ogTitle": "Vrae | Urban Elephant",
+      "ogDescription": "Alles wat jy moet weet voor jou Kaapstad-verblyf."
     },
     "recommendations": {
-      "title": "Recommendations",
-      "description": "Restaurants, attractions, and neighbourhood insights from the Urban Elephant team.",
-      "ogTitle": "Cape Town Recommendations | Urban Elephant",
-      "ogDescription": "Where to eat, what to see, what to skip."
+      "title": "Aanbevelings",
+      "description": "Restaurante, attraksies en buurt-insigte van die Urban Elephant-span.",
+      "ogTitle": "Kaapstadse Aanbevelings | Urban Elephant",
+      "ogDescription": "Waar om te eet, wat om te sien, wat om oor te slaan."
     },
     "carHire": {
-      "title": "Car Hire",
-      "description": "Vehicle hire for Urban Elephant guests via our Enterprise partnership.",
-      "ogTitle": "Car Hire | Urban Elephant",
-      "ogDescription": "Pick-up at the airport, drop-off at the apartment."
+      "title": "Motorhuur",
+      "description": "Voertuighuur vir Urban Elephant-gaste deur ons Enterprise-vennootskap.",
+      "ogTitle": "Motorhuur | Urban Elephant",
+      "ogDescription": "Optel by die lughawe, aflewering by die woonstel."
     },
     "contact": {
-      "title": "Contact",
-      "description": "Direct booking and concierge enquiries for Urban Elephant apartment hotels.",
-      "ogTitle": "Contact Urban Elephant",
-      "ogDescription": "Direct booking gets the best rate and personal service."
+      "title": "Kontak",
+      "description": "Direkte besprekings en concierge-navrae vir Urban Elephant-woonstelhotelle.",
+      "ogTitle": "Kontak Urban Elephant",
+      "ogDescription": "Direkte bespreking gee die beste tarief en persoonlike diens."
     }
   },
   "brand": {
@@ -640,5 +676,13 @@
   },
   "currency": {
     "indicativeNote": "≈ {amount}, billed in ZAR"
+  },
+  "a11y": {
+    "toggleMenu": "Wissel kieslys",
+    "previousSlide": "Vorige skyfie",
+    "nextSlide": "Volgende skyfie",
+    "credentials": "Geloofsbriewe",
+    "languageSuggestion": "Taalvoorstel",
+    "carHireBooking": "Enterprise motorhuur-bespreking"
   }
 }

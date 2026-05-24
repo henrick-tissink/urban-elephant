@@ -79,6 +79,7 @@ function FaqItem({ question, answer, defaultOpen = false }: FaqItemProps) {
 
 export function FaqPageContent() {
   const t = useTranslations("faq");
+  const tCommon = useTranslations("common");
   const locale = useLocale() as Locale;
 
   return (
@@ -133,10 +134,10 @@ export function FaqPageContent() {
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="max-w-3xl mx-auto text-center mb-12">
             <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-4">
-              Pick your apartment hotel
+              {t("pickerEyebrow")}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl text-[#24272a] tracking-tight font-light">
-              Four officially graded hotels. One family running them.
+              {t("pickerHeading")}
             </h2>
           </ScrollReveal>
 
@@ -194,7 +195,7 @@ export function FaqPageContent() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button asChild>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">{tCommon("contactUs")}</Link>
               </Button>
               <Button asChild variant="outline">
                 <a

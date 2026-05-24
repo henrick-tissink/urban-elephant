@@ -25,6 +25,7 @@ const navigation = [
 
 export function Header() {
   const t = useTranslations("navigation");
+  const ta = useTranslations("a11y");
   const pathname = usePathname();
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -144,7 +145,7 @@ export function Header() {
             <button
               className="lg:hidden relative z-10 p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={ta("toggleMenu")}
             >
               <motion.div
                 animate={isMobileMenuOpen ? "open" : "closed"}

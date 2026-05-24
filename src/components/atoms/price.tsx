@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { formatIndicative } from "@/lib/i18n-content";
+import { formatIndicative, formatZar } from "@/lib/i18n-content";
 import type { Locale } from "@/i18n/routing";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 export function Price({ zar, suffix }: Props) {
   const locale = useLocale() as Locale;
   const t = useTranslations("currency");
-  const zarLabel = `R${zar.toLocaleString("en-ZA")}`;
+  const zarLabel = formatZar(zar);
   const indicative = formatIndicative(zar, locale);
   return (
     <span className="price">

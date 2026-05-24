@@ -203,7 +203,7 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl text-[#24272a] mb-6">
-                    Contact Information
+                    {t("infoHeading")}
                   </h2>
                   <div className="space-y-6">
                     {settings?.contact?.email && (

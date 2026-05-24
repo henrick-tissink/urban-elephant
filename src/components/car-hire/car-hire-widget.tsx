@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 
 // Urban Elephant's Enterprise Partner Booking Kit bundle. IATA + commission
 // account number are baked in by Enterprise — 10% commission auto-pays
@@ -27,6 +28,7 @@ declare global {
 }
 
 export function CarHireWidget() {
+  const t = useTranslations("a11y");
   useEffect(() => {
     // Configure the widget BEFORE the bundle script loads — Enterprise's
     // bundle reads window.pbk on init. Re-setting on each mount means
@@ -65,7 +67,7 @@ export function CarHireWidget() {
   return (
     <div
       id={CONTAINER_ID}
-      aria-label="Enterprise car hire booking"
+      aria-label={t("carHireBooking")}
       className="min-h-[200px]"
     />
   );

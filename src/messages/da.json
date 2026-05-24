@@ -1,339 +1,373 @@
 {
   "common": {
-    "bookNow": "Book Now",
-    "viewDetails": "View Details",
-    "learnMore": "Learn More",
-    "contactUs": "Contact Us",
-    "viewAll": "View All",
-    "loading": "Loading...",
-    "error": "Something went wrong",
-    "close": "Close",
-    "back": "Back",
-    "next": "Next",
-    "previous": "Previous",
-    "submit": "Submit",
-    "sending": "Sending...",
-    "perNight": "per night",
-    "perPerson": "per person",
-    "perDay": "per day",
-    "from": "From",
-    "seeMore": "See More",
-    "propertyInfo": "Property Info",
-    "gradedCredential": "Officially Graded by the Tourism Grading Council of South Africa"
+    "bookNow": "Book nu",
+    "viewDetails": "Se detaljer",
+    "learnMore": "Læs mere",
+    "contactUs": "Kontakt os",
+    "viewAll": "Se alle",
+    "loading": "Indlæser...",
+    "error": "Noget gik galt",
+    "close": "Luk",
+    "back": "Tilbage",
+    "next": "Næste",
+    "previous": "Forrige",
+    "submit": "Send",
+    "sending": "Sender...",
+    "perNight": "pr. nat",
+    "perPerson": "pr. person",
+    "perDay": "pr. dag",
+    "from": "Fra",
+    "seeMore": "Se mere",
+    "propertyInfo": "Ejendomsinfo",
+    "gradedCredential": "Officielt klassificeret af Sydafrikas turismeklassificeringsråd"
   },
   "navigation": {
-    "home": "Home",
-    "properties": "All Properties",
-    "tours": "Tours",
-    "explore": "Explore",
-    "carHire": "Car Hire",
-    "theHerd": "The Herd",
-    "about": "About",
-    "faq": "FAQs",
-    "contact": "Contact",
-    "bookNow": "Book Now"
+    "home": "Hjem",
+    "properties": "Alle ejendomme",
+    "tours": "Ture",
+    "explore": "Udforsk",
+    "carHire": "Biludlejning",
+    "theHerd": "Flokken",
+    "about": "Om os",
+    "faq": "Ofte stillede spørgsmål",
+    "contact": "Kontakt",
+    "bookNow": "Book nu"
   },
   "recommendations": {
-    "title": "Beyond the Front Door",
-    "description": "Three views every guest should see, three places we'd send a friend to eat — Urban Elephant's curator's note for Cape Town.",
-    "eyebrow": "Curated by Urban Elephant",
-    "subtitle": "What we send guests out to see, eat, and explore — the Cape Town we'd recommend to a friend.",
-    "letterEyebrow": "From the host",
-    "attractionsEyebrow": "Cape Town Icons",
-    "attractionsTitle": "Three views you shouldn't miss.",
-    "attractionsDescription": "The mountain, the harbour, the streets that change neighbourhood every two blocks. Start here.",
-    "restaurantsEyebrow": "Where We Eat",
-    "restaurantsTitle": "Where we'd send a friend.",
-    "restaurantsDescription": "A short list of three places — one for breakfast, one for lunch, one for dinner. None of them pay us to be here.",
-    "hostNote": "Host's note",
-    "perkLabel": "A gift from us",
-    "ctaEyebrow": "Want more?",
-    "ctaTitle": "Send us a note. We'll send back a longer list.",
-    "ctaButton": "Get in touch"
+    "title": "Uden for hoveddøren",
+    "description": "Tre udsigter enhver gæst bør se, tre steder vi ville sende en ven hen for at spise — Urban Elephants kuratornote til Cape Town.",
+    "eyebrow": "Kurateret af Urban Elephant",
+    "subtitle": "Hvad vi sender gæster ud for at se, spise og udforske — det Cape Town vi ville anbefale til en ven.",
+    "letterEyebrow": "Fra værten",
+    "attractionsEyebrow": "Cape Towns ikoner",
+    "attractionsTitle": "Tre udsigter du ikke bør gå glip af.",
+    "attractionsDescription": "Bjerget, havnen, gaderne der skifter kvarter for hver anden husblok. Begynd her.",
+    "restaurantsEyebrow": "Hvor vi spiser",
+    "restaurantsTitle": "Hvor vi ville sende en ven hen.",
+    "restaurantsDescription": "En kort liste med tre steder — et til morgenmad, et til frokost, et til aftensmad. Ingen af dem betaler os for at være her.",
+    "hostNote": "Værtens note",
+    "perkLabel": "En gave fra os",
+    "ctaEyebrow": "Vil du have mere?",
+    "ctaTitle": "Send os en besked. Vi sender en længere liste tilbage.",
+    "ctaButton": "Kom i kontakt",
+    "mealBreakfast": "Morgenmad",
+    "mealLunch": "Frokost",
+    "mealDinner": "Aftensmad",
+    "categories": {
+      "sightseeing": "Seværdigheder",
+      "culture": "Kultur"
+    }
   },
   "hero": {
-    "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
-    "title": "Luxury 4-Star Apartment Hotels in Cape Town",
-    "slipLine": "The brand that loves you back.",
-    "secondaryCta": "Book Direct",
-    "scrollDown": "Scroll to explore",
-    "bestRate": "Best Rate Guarantee",
-    "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%."
+    "tagline": "URBAN ELEPHANT HOTELS · OFFICIELT KLASSIFICERET · CAPE TOWN",
+    "title": "Luksus 4-stjernede lejlighedshoteller i Cape Town",
+    "slipLine": "Mærket der elsker dig tilbage.",
+    "secondaryCta": "Book direkte",
+    "scrollDown": "Rul for at udforske",
+    "bestRate": "Bedste pris-garanti",
+    "beatRate": "Finder du en billigere pris online? Send en e-mail til karin@urbanelephant.co.za, så slår vi den med 10%.",
+    "pauseVideo": "Sæt video på pause",
+    "playVideo": "Afspil video",
+    "muteVideo": "Sluk for lyden",
+    "unmuteVideo": "Tænd for lyden"
   },
   "bookingPicker": {
-    "eyebrow": "BOOK DIRECT",
-    "title": "Pick your apartment hotel.",
-    "subtitle": "Four officially graded apartment hotels in Cape Town. Choose where you'd like to stay and we'll take you straight to its booking page.",
-    "cardCta": "Book this one",
-    "close": "Close"
+    "eyebrow": "BOOK DIREKTE",
+    "title": "Vælg dit lejlighedshotel.",
+    "subtitle": "Fire officielt klassificerede lejlighedshoteller i Cape Town. Vælg, hvor du gerne vil bo, så fører vi dig direkte til bookingsiden.",
+    "cardCta": "Book denne",
+    "close": "Luk"
   },
   "promo": {
-    "imageAlt": "Urban Elephant Hotels promo",
+    "imageAlt": "Urban Elephant Hotels-kampagne",
     "eyebrow": "URBAN ELEPHANT HOTELS",
-    "title": "Welcome to Cape Town.",
-    "body": "Officially graded 4-star apartment hotels — book direct for the best rate. The brand that loves you back.",
-    "cta": "Book Direct",
+    "title": "Velkommen til Cape Town.",
+    "body": "Officielt klassificerede 4-stjernede lejlighedshoteller — book direkte for den bedste pris. Mærket der elsker dig tilbage.",
+    "cta": "Book direkte",
     "ctaHref": "https://book.nightsbridge.com/30034?nbid=1040",
-    "close": "Close promo"
+    "close": "Luk promo"
   },
   "trust": {
-    "gradedTitle": "Officially TGCSA Graded",
-    "gradedDescription": "Tourism Grading Council of South Africa",
-    "gradedCertLabel": "View certificate",
-    "managedTitle": "Professionally Managed",
-    "managedDescription": "Hotel-grade systems, owner-led care",
-    "directTitle": "Best Rate, Booked Direct",
-    "directDescription": "We'll match it — or beat it by 10%"
+    "gradedTitle": "Officielt TGCSA-klassificeret",
+    "gradedDescription": "Sydafrikas turismeklassificeringsråd",
+    "gradedCertLabel": "Se certifikat",
+    "managedTitle": "Professionelt drevet",
+    "managedDescription": "Systemer på hotelniveau, ejerledet omsorg",
+    "directTitle": "Bedste pris, booket direkte",
+    "directDescription": "Vi matcher den — eller slår den med 10%"
   },
   "whyBookDirect": {
-    "eyebrow": "WHY BOOK DIRECT",
-    "title": "Four reasons to skip the third parties.",
-    "intro": "Booking direct with Urban Elephant means a better rate, a real person on the line, and the small extras hotel booking sites can't pass through.",
+    "eyebrow": "HVORFOR BOOKE DIREKTE",
+    "title": "Fire grunde til at springe tredjeparterne over.",
+    "intro": "At booke direkte hos Urban Elephant betyder en bedre pris, et rigtigt menneske i den anden ende og de små ekstraer, som hotelbookingsider ikke kan formidle.",
     "items": {
       "rates": {
-        "title": "Best Rates Guaranteed",
-        "description": "Find a cheaper rate online and we'll beat it by 10%."
+        "title": "Bedste priser garanteret",
+        "description": "Finder du en billigere pris online, slår vi den med 10%."
       },
       "offers": {
-        "title": "Exclusive Offers",
-        "description": "Member offers, promotions, and curated Cape Town experiences — only when you book direct."
+        "title": "Eksklusive tilbud",
+        "description": "Medlemstilbud, kampagner og kuraterede Cape Town-oplevelser — kun når du booker direkte."
       },
       "flex": {
-        "title": "Flexible Cancellation",
-        "description": "Plans change. Direct bookings come with our most flexible cancellation terms."
+        "title": "Fleksibel afbestilling",
+        "description": "Planer ændrer sig. Direkte bookinger kommer med vores mest fleksible afbestillingsvilkår."
       },
       "concierge": {
-        "title": "Personal Concierge Service",
-        "description": "Experience the convenience of a true one-stop shop. From accommodation and airport transfers to tours, dining reservations, and local experiences, our team is here to assist with every part of your journey. Enjoy a direct line to our team for bookings, recommendations, and on-the-ground support — before, during, and after your stay."
+        "title": "Personlig concierge-service",
+        "description": "Oplev bekvemmeligheden ved en ægte one-stop-shop. Fra indkvartering og lufthavnstransfer til ture, bordreservationer og lokale oplevelser er vores team her for at hjælpe med hver del af din rejse. Nyd en direkte linje til vores team for bookinger, anbefalinger og support på stedet — før, under og efter dit ophold."
       }
     }
   },
   "whyBook": {
-    "eyebrow": "WHY BOOK WITH US",
-    "title": "Hotel-grade hospitality, in apartment form.",
+    "eyebrow": "HVORFOR BOOKE HOS OS",
+    "title": "Gæstfrihed på hotelniveau, i lejlighedsform.",
     "items": {
       "graded": {
-        "title": "4-Star Graded",
-        "description": "Consistent quality, professional hospitality standards and trusted service across every stay."
+        "title": "4-stjernet klassificeret",
+        "description": "Ensartet kvalitet, professionelle gæstfrihedsstandarder og pålidelig service ved hvert ophold."
       },
       "locations": {
-        "title": "Prime Locations",
-        "description": "Stay in Cape Town's most desirable neighbourhoods, close to restaurants, beaches, nightlife and business hubs."
+        "title": "Førsteklasses placeringer",
+        "description": "Bo i Cape Towns mest eftertragtede kvarterer, tæt på restauranter, strande, natteliv og forretningscentre."
       },
       "comfort": {
-        "title": "Hotel Comfort",
-        "description": "Luxury linens, fast WiFi, fully equipped kitchens, concierge support and seamless self check-in."
+        "title": "Hotelkomfort",
+        "description": "Luksuriøst sengetøj, hurtigt WiFi, fuldt udstyrede køkkener, concierge-support og problemfri selvindtjekning."
       },
       "managed": {
-        "title": "Professionally Managed",
-        "description": "Unlike ordinary short-term rentals, every Urban Elephant property is operated with dedicated hospitality teams and full guest support."
+        "title": "Professionelt drevet",
+        "description": "I modsætning til almindelige korttidsudlejninger drives hver Urban Elephant-ejendom med dedikerede gæstfrihedsteams og fuld gæstesupport."
       }
     }
   },
   "welcome": {
-    "tagline": "AT URBAN ELEPHANT",
-    "title": "Where you stay should feel as memorable as the city itself.",
-    "description": "From stylish city apartments to coastal escapes, every Urban Elephant stay is carefully designed to combine comfort, personality and hotel-level consistency.",
-    "body": "Professionally managed, beautifully located — this is Cape Town accommodation, the Urban Elephant way."
+    "tagline": "HOS URBAN ELEPHANT",
+    "title": "Hvor du bor bør føles lige så mindeværdigt som byen selv.",
+    "description": "Fra stilfulde bylejligheder til kystophold er hvert Urban Elephant-ophold omhyggeligt designet til at kombinere komfort, personlighed og ensartethed på hotelniveau.",
+    "body": "Professionelt drevet, smukt beliggende — dette er indkvartering i Cape Town på Urban Elephant-måden."
   },
   "properties": {
     "title": "Urban Elephant Hotels",
-    "subtitle": "BOOK YOUR STAY TODAY",
-    "description": "Select your Hotel from the list below.",
-    "viewProperty": "Property Info",
-    "starRating": "Star Rating",
-    "amenities": "Amenities",
-    "gallery": "Gallery",
-    "location": "Location",
-    "bookThisProperty": "Book This Property",
-    "checkAvailability": "Check Availability",
-    "nearbyAttractions": "Nearby Attractions",
-    "addressLabel": "Address",
-    "ratesLabel": "Rates from",
-    "ratesRange": "{from} – {to} per night",
-    "ratesFrom": "From {from} per night",
+    "subtitle": "BOOK DIT OPHOLD I DAG",
+    "description": "Vælg dit hotel fra listen nedenfor.",
+    "viewProperty": "Ejendomsinfo",
+    "starRating": "Stjerneklassificering",
+    "amenities": "Faciliteter",
+    "gallery": "Galleri",
+    "location": "Placering",
+    "bookThisProperty": "Book denne ejendom",
+    "checkAvailability": "Tjek tilgængelighed",
+    "nearbyAttractions": "Attraktioner i nærheden",
+    "addressLabel": "Adresse",
+    "ratesLabel": "Priser fra",
+    "ratesRange": "{from} – {to} pr. nat",
+    "ratesFrom": "Fra {from} pr. nat",
+    "aboutEyebrow": "Om",
+    "propertyNo": "Ejendom nr. {number}",
+    "detailsEyebrow": "Detaljerne",
+    "detailsHeading": "Praktisk",
+    "gradingLabel": "Klassificering",
+    "starApartmentHotel": "{stars}-stjernet lejlighedshotel",
+    "amenitiesHeading": "Alt hvad du har brug for, gennemtænkt.",
+    "reviewsEyebrow": "Gæster om denne ejendom",
+    "reviewsHeading": "Hvad folk, der har boet her, sagde.",
+    "faqEyebrow": "Almindelige spørgsmål",
+    "faqHeading": "Om et ophold på {name}.",
+    "faqMore": "Flere spørgsmål? Se den <faq>fulde FAQ</faq> eller <wa>WhatsApp Guest Relations</wa>.",
+    "galleryEyebrow": "Galleri",
+    "galleryHeading": "Flere udsigter.",
+    "bookDirectGuarantee": "Book direkte · bedste pris-garanti",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
-      "description": "Urban Elephant takes immense pride in welcoming you to the exceptional building, 16 On Bree.",
-      "body": "The 27th floor boasts an outdoor pool and bar, offering unparalleled views of Table Mountain, cradling this magnificent city. Within this establishment, you'll find stunning apartments, complete with the high-end features you've come to expect from us."
+      "description": "Urban Elephant er meget stolt af at byde dig velkommen til den enestående bygning, 16 On Bree.",
+      "body": "27. etage byder på en udendørs pool og bar med uovertruffen udsigt over Taffelbjerget, der omfavner denne storslåede by. I denne ejendom finder du fantastiske lejligheder, komplette med de eksklusive faciliteter, du er kommet til at forvente af os."
     },
     "docklands": {
       "name": "Urban Elephant at The Docklands",
-      "tagline": "De Waterkant District",
-      "description": "The Docklands is an extraordinary building nestled in the heart of the vibrant De Waterkant district.",
-      "body": "Our rooftop pool and breathtaking panoramic views consistently leave a lasting impression on our guests, making it an ideal destination for both leisure and business travellers. Secure your reservation at The Docklands today and experience the ultimate in convenience, prime location, breathtaking views, and the signature high-end amenities you've come to anticipate from us."
+      "tagline": "De Waterkant-distriktet",
+      "description": "The Docklands er en usædvanlig bygning, der ligger i hjertet af det livlige De Waterkant-distrikt.",
+      "body": "Vores tagpool og betagende panoramaudsigt efterlader konsekvent et varigt indtryk på vores gæster og gør den til en ideel destination for både ferie- og forretningsrejsende. Sikr dig din reservation på The Docklands i dag og oplev det ultimative i bekvemmelighed, førsteklasses placering, betagende udsigter og de karakteristiske eksklusive faciliteter, du er kommet til at forvente af os."
     },
     "flamingo": {
       "name": "Urban Elephant at Flamingo Express",
-      "tagline": "Seaside Escape",
-      "description": "Your seaside escape with effortless elegance.",
-      "body": "Each unit features a simple, elegant design with luxury touches - ideal for working professionals, leisure travellers, or anyone seeking a stylish base near the sea."
+      "tagline": "Kystophold",
+      "description": "Dit kystophold med ubesværet elegance.",
+      "body": "Hver enhed har et enkelt, elegant design med luksuriøse detaljer - ideelt for arbejdende fagfolk, ferierejsende eller enhver, der søger en stilfuld base nær havet."
     },
     "rose": {
       "name": "Urban Elephant at The Rose",
       "tagline": "117 Strand Street",
-      "description": "Meet The Rose - Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
-      "body": "From Table Mountain to Lion's Head, the colourful Bo-Kaap to the endless Atlantic, the 360 degree scenery is seriously next level. Sunrise coffee or sunset views? Yes, please."
+      "description": "Mød The Rose - Urban Elephants seneste blikfang på 117 Strand Street, Cape Town.",
+      "body": "Fra Taffelbjerget til Lion's Head, det farverige Bo-Kaap til det endeløse Atlanterhav, er 360-graders udsigten virkelig næste niveau. Morgenkaffe ved solopgang eller udsigt ved solnedgang? Ja tak."
     }
   },
   "tours": {
-    "title": "Tours & Experiences",
-    "subtitle": "DISCOVER CAPE TOWN",
-    "description": "Book your Urban Elephant Tours & Transfers directly with us and let our team handle every detail while you relax by the pool.",
-    "viewTour": "View Tour",
-    "duration": "Duration",
-    "groupSize": "Group Size",
-    "includes": "What's Included",
-    "excludes": "What's Not Included",
-    "highlights": "Highlights",
-    "meetingPoint": "Meeting Point",
-    "bookTour": "Book This Tour",
-    "bookTourHint": "Contact us to book this tour",
+    "title": "Ture & oplevelser",
+    "subtitle": "OPDAG CAPE TOWN",
+    "description": "Book dine Urban Elephant-ture og transfers direkte hos os, og lad vores team håndtere hver detalje, mens du slapper af ved poolen.",
+    "viewTour": "Se tur",
+    "duration": "Varighed",
+    "groupSize": "Gruppestørrelse",
+    "includes": "Hvad er inkluderet",
+    "excludes": "Hvad er ikke inkluderet",
+    "highlights": "Højdepunkter",
+    "meetingPoint": "Mødested",
+    "bookTour": "Book denne tur",
+    "bookTourHint": "Kontakt os for at booke denne tur",
+    "noneFound": "Ingen ture fundet i denne kategori.",
     "categories": {
-      "all": "All Tours",
-      "adventure": "Adventure",
-      "wildlife": "Wildlife",
-      "cultural": "Cultural",
-      "wine-food": "Wine & Food",
+      "all": "Alle ture",
+      "adventure": "Eventyr",
+      "wildlife": "Dyreliv",
+      "cultural": "Kulturelt",
+      "wine-food": "Vin & mad",
       "sightseeing": "Sightseeing",
-      "water-sports": "Water Sports"
+      "water-sports": "Vandsport"
     }
   },
   "carHire": {
-    "title": "Car Hire",
-    "subtitle": "EXPLORE AT YOUR PACE",
-    "description": "Premium vehicle rentals for your Cape Town adventure",
+    "title": "Biludlejning",
+    "subtitle": "UDFORSK I DIT EGET TEMPO",
+    "description": "Premium biludlejning til dit Cape Town-eventyr",
     "enterprise": {
-      "kicker": "POWERED BY ENTERPRISE",
-      "title": "Hire a car for your Cape Town adventure.",
-      "body": "Browse Enterprise's full South African fleet and book direct below. Best rates guaranteed — no booking fees, no hidden charges, and our team can arrange pickup from your apartment hotel.",
-      "footnote": "Prefer a personal touch? WhatsApp our Guest Relations team on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
+      "kicker": "DREVET AF ENTERPRISE",
+      "title": "Lej en bil til dit Cape Town-eventyr.",
+      "body": "Gennemse Enterprises fulde sydafrikanske flåde og book direkte nedenfor. Bedste priser garanteret — ingen bookinggebyrer, ingen skjulte omkostninger, og vores team kan arrangere afhentning fra dit lejlighedshotel.",
+      "footnote": "Foretrækker du et personligt præg? Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140, så arrangerer vi din lejebil, transfers og alt andet, du har brug for."
     },
-    "footnote": "Prefer a personal touch? WhatsApp our Guest Relations team on +27 72 618 8140 and we'll arrange your hire car, transfers and anything else you need."
+    "footnote": "Foretrækker du et personligt præg? Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140, så arrangerer vi din lejebil, transfers og alt andet, du har brug for."
   },
   "awards": {
-    "eyebrow": "Recognised by guests",
+    "eyebrow": "Anerkendt af gæster",
     "bookingTitle": "Booking.com Traveller Review Award",
-    "scoreSuffix": "out of 10",
-    "viewCertificate": "View award certificate"
+    "scoreSuffix": "ud af 10",
+    "viewCertificate": "Se prisbevis"
   },
   "testimonials": {
-    "title": "Guest Experiences",
-    "subtitle": "WHAT OUR GUESTS SAY",
-    "readMore": "Read More Reviews"
+    "title": "Gæsteoplevelser",
+    "subtitle": "HVAD VORES GÆSTER SIGER",
+    "readMore": "Læs flere anmeldelser",
+    "prevReview": "Forrige anmeldelse",
+    "nextReview": "Næste anmeldelse",
+    "goToReview": "Gå til anmeldelse {number}",
+    "statGoogleRating": "Google-bedømmelse",
+    "statHappyGuests": "Glade gæster",
+    "statTgcsaGraded": "TGCSA-klassificeret"
   },
   "about": {
-    "title": "A Very Warm Welcome!",
-    "subtitle": "MEET THE FOUNDER",
-    "tagline": "The Brand That Loves You Back",
-    "founderQuote": "Hospitality is more than just a job for me—it's my jam.",
+    "title": "Et meget varmt velkommen!",
+    "subtitle": "MØD GRUNDLÆGGEREN",
+    "tagline": "Mærket der elsker dig tilbage",
+    "founderQuote": "Gæstfrihed er mere end bare et job for mig—det er min passion.",
     "founderName": "Niles",
-    "founderTitle": "Founder & Chief Elephant Wrangler",
-    "intro": "Hey there! I'm Niles—founder, owner, and self-appointed Chief Elephant Wrangler at Urban Elephant. Originally from the UK (where the weather builds character), I made the move to Cape Town back in 2007.",
-    "story1": "After globe-trotting and seeing the best (and worst) the world has to offer, I knew I'd found something truly special in the Mother City. So, I unpacked my bags, ditched the umbrella, and set out to build something a little different in the world of hospitality.",
-    "story2": "That's how Urban Elephant was born—a place where luxury meets comfort, where style doesn't break the bank, and where every guest feels like a rockstar (or at the very least, a very well-looked-after human).",
-    "story3": "I genuinely love meeting new people, hearing their stories, and helping them create incredible memories while they're in Cape Town. I've built Urban Elephant around this idea: personalised, thoughtful service that goes the extra mile (and sometimes the extra bottle of wine).",
-    "story4": "Every apartment is designed to make you feel at home—but better. Because let's be honest, who wants to do housekeeping at home?",
-    "team": "Of course, none of this would be possible without my amazing team. From our superstar Guest Relations Managers to the housekeeping heroes who keep everything spotless, they're the heart of Urban Elephant. They're friendly, professional, and always up for a good laugh—or a restaurant recommendation.",
+    "founderTitle": "Grundlægger & Chief Elephant Wrangler",
+    "intro": "Hej der! Jeg er Niles—grundlægger, ejer og selvudnævnt Chief Elephant Wrangler hos Urban Elephant. Oprindeligt fra Storbritannien (hvor vejret opbygger karakter) flyttede jeg til Cape Town tilbage i 2007.",
+    "story1": "Efter at have rejst verden rundt og set det bedste (og værste), verden har at byde på, vidste jeg, at jeg havde fundet noget virkelig særligt i Mother City. Så jeg pakkede mine tasker ud, droppede paraplyen og satte mig for at bygge noget lidt anderledes i gæstfrihedens verden.",
+    "story2": "Sådan blev Urban Elephant født—et sted hvor luksus møder komfort, hvor stil ikke koster en formue, og hvor hver gæst føler sig som en rockstjerne (eller i det mindste et meget velplejet menneske).",
+    "story3": "Jeg elsker oprigtigt at møde nye mennesker, høre deres historier og hjælpe dem med at skabe utrolige minder, mens de er i Cape Town. Jeg har bygget Urban Elephant op omkring denne idé: personlig, omtænksom service, der gør det lille ekstra (og nogle gange den ekstra flaske vin).",
+    "story4": "Hver lejlighed er designet til at få dig til at føle dig hjemme—men bedre. For lad os være ærlige, hvem vil lave rengøring derhjemme?",
+    "team": "Selvfølgelig ville intet af dette være muligt uden mit fantastiske team. Fra vores superstjerne Guest Relations-ansvarlige til rengøringsheltene, der holder alt skinnende rent, er de hjertet i Urban Elephant. De er venlige, professionelle og altid klar til et godt grin—eller en restaurantanbefaling.",
     "zola": {
-      "title": "Zola's Story",
-      "subtitle": "The Spirit of Zola",
-      "imageAlt": "Zola - The Pink Elephant",
-      "intro": "Every story begins somewhere — ours began with a pink elephant named Zola.",
-      "story1": "When I was six years old, Zola was my constant companion. She brought comfort, calm, and a quiet reminder that standing out could be something beautiful. While I was captivated by Africa's wild animals, it was this small pink elephant that taught me the power of individuality and warmth.",
-      "story2": "Years later, that simple lesson became the heart and emblem of Urban Elephant — a brand built on care, character, and connection.",
-      "story3": "Zola now lives on in our emblem. Her name, which means 'peaceful' and 'calm' in Xhosa, reflects the feeling we want every guest to experience.",
-      "closing": "At Urban Elephant, you're more than a visitor. You're part of a story that celebrates comfort, creativity, and belonging — the same feeling Zola once gave me."
+      "title": "Zolas historie",
+      "subtitle": "Zolas ånd",
+      "imageAlt": "Zola - Den pink elefant",
+      "intro": "Enhver historie begynder et sted — vores begyndte med en pink elefant ved navn Zola.",
+      "story1": "Da jeg var seks år gammel, var Zola min konstante følgesvend. Hun bragte trøst, ro og en stille påmindelse om, at det at skille sig ud kunne være noget smukt. Mens jeg var fascineret af Afrikas vilde dyr, var det denne lille pink elefant, der lærte mig styrken i individualitet og varme.",
+      "story2": "År senere blev den enkle lektion hjertet og symbolet for Urban Elephant — et mærke bygget på omsorg, karakter og forbindelse.",
+      "story3": "Zola lever nu videre i vores symbol. Hendes navn, som betyder 'fredfyldt' og 'rolig' på xhosa, afspejler den følelse, vi ønsker, at hver gæst skal opleve.",
+      "closing": "Hos Urban Elephant er du mere end en besøgende. Du er en del af en historie, der fejrer komfort, kreativitet og tilhørsforhold — den samme følelse, som Zola engang gav mig."
     },
     "values": {
-      "title": "Our Values",
-      "subtitle": "These principles guide everything we do, from how we design our spaces to how we welcome our guests.",
+      "title": "Vores værdier",
+      "subtitle": "Disse principper styrer alt, hvad vi gør, fra hvordan vi designer vores rum til hvordan vi byder vores gæster velkommen.",
       "authentic": {
-        "title": "Authentic Hospitality",
-        "description": "We believe in genuine connections. Every interaction is an opportunity to share our love for Cape Town and create memorable experiences."
+        "title": "Autentisk gæstfrihed",
+        "description": "Vi tror på ægte forbindelser. Hver interaktion er en mulighed for at dele vores kærlighed til Cape Town og skabe mindeværdige oplevelser."
       },
       "detail": {
-        "title": "Attention to Detail",
-        "description": "From the thread count of our linens to the local coffee in your kitchen, we sweat the small stuff so you can simply enjoy."
+        "title": "Sans for detaljen",
+        "description": "Fra trådtallet i vores sengetøj til den lokale kaffe i dit køkken sveder vi over de små ting, så du blot kan nyde."
       },
       "local": {
-        "title": "Local Expertise",
-        "description": "Born and raised in Cape Town, we share insider knowledge that transforms good trips into extraordinary ones."
+        "title": "Lokal ekspertise",
+        "description": "Født og opvokset i Cape Town deler vi insiderviden, der forvandler gode rejser til ekstraordinære."
       },
       "sustainable": {
-        "title": "Sustainable Luxury",
-        "description": "Luxury and responsibility can coexist. We're committed to sustainable practices that protect the Cape Town we love."
+        "title": "Bæredygtig luksus",
+        "description": "Luksus og ansvar kan sameksistere. Vi er engagerede i bæredygtig praksis, der beskytter det Cape Town, vi elsker."
       }
     },
     "cta": {
-      "title": "Ready to Experience Cape Town?",
-      "description": "Let us show you our city through local eyes. Browse our 4-star apartments or get in touch to plan your Cape Town stay."
+      "title": "Klar til at opleve Cape Town?",
+      "description": "Lad os vise dig vores by gennem lokale øjne. Gennemse vores 4-stjernede lejligheder eller kontakt os for at planlægge dit Cape Town-ophold."
     },
     "credentials": {
-      "eyebrow": "OFFICIALLY GRADED",
-      "title": "The plaque on the wall, the paperwork to back it up.",
-      "intro": "Urban Elephant is officially graded as a 4-Star Apartment Hotel by the Tourism Grading Council of South Africa, and a member of Cape Town Tourism. Both certificates are public — view them below.",
-      "plaqueAlt": "Tourism Grading Council of South Africa — Apartment Hotel grading plaque for Urban Elephant",
-      "lockupAlt": "Urban Elephant Cape Town — official 4-star master lockup",
-      "lockupLabel": "Official master mark",
-      "lockupDescription": "The Urban Elephant Cape Town master lockup, with the four-star TGCSA grading built in.",
-      "tgcsaLabel": "TGCSA grading certificate",
-      "tgcsaDescription": "Official 4-star apartment-hotel grading from the Tourism Grading Council of South Africa.",
-      "tgcsaCta": "View TGCSA certificate",
-      "cttLabel": "Cape Town Tourism membership",
-      "cttDescription": "Member of Cape Town Tourism — the city's official tourism authority.",
-      "cttCta": "View CTT membership",
-      "ppraLabel": "PPRA Registered",
-      "ppraDescription": "Property Practitioners Regulatory Authority — Registration No. 1695928."
+      "eyebrow": "OFFICIELT KLASSIFICERET",
+      "title": "Plaketten på væggen, med papirerne til at bakke den op.",
+      "intro": "Urban Elephant er officielt klassificeret som et 4-stjernet lejlighedshotel af Sydafrikas turismeklassificeringsråd og medlem af Cape Town Tourism. Begge certifikater er offentlige — se dem nedenfor.",
+      "plaqueAlt": "Sydafrikas turismeklassificeringsråd — klassificeringsplakette for lejlighedshotel til Urban Elephant",
+      "lockupAlt": "Urban Elephant Cape Town — officielt 4-stjernet master-logo",
+      "lockupLabel": "Officielt mastermærke",
+      "lockupDescription": "Urban Elephant Cape Town-master-logoet, med den firestjernede TGCSA-klassificering indbygget.",
+      "tgcsaLabel": "TGCSA-klassificeringscertifikat",
+      "tgcsaDescription": "Officiel 4-stjernet lejlighedshotel-klassificering fra Sydafrikas turismeklassificeringsråd.",
+      "tgcsaCta": "Se TGCSA-certifikat",
+      "cttLabel": "Cape Town Tourism-medlemskab",
+      "cttDescription": "Medlem af Cape Town Tourism — byens officielle turismemyndighed.",
+      "cttCta": "Se CTT-medlemskab",
+      "ppraLabel": "PPRA-registreret",
+      "ppraDescription": "Property Practitioners Regulatory Authority — Registreringsnr. 1695928."
     }
   },
   "services": {
-    "title": "Our Services",
-    "subtitle": "COMPLETE EXPERIENCE",
+    "title": "Vores tjenester",
+    "subtitle": "KOMPLET OPLEVELSE",
     "accommodation": {
-      "title": "Luxury Apartments",
-      "description": "Officially graded apartments with stunning views, premium finishes, and hotel servicing."
+      "title": "Luksuslejligheder",
+      "description": "Officielt klassificerede lejligheder med betagende udsigter, premium-finish og hotelservice."
     },
     "tours": {
-      "title": "Tours & Transfers",
-      "description": "Explore Cape Town's best attractions with our expert team handling every detail"
+      "title": "Ture & transfers",
+      "description": "Udforsk Cape Towns bedste attraktioner med vores ekspertteam, der håndterer hver detalje"
     },
     "carHire": {
-      "title": "Car Hire",
-      "description": "Quality vehicles for your adventure around the Western Cape"
+      "title": "Biludlejning",
+      "description": "Kvalitetsbiler til dit eventyr rundt om i Western Cape"
     }
   },
   "contact": {
-    "title": "Contact Us",
-    "subtitle": "GET IN TOUCH",
-    "description": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "title": "Kontakt os",
+    "subtitle": "KOM I KONTAKT",
+    "description": "Vi vil meget gerne høre fra dig. Send os en besked, og vi svarer hurtigst muligt.",
+    "infoHeading": "Kontaktoplysninger",
     "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "subject": "Subject",
-      "message": "Message",
-      "property": "Interested Property",
-      "selectProperty": "Select a property",
-      "dates": "Preferred Dates",
-      "guests": "Number of Guests",
-      "submit": "Send Message",
-      "success": "Thank you! We'll get back to you soon.",
-      "error": "Something went wrong. Please try again.",
-      "successEyebrow": "Message sent",
-      "successHeading": "Got it, {name}.",
-      "successBody": "Our Guest Relations team will reply within working hours. While you wait, message us on WhatsApp — we answer personally, usually within the hour.",
+      "name": "Fulde navn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "subject": "Emne",
+      "message": "Besked",
+      "property": "Interesseret ejendom",
+      "selectProperty": "Vælg en ejendom",
+      "dates": "Foretrukne datoer",
+      "guests": "Antal gæster",
+      "submit": "Send besked",
+      "success": "Tak! Vi vender tilbage til dig snart.",
+      "error": "Noget gik galt. Prøv venligst igen.",
+      "successEyebrow": "Besked sendt",
+      "successHeading": "Modtaget, {name}.",
+      "successBody": "Vores Guest Relations-team svarer inden for arbejdstiden. Mens du venter, så skriv til os på WhatsApp — vi svarer personligt, normalt inden for en time.",
       "successWa": "WhatsApp Guest Relations",
-      "successAgain": "Send another message"
+      "successAgain": "Send en ny besked"
     },
     "info": {
-      "email": "Email",
-      "phone": "Operations & Reservations",
-      "whatsapp": "After Hours Guest Relations",
-      "address": "Address",
-      "hours": "Office Hours",
-      "hoursValue": "Mon-Fri 9am-5pm"
+      "email": "E-mail",
+      "phone": "Drift & reservationer",
+      "whatsapp": "Guest Relations efter lukketid",
+      "address": "Adresse",
+      "hours": "Kontortider",
+      "hoursValue": "Man-fre 9-17"
     },
     "details": {
       "phone": "+27 21 300 1044",
@@ -343,220 +377,222 @@
     }
   },
   "footer": {
-    "tagline": "The brand that loves you back.",
-    "description": "Urban Elephant has fast become one of Cape Town's top apartment hotels — officially graded by the Tourism Grading Council of South Africa, professionally managed, and a short walk from everything you came to see.",
+    "tagline": "Mærket der elsker dig tilbage.",
+    "description": "Urban Elephant er hurtigt blevet et af Cape Towns førende lejlighedshoteller — officielt klassificeret af Sydafrikas turismeklassificeringsråd, professionelt drevet og en kort gåtur fra alt, hvad du kom for at se.",
     "sections": {
-      "properties": "Properties",
-      "services": "Services",
-      "contact": "Contact"
+      "properties": "Ejendomme",
+      "services": "Tjenester",
+      "contact": "Kontakt"
     },
     "links": {
-      "tours": "Tours",
-      "explore": "Explore",
-      "carHire": "Car Hire",
-      "about": "About Us",
-      "faq": "FAQs",
-      "contact": "Contact",
-      "viewAll": "View All Properties",
-      "bookingPolicy": "Booking Policy",
-      "privacyPolicy": "Privacy Policy",
-      "terms": "Terms & Conditions"
+      "tours": "Ture",
+      "explore": "Udforsk",
+      "carHire": "Biludlejning",
+      "about": "Om os",
+      "faq": "Ofte stillede spørgsmål",
+      "contact": "Kontakt",
+      "viewAll": "Se alle ejendomme",
+      "bookingPolicy": "Bookingpolitik",
+      "privacyPolicy": "Privatlivspolitik",
+      "terms": "Vilkår & betingelser"
     },
     "newsletter": {
-      "title": "Follow Us",
-      "description": "Follow us on social media for the latest updates",
-      "placeholder": "Enter your email",
-      "subscribe": "Subscribe",
-      "success": "Thanks for subscribing!"
+      "title": "Følg os",
+      "description": "Følg os på sociale medier for de seneste opdateringer",
+      "placeholder": "Indtast din e-mail",
+      "subscribe": "Tilmeld",
+      "success": "Tak fordi du tilmeldte dig!"
     },
-    "copyright": "All rights reserved."
+    "copyright": "Alle rettigheder forbeholdes."
   },
   "cta": {
-    "title": "Book direct. Stay graded.",
-    "description": "Best available rates, direct support, and the peace of mind that comes with officially graded accommodation.",
-    "primary": "Book Now",
-    "secondary": "View Properties",
+    "title": "Book direkte. Bo klassificeret.",
+    "description": "Bedste tilgængelige priser, direkte support og den sindsro, der følger med officielt klassificeret indkvartering.",
+    "primary": "Book nu",
+    "secondary": "Se ejendomme",
     "trust": {
-      "graded": "Officially TGCSA Graded",
-      "bestRate": "Best Rate Guarantee",
-      "flexible": "Flexible Cancellation"
+      "graded": "Officielt TGCSA-klassificeret",
+      "bestRate": "Bedste pris-garanti",
+      "flexible": "Fleksibel afbestilling"
     }
   },
   "theHerd": {
-    "metaTitle": "The Herd — Urban Elephant Loyalty Program",
-    "metaDescription": "Join The Herd, Urban Elephant's loyalty program for guests who keep coming home. Members enjoy exclusive direct rates, priority booking, and recognition across every stay.",
-    "eyebrow": "URBAN ELEPHANT LOYALTY",
-    "title": "The Herd. For guests who keep coming home.",
-    "subtitle": "The Herd is Urban Elephant's loyalty program — for guests who choose to stay with us again, and again. Members are recognised, remembered, and rewarded with exclusive direct rates and priority booking across every Urban Elephant property.",
-    "welcomeEyebrow": "WELCOME TO THE HERD",
-    "welcomeTitle": "Welcome to the family.",
-    "welcomeBody1": "We're delighted to have you join a community of travellers, explorers, and city lovers who appreciate thoughtful stays, authentic experiences, and the vibrant spirit of Cape Town.",
-    "welcomeBody2": "As a member of The Herd, you enjoy access to exclusive benefits designed to make every stay even more rewarding, including 10% off the lowest available rate when booking directly, priority booking access to new properties and peak-season availability, welcome amenities prepared especially for your stay, and exclusive member offers, promotions, and curated Cape Town experiences.",
-    "welcomeBody3": "At Urban Elephant, we believe hospitality should feel personal, effortless, and memorable. Whether you are visiting for business, leisure, or a long-awaited escape, our team is committed to making every stay exceptional.",
-    "welcomeBody4": "We encourage you to explore our collection of properties, discover local experiences, and enjoy the many advantages that come with being part of The Herd. Should you need assistance at any time, our team is always here to help.",
-    "whyEyebrow": "WHY THE HERD",
-    "whyTitle": "Loyalty, memory, belonging — the way elephants do it.",
-    "whyIntro": "Urban Elephant isn't trying to be a cold corporate hotel chain. We want guests to feel like they belong to something — a brand that remembers them and values them. Like an elephant herd, the idea is loyalty, connection, protection, memory, and returning home.",
+    "metaTitle": "Flokken — Urban Elephant loyalitetsprogram",
+    "metaDescription": "Bliv en del af Flokken, Urban Elephants loyalitetsprogram for gæster, der bliver ved med at komme hjem. Medlemmer nyder eksklusive direkte priser, prioriteret booking og anerkendelse ved hvert ophold.",
+    "eyebrow": "URBAN ELEPHANT LOYALITET",
+    "title": "Flokken. For gæster der bliver ved med at komme hjem.",
+    "subtitle": "Flokken er Urban Elephants loyalitetsprogram — for gæster, der vælger at bo hos os igen og igen. Medlemmer bliver anerkendt, husket og belønnet med eksklusive direkte priser og prioriteret booking på hver Urban Elephant-ejendom.",
+    "welcomeEyebrow": "VELKOMMEN TIL FLOKKEN",
+    "welcomeTitle": "Velkommen til familien.",
+    "welcomeBody1": "Vi er glade for at byde dig velkommen til et fællesskab af rejsende, opdagelsesrejsende og byelskere, der sætter pris på omtænksomme ophold, autentiske oplevelser og Cape Towns livlige ånd.",
+    "welcomeBody2": "Som medlem af Flokken får du adgang til eksklusive fordele, der gør hvert ophold endnu mere givende, herunder 10% rabat på den laveste tilgængelige pris, når du booker direkte, prioriteret bookingadgang til nye ejendomme og tilgængelighed i højsæsonen, velkomstgaver forberedt særligt til dit ophold og eksklusive medlemstilbud, kampagner og kuraterede Cape Town-oplevelser.",
+    "welcomeBody3": "Hos Urban Elephant mener vi, at gæstfrihed bør føles personlig, ubesværet og mindeværdig. Uanset om du besøger for forretning, fornøjelse eller en længe ventet flugt, er vores team forpligtet til at gøre hvert ophold enestående.",
+    "welcomeBody4": "Vi opfordrer dig til at udforske vores samling af ejendomme, opdage lokale oplevelser og nyde de mange fordele, der følger med at være en del af Flokken. Skulle du have brug for hjælp på noget tidspunkt, er vores team altid her for at hjælpe.",
+    "whyEyebrow": "HVORFOR FLOKKEN",
+    "whyTitle": "Loyalitet, hukommelse, tilhørsforhold — på elefanternes måde.",
+    "whyIntro": "Urban Elephant forsøger ikke at være en kold, korporativ hotelkæde. Vi vil have, at gæster skal føle, at de hører til noget — et mærke, der husker dem og værdsætter dem. Som en elefantflok handler idéen om loyalitet, forbindelse, beskyttelse, hukommelse og at vende hjem.",
     "reasons": {
       "loyalty": {
-        "title": "Loyalty and memory",
-        "description": "Elephants are known for both. The Herd is built on the idea that a brand should remember its guests — and reward them for choosing to come back."
+        "title": "Loyalitet og hukommelse",
+        "description": "Elefanter er kendt for begge dele. Flokken er bygget på idéen om, at et mærke bør huske sine gæster — og belønne dem for at vælge at komme tilbage."
       },
       "protection": {
-        "title": "Protection and recognition",
-        "description": "Herds protect and recognise their own. Members are looked after across every Urban Elephant property, with the same standards and the same warmth, every stay."
+        "title": "Beskyttelse og anerkendelse",
+        "description": "Flokke beskytter og anerkender deres egne. Medlemmer bliver passet på på hver Urban Elephant-ejendom, med de samme standarder og den samme varme, ved hvert ophold."
       },
       "belonging": {
-        "title": "Returning home",
-        "description": "Guests who stay with us repeatedly become part of the Herd. It's less a points scheme and more a recognition that you've chosen Urban Elephant — and we've chosen you back."
+        "title": "At vende hjem",
+        "description": "Gæster, der bor hos os gentagne gange, bliver en del af Flokken. Det er mindre et pointsystem og mere en anerkendelse af, at du har valgt Urban Elephant — og vi har valgt dig tilbage."
       },
       "premium": {
-        "title": "Emotional, not transactional",
-        "description": "The Herd isn't about miles and tiers. It's about the small things — a familiar welcome, your usual booking quirks remembered, and an exclusive rate when you book direct."
+        "title": "Følelsesmæssigt, ikke transaktionelt",
+        "description": "Flokken handler ikke om miles og niveauer. Det handler om de små ting — en velkendt velkomst, dine sædvanlige bookingpræferencer husket og en eksklusiv pris, når du booker direkte."
       }
     },
-    "benefitsEyebrow": "MEMBER BENEFITS",
-    "benefitsTitle": "What being part of the Herd gets you.",
+    "benefitsEyebrow": "MEDLEMSFORDELE",
+    "benefitsTitle": "Hvad det giver dig at være en del af Flokken.",
     "benefits": {
       "rates": {
-        "label": "Member benefit",
-        "title": "10% off the lowest rate",
-        "description": "Members get 10% off the lowest available rate when booking direct — applied with your member code at checkout."
+        "label": "Medlemsfordel",
+        "title": "10% rabat på den laveste pris",
+        "description": "Medlemmer får 10% rabat på den laveste tilgængelige pris, når de booker direkte — anvendt med din medlemskode ved checkout."
       },
       "priority": {
-        "label": "Member benefit",
-        "title": "Priority booking",
-        "description": "Early access to new properties and peak-season availability before public release."
+        "label": "Medlemsfordel",
+        "title": "Prioriteret booking",
+        "description": "Tidlig adgang til nye ejendomme og tilgængelighed i højsæsonen før offentlig frigivelse."
       },
       "amenities": {
-        "label": "Member benefit",
-        "title": "Welcome amenities",
-        "description": "A small thank-you waiting in your apartment whenever you stay — chosen by Niles, not a corporate template."
+        "label": "Medlemsfordel",
+        "title": "Velkomstgaver",
+        "description": "En lille tak, der venter i din lejlighed, hver gang du bor — udvalgt af Niles, ikke en korporativ skabelon."
       },
       "offers": {
-        "label": "Member benefit",
-        "title": "Exclusive offers",
-        "description": "Members-first access to seasonal promotions, partner experiences, and Cape Town happenings."
+        "label": "Medlemsfordel",
+        "title": "Eksklusive tilbud",
+        "description": "Medlemmer-først-adgang til sæsonkampagner, partneroplevelser og Cape Town-begivenheder."
       }
     },
-    "joinEyebrow": "JOIN THE HERD",
-    "joinTitle": "Sign up. Stay. Be remembered.",
-    "joinDescription": "Drop your name and email and we'll send your member welcome with your direct-booking discount code. No tiers, no fine print, no spam — just a quieter, better way to stay with us.",
-    "eligibility": "The Herd is for guests who've stayed with us at least once. We verify your stay before activating membership — that's how we keep it for guests we already know.",
+    "joinEyebrow": "BLIV EN DEL AF FLOKKEN",
+    "joinTitle": "Tilmeld dig. Bo. Bliv husket.",
+    "joinDescription": "Efterlad dit navn og din e-mail, så sender vi din medlemsvelkomst med din rabatkode til direkte booking. Ingen niveauer, ingen finurligheder med småt, ingen spam — bare en roligere, bedre måde at bo hos os på.",
+    "eligibility": "Flokken er for gæster, der har boet hos os mindst én gang. Vi bekræfter dit ophold, før vi aktiverer medlemskabet — sådan holder vi det for gæster, vi allerede kender.",
     "form": {
-      "nameLabel": "First name",
-      "emailLabel": "Email address",
-      "submit": "Join the Herd",
-      "submitting": "Joining…",
-      "disclaimer": "By joining you agree to receive occasional emails from Urban Elephant about your membership. Unsubscribe any time.",
-      "successEyebrow": "ALMOST THERE",
-      "successTitle": "We've opened your email — hit send.",
-      "successBody": "Your draft signup is ready in your email client, addressed to Karin. Send it through and we'll set you up in the Herd, then your welcome letter and member discount code arrive by email — the same warm welcome the Herd has been writing for years."
+      "nameLabel": "Fornavn",
+      "emailLabel": "E-mailadresse",
+      "submit": "Bliv en del af Flokken",
+      "submitting": "Tilmelder…",
+      "disclaimer": "Ved at tilmelde dig accepterer du at modtage lejlighedsvise e-mails fra Urban Elephant om dit medlemskab. Afmeld når som helst.",
+      "successEyebrow": "NÆSTEN DER",
+      "successTitle": "Vi har åbnet din e-mail — tryk send.",
+      "successBody": "Dit udkast til tilmelding er klar i dit e-mailprogram, adresseret til Karin. Send den afsted, så sætter vi dig op i Flokken, og derefter ankommer dit velkomstbrev og din medlemsrabatkode via e-mail — den samme varme velkomst, som Flokken har skrevet i årevis."
     },
-    "bookEyebrow": "MEMBERS BOOK DIRECT",
-    "bookTitle": "Already in the Herd? Book direct, get your member rate.",
-    "bookDescription": "Once you've joined, your member discount code will arrive by email. Apply it on any direct booking — that's how the loyalty rate is honoured today, and the system will become automatic as the program rolls out.",
-    "bookCta": "Book Direct"
+    "bookEyebrow": "MEDLEMMER BOOKER DIREKTE",
+    "bookTitle": "Allerede en del af Flokken? Book direkte, få din medlemspris.",
+    "bookDescription": "Når du har tilmeldt dig, ankommer din medlemsrabatkode via e-mail. Anvend den på enhver direkte booking — sådan honoreres loyalitetsprisen i dag, og systemet bliver automatisk, efterhånden som programmet rulles ud.",
+    "bookCta": "Book direkte"
   },
   "notFound": {
-    "title": "Page Not Found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
+    "title": "Side ikke fundet",
+    "description": "Den side, du leder efter, eksisterer ikke eller er blevet flyttet.",
+    "backHome": "Tilbage til hjem"
   },
   "faq": {
-    "metaTitle": "Urban Elephant FAQs — Everything You Need to Know Before You Arrive",
-    "metaDescription": "Check-in, parking, Wi-Fi, housekeeping, airport transfers and more. The questions our guests ask most before and during a stay at Urban Elephant Cape Town.",
-    "eyebrow": "GUEST QUESTIONS",
-    "title": "Everything You Need to Know Before You Arrive",
-    "subtitle": "The questions our guests ask most often. If yours isn't here, send our Guest Relations team a WhatsApp — we answer personally.",
-    "askLabel": "Still have a question?",
-    "askDescription": "WhatsApp our Guest Relations team on +27 72 618 8140 or email karin@urbanelephant.co.za — we answer within working hours.",
+    "metaTitle": "Urban Elephant ofte stillede spørgsmål — alt du skal vide, før du ankommer",
+    "metaDescription": "Indtjekning, parkering, Wi-Fi, rengøring, lufthavnstransfer og mere. De spørgsmål vores gæster oftest stiller før og under et ophold hos Urban Elephant Cape Town.",
+    "eyebrow": "GÆSTESPØRGSMÅL",
+    "title": "Alt du skal vide, før du ankommer",
+    "subtitle": "De spørgsmål vores gæster oftest stiller. Hvis dit ikke er her, så send vores Guest Relations-team en WhatsApp — vi svarer personligt.",
+    "askLabel": "Har du stadig et spørgsmål?",
+    "askDescription": "Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140 eller send en e-mail til karin@urbanelephant.co.za — vi svarer inden for arbejdstiden.",
+    "pickerEyebrow": "Vælg dit lejlighedshotel",
+    "pickerHeading": "Fire officielt klassificerede hoteller. Én familie, der driver dem.",
     "groups": {
       "arrival": {
-        "title": "Arrival & Access",
+        "title": "Ankomst & adgang",
         "items": {
           "checkIn": {
-            "q": "What time is check-in?",
-            "a": "Check-in is from 15h00. Early check-in may be arranged subject to availability."
+            "q": "Hvornår er indtjekning?",
+            "a": "Indtjekning er fra 15h00. Tidlig indtjekning kan arrangeres afhængigt af tilgængelighed."
           },
           "checkOut": {
-            "q": "What time is check-out?",
-            "a": "Check-out is at 10h30. Late check-out may be arranged subject to availability."
+            "q": "Hvornår er udtjekning?",
+            "a": "Udtjekning er kl. 10h30. Sen udtjekning kan arrangeres afhængigt af tilgængelighed."
           },
           "reception": {
-            "q": "Do you have a reception?",
-            "a": "We have a 24-hour concierge available to assist you with check-in and general enquiries."
+            "q": "Har I en reception?",
+            "a": "Vi har en 24-timers concierge til rådighed, der kan hjælpe dig med indtjekning og generelle henvendelser."
           },
           "keys": {
-            "q": "Do I use a lockbox or smart lock?",
-            "a": "Access is via a lockbox system. Your code arrives by email and WhatsApp ahead of your stay."
+            "q": "Bruger jeg en nøgleboks eller en smartlås?",
+            "a": "Adgang sker via et nøgleboks-system. Din kode ankommer via e-mail og WhatsApp forud for dit ophold."
           },
           "parking": {
-            "q": "Is parking available?",
-            "a": "Yes, secure parking is available at an additional cost of R75 per night."
+            "q": "Er der parkering til rådighed?",
+            "a": "Ja, sikker parkering er tilgængelig mod en ekstra omkostning på R75 pr. nat."
           }
         }
       },
       "stay": {
-        "title": "In Your Apartment",
+        "title": "I din lejlighed",
         "items": {
           "wifi": {
-            "q": "Is there Wi-Fi?",
-            "a": "Yes, we provide high-speed Wi-Fi suitable for remote work and streaming at no extra cost."
+            "q": "Er der Wi-Fi?",
+            "a": "Ja, vi tilbyder højhastigheds Wi-Fi, der er velegnet til fjernarbejde og streaming uden ekstra omkostninger."
           },
           "aircon": {
-            "q": "Do you have air conditioning?",
-            "a": "Yes, all apartments are equipped with air conditioning."
+            "q": "Har I aircondition?",
+            "a": "Ja, alle lejligheder er udstyret med aircondition."
           },
           "housekeeping": {
-            "q": "Is housekeeping included?",
-            "a": "Housekeeping is available upon request, and fresh towels are provided every 3 days at no additional cost."
+            "q": "Er rengøring inkluderet?",
+            "a": "Rengøring er tilgængelig efter anmodning, og friske håndklæder leveres hver 3. dag uden ekstra omkostninger."
           },
           "laundry": {
-            "q": "Is laundry available?",
-            "a": "Yes, every apartment includes a washing machine, and a starter pack of laundry detergent is provided upon arrival."
+            "q": "Er vasketøjsservice tilgængelig?",
+            "a": "Ja, hver lejlighed har en vaskemaskine, og en startpakke med vaskemiddel leveres ved ankomst."
           },
           "gymPool": {
-            "q": "Is there a gym and swimming pool?",
-            "a": "A gym is available at 16 On Bree and The Rose. Swimming pools are available at all properties except Flamingo Express."
+            "q": "Er der et fitnesscenter og en swimmingpool?",
+            "a": "Et fitnesscenter er tilgængeligt på 16 On Bree og The Rose. Swimmingpools er tilgængelige på alle ejendomme undtagen Flamingo Express."
           },
           "smoking": {
-            "q": "Can I smoke on the balcony?",
-            "a": "Smoking is strictly prohibited in all our properties, including balconies."
+            "q": "Må jeg ryge på altanen?",
+            "a": "Rygning er strengt forbudt på alle vores ejendomme, inklusive altaner."
           },
           "views": {
-            "q": "Do all apartments have the same views?",
-            "a": "No, each apartment offers different views, depending on the unit selected."
+            "q": "Har alle lejligheder den samme udsigt?",
+            "a": "Nej, hver lejlighed tilbyder forskellig udsigt, afhængigt af den valgte enhed."
           }
         }
       },
       "neighbourhood": {
-        "title": "Cape Town & Getting Around",
+        "title": "Cape Town & at komme rundt",
         "items": {
           "distances": {
-            "q": "How far is the property from the V&A Waterfront, Table Mountain and the beach?",
-            "a": "V&A Waterfront: approximately 20–30 minutes walking, or 5–10 minutes by car. Table Mountain: approximately 10–20 minutes by car. Camps Bay Beach: approximately 10–20 minutes by car."
+            "q": "Hvor langt er ejendommen fra V&A Waterfront, Taffelbjerget og stranden?",
+            "a": "V&A Waterfront: cirka 20–30 minutters gang, eller 5–10 minutter med bil. Taffelbjerget: cirka 10–20 minutter med bil. Camps Bay-stranden: cirka 10–20 minutter med bil."
           },
           "safety": {
-            "q": "Is the area safe?",
-            "a": "The area is generally safe to walk around during the day. For your convenience we recommend using Uber or your vehicle at night. The building also offers 24-hour security."
+            "q": "Er området sikkert?",
+            "a": "Området er generelt sikkert at gå rundt i om dagen. For din bekvemmelighed anbefaler vi at bruge Uber eller din egen bil om natten. Bygningen tilbyder også 24-timers sikkerhed."
           },
           "amenitiesNearby": {
-            "q": "Are there restaurants, shops and cafés nearby?",
-            "a": "Yes, a variety of restaurants, cafés and shops are within walking distance of our properties."
+            "q": "Er der restauranter, butikker og caféer i nærheden?",
+            "a": "Ja, et udvalg af restauranter, caféer og butikker ligger inden for gåafstand af vores ejendomme."
           },
           "airportTours": {
-            "q": "Do you provide airport transfers and tours?",
-            "a": "Yes, we offer airport meet-and-greet services and tours at an additional charge. Speak to our team and we'll organise it before you arrive."
+            "q": "Tilbyder I lufthavnstransfer og ture?",
+            "a": "Ja, vi tilbyder meet-and-greet-tjenester i lufthavnen og ture mod en ekstra omkostning. Tal med vores team, så arrangerer vi det, før du ankommer."
           }
         }
       },
       "family": {
-        "title": "Families & Extras",
+        "title": "Familier & ekstraer",
         "items": {
           "cots": {
-            "q": "Do you provide baby cots?",
-            "a": "Yes, baby cots, high chairs and walking rings are available upon request at an extra cost."
+            "q": "Tilbyder I babysenge?",
+            "a": "Ja, babysenge, højstole og gåringe er tilgængelige efter anmodning mod en ekstra omkostning."
           }
         }
       }
@@ -564,63 +600,63 @@
   },
   "meta": {
     "siteName": "Urban Elephant",
-    "defaultTitle": "Urban Elephant | Officially Graded Apartment Hotels in Cape Town",
-    "defaultDescription": "Officially graded apartment hotels in Cape Town's best locations — TGCSA-graded, professionally managed, and family-run. Book direct for the best rate."
+    "defaultTitle": "Urban Elephant | Officielt klassificerede lejlighedshoteller i Cape Town",
+    "defaultDescription": "Officielt klassificerede lejlighedshoteller i Cape Towns bedste områder — TGCSA-klassificeret, professionelt drevet og familiedrevet. Book direkte for den bedste pris."
   },
   "seo": {
     "home": {
-      "title": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-      "description": "Officially graded 4-star luxury apartments in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management — Urban Elephant.",
-      "ogTitle": "Urban Elephant | Luxury Apartment Hotels in Cape Town",
-      "ogDescription": "Experience Cape Town like never before. Luxury apartment hotels with stunning views and personalized service."
+      "title": "Urban Elephant | Luksus-lejlighedshoteller i Cape Town",
+      "description": "Officielt klassificerede 4-stjernede luksuslejligheder i Cape Town. Hotelkomfort, designdrevne rum og pålideligheden ved professionel drift — Urban Elephant.",
+      "ogTitle": "Urban Elephant | Luksus-lejlighedshoteller i Cape Town",
+      "ogDescription": "Oplev Cape Town som aldrig før. Luksus-lejlighedshoteller med betagende udsigter og personlig service."
     },
     "about": {
-      "title": "About",
-      "description": "The family behind Urban Elephant — Cape Town apartment hotels graded by the Tourism Grading Council of South Africa.",
-      "ogTitle": "About Urban Elephant",
-      "ogDescription": "Family-owned, TGCSA-graded apartment hotels in Cape Town."
+      "title": "Om os",
+      "description": "Familien bag Urban Elephant — lejlighedshoteller i Cape Town klassificeret af Sydafrikas turismeklassificeringsråd.",
+      "ogTitle": "Om Urban Elephant",
+      "ogDescription": "Familieejede, TGCSA-klassificerede lejlighedshoteller i Cape Town."
     },
     "herd": {
-      "title": "The Herd",
-      "description": "Meet the operations team behind every Urban Elephant stay.",
-      "ogTitle": "The Herd | Urban Elephant",
-      "ogDescription": "The people who make every stay feel taken care of."
+      "title": "Flokken",
+      "description": "Mød driftsteamet bag hvert Urban Elephant-ophold.",
+      "ogTitle": "Flokken | Urban Elephant",
+      "ogDescription": "Menneskene, der får hvert ophold til at føles passet på."
     },
     "properties": {
-      "title": "Properties",
-      "description": "Four design-led apartment hotels across Cape Town's most distinctive neighbourhoods.",
-      "ogTitle": "Cape Town Apartment Hotels | Urban Elephant",
-      "ogDescription": "Hotel comfort with apartment privacy across Cape Town."
+      "title": "Ejendomme",
+      "description": "Fire designdrevne lejlighedshoteller i Cape Towns mest karakteristiske kvarterer.",
+      "ogTitle": "Lejlighedshoteller i Cape Town | Urban Elephant",
+      "ogDescription": "Hotelkomfort med lejlighedens privatliv i hele Cape Town."
     },
     "tours": {
-      "title": "Tours & Experiences",
-      "description": "Curated Cape Town day-trips and experiences, bookable through the Urban Elephant concierge.",
-      "ogTitle": "Cape Town Tours | Urban Elephant",
-      "ogDescription": "Concierge-curated Cape Town experiences for Urban Elephant guests."
+      "title": "Ture & oplevelser",
+      "description": "Kuraterede dagsudflugter og oplevelser i Cape Town, der kan bookes gennem Urban Elephants concierge.",
+      "ogTitle": "Ture i Cape Town | Urban Elephant",
+      "ogDescription": "Concierge-kuraterede oplevelser i Cape Town til Urban Elephants gæster."
     },
     "faq": {
-      "title": "FAQ",
-      "description": "Check-in, parking, WiFi, housekeeping, airport transfers — the questions guests ask most often.",
-      "ogTitle": "FAQ | Urban Elephant",
-      "ogDescription": "Everything you need to know before your Cape Town stay."
+      "title": "Ofte stillede spørgsmål",
+      "description": "Indtjekning, parkering, WiFi, rengøring, lufthavnstransfer — de spørgsmål gæster oftest stiller.",
+      "ogTitle": "Ofte stillede spørgsmål | Urban Elephant",
+      "ogDescription": "Alt du skal vide før dit ophold i Cape Town."
     },
     "recommendations": {
-      "title": "Recommendations",
-      "description": "Restaurants, attractions, and neighbourhood insights from the Urban Elephant team.",
-      "ogTitle": "Cape Town Recommendations | Urban Elephant",
-      "ogDescription": "Where to eat, what to see, what to skip."
+      "title": "Anbefalinger",
+      "description": "Restauranter, attraktioner og indsigt i kvartererne fra Urban Elephant-teamet.",
+      "ogTitle": "Anbefalinger til Cape Town | Urban Elephant",
+      "ogDescription": "Hvor man spiser, hvad man ser, hvad man springer over."
     },
     "carHire": {
-      "title": "Car Hire",
-      "description": "Vehicle hire for Urban Elephant guests via our Enterprise partnership.",
-      "ogTitle": "Car Hire | Urban Elephant",
-      "ogDescription": "Pick-up at the airport, drop-off at the apartment."
+      "title": "Biludlejning",
+      "description": "Biludlejning til Urban Elephants gæster via vores partnerskab med Enterprise.",
+      "ogTitle": "Biludlejning | Urban Elephant",
+      "ogDescription": "Afhentning i lufthavnen, aflevering ved lejligheden."
     },
     "contact": {
-      "title": "Contact",
-      "description": "Direct booking and concierge enquiries for Urban Elephant apartment hotels.",
-      "ogTitle": "Contact Urban Elephant",
-      "ogDescription": "Direct booking gets the best rate and personal service."
+      "title": "Kontakt",
+      "description": "Direkte booking og concierge-henvendelser for Urban Elephants lejlighedshoteller.",
+      "ogTitle": "Kontakt Urban Elephant",
+      "ogDescription": "Direkte booking giver den bedste pris og personlig service."
     }
   },
   "brand": {
@@ -628,17 +664,25 @@
   },
   "locale": {
     "switcher": {
-      "label": "Language"
+      "label": "Sprog"
     },
     "banner": {
       "promptDeutsch": "Diese Seite auf Deutsch ansehen?",
       "promptFrancais": "Voir cette page en français ?",
       "promptDansk": "Se denne side på dansk?",
-      "switch": "Switch",
-      "dismiss": "Dismiss"
+      "switch": "Skift",
+      "dismiss": "Afvis"
     }
   },
   "currency": {
-    "indicativeNote": "≈ {amount}, billed in ZAR"
+    "indicativeNote": "≈ {amount}, faktureret i ZAR"
+  },
+  "a11y": {
+    "toggleMenu": "Slå menu til/fra",
+    "previousSlide": "Forrige slide",
+    "nextSlide": "Næste slide",
+    "credentials": "Akkreditering",
+    "languageSuggestion": "Sprogforslag",
+    "carHireBooking": "Enterprise biludlejningsbooking"
   }
 }

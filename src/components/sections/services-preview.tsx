@@ -25,6 +25,7 @@ const services = [
 
 export function ServicesPreview() {
   const t = useTranslations("services");
+  const tc = useTranslations("common");
 
   return (
     <section className="py-24 lg:py-32 bg-stone-50">
@@ -60,7 +61,7 @@ export function ServicesPreview() {
                     </p>
 
                     <div className="flex items-center text-[var(--color-brand-anchor)] font-medium">
-                      <span>Learn More</span>
+                      <span>{tc("learnMore")}</span>
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>

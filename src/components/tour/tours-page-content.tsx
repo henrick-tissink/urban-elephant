@@ -13,7 +13,7 @@ import {
 } from "@/components/animations/scroll-reveal";
 import type { TourCard } from "@/types";
 import type { Locale } from "@/i18n/routing";
-import { pickLocale, pickOptional } from "@/lib/i18n-content";
+import { pickLocale, pickOptional, formatZar } from "@/lib/i18n-content";
 
 interface ToursPageContentProps {
   tours: TourCard[];
@@ -110,7 +110,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                   <div className="pt-5">
                     {tour.category && (
                       <p className="text-stone-400 text-[10px] uppercase tracking-[0.25em] mb-2">
-                        {tour.category.replace("-", " & ")}
+                        {t(`categories.${tour.category}`)}
                       </p>
                     )}
 
@@ -143,7 +143,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
                           <span className="text-stone-400 text-xs uppercase tracking-wider mr-1.5">
                             {tCommon("from")}
                           </span>
-                          R{tour.price.toLocaleString()}
+                          {formatZar(tour.price)}
                         </div>
                       )}
                     </div>
@@ -155,7 +155,7 @@ export function ToursPageContent({ tours }: ToursPageContentProps) {
 
           {filteredTours.length === 0 && (
             <div className="text-center py-12">
-              <p className="text-stone-500">No tours found in this category.</p>
+              <p className="text-stone-500">{t("noneFound")}</p>
             </div>
           )}
         </div>

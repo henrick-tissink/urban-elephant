@@ -20,10 +20,11 @@ function TGCSABadge() {
 
 export function TrustStrip() {
   const t = useTranslations("trust");
+  const ta = useTranslations("a11y");
 
   return (
     <section
-      aria-label="Credentials"
+      aria-label={ta("credentials")}
       className="bg-white border-b border-stone-200/70"
     >
       <div className="container mx-auto px-6 lg:px-12 py-8 lg:py-10">

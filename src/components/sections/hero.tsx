@@ -174,7 +174,7 @@ export function Hero() {
           <button
             onClick={togglePlay}
             className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-            aria-label={isPlaying ? "Pause video" : "Play video"}
+            aria-label={isPlaying ? t("pauseVideo") : t("playVideo")}
           >
             {isPlaying ? (
               <Pause className="w-4 h-4 text-white" />
@@ -185,7 +185,7 @@ export function Hero() {
           <button
             onClick={toggleMute}
             className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
-            aria-label={isMuted ? "Unmute video" : "Mute video"}
+            aria-label={isMuted ? t("unmuteVideo") : t("muteVideo")}
           >
             {isMuted ? (
               <VolumeX className="w-4 h-4 text-white" />
