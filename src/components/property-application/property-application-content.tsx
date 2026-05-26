@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -98,6 +99,7 @@ export function PropertyApplicationContent({
   settings,
 }: PropertyApplicationContentProps) {
   const t = useTranslations("propertyApplication");
+  const tAbout = useTranslations("about");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState<ApplicationFormData | null>(null);
 
@@ -152,17 +154,31 @@ export function PropertyApplicationContent({
 
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-16 bg-[#24272a]">
-        <div className="container mx-auto px-6 lg:px-12">
+      {/* Hero — full-bleed rooftop pool with dark overlay */}
+      <section className="relative min-h-[88vh] flex items-end overflow-hidden">
+        <Image
+          src="/images/properties/16-on-bree/hero.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        {/* top gradient — keeps the transparent header legible */}
+        <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-[#1a1c1e]/75 to-transparent" />
+        {/* bottom gradient — anchors the headline */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/45 to-transparent" />
+        <div className="relative container mx-auto px-6 lg:px-12 pb-16 lg:pb-24 pt-40">
           <ScrollReveal className="max-w-3xl">
             <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-sm mb-4">
               {t("hero.eyebrow")}
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-light text-white mb-6 leading-[1.05]">
               {t("hero.title")}
             </h1>
-            <p className="text-white/70 text-lg mb-8">{t("hero.description")}</p>
+            <p className="text-white/80 text-lg max-w-2xl mb-8">
+              {t("hero.description")}
+            </p>
             <Button variant="primary" size="lg" asChild>
               <a href="#apply">{t("hero.cta")}</a>
             </Button>
@@ -188,9 +204,9 @@ export function PropertyApplicationContent({
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {criteria.map(({ icon: Icon, key }, index) => (
               <ScrollReveal key={key} delay={index * 0.08}>
-                <div className="h-full border border-stone-200 bg-stone-50 p-8">
-                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--color-brand-wash)] mb-6">
-                    <Icon className="w-6 h-6 text-[var(--color-brand-anchor)]" />
+                <div className="group h-full border border-stone-200 bg-stone-50 p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--color-brand-anchor)]/30 hover:shadow-xl hover:shadow-stone-200/60">
+                  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--color-brand-wash)] mb-6 transition-colors duration-300 group-hover:bg-[var(--color-brand-anchor)]">
+                    <Icon className="w-6 h-6 text-[var(--color-brand-anchor)] transition-colors duration-300 group-hover:text-white" />
                   </div>
                   <h3 className="text-lg font-medium text-[#24272a] mb-2">
                     {t(`criteria.${key}.title`)}
@@ -205,65 +221,113 @@ export function PropertyApplicationContent({
         </div>
       </section>
 
-      {/* What we handle */}
-      <section className="py-16 lg:py-24 bg-[#24272a]">
+      {/* What we handle — editorial split with a furnished interior */}
+      <section className="py-16 lg:py-24 bg-[#24272a] overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
-          <ScrollReveal className="max-w-2xl mb-12">
-            <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-xs mb-3">
-              {t("handle.eyebrow")}
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-light text-white mb-4">
-              {t("handle.heading")}
-            </h2>
-            <p className="text-white/70 leading-relaxed">
-              {t("handle.subheading")}
-            </p>
-          </ScrollReveal>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {handle.map(({ icon: Icon, key }, index) => (
-              <ScrollReveal key={key} delay={index * 0.08}>
-                <div>
-                  <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[var(--color-brand-anchor)] mb-5">
-                    <Icon className="w-5 h-5 text-white" />
-                  </div>
-                  <h3 className="text-lg font-medium text-white mb-2">
-                    {t(`handle.${key}.title`)}
-                  </h3>
-                  <p className="text-white/60 text-sm leading-relaxed">
-                    {t(`handle.${key}.body`)}
-                  </p>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <ScrollReveal direction="left">
+              <div className="relative">
+                {/* offset accent frame for depth */}
+                <div className="absolute -top-4 -left-4 w-2/3 h-2/3 border border-[var(--color-brand-mid)]/30 pointer-events-none" />
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
+                  <Image
+                    src="/images/properties/16-on-bree/08.jpg"
+                    alt={t("handle.imageAlt")}
+                    fill
+                    sizes="(min-width: 1024px) 50vw, 100vw"
+                    className="object-cover"
+                  />
                 </div>
-              </ScrollReveal>
-            ))}
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="right">
+              <p className="text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-xs mb-3">
+                {t("handle.eyebrow")}
+              </p>
+              <h2 className="text-3xl lg:text-4xl font-light text-white mb-4">
+                {t("handle.heading")}
+              </h2>
+              <p className="text-white/70 leading-relaxed mb-10 max-w-xl">
+                {t("handle.subheading")}
+              </p>
+
+              <div className="space-y-8">
+                {handle.map(({ icon: Icon, key }) => (
+                  <div key={key} className="flex items-start gap-5">
+                    <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[var(--color-brand-anchor)] flex-shrink-0">
+                      <Icon className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-white mb-1">
+                        {t(`handle.${key}.title`)}
+                      </h3>
+                      <p className="text-white/60 text-sm leading-relaxed max-w-md">
+                        {t(`handle.${key}.body`)}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* Owner testimonials */}
+      {/* Owner testimonials — led by the founder */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
-          <ScrollReveal className="max-w-2xl mb-12">
-            <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-3">
-              {t("testimonials.eyebrow")}
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-light text-[#24272a] mb-4">
-              {t("testimonials.heading")}
-            </h2>
-            <p className="text-stone-600 leading-relaxed">
-              {t("testimonials.subheading")}
-            </p>
-          </ScrollReveal>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16 lg:mb-20">
+            <ScrollReveal direction="left" className="order-2 lg:order-1">
+              <div className="relative max-w-sm mx-auto lg:mx-0">
+                <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 bg-[var(--color-brand-wash)] pointer-events-none" />
+                <div className="relative aspect-[3/4] w-full overflow-hidden">
+                  <Image
+                    src="/images/site/founder.png"
+                    alt={`${tAbout("founderName")} — ${tAbout("founderTitle")}`}
+                    fill
+                    sizes="(min-width: 1024px) 40vw, 90vw"
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="right" className="order-1 lg:order-2">
+              <p className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs mb-3">
+                {t("testimonials.eyebrow")}
+              </p>
+              <h2 className="text-3xl lg:text-4xl font-light text-[#24272a] mb-4">
+                {t("testimonials.heading")}
+              </h2>
+              <p className="text-stone-600 leading-relaxed mb-8">
+                {t("testimonials.subheading")}
+              </p>
+              <blockquote className="border-l-2 border-[var(--color-brand-anchor)] pl-5">
+                <p className="text-xl lg:text-2xl font-light text-[#24272a] italic leading-snug mb-4">
+                  &ldquo;{tAbout("founderQuote")}&rdquo;
+                </p>
+                <footer>
+                  <p className="text-[#24272a] font-medium">
+                    {tAbout("founderName")}
+                  </p>
+                  <p className="text-stone-500 text-sm">
+                    {tAbout("founderTitle")}
+                  </p>
+                </footer>
+              </blockquote>
+            </ScrollReveal>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {OWNER_TESTIMONIALS.map(({ quote, author }, index) => (
               <ScrollReveal key={author} delay={(index % 3) * 0.08}>
-                <figure className="h-full flex flex-col border border-stone-200 bg-stone-50 p-8">
+                <figure className="h-full flex flex-col border border-stone-200 bg-stone-50 p-8 transition-colors duration-300 hover:border-[var(--color-brand-anchor)]/40">
                   <Quote className="w-8 h-8 text-[var(--color-brand-anchor)]/30 mb-4" />
                   <blockquote className="text-stone-700 leading-relaxed flex-1">
                     {quote}
                   </blockquote>
-                  <figcaption className="mt-6 text-sm font-medium text-[#24272a]">
+                  <figcaption className="mt-6 pt-4 border-t border-stone-200 text-sm font-medium text-[#24272a]">
                     {author}
                   </figcaption>
                 </figure>

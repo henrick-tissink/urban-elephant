@@ -740,7 +740,8 @@
       "guests": {
         "title": "Hôtes & image de marque",
         "body": "Nous accueillons personnellement vos hôtes, sous une marque dont ils se souviennent."
-      }
+      },
+      "imageAlt": "Un appartement Urban Elephant entièrement meublé et géré par des professionnels"
     },
     "testimonials": {
       "eyebrow": "Témoignages de propriétaires",
