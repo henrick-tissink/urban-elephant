@@ -32,7 +32,7 @@
     "faq": "Ofte stillede spørgsmål",
     "contact": "Kontakt",
     "bookNow": "Book nu",
-    "propertyApplication": "Bliv vært"
+    "propertyApplication": "Bliv partner"
   },
   "recommendations": {
     "title": "Uden for hoveddøren",
@@ -396,7 +396,7 @@
       "bookingPolicy": "Bookingpolitik",
       "privacyPolicy": "Privatlivspolitik",
       "terms": "Vilkår & betingelser",
-      "propertyApplication": "Bliv vært"
+      "propertyApplication": "Bliv partner"
     },
     "newsletter": {
       "title": "Følg os",
@@ -531,7 +531,7 @@
           },
           "parking": {
             "q": "Er der parkering til rådighed?",
-            "a": "Ja, sikker parkering er tilgængelig mod en ekstra omkostning på R75 pr. nat."
+            "a": "Parkering varierer fra ejendom til ejendom: The Docklands tilbyder gratis sikker parkering; 16 On Bree har sikker parkering til R75 pr. nat; The Rose har sikker parkering mod et tillæg; og Flamingo Express har ikke parkering på stedet. Se ejendommens side for detaljer."
           }
         }
       },
@@ -661,9 +661,9 @@
       "ogDescription": "Direkte booking giver den bedste pris og personlig service."
     },
     "propertyApplication": {
-      "title": "Bliv vært",
+      "title": "Bliv partner",
       "description": "Udlej din lejlighed i Cape Town med Urban Elephant — håndplukket, smukt brandet og fuldt administreret. Ansøg om at blive en del af familien.",
-      "ogTitle": "Bliv vært hos Urban Elephant",
+      "ogTitle": "Bliv partner hos Urban Elephant",
       "ogDescription": "Bliv en del af et blomstrende hotelbrand i Cape Town. Vi brander, udlejer og administrerer din lejlighed fuldt ud."
     }
   },
@@ -695,7 +695,7 @@
   },
   "propertyApplication": {
     "hero": {
-      "eyebrow": "Bliv vært",
+      "eyebrow": "Bliv partner",
       "title": "Bliv en del af Urban Elephant-familien",
       "description": "Hvis du gerne vil være en del af et blomstrende og voksende hotelbrand i Cape Town, vil vi meget gerne høre fra dig. Vores lejligheder er håndplukkede — se nedenfor, hvad vi kigger efter.",
       "cta": "Ansøg nu"
@@ -750,7 +750,7 @@
     },
     "form": {
       "eyebrow": "Ansøgning",
-      "heading": "Ansøg om at blive vært",
+      "heading": "Ansøg om at blive partner",
       "subheading": "Fortæl os om din lejlighed, så kontakter vores team dig.",
       "name": "Fulde navn",
       "phone": "Telefonnummer",

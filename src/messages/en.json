@@ -32,7 +32,7 @@
     "faq": "FAQs",
     "contact": "Contact",
     "bookNow": "Book Now",
-    "propertyApplication": "Host With Us"
+    "propertyApplication": "Partner With Us"
   },
   "recommendations": {
     "title": "Beyond the Front Door",
@@ -396,7 +396,7 @@
       "bookingPolicy": "Booking Policy",
       "privacyPolicy": "Privacy Policy",
       "terms": "Terms & Conditions",
-      "propertyApplication": "Host With Us"
+      "propertyApplication": "Partner With Us"
     },
     "newsletter": {
       "title": "Follow Us",
@@ -531,7 +531,7 @@
           },
           "parking": {
             "q": "Is parking available?",
-            "a": "Yes, secure parking is available at an additional cost of R75 per night."
+            "a": "Parking depends on the property: The Docklands offers free secure parking; 16 On Bree has secure parking at R75 per night; The Rose has secure parking at an additional charge; and Flamingo Express doesn't have on-site parking. See the property's page for details."
           }
         }
       },
@@ -661,9 +661,9 @@
       "ogDescription": "Direct booking gets the best rate and personal service."
     },
     "propertyApplication": {
-      "title": "Host With Us",
+      "title": "Partner With Us",
       "description": "List your Cape Town apartment with Urban Elephant — handpicked, beautifully branded and fully managed. Apply to join the family.",
-      "ogTitle": "Host With Urban Elephant",
+      "ogTitle": "Partner With Urban Elephant",
       "ogDescription": "Join a thriving Cape Town hotel brand. We brand, fill and fully manage your apartment."
     }
   },
@@ -695,10 +695,10 @@
   },
   "propertyApplication": {
     "hero": {
-      "eyebrow": "Become a Host",
+      "eyebrow": "Become a Partner",
       "title": "Join the Urban Elephant family",
       "description": "If you're looking to join a thriving, growing hotel brand in Cape Town, we'd be thrilled to hear from you. Our apartments are handpicked — take a look at what we look for below.",
-      "cta": "Apply to host"
+      "cta": "Apply to partner"
     },
     "criteria": {
       "eyebrow": "The fit",
@@ -727,7 +727,7 @@
       "subheading": "From the first photograph to the final checkout, your apartment is in good hands — and so are your guests.",
       "setup": {
         "title": "Setup & furnishing",
-        "body": "We style, furnish and photograph your apartment so it's ready to host."
+        "body": "We style, furnish and photograph your apartment so it's ready for guests."
       },
       "bookings": {
         "title": "Bookings & revenue",
@@ -739,7 +739,7 @@
       },
       "guests": {
         "title": "Guests & branding",
-        "body": "We host your guests personally, under a brand they remember."
+        "body": "We welcome your guests personally, under a brand they remember."
       },
       "imageAlt": "A fully furnished, professionally managed Urban Elephant apartment"
     },
@@ -750,7 +750,7 @@
     },
     "form": {
       "eyebrow": "Apply",
-      "heading": "Apply to host",
+      "heading": "Apply to partner",
       "subheading": "Tell us about your apartment and our team will be in touch.",
       "name": "Full Name",
       "phone": "Phone Number",

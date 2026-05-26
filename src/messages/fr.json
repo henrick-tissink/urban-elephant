@@ -32,7 +32,7 @@
     "faq": "FAQ",
     "contact": "Contact",
     "bookNow": "Réserver",
-    "propertyApplication": "Devenir hôte"
+    "propertyApplication": "Devenir partenaire"
   },
   "recommendations": {
     "title": "Au-delà de la porte d'entrée",
@@ -396,7 +396,7 @@
       "bookingPolicy": "Politique de réservation",
       "privacyPolicy": "Politique de confidentialité",
       "terms": "Conditions générales",
-      "propertyApplication": "Devenir hôte"
+      "propertyApplication": "Devenir partenaire"
     },
     "newsletter": {
       "title": "Suivez-nous",
@@ -531,7 +531,7 @@
           },
           "parking": {
             "q": "Un parking est-il disponible ?",
-            "a": "Oui, un parking sécurisé est disponible moyennant un supplément de R75 par nuit."
+            "a": "Le parking varie selon l'établissement : The Docklands propose un parking sécurisé gratuit ; 16 On Bree dispose d'un parking sécurisé à R75 par nuit ; The Rose propose un parking sécurisé moyennant un supplément ; et Flamingo Express ne dispose pas de parking sur place. Consultez la page de l'établissement pour plus de détails."
           }
         }
       },
@@ -661,9 +661,9 @@
       "ogDescription": "La réservation en direct offre le meilleur tarif et un service personnalisé."
     },
     "propertyApplication": {
-      "title": "Devenir hôte",
+      "title": "Devenir partenaire",
       "description": "Confiez votre appartement du Cap à Urban Elephant — sélectionné avec soin, superbement personnalisé et entièrement géré. Postulez pour rejoindre la famille.",
-      "ogTitle": "Devenir hôte avec Urban Elephant",
+      "ogTitle": "Devenir partenaire avec Urban Elephant",
       "ogDescription": "Rejoignez une marque hôtelière florissante du Cap. Nous personnalisons, remplissons et gérons entièrement votre appartement."
     }
   },
@@ -695,7 +695,7 @@
   },
   "propertyApplication": {
     "hero": {
-      "eyebrow": "Devenir hôte",
+      "eyebrow": "Devenir partenaire",
       "title": "Rejoignez la famille Urban Elephant",
       "description": "Si vous souhaitez rejoindre une marque hôtelière florissante et en pleine croissance au Cap, nous serions ravis d'avoir de vos nouvelles. Nos appartements sont sélectionnés avec soin — découvrez ci-dessous ce que nous recherchons.",
       "cta": "Postuler"
@@ -750,7 +750,7 @@
     },
     "form": {
       "eyebrow": "Candidature",
-      "heading": "Postuler pour devenir hôte",
+      "heading": "Postuler pour devenir partenaire",
       "subheading": "Parlez-nous de votre appartement et notre équipe vous contactera.",
       "name": "Nom complet",
       "phone": "Numéro de téléphone",

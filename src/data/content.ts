@@ -13,83 +13,99 @@ const propertyGallery = (slug: string, count: number): string[] =>
     return `/images/properties/${slug}/${num}.jpg`;
   });
 
-const AMENITY_I18N: Record<string, { de: string; fr: string; da: string }> = {
+const AMENITY_I18N: Record<string, { af: string; de: string; fr: string; da: string }> = {
   "Daily Housekeeping": {
+    af: "Daaglikse Huishouding",
     de: "Tägliche Reinigung",
     fr: "Ménage quotidien",
     da: "Daglig rengøring",
   },
   Airconditioning: {
+    af: "Lugversorging",
     de: "Klimaanlage",
     fr: "Climatisation",
     da: "Aircondition",
   },
   "24 Hour Concierge & Security": {
+    af: "24-uur Concierge & Sekuriteit",
     de: "24-Stunden-Concierge & Sicherheit",
     fr: "Conciergerie et sécurité 24h/24",
     da: "Concierge og sikkerhed døgnet rundt",
   },
   "Washing Machine": {
+    af: "Wasmasjien",
     de: "Waschmaschine",
     fr: "Machine à laver",
     da: "Vaskemaskine",
   },
   "Rooftop Bar": {
+    af: "Dakkroeg",
     de: "Dachterrassen-Bar",
     fr: "Bar sur le toit",
     da: "Tagbar",
   },
   "Paid Secure Parking": {
+    af: "Betaalde Veilige Parkering",
     de: "Kostenpflichtiges sicheres Parken",
     fr: "Parking sécurisé payant",
     da: "Betalt sikker parkering",
   },
   "Free Fast Wifi": {
+    af: "Gratis Vinnige Wifi",
     de: "Kostenloses schnelles WiFi",
     fr: "WiFi rapide gratuit",
     da: "Gratis hurtig WiFi",
   },
   "Smart TV": {
+    af: "Smart TV",
     de: "Smart-TV",
     fr: "Smart TV",
     da: "Smart-TV",
   },
   "Nespresso Machine": {
+    af: "Nespresso-masjien",
     de: "Nespresso-Maschine",
     fr: "Machine Nespresso",
     da: "Nespresso-maskine",
   },
   "Baby Cots, Walkers & Car Seats": {
+    af: "Babakatels, Stapringe & Motorsitplekke",
     de: "Babybetten, Lauflernhilfen & Autositze",
     fr: "Lits bébé, trotteurs et sièges auto",
     da: "Babysenge, gåstativer og autostole",
   },
   "Robes & Slippers": {
+    af: "Kamerjasse & Pantoffels",
     de: "Bademäntel & Hausschuhe",
     fr: "Peignoirs et chaussons",
     da: "Badekåber og hjemmesko",
   },
   Dishwasher: {
+    af: "Skottelgoedwasser",
     de: "Geschirrspüler",
     fr: "Lave-vaisselle",
     da: "Opvaskemaskine",
   },
   Hairdryer: {
+    af: "Haardroër",
     de: "Haartrockner",
     fr: "Sèche-cheveux",
     da: "Hårtørrer",
   },
   "Swimming Pool": {
+    af: "Swembad",
     de: "Swimmingpool",
     fr: "Piscine",
     da: "Swimmingpool",
   },
   "Self Catering Welcome Starter Pack": {
+    af: "Self-sorg Verwelkomingsbeginpakkie",
     de: "Selbstversorger-Willkommenspaket",
     fr: "Pack de bienvenue pour séjour en autonomie",
     da: "Velkomstpakke til selvhushold",
   },
   "Secure Parking": {
+    af: "Veilige Parkering",
     de: "Sicheres Parken",
     fr: "Parking sécurisé",
     da: "Sikker parkering",
@@ -126,6 +142,7 @@ export const properties: Property[] = [
     name: "16 On Bree",
     tagline: {
       en: "16 On Bree stands as the pinnacle of luxury in Cape Town, boasting its title as the city's tallest residential and hotel building.",
+      af: "16 On Bree staan as die toppunt van luuksheid in Kaapstad, met die titel as die stad se hoogste woon- en hotelgebou.",
       de: "16 On Bree gilt als der Inbegriff von Luxus in Kapstadt und trägt den Titel des höchsten Wohn- und Hotelgebäudes der Stadt.",
       fr: "16 On Bree incarne le summum du luxe au Cap, fort de son titre de plus haut bâtiment résidentiel et hôtelier de la ville.",
       da: "16 On Bree er indbegrebet af luksus i Cape Town og bærer titlen som byens højeste bolig- og hotelbygning.",
@@ -136,6 +153,12 @@ export const properties: Property[] = [
         "Guests enjoy beautifully designed 4-star luxury apartments with stunning views, secure access and hotel comfort throughout their stay.",
         "Located moments from Cape Town's best restaurants, cafés, nightlife and business districts, 16 On Bree places the city at your doorstep while offering the comfort, privacy and consistency Urban Elephant is known for.",
         "Secure on-site parking available.",
+      ],
+      af: [
+        "Geleë in een van Kaapstad se mees ikoniese wolkekrabbers, bied Urban Elephant by 16 On Bree gesofistikeerde stadslewe in die hart van die Moederstad.",
+        "Gaste geniet pragtig ontwerpte 4-ster luukse woonstelle met asemrowende uitsigte, veilige toegang en hotelgemak dwarsdeur hul verblyf.",
+        "Net oomblikke van Kaapstad se beste restaurante, kafees, naglewe en sakebuurte, plaas 16 On Bree die stad op jou voorstoep terwyl dit die gemak, privaatheid en konsekwentheid bied waarvoor Urban Elephant bekend is.",
+        "Veilige parkering op die perseel beskikbaar.",
       ],
       de: [
         "In einem der ikonischsten Wolkenkratzer Kapstadts gelegen, bietet Urban Elephant im 16 On Bree anspruchsvolles Stadtleben im Herzen der Mother City.",
@@ -158,6 +181,7 @@ export const properties: Property[] = [
     },
     location: {
       en: "Cape Town CBD, South Africa",
+      af: "Kaapstad SSK, Suid-Afrika",
       de: "Kapstadt CBD, Südafrika",
       fr: "Cap, quartier central des affaires, Afrique du Sud",
       da: "Cape Town CBD, Sydafrika",
@@ -205,6 +229,7 @@ export const properties: Property[] = [
     name: "The Rose",
     tagline: {
       en: "Meet The Rose — Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
+      af: "Ontmoet The Rose — Urban Elephant se nuutste blikvanger by 117 Strand Street, Kaapstad.",
       de: "Lernen Sie The Rose kennen — Urban Elephants neuestes Glanzstück in der 117 Strand Street, Kapstadt.",
       fr: "Découvrez The Rose — la dernière merveille d'Urban Elephant au 117 Strand Street, Le Cap.",
       da: "Mød The Rose — Urban Elephants nyeste pragtstykke på 117 Strand Street, Cape Town.",
@@ -214,6 +239,11 @@ export const properties: Property[] = [
         "Located in the charming neighbourhood of De Waterkant, Urban Elephant at The Rose combines modern luxury with one of Cape Town's most vibrant village atmospheres.",
         "Surrounded by cafés, restaurants, nightlife and cobblestone streets, The Rose offers beautifully designed 4-star apartments with the comfort and consistency of a professionally managed hotel stay.",
         "Stylish, central and full of character — a stay designed to feel uniquely Cape Town.",
+      ],
+      af: [
+        "Geleë in die bekoorlike buurt van De Waterkant, kombineer Urban Elephant by The Rose moderne luuksheid met een van Kaapstad se lewendigste dorpsatmosfere.",
+        "Omring deur kafees, restaurante, naglewe en kasseisteenstrate, bied The Rose pragtig ontwerpte 4-ster woonstelle met die gemak en konsekwentheid van 'n professioneel bestuurde hotelverblyf.",
+        "Stylvol, sentraal en vol karakter — 'n verblyf wat ontwerp is om uniek Kaapstads te voel.",
       ],
       de: [
         "Im charmanten Viertel De Waterkant gelegen, verbindet Urban Elephant im The Rose modernen Luxus mit einer der lebendigsten Dorfatmosphären Kapstadts.",
@@ -233,6 +263,7 @@ export const properties: Property[] = [
     },
     location: {
       en: "117 Strand Street, Cape Town",
+      af: "117 Strand Street, Kaapstad",
       de: "117 Strand Street, Kapstadt",
       fr: "117 Strand Street, Le Cap",
       da: "117 Strand Street, Cape Town",
@@ -252,6 +283,7 @@ export const properties: Property[] = [
       "Daily Housekeeping",
       "Airconditioning",
       "24 Hour Concierge & Security",
+      "Paid Secure Parking",
       "Free Fast Wifi",
       "Smart TV",
       "Nespresso Machine",
@@ -275,6 +307,7 @@ export const properties: Property[] = [
     name: "The Docklands",
     tagline: {
       en: "The Docklands: Your Urban Oasis. Positioned in the heart of the chic De Waterkant district, The Docklands stands as a beacon of modern luxury.",
+      af: "The Docklands: Jou stedelike oase. Geleë in die hart van die elegante De Waterkant-distrik, staan The Docklands as 'n baken van moderne luuksheid.",
       de: "The Docklands: Ihre urbane Oase. Im Herzen des schicken Viertels De Waterkant gelegen, ist The Docklands ein Leuchtturm modernen Luxus.",
       fr: "The Docklands : votre oasis urbaine. Situé au cœur du chic quartier de De Waterkant, The Docklands se dresse comme un phare du luxe moderne.",
       da: "The Docklands: Din urbane oase. Placeret i hjertet af det chikke De Waterkant-kvarter står The Docklands som et fyrtårn for moderne luksus.",
@@ -285,6 +318,12 @@ export const properties: Property[] = [
         "Guests enjoy beautifully designed 4-star luxury apartments with secure access and hotel comfort throughout their stay, plus a rooftop pool deck where the city's skyline meets the harbour.",
         "Located moments from the V&A Waterfront, Bree Street's restaurants and the heart of Cape Town's business district, The Docklands places the city at your doorstep while offering the comfort, privacy and consistency Urban Elephant is known for.",
         "Secure on-site parking available.",
+      ],
+      af: [
+        "In die hart van De Waterkant — Kaapstad se mees modieuse dorpswyk — bied Urban Elephant by The Docklands 4-ster woonstelhotel-lewe met dakuitsigte van Tafelberg tot by die V&A Waterfront.",
+        "Gaste geniet pragtig ontwerpte 4-ster luukse woonstelle met veilige toegang en hotelgemak dwarsdeur hul verblyf, plus 'n dakswembaddek waar die stad se silhoeët die hawe ontmoet.",
+        "Net oomblikke van die V&A Waterfront, Bree Street se restaurante en die hart van Kaapstad se sakedistrik, plaas The Docklands die stad op jou voorstoep terwyl dit die gemak, privaatheid en konsekwentheid bied waarvoor Urban Elephant bekend is.",
+        "Veilige parkering op die perseel beskikbaar.",
       ],
       de: [
         "Im Herzen von De Waterkant — Kapstadts modischstem Dorfviertel — bietet Urban Elephant im The Docklands 4-Sterne-Apartmenthotel-Wohnen mit Dachterrassenblick vom Tafelberg bis zur V&A Waterfront.",
@@ -307,6 +346,7 @@ export const properties: Property[] = [
     },
     location: {
       en: "De Waterkant, Cape Town",
+      af: "De Waterkant, Kaapstad",
       de: "De Waterkant, Kapstadt",
       fr: "De Waterkant, Le Cap",
       da: "De Waterkant, Cape Town",
@@ -352,6 +392,7 @@ export const properties: Property[] = [
     name: "Flamingo Express",
     tagline: {
       en: "Your 4 Star seaside escape with effortless elegance.",
+      af: "Jou 4-ster seekant-ontvlugting met moeitelose elegansie.",
       de: "Ihre 4-Sterne-Auszeit am Meer mit müheloser Eleganz.",
       fr: "Votre escapade balnéaire 4 étoiles à l'élégance naturelle.",
       da: "Din 4-stjernede flugt ved havet med ubesværet elegance.",
@@ -361,6 +402,11 @@ export const properties: Property[] = [
         "Urban Elephant at Flamingo Express blends coastal calm with contemporary luxury in the heart of Sea Point.",
         "Designed for travellers who want more than just a place to sleep, these stylish 4-star apartments offer comfort, space and effortless access to Cape Town's famous promenade, cafés and beaches.",
         "Relaxed, secure and professionally managed — this is seaside living, the Urban Elephant way.",
+      ],
+      af: [
+        "Urban Elephant by Flamingo Express vermeng die kalmte van die kus met eietydse luuksheid in die hart van Sea Point.",
+        "Ontwerp vir reisigers wat meer as net 'n plek om te slaap wil hê, bied hierdie stylvolle 4-ster woonstelle gemak, ruimte en moeitelose toegang tot Kaapstad se beroemde promenade, kafees en strande.",
+        "Ontspanne, veilig en professioneel bestuur — dit is seekant-lewe, op die Urban Elephant manier.",
       ],
       de: [
         "Urban Elephant im Flamingo Express verbindet die Ruhe der Küste mit zeitgemäßem Luxus im Herzen von Sea Point.",
@@ -380,6 +426,7 @@ export const properties: Property[] = [
     },
     location: {
       en: "Regent Road, Sea Point, Cape Town",
+      af: "Regent Road, Sea Point, Kaapstad",
       de: "Regent Road, Sea Point, Kapstadt",
       fr: "Regent Road, Sea Point, Le Cap",
       da: "Regent Road, Sea Point, Cape Town",
@@ -426,6 +473,7 @@ export const tours: Tour[] = [
     slug: "aquila-safari",
     name: {
       en: "Aquila Big 5 Safari",
+      af: "Aquila Groot 5 Safari",
       de: "Aquila Big-5-Safari",
       fr: "Safari Big 5 à Aquila",
       da: "Aquila Big 5-safari",
@@ -435,6 +483,7 @@ export const tours: Tour[] = [
     price: 2635,
     priceNote: {
       en: "per person, full package",
+      af: "per persoon, volle pakket",
       de: "pro Person, Komplettpaket",
       fr: "par personne, forfait complet",
       da: "pr. person, fuld pakke",
@@ -443,6 +492,10 @@ export const tours: Tour[] = [
       en: [
         "Discover Africa's iconic Big Five — lion, leopard, elephant, rhino, and buffalo — on a guided game drive at Aquila Private Game Reserve.",
         "Urban Elephant makes it easy for you to enjoy this authentic safari experience just a short drive from Cape Town. Transport can be arranged.",
+      ],
+      af: [
+        "Ontdek Afrika se ikoniese Groot Vyf — leeu, luiperd, olifant, renoster en buffel — op 'n geleide wildrit by Aquila Private Game Reserve.",
+        "Urban Elephant maak dit maklik vir jou om hierdie egte safari-ervaring net 'n kort rit van Kaapstad af te geniet. Vervoer kan gereël word.",
       ],
       de: [
         "Entdecken Sie Afrikas ikonische Big Five — Löwe, Leopard, Elefant, Nashorn und Büffel — auf einer geführten Pirschfahrt im Aquila Private Game Reserve.",
@@ -465,6 +518,7 @@ export const tours: Tour[] = [
     slug: "cape-point-penguins",
     name: {
       en: "Cape of Good Hope & Penguins",
+      af: "Kaap die Goeie Hoop & Pikkewyne",
       de: "Kap der Guten Hoffnung & Pinguine",
       fr: "Cap de Bonne-Espérance et pingouins",
       da: "Kap det Gode Håb og pingviner",
@@ -474,6 +528,7 @@ export const tours: Tour[] = [
     price: 4500,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -482,6 +537,10 @@ export const tours: Tour[] = [
       en: [
         "Travel to the legendary Cape of Good Hope and explore the dramatic Cape Peninsula. From Chapman's Peak Drive to Cape Point Nature Reserve, Urban Elephant helps you experience one of South Africa's most scenic routes.",
         "The Boulders Beach penguin colony is included in this tour.",
+      ],
+      af: [
+        "Reis na die legendariese Kaap die Goeie Hoop en verken die dramatiese Kaapse Skiereiland. Van Chapman's Peak Drive tot Cape Point Natuurreservaat help Urban Elephant jou om een van Suid-Afrika se mees skilderagtige roetes te beleef.",
+        "Die Boulders Beach pikkewynkolonie is by hierdie toer ingesluit.",
       ],
       de: [
         "Reisen Sie zum legendären Kap der Guten Hoffnung und erkunden Sie die dramatische Kap-Halbinsel. Vom Chapman's Peak Drive bis zum Cape Point Nature Reserve hilft Ihnen Urban Elephant, eine der landschaftlich schönsten Routen Südafrikas zu erleben.",
@@ -504,6 +563,7 @@ export const tours: Tour[] = [
     slug: "boulders-beach",
     name: {
       en: "Boulders Beach",
+      af: "Boulders Beach",
       de: "Boulders Beach",
       fr: "Boulders Beach",
       da: "Boulders Beach",
@@ -513,6 +573,7 @@ export const tours: Tour[] = [
     price: 2500,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -521,6 +582,10 @@ export const tours: Tour[] = [
       en: [
         "Visit the world-famous colony of African penguins at Boulders Beach, where you can stroll boardwalks or relax on the sand. Urban Elephant organises this charming tour for families, couples, and nature lovers alike.",
         "Includes a luxury chauffeur-driven vehicle. Note: if you book the Cape of Good Hope tour, Boulders Beach is included in that itinerary.",
+      ],
+      af: [
+        "Besoek die wêreldbekende kolonie Afrika-pikkewyne by Boulders Beach, waar jy op die houtloopplanke kan stap of op die sand kan ontspan. Urban Elephant reël hierdie bekoorlike toer vir gesinne, paartjies en natuurliefhebbers gelyk.",
+        "Sluit 'n luukse voertuig met 'n chauffeur in. Let wel: as jy die Kaap die Goeie Hoop-toer bespreek, is Boulders Beach by daardie reisplan ingesluit.",
       ],
       de: [
         "Besuchen Sie die weltberühmte Kolonie afrikanischer Pinguine am Boulders Beach, wo Sie auf Holzstegen spazieren oder im Sand entspannen können. Urban Elephant organisiert diese charmante Tour für Familien, Paare und Naturliebhaber gleichermaßen.",
@@ -543,6 +608,7 @@ export const tours: Tour[] = [
     slug: "winelands-tour",
     name: {
       en: "Wine Tours with Wine Flies",
+      af: "Wyntoere met Wine Flies",
       de: "Weintouren mit Wine Flies",
       fr: "Circuits œnologiques avec Wine Flies",
       da: "Vinture med Wine Flies",
@@ -552,6 +618,7 @@ export const tours: Tour[] = [
     price: 2280,
     priceNote: {
       en: "per person, meal included",
+      af: "per persoon, ete ingesluit",
       de: "pro Person, Mahlzeit inklusive",
       fr: "par personne, repas inclus",
       da: "pr. person, måltid inkluderet",
@@ -560,6 +627,10 @@ export const tours: Tour[] = [
       en: [
         "Urban Elephant has partnered with Wine Flies to offer curated Winelands experiences — from scheduled small-group tours to fully private, gourmet, and family-friendly itineraries.",
         "Each tour blends local expertise with authentic encounters, giving you a beautifully crafted taste of the Cape's most iconic wine regions. Private tours from R4500 for four people.",
+      ],
+      af: [
+        "Urban Elephant het met Wine Flies saamgespan om gekureerde Wynland-ervarings aan te bied — van geskeduleerde kleingroeptoere tot heeltemal privaat, gourmet- en gesinsvriendelike reisplanne.",
+        "Elke toer vermeng plaaslike kundigheid met egte ontmoetings en gee jou 'n pragtig saamgestelde smaak van die Kaap se mees ikoniese wynstreke. Privaat toere vanaf R4500 vir vier mense.",
       ],
       de: [
         "Urban Elephant hat sich mit Wine Flies zusammengetan, um kuratierte Winelands-Erlebnisse anzubieten — von geplanten Kleingruppentouren bis hin zu vollständig privaten, gourmetorientierten und familienfreundlichen Reiserouten.",
@@ -582,6 +653,7 @@ export const tours: Tour[] = [
     slug: "shark-cage-diving",
     name: {
       en: "Shark Cage Diving",
+      af: "Haaikou-duik",
       de: "Haikäfigtauchen",
       fr: "Plongée en cage avec les requins",
       da: "Hajbursdykning",
@@ -591,6 +663,7 @@ export const tours: Tour[] = [
     price: 3595,
     priceNote: {
       en: "per person",
+      af: "per persoon",
       de: "pro Person",
       fr: "par personne",
       da: "pr. person",
@@ -599,6 +672,10 @@ export const tours: Tour[] = [
       en: [
         "For the adventurous at heart, nothing compares to coming face-to-face with a great white shark.",
         "Urban Elephant arranges safe and exhilarating shark cage diving trips in Gansbaai, where expert guides guarantee an unforgettable experience.",
+      ],
+      af: [
+        "Vir die avontuurlustiges is daar niks wat vergelyk met 'n oog-tot-oog ontmoeting met 'n wit haai nie.",
+        "Urban Elephant reël veilige en opwindende haaikou-duiktogte in Gansbaai, waar kundige gidse 'n onvergeetlike ervaring waarborg.",
       ],
       de: [
         "Für Abenteuerlustige gibt es nichts Vergleichbares, als einem Weißen Hai von Angesicht zu Angesicht zu begegnen.",
@@ -621,6 +698,7 @@ export const tours: Tour[] = [
     slug: "boat-cruises",
     name: {
       en: "Boat Cruises at the V&A Waterfront",
+      af: "Boottogte by die V&A Waterfront",
       de: "Bootsfahrten an der V&A Waterfront",
       fr: "Croisières en bateau au V&A Waterfront",
       da: "Bådture ved V&A Waterfront",
@@ -630,6 +708,7 @@ export const tours: Tour[] = [
     price: 370,
     priceNote: {
       en: "per person",
+      af: "per persoon",
       de: "pro Person",
       fr: "par personne",
       da: "pr. person",
@@ -638,6 +717,10 @@ export const tours: Tour[] = [
       en: [
         "Urban Elephant is proud to partner with Waterfront Charters to offer a curated collection of ocean experiences.",
         "Choose from scenic coastal cruises, serene Prosecco mornings, iconic sunset champagne sails, or adventurous ocean safaris. Private charters are also available for romantic escapes, milestone celebrations and bespoke events — a truly unforgettable way to experience Cape Town from the water.",
+      ],
+      af: [
+        "Urban Elephant is trots om met Waterfront Charters saam te span om 'n gekureerde versameling see-ervarings aan te bied.",
+        "Kies uit skilderagtige kustogte, rustige Prosecco-oggende, ikoniese sonsondergang-sjampanjetogte, of avontuurlike seesafari's. Privaat charters is ook beskikbaar vir romantiese ontvlugtings, mylpaalvierings en pasgemaakte geleenthede — 'n werklik onvergeetlike manier om Kaapstad van die water af te beleef.",
       ],
       de: [
         "Urban Elephant ist stolz darauf, mit Waterfront Charters zusammenzuarbeiten, um eine kuratierte Auswahl an Ozeanerlebnissen anzubieten.",
@@ -660,6 +743,7 @@ export const tours: Tour[] = [
     slug: "surf-lessons",
     name: {
       en: "Surf Lessons in Muizenberg",
+      af: "Branderry-lesse in Muizenberg",
       de: "Surfstunden in Muizenberg",
       fr: "Cours de surf à Muizenberg",
       da: "Surfundervisning i Muizenberg",
@@ -669,6 +753,7 @@ export const tours: Tour[] = [
     price: 800,
     priceNote: {
       en: "per person",
+      af: "per persoon",
       de: "pro Person",
       fr: "par personne",
       da: "pr. person",
@@ -677,6 +762,10 @@ export const tours: Tour[] = [
       en: [
         "Learn to surf at Muizenberg Beach, famous for its gentle waves and colourful huts.",
         "With skilled instructors to guide you, Urban Elephant ensures a fun and rewarding introduction to Cape Town's surfing culture.",
+      ],
+      af: [
+        "Leer branderry by Muizenberg Beach, bekend vir sy sagte branders en kleurvolle strandhuisies.",
+        "Met bekwame instrukteurs aan jou sy verseker Urban Elephant 'n pret en lonende kennismaking met Kaapstad se branderrykultuur.",
       ],
       de: [
         "Lernen Sie das Surfen am Muizenberg Beach, der für seine sanften Wellen und bunten Strandhütten bekannt ist.",
@@ -699,6 +788,7 @@ export const tours: Tour[] = [
     slug: "kirstenbosch-gardens",
     name: {
       en: "Kirstenbosch Gardens & Constantia",
+      af: "Kirstenbosch-tuine & Constantia",
       de: "Kirstenbosch-Gärten & Constantia",
       fr: "Jardins de Kirstenbosch et Constantia",
       da: "Kirstenbosch-haverne og Constantia",
@@ -708,6 +798,7 @@ export const tours: Tour[] = [
     price: 2500,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -716,6 +807,10 @@ export const tours: Tour[] = [
       en: [
         "Combine two highlights in one day by exploring Kirstenbosch Botanical Gardens and the Constantia Wine Valley.",
         "Urban Elephant curates this experience so you can enjoy South Africa's natural beauty and wine heritage together. Includes a luxury chauffeur-driven vehicle.",
+      ],
+      af: [
+        "Kombineer twee hoogtepunte in een dag deur die Kirstenbosch Botaniese Tuine en die Constantia-wynvallei te verken.",
+        "Urban Elephant stel hierdie ervaring saam sodat jy Suid-Afrika se natuurskoon en wynerfenis saam kan geniet. Sluit 'n luukse voertuig met 'n chauffeur in.",
       ],
       de: [
         "Verbinden Sie zwei Höhepunkte an einem Tag und erkunden Sie die botanischen Gärten von Kirstenbosch und das Weintal von Constantia.",
@@ -738,6 +833,7 @@ export const tours: Tour[] = [
     slug: "kayaking-adventures",
     name: {
       en: "Kayaking with Urban Elephant",
+      af: "Kajakvaart met Urban Elephant",
       de: "Kajakfahren mit Urban Elephant",
       fr: "Kayak avec Urban Elephant",
       da: "Kajak med Urban Elephant",
@@ -747,6 +843,7 @@ export const tours: Tour[] = [
     price: 600,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -755,6 +852,10 @@ export const tours: Tour[] = [
       en: [
         "Urban Elephant has partnered with some of the best kayak experiences around the peninsula.",
         "Paddle along Cape Town's Atlantic coastline in a small group with an experienced local guide, with the chance to spot dolphins, seals, penguins and other marine life, all while enjoying iconic views of Table Mountain and the bay. All equipment is provided, and the tour is suitable for both beginners and experienced paddlers.",
+      ],
+      af: [
+        "Urban Elephant het saamgespan met van die beste kajak-ervarings rondom die skiereiland.",
+        "Peddel langs Kaapstad se Atlantiese kuslyn in 'n klein groep saam met 'n ervare plaaslike gids, met die kans om dolfyne, robbe, pikkewyne en ander seelewe te sien, alles terwyl jy ikoniese uitsigte oor Tafelberg en die baai geniet. Alle toerusting word voorsien, en die toer is geskik vir beide beginners en ervare peddelaars.",
       ],
       de: [
         "Urban Elephant hat sich mit einigen der besten Kajakerlebnisse rund um die Halbinsel zusammengetan.",
@@ -777,6 +878,7 @@ export const tours: Tour[] = [
     slug: "harley-davidson-tours",
     name: {
       en: "Harley-Davidson & Cadillac Tour",
+      af: "Harley-Davidson- & Cadillac-toer",
       de: "Harley-Davidson- & Cadillac-Tour",
       fr: "Circuit Harley-Davidson et Cadillac",
       da: "Harley-Davidson- og Cadillac-tur",
@@ -786,6 +888,7 @@ export const tours: Tour[] = [
     price: 1400,
     priceNote: {
       en: "per person",
+      af: "per persoon",
       de: "pro Person",
       fr: "par personne",
       da: "pr. person",
@@ -795,6 +898,11 @@ export const tours: Tour[] = [
         "Experience Cape Town in true style with our bespoke Harley-Davidson and Cadillac tour.",
         "The journey begins in Camps Bay, cruising along the breathtaking Atlantic coastline towards Chapman's Peak Drive — one of the most scenic coastal roads in the world. Continue down to Hout Bay Beach, where ocean views and mountain backdrops meet in perfect harmony.",
         "Whether you're riding on the back of a Harley or relaxing in a classic Cadillac convertible, Urban Elephant delivers a luxury, tailor-made adventure designed for guests who appreciate elegance, freedom, and unforgettable moments.",
+      ],
+      af: [
+        "Beleef Kaapstad met ware styl op ons pasgemaakte Harley-Davidson- en Cadillac-toer.",
+        "Die reis begin in Camps Bay en kuier langs die asemrowende Atlantiese kuslyn na Chapman's Peak Drive — een van die mees skilderagtige kuspaaie ter wêreld. Gaan voort af na Hout Bay Beach, waar see-uitsigte en bergagtergronde in perfekte harmonie ontmoet.",
+        "Of jy nou agterop 'n Harley ry of in 'n klassieke Cadillac-kabriolet ontspan, Urban Elephant lewer 'n luukse, pasgemaakte avontuur ontwerp vir gaste wat elegansie, vryheid en onvergeetlike oomblikke waardeer.",
       ],
       de: [
         "Erleben Sie Kapstadt mit wahrem Stil bei unserer maßgeschneiderten Harley-Davidson- und Cadillac-Tour.",
@@ -820,6 +928,7 @@ export const tours: Tour[] = [
     slug: "full-day-chauffeur-service",
     name: {
       en: "Full-Day Chauffeur Service",
+      af: "Volledige Dag Chauffeurdiens",
       de: "Ganztägiger Chauffeurservice",
       fr: "Service de chauffeur à la journée",
       da: "Chaufførservice for en hel dag",
@@ -829,6 +938,7 @@ export const tours: Tour[] = [
     price: 4500,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -837,6 +947,10 @@ export const tours: Tour[] = [
       en: [
         "Enjoy the freedom to explore Cape Town at your own pace with a private driver.",
         "Urban Elephant provides a full-day chauffeur service tailored to your itinerary, whether it's wine tasting, sightseeing, or hidden gems.",
+      ],
+      af: [
+        "Geniet die vryheid om Kaapstad op jou eie tempo te verken met 'n privaat bestuurder.",
+        "Urban Elephant bied 'n volledige dag chauffeurdiens wat by jou reisplan aangepas is, of dit nou wynproe, besigtiging of versteekte juwele is.",
       ],
       de: [
         "Genießen Sie die Freiheit, Kapstadt mit einem privaten Fahrer in Ihrem eigenen Tempo zu erkunden.",
@@ -859,6 +973,7 @@ export const tours: Tour[] = [
     slug: "cooking-experience",
     name: {
       en: "Faeeza's Bo-Kaap Cooking Experience",
+      af: "Faeeza se Bo-Kaap Kookervaring",
       de: "Faeezas Kocherlebnis im Bo-Kaap",
       fr: "L'expérience culinaire de Faeeza à Bo-Kaap",
       da: "Faeezas madlavningsoplevelse i Bo-Kaap",
@@ -868,6 +983,7 @@ export const tours: Tour[] = [
     price: 900,
     priceNote: {
       en: "from",
+      af: "vanaf",
       de: "ab",
       fr: "à partir de",
       da: "fra",
@@ -877,6 +993,11 @@ export const tours: Tour[] = [
         "Step into the colourful heart of Cape Town's Bo-Kaap and discover the magic of home-cooked Cape Malay cuisine with the legendary Faeeza Abrahams.",
         "Born and raised in this historic neighbourhood, Faeeza welcomes guests into her family home for an unforgettable cooking experience filled with warmth, laughter, and mouthwatering aromas.",
         "What began as a simple family dinner turned into one of Cape Town's most sought-after culinary encounters — featured on Netflix and beloved by travellers from around the world.",
+      ],
+      af: [
+        "Betree die kleurvolle hart van Kaapstad se Bo-Kaap en ontdek die towerkrag van tuisgekookte Kaaps-Maleise kookkuns met die legendariese Faeeza Abrahams.",
+        "Gebore en getoë in hierdie historiese buurt, verwelkom Faeeza gaste in haar familiehuis vir 'n onvergeetlike kookervaring vol warmte, gelag en heerlike geure.",
+        "Wat as 'n eenvoudige familie-ete begin het, het een van Kaapstad se mees gesogte kulinêre ontmoetings geword — vertoon op Netflix en geliefd by reisigers van regoor die wêreld.",
       ],
       de: [
         "Tauchen Sie ein in das bunte Herz von Kapstadts Bo-Kaap und entdecken Sie den Zauber hausgemachter kapmalaiischer Küche mit der legendären Faeeza Abrahams.",
@@ -1059,12 +1180,14 @@ export const attractions: Attraction[] = [
     image: "/images/attractions/v-and-a-waterfront.png",
     description: {
       en: "Cape Town's working harbour and the most-visited destination in South Africa — shops, restaurants, and the original Robben Island ferry, all along the water.",
+      af: "Kaapstad se werkende hawe en die mees besoekte bestemming in Suid-Afrika — winkels, restaurante en die oorspronklike Robbeneiland-veerboot, alles langs die water.",
       de: "Kapstadts aktiver Hafen und das meistbesuchte Reiseziel Südafrikas — Geschäfte, Restaurants und die ursprüngliche Robben-Island-Fähre, alles direkt am Wasser.",
       fr: "Le port en activité du Cap et la destination la plus visitée d'Afrique du Sud — boutiques, restaurants et le ferry historique de Robben Island, le tout au bord de l'eau.",
       da: "Cape Towns aktive havn og Sydafrikas mest besøgte destination — butikker, restauranter og den oprindelige Robben Island-færge, alt sammen langs vandet.",
     },
     hostNote: {
       en: "Go at golden hour. Stay on the harbour wall for sunset.",
+      af: "Gaan tydens die goue uur. Bly op die hawemuur vir sonsondergang.",
       de: "Gehen Sie zur goldenen Stunde hin. Bleiben Sie zum Sonnenuntergang an der Hafenmauer.",
       fr: "Allez-y à l'heure dorée. Restez sur le quai pour le coucher du soleil.",
       da: "Tag derhen i den gyldne time. Bliv på havnemuren til solnedgang.",
@@ -1078,12 +1201,14 @@ export const attractions: Attraction[] = [
     image: "/images/attractions/table-mountain.jpg",
     description: {
       en: "A New 7 Wonder of Nature and the city's defining landmark — take the cableway up, or hike Platteklip if your knees can take it.",
+      af: "Een van die Nuwe 7 Natuurwonders en die stad se kenmerkende baken — neem die kabelbaan op, of stap Platteklip op as jou knieë dit kan vat.",
       de: "Eines der neuen 7 Naturweltwunder und das prägende Wahrzeichen der Stadt — fahren Sie mit der Seilbahn hinauf oder wandern Sie den Platteklip hinauf, wenn Ihre Knie mitmachen.",
       fr: "L'une des 7 nouvelles merveilles naturelles et le symbole de la ville — montez par le téléphérique, ou grimpez le Platteklip si vos genoux le supportent.",
       da: "Et af verdens 7 nye naturvidundere og byens definerende vartegn — tag svævebanen op, eller vandr ad Platteklip, hvis dine knæ kan klare det.",
     },
     hostNote: {
       en: "Catch the first cable car at 8am — beat the wind, beat the queue.",
+      af: "Vang die eerste kabelbaan om 8vm — wees voor die wind, wees voor die tou.",
       de: "Nehmen Sie die erste Seilbahn um 8 Uhr — dem Wind und der Warteschlange zuvorkommen.",
       fr: "Prenez le premier téléphérique à 8 h — devancez le vent et la file d'attente.",
       da: "Tag den første svævebane kl. 8 — vær foran vinden, vær foran køen.",
@@ -1097,12 +1222,14 @@ export const attractions: Attraction[] = [
     image: "/images/attractions/bo-kaap.jpg",
     description: {
       en: "The colourful, cobble-stoned heart of Cape Malay culture — vibrant houses, warm hospitality and centuries of history a short walk from our CBD properties.",
+      af: "Die kleurvolle, kasseisteen-bestrate hart van die Kaaps-Maleise kultuur — lewendige huise, warm gasvryheid en eeue se geskiedenis 'n kort entjie van ons SSK-eiendomme.",
       de: "Das bunte, mit Kopfsteinpflaster versehene Herz der kapmalaiischen Kultur — leuchtende Häuser, herzliche Gastfreundschaft und Jahrhunderte voller Geschichte, nur einen kurzen Spaziergang von unseren Unterkünften im CBD entfernt.",
       fr: "Le cœur coloré et pavé de la culture cap-malaise — maisons éclatantes, hospitalité chaleureuse et des siècles d'histoire, à quelques pas de nos hébergements du centre-ville.",
       da: "Det farverige, brostensbelagte hjerte af cape malay-kulturen — livlige huse, varm gæstfrihed og århundreders historie kun en kort gåtur fra vores boliger i CBD.",
     },
     hostNote: {
       en: "Sunday morning, after a coffee. Bring a camera; you'll need it.",
+      af: "Sondagoggend, ná 'n koffie. Bring 'n kamera saam; jy gaan dit nodig kry.",
       de: "Am Sonntagmorgen, nach einem Kaffee. Bringen Sie eine Kamera mit; Sie werden sie brauchen.",
       fr: "Le dimanche matin, après un café. Apportez un appareil photo ; vous en aurez besoin.",
       da: "Søndag morgen, efter en kop kaffe. Tag et kamera med; du får brug for det.",
@@ -1119,18 +1246,21 @@ export const restaurants: Restaurant[] = [
     image: "/images/restaurants/vixi-social-house.jpg",
     description: {
       en: "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
+      af: "'n Moderne sosiale-ete-konsep in De Waterkant — kreatiewe klein gereggies, ambagskemerkelkies en 'n bruisende atmosfeer die meeste aande van die week.",
       de: "Ein modernes Social-Dining-Konzept in De Waterkant — kreative kleine Gerichte, handgemachte Cocktails und an den meisten Abenden der Woche eine pulsierende Atmosphäre.",
       fr: "Un concept moderne de cuisine conviviale à De Waterkant — petites assiettes créatives, cocktails artisanaux et une ambiance animée la plupart des soirs de la semaine.",
       da: "Et moderne social-dining-koncept i De Waterkant — kreative småretter, håndlavede cocktails og en summende atmosfære de fleste aftener i ugen.",
     },
     hostNote: {
       en: "Go for the small plates. Stay for the music.",
+      af: "Gaan vir die klein gereggies. Bly vir die musiek.",
       de: "Kommen Sie für die kleinen Gerichte. Bleiben Sie für die Musik.",
       fr: "Venez pour les petites assiettes. Restez pour la musique.",
       da: "Kom for småretterne. Bliv for musikken.",
     },
     perk: {
       en: "Show your room key — free welcome drink with any meal.",
+      af: "Wys jou kamersleutel — gratis verwelkomingsdrankie met enige ete.",
       de: "Zeigen Sie Ihren Zimmerschlüssel — ein kostenloses Willkommensgetränk zu jeder Mahlzeit.",
       fr: "Présentez votre clé de chambre — boisson de bienvenue offerte avec tout repas.",
       da: "Vis din værelsesnøgle — gratis velkomstdrink til ethvert måltid.",
@@ -1144,12 +1274,14 @@ export const restaurants: Restaurant[] = [
     image: "/images/restaurants/villa-47.jpg",
     description: {
       en: "Bree Street brunch institution — light-filled rooms, all-day breakfast, and one of the city's best coffee menus.",
+      af: "'n Bree Street-instelling vir laatontbyt — liggevulde vertrekke, heeldag-ontbyt en een van die stad se beste koffiekaarte.",
       de: "Eine Brunch-Institution in der Bree Street — lichtdurchflutete Räume, ganztägiges Frühstück und eine der besten Kaffeekarten der Stadt.",
       fr: "Une institution du brunch sur Bree Street — salles baignées de lumière, petit-déjeuner toute la journée et l'une des meilleures cartes de café de la ville.",
       da: "En brunch-institution på Bree Street — lyse rum, morgenmad hele dagen og en af byens bedste kaffekort.",
     },
     hostNote: {
       en: "Order the breakfast platter. Sit on the rooftop if there's space.",
+      af: "Bestel die ontbytbord. Sit op die dak as daar plek is.",
       de: "Bestellen Sie die Frühstücksplatte. Setzen Sie sich auf die Dachterrasse, wenn Platz ist.",
       fr: "Commandez l'assiette de petit-déjeuner. Installez-vous sur le toit s'il y a de la place.",
       da: "Bestil morgenmadstallerkenen. Sæt dig på taget, hvis der er plads.",
@@ -1163,12 +1295,14 @@ export const restaurants: Restaurant[] = [
     image: "/images/restaurants/belthazar.jpg",
     description: {
       en: "Award-winning V&A Waterfront steakhouse and wine bar, with a 600-strong wine list and unobstructed harbour views.",
+      af: "Bekroonde V&A Waterfront-steakhuis en wynkroeg, met 'n wynkaart van 600 wyne en onbelemmerde hawe-uitsigte.",
       de: "Preisgekröntes Steakhouse und Weinbar an der V&A Waterfront, mit einer 600 Positionen umfassenden Weinkarte und freiem Blick auf den Hafen.",
       fr: "Steakhouse et bar à vin primé du V&A Waterfront, avec une carte des vins de 600 références et une vue dégagée sur le port.",
       da: "Prisbelønnet steakhouse og vinbar ved V&A Waterfront med et vinkort på 600 vine og uhindret udsigt over havnen.",
     },
     hostNote: {
       en: "The wine list runs 600 bottles deep — trust the sommelier.",
+      af: "Die wynkaart strek 600 bottels diep — vertrou die wynkenner.",
       de: "Die Weinkarte umfasst 600 Flaschen — vertrauen Sie dem Sommelier.",
       fr: "La carte des vins compte 600 bouteilles — faites confiance au sommelier.",
       da: "Vinkortet rummer 600 flasker — stol på sommelieren.",
@@ -1186,6 +1320,10 @@ export const recommendationsLetter = {
       "Cape Town gives you more than somewhere to stay. The mountain, the harbour, the streets that change neighbourhood every two blocks. We've been here long enough to know where to send guests, and what to skip.",
       "This is our short list — three views every guest should see at least once, and three places we'd recommend to a friend for breakfast, lunch, and dinner. None of them pay us to be here.",
     ],
+    af: [
+      "Kaapstad gee jou meer as net 'n plek om te bly. Die berg, die hawe, die strate wat elke twee blokke van buurt verander. Ons is lank genoeg hier om te weet waarheen om gaste te stuur, en wat om oor te slaan.",
+      "Dit is ons kort lys — drie uitsigte wat elke gas ten minste een keer behoort te sien, en drie plekke wat ons aan 'n vriend sou aanbeveel vir ontbyt, middagete en aandete. Nie een van hulle betaal ons om hier te wees nie.",
+    ],
     de: [
       "Kapstadt bietet Ihnen mehr als nur einen Ort zum Übernachten. Der Berg, der Hafen, die Straßen, die alle zwei Blocks das Viertel wechseln. Wir sind lange genug hier, um zu wissen, wohin wir Gäste schicken und was man auslassen sollte.",
       "Dies ist unsere kurze Liste — drei Aussichten, die jeder Gast mindestens einmal sehen sollte, und drei Orte, die wir einem Freund für Frühstück, Mittag- und Abendessen empfehlen würden. Keiner von ihnen bezahlt uns dafür, hier zu stehen.",
@@ -1202,6 +1340,7 @@ export const recommendationsLetter = {
   signature: "— Niles",
   signatureRole: {
     en: "Founder & Chief Elephant Wrangler",
+    af: "Stigter & Hoof Olifant Tammer",
     de: "Gründer & Chef-Elefantenflüsterer",
     fr: "Fondateur et grand maître des éléphants",
     da: "Grundlægger og chef-elefantpasser",

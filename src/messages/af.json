@@ -32,7 +32,7 @@
     "faq": "Vrae",
     "contact": "Kontak",
     "bookNow": "Bespreek Nou",
-    "propertyApplication": "Word 'n Gasheer"
+    "propertyApplication": "Word 'n Vennoot"
   },
   "recommendations": {
     "title": "Buite die Voordeur",
@@ -396,7 +396,7 @@
       "bookingPolicy": "Besprekingsbeleid",
       "privacyPolicy": "Privaatheidsbeleid",
       "terms": "Terme & Voorwaardes",
-      "propertyApplication": "Word 'n Gasheer"
+      "propertyApplication": "Word 'n Vennoot"
     },
     "newsletter": {
       "title": "Volg Ons",
@@ -531,7 +531,7 @@
           },
           "parking": {
             "q": "Is daar parkering beskikbaar?",
-            "a": "Ja, veilige parkering is beskikbaar teen 'n bykomende koste van R75 per nag."
+            "a": "Parkering verskil per eiendom: The Docklands bied gratis veilige parkering; 16 On Bree het veilige parkering teen R75 per nag; The Rose het veilige parkering teen 'n bykomende koste; en Flamingo Express het nie parkering op die perseel nie. Sien die eiendom se bladsy vir besonderhede."
           }
         }
       },
@@ -661,9 +661,9 @@
       "ogDescription": "Direkte bespreking gee die beste tarief en persoonlike diens."
     },
     "propertyApplication": {
-      "title": "Word 'n Gasheer",
+      "title": "Word 'n Vennoot",
       "description": "Lys jou Kaapstadse woonstel by Urban Elephant — handgekies, pragtig gebrand en ten volle bestuur. Doen aansoek om by die familie aan te sluit.",
-      "ogTitle": "Word 'n Gasheer by Urban Elephant",
+      "ogTitle": "Word 'n Vennoot by Urban Elephant",
       "ogDescription": "Sluit aan by 'n florerende Kaapstadse hotelhandelsmerk. Ons brand, vul en bestuur jou woonstel ten volle."
     }
   },
@@ -695,7 +695,7 @@
   },
   "propertyApplication": {
     "hero": {
-      "eyebrow": "Word 'n Gasheer",
+      "eyebrow": "Word 'n Vennoot",
       "title": "Sluit aan by die Urban Elephant-familie",
       "description": "As jy graag by 'n florerende, groeiende hotelhandelsmerk in Kaapstad wil aansluit, sal ons baie bly wees om van jou te hoor. Ons woonstelle word handgekies — kyk hieronder na wat ons soek.",
       "cta": "Doen aansoek"
@@ -750,7 +750,7 @@
     },
     "form": {
       "eyebrow": "Aansoek",
-      "heading": "Doen aansoek om gasheer te word",
+      "heading": "Doen aansoek om vennoot te word",
       "subheading": "Vertel ons van jou woonstel en ons span sal in aanraking kom.",
       "name": "Volle Naam",
       "phone": "Telefoonnommer",

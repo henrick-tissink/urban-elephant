@@ -32,7 +32,7 @@
     "faq": "Häufige Fragen",
     "contact": "Kontakt",
     "bookNow": "Jetzt buchen",
-    "propertyApplication": "Gastgeber werden"
+    "propertyApplication": "Partner werden"
   },
   "recommendations": {
     "title": "Jenseits der Haustür",
@@ -396,7 +396,7 @@
       "bookingPolicy": "Buchungsrichtlinie",
       "privacyPolicy": "Datenschutzrichtlinie",
       "terms": "Allgemeine Geschäftsbedingungen",
-      "propertyApplication": "Gastgeber werden"
+      "propertyApplication": "Partner werden"
     },
     "newsletter": {
       "title": "Folgen Sie uns",
@@ -531,7 +531,7 @@
           },
           "parking": {
             "q": "Gibt es Parkmöglichkeiten?",
-            "a": "Ja, sichere Parkplätze sind gegen einen Aufpreis von R75 pro Nacht verfügbar."
+            "a": "Parkmöglichkeiten variieren je nach Unterkunft: The Docklands bietet kostenlose gesicherte Parkplätze; 16 On Bree hat gesicherte Parkplätze für R75 pro Nacht; The Rose bietet gesicherte Parkplätze gegen einen Aufpreis; und Flamingo Express verfügt über keine hauseigenen Parkplätze. Einzelheiten finden Sie auf der Seite der jeweiligen Unterkunft."
           }
         }
       },
@@ -661,9 +661,9 @@
       "ogDescription": "Direktbuchung bietet den besten Preis und persönlichen Service."
     },
     "propertyApplication": {
-      "title": "Gastgeber werden",
+      "title": "Partner werden",
       "description": "Bieten Sie Ihr Apartment in Kapstadt mit Urban Elephant an — handverlesen, wunderschön gebrandet und vollständig verwaltet. Bewerben Sie sich und werden Sie Teil der Familie.",
-      "ogTitle": "Gastgeber bei Urban Elephant werden",
+      "ogTitle": "Partner bei Urban Elephant werden",
       "ogDescription": "Werden Sie Teil einer florierenden Hotelmarke in Kapstadt. Wir branden, vermieten und verwalten Ihr Apartment vollständig."
     }
   },
@@ -695,7 +695,7 @@
   },
   "propertyApplication": {
     "hero": {
-      "eyebrow": "Gastgeber werden",
+      "eyebrow": "Partner werden",
       "title": "Werden Sie Teil der Urban-Elephant-Familie",
       "description": "Wenn Sie sich einer aufstrebenden, wachsenden Hotelmarke in Kapstadt anschließen möchten, würden wir uns sehr freuen, von Ihnen zu hören. Unsere Apartments sind handverlesen — sehen Sie unten, worauf wir achten.",
       "cta": "Jetzt bewerben"
@@ -750,7 +750,7 @@
     },
     "form": {
       "eyebrow": "Bewerbung",
-      "heading": "Als Gastgeber bewerben",
+      "heading": "Als Partner bewerben",
       "subheading": "Erzählen Sie uns von Ihrem Apartment, und unser Team meldet sich bei Ihnen.",
       "name": "Vollständiger Name",
       "phone": "Telefonnummer",

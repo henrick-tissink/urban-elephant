@@ -65,7 +65,7 @@ ${tours.map(tourLine).join("\n")}
 - Check-in: from 15h00 (early check-in subject to availability).
 - Check-out: 10h30 (late check-out subject to availability).
 - WiFi: free, high-speed, suitable for remote work and streaming.
-- Parking: secure on-site parking available at R75 per night.
+- Parking: varies by property — free secure parking at The Docklands, R75/night at 16 On Bree, an additional charge at The Rose, and no on-site parking at Flamingo Express.
 - Air conditioning: in every apartment.
 - Housekeeping: on request; fresh towels every 3 days at no extra cost.
 - Laundry: washing machine in every apartment, with a starter pack of detergent.
