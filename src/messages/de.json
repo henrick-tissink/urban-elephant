@@ -31,7 +31,8 @@
     "about": "Über uns",
     "faq": "Häufige Fragen",
     "contact": "Kontakt",
-    "bookNow": "Jetzt buchen"
+    "bookNow": "Jetzt buchen",
+    "propertyApplication": "Gastgeber werden"
   },
   "recommendations": {
     "title": "Jenseits der Haustür",
@@ -394,7 +395,8 @@
       "viewAll": "Alle Unterkünfte ansehen",
       "bookingPolicy": "Buchungsrichtlinie",
       "privacyPolicy": "Datenschutzrichtlinie",
-      "terms": "Allgemeine Geschäftsbedingungen"
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "propertyApplication": "Gastgeber werden"
     },
     "newsletter": {
       "title": "Folgen Sie uns",
@@ -657,6 +659,12 @@
       "description": "Direktbuchung und Concierge-Anfragen für die Apartmenthotels von Urban Elephant.",
       "ogTitle": "Kontakt zu Urban Elephant",
       "ogDescription": "Direktbuchung bietet den besten Preis und persönlichen Service."
+    },
+    "propertyApplication": {
+      "title": "Gastgeber werden",
+      "description": "Bieten Sie Ihr Apartment in Kapstadt mit Urban Elephant an — handverlesen, wunderschön gebrandet und vollständig verwaltet. Bewerben Sie sich und werden Sie Teil der Familie.",
+      "ogTitle": "Gastgeber bei Urban Elephant werden",
+      "ogDescription": "Werden Sie Teil einer florierenden Hotelmarke in Kapstadt. Wir branden, vermieten und verwalten Ihr Apartment vollständig."
     }
   },
   "brand": {
@@ -684,5 +692,85 @@
     "credentials": "Auszeichnungen",
     "languageSuggestion": "Sprachvorschlag",
     "carHireBooking": "Enterprise Mietwagenbuchung"
+  },
+  "propertyApplication": {
+    "hero": {
+      "eyebrow": "Gastgeber werden",
+      "title": "Werden Sie Teil der Urban-Elephant-Familie",
+      "description": "Wenn Sie sich einer aufstrebenden, wachsenden Hotelmarke in Kapstadt anschließen möchten, würden wir uns sehr freuen, von Ihnen zu hören. Unsere Apartments sind handverlesen — sehen Sie unten, worauf wir achten.",
+      "cta": "Jetzt bewerben"
+    },
+    "criteria": {
+      "eyebrow": "Die Voraussetzungen",
+      "heading": "Worauf wir achten",
+      "subheading": "Unsere Apartments sind handverlesen. Einige Punkte helfen uns zu erkennen, ob Ihres gut zur Familie passt.",
+      "location": {
+        "title": "Lage",
+        "body": "Liegt Ihr Apartment im Zentrum von Kapstadt?"
+      },
+      "amenities": {
+        "title": "Ausstattung",
+        "body": "Verfügt Ihr Gebäude über Parkplätze und einen Außenpool?"
+      },
+      "branding": {
+        "title": "Branding",
+        "body": "Jedes Apartment wird einzigartig gebrandet und zu 100 % von uns verwaltet."
+      },
+      "availability": {
+        "title": "Verfügbarkeit",
+        "body": "Ist Ihr Apartment mindestens 48 Wochen im Jahr verfügbar?"
+      }
+    },
+    "handle": {
+      "eyebrow": "Rundum verwaltet",
+      "heading": "Wir kümmern uns um alles",
+      "subheading": "Vom ersten Foto bis zum letzten Check-out ist Ihr Apartment in guten Händen — und Ihre Gäste ebenso.",
+      "setup": {
+        "title": "Einrichtung & Möblierung",
+        "body": "Wir gestalten, möblieren und fotografieren Ihr Apartment, damit es bereit für Gäste ist."
+      },
+      "bookings": {
+        "title": "Buchungen & Erträge",
+        "body": "Wir füllen Ihren Kalender über alle Kanäle und holen das Beste aus Ihren Erträgen heraus."
+      },
+      "maintenance": {
+        "title": "Wartung & Pflege",
+        "body": "Reinigung, Instandhaltung und zuverlässige Dienstleister — alles erledigt, immer makellos."
+      },
+      "guests": {
+        "title": "Gäste & Branding",
+        "body": "Wir betreuen Ihre Gäste persönlich, unter einer Marke, die in Erinnerung bleibt."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Eigentümerstimmen",
+      "heading": "Von unseren Eigentümern",
+      "subheading": "Die Familien, die uns ihre Apartments anvertraut haben — in ihren eigenen Worten."
+    },
+    "form": {
+      "eyebrow": "Bewerbung",
+      "heading": "Als Gastgeber bewerben",
+      "subheading": "Erzählen Sie uns von Ihrem Apartment, und unser Team meldet sich bei Ihnen.",
+      "name": "Vollständiger Name",
+      "phone": "Telefonnummer",
+      "email": "E-Mail-Adresse",
+      "propertyLocation": "Lage der Immobilie",
+      "numberOfUnits": "Anzahl der Einheiten",
+      "propertyDescription": "Beschreibung der Immobilie",
+      "submit": "Bewerbung senden",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "successEyebrow": "Bewerbung gesendet",
+      "successHeading": "Vielen Dank, {name}.",
+      "successBody": "Wir haben Ihre Bewerbung erhalten und unser Team wird sich in Kürze bei Ihnen melden. Während Sie warten, schreiben Sie uns gerne direkt auf WhatsApp — wir antworten persönlich.",
+      "successWa": "WhatsApp Gästebetreuung",
+      "successAgain": "Weitere Bewerbung senden"
+    },
+    "contact": {
+      "heading": "Kontaktieren Sie unser Team",
+      "operations": "Betrieb & Reservierungen",
+      "afterHours": "Gästebetreuung außerhalb der Geschäftszeiten",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Mo-Fr 9-17 Uhr"
+    }
   }
 }

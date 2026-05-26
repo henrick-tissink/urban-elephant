@@ -31,7 +31,8 @@
     "about": "About",
     "faq": "FAQs",
     "contact": "Contact",
-    "bookNow": "Book Now"
+    "bookNow": "Book Now",
+    "propertyApplication": "Host With Us"
   },
   "recommendations": {
     "title": "Beyond the Front Door",
@@ -394,7 +395,8 @@
       "viewAll": "View All Properties",
       "bookingPolicy": "Booking Policy",
       "privacyPolicy": "Privacy Policy",
-      "terms": "Terms & Conditions"
+      "terms": "Terms & Conditions",
+      "propertyApplication": "Host With Us"
     },
     "newsletter": {
       "title": "Follow Us",
@@ -657,6 +659,12 @@
       "description": "Direct booking and concierge enquiries for Urban Elephant apartment hotels.",
       "ogTitle": "Contact Urban Elephant",
       "ogDescription": "Direct booking gets the best rate and personal service."
+    },
+    "propertyApplication": {
+      "title": "Host With Us",
+      "description": "List your Cape Town apartment with Urban Elephant — handpicked, beautifully branded and fully managed. Apply to join the family.",
+      "ogTitle": "Host With Urban Elephant",
+      "ogDescription": "Join a thriving Cape Town hotel brand. We brand, fill and fully manage your apartment."
     }
   },
   "brand": {
@@ -684,5 +692,85 @@
     "credentials": "Credentials",
     "languageSuggestion": "Language suggestion",
     "carHireBooking": "Enterprise car hire booking"
+  },
+  "propertyApplication": {
+    "hero": {
+      "eyebrow": "Become a Host",
+      "title": "Join the Urban Elephant family",
+      "description": "If you're looking to join a thriving, growing hotel brand in Cape Town, we'd be thrilled to hear from you. Our apartments are handpicked — take a look at what we look for below.",
+      "cta": "Apply to host"
+    },
+    "criteria": {
+      "eyebrow": "The fit",
+      "heading": "What we look for",
+      "subheading": "Our apartments are handpicked. A few things help us know yours is a great fit for the family.",
+      "location": {
+        "title": "Location",
+        "body": "Is your apartment in central Cape Town?"
+      },
+      "amenities": {
+        "title": "Amenities",
+        "body": "Does your building have parking and an outdoor pool?"
+      },
+      "branding": {
+        "title": "Branding",
+        "body": "Every apartment is uniquely branded and 100% managed by us."
+      },
+      "availability": {
+        "title": "Availability",
+        "body": "Is your apartment available at least 48 weeks of the year?"
+      }
+    },
+    "handle": {
+      "eyebrow": "Fully managed",
+      "heading": "We take care of everything",
+      "subheading": "From the first photograph to the final checkout, your apartment is in good hands — and so are your guests.",
+      "setup": {
+        "title": "Setup & furnishing",
+        "body": "We style, furnish and photograph your apartment so it's ready to host."
+      },
+      "bookings": {
+        "title": "Bookings & revenue",
+        "body": "We fill your calendar across every channel and make the most of your returns."
+      },
+      "maintenance": {
+        "title": "Maintenance & care",
+        "body": "Cleaning, upkeep and trusted service providers — all handled, always spotless."
+      },
+      "guests": {
+        "title": "Guests & branding",
+        "body": "We host your guests personally, under a brand they remember."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Owner stories",
+      "heading": "From our owners",
+      "subheading": "The families who have trusted us with their apartments — in their own words."
+    },
+    "form": {
+      "eyebrow": "Apply",
+      "heading": "Apply to host",
+      "subheading": "Tell us about your apartment and our team will be in touch.",
+      "name": "Full Name",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "propertyLocation": "Property Location",
+      "numberOfUnits": "Number of Units",
+      "propertyDescription": "Property Description",
+      "submit": "Send Application",
+      "error": "Something went wrong. Please try again.",
+      "successEyebrow": "Application sent",
+      "successHeading": "Thank you, {name}.",
+      "successBody": "We've received your application and our team will be in touch shortly. While you wait, feel free to message us directly on WhatsApp — we answer personally.",
+      "successWa": "WhatsApp Guest Relations",
+      "successAgain": "Submit another application"
+    },
+    "contact": {
+      "heading": "Get in touch with our team",
+      "operations": "Operations & Reservations",
+      "afterHours": "After Hours Guest Relations",
+      "hours": "Office Hours",
+      "hoursValue": "Mon-Fri 9am-5pm"
+    }
   }
 }

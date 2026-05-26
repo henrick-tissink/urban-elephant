@@ -31,7 +31,8 @@
     "about": "Oor Ons",
     "faq": "Vrae",
     "contact": "Kontak",
-    "bookNow": "Bespreek Nou"
+    "bookNow": "Bespreek Nou",
+    "propertyApplication": "Word 'n Gasheer"
   },
   "recommendations": {
     "title": "Buite die Voordeur",
@@ -394,7 +395,8 @@
       "viewAll": "Sien Alle Eiendomme",
       "bookingPolicy": "Besprekingsbeleid",
       "privacyPolicy": "Privaatheidsbeleid",
-      "terms": "Terme & Voorwaardes"
+      "terms": "Terme & Voorwaardes",
+      "propertyApplication": "Word 'n Gasheer"
     },
     "newsletter": {
       "title": "Volg Ons",
@@ -657,6 +659,12 @@
       "description": "Direkte besprekings en concierge-navrae vir Urban Elephant-woonstelhotelle.",
       "ogTitle": "Kontak Urban Elephant",
       "ogDescription": "Direkte bespreking gee die beste tarief en persoonlike diens."
+    },
+    "propertyApplication": {
+      "title": "Word 'n Gasheer",
+      "description": "Lys jou Kaapstadse woonstel by Urban Elephant — handgekies, pragtig gebrand en ten volle bestuur. Doen aansoek om by die familie aan te sluit.",
+      "ogTitle": "Word 'n Gasheer by Urban Elephant",
+      "ogDescription": "Sluit aan by 'n florerende Kaapstadse hotelhandelsmerk. Ons brand, vul en bestuur jou woonstel ten volle."
     }
   },
   "brand": {
@@ -684,5 +692,85 @@
     "credentials": "Geloofsbriewe",
     "languageSuggestion": "Taalvoorstel",
     "carHireBooking": "Enterprise motorhuur-bespreking"
+  },
+  "propertyApplication": {
+    "hero": {
+      "eyebrow": "Word 'n Gasheer",
+      "title": "Sluit aan by die Urban Elephant-familie",
+      "description": "As jy graag by 'n florerende, groeiende hotelhandelsmerk in Kaapstad wil aansluit, sal ons baie bly wees om van jou te hoor. Ons woonstelle word handgekies — kyk hieronder na wat ons soek.",
+      "cta": "Doen aansoek"
+    },
+    "criteria": {
+      "eyebrow": "Die passing",
+      "heading": "Wat ons soek",
+      "subheading": "Ons woonstelle word handgekies. 'n Paar dinge help ons weet joune pas goed by die familie.",
+      "location": {
+        "title": "Ligging",
+        "body": "Is jou woonstel in sentrale Kaapstad?"
+      },
+      "amenities": {
+        "title": "Geriewe",
+        "body": "Het jou gebou parkering en 'n buitenshuise swembad?"
+      },
+      "branding": {
+        "title": "Handelsmerk",
+        "body": "Elke woonstel word uniek gebrand en 100% deur ons bestuur."
+      },
+      "availability": {
+        "title": "Beskikbaarheid",
+        "body": "Is jou woonstel ten minste 48 weke van die jaar beskikbaar?"
+      }
+    },
+    "handle": {
+      "eyebrow": "Ten volle bestuur",
+      "heading": "Ons sorg vir alles",
+      "subheading": "Van die eerste foto tot die laaste uitboek is jou woonstel in goeie hande — en jou gaste ook.",
+      "setup": {
+        "title": "Opstel & meublering",
+        "body": "Ons rig in, meubileer en fotografeer jou woonstel sodat dit gereed is om gaste te ontvang."
+      },
+      "bookings": {
+        "title": "Besprekings & inkomste",
+        "body": "Ons vul jou kalender oor elke kanaal en maak die meeste van jou opbrengste."
+      },
+      "maintenance": {
+        "title": "Instandhouding & sorg",
+        "body": "Skoonmaak, onderhoud en betroubare diensverskaffers — alles hanteer, altyd brandskoon."
+      },
+      "guests": {
+        "title": "Gaste & handelsmerk",
+        "body": "Ons ontvang jou gaste persoonlik, onder 'n handelsmerk wat hulle onthou."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Eienaarsverhale",
+      "heading": "Van ons eienaars",
+      "subheading": "Die families wat ons met hul woonstelle vertrou het — in hul eie woorde."
+    },
+    "form": {
+      "eyebrow": "Aansoek",
+      "heading": "Doen aansoek om gasheer te word",
+      "subheading": "Vertel ons van jou woonstel en ons span sal in aanraking kom.",
+      "name": "Volle Naam",
+      "phone": "Telefoonnommer",
+      "email": "E-posadres",
+      "propertyLocation": "Eiendom se Ligging",
+      "numberOfUnits": "Aantal Eenhede",
+      "propertyDescription": "Eiendomsbeskrywing",
+      "submit": "Stuur Aansoek",
+      "error": "Iets het verkeerd geloop. Probeer asseblief weer.",
+      "successEyebrow": "Aansoek gestuur",
+      "successHeading": "Dankie, {name}.",
+      "successBody": "Ons het jou aansoek ontvang en ons span sal binnekort in aanraking kom. Terwyl jy wag, stuur gerus vir ons 'n boodskap op WhatsApp — ons antwoord persoonlik.",
+      "successWa": "WhatsApp Gasteverhoudinge",
+      "successAgain": "Dien nog 'n aansoek in"
+    },
+    "contact": {
+      "heading": "Tree in aanraking met ons span",
+      "operations": "Bedryf & Besprekings",
+      "afterHours": "Na-ure Gasteverhoudinge",
+      "hours": "Kantoorure",
+      "hoursValue": "Ma-Vr 9vm-5nm"
+    }
   }
 }

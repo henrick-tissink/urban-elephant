@@ -20,6 +20,7 @@ const navigation = [
   { key: "theHerd", href: "/the-herd" },
   { key: "about", href: "/about" },
   { key: "faq", href: "/faq" },
+  { key: "propertyApplication", href: "/property-application" },
   { key: "contact", href: "/contact" },
 ];
 

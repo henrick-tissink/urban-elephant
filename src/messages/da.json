@@ -31,7 +31,8 @@
     "about": "Om os",
     "faq": "Ofte stillede spørgsmål",
     "contact": "Kontakt",
-    "bookNow": "Book nu"
+    "bookNow": "Book nu",
+    "propertyApplication": "Bliv vært"
   },
   "recommendations": {
     "title": "Uden for hoveddøren",
@@ -394,7 +395,8 @@
       "viewAll": "Se alle ejendomme",
       "bookingPolicy": "Bookingpolitik",
       "privacyPolicy": "Privatlivspolitik",
-      "terms": "Vilkår & betingelser"
+      "terms": "Vilkår & betingelser",
+      "propertyApplication": "Bliv vært"
     },
     "newsletter": {
       "title": "Følg os",
@@ -657,6 +659,12 @@
       "description": "Direkte booking og concierge-henvendelser for Urban Elephants lejlighedshoteller.",
       "ogTitle": "Kontakt Urban Elephant",
       "ogDescription": "Direkte booking giver den bedste pris og personlig service."
+    },
+    "propertyApplication": {
+      "title": "Bliv vært",
+      "description": "Udlej din lejlighed i Cape Town med Urban Elephant — håndplukket, smukt brandet og fuldt administreret. Ansøg om at blive en del af familien.",
+      "ogTitle": "Bliv vært hos Urban Elephant",
+      "ogDescription": "Bliv en del af et blomstrende hotelbrand i Cape Town. Vi brander, udlejer og administrerer din lejlighed fuldt ud."
     }
   },
   "brand": {
@@ -684,5 +692,85 @@
     "credentials": "Akkreditering",
     "languageSuggestion": "Sprogforslag",
     "carHireBooking": "Enterprise biludlejningsbooking"
+  },
+  "propertyApplication": {
+    "hero": {
+      "eyebrow": "Bliv vært",
+      "title": "Bliv en del af Urban Elephant-familien",
+      "description": "Hvis du gerne vil være en del af et blomstrende og voksende hotelbrand i Cape Town, vil vi meget gerne høre fra dig. Vores lejligheder er håndplukkede — se nedenfor, hvad vi kigger efter.",
+      "cta": "Ansøg nu"
+    },
+    "criteria": {
+      "eyebrow": "Kriterierne",
+      "heading": "Hvad vi kigger efter",
+      "subheading": "Vores lejligheder er håndplukkede. Et par ting hjælper os med at vide, om din passer godt ind i familien.",
+      "location": {
+        "title": "Beliggenhed",
+        "body": "Ligger din lejlighed i det centrale Cape Town?"
+      },
+      "amenities": {
+        "title": "Faciliteter",
+        "body": "Har din bygning parkering og en udendørs pool?"
+      },
+      "branding": {
+        "title": "Branding",
+        "body": "Hver lejlighed brandes unikt og administreres 100 % af os."
+      },
+      "availability": {
+        "title": "Tilgængelighed",
+        "body": "Er din lejlighed tilgængelig mindst 48 uger om året?"
+      }
+    },
+    "handle": {
+      "eyebrow": "Fuldt administreret",
+      "heading": "Vi tager os af alt",
+      "subheading": "Fra det første foto til den sidste udtjekning er din lejlighed i gode hænder — og det er dine gæster også.",
+      "setup": {
+        "title": "Indretning & møblering",
+        "body": "Vi indretter, møblerer og fotograferer din lejlighed, så den er klar til at modtage gæster."
+      },
+      "bookings": {
+        "title": "Bookinger & indtægter",
+        "body": "Vi fylder din kalender på tværs af alle kanaler og får mest muligt ud af dit afkast."
+      },
+      "maintenance": {
+        "title": "Vedligeholdelse & pleje",
+        "body": "Rengøring, vedligeholdelse og pålidelige serviceudbydere — alt håndteres, altid pletfrit."
+      },
+      "guests": {
+        "title": "Gæster & branding",
+        "body": "Vi tager personligt imod dine gæster under et brand, de husker."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Ejerhistorier",
+      "heading": "Fra vores ejere",
+      "subheading": "De familier, der har betroet os deres lejligheder — med deres egne ord."
+    },
+    "form": {
+      "eyebrow": "Ansøgning",
+      "heading": "Ansøg om at blive vært",
+      "subheading": "Fortæl os om din lejlighed, så kontakter vores team dig.",
+      "name": "Fulde navn",
+      "phone": "Telefonnummer",
+      "email": "E-mailadresse",
+      "propertyLocation": "Ejendommens beliggenhed",
+      "numberOfUnits": "Antal enheder",
+      "propertyDescription": "Beskrivelse af ejendommen",
+      "submit": "Send ansøgning",
+      "error": "Noget gik galt. Prøv venligst igen.",
+      "successEyebrow": "Ansøgning sendt",
+      "successHeading": "Tak, {name}.",
+      "successBody": "Vi har modtaget din ansøgning, og vores team kontakter dig snart. Mens du venter, er du velkommen til at skrive direkte til os på WhatsApp — vi svarer personligt.",
+      "successWa": "WhatsApp Gæsterelationer",
+      "successAgain": "Send en ny ansøgning"
+    },
+    "contact": {
+      "heading": "Kom i kontakt med vores team",
+      "operations": "Drift & Reservationer",
+      "afterHours": "Gæsterelationer uden for åbningstid",
+      "hours": "Åbningstider",
+      "hoursValue": "Man-fre 9-17"
+    }
   }
 }

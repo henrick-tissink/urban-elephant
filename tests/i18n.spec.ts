@@ -33,6 +33,15 @@ for (const { code, path, bcp47, og } of LOCALES) {
     expect(response?.status()).toBe(200);
     await expect(page.locator("html")).toHaveAttribute("lang", bcp47);
   });
+
+  test(`${code}: property-application page renders 200 with form`, async ({ page }) => {
+    const url = code === "en" ? "/property-application" : `/${code}/property-application`;
+    const response = await page.goto(url);
+    expect(response?.status()).toBe(200);
+    await expect(page.locator("html")).toHaveAttribute("lang", bcp47);
+    await expect(page.locator("h1")).toBeVisible();
+    await expect(page.locator("#apply form")).toBeVisible();
+  });
 }
 
 test("sitemap.xml lists all five hreflang variants for home", async ({ page }) => {

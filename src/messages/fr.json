@@ -31,7 +31,8 @@
     "about": "À propos",
     "faq": "FAQ",
     "contact": "Contact",
-    "bookNow": "Réserver"
+    "bookNow": "Réserver",
+    "propertyApplication": "Devenir hôte"
   },
   "recommendations": {
     "title": "Au-delà de la porte d'entrée",
@@ -394,7 +395,8 @@
       "viewAll": "Voir toutes les résidences",
       "bookingPolicy": "Politique de réservation",
       "privacyPolicy": "Politique de confidentialité",
-      "terms": "Conditions générales"
+      "terms": "Conditions générales",
+      "propertyApplication": "Devenir hôte"
     },
     "newsletter": {
       "title": "Suivez-nous",
@@ -657,6 +659,12 @@
       "description": "Réservation en direct et demandes auprès de la conciergerie pour les appart'hôtels Urban Elephant.",
       "ogTitle": "Contacter Urban Elephant",
       "ogDescription": "La réservation en direct offre le meilleur tarif et un service personnalisé."
+    },
+    "propertyApplication": {
+      "title": "Devenir hôte",
+      "description": "Confiez votre appartement du Cap à Urban Elephant — sélectionné avec soin, superbement personnalisé et entièrement géré. Postulez pour rejoindre la famille.",
+      "ogTitle": "Devenir hôte avec Urban Elephant",
+      "ogDescription": "Rejoignez une marque hôtelière florissante du Cap. Nous personnalisons, remplissons et gérons entièrement votre appartement."
     }
   },
   "brand": {
@@ -684,5 +692,85 @@
     "credentials": "Accréditations",
     "languageSuggestion": "Suggestion de langue",
     "carHireBooking": "Réservation de location de voiture Enterprise"
+  },
+  "propertyApplication": {
+    "hero": {
+      "eyebrow": "Devenir hôte",
+      "title": "Rejoignez la famille Urban Elephant",
+      "description": "Si vous souhaitez rejoindre une marque hôtelière florissante et en pleine croissance au Cap, nous serions ravis d'avoir de vos nouvelles. Nos appartements sont sélectionnés avec soin — découvrez ci-dessous ce que nous recherchons.",
+      "cta": "Postuler"
+    },
+    "criteria": {
+      "eyebrow": "Les critères",
+      "heading": "Ce que nous recherchons",
+      "subheading": "Nos appartements sont sélectionnés avec soin. Quelques éléments nous aident à savoir si le vôtre s'intégrera bien à la famille.",
+      "location": {
+        "title": "Emplacement",
+        "body": "Votre appartement se trouve-t-il dans le centre du Cap ?"
+      },
+      "amenities": {
+        "title": "Équipements",
+        "body": "Votre immeuble dispose-t-il d'un parking et d'une piscine extérieure ?"
+      },
+      "branding": {
+        "title": "Image de marque",
+        "body": "Chaque appartement bénéficie d'une identité unique et est géré à 100 % par nos soins."
+      },
+      "availability": {
+        "title": "Disponibilité",
+        "body": "Votre appartement est-il disponible au moins 48 semaines par an ?"
+      }
+    },
+    "handle": {
+      "eyebrow": "Entièrement géré",
+      "heading": "Nous nous occupons de tout",
+      "subheading": "De la première photo au dernier départ, votre appartement est entre de bonnes mains — et vos hôtes aussi.",
+      "setup": {
+        "title": "Aménagement & ameublement",
+        "body": "Nous décorons, meublons et photographions votre appartement pour qu'il soit prêt à accueillir."
+      },
+      "bookings": {
+        "title": "Réservations & revenus",
+        "body": "Nous remplissons votre calendrier sur tous les canaux et optimisons vos revenus."
+      },
+      "maintenance": {
+        "title": "Entretien & soin",
+        "body": "Ménage, entretien et prestataires de confiance — tout est pris en charge, toujours impeccable."
+      },
+      "guests": {
+        "title": "Hôtes & image de marque",
+        "body": "Nous accueillons personnellement vos hôtes, sous une marque dont ils se souviennent."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Témoignages de propriétaires",
+      "heading": "Nos propriétaires témoignent",
+      "subheading": "Les familles qui nous ont confié leurs appartements — avec leurs propres mots."
+    },
+    "form": {
+      "eyebrow": "Candidature",
+      "heading": "Postuler pour devenir hôte",
+      "subheading": "Parlez-nous de votre appartement et notre équipe vous contactera.",
+      "name": "Nom complet",
+      "phone": "Numéro de téléphone",
+      "email": "Adresse e-mail",
+      "propertyLocation": "Emplacement du bien",
+      "numberOfUnits": "Nombre d'unités",
+      "propertyDescription": "Description du bien",
+      "submit": "Envoyer la candidature",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "successEyebrow": "Candidature envoyée",
+      "successHeading": "Merci, {name}.",
+      "successBody": "Nous avons bien reçu votre candidature et notre équipe vous contactera sous peu. En attendant, n'hésitez pas à nous écrire directement sur WhatsApp — nous répondons personnellement.",
+      "successWa": "WhatsApp Relations clients",
+      "successAgain": "Envoyer une autre candidature"
+    },
+    "contact": {
+      "heading": "Contactez notre équipe",
+      "operations": "Exploitation & Réservations",
+      "afterHours": "Relations clients en dehors des heures d'ouverture",
+      "hours": "Heures d'ouverture",
+      "hoursValue": "Lun-Ven 9h-17h"
+    }
   }
 }

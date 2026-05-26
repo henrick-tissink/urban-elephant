@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/car-hire", changeFrequency: "weekly", priority: 0.7 },
     { path: "/about", changeFrequency: "monthly", priority: 0.6 },
     { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
+    { path: "/property-application", changeFrequency: "monthly", priority: 0.5 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.6 },
     ...properties.map(
       (p): Entry => ({
