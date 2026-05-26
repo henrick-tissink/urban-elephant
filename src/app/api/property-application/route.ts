@@ -133,8 +133,7 @@ export async function POST(request: NextRequest) {
   }
 
   const from = process.env.EMAIL_FROM || "Urban Elephant <noreply@urbanelephant.co.za>";
-  const to =
-    process.env.PROPERTY_APPLICATION_EMAIL_TO || "karin@urbanelephant.co.za";
+  const to = process.env.EMAIL_TO || "karin@urbanelephant.co.za";
 
   const resend = new Resend(apiKey);
 

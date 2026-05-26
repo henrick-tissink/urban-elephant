@@ -44,8 +44,8 @@ Follows the established `contact` page pattern exactly.
 | `src/components/property-application/property-application-content.tsx` | `"use client"` component. Renders all sections, owns the form (`react-hook-form` + `zod`), success state. |
 | `src/app/api/property-application/route.ts` | `POST` endpoint. Clone of `/api/contact/route.ts` with the owner-application schema, a branded HTML+text email, Resend send, tag `property-application`. |
 
-**Email routing:** sends to `process.env.PROPERTY_APPLICATION_EMAIL_TO`, falling back
-to `karin@urbanelephant.co.za`. `from` reuses `EMAIL_FROM`
+**Email routing:** reuses the existing contact-form env vars — `EMAIL_TO`
+(fallback `karin@urbanelephant.co.za`) and `EMAIL_FROM`
 (`Urban Elephant <noreply@urbanelephant.co.za>`). `replyTo` = applicant email.
 
 ## Page sections
@@ -141,5 +141,4 @@ propertyDescription: string, min 10, max 1000
 ## Open items / follow-ups
 
 - Brochure download deferred until a PDF exists.
-- `PROPERTY_APPLICATION_EMAIL_TO` env var should be documented in `.env.example` if
-  one exists; otherwise the `karin@` fallback covers production.
+- Applications reuse the existing `EMAIL_TO` / `EMAIL_FROM` env vars (no new config).
