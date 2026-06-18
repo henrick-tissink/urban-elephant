@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -24,6 +24,15 @@ const navigation = [
   { key: "contact", href: "/contact" },
 ];
 
+// Primary items stay in the bar; secondary items collapse into a "More" dropdown
+// so the row never overflows into the logo on laptop widths.
+const primaryNavigation = navigation.filter(
+  (item) => !["carHire", "propertyApplication"].includes(item.key),
+);
+const moreNavigation = navigation.filter((item) =>
+  ["carHire", "propertyApplication"].includes(item.key),
+);
+
 export function Header() {
   const t = useTranslations("navigation");
   const ta = useTranslations("a11y");
@@ -32,6 +41,9 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [moreOpen, setMoreOpen] = useState(false);
+  const moreRef = useRef<HTMLDivElement>(null);
+  const moreActive = moreNavigation.some((item) => item.href === pathname);
 
   const openPicker = () => {
     setIsMobileMenuOpen(false);
@@ -48,7 +60,18 @@ export function Header() {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setMoreOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (moreRef.current && !moreRef.current.contains(event.target as Node)) {
+        setMoreOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <>
@@ -92,8 +115,8 @@ export function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              {navigation.map((item, index) => (
+            <div className="hidden xl:flex items-center gap-5 2xl:gap-6">
+              {primaryNavigation.map((item, index) => (
                 <motion.div
                   key={item.key}
                   initial={{ opacity: 0, y: -10 }}
@@ -103,7 +126,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "text-sm font-bold tracking-wide uppercase transition-colors duration-300 hover:text-[var(--color-brand-anchor)]",
+                      "text-sm font-bold tracking-wide uppercase whitespace-nowrap transition-colors duration-300 hover:text-[var(--color-brand-anchor)]",
                       isScrolled ? "text-[#24272a]" : "text-white",
                       pathname === item.href && "text-[var(--color-brand-anchor)]"
                     )}
@@ -112,6 +135,60 @@ export function Header() {
                   </Link>
                 </motion.div>
               ))}
+
+              {/* More dropdown — holds secondary nav items */}
+              <motion.div
+                ref={moreRef}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: primaryNavigation.length * 0.1 }}
+                className="relative"
+              >
+                <button
+                  type="button"
+                  onClick={() => setMoreOpen((prev) => !prev)}
+                  aria-expanded={moreOpen}
+                  aria-haspopup="true"
+                  className={cn(
+                    "flex items-center gap-1 text-sm font-bold tracking-wide uppercase whitespace-nowrap transition-colors duration-300 hover:text-[var(--color-brand-anchor)]",
+                    isScrolled ? "text-[#24272a]" : "text-white",
+                    (moreOpen || moreActive) && "text-[var(--color-brand-anchor)]"
+                  )}
+                >
+                  {t("more")}
+                  <ChevronDown
+                    className={cn(
+                      "w-4 h-4 transition-transform duration-300",
+                      moreOpen && "rotate-180"
+                    )}
+                  />
+                </button>
+                <AnimatePresence>
+                  {moreOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 8 }}
+                      transition={{ duration: 0.15 }}
+                      className="absolute right-0 top-full mt-3 min-w-[200px] rounded-xl bg-white shadow-lg ring-1 ring-black/5 py-2"
+                    >
+                      {moreNavigation.map((item) => (
+                        <Link
+                          key={item.key}
+                          href={item.href}
+                          onClick={() => setMoreOpen(false)}
+                          className={cn(
+                            "block px-4 py-2.5 text-sm font-bold tracking-wide uppercase whitespace-nowrap text-[#24272a] transition-colors hover:bg-black/[0.04] hover:text-[var(--color-brand-anchor)]",
+                            pathname === item.href && "text-[var(--color-brand-anchor)]"
+                          )}
+                        >
+                          {t(item.key)}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0 }}
@@ -144,7 +221,7 @@ export function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className="lg:hidden relative z-10 p-2"
+              className="xl:hidden relative z-10 p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={ta("toggleMenu")}
             >
