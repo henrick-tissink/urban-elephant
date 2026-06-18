@@ -116,7 +116,7 @@ const amenities = (names: string[]) =>
   names.map((name) => ({ name: { en: name, ...(AMENITY_I18N[name] ?? {}) } }));
 
 export const siteSettings: SiteSettings = {
-  siteName: "Urban Elephant",
+  siteName: "Urban Elephant Hotel and Tours",
   contact: {
     email: "karin@urbanelephant.co.za",
     phone: "+27 21 300 1044",

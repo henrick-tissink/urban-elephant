@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Urban Elephant — Luxury Apartment Hotels in Cape Town",
-    short_name: "Urban Elephant",
+    short_name: "Urban Elephant Hotel and Tours",
     description:
       "Family-owned, TGCSA-graded luxury apartment hotels in Cape Town. Hotel comfort, design-led spaces, professional management.",
     start_url: "/",

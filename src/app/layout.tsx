@@ -21,8 +21,8 @@ const biko = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za"),
-  authors: [{ name: "Urban Elephant" }],
-  creator: "Urban Elephant",
+  authors: [{ name: "Urban Elephant Hotel and Tours" }],
+  creator: "Urban Elephant Hotel and Tours",
   robots: {
     index: true,
     follow: true,
