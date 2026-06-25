@@ -352,6 +352,8 @@
       "message": "Besked",
       "property": "Interesseret ejendom",
       "selectProperty": "Vælg en ejendom",
+      "tourInterest": "Tur du forespørger om",
+      "tourSubject": "Turforespørgsel: {tour}",
       "dates": "Foretrukne datoer",
       "guests": "Antal gæster",
       "submit": "Send besked",

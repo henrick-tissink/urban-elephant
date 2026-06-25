@@ -6,6 +6,7 @@ import type { Locale } from "@/i18n/routing";
 
 type Props = {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ tour?: string }>;
 };
 
 export async function generateMetadata({
@@ -17,9 +18,16 @@ export async function generateMetadata({
   return pageMetadata("seo.contact", "/contact", locale as Locale);
 }
 
-export default async function ContactPage({ params }: Props) {
+export default async function ContactPage({ params, searchParams }: Props) {
   const { locale } = await params;
+  const { tour } = await searchParams;
   setRequestLocale(locale);
 
-  return <ContactPageContent settings={siteSettings} properties={properties} />;
+  return (
+    <ContactPageContent
+      settings={siteSettings}
+      properties={properties}
+      initialTour={tour}
+    />
+  );
 }

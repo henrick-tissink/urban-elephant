@@ -9,6 +9,7 @@ const contactSchema = z.object({
   subject: z.string().min(3, "Subject must be at least 3 characters"),
   message: z.string().min(10, "Message must be at least 10 characters"),
   property: z.string().optional(),
+  tour: z.string().optional(),
   dates: z.string().optional(),
   guests: z.number().optional(),
 });
@@ -26,7 +27,7 @@ function esc(input: string): string {
 }
 
 function buildHtml(data: ContactPayload): string {
-  const { name, email, phone, subject, message, property, dates, guests } = data;
+  const { name, email, phone, subject, message, property, tour, dates, guests } = data;
   const row = (label: string, value?: string | number) =>
     value
       ? `<tr><td style="padding:8px 0;color:#6b6b6b;font-size:13px;width:140px;vertical-align:top">${esc(label)}</td><td style="padding:8px 0;color:#24272a;font-size:14px;vertical-align:top">${esc(String(value))}</td></tr>`
@@ -59,6 +60,7 @@ function buildHtml(data: ContactPayload): string {
             <td style="padding:8px 32px 20px 32px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0">
                 ${row("Subject", subject)}
+                ${row("Tour of interest", tour)}
                 ${row("Property of interest", property)}
                 ${row("Preferred dates", dates)}
                 ${row("Number of guests", guests)}
@@ -91,7 +93,7 @@ function buildHtml(data: ContactPayload): string {
 }
 
 function buildText(data: ContactPayload): string {
-  const { name, email, phone, subject, message, property, dates, guests } = data;
+  const { name, email, phone, subject, message, property, tour, dates, guests } = data;
   return [
     "NEW CONTACT FORM SUBMISSION — Urban Elephant",
     "",
@@ -100,6 +102,7 @@ function buildText(data: ContactPayload): string {
     phone ? `Phone:   ${phone}` : null,
     "",
     `Subject:  ${subject}`,
+    tour ? `Tour:     ${tour}` : null,
     property ? `Property: ${property}` : null,
     dates ? `Dates:    ${dates}` : null,
     guests ? `Guests:   ${guests}` : null,

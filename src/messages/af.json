@@ -352,6 +352,8 @@
       "message": "Boodskap",
       "property": "Belangstellende Eiendom",
       "selectProperty": "Kies 'n eiendom",
+      "tourInterest": "Toer waaroor jy navraag doen",
+      "tourSubject": "Toernavraag: {tour}",
       "dates": "Voorkeur Datums",
       "guests": "Aantal Gaste",
       "submit": "Stuur Boodskap",

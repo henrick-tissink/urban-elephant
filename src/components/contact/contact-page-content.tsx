@@ -18,6 +18,7 @@ const GUEST_RELATIONS_WHATSAPP = "27726188140";
 function buildWaPrefill(data: ContactFormData): string {
   const lines = [
     `Dear Guest Relations, this is ${data.name} — I just sent a message via the website.`,
+    data.tour ? `Tour: ${data.tour}` : null,
     data.property ? `Property: ${data.property}` : null,
     `Subject: ${data.subject}`,
   ].filter(Boolean) as string[];
@@ -31,6 +32,7 @@ const contactSchema = z.object({
   subject: z.string().min(3, "Subject must be at least 3 characters"),
   message: z.string().min(10, "Message must be at least 10 characters"),
   property: z.string().optional(),
+  tour: z.string().optional(),
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -38,9 +40,10 @@ type ContactFormData = z.infer<typeof contactSchema>;
 interface ContactPageContentProps {
   settings: SiteSettings | null;
   properties: PropertyCard[];
+  initialTour?: string;
 }
 
-export function ContactPageContent({ settings, properties }: ContactPageContentProps) {
+export function ContactPageContent({ settings, properties, initialTour }: ContactPageContentProps) {
   const t = useTranslations("contact");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState<ContactFormData | null>(null);
@@ -52,6 +55,10 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
     formState: { errors },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
+    defaultValues: {
+      tour: initialTour || "",
+      subject: initialTour ? t("form.tourSubject", { tour: initialTour }) : "",
+    },
   });
 
   const onSubmit = async (data: ContactFormData) => {
@@ -133,6 +140,15 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
                 </div>
               ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+                <input type="hidden" {...register("tour")} />
+                {initialTour && (
+                  <div className="border border-[var(--color-brand-soft)] bg-[var(--color-brand-wash)] px-4 py-3">
+                    <p className="text-xs text-[var(--color-brand-anchor)] uppercase tracking-[0.2em] mb-1">
+                      {t("form.tourInterest")}
+                    </p>
+                    <p className="text-base text-[#24272a]">{initialTour}</p>
+                  </div>
+                )}
                 <div className="grid sm:grid-cols-2 gap-6">
                   <Input
                     label={t("form.name")}
@@ -173,6 +189,7 @@ export function ContactPageContent({ settings, properties }: ContactPageContentP
 
                 <Input
                   label={t("form.subject")}
+                  defaultValue={initialTour ? t("form.tourSubject", { tour: initialTour }) : undefined}
                   {...register("subject")}
                   error={errors.subject?.message}
                 />

@@ -160,7 +160,14 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                     className="w-full mb-4"
                     asChild
                   >
-                    <Link href="/contact">{t("bookTour")}</Link>
+                    <Link
+                      href={{
+                        pathname: "/contact",
+                        query: { tour: pickLocale(tour.name, locale) },
+                      }}
+                    >
+                      {t("bookTour")}
+                    </Link>
                   </Button>
 
                   <p className="text-xs text-stone-500 text-center">

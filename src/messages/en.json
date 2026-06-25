@@ -352,6 +352,8 @@
       "message": "Message",
       "property": "Interested Property",
       "selectProperty": "Select a property",
+      "tourInterest": "Tour you're enquiring about",
+      "tourSubject": "Tour enquiry: {tour}",
       "dates": "Preferred Dates",
       "guests": "Number of Guests",
       "submit": "Send Message",

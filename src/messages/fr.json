@@ -352,6 +352,8 @@
       "message": "Message",
       "property": "Résidence qui vous intéresse",
       "selectProperty": "Choisissez une résidence",
+      "tourInterest": "Excursion qui vous intéresse",
+      "tourSubject": "Demande d'excursion : {tour}",
       "dates": "Dates souhaitées",
       "guests": "Nombre de personnes",
       "submit": "Envoyer le message",

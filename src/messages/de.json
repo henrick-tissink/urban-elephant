@@ -352,6 +352,8 @@
       "message": "Nachricht",
       "property": "Interessierende Unterkunft",
       "selectProperty": "Unterkunft auswählen",
+      "tourInterest": "Tour, die Sie anfragen",
+      "tourSubject": "Touranfrage: {tour}",
       "dates": "Bevorzugte Daten",
       "guests": "Anzahl der Gäste",
       "submit": "Nachricht senden",
