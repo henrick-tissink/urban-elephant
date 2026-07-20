@@ -125,13 +125,13 @@ export async function pageMetadata(
       siteName: "Urban Elephant Hotel and Tours",
       title: t("ogTitle"),
       description: t("ogDescription"),
-      images: [{ url: "/images/site/og-v2.jpg", width: 1200, height: 630 }],
+      images: [{ url: "/images/site/og-v3.jpg", width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: t("ogTitle"),
       description: t("ogDescription"),
-      images: ["/images/site/og-v2.jpg"],
+      images: ["/images/site/og-v3.jpg"],
     },
   };
 }
@@ -147,7 +147,7 @@ export function detailPageMetadata(args: {
   const alternates = routing.locales
     .filter((l) => l !== args.locale)
     .map((l) => LOCALE_TO_OG[l]);
-  const image = args.image ?? "/images/site/og-v2.jpg";
+  const image = args.image ?? "/images/site/og-v3.jpg";
   return {
     title: brandedTitle(args.title),
     description: args.description,
