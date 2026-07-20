@@ -1,7 +1,7 @@
 import { routing } from "@/i18n/routing";
 
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://urbanelephant.co.za";
 
 function joinPath(path: string): string {
   if (!path || path === "/") return "";

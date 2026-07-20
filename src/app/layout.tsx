@@ -20,7 +20,7 @@ const biko = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.urbanelephant.co.za"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://urbanelephant.co.za"),
   // Brand every page's <title>. Pages set a bare title (e.g. "About") and Next
   // appends the suffix → "About | Urban Elephant Hotel and Tours". Titles that
   // already carry the brand opt out via `title.absolute` (see i18n-content.ts).
