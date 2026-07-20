@@ -8,10 +8,16 @@ import { ScrollReveal } from "@/components/animations/scroll-reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
 import { BookingPicker } from "@/components/property/booking-picker";
 import { properties } from "@/data/content";
+import { track } from "@/lib/analytics";
 
 export function CTASection() {
   const t = useTranslations("cta");
   const [pickerOpen, setPickerOpen] = useState(false);
+
+  const openPicker = () => {
+    track("book_now_open", { source: "cta_section" });
+    setPickerOpen(true);
+  };
 
   return (
     <section className="relative py-32 lg:py-40 overflow-hidden bg-[#24272a]">
@@ -42,7 +48,7 @@ export function CTASection() {
                 <Button
                   variant="primary"
                   size="xl"
-                  onClick={() => setPickerOpen(true)}
+                  onClick={openPicker}
                 >
                   {t("primary")}
                 </Button>

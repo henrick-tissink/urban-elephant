@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { BookingPicker } from "@/components/property/booking-picker";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { properties } from "@/data/content";
+import { track } from "@/lib/analytics";
 import Image from "next/image";
 
 const navigation = [
@@ -46,6 +47,7 @@ export function Header() {
   const moreActive = moreNavigation.some((item) => item.href === pathname);
 
   const openPicker = () => {
+    track("book_now_open", { source: "header" });
     setIsMobileMenuOpen(false);
     setPickerOpen(true);
   };

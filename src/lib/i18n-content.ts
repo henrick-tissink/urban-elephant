@@ -96,6 +96,13 @@ export function formatIndicative(zarAmount: number, locale: Locale): string | un
   return fx.format(zarAmount);
 }
 
+// The root layout applies a "%s | Urban Elephant Hotel and Tours" title
+// template. A title that already carries the brand (home, property pages)
+// must opt out of the suffix, so we emit it as an absolute title instead.
+function brandedTitle(title: string): Metadata["title"] {
+  return title.includes("Urban Elephant") ? { absolute: title } : title;
+}
+
 export async function pageMetadata(
   namespace: string,
   path: string,
@@ -107,7 +114,7 @@ export async function pageMetadata(
     .filter((l) => l !== locale)
     .map((l) => LOCALE_TO_OG[l]);
   return {
-    title: t("title"),
+    title: brandedTitle(t("title")),
     description: t("description"),
     alternates: buildAlternates(path, locale),
     openGraph: {
@@ -142,7 +149,7 @@ export function detailPageMetadata(args: {
     .map((l) => LOCALE_TO_OG[l]);
   const image = args.image ?? "/images/site/og.jpg";
   return {
-    title: args.title,
+    title: brandedTitle(args.title),
     description: args.description,
     alternates: buildAlternates(args.path, args.locale),
     openGraph: {

@@ -10,6 +10,7 @@ import { AwardBadge } from "@/components/property/award-badge";
 import type { Property } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import { pickOptional } from "@/lib/i18n-content";
+import { track } from "@/lib/analytics";
 
 interface Props {
   open: boolean;
@@ -101,7 +102,10 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                         href={property.bookingUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={onClose}
+                        onClick={() => {
+                          track("booking_handoff", { property: property.name });
+                          onClose();
+                        }}
                         className="group block rounded-md overflow-hidden border border-stone-200 hover:border-[var(--color-brand-anchor)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-anchor)] focus:ring-offset-2 transition-colors"
                       >
                         <div className="relative aspect-[5/3] w-full bg-stone-100 overflow-hidden">

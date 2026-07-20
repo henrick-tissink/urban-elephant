@@ -9,6 +9,7 @@ import { ScrollReveal, StaggerChildren, StaggerItem } from "@/components/animati
 import type { Tour } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import { pickLocale, pickOptional, formatZar } from "@/lib/i18n-content";
+import { track } from "@/lib/analytics";
 
 interface TourDetailContentProps {
   tour: Tour;
@@ -165,6 +166,11 @@ export function TourDetailContent({ tour }: TourDetailContentProps) {
                         pathname: "/contact",
                         query: { tour: pickLocale(tour.name, locale) },
                       }}
+                      onClick={() =>
+                        track("tour_enquiry_click", {
+                          tour: pickLocale(tour.name, locale),
+                        })
+                      }
                     >
                       {t("bookTour")}
                     </Link>

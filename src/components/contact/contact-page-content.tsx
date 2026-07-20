@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollReveal } from "@/components/animations/scroll-reveal";
+import { track } from "@/lib/analytics";
 import type { SiteSettings, PropertyCard } from "@/types";
 
 const GUEST_RELATIONS_WHATSAPP = "27726188140";
@@ -72,6 +73,11 @@ export function ContactPageContent({ settings, properties, initialTour }: Contac
 
       if (!response.ok) throw new Error("Failed to send");
 
+      track("enquiry_submit", {
+        property: data.property || undefined,
+        tour: data.tour || undefined,
+        subject: data.subject,
+      });
       setSubmitted(data);
       reset();
     } catch {
@@ -128,6 +134,7 @@ export function ContactPageContent({ settings, properties, initialTour }: Contac
                         href={buildWaPrefill(submitted)}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => track("whatsapp_click", { source: "enquiry_success" })}
                       >
                         <MessageCircle className="w-4 h-4 mr-2" />
                         {t("form.successWa")}
@@ -262,6 +269,7 @@ export function ContactPageContent({ settings, properties, initialTour }: Contac
                             href={`https://wa.me/${settings.contact.whatsapp.replace(/\D/g, "")}`}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => track("whatsapp_click", { source: "contact_info" })}
                             className="text-[#24272a] hover:text-[var(--color-brand-anchor)] transition-colors"
                           >
                             {settings.contact.whatsapp}

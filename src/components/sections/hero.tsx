@@ -9,6 +9,7 @@ import { TextReveal } from "@/components/animations/text-reveal";
 import { MagneticButton } from "@/components/animations/magnetic-button";
 import { BookingPicker } from "@/components/property/booking-picker";
 import { properties } from "@/data/content";
+import { track } from "@/lib/analytics";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -18,8 +19,31 @@ export function Hero() {
   const [isMuted, setIsMuted] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
+  // Only load the background video on larger screens that haven't asked to
+  // reduce motion. Phones and data-savers get the poster still instead — no
+  // multi-MB download over cellular, and the poster is the LCP either way.
+  const [enableVideo, setEnableVideo] = useState(false);
 
-  // Attempt to play video on mount - handles browser autoplay policies
+  useEffect(() => {
+    if (typeof window === "undefined" || !window.matchMedia) return;
+    const big = window.matchMedia("(min-width: 768px)");
+    const motionOk = window.matchMedia("(prefers-reduced-motion: no-preference)");
+    const update = () => setEnableVideo(big.matches && motionOk.matches);
+    update();
+    big.addEventListener("change", update);
+    motionOk.addEventListener("change", update);
+    return () => {
+      big.removeEventListener("change", update);
+      motionOk.removeEventListener("change", update);
+    };
+  }, []);
+
+  const openPicker = () => {
+    track("book_now_open", { source: "hero" });
+    setPickerOpen(true);
+  };
+
+  // Attempt to play video once it's mounted - handles browser autoplay policies
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -44,7 +68,7 @@ export function Hero() {
     return () => {
       video.removeEventListener("canplay", attemptPlay);
     };
-  }, []);
+  }, [enableVideo]);
 
   const togglePlay = async () => {
     const video = videoRef.current;
@@ -90,19 +114,23 @@ export function Hero() {
           style={{ backgroundImage: "url(/images/hero-poster.jpg)" }}
         />
 
-        <video
-          ref={videoRef}
-          muted
-          loop
-          playsInline
-          onLoadedData={() => setVideoLoaded(true)}
-          onPlay={() => setVideoLoaded(true)}
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-            videoLoaded ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <source src="/videos/hero.mp4" type="video/mp4" />
-        </video>
+        {enableVideo && (
+          <video
+            ref={videoRef}
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/hero-poster.jpg"
+            onLoadedData={() => setVideoLoaded(true)}
+            onPlay={() => setVideoLoaded(true)}
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+              videoLoaded ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <source src="/videos/hero.mp4" type="video/mp4" />
+          </video>
+        )}
 
         {/* Gradient Overlay — strengthened top scrim so the header logo and
             pink tagline keep contrast against bright/golden video frames */}
@@ -146,7 +174,7 @@ export function Hero() {
               <Button
                 variant="primary"
                 size="lg"
-                onClick={() => setPickerOpen(true)}
+                onClick={openPicker}
               >
                 {t("secondaryCta")}
               </Button>
@@ -164,7 +192,8 @@ export function Hero() {
           </motion.p>
         </div>
 
-        {/* Video Controls - Glass morphism style */}
+        {/* Video Controls - Glass morphism style (only when the video is shown) */}
+        {enableVideo && (
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -194,6 +223,7 @@ export function Hero() {
             )}
           </button>
         </motion.div>
+        )}
 
         {/* Scroll Indicator */}
         <motion.button
