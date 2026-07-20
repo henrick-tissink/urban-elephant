@@ -14,7 +14,11 @@ export function Analytics() {
   return (
     <>
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+        // Load the gtag library under the GA4 id so the measurement id appears
+        // in the page source — this is what Google Search Console's "Google
+        // Analytics" verification method looks for. One library serves both
+        // GA4 and Ads; each is activated by its own gtag('config', …) below.
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`}
         strategy="afterInteractive"
       />
       <Script id="gtag-init" strategy="afterInteractive">
