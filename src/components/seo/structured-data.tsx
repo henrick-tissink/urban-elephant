@@ -48,7 +48,7 @@ export function organizationSchema() {
       "@type": "ImageObject",
       url: `${SITE_URL}/logo.svg`,
     },
-    image: `${SITE_URL}/images/site/og.jpg`,
+    image: `${SITE_URL}/images/site/og-v2.jpg`,
     description:
       "Family-owned, officially TGCSA-graded luxury apartment hotels in Cape Town. Hotel comfort, design-led spaces, and the consistency of professional management.",
     email: siteSettings.contact.email,
