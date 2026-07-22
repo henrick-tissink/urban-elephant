@@ -400,7 +400,8 @@
       "bookingPolicy": "Buchungsrichtlinie",
       "privacyPolicy": "Datenschutzrichtlinie",
       "terms": "Allgemeine Geschäftsbedingungen",
-      "propertyApplication": "Partner werden"
+      "propertyApplication": "Partner werden",
+      "givingBack": "Soziales Engagement"
     },
     "newsletter": {
       "title": "Folgen Sie uns",

@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/tours", changeFrequency: "weekly", priority: 0.8 },
     { path: "/recommendations", changeFrequency: "monthly", priority: 0.7 },
     { path: "/car-hire", changeFrequency: "weekly", priority: 0.7 },
+    { path: "/giving-back", changeFrequency: "monthly", priority: 0.5 },
     { path: "/about", changeFrequency: "monthly", priority: 0.6 },
     { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
     { path: "/property-application", changeFrequency: "monthly", priority: 0.5 },

@@ -283,6 +283,29 @@ a, button {
   color: #ffffff;
 }
 
+/* Giving Back — night-sky star field (Rachel's Wishes). Twinkles only when
+   the visitor hasn't asked to reduce motion. */
+.rw-star {
+  position: absolute;
+  border-radius: 9999px;
+  background: #ffffff;
+  opacity: 0.25;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .rw-star {
+    animation: rw-twinkle 4.5s ease-in-out infinite;
+  }
+}
+@keyframes rw-twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
 /* Pink button styles */
 .btn-pink {
   background-color: #ff00ff;
