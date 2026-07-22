@@ -18,6 +18,7 @@ import type { FaqEntry } from "@/lib/property-faq";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
 import { pickLocale, pickOptional, formatIndicative, formatZar } from "@/lib/i18n-content";
+import { track } from "@/lib/analytics";
 
 interface PropertyDetailContentProps {
   property: Property;
@@ -296,6 +297,12 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 href={property.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() =>
+                  track("booking_handoff", {
+                    property: property.name,
+                    source: "property_page",
+                  })
+                }
                 className="text-[var(--color-brand-anchor)] hover:opacity-70 transition-opacity text-sm mt-2 inline-block"
               >
                 {t("checkAvailability")} →
@@ -524,6 +531,12 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
               href={property.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() =>
+                track("booking_handoff", {
+                  property: property.name,
+                  source: "property_sticky",
+                })
+              }
             >
               {t("checkAvailability")}
               <ExternalLink className="w-4 h-4 ml-2" />

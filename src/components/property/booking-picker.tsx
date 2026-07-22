@@ -107,7 +107,10 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => {
-                          track("booking_handoff", { property: property.name });
+                          track("booking_handoff", {
+                            property: property.name,
+                            source: "picker",
+                          });
                           onClose();
                         }}
                         className="group block rounded-md overflow-hidden border border-stone-200 hover:border-[var(--color-brand-anchor)] focus:outline-none focus:ring-2 focus:ring-[var(--color-brand-anchor)] focus:ring-offset-2 transition-colors"

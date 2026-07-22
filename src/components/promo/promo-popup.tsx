@@ -7,6 +7,7 @@ import { X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { promoConfig } from "@/data/promo";
+import { track } from "@/lib/analytics";
 
 const STORAGE_PREFIX = "ue_promo_dismissed_";
 
@@ -108,7 +109,10 @@ export function PromoPopup() {
                   href={t("ctaHref")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={dismiss}
+                  onClick={() => {
+                    track("booking_handoff", { source: "promo" });
+                    dismiss();
+                  }}
                 >
                   {t("cta")}
                 </a>
