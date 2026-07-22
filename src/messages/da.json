@@ -66,7 +66,7 @@
     "slipLine": "Mærket der elsker dig tilbage.",
     "secondaryCta": "Book direkte",
     "scrollDown": "Rul for at udforske",
-    "bestRate": "Bedste pris-garanti",
+    "bestRate": "Pride Promise · 10% rabat",
     "beatRate": "Finder du en billigere pris online? Send en e-mail til karin@urbanelephant.co.za, så slår vi den med 10%.",
     "pauseVideo": "Sæt video på pause",
     "playVideo": "Afspil video",
@@ -78,7 +78,8 @@
     "title": "Vælg dit lejlighedshotel.",
     "subtitle": "Fire officielt klassificerede lejlighedshoteller i Cape Town. Vælg, hvor du gerne vil bo, så fører vi dig direkte til bookingsiden.",
     "cardCta": "Book denne",
-    "close": "Luk"
+    "close": "Luk",
+    "prideNote": "Pride Promise: du sparer 10% ved at booke direkte hos os."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels-kampagne",
@@ -104,8 +105,8 @@
     "intro": "At booke direkte hos Urban Elephant betyder en bedre pris, et rigtigt menneske i den anden ende og de små ekstraer, som hotelbookingsider ikke kan formidle.",
     "items": {
       "rates": {
-        "title": "Bedste priser garanteret",
-        "description": "Finder du en billigere pris online, slår vi den med 10%."
+        "title": "Vores Pride Promise",
+        "description": "10% rabat på enhver pris, hver gang — kun når du booker direkte hos os. Ingen koder, ingen betingelser."
       },
       "offers": {
         "title": "Eksklusive tilbud",
@@ -417,7 +418,7 @@
     "secondary": "Se ejendomme",
     "trust": {
       "graded": "Officielt TGCSA-klassificeret",
-      "bestRate": "Bedste pris-garanti",
+      "bestRate": "10% rabat ved direkte booking",
       "flexible": "Fleksibel afbestilling"
     }
   },

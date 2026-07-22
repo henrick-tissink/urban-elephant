@@ -66,7 +66,7 @@
     "slipLine": "La marque qui vous le rend bien.",
     "secondaryCta": "Réserver en direct",
     "scrollDown": "Faites défiler pour explorer",
-    "bestRate": "Garantie du meilleur tarif",
+    "bestRate": "Pride Promise · 10 % de réduction",
     "beatRate": "Vous trouvez un tarif moins cher en ligne ? Envoyez un e-mail à karin@urbanelephant.co.za et nous le battrons de 10 %.",
     "pauseVideo": "Mettre la vidéo en pause",
     "playVideo": "Lire la vidéo",
@@ -78,7 +78,8 @@
     "title": "Choisissez votre appart'hôtel.",
     "subtitle": "Quatre appart'hôtels officiellement classés au Cap. Choisissez où vous souhaitez séjourner et nous vous emmenons directement vers sa page de réservation.",
     "cardCta": "Réserver celui-ci",
-    "close": "Fermer"
+    "close": "Fermer",
+    "prideNote": "Pride Promise : vous économisez 10 % en réservant en direct avec nous."
   },
   "promo": {
     "imageAlt": "Promotion Urban Elephant Hotels",
@@ -104,8 +105,8 @@
     "intro": "Réserver en direct avec Urban Elephant, c'est un meilleur tarif, une vraie personne au bout du fil, et les petits plus que les sites de réservation hôtelière ne peuvent pas transmettre.",
     "items": {
       "rates": {
-        "title": "Meilleurs tarifs garantis",
-        "description": "Trouvez un tarif moins cher en ligne et nous le battrons de 10 %."
+        "title": "Notre Pride Promise",
+        "description": "10 % de réduction sur chaque tarif, à chaque fois — uniquement en réservant en direct avec nous. Sans code, sans condition."
       },
       "offers": {
         "title": "Offres exclusives",
@@ -417,7 +418,7 @@
     "secondary": "Voir les résidences",
     "trust": {
       "graded": "Officiellement classé par la TGCSA",
-      "bestRate": "Garantie du meilleur tarif",
+      "bestRate": "10 % de réduction en direct",
       "flexible": "Annulation flexible"
     }
   },

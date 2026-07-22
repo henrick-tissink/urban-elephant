@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { AwardBadge } from "@/components/property/award-badge";
@@ -89,6 +89,10 @@ export function BookingPicker({ open, onClose, properties }: Props) {
               </h2>
               <p className="text-stone-500 text-sm leading-relaxed">
                 {t("subtitle")}
+              </p>
+              <p className="mt-4 inline-flex items-center gap-2 rounded-full bg-[var(--color-brand-wash)] px-3.5 py-1.5 text-[13px] font-medium text-[var(--color-brand-anchor)]">
+                <Check className="w-4 h-4 flex-shrink-0" />
+                {t("prideNote")}
               </p>
             </div>
 

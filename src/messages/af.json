@@ -66,7 +66,7 @@
     "slipLine": "Die handelsmerk wat jou terugliefhet.",
     "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
-    "bestRate": "Beste Tarief Waarborg",
+    "bestRate": "Pride Promise · 10% afslag",
     "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop.",
     "pauseVideo": "Onderbreek video",
     "playVideo": "Speel video",
@@ -78,7 +78,8 @@
     "title": "Kies jou woonstelhotel.",
     "subtitle": "Vier amptelik gegradeerde woonstelhotelle in Kaapstad. Kies waar jy wil bly en ons neem jou direk na sy besprekingsblad.",
     "cardCta": "Bespreek hierdie een",
-    "close": "Sluit"
+    "close": "Sluit",
+    "prideNote": "Pride Promise: jy spaar 10% deur direk by ons te bespreek."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promosie",
@@ -104,8 +105,8 @@
     "intro": "Bespreek direk by Urban Elephant vir 'n beter tarief, 'n regte mens aan die lyn, en die klein ekstras wat hotelbesprekingswebwerwe nie kan deurgee nie.",
     "items": {
       "rates": {
-        "title": "Beste Tariewe Gewaarborg",
-        "description": "Kry jy 'n laer tarief aanlyn? Ons klop dit met 10%."
+        "title": "Ons Pride Promise",
+        "description": "10% afslag op elke tarief, elke keer — net wanneer jy direk by ons bespreek. Geen kodes, geen kleinletters nie."
       },
       "offers": {
         "title": "Eksklusiewe Aanbiedinge",
@@ -417,7 +418,7 @@
     "secondary": "Sien Eiendomme",
     "trust": {
       "graded": "Amptelik TGCSA Gegradeer",
-      "bestRate": "Beste Tarief Waarborg",
+      "bestRate": "10% Afslag by Direkte Bespreking",
       "flexible": "Buigsame Kansellasie"
     }
   },

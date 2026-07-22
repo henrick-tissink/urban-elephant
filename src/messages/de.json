@@ -66,7 +66,7 @@
     "slipLine": "Die Marke, die Sie zurückliebt.",
     "secondaryCta": "Direkt buchen",
     "scrollDown": "Scrollen zum Entdecken",
-    "bestRate": "Bestpreisgarantie",
+    "bestRate": "Pride Promise · 10 % Rabatt",
     "beatRate": "Finden Sie online einen günstigeren Preis? Schreiben Sie an karin@urbanelephant.co.za und wir unterbieten ihn um 10 %.",
     "pauseVideo": "Video anhalten",
     "playVideo": "Video abspielen",
@@ -78,7 +78,8 @@
     "title": "Wählen Sie Ihr Apartmenthotel.",
     "subtitle": "Vier offiziell eingestufte Apartmenthotels in Kapstadt. Wählen Sie, wo Sie übernachten möchten, und wir bringen Sie direkt zur Buchungsseite.",
     "cardCta": "Dieses hier buchen",
-    "close": "Schließen"
+    "close": "Schließen",
+    "prideNote": "Pride Promise: Sie sparen 10 %, weil Sie direkt bei uns buchen."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels Promo",
@@ -104,8 +105,8 @@
     "intro": "Direkt bei Urban Elephant zu buchen bedeutet einen besseren Preis, einen echten Menschen am Telefon und die kleinen Extras, die Hotelbuchungsportale nicht weitergeben können.",
     "items": {
       "rates": {
-        "title": "Bestpreise garantiert",
-        "description": "Finden Sie online einen günstigeren Preis und wir unterbieten ihn um 10 %."
+        "title": "Unser Pride Promise",
+        "description": "10 % Rabatt auf jeden Preis, jedes Mal — nur bei Direktbuchung bei uns. Keine Codes, kein Kleingedrucktes."
       },
       "offers": {
         "title": "Exklusive Angebote",
@@ -417,7 +418,7 @@
     "secondary": "Unterkünfte ansehen",
     "trust": {
       "graded": "Offiziell TGCSA-eingestuft",
-      "bestRate": "Bestpreisgarantie",
+      "bestRate": "10 % Rabatt bei Direktbuchung",
       "flexible": "Flexible Stornierung"
     }
   },
