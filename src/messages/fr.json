@@ -67,7 +67,7 @@
     "secondaryCta": "Réserver en direct",
     "scrollDown": "Faites défiler pour explorer",
     "bestRate": "Pride Promise · 10 % de réduction",
-    "beatRate": "Vous trouvez un tarif moins cher en ligne ? Envoyez un e-mail à karin@urbanelephant.co.za et nous le battrons de 10 %.",
+    "beatRate": "Réservez en direct et économisez 10 % avec notre Pride Promise.",
     "pauseVideo": "Mettre la vidéo en pause",
     "playVideo": "Lire la vidéo",
     "muteVideo": "Couper le son",
@@ -96,8 +96,8 @@
     "gradedCertLabel": "Voir le certificat",
     "managedTitle": "Géré par des professionnels",
     "managedDescription": "Systèmes de niveau hôtelier, soin mené par le propriétaire",
-    "directTitle": "Meilleur tarif, réservé en direct",
-    "directDescription": "Nous l'égalons — ou le battons de 10 %"
+    "directTitle": "Notre Pride Promise",
+    "directDescription": "10 % de réduction, uniquement en direct"
   },
   "whyBookDirect": {
     "eyebrow": "POURQUOI RÉSERVER EN DIRECT",
@@ -180,7 +180,7 @@
     "faqMore": "D'autres questions ? Consultez la <faq>FAQ complète</faq> ou écrivez à <wa>WhatsApp Guest Relations</wa>.",
     "galleryEyebrow": "Galerie",
     "galleryHeading": "Plus de vues.",
-    "bookDirectGuarantee": "Réservez en direct · garantie du meilleur tarif",
+    "bookDirectGuarantee": "Pride Promise · 10 % en direct",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -204,7 +204,8 @@
       "tagline": "117 Strand Street",
       "description": "Découvrez The Rose — la dernière merveille d'Urban Elephant au 117 Strand Street, au Cap.",
       "body": "De la Montagne de la Table à Lion's Head, du coloré Bo-Kaap à l'immensité de l'Atlantique, le panorama à 360 degrés est véritablement exceptionnel. Un café au lever du soleil ou des vues au coucher du soleil ? Oui, volontiers."
-    }
+    },
+    "pridePromiseNote": "Pride Promise : 10 % de réduction en réservant en direct"
   },
   "tours": {
     "title": "Excursions & Expériences",

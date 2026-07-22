@@ -67,7 +67,7 @@
     "secondaryCta": "Book direkte",
     "scrollDown": "Rul for at udforske",
     "bestRate": "Pride Promise · 10% rabat",
-    "beatRate": "Finder du en billigere pris online? Send en e-mail til karin@urbanelephant.co.za, så slår vi den med 10%.",
+    "beatRate": "Book direkte og spar 10% med vores Pride Promise.",
     "pauseVideo": "Sæt video på pause",
     "playVideo": "Afspil video",
     "muteVideo": "Sluk for lyden",
@@ -96,8 +96,8 @@
     "gradedCertLabel": "Se certifikat",
     "managedTitle": "Professionelt drevet",
     "managedDescription": "Systemer på hotelniveau, ejerledet omsorg",
-    "directTitle": "Bedste pris, booket direkte",
-    "directDescription": "Vi matcher den — eller slår den med 10%"
+    "directTitle": "Vores Pride Promise",
+    "directDescription": "10% rabat, kun ved direkte booking"
   },
   "whyBookDirect": {
     "eyebrow": "HVORFOR BOOKE DIREKTE",
@@ -180,7 +180,7 @@
     "faqMore": "Flere spørgsmål? Se den <faq>fulde FAQ</faq> eller <wa>WhatsApp Guest Relations</wa>.",
     "galleryEyebrow": "Galleri",
     "galleryHeading": "Flere udsigter.",
-    "bookDirectGuarantee": "Book direkte · bedste pris-garanti",
+    "bookDirectGuarantee": "Pride Promise · 10% rabat direkte",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -204,7 +204,8 @@
       "tagline": "117 Strand Street",
       "description": "Mød The Rose - Urban Elephants seneste blikfang på 117 Strand Street, Cape Town.",
       "body": "Fra Taffelbjerget til Lion's Head, det farverige Bo-Kaap til det endeløse Atlanterhav, er 360-graders udsigten virkelig næste niveau. Morgenkaffe ved solopgang eller udsigt ved solnedgang? Ja tak."
-    }
+    },
+    "pridePromiseNote": "Pride Promise: 10% rabat ved direkte booking"
   },
   "tours": {
     "title": "Ture & oplevelser",

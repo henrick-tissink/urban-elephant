@@ -67,7 +67,7 @@
     "secondaryCta": "Direkt buchen",
     "scrollDown": "Scrollen zum Entdecken",
     "bestRate": "Pride Promise · 10 % Rabatt",
-    "beatRate": "Finden Sie online einen günstigeren Preis? Schreiben Sie an karin@urbanelephant.co.za und wir unterbieten ihn um 10 %.",
+    "beatRate": "Direkt buchen und mit unserem Pride Promise 10 % sparen.",
     "pauseVideo": "Video anhalten",
     "playVideo": "Video abspielen",
     "muteVideo": "Video stummschalten",
@@ -96,8 +96,8 @@
     "gradedCertLabel": "Zertifikat ansehen",
     "managedTitle": "Professionell verwaltet",
     "managedDescription": "Systeme auf Hotelniveau, eigentümergeführte Betreuung",
-    "directTitle": "Bester Preis, direkt gebucht",
-    "directDescription": "Wir ziehen mit — oder unterbieten ihn um 10 %"
+    "directTitle": "Unser Pride Promise",
+    "directDescription": "10 % Rabatt, nur bei Direktbuchung"
   },
   "whyBookDirect": {
     "eyebrow": "WARUM DIREKT BUCHEN",
@@ -180,7 +180,7 @@
     "faqMore": "Weitere Fragen? Sehen Sie die <faq>vollständigen FAQ</faq> oder schreiben Sie <wa>WhatsApp Guest Relations</wa>.",
     "galleryEyebrow": "Galerie",
     "galleryHeading": "Mehr Ansichten.",
-    "bookDirectGuarantee": "Direkt buchen · Bestpreisgarantie",
+    "bookDirectGuarantee": "Pride Promise · 10 % Rabatt direkt",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -204,7 +204,8 @@
       "tagline": "117 Strand Street",
       "description": "Lernen Sie The Rose kennen – Urban Elephants neuestes Highlight in der 117 Strand Street, Kapstadt.",
       "body": "Vom Tafelberg bis zum Lion's Head, vom farbenfrohen Bo-Kaap bis zum endlosen Atlantik – die 360-Grad-Kulisse ist wirklich auf einem ganz neuen Niveau. Kaffee bei Sonnenaufgang oder Ausblicke bei Sonnenuntergang? Ja, bitte."
-    }
+    },
+    "pridePromiseNote": "Pride Promise: 10 % Rabatt bei Direktbuchung"
   },
   "tours": {
     "title": "Touren & Erlebnisse",

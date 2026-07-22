@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Star } from "lucide-react";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -300,6 +300,13 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
               >
                 {t("checkAvailability")} →
               </a>
+              <p className="text-[var(--color-brand-anchor)] text-xs mt-3 flex items-center gap-1.5">
+                <Star
+                  className="w-3.5 h-3.5 fill-[var(--color-brand-anchor)] flex-shrink-0"
+                  aria-hidden
+                />
+                {t("pridePromiseNote")}
+              </p>
             </div>
           </div>
         </div>

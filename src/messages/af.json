@@ -67,7 +67,7 @@
     "secondaryCta": "Bespreek Direk",
     "scrollDown": "Rol om te verken",
     "bestRate": "Pride Promise · 10% afslag",
-    "beatRate": "Vind 'n goedkoper tarief aanlyn? E-pos karin@urbanelephant.co.za en ons sal dit met 10% klop.",
+    "beatRate": "Bespreek direk en spaar 10% met ons Pride Promise.",
     "pauseVideo": "Onderbreek video",
     "playVideo": "Speel video",
     "muteVideo": "Demp video",
@@ -96,8 +96,8 @@
     "gradedCertLabel": "Bekyk sertifikaat",
     "managedTitle": "Professioneel Bestuur",
     "managedDescription": "Hotel-gehalte stelsels, eienaar-gelei sorg",
-    "directTitle": "Beste Tarief, Direk Bespreek",
-    "directDescription": "Ons sal dit klop — of met 10% verbeter"
+    "directTitle": "Ons Pride Promise",
+    "directDescription": "10% afslag, net wanneer jy direk bespreek"
   },
   "whyBookDirect": {
     "eyebrow": "WAAROM DIREK BESPREEK",
@@ -180,7 +180,7 @@
     "faqMore": "Meer vrae? Sien die <faq>volledige Vrae</faq> of <wa>WhatsApp Guest Relations</wa>.",
     "galleryEyebrow": "Galery",
     "galleryHeading": "Meer uitsigte.",
-    "bookDirectGuarantee": "Bespreek direk · beste tarief waarborg",
+    "bookDirectGuarantee": "Pride Promise · 10% afslag direk",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -204,7 +204,8 @@
       "tagline": "117 Strand Straat",
       "description": "Ontmoet The Rose - Urban Elephant se nuutste blikvanger by 117 Strand Straat, Kaapstad.",
       "body": "Van Tafelberg tot Leeukop, die kleurvolle Bo-Kaap tot die eindelose Atlantiese Oseaan, die 360-grade toneel is ernstig volgende vlak. Sonopkoms koffie of sonsondergang uitsigte? Ja, asseblief."
-    }
+    },
+    "pridePromiseNote": "Pride Promise: 10% afslag wanneer jy direk bespreek"
   },
   "tours": {
     "title": "Toere & Ervarings",

@@ -67,7 +67,7 @@
     "secondaryCta": "Book Direct",
     "scrollDown": "Scroll to explore",
     "bestRate": "Pride Promise · 10% off",
-    "beatRate": "Find a cheaper rate online? Email karin@urbanelephant.co.za and we'll beat it by 10%.",
+    "beatRate": "Book direct and save 10% with our Pride Promise.",
     "pauseVideo": "Pause video",
     "playVideo": "Play video",
     "muteVideo": "Mute video",
@@ -96,8 +96,8 @@
     "gradedCertLabel": "View certificate",
     "managedTitle": "Professionally Managed",
     "managedDescription": "Hotel-grade systems, owner-led care",
-    "directTitle": "Best Rate, Booked Direct",
-    "directDescription": "We'll match it — or beat it by 10%"
+    "directTitle": "The Pride Promise",
+    "directDescription": "10% off, only when you book direct"
   },
   "whyBookDirect": {
     "eyebrow": "WHY BOOK DIRECT",
@@ -180,7 +180,7 @@
     "faqMore": "More questions? See the <faq>full FAQ</faq> or <wa>WhatsApp Guest Relations</wa>.",
     "galleryEyebrow": "Gallery",
     "galleryHeading": "More views.",
-    "bookDirectGuarantee": "Book direct · best rate guarantee",
+    "bookDirectGuarantee": "Pride Promise · 10% off direct",
     "onBree": {
       "name": "Urban Elephant on Bree",
       "tagline": "16 On Bree",
@@ -204,7 +204,8 @@
       "tagline": "117 Strand Street",
       "description": "Meet The Rose - Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
       "body": "From Table Mountain to Lion's Head, the colourful Bo-Kaap to the endless Atlantic, the 360 degree scenery is seriously next level. Sunrise coffee or sunset views? Yes, please."
-    }
+    },
+    "pridePromiseNote": "Pride Promise: 10% off when you book direct"
   },
   "tours": {
     "title": "Tours & Experiences",
