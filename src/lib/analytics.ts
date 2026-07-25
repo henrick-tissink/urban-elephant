@@ -19,6 +19,7 @@ export type AnalyticsEvent =
   | "booking_handoff" // clicked through to Nightsbridge for a specific property
   | "enquiry_submit" // submitted the contact/enquiry form
   | "whatsapp_click" // opened a WhatsApp conversation
+  | "call_click" // tapped a call button (reservation hotline)
   | "tour_enquiry_click"; // clicked "Book This Tour" through to the enquiry form
 
 export function track(event: AnalyticsEvent, params?: TrackParams): void {

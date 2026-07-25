@@ -7,6 +7,7 @@ import { LocaleBanner } from "@/components/global/locale-banner";
 import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/global/smooth-scroll";
 import { ScrollProgress } from "@/components/global/scroll-progress";
+import { ReservationHotline } from "@/components/global/reservation-hotline";
 import { Toaster } from "sonner";
 import { properties, siteSettings } from "@/data/content";
 
@@ -39,6 +40,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <Header />
         <main id="main" className="min-h-screen">{children}</main>
         <Footer settings={siteSettings} properties={properties} />
+        <ReservationHotline />
         <Toaster
           position="bottom-right"
           toastOptions={{

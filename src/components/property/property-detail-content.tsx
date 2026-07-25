@@ -69,10 +69,18 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
 
   const [showBookingBar, setShowBookingBar] = useState(false);
   useEffect(() => {
-    const handler = () => setShowBookingBar(window.scrollY > window.innerHeight * 0.6);
+    const handler = () => {
+      const show = window.scrollY > window.innerHeight * 0.6;
+      setShowBookingBar(show);
+      // Signals the reservation hotline to lift above the sticky bar (globals.css)
+      document.body.dataset.bookingBar = show ? "1" : "0";
+    };
     handler();
     window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+      delete document.body.dataset.bookingBar;
+    };
   }, []);
 
   const description = pickOptional(property.description, locale) ?? [];

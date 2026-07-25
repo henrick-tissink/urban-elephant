@@ -283,6 +283,15 @@ a, button {
   color: #ffffff;
 }
 
+/* Reservation hotline — lift above the property "book direct" sticky bar
+   when it's on screen (property-detail sets body[data-booking-bar="1"]). */
+.reservation-hotline {
+  transition: bottom 0.3s ease;
+}
+body[data-booking-bar="1"] .reservation-hotline {
+  bottom: 6rem;
+}
+
 /* Giving Back — night-sky star field (Rachel's Wishes). Twinkles only when
    the visitor hasn't asked to reduce motion. */
 .rw-star {
