@@ -242,17 +242,6 @@ export function Hero() {
             <ChevronDown className="w-6 h-6" />
           </motion.div>
         </motion.button>
-
-        {/* Best Rate Badge — restrained glass pill with anchor accent */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 2 }}
-          className="absolute bottom-24 right-6 hidden md:flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-2.5 rounded-full"
-        >
-          <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-anchor)]" />
-          <p className="text-[11px] uppercase tracking-[0.2em] text-white/90">{t("bestRate")}</p>
-        </motion.div>
       </div>
 
       <BookingPicker
