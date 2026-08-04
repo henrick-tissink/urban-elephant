@@ -51,6 +51,10 @@ export function ReservationHotline() {
     setProperty(currentPropertyName());
   }, [pathname]);
 
+  // next-intl's usePathname is locale-agnostic, so "/" covers /de, /fr and the
+  // rest without listing them.
+  const isHome = pathname === "/";
+
   const waHref = whatsappLink(
     property ? t("whatsappMessageProperty", { property }) : t("whatsappMessage"),
   );
@@ -102,7 +106,11 @@ export function ReservationHotline() {
         </a>
       </div>
 
-      {/* ---------- Tablet and up: labelled pills, bottom right ---------- */}
+      {/* ---------- Tablet and up: labelled pills, bottom right ----------
+          Not on the homepage. The hero there already carries the number,
+          WhatsApp and Book Now at full size, so these would be a quieter second
+          copy of the same offer on the one page that least needs it. */}
+      {!isHome && (
       <div className="reservation-hotline fixed bottom-5 right-5 z-[60] hidden flex-col items-end gap-3 sm:flex print:hidden">
         {openNow !== null && (
           <div className="flex items-center gap-2 rounded-full bg-white/95 px-3.5 py-1.5 text-[11px] font-semibold text-[#24272a] shadow-lg ring-1 ring-black/5 backdrop-blur">
@@ -151,6 +159,7 @@ export function ReservationHotline() {
           </a>
         )}
       </div>
+      )}
 
       <CallbackRequest
         open={callbackOpen}
