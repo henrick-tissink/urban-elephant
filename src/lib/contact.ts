@@ -8,9 +8,9 @@ export const PHONE_E164 = "+27213001044";
 /** How the number is printed on the page. Keep in step with the Google Business Profile. */
 export const PHONE_DISPLAY = "021 300 1044";
 /** wa.me target — international, no plus. */
-export const WHATSAPP_E164 = "27820097621";
+export const WHATSAPP_E164 = "27822224959";
 /** How the WhatsApp number is printed on the page. */
-export const WHATSAPP_DISPLAY = "082 009 7621";
+export const WHATSAPP_DISPLAY = "082 222 4959";
 
 /** Minutes past midnight, SAST. */
 export const HOTLINE_OPEN_MIN = 8 * 60 + 30; // 08:30
