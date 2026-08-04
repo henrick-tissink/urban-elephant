@@ -71,7 +71,9 @@
     "pauseVideo": "Sæt video på pause",
     "playVideo": "Afspil video",
     "muteVideo": "Sluk for lyden",
-    "unmuteVideo": "Tænd for lyden"
+    "unmuteVideo": "Tænd for lyden",
+    "callCta": "Ring {number}",
+    "callReassurance": "Bedste pris garanteret · Intet bookinggebyr · Bekræftet mens du er i røret"
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIREKTE",
@@ -79,7 +81,65 @@
     "subtitle": "Fire officielt klassificerede lejlighedshoteller i Cape Town. Vælg, hvor du gerne vil bo, så fører vi dig direkte til bookingsiden.",
     "cardCta": "Book denne",
     "close": "Luk",
-    "prideNote": "Pride Promise: du sparer 10% ved at booke direkte hos os."
+    "prideNote": "Pride Promise: du sparer 10% ved at booke direkte hos os.",
+    "hotlinePrompt": "Vil du hellere have et menneske til det?"
+  },
+  "rescue": {
+    "eyebrow": "STADIG I TVIVL?",
+    "title": "Lad os booke det for dig.",
+    "titleProperty": "Lad os booke {property} for dig.",
+    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen. Fortæl os, hvad du har brug for, så bekræfter vi det på et par minutter — bedste pris, intet bookinggebyr.",
+    "bodyClosed": "Vores reservationslinje åbner kl. 8.30. Skriv til os på WhatsApp, så vender vi tilbage med det samme — bedste pris, intet bookinggebyr.",
+    "call": "Ring {number}",
+    "whatsapp": "Book på WhatsApp",
+    "decline": "Nej tak, jeg kigger bare",
+    "close": "Luk",
+    "whatsappMessage": "Hej Urban Elephant — jeg prøvede at booke et ophold og kunne godt bruge hjælp.",
+    "whatsappMessageProperty": "Hej Urban Elephant — jeg prøvede at booke {property} og kunne godt bruge hjælp."
+  },
+  "hotline": {
+    "call": "Ring {number}",
+    "callShort": "Ring",
+    "callback": "Bed om at blive ringet op",
+    "callbackShort": "Ring mig op",
+    "whatsapp": "Book på WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "openNow": "Reservationer åbne nu",
+    "hours": "Reservationer · 8.30–20.00",
+    "menuNumber": "Reservationer · {number} · 8.30–20.00",
+    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold eller høre om jeres ture.",
+    "whatsappMessageProperty": "Hej Urban Elephant — jeg vil gerne booke {property}.",
+    "barLabel": "Reservationer",
+    "barHours": "Dagligt 8.30–20.00",
+    "barClosed": "Åbner kl. 8.30"
+  },
+  "callback": {
+    "eyebrow": "UDEN FOR ÅBNINGSTID",
+    "title": "Vi ringer dig op.",
+    "titleProperty": "Vi ringer dig op om {property}.",
+    "body": "Vores reservationslinje ({number}) åbner kl. 8.30. Læg dit nummer, så ringer vi til dig først på dagen — bedste pris, intet bookinggebyr.",
+    "nameLabel": "Dit navn",
+    "phoneLabel": "Dit telefonnummer",
+    "datesLabel": "Datoer du overvejer (valgfrit)",
+    "submit": "Bed om at blive ringet op",
+    "submitting": "Sender…",
+    "doneTitle": "Modtaget — vi vender tilbage.",
+    "doneBody": "En fra reservationen ringer til dig, så snart vi åbner kl. 8.30.",
+    "doneClose": "Luk",
+    "error": "Noget gik galt. Prøv WhatsApp i stedet.",
+    "close": "Luk"
+  },
+  "talkToUs": {
+    "eyebrow": "TAL MED OS",
+    "title": "Book hos et menneske.",
+    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen — hvilken der fanger morgensolen, hvilken der passer til en familie, hvad der er værd at opleve i nærheden. Fortæl os, hvad du har brug for, så bekræfter vi det på få minutter.",
+    "openNow": "Åbent nu — vi svarer normalt inden for et minut",
+    "closedNow": "Lukket nu — åbner igen kl. 8.30",
+    "hours": "Åbent dagligt 8.30–20.00",
+    "whatsappCta": "WhatsApp {number}",
+    "callbackCta": "Bed om at blive ringet op",
+    "promise": "Bedste pris garanteret · Intet bookinggebyr · Bekræftet mens du er i røret",
+    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels-kampagne",
@@ -205,7 +265,8 @@
       "description": "Mød The Rose - Urban Elephants seneste blikfang på 117 Strand Street, Cape Town.",
       "body": "Fra Taffelbjerget til Lion's Head, det farverige Bo-Kaap til det endeløse Atlanterhav, er 360-graders udsigten virkelig næste niveau. Morgenkaffe ved solopgang eller udsigt ved solnedgang? Ja tak."
     },
-    "pridePromiseNote": "Pride Promise: 10% rabat ved direkte booking"
+    "pridePromiseNote": "Pride Promise: 10% rabat ved direkte booking",
+    "bookShort": "Book"
   },
   "tours": {
     "title": "Ture & oplevelser",

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ExternalLink, Star } from "lucide-react";
+import { ExternalLink, Phone, Star } from "lucide-react";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { useTranslations, useLocale } from "next-intl";
 import { Button } from "@/components/ui/button";
@@ -18,7 +18,10 @@ import type { FaqEntry } from "@/lib/property-faq";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
 import { pickLocale, pickOptional, formatIndicative, formatZar } from "@/lib/i18n-content";
+import { recordBookingHandoff } from "@/lib/booking-handoff";
+import { WhatsAppIcon } from "@/components/atoms/whatsapp-icon";
 import { track } from "@/lib/analytics";
+import { PHONE_E164, PHONE_DISPLAY, whatsappLink } from "@/lib/contact";
 
 interface PropertyDetailContentProps {
   property: Property;
@@ -65,7 +68,17 @@ function PropertyFaqItem({ q, a }: { q: string; a: string }) {
 export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailContentProps) {
   const t = useTranslations("properties");
   const tCurrency = useTranslations("currency");
+  const tHotline = useTranslations("hotline");
   const locale = useLocale() as Locale;
+
+  // Publish which property is on screen so the global hotline (mounted above
+  // this page in the tree) can name it in its WhatsApp pre-fill.
+  useEffect(() => {
+    document.body.dataset.propertyName = property.name;
+    return () => {
+      delete document.body.dataset.propertyName;
+    };
+  }, [property.name]);
 
   const [showBookingBar, setShowBookingBar] = useState(false);
   useEffect(() => {
@@ -306,7 +319,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() =>
-                  track("booking_handoff", {
+                  recordBookingHandoff({
                     property: property.name,
                     source: "property_page",
                   })
@@ -522,8 +535,10 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
           showBookingBar ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="container mx-auto px-6 lg:px-12 py-4 flex items-center justify-between gap-4">
-          <div className="min-w-0">
+        <div className="container mx-auto px-6 lg:px-12 py-3 sm:py-4 flex items-center justify-between gap-3 sm:gap-4">
+          {/* The name only earns its space once there's room for it. On a phone
+              the three actions matter more than repeating the page title. */}
+          <div className="min-w-0 hidden sm:block">
             <p className="text-[10px] uppercase tracking-[0.3em] text-stone-400">
               {t("bookDirectGuarantee")}
             </p>
@@ -534,22 +549,60 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
               </span>
             </p>
           </div>
-          <Button variant="primary" size="lg" asChild>
+
+          {/* Call and WhatsApp sit alongside "check availability" so the hotline
+              is a co-primary route to a booking, not a footnote. */}
+          <div className="flex flex-1 items-center gap-2 sm:flex-none sm:gap-3">
             <a
-              href={property.bookingUrl}
+              href={`tel:${PHONE_E164}`}
+              onClick={() =>
+                track("call_click", {
+                  source: "property_sticky",
+                  property: property.name,
+                })
+              }
+              aria-label={tHotline("call", { number: PHONE_DISPLAY })}
+              className="flex h-11 flex-1 items-center justify-center gap-2 rounded-full border border-[var(--color-brand-anchor)] px-3 text-sm font-bold text-[var(--color-brand-anchor)] transition-colors hover:bg-[var(--color-brand-wash)] sm:flex-none sm:px-4"
+            >
+              <Phone className="w-4 h-4 flex-shrink-0" />
+              <span className="sm:hidden">{tHotline("callShort")}</span>
+            </a>
+            <a
+              href={whatsappLink(
+                tHotline("whatsappMessageProperty", { property: property.name }),
+              )}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() =>
-                track("booking_handoff", {
-                  property: property.name,
+                track("whatsapp_click", {
                   source: "property_sticky",
+                  property: property.name,
                 })
               }
+              aria-label={tHotline("whatsapp")}
+              className="flex h-11 flex-1 items-center justify-center gap-2 rounded-full border border-[#25D366] px-3 text-sm font-bold text-[#128C7E] transition-colors hover:bg-[#25D366]/10 sm:flex-none sm:px-4"
             >
-              {t("checkAvailability")}
-              <ExternalLink className="w-4 h-4 ml-2" />
+              <WhatsAppIcon className="w-4 h-4 flex-shrink-0" />
+              <span className="sm:hidden">{tHotline("whatsappShort")}</span>
             </a>
-          </Button>
+            <Button variant="primary" size="lg" asChild className="flex-[1.4] sm:flex-none">
+              <a
+                href={property.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() =>
+                  recordBookingHandoff({
+                    property: property.name,
+                    source: "property_sticky",
+                  })
+                }
+              >
+                <span className="sm:hidden">{t("bookShort")}</span>
+                <span className="hidden sm:inline">{t("checkAvailability")}</span>
+                <ExternalLink className="w-4 h-4 ml-2 hidden sm:inline" />
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
 

@@ -9,6 +9,7 @@ import { AboutPreview } from "@/components/sections/about-preview";
 import { Testimonials } from "@/components/sections/testimonials";
 import { ServicesPreview } from "@/components/sections/services-preview";
 import { CTASection } from "@/components/sections/cta-section";
+import { TalkToUs } from "@/components/sections/talk-to-us";
 import { PromoPopup } from "@/components/promo/promo-popup";
 import { getFeaturedProperties, getFeaturedReviews } from "@/data/content";
 import { pageMetadata } from "@/lib/i18n-content";
@@ -55,6 +56,7 @@ export default async function HomePage({ params }: Props) {
       <WhyBookDirect />
       <AboutPreview />
       <Testimonials reviews={reviews} />
+      <TalkToUs />
       <ServicesPreview />
       <CTASection />
       <PromoPopup />

@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX, ChevronDown, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { TextReveal } from "@/components/animations/text-reveal";
@@ -10,6 +10,7 @@ import { MagneticButton } from "@/components/animations/magnetic-button";
 import { BookingPicker } from "@/components/property/booking-picker";
 import { properties } from "@/data/content";
 import { track } from "@/lib/analytics";
+import { PHONE_E164, PHONE_DISPLAY } from "@/lib/contact";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -141,7 +142,9 @@ export function Hero() {
           the spirit of the old urbanelephant.co.za hero. The marketing copy
           that used to live here (subtitle paragraph, secondary CTA) is now
           carried by the sections below the fold. */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
+      {/* pt-9 offsets the fixed reservations bar so the hero's centred content
+          keeps the same clearance under the header as it had before the bar. */}
+      <div className="relative z-10 h-full pt-9 flex flex-col justify-center items-center text-center px-6">
         <div className="max-w-4xl">
           {/* Tagline */}
           <motion.p
@@ -168,18 +171,41 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="flex justify-center"
+            className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
           >
             <MagneticButton>
               <Button
                 variant="primary"
                 size="lg"
                 onClick={openPicker}
+                className="w-full sm:w-auto"
               >
                 {t("secondaryCta")}
               </Button>
             </MagneticButton>
+
+            {/* Booking by phone is a co-primary route, so it gets a button of
+                equal size — not a line of fine print underneath one. */}
+            <Button variant="outlineLight" size="lg" asChild className="w-full sm:w-auto">
+              <a
+                href={`tel:${PHONE_E164}`}
+                onClick={() => track("call_click", { source: "hero" })}
+              >
+                <Phone className="w-4 h-4" />
+                {t("callCta", { number: PHONE_DISPLAY })}
+              </a>
+            </Button>
           </motion.div>
+
+          {/* One quiet line of reassurance under the pair. */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.35, duration: 0.6 }}
+            className="mt-5 text-sm text-white/70 [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
+          >
+            {t("callReassurance")}
+          </motion.p>
 
           {/* Brand slip-line — Niles' marketing tagline, present on every hero */}
           <motion.p

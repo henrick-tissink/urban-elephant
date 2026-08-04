@@ -24,7 +24,7 @@ export function ScrollProgress() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-[2px] bg-[var(--color-brand-anchor)] origin-left z-50"
+      className="fixed top-9 left-0 right-0 h-[2px] bg-[var(--color-brand-anchor)] origin-left z-[56]"
       style={{
         scaleX,
         opacity: isVisible ? 1 : 0,

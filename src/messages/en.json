@@ -71,7 +71,9 @@
     "pauseVideo": "Pause video",
     "playVideo": "Play video",
     "muteVideo": "Mute video",
-    "unmuteVideo": "Unmute video"
+    "unmuteVideo": "Unmute video",
+    "callCta": "Call {number}",
+    "callReassurance": "Best rate guaranteed · No booking fee · Confirmed while you're on the call"
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIRECT",
@@ -79,7 +81,65 @@
     "subtitle": "Four officially graded apartment hotels in Cape Town. Choose where you'd like to stay and we'll take you straight to its booking page.",
     "cardCta": "Book this one",
     "close": "Close",
-    "prideNote": "Pride Promise: you're saving 10% by booking direct with us."
+    "prideNote": "Pride Promise: you're saving 10% by booking direct with us.",
+    "hotlinePrompt": "Rather have a human do it?"
+  },
+  "rescue": {
+    "eyebrow": "STILL DECIDING?",
+    "title": "Let us book it for you.",
+    "titleProperty": "Let us book {property} for you.",
+    "body": "Our reservations team knows every apartment in the group. Tell us what you need and we'll have it confirmed in a couple of minutes — best rate, no booking fee.",
+    "bodyClosed": "Our reservations line opens at 8:30am. Leave us a WhatsApp and we'll come straight back to you — best rate, no booking fee.",
+    "call": "Call {number}",
+    "whatsapp": "Book on WhatsApp",
+    "decline": "No thanks, I'm just browsing",
+    "close": "Close",
+    "whatsappMessage": "Hi Urban Elephant — I was trying to book a stay and could use a hand.",
+    "whatsappMessageProperty": "Hi Urban Elephant — I was trying to book {property} and could use a hand."
+  },
+  "hotline": {
+    "call": "Call {number}",
+    "callShort": "Call",
+    "callback": "Request a callback",
+    "callbackShort": "Callback",
+    "whatsapp": "Book on WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "openNow": "Reservations open now",
+    "hours": "Reservations · 8:30am–8pm",
+    "menuNumber": "Reservations · {number} · 8:30am–8pm",
+    "whatsappMessage": "Hi Urban Elephant — I'd like to book a stay or ask about your tours.",
+    "whatsappMessageProperty": "Hi Urban Elephant — I'd like to book {property}.",
+    "barLabel": "Reservations",
+    "barHours": "8:30am–8pm daily",
+    "barClosed": "Opens 8:30am"
+  },
+  "callback": {
+    "eyebrow": "AFTER HOURS",
+    "title": "We'll call you back.",
+    "titleProperty": "We'll call you back about {property}.",
+    "body": "Our reservations line ({number}) opens at 8:30am. Leave your number and we'll ring you first thing — best rate, no booking fee.",
+    "nameLabel": "Your name",
+    "phoneLabel": "Your phone number",
+    "datesLabel": "Dates you have in mind (optional)",
+    "submit": "Request my callback",
+    "submitting": "Sending…",
+    "doneTitle": "Got it — we'll be in touch.",
+    "doneBody": "Someone from reservations will call you as soon as we open at 8:30am.",
+    "doneClose": "Close",
+    "error": "Something went wrong. Please try WhatsApp instead.",
+    "close": "Close"
+  },
+  "talkToUs": {
+    "eyebrow": "TALK TO US",
+    "title": "Book with a human.",
+    "body": "Our reservations team knows every apartment in the group — which ones catch the morning sun, which suit a family, what's worth doing nearby. Tell us what you need and we'll have it confirmed in minutes.",
+    "openNow": "Open now — we usually answer within a minute",
+    "closedNow": "Closed now — open again at 8:30am",
+    "hours": "Open 8:30am–8pm daily",
+    "whatsappCta": "WhatsApp {number}",
+    "callbackCta": "Request a callback",
+    "promise": "Best rate guaranteed · No booking fee · Confirmed while you're on the call",
+    "whatsappMessage": "Hi Urban Elephant — I'd like to book a stay."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promo",
@@ -205,7 +265,8 @@
       "description": "Meet The Rose - Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
       "body": "From Table Mountain to Lion's Head, the colourful Bo-Kaap to the endless Atlantic, the 360 degree scenery is seriously next level. Sunrise coffee or sunset views? Yes, please."
     },
-    "pridePromiseNote": "Pride Promise: 10% off when you book direct"
+    "pridePromiseNote": "Pride Promise: 10% off when you book direct",
+    "bookShort": "Book"
   },
   "tours": {
     "title": "Tours & Experiences",

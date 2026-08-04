@@ -8,6 +8,8 @@ import { Footer } from "@/components/layout/footer";
 import { SmoothScroll } from "@/components/global/smooth-scroll";
 import { ScrollProgress } from "@/components/global/scroll-progress";
 import { ReservationHotline } from "@/components/global/reservation-hotline";
+import { ReservationsBar } from "@/components/global/reservations-bar";
+import { BookingRescue } from "@/components/global/booking-rescue";
 import { Toaster } from "sonner";
 import { properties, siteSettings } from "@/data/content";
 
@@ -34,6 +36,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <NextIntlClientProvider messages={messages}>
       <a href="#main" className="skip-link">Skip to content</a>
+      <ReservationsBar />
       <LocaleBanner />
       <SmoothScroll>
         <ScrollProgress />
@@ -41,6 +44,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <main id="main" className="min-h-screen">{children}</main>
         <Footer settings={siteSettings} properties={properties} />
         <ReservationHotline />
+        <BookingRescue />
         <Toaster
           position="bottom-right"
           toastOptions={{

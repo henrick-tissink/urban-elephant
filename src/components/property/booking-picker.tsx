@@ -3,14 +3,17 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, X } from "lucide-react";
+import { Check, Phone, X } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { TGCSAStars } from "@/components/atoms/tgcsa-stars";
 import { AwardBadge } from "@/components/property/award-badge";
 import type { Property } from "@/types";
 import type { Locale } from "@/i18n/routing";
 import { pickOptional } from "@/lib/i18n-content";
+import { recordBookingHandoff } from "@/lib/booking-handoff";
+import { WhatsAppIcon } from "@/components/atoms/whatsapp-icon";
 import { track } from "@/lib/analytics";
+import { PHONE_E164, PHONE_DISPLAY, whatsappLink } from "@/lib/contact";
 
 interface Props {
   open: boolean;
@@ -25,6 +28,7 @@ interface Props {
  */
 export function BookingPicker({ open, onClose, properties }: Props) {
   const t = useTranslations("bookingPicker");
+  const tHotline = useTranslations("hotline");
   const locale = useLocale() as Locale;
 
   useEffect(() => {
@@ -107,7 +111,7 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={() => {
-                          track("booking_handoff", {
+                          recordBookingHandoff({
                             property: property.name,
                             source: "picker",
                           });
@@ -155,6 +159,34 @@ export function BookingPicker({ open, onClose, properties }: Props) {
                   );
                 })}
               </ul>
+            </div>
+
+            {/* Whoever is in this modal has already decided to book. Offering a
+                human here catches the ones the widget would otherwise lose. */}
+            <div className="border-t border-stone-100 bg-stone-50/80 px-6 py-4 sm:px-9">
+              <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
+                <p className="text-sm text-stone-500">{t("hotlinePrompt")}</p>
+                <div className="flex w-full items-center gap-2 sm:w-auto">
+                  <a
+                    href={`tel:${PHONE_E164}`}
+                    onClick={() => track("call_click", { source: "picker" })}
+                    className="flex flex-1 items-center justify-center gap-2 rounded-full border border-[var(--color-brand-anchor)] px-4 py-2.5 text-sm font-bold text-[var(--color-brand-anchor)] transition-colors hover:bg-[var(--color-brand-wash)] sm:flex-none"
+                  >
+                    <Phone className="h-4 w-4 flex-shrink-0" />
+                    {PHONE_DISPLAY}
+                  </a>
+                  <a
+                    href={whatsappLink(tHotline("whatsappMessage"))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => track("whatsapp_click", { source: "picker" })}
+                    className="flex flex-1 items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-sm font-bold text-white transition-transform hover:scale-[1.02] sm:flex-none"
+                  >
+                    <WhatsAppIcon className="h-4 w-4 flex-shrink-0" />
+                    {tHotline("whatsappShort")}
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
         </motion.div>

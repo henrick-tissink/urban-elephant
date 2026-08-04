@@ -2,17 +2,25 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
-const contactSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
-  phone: z.string().optional(),
-  subject: z.string().min(3, "Subject must be at least 3 characters"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-  property: z.string().optional(),
-  tour: z.string().optional(),
-  dates: z.string().optional(),
-  guests: z.number().optional(),
-});
+const contactSchema = z
+  .object({
+    name: z.string().min(2, "Name must be at least 2 characters"),
+    // Optional so an out-of-hours callback request can be name + number only —
+    // asking a guest for an email address just to be phoned back loses leads.
+    email: z.string().email("Invalid email address").optional(),
+    phone: z.string().optional(),
+    subject: z.string().min(3, "Subject must be at least 3 characters"),
+    message: z.string().min(10, "Message must be at least 10 characters"),
+    property: z.string().optional(),
+    tour: z.string().optional(),
+    dates: z.string().optional(),
+    guests: z.number().optional(),
+  })
+  // ...but we still need some way to answer them.
+  .refine((data) => Boolean(data.email || data.phone), {
+    message: "Provide either an email address or a phone number",
+    path: ["email"],
+  });
 
 type ContactPayload = z.infer<typeof contactSchema>;
 
@@ -53,7 +61,7 @@ function buildHtml(data: ContactPayload): string {
           <tr>
             <td style="padding:28px 32px 8px 32px;">
               <p style="margin:0 0 4px;color:#24272a;font-size:18px;font-weight:500;">${esc(name)}</p>
-              <p style="margin:0;color:#6b6b6b;font-size:14px;">${esc(email)}${phone ? ` &middot; ${esc(phone)}` : ""}</p>
+              <p style="margin:0;color:#6b6b6b;font-size:14px;">${[email, phone].filter(Boolean).map((v) => esc(String(v))).join(" &middot; ")}</p>
             </td>
           </tr>
           <tr>
@@ -75,7 +83,8 @@ function buildHtml(data: ContactPayload): string {
           </tr>
           <tr>
             <td style="padding:0 32px 32px 32px;">
-              <a href="mailto:${esc(email)}?subject=${encodeURIComponent("Re: " + subject)}" style="display:inline-block;background:#ff00ff;color:#ffffff;padding:12px 22px;text-decoration:none;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-right:8px;">Reply by email</a>
+              ${email ? `<a href="mailto:${esc(email)}?subject=${encodeURIComponent("Re: " + subject)}" style="display:inline-block;background:#ff00ff;color:#ffffff;padding:12px 22px;text-decoration:none;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-right:8px;">Reply by email</a>` : ""}
+              ${phone ? `<a href="tel:${esc(phone.replace(/[^\d+]/g, ""))}" style="display:inline-block;background:#24272a;color:#ffffff;padding:12px 22px;text-decoration:none;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-right:8px;">Call back</a>` : ""}
               ${waLink ? `<a href="${waLink}" style="display:inline-block;background:#25D366;color:#ffffff;padding:12px 22px;text-decoration:none;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;">WhatsApp</a>` : ""}
             </td>
           </tr>
@@ -98,7 +107,7 @@ function buildText(data: ContactPayload): string {
     "NEW CONTACT FORM SUBMISSION — Urban Elephant",
     "",
     `Name:    ${name}`,
-    `Email:   ${email}`,
+    email ? `Email:   ${email}` : null,
     phone ? `Phone:   ${phone}` : null,
     "",
     `Subject:  ${subject}`,
@@ -155,7 +164,7 @@ export async function POST(request: NextRequest) {
       subject: `[Urban Elephant] ${data.subject}`,
       html: buildHtml(data),
       text: buildText(data),
-      replyTo: data.email,
+      ...(data.email ? { replyTo: data.email } : {}),
       tags: [{ name: "source", value: "contact-form" }],
     });
 

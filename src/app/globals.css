@@ -292,6 +292,34 @@ body[data-booking-bar="1"] .reservation-hotline {
   bottom: 6rem;
 }
 
+/* Phones get a bottom bar rather than floating dots. On property pages the
+   sticky "book direct" bar carries Call and WhatsApp itself, so this one steps
+   aside instead of stacking two bars into the thumb zone. */
+.reservation-hotline-bar {
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+body[data-booking-bar="1"] .reservation-hotline-bar {
+  transform: translateY(100%);
+  pointer-events: none;
+}
+/* Keep the last of the page clear of the fixed bar. */
+@media (max-width: 639px) {
+  body {
+    padding-bottom: 3.25rem;
+  }
+}
+
+/* While the booking-rescue panel is up it carries its own Call and WhatsApp
+   buttons, so the floating hotline would just be a second, quieter copy of the
+   same offer. Stand it down until the panel is dismissed. */
+html[data-rescue-open] .reservation-hotline,
+html[data-rescue-open] .reservation-hotline-bar,
+html[data-menu-open] .reservation-hotline-bar {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
 /* Giving Back — night-sky star field (Rachel's Wishes). Twinkles only when
    the visitor hasn't asked to reduce motion. */
 .rw-star {

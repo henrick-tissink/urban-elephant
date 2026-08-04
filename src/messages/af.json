@@ -71,7 +71,9 @@
     "pauseVideo": "Onderbreek video",
     "playVideo": "Speel video",
     "muteVideo": "Demp video",
-    "unmuteVideo": "Ontdemp video"
+    "unmuteVideo": "Ontdemp video",
+    "callCta": "Skakel {number}",
+    "callReassurance": "Beste tarief gewaarborg · Geen besprekingsfooi · Bevestig terwyl jy op die lyn is"
   },
   "bookingPicker": {
     "eyebrow": "BESPREEK DIREK",
@@ -79,7 +81,65 @@
     "subtitle": "Vier amptelik gegradeerde woonstelhotelle in Kaapstad. Kies waar jy wil bly en ons neem jou direk na sy besprekingsblad.",
     "cardCta": "Bespreek hierdie een",
     "close": "Sluit",
-    "prideNote": "Pride Promise: jy spaar 10% deur direk by ons te bespreek."
+    "prideNote": "Pride Promise: jy spaar 10% deur direk by ons te bespreek.",
+    "hotlinePrompt": "Verkies jy dat 'n mens dit doen?"
+  },
+  "rescue": {
+    "eyebrow": "NOG BESLUITELOOS?",
+    "title": "Laat ons dit vir jou bespreek.",
+    "titleProperty": "Laat ons {property} vir jou bespreek.",
+    "body": "Ons besprekingspan ken elke woonstel in die groep. Sê vir ons wat jy nodig het en ons bevestig dit binne 'n paar minute — beste tarief, geen besprekingsfooi nie.",
+    "bodyClosed": "Ons besprekingslyn open om 08:30. Stuur vir ons 'n WhatsApp en ons kom dadelik terug na jou toe — beste tarief, geen besprekingsfooi nie.",
+    "call": "Skakel {number}",
+    "whatsapp": "Bespreek op WhatsApp",
+    "decline": "Nee dankie, ek kyk net rond",
+    "close": "Sluit",
+    "whatsappMessage": "Hallo Urban Elephant — ek het probeer om 'n verblyf te bespreek en kan hulp gebruik.",
+    "whatsappMessageProperty": "Hallo Urban Elephant — ek het probeer om {property} te bespreek en kan hulp gebruik."
+  },
+  "hotline": {
+    "call": "Skakel {number}",
+    "callShort": "Skakel",
+    "callback": "Vra 'n terugskakel",
+    "callbackShort": "Terugskakel",
+    "whatsapp": "Bespreek op WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "openNow": "Besprekings nou oop",
+    "hours": "Besprekings · 08:30–20:00",
+    "menuNumber": "Besprekings · {number} · 08:30–20:00",
+    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek of oor julle toere navraag doen.",
+    "whatsappMessageProperty": "Hallo Urban Elephant — ek wil graag {property} bespreek.",
+    "barLabel": "Besprekings",
+    "barHours": "Daagliks 08:30–20:00",
+    "barClosed": "Open 08:30"
+  },
+  "callback": {
+    "eyebrow": "NA URE",
+    "title": "Ons skakel jou terug.",
+    "titleProperty": "Ons skakel jou terug oor {property}.",
+    "body": "Ons besprekingslyn ({number}) open om 08:30. Los jou nommer en ons bel jou eerste ding — beste tarief, geen besprekingsfooi nie.",
+    "nameLabel": "Jou naam",
+    "phoneLabel": "Jou foonnommer",
+    "datesLabel": "Datums wat jy in gedagte het (opsioneel)",
+    "submit": "Vra my terugskakel aan",
+    "submitting": "Stuur tans…",
+    "doneTitle": "Reg so — ons kontak jou.",
+    "doneBody": "Iemand van besprekings bel jou sodra ons om 08:30 oopmaak.",
+    "doneClose": "Sluit",
+    "error": "Iets het verkeerd geloop. Probeer eerder WhatsApp.",
+    "close": "Sluit"
+  },
+  "talkToUs": {
+    "eyebrow": "PRAAT MET ONS",
+    "title": "Bespreek by 'n mens.",
+    "body": "Ons besprekingspan ken elke woonstel in die groep — watter een die oggendson vang, watter een 'n gesin pas, wat naby die moeite werd is. Sê vir ons wat jy nodig het en ons bevestig dit binne minute.",
+    "openNow": "Nou oop — ons antwoord gewoonlik binne 'n minuut",
+    "closedNow": "Nou gesluit — weer oop om 08:30",
+    "hours": "Daagliks oop 08:30–20:00",
+    "whatsappCta": "WhatsApp {number}",
+    "callbackCta": "Vra 'n terugskakel",
+    "promise": "Beste tarief gewaarborg · Geen besprekingsfooi · Bevestig terwyl jy op die lyn is",
+    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promosie",
@@ -205,7 +265,8 @@
       "description": "Ontmoet The Rose - Urban Elephant se nuutste blikvanger by 117 Strand Straat, Kaapstad.",
       "body": "Van Tafelberg tot Leeukop, die kleurvolle Bo-Kaap tot die eindelose Atlantiese Oseaan, die 360-grade toneel is ernstig volgende vlak. Sonopkoms koffie of sonsondergang uitsigte? Ja, asseblief."
     },
-    "pridePromiseNote": "Pride Promise: 10% afslag wanneer jy direk bespreek"
+    "pridePromiseNote": "Pride Promise: 10% afslag wanneer jy direk bespreek",
+    "bookShort": "Bespreek"
   },
   "tours": {
     "title": "Toere & Ervarings",

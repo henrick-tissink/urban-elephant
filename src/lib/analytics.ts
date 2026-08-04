@@ -20,7 +20,13 @@ export type AnalyticsEvent =
   | "enquiry_submit" // submitted the contact/enquiry form
   | "whatsapp_click" // opened a WhatsApp conversation
   | "call_click" // tapped a call button (reservation hotline)
-  | "tour_enquiry_click"; // clicked "Book This Tour" through to the enquiry form
+  | "tour_enquiry_click" // clicked "Book This Tour" through to the enquiry form
+  | "rescue_shown" // came back from Nightsbridge and was offered the hotline
+  | "rescue_call" // took the call offer on the way back from Nightsbridge
+  | "rescue_whatsapp" // took the WhatsApp offer on the way back
+  | "rescue_dismiss" // closed the rescue panel without taking it
+  | "callback_open" // opened the out-of-hours callback form
+  | "callback_submit"; // submitted a callback request
 
 export function track(event: AnalyticsEvent, params?: TrackParams): void {
   if (typeof window === "undefined") return;

@@ -71,7 +71,9 @@
     "pauseVideo": "Video anhalten",
     "playVideo": "Video abspielen",
     "muteVideo": "Video stummschalten",
-    "unmuteVideo": "Stummschaltung aufheben"
+    "unmuteVideo": "Stummschaltung aufheben",
+    "callCta": "{number} anrufen",
+    "callReassurance": "Bestpreis garantiert · Keine Buchungsgebühr · Bestätigung noch im Gespräch"
   },
   "bookingPicker": {
     "eyebrow": "DIREKT BUCHEN",
@@ -79,7 +81,65 @@
     "subtitle": "Vier offiziell eingestufte Apartmenthotels in Kapstadt. Wählen Sie, wo Sie übernachten möchten, und wir bringen Sie direkt zur Buchungsseite.",
     "cardCta": "Dieses hier buchen",
     "close": "Schließen",
-    "prideNote": "Pride Promise: Sie sparen 10 %, weil Sie direkt bei uns buchen."
+    "prideNote": "Pride Promise: Sie sparen 10 %, weil Sie direkt bei uns buchen.",
+    "hotlinePrompt": "Lieber von einem Menschen buchen lassen?"
+  },
+  "rescue": {
+    "eyebrow": "NOCH UNENTSCHLOSSEN?",
+    "title": "Wir buchen es für Sie.",
+    "titleProperty": "Wir buchen {property} für Sie.",
+    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten — bester Preis, keine Buchungsgebühr.",
+    "bodyClosed": "Unsere Reservierungsline öffnet um 8:30 Uhr. Schreiben Sie uns per WhatsApp und wir melden uns umgehend — bester Preis, keine Buchungsgebühr.",
+    "call": "{number} anrufen",
+    "whatsapp": "Per WhatsApp buchen",
+    "decline": "Nein danke, ich schaue mich nur um",
+    "close": "Schließen",
+    "whatsappMessage": "Hallo Urban Elephant — ich wollte einen Aufenthalt buchen und bräuchte Hilfe.",
+    "whatsappMessageProperty": "Hallo Urban Elephant — ich wollte {property} buchen und bräuchte Hilfe."
+  },
+  "hotline": {
+    "call": "{number} anrufen",
+    "callShort": "Anrufen",
+    "callback": "Rückruf anfordern",
+    "callbackShort": "Rückruf",
+    "whatsapp": "Per WhatsApp buchen",
+    "whatsappShort": "WhatsApp",
+    "openNow": "Reservierung jetzt erreichbar",
+    "hours": "Reservierung · 8:30–20:00 Uhr",
+    "menuNumber": "Reservierung · {number} · 8:30–20:00 Uhr",
+    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen oder mich zu Ihren Touren erkundigen.",
+    "whatsappMessageProperty": "Hallo Urban Elephant — ich möchte {property} buchen.",
+    "barLabel": "Reservierung",
+    "barHours": "Täglich 8:30–20:00 Uhr",
+    "barClosed": "Öffnet 8:30 Uhr"
+  },
+  "callback": {
+    "eyebrow": "AUSSERHALB DER ÖFFNUNGSZEITEN",
+    "title": "Wir rufen Sie zurück.",
+    "titleProperty": "Wir rufen Sie zu {property} zurück.",
+    "body": "Unsere Reservierungsline ({number}) öffnet um 8:30 Uhr. Hinterlassen Sie Ihre Nummer und wir melden uns gleich morgens — bester Preis, keine Buchungsgebühr.",
+    "nameLabel": "Ihr Name",
+    "phoneLabel": "Ihre Telefonnummer",
+    "datesLabel": "Gewünschte Daten (optional)",
+    "submit": "Rückruf anfordern",
+    "submitting": "Wird gesendet…",
+    "doneTitle": "Alles klar — wir melden uns.",
+    "doneBody": "Jemand aus der Reservierung ruft Sie an, sobald wir um 8:30 Uhr öffnen.",
+    "doneClose": "Schließen",
+    "error": "Da ist etwas schiefgelaufen. Bitte versuchen Sie es über WhatsApp.",
+    "close": "Schließen"
+  },
+  "talkToUs": {
+    "eyebrow": "SPRECHEN SIE MIT UNS",
+    "title": "Buchen Sie bei einem Menschen.",
+    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe — welches die Morgensonne einfängt, welches zu einer Familie passt, was sich in der Nähe lohnt. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten.",
+    "openNow": "Jetzt geöffnet — wir antworten meist innerhalb einer Minute",
+    "closedNow": "Jetzt geschlossen — wieder ab 8:30 Uhr",
+    "hours": "Täglich 8:30–20:00 Uhr geöffnet",
+    "whatsappCta": "WhatsApp {number}",
+    "callbackCta": "Rückruf anfordern",
+    "promise": "Bestpreis garantiert · Keine Buchungsgebühr · Bestätigung noch im Gespräch",
+    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels Promo",
@@ -205,7 +265,8 @@
       "description": "Lernen Sie The Rose kennen – Urban Elephants neuestes Highlight in der 117 Strand Street, Kapstadt.",
       "body": "Vom Tafelberg bis zum Lion's Head, vom farbenfrohen Bo-Kaap bis zum endlosen Atlantik – die 360-Grad-Kulisse ist wirklich auf einem ganz neuen Niveau. Kaffee bei Sonnenaufgang oder Ausblicke bei Sonnenuntergang? Ja, bitte."
     },
-    "pridePromiseNote": "Pride Promise: 10 % Rabatt bei Direktbuchung"
+    "pridePromiseNote": "Pride Promise: 10 % Rabatt bei Direktbuchung",
+    "bookShort": "Buchen"
   },
   "tours": {
     "title": "Touren & Erlebnisse",

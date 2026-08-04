@@ -71,7 +71,9 @@
     "pauseVideo": "Mettre la vidéo en pause",
     "playVideo": "Lire la vidéo",
     "muteVideo": "Couper le son",
-    "unmuteVideo": "Activer le son"
+    "unmuteVideo": "Activer le son",
+    "callCta": "Appeler le {number}",
+    "callReassurance": "Meilleur tarif garanti · Sans frais de réservation · Confirmé pendant l'appel"
   },
   "bookingPicker": {
     "eyebrow": "RÉSERVER EN DIRECT",
@@ -79,7 +81,65 @@
     "subtitle": "Quatre appart'hôtels officiellement classés au Cap. Choisissez où vous souhaitez séjourner et nous vous emmenons directement vers sa page de réservation.",
     "cardCta": "Réserver celui-ci",
     "close": "Fermer",
-    "prideNote": "Pride Promise : vous économisez 10 % en réservant en direct avec nous."
+    "prideNote": "Pride Promise : vous économisez 10 % en réservant en direct avec nous.",
+    "hotlinePrompt": "Vous préférez qu'un humain s'en charge ?"
+  },
+  "rescue": {
+    "eyebrow": "VOUS HÉSITEZ ENCORE ?",
+    "title": "Laissez-nous réserver pour vous.",
+    "titleProperty": "Laissez-nous réserver {property} pour vous.",
+    "body": "Notre équipe de réservation connaît chaque appartement du groupe. Dites-nous ce qu'il vous faut et nous confirmons en quelques minutes — meilleur tarif, sans frais de réservation.",
+    "bodyClosed": "Notre ligne de réservation ouvre à 8h30. Écrivez-nous sur WhatsApp et nous revenons vers vous sans tarder — meilleur tarif, sans frais de réservation.",
+    "call": "Appeler le {number}",
+    "whatsapp": "Réserver sur WhatsApp",
+    "decline": "Non merci, je regarde simplement",
+    "close": "Fermer",
+    "whatsappMessage": "Bonjour Urban Elephant — j'essayais de réserver un séjour et j'aurais besoin d'aide.",
+    "whatsappMessageProperty": "Bonjour Urban Elephant — j'essayais de réserver {property} et j'aurais besoin d'aide."
+  },
+  "hotline": {
+    "call": "Appeler le {number}",
+    "callShort": "Appeler",
+    "callback": "Demander un rappel",
+    "callbackShort": "Rappel",
+    "whatsapp": "Réserver sur WhatsApp",
+    "whatsappShort": "WhatsApp",
+    "openNow": "Réservations ouvertes",
+    "hours": "Réservations · 8h30–20h",
+    "menuNumber": "Réservations · {number} · 8h30–20h",
+    "whatsappMessage": "Bonjour Urban Elephant — je souhaite réserver un séjour ou en savoir plus sur vos excursions.",
+    "whatsappMessageProperty": "Bonjour Urban Elephant — je souhaite réserver {property}.",
+    "barLabel": "Réservations",
+    "barHours": "Tous les jours 8h30–20h",
+    "barClosed": "Ouvre à 8h30"
+  },
+  "callback": {
+    "eyebrow": "EN DEHORS DES HEURES",
+    "title": "Nous vous rappelons.",
+    "titleProperty": "Nous vous rappelons au sujet de {property}.",
+    "body": "Notre ligne de réservation ({number}) ouvre à 8h30. Laissez-nous votre numéro et nous vous appelons dès l'ouverture — meilleur tarif, sans frais de réservation.",
+    "nameLabel": "Votre nom",
+    "phoneLabel": "Votre numéro de téléphone",
+    "datesLabel": "Dates envisagées (facultatif)",
+    "submit": "Demander à être rappelé",
+    "submitting": "Envoi…",
+    "doneTitle": "C'est noté — nous vous rappelons.",
+    "doneBody": "Un membre de l'équipe réservation vous appellera dès l'ouverture à 8h30.",
+    "doneClose": "Fermer",
+    "error": "Une erreur s'est produite. Essayez plutôt WhatsApp.",
+    "close": "Fermer"
+  },
+  "talkToUs": {
+    "eyebrow": "PARLEZ-NOUS",
+    "title": "Réservez avec un humain.",
+    "body": "Notre équipe de réservation connaît chaque appartement du groupe — celui qui capte le soleil du matin, celui qui convient à une famille, ce qui vaut le détour à côté. Dites-nous ce qu'il vous faut et nous confirmons en quelques minutes.",
+    "openNow": "Ouvert — nous répondons généralement en moins d'une minute",
+    "closedNow": "Fermé — réouverture à 8h30",
+    "hours": "Ouvert tous les jours de 8h30 à 20h",
+    "whatsappCta": "WhatsApp {number}",
+    "callbackCta": "Demander un rappel",
+    "promise": "Meilleur tarif garanti · Sans frais de réservation · Confirmé pendant l'appel",
+    "whatsappMessage": "Bonjour Urban Elephant — je souhaite réserver un séjour."
   },
   "promo": {
     "imageAlt": "Promotion Urban Elephant Hotels",
@@ -205,7 +265,8 @@
       "description": "Découvrez The Rose — la dernière merveille d'Urban Elephant au 117 Strand Street, au Cap.",
       "body": "De la Montagne de la Table à Lion's Head, du coloré Bo-Kaap à l'immensité de l'Atlantique, le panorama à 360 degrés est véritablement exceptionnel. Un café au lever du soleil ou des vues au coucher du soleil ? Oui, volontiers."
     },
-    "pridePromiseNote": "Pride Promise : 10 % de réduction en réservant en direct"
+    "pridePromiseNote": "Pride Promise : 10 % de réduction en réservant en direct",
+    "bookShort": "Réserver"
   },
   "tours": {
     "title": "Excursions & Expériences",

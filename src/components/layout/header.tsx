@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -11,6 +11,8 @@ import { BookingPicker } from "@/components/property/booking-picker";
 import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { properties } from "@/data/content";
 import { track } from "@/lib/analytics";
+import { WhatsAppIcon } from "@/components/atoms/whatsapp-icon";
+import { PHONE_E164, PHONE_DISPLAY, whatsappLink } from "@/lib/contact";
 import Image from "next/image";
 
 const navigation = [
@@ -37,6 +39,7 @@ const moreNavigation = navigation.filter((item) =>
 export function Header() {
   const t = useTranslations("navigation");
   const ta = useTranslations("a11y");
+  const tHotline = useTranslations("hotline");
   const pathname = usePathname();
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,6 +68,15 @@ export function Header() {
     setMoreOpen(false);
   }, [pathname]);
 
+  // The menu carries its own Call/WhatsApp, and the global hotline bar is fixed
+  // above it — without this it would sit on top of the open menu (globals.css).
+  useEffect(() => {
+    const root = document.documentElement;
+    if (isMobileMenuOpen) root.setAttribute("data-menu-open", "");
+    else root.removeAttribute("data-menu-open");
+    return () => root.removeAttribute("data-menu-open");
+  }, [isMobileMenuOpen]);
+
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (moreRef.current && !moreRef.current.contains(event.target as Node)) {
@@ -79,7 +91,8 @@ export function Header() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+          // top-9 clears the fixed reservations bar (h-9) above it
+          "fixed top-9 left-0 right-0 z-50 transition-all duration-500",
           isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-sm py-3"
             : "bg-transparent py-5"
@@ -192,6 +205,10 @@ export function Header() {
                 </AnimatePresence>
               </motion.div>
 
+              {/* No phone link here on purpose — the reservations bar directly
+                  above carries the number, the hours and a Call action on every
+                  page. A second one in the nav is clutter, and cramming the
+                  digits in at laptop widths was what broke this before. */}
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -221,9 +238,12 @@ export function Header() {
               </motion.div>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile Menu Button — no phone glyph beside it: the reservations
+                bar above shows the number, and the bottom bar carries the tap
+                targets. Three phone affordances stacked is noise, not emphasis. */}
+            <div className="xl:hidden relative z-10 flex items-center gap-1">
             <button
-              className="xl:hidden relative z-10 p-2"
+              className="p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label={ta("toggleMenu")}
             >
@@ -237,6 +257,7 @@ export function Header() {
                 )}
               </motion.div>
             </button>
+            </div>
           </nav>
         </div>
       </header>
@@ -250,7 +271,10 @@ export function Header() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-40 bg-[#24272a]"
           >
-            <nav className="container mx-auto px-6 pt-28 pb-12 h-full flex flex-col">
+            {/* Scrollable: nine nav items plus the booking block is taller than
+                a phone screen, and the block at the bottom is the point.
+                pt-32 clears the reservations bar + header stack above. */}
+            <nav className="container mx-auto px-6 pt-32 pb-12 h-full flex flex-col overflow-y-auto overscroll-contain">
               <div className="flex flex-col gap-4">
                 {navigation.map((item, index) => (
                   <motion.div
@@ -287,6 +311,7 @@ export function Header() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
+                  className="space-y-3"
                 >
                   <Button
                     variant="primary"
@@ -296,6 +321,36 @@ export function Header() {
                   >
                     {t("bookNow")}
                   </Button>
+
+                  {/* The hotline sits beside Book Now, not below the fold —
+                      talking to someone is an equal way to book. */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <a
+                      href={`tel:${PHONE_E164}`}
+                      onClick={() =>
+                        track("call_click", { source: "mobile_menu", page: pathname })
+                      }
+                      className="flex items-center justify-center gap-2 rounded-full border border-white/30 py-3 text-sm font-bold text-white transition-colors hover:border-white"
+                    >
+                      <Phone className="w-4 h-4 flex-shrink-0" />
+                      {tHotline("callShort")}
+                    </a>
+                    <a
+                      href={whatsappLink(tHotline("whatsappMessage"))}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() =>
+                        track("whatsapp_click", { source: "mobile_menu", page: pathname })
+                      }
+                      className="flex items-center justify-center gap-2 rounded-full bg-[#25D366] py-3 text-sm font-bold text-white transition-transform hover:scale-[1.02]"
+                    >
+                      <WhatsAppIcon className="w-4 h-4 flex-shrink-0" />
+                      {tHotline("whatsappShort")}
+                    </a>
+                  </div>
+                  <p className="text-center text-xs text-white/50">
+                    {tHotline("menuNumber", { number: PHONE_DISPLAY })}
+                  </p>
                 </motion.div>
               </div>
             </nav>
