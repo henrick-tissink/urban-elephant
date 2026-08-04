@@ -139,6 +139,7 @@ export const properties: Property[] = [
   {
     _id: "property-16-on-bree",
     slug: "16-on-bree",
+    shortLocation: "Cape Town CBD",
     name: "16 On Bree",
     tagline: {
       en: "16 On Bree stands as the pinnacle of luxury in Cape Town, boasting its title as the city's tallest residential and hotel building.",
@@ -226,6 +227,7 @@ export const properties: Property[] = [
   {
     _id: "property-the-rose",
     slug: "the-rose",
+    shortLocation: "Cape Town CBD",
     name: "The Rose",
     tagline: {
       en: "Meet The Rose — Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
@@ -304,6 +306,7 @@ export const properties: Property[] = [
   {
     _id: "property-the-docklands",
     slug: "the-docklands",
+    shortLocation: "De Waterkant",
     name: "The Docklands",
     tagline: {
       en: "The Docklands: Your Urban Oasis. Positioned in the heart of the chic De Waterkant district, The Docklands stands as a beacon of modern luxury.",
@@ -389,6 +392,7 @@ export const properties: Property[] = [
   {
     _id: "property-the-flamingo",
     slug: "the-flamingo",
+    shortLocation: "Sea Point",
     name: "Flamingo Express",
     tagline: {
       en: "Your 4 Star seaside escape with effortless elegance.",

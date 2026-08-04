@@ -64,16 +64,31 @@
     "tagline": "URBAN ELEPHANT HOTELS · OFFIZIELL EINGESTUFT · KAPSTADT",
     "title": "Luxuriöse 4-Sterne-Apartmenthotels in Kapstadt",
     "slipLine": "Die Marke, die Sie zurückliebt.",
-    "secondaryCta": "Direkt buchen",
-    "scrollDown": "Scrollen zum Entdecken",
     "bestRate": "Pride Promise · 10 % Rabatt",
     "beatRate": "Direkt buchen und mit unserem Pride Promise 10 % sparen.",
     "pauseVideo": "Video anhalten",
     "playVideo": "Video abspielen",
     "muteVideo": "Video stummschalten",
-    "unmuteVideo": "Stummschaltung aufheben",
-    "callCta": "{number} anrufen",
-    "callReassurance": "Bestpreis garantiert · Keine Buchungsgebühr · Bestätigung noch im Gespräch"
+    "unmuteVideo": "Stummschaltung aufheben"
+  },
+  "reservationsHero": {
+    "title": "Rufen Sie unsere Reservierungszentrale an",
+    "subtitle": "Sprechen Sie mit einem echten Menschen. Bester Preis. Direkt gebucht.",
+    "hours": "Täglich 8:30 – 20:00 Uhr",
+    "bestRate": "Bestpreis",
+    "bestRateSub": "Garantiert",
+    "noFees": "Keine Buchungsgebühren",
+    "noFeesSub": "Bei Anruf",
+    "plans": "Ratenzahlung",
+    "plansSub": "Möglich",
+    "instant": "Sofortige Bestätigung",
+    "instantSub": "Am Telefon",
+    "callCta": "Jetzt anrufen",
+    "whatsappCta": "WhatsApp",
+    "bookCta": "Jetzt buchen",
+    "bookCtaSub": "Online buchen",
+    "reassurance": "Bestpreis garantiert · Keine Buchungsgebühren · Bestätigung noch im Gespräch",
+    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen."
   },
   "bookingPicker": {
     "eyebrow": "DIREKT BUCHEN",
@@ -109,9 +124,10 @@
     "menuNumber": "Reservierung · {number} · 8:30–20:00 Uhr",
     "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen oder mich zu Ihren Touren erkundigen.",
     "whatsappMessageProperty": "Hallo Urban Elephant — ich möchte {property} buchen.",
-    "barLabel": "Reservierung",
-    "barHours": "Täglich 8:30–20:00 Uhr",
-    "barClosed": "Öffnet 8:30 Uhr"
+    "barLabel": "Reservierung:",
+    "barHours": "Täglich 8:30 – 20:00 Uhr",
+    "barClosed": "Öffnet 8:30 Uhr",
+    "callShortBar": "Jetzt anrufen"
   },
   "callback": {
     "eyebrow": "AUSSERHALB DER ÖFFNUNGSZEITEN",

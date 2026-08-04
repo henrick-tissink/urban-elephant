@@ -64,16 +64,31 @@
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIALLY GRADED · CAPE TOWN",
     "title": "Luxury 4-Star Apartment Hotels in Cape Town",
     "slipLine": "The brand that loves you back.",
-    "secondaryCta": "Book Direct",
-    "scrollDown": "Scroll to explore",
     "bestRate": "Pride Promise · 10% off",
     "beatRate": "Book direct and save 10% with our Pride Promise.",
     "pauseVideo": "Pause video",
     "playVideo": "Play video",
     "muteVideo": "Mute video",
-    "unmuteVideo": "Unmute video",
-    "callCta": "Call {number}",
-    "callReassurance": "Best rate guaranteed · No booking fee · Confirmed while you're on the call"
+    "unmuteVideo": "Unmute video"
+  },
+  "reservationsHero": {
+    "title": "Call our reservations centre",
+    "subtitle": "Speak to a real person. Get the best rates. Book direct.",
+    "hours": "8:30am – 8pm daily",
+    "bestRate": "Best rate",
+    "bestRateSub": "Guaranteed",
+    "noFees": "No booking fees",
+    "noFeesSub": "When you call",
+    "plans": "Payment plans",
+    "plansSub": "Available",
+    "instant": "Instant confirmation",
+    "instantSub": "Over the phone",
+    "callCta": "Call now",
+    "whatsappCta": "WhatsApp us",
+    "bookCta": "Book now",
+    "bookCtaSub": "Online bookings",
+    "reassurance": "Best rate guaranteed · No booking fees · Confirmed while you're on the call",
+    "whatsappMessage": "Hi Urban Elephant — I'd like to book a stay."
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIRECT",
@@ -109,9 +124,10 @@
     "menuNumber": "Reservations · {number} · 8:30am–8pm",
     "whatsappMessage": "Hi Urban Elephant — I'd like to book a stay or ask about your tours.",
     "whatsappMessageProperty": "Hi Urban Elephant — I'd like to book {property}.",
-    "barLabel": "Reservations",
-    "barHours": "8:30am–8pm daily",
-    "barClosed": "Opens 8:30am"
+    "barLabel": "Reservations:",
+    "barHours": "8:30am – 8pm daily",
+    "barClosed": "Opens 8:30am",
+    "callShortBar": "Call now"
   },
   "callback": {
     "eyebrow": "AFTER HOURS",

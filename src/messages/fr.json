@@ -64,16 +64,31 @@
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIELLEMENT CLASSÉ · LE CAP",
     "title": "Appart'hôtels de luxe 4 étoiles au Cap",
     "slipLine": "La marque qui vous le rend bien.",
-    "secondaryCta": "Réserver en direct",
-    "scrollDown": "Faites défiler pour explorer",
     "bestRate": "Pride Promise · 10 % de réduction",
     "beatRate": "Réservez en direct et économisez 10 % avec notre Pride Promise.",
     "pauseVideo": "Mettre la vidéo en pause",
     "playVideo": "Lire la vidéo",
     "muteVideo": "Couper le son",
-    "unmuteVideo": "Activer le son",
-    "callCta": "Appeler le {number}",
-    "callReassurance": "Meilleur tarif garanti · Sans frais de réservation · Confirmé pendant l'appel"
+    "unmuteVideo": "Activer le son"
+  },
+  "reservationsHero": {
+    "title": "Appelez notre centrale de réservation",
+    "subtitle": "Parlez à une vraie personne. Meilleur tarif. Réservation directe.",
+    "hours": "Tous les jours 8h30 – 20h",
+    "bestRate": "Meilleur tarif",
+    "bestRateSub": "Garanti",
+    "noFees": "Sans frais de réservation",
+    "noFeesSub": "Par téléphone",
+    "plans": "Paiement échelonné",
+    "plansSub": "Disponible",
+    "instant": "Confirmation immédiate",
+    "instantSub": "Au téléphone",
+    "callCta": "Appeler",
+    "whatsappCta": "WhatsApp",
+    "bookCta": "Réserver",
+    "bookCtaSub": "Réservation en ligne",
+    "reassurance": "Meilleur tarif garanti · Sans frais de réservation · Confirmé pendant l'appel",
+    "whatsappMessage": "Bonjour Urban Elephant — je souhaite réserver un séjour."
   },
   "bookingPicker": {
     "eyebrow": "RÉSERVER EN DIRECT",
@@ -109,9 +124,10 @@
     "menuNumber": "Réservations · {number} · 8h30–20h",
     "whatsappMessage": "Bonjour Urban Elephant — je souhaite réserver un séjour ou en savoir plus sur vos excursions.",
     "whatsappMessageProperty": "Bonjour Urban Elephant — je souhaite réserver {property}.",
-    "barLabel": "Réservations",
-    "barHours": "Tous les jours 8h30–20h",
-    "barClosed": "Ouvre à 8h30"
+    "barLabel": "Réservations :",
+    "barHours": "Tous les jours 8h30 – 20h",
+    "barClosed": "Ouvre à 8h30",
+    "callShortBar": "Appeler"
   },
   "callback": {
     "eyebrow": "EN DEHORS DES HEURES",

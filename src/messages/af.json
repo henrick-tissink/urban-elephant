@@ -64,16 +64,31 @@
     "tagline": "URBAN ELEPHANT HOTELS · AMPTELIK GEGRADEER · KAAPSTAD",
     "title": "Luukse 4-Ster Woonstelhotelle in Kaapstad",
     "slipLine": "Die handelsmerk wat jou terugliefhet.",
-    "secondaryCta": "Bespreek Direk",
-    "scrollDown": "Rol om te verken",
     "bestRate": "Pride Promise · 10% afslag",
     "beatRate": "Bespreek direk en spaar 10% met ons Pride Promise.",
     "pauseVideo": "Onderbreek video",
     "playVideo": "Speel video",
     "muteVideo": "Demp video",
-    "unmuteVideo": "Ontdemp video",
-    "callCta": "Skakel {number}",
-    "callReassurance": "Beste tarief gewaarborg · Geen besprekingsfooi · Bevestig terwyl jy op die lyn is"
+    "unmuteVideo": "Ontdemp video"
+  },
+  "reservationsHero": {
+    "title": "Skakel ons besprekingsentrum",
+    "subtitle": "Praat met 'n regte mens. Kry die beste tariewe. Bespreek direk.",
+    "hours": "Daagliks 08:30 – 20:00",
+    "bestRate": "Beste tarief",
+    "bestRateSub": "Gewaarborg",
+    "noFees": "Geen besprekingsfooie",
+    "noFeesSub": "Wanneer jy bel",
+    "plans": "Betaalplanne",
+    "plansSub": "Beskikbaar",
+    "instant": "Onmiddellike bevestiging",
+    "instantSub": "Oor die telefoon",
+    "callCta": "Skakel nou",
+    "whatsappCta": "WhatsApp ons",
+    "bookCta": "Bespreek nou",
+    "bookCtaSub": "Aanlyn besprekings",
+    "reassurance": "Beste tarief gewaarborg · Geen besprekingsfooie · Bevestig terwyl jy op die lyn is",
+    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek."
   },
   "bookingPicker": {
     "eyebrow": "BESPREEK DIREK",
@@ -109,9 +124,10 @@
     "menuNumber": "Besprekings · {number} · 08:30–20:00",
     "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek of oor julle toere navraag doen.",
     "whatsappMessageProperty": "Hallo Urban Elephant — ek wil graag {property} bespreek.",
-    "barLabel": "Besprekings",
-    "barHours": "Daagliks 08:30–20:00",
-    "barClosed": "Open 08:30"
+    "barLabel": "Besprekings:",
+    "barHours": "Daagliks 08:30 – 20:00",
+    "barClosed": "Open 08:30",
+    "callShortBar": "Skakel nou"
   },
   "callback": {
     "eyebrow": "NA URE",

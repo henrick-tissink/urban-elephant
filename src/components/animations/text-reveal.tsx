@@ -11,6 +11,13 @@ interface TextRevealProps {
   delay?: number;
   splitBy?: "word" | "character";
   once?: boolean;
+  /**
+   * Words are laid out as flex items in a wrapping row, and `text-align` has
+   * no effect on how flex items pack — so alignment has to be set here. Without
+   * this the lines sit flush-left inside whatever box contains them, which is
+   * what made the hero headline look off-centre against a centred eyebrow.
+   */
+  align?: "center" | "left";
 }
 
 export function TextReveal({
@@ -20,6 +27,7 @@ export function TextReveal({
   delay = 0,
   splitBy = "word",
   once = true,
+  align = "center",
 }: TextRevealProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once, amount: 0.5 });
@@ -59,7 +67,10 @@ export function TextReveal({
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={containerVariants}
-        className="inline-flex flex-wrap"
+        className={cn(
+          "flex flex-wrap",
+          align === "center" ? "justify-center" : "justify-start",
+        )}
         style={{ perspective: 1000 }}
       >
         {items.map((item, index) => (

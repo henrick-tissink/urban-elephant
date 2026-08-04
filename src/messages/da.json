@@ -64,16 +64,31 @@
     "tagline": "URBAN ELEPHANT HOTELS · OFFICIELT KLASSIFICERET · CAPE TOWN",
     "title": "Luksus 4-stjernede lejlighedshoteller i Cape Town",
     "slipLine": "Mærket der elsker dig tilbage.",
-    "secondaryCta": "Book direkte",
-    "scrollDown": "Rul for at udforske",
     "bestRate": "Pride Promise · 10% rabat",
     "beatRate": "Book direkte og spar 10% med vores Pride Promise.",
     "pauseVideo": "Sæt video på pause",
     "playVideo": "Afspil video",
     "muteVideo": "Sluk for lyden",
-    "unmuteVideo": "Tænd for lyden",
-    "callCta": "Ring {number}",
-    "callReassurance": "Bedste pris garanteret · Intet bookinggebyr · Bekræftet mens du er i røret"
+    "unmuteVideo": "Tænd for lyden"
+  },
+  "reservationsHero": {
+    "title": "Ring til vores reservationscenter",
+    "subtitle": "Tal med et rigtigt menneske. Bedste pris. Book direkte.",
+    "hours": "Dagligt 8.30 – 20.00",
+    "bestRate": "Bedste pris",
+    "bestRateSub": "Garanteret",
+    "noFees": "Intet bookinggebyr",
+    "noFeesSub": "Når du ringer",
+    "plans": "Betalingsplaner",
+    "plansSub": "Tilgængelige",
+    "instant": "Straks bekræftet",
+    "instantSub": "Over telefonen",
+    "callCta": "Ring nu",
+    "whatsappCta": "WhatsApp os",
+    "bookCta": "Book nu",
+    "bookCtaSub": "Online booking",
+    "reassurance": "Bedste pris garanteret · Intet bookinggebyr · Bekræftet mens du er i røret",
+    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold."
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIREKTE",
@@ -109,9 +124,10 @@
     "menuNumber": "Reservationer · {number} · 8.30–20.00",
     "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold eller høre om jeres ture.",
     "whatsappMessageProperty": "Hej Urban Elephant — jeg vil gerne booke {property}.",
-    "barLabel": "Reservationer",
-    "barHours": "Dagligt 8.30–20.00",
-    "barClosed": "Åbner kl. 8.30"
+    "barLabel": "Reservationer:",
+    "barHours": "Dagligt 8.30 – 20.00",
+    "barClosed": "Åbner kl. 8.30",
+    "callShortBar": "Ring nu"
   },
   "callback": {
     "eyebrow": "UDEN FOR ÅBNINGSTID",

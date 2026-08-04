@@ -2,15 +2,14 @@
 
 import { useRef, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Play, Pause, Volume2, VolumeX, ChevronDown, Phone } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
 import { TextReveal } from "@/components/animations/text-reveal";
-import { MagneticButton } from "@/components/animations/magnetic-button";
 import { BookingPicker } from "@/components/property/booking-picker";
 import { properties } from "@/data/content";
 import { track } from "@/lib/analytics";
-import { PHONE_E164, PHONE_DISPLAY } from "@/lib/contact";
+import { ReservationsCentre } from "@/components/sections/reservations-centre";
+import { PropertyStrip } from "@/components/sections/property-strip";
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -95,15 +94,9 @@ export function Hero() {
     }
   };
 
-  const scrollToContent = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
 
   return (
-    <section className="relative h-screen w-full overflow-hidden">
+    <section className="relative min-h-screen w-full overflow-hidden">
       {/* Video Background with Ken Burns fallback */}
       <div className="absolute inset-0">
         {/* Poster image with Ken Burns effect (shows before video loads) */}
@@ -138,85 +131,63 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/75" />
       </div>
 
-      {/* Content — pared back to brand + positioning + one decisive CTA, in
-          the spirit of the old urbanelephant.co.za hero. The marketing copy
-          that used to live here (subtitle paragraph, secondary CTA) is now
-          carried by the sections below the fold. */}
-      {/* pt-9 offsets the fixed reservations bar so the hero's centred content
-          keeps the same clearance under the header as it had before the bar. */}
-      <div className="relative z-10 h-full pt-9 flex flex-col justify-center items-center text-center px-6">
+      {/* Content — the reservations desk is the centrepiece, with online
+          booking offered alongside it rather than instead of it. pt-32 clears
+          the fixed reservations bar + header stack. */}
+      <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-5 pb-12 pt-28 text-center sm:px-6 sm:pb-16 sm:pt-32">
         <div className="max-w-4xl">
           {/* Tagline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-[var(--color-brand-anchor)] uppercase tracking-[0.3em] text-xs md:text-sm mb-6 font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
+            className="text-[var(--color-brand-anchor)] uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[10px] sm:text-xs md:text-sm mb-5 sm:mb-6 font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
           >
             {t("tagline")}
           </motion.p>
 
-          {/* Main Title */}
-          <div className="mb-10">
+          {/* Main Title — sized down from text-8xl to make room for the
+              reservations centre below without pushing it off short screens. */}
+          <div className="mb-8 md:mx-auto md:max-w-3xl">
             <TextReveal
               text={t("title")}
               as="h1"
-              className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-light text-white leading-[1.1]"
+              align="center"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.1]"
               delay={0.5}
             />
           </div>
 
-          {/* CTA — single decisive Book Direct that opens a property picker */}
+          {/* The reservations desk, given the middle of the hero. */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4"
+            className="flex justify-center"
           >
-            <MagneticButton>
-              <Button
-                variant="primary"
-                size="lg"
-                onClick={openPicker}
-                className="w-full sm:w-auto"
-              >
-                {t("secondaryCta")}
-              </Button>
-            </MagneticButton>
-
-            {/* Booking by phone is a co-primary route, so it gets a button of
-                equal size — not a line of fine print underneath one. */}
-            <Button variant="outlineLight" size="lg" asChild className="w-full sm:w-auto">
-              <a
-                href={`tel:${PHONE_E164}`}
-                onClick={() => track("call_click", { source: "hero" })}
-              >
-                <Phone className="w-4 h-4" />
-                {t("callCta", { number: PHONE_DISPLAY })}
-              </a>
-            </Button>
+            <ReservationsCentre onBookOnline={openPicker} />
           </motion.div>
-
-          {/* One quiet line of reassurance under the pair. */}
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.35, duration: 0.6 }}
-            className="mt-5 text-sm text-white/70 [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
-          >
-            {t("callReassurance")}
-          </motion.p>
 
           {/* Brand slip-line — Niles' marketing tagline, present on every hero */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 0.6 }}
-            className="mt-10 text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-[11px] md:text-xs font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
+            className="mt-8 text-[var(--color-brand-mid)] uppercase tracking-[0.3em] text-[11px] md:text-xs font-bold [text-shadow:0_1px_8px_rgba(0,0,0,0.55)]"
           >
             {t("slipLine")}
           </motion.p>
         </div>
+
+        {/* The four addresses, along the foot of the hero. */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.65, duration: 0.6 }}
+          className="mt-10 w-full border-t border-white/10 pt-7 sm:mt-12 sm:pt-8"
+        >
+          <PropertyStrip properties={properties} />
+        </motion.div>
 
         {/* Video Controls - Glass morphism style (only when the video is shown) */}
         {enableVideo && (
@@ -224,7 +195,7 @@ export function Hero() {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 2 }}
-          className="absolute bottom-24 left-6 flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full p-1"
+          className="absolute bottom-6 left-6 hidden items-center gap-2 rounded-full bg-white/10 p-1 backdrop-blur-md lg:flex"
         >
           <button
             onClick={togglePlay}
@@ -251,23 +222,6 @@ export function Hero() {
         </motion.div>
         )}
 
-        {/* Scroll Indicator */}
-        <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 2 }}
-          onClick={scrollToContent}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 hover:text-white transition-colors"
-          aria-label={t("scrollDown")}
-        >
-          <span className="text-xs uppercase tracking-widest">{t("scrollDown")}</span>
-          <motion.div
-            animate={{ y: [0, 6, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          >
-            <ChevronDown className="w-6 h-6" />
-          </motion.div>
-        </motion.button>
       </div>
 
       <BookingPicker
