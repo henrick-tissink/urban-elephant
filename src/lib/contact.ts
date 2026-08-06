@@ -7,10 +7,13 @@
 export const PHONE_E164 = "+27213001044";
 /** How the number is printed on the page. Keep in step with the Google Business Profile. */
 export const PHONE_DISPLAY = "021 300 1044";
+// TEMPORARY (06 Aug 2026): WhatsApp Business suspended 082 222 4959 for 24h
+// mid-campaign, so the hotline falls back to 079 138 0907 until it is restored.
+// Revert both constants to 082 222 4959 / 27822224959 once the suspension lifts.
 /** wa.me target — international, no plus. */
-export const WHATSAPP_E164 = "27822224959";
+export const WHATSAPP_E164 = "27791380907";
 /** How the WhatsApp number is printed on the page. */
-export const WHATSAPP_DISPLAY = "082 222 4959";
+export const WHATSAPP_DISPLAY = "079 138 0907";
 
 /** Minutes past midnight, SAST. */
 export const HOTLINE_OPEN_MIN = 8 * 60 + 30; // 08:30
