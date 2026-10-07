@@ -16,7 +16,7 @@ import {
 } from "@/lib/contact";
 
 /**
- * Reservations hotline — the one booking channel we own end to end.
+ * Reservations hotline: the one booking channel we own end to end.
  *
  * Presented as a co-primary booking route rather than a support widget: the
  * buttons are labelled (a bare phone glyph in a circle reads as "help", not

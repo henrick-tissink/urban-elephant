@@ -19,7 +19,7 @@ interface PropertiesGridProps {
 
 /**
  * The home page's signature moment. Each property gets a full-width editorial
- * spread — image on one side, oversized name + meta + tagline on the other,
+ * spread: image on one side, oversized name + meta + tagline on the other,
  * alternating left/right per property. Replaces the 2x2 OTA grid pattern with
  * a coffee-table-book rhythm.
  */
@@ -46,7 +46,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
 
       <BrandDivider withMark className="my-8" />
 
-      {/* Editorial property spreads — alternating L/R */}
+      {/* Editorial property spreads, alternating L/R */}
       <div>
         {properties.map((property, index) => {
           const flip = index % 2 === 1;
@@ -138,7 +138,7 @@ export function PropertiesGrid({ properties }: PropertiesGridProps) {
                 </div>
               </article>
 
-              {/* Divider between properties — but not after the last one */}
+              {/* Divider between properties, but not after the last one */}
               {index < properties.length - 1 && <BrandDivider withMark />}
             </div>
           );

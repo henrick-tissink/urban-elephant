@@ -9,7 +9,7 @@ import type { Property } from "@/types";
 /**
  * The four addresses, along the foot of the hero.
  *
- * Set typographically rather than with bespoke property marks — no logo assets
+ * Set typographically rather than with bespoke property marks: no logo assets
  * exist for the individual hotels, and improvising four of them would cheapen
  * a 4-star group. Names come from the property data so this can never drift
  * out of step with the rest of the site.
@@ -18,7 +18,7 @@ export function PropertyStrip({ properties }: { properties: Property[] }) {
   const locale = useLocale() as Locale;
 
   // Prefer the explicit suburb. Falls back to the first segment of `location`
-  // only if one is missing — the hero is not the place for a street address.
+  // only if one is missing. The hero is not the place for a street address.
   const shortLocation = (property: Property) => {
     if (property.shortLocation) return property.shortLocation;
     const full = pickOptional(property.location, locale) ?? "";

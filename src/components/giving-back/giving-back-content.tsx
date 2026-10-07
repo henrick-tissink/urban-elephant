@@ -14,9 +14,9 @@ const STARS = Array.from({ length: 34 }, (_, i) => ({
   delay: ((i * 7) % 40) / 10,
 }));
 
-// What Rachel's Wishes does — kept as a plain, dignified list, not gaudy cards.
+// What Rachel's Wishes does, kept as a plain, dignified list, not gaudy cards.
 const FOCUS = [
-  "Everyday essentials — food, clothing, books, toys and toiletries",
+  "Everyday essentials: food, clothing, books, toys and toiletries",
   "Premature babies and their mothers",
   "Early-literacy projects for young children",
   "Fundraising for other organisations that help children",
@@ -26,7 +26,7 @@ const FOCUS = [
 export function GivingBackContent() {
   return (
     <>
-      {/* Hero — a night sky, where the shooting star belongs */}
+      {/* Hero: a night sky, where the shooting star belongs */}
       <section className="relative overflow-hidden bg-[#14161a] pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div aria-hidden className="absolute inset-0">
           {STARS.map((s, i) => (
@@ -43,7 +43,7 @@ export function GivingBackContent() {
             />
           ))}
         </div>
-        {/* soft pink wash — the thread that ties the two brands together */}
+        {/* soft pink wash, the thread that ties the two brands together */}
         <div
           aria-hidden
           className="absolute -top-1/4 right-0 w-[70%] h-[150%] opacity-20 blur-3xl pointer-events-none"
@@ -69,7 +69,7 @@ export function GivingBackContent() {
             <p className="mt-7 text-white/75 text-lg leading-relaxed max-w-2xl mx-auto">
               At Urban Elephant, we believe a successful business should make a
               difference beyond its own front door. We&rsquo;re proud to partner
-              with Rachel&rsquo;s Wishes — a Western Cape charity improving the
+              with Rachel&rsquo;s Wishes, a Western Cape charity improving the
               lives of vulnerable children and families.
             </p>
           </div>
@@ -93,7 +93,7 @@ export function GivingBackContent() {
             <ScrollReveal delay={0.1}>
               <p>
                 The charity works across hospitals, townships and
-                early-childhood-development centres — providing food, clothing,
+                early-childhood-development centres, providing food, clothing,
                 books, toys, toiletries and other essentials. It supports
                 premature babies and their mothers, develops early-literacy
                 projects, and raises funds for other organisations helping

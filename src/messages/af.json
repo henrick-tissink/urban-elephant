@@ -37,16 +37,16 @@
   },
   "recommendations": {
     "title": "Buite die Voordeur",
-    "description": "Drie uitsigte wat elke gas behoort te sien, drie plekke waarheen ons 'n vriend sou stuur om te eet — Urban Elephant se gids vir Kaapstad.",
+    "description": "Drie uitsigte wat elke gas behoort te sien, drie plekke waarheen ons 'n vriend sou stuur om te eet. Urban Elephant se gids vir Kaapstad.",
     "eyebrow": "Saamgestel deur Urban Elephant",
-    "subtitle": "Wat ons gaste uitstuur om te sien, te eet, en te verken — die Kaapstad wat ons aan 'n vriend sou aanbeveel.",
+    "subtitle": "Wat ons gaste uitstuur om te sien, te eet, en te verken: die Kaapstad wat ons aan 'n vriend sou aanbeveel.",
     "letterEyebrow": "Van die gasheer",
     "attractionsEyebrow": "Kaapstadse Ikone",
     "attractionsTitle": "Drie uitsigte wat jy nie moet mis nie.",
     "attractionsDescription": "Die berg, die hawe, en die strate wat elke twee blokke buurt verander. Begin hier.",
     "restaurantsEyebrow": "Waar Ons Eet",
     "restaurantsTitle": "Waarheen ons 'n vriend sou stuur.",
-    "restaurantsDescription": "'n Kort lys van drie plekke — een vir ontbyt, een vir middagete, een vir aandete. Nie een van hulle betaal ons nie.",
+    "restaurantsDescription": "'n Kort lys van drie plekke: een vir ontbyt, een vir middagete, een vir aandete. Nie een van hulle betaal ons nie.",
     "hostNote": "Gasheer se nota",
     "perkLabel": "'n Geskenk van ons",
     "ctaEyebrow": "Wil jy meer?",
@@ -88,7 +88,7 @@
     "bookCta": "Bespreek nou",
     "bookCtaSub": "Aanlyn besprekings",
     "reassurance": "Beste tarief gewaarborg · Geen besprekingsfooie · Betaalplanne beskikbaar",
-    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek."
+    "whatsappMessage": "Hallo Urban Elephant, ek wil graag 'n verblyf bespreek."
   },
   "bookingPicker": {
     "eyebrow": "BESPREEK DIREK",
@@ -103,14 +103,14 @@
     "eyebrow": "NOG BESLUITELOOS?",
     "title": "Laat ons dit vir jou bespreek.",
     "titleProperty": "Laat ons {property} vir jou bespreek.",
-    "body": "Ons besprekingspan ken elke woonstel in die groep. Sê vir ons wat jy nodig het en ons bevestig dit binne 'n paar minute — beste tarief, geen besprekingsfooi nie.",
-    "bodyClosed": "Ons besprekingslyn open om 08:30. Stuur vir ons 'n WhatsApp en ons kom dadelik terug na jou toe — beste tarief, geen besprekingsfooi nie.",
+    "body": "Ons besprekingspan ken elke woonstel in die groep. Sê vir ons wat jy nodig het en ons bevestig dit binne 'n paar minute. Beste tarief, geen besprekingsfooi nie.",
+    "bodyClosed": "Ons besprekingslyn open om 08:30. Stuur vir ons 'n WhatsApp en ons kom dadelik terug na jou toe. Beste tarief, geen besprekingsfooi nie.",
     "call": "Skakel {number}",
     "whatsapp": "Bespreek op WhatsApp",
     "decline": "Nee dankie, ek kyk net rond",
     "close": "Sluit",
-    "whatsappMessage": "Hallo Urban Elephant — ek het probeer om 'n verblyf te bespreek en kan hulp gebruik.",
-    "whatsappMessageProperty": "Hallo Urban Elephant — ek het probeer om {property} te bespreek en kan hulp gebruik."
+    "whatsappMessage": "Hallo Urban Elephant, ek het probeer om 'n verblyf te bespreek en kan hulp gebruik.",
+    "whatsappMessageProperty": "Hallo Urban Elephant, ek het probeer om {property} te bespreek en kan hulp gebruik."
   },
   "hotline": {
     "call": "Skakel {number}",
@@ -122,8 +122,8 @@
     "openNow": "Besprekings nou oop",
     "hours": "Besprekings · 08:30–20:00",
     "menuNumber": "Besprekings · {number} · 08:30–20:00",
-    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek of oor julle toere navraag doen.",
-    "whatsappMessageProperty": "Hallo Urban Elephant — ek wil graag {property} bespreek.",
+    "whatsappMessage": "Hallo Urban Elephant, ek wil graag 'n verblyf bespreek of oor julle toere navraag doen.",
+    "whatsappMessageProperty": "Hallo Urban Elephant, ek wil graag {property} bespreek.",
     "barLabel": "Besprekings:",
     "barHours": "Daagliks 08:30 – 20:00",
     "barClosed": "Open 08:30",
@@ -133,13 +133,13 @@
     "eyebrow": "NA URE",
     "title": "Ons skakel jou terug.",
     "titleProperty": "Ons skakel jou terug oor {property}.",
-    "body": "Ons besprekingslyn ({number}) open om 08:30. Los jou nommer en ons bel jou eerste ding — beste tarief, geen besprekingsfooi nie.",
+    "body": "Ons besprekingslyn ({number}) open om 08:30. Los jou nommer en ons bel jou eerste ding. Beste tarief, geen besprekingsfooi nie.",
     "nameLabel": "Jou naam",
     "phoneLabel": "Jou foonnommer",
     "datesLabel": "Datums wat jy in gedagte het (opsioneel)",
     "submit": "Vra my terugskakel aan",
     "submitting": "Stuur tans…",
-    "doneTitle": "Reg so — ons kontak jou.",
+    "doneTitle": "Reg so. Ons kontak jou.",
     "doneBody": "Iemand van besprekings bel jou sodra ons om 08:30 oopmaak.",
     "doneClose": "Sluit",
     "error": "Iets het verkeerd geloop. Probeer eerder WhatsApp.",
@@ -148,20 +148,20 @@
   "talkToUs": {
     "eyebrow": "PRAAT MET ONS",
     "title": "Bespreek by 'n mens.",
-    "body": "Ons besprekingspan ken elke woonstel in die groep — watter een die oggendson vang, watter een 'n gesin pas, wat naby die moeite werd is. Sê vir ons wat jy nodig het en ons bevestig dit binne minute.",
-    "openNow": "Nou oop — ons antwoord gewoonlik binne 'n minuut",
-    "closedNow": "Nou gesluit — weer oop om 08:30",
+    "body": "Ons besprekingspan ken elke woonstel in die groep: watter een die oggendson vang, watter een 'n gesin pas, wat naby die moeite werd is. Sê vir ons wat jy nodig het en ons bevestig dit binne minute.",
+    "openNow": "Nou oop. Ons antwoord gewoonlik binne 'n minuut",
+    "closedNow": "Nou gesluit. Weer oop om 08:30",
     "hours": "Daagliks oop 08:30–20:00",
     "whatsappCta": "WhatsApp {number}",
     "callbackCta": "Vra 'n terugskakel",
     "promise": "Beste tarief gewaarborg · Geen besprekingsfooi · Bevestig terwyl jy op die lyn is",
-    "whatsappMessage": "Hallo Urban Elephant — ek wil graag 'n verblyf bespreek."
+    "whatsappMessage": "Hallo Urban Elephant, ek wil graag 'n verblyf bespreek."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels promosie",
     "eyebrow": "URBAN ELEPHANT HOTELS",
     "title": "Welkom in Kaapstad.",
-    "body": "Amptelik gegradeerde 4-ster woonstelhotelle — bespreek direk vir die beste tarief. Die handelsmerk wat jou terugliefhet.",
+    "body": "Amptelik gegradeerde 4-ster woonstelhotelle. Bespreek direk vir die beste tarief. Die handelsmerk wat jou terugliefhet.",
     "cta": "Bespreek Direk",
     "ctaHref": "https://book.nightsbridge.com/30034",
     "close": "Sluit promosie"
@@ -182,11 +182,11 @@
     "items": {
       "rates": {
         "title": "Ons Pride Promise",
-        "description": "10% afslag op elke tarief, elke keer — net wanneer jy direk by ons bespreek. Geen kodes, geen kleinletters nie."
+        "description": "10% afslag op elke tarief, elke keer wat jy direk by ons bespreek. Geen kodes, geen kleinletters nie."
       },
       "offers": {
         "title": "Eksklusiewe Aanbiedinge",
-        "description": "Lid-aanbiedinge, promosies en gekureerde Kaapstad-ervarings — net wanneer jy direk bespreek."
+        "description": "Lid-aanbiedinge, promosies en gekureerde Kaapstad-ervarings, net wanneer jy direk bespreek."
       },
       "flex": {
         "title": "Buigsame Kansellasie",
@@ -194,7 +194,7 @@
       },
       "concierge": {
         "title": "Persoonlike Concierge-diens",
-        "description": "Ervaar die gemak van 'n ware een-stop diens. Van akkommodasie en lughawe-vervoer tot toere, restaurantbesprekings en plaaslike ervarings — ons span help met elke deel van jou reis. Geniet 'n direkte lyn na ons span vir besprekings, aanbevelings en ondersteuning op die grond — voor, tydens en na jou verblyf."
+        "description": "Ervaar die gemak van 'n ware een-stop diens. Van akkommodasie en lughawe-vervoer tot toere, restaurantbesprekings en plaaslike ervarings: ons span help met elke deel van jou reis. Geniet 'n direkte lyn na ons span vir besprekings, aanbevelings en ondersteuning op die grond voor, tydens en na jou verblyf."
       }
     }
   },
@@ -224,7 +224,7 @@
     "tagline": "BY URBAN ELEPHANT",
     "title": "Waar jy bly behoort net so onvergeetlik te voel soos die stad self.",
     "description": "Van stylvolle stadswoonstelle tot kuswegtrekkings, elke Urban Elephant-verblyf is sorgvuldig ontwerp om gemak, persoonlikheid en hotel-vlak konsekwentheid te kombineer.",
-    "body": "Professioneel bestuur, pragtig geleë — dit is Kaapstad-akkommodasie, die Urban Elephant manier."
+    "body": "Professioneel bestuur, pragtig geleë. Dit is Kaapstad-akkommodasie, die Urban Elephant manier."
   },
   "properties": {
     "title": "Urban Elephant Hotels",
@@ -273,12 +273,12 @@
       "name": "Urban Elephant at Flamingo Express",
       "tagline": "Seekant Ontvlugting",
       "description": "Jou seekant-ontvlugting met moeitelose elegansie.",
-      "body": "Elke eenheid bevat 'n eenvoudige, elegante ontwerp met luukse aanrakings - ideaal vir werkende professionele mense, ontspanningsreisigers, of enigiemand wat 'n stylvolle basis naby die see soek."
+      "body": "Elke eenheid bevat 'n eenvoudige, elegante ontwerp met luukse aanrakings, ideaal vir werkende professionele mense, ontspanningsreisigers, of enigiemand wat 'n stylvolle basis naby die see soek."
     },
     "rose": {
       "name": "Urban Elephant at The Rose",
       "tagline": "117 Strand Straat",
-      "description": "Ontmoet The Rose - Urban Elephant se nuutste blikvanger by 117 Strand Straat, Kaapstad.",
+      "description": "Ontmoet The Rose: Urban Elephant se nuutste blikvanger by 117 Strand Straat, Kaapstad.",
       "body": "Van Tafelberg tot Leeukop, die kleurvolle Bo-Kaap tot die eindelose Atlantiese Oseaan, die 360-grade toneel is ernstig volgende vlak. Sonopkoms koffie of sonsondergang uitsigte? Ja, asseblief."
     },
     "pridePromiseNote": "Pride Promise: 10% afslag wanneer jy direk bespreek",
@@ -315,7 +315,7 @@
     "enterprise": {
       "kicker": "AANGEDRYF DEUR ENTERPRISE",
       "title": "Huur 'n motor vir jou Kaapstad-avontuur.",
-      "body": "Blaai deur Enterprise se volle Suid-Afrikaanse vloot en bespreek direk hieronder. Beste pryse gewaarborg — geen besprekingsfooie, geen versteekte koste, en ons span kan aflewering by jou woonstelhotel reël.",
+      "body": "Blaai deur Enterprise se volle Suid-Afrikaanse vloot en bespreek direk hieronder. Beste pryse gewaarborg: geen besprekingsfooie, geen versteekte koste, en ons span kan aflewering by jou woonstelhotel reël.",
       "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp ons Guest Relations-span by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
     },
     "footnote": "Verkies jy 'n persoonlike aanraking? WhatsApp ons Guest Relations-span by +27 72 618 8140 en ons reël jou huurmotor, vervoer en enigiets anders wat jy nodig het."
@@ -341,24 +341,24 @@
     "title": "'n Baie Warm Welkom!",
     "subtitle": "ONTMOET DIE STIGTER",
     "tagline": "Die Handelsmerk Wat Jou Terugliefhet",
-    "founderQuote": "Gasvryheid is meer as net 'n werk vir my—dit is my passie.",
+    "founderQuote": "Gasvryheid is meer as net 'n werk vir my. Dit is my passie.",
     "founderName": "Niles",
     "founderTitle": "Stigter & Hoof Olifant Tammer",
-    "intro": "Haai daar! Ek is Niles—stigter, eienaar, en selfaangestelde Hoof Olifant Tammer by Urban Elephant. Oorspronklik van die VK (waar die weer karakter bou), het ek die skuif na Kaapstad gemaak in 2007.",
+    "intro": "Haai daar! Ek is Niles: stigter, eienaar, en selfaangestelde Hoof Olifant Tammer by Urban Elephant. Oorspronklik van die VK (waar die weer karakter bou), het ek die skuif na Kaapstad gemaak in 2007.",
     "story1": "Na wêreldreis en die beste (en slegste) wat die wêreld te bied het gesien het, het ek geweet ek het iets werklik spesiaals in die Moederstad gevind. So, ek het my tasse uitgepak, die sambreel gelos, en begin om iets 'n bietjie anders in die wêreld van gasvryheid te bou.",
-    "story2": "Dit is hoe Urban Elephant gebore is—'n plek waar luuksheid gemak ontmoet, waar styl nie die bank breek nie, en waar elke gas soos 'n rockster voel (of ten minste, 'n baie goed versorgde mens).",
+    "story2": "Dit is hoe Urban Elephant gebore is: 'n plek waar luuksheid gemak ontmoet, waar styl nie die bank breek nie, en waar elke gas soos 'n rockster voel (of ten minste, 'n baie goed versorgde mens).",
     "story3": "Ek hou opreg daarvan om nuwe mense te ontmoet, hul stories te hoor, en hulle te help om ongelooflike herinneringe te skep terwyl hulle in Kaapstad is.",
-    "story4": "Elke woonstel is ontwerp om jou tuis te laat voel—maar beter. Want kom ons wees eerlik, wie wil huishouding by die huis doen?",
+    "story4": "Elke woonstel is ontwerp om jou tuis te laat voel, maar beter. Want kom ons wees eerlik, wie wil huishouding by die huis doen?",
     "team": "Natuurlik sou niks hiervan moontlik wees sonder my ongelooflike span nie. Van ons superster Gasverbintenisbestuurders tot die huishouding helde wat alles vlekloos hou, hulle is die hart van Urban Elephant.",
     "zola": {
       "title": "Zola se Storie",
       "subtitle": "Die Gees van Zola",
-      "imageAlt": "Zola - Die Pienk Olifant",
-      "intro": "Elke storie begin iewers — ons s'n het begin met 'n pienk olifant genaamd Zola.",
+      "imageAlt": "Zola, Die Pienk Olifant",
+      "intro": "Elke storie begin iewers. Ons s'n het begin met 'n pienk olifant genaamd Zola.",
       "story1": "Toe ek ses jaar oud was, was Zola my konstante metgesel. Sy het gemak, kalmte, en 'n stil herinnering gebring dat uitstaan iets moois kan wees.",
-      "story2": "Jare later het daardie eenvoudige les die hart en embleem van Urban Elephant geword — 'n handelsmerk gebou op sorg, karakter, en verbinding.",
+      "story2": "Jare later het daardie eenvoudige les die hart en embleem van Urban Elephant geword, 'n handelsmerk gebou op sorg, karakter, en verbinding.",
       "story3": "Zola leef nou voort in ons embleem. Haar naam, wat 'vreedsaam' en 'kalm' in Xhosa beteken, weerspieël die gevoel wat ons wil hê elke gas moet ervaar.",
-      "closing": "By Urban Elephant is jy meer as 'n besoeker. Jy is deel van 'n storie wat gemak, kreatiwiteit, en behoort vier — dieselfde gevoel wat Zola my eens gegee het."
+      "closing": "By Urban Elephant is jy meer as 'n besoeker. Jy is deel van 'n storie wat gemak, kreatiwiteit, en behoort vier: dieselfde gevoel wat Zola my eens gegee het."
     },
     "values": {
       "title": "Ons Waardes",
@@ -387,19 +387,19 @@
     "credentials": {
       "eyebrow": "AMPTELIK GEGRADEER",
       "title": "Die plakkaat teen die muur, met die papierwerk om dit te staaf.",
-      "intro": "Urban Elephant is amptelik as 'n 4-ster Woonstelhotel gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, en is 'n lid van Cape Town Tourism. Albei sertifikate is openbaar — bekyk hulle hieronder.",
-      "plaqueAlt": "Toerisme-graderingsraad van Suid-Afrika — Woonstelhotel-graderingsplaket vir Urban Elephant",
-      "lockupAlt": "Urban Elephant Kaapstad — amptelike 4-ster meesterlogo",
+      "intro": "Urban Elephant is amptelik as 'n 4-ster Woonstelhotel gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, en is 'n lid van Cape Town Tourism. Albei sertifikate is openbaar. Bekyk hulle hieronder.",
+      "plaqueAlt": "Toerisme-graderingsraad van Suid-Afrika: Woonstelhotel-graderingsplaket vir Urban Elephant",
+      "lockupAlt": "Urban Elephant Kaapstad, amptelike 4-ster meesterlogo",
       "lockupLabel": "Amptelike meestermerk",
       "lockupDescription": "Die Urban Elephant Kaapstad-meesterlogo, met die vier-ster TGCSA-gradering ingebou.",
       "tgcsaLabel": "TGCSA-graderingsertifikaat",
       "tgcsaDescription": "Amptelike 4-ster woonstelhotel-gradering deur die Toerisme-graderingsraad van Suid-Afrika.",
       "tgcsaCta": "Bekyk TGCSA-sertifikaat",
       "cttLabel": "Cape Town Tourism-lidmaatskap",
-      "cttDescription": "Lid van Cape Town Tourism — die stad se amptelike toerismeowerheid.",
+      "cttDescription": "Lid van Cape Town Tourism, die stad se amptelike toerismeowerheid.",
       "cttCta": "Bekyk CTT-lidmaatskap",
       "ppraLabel": "PPRA Geregistreer",
-      "ppraDescription": "Property Practitioners Regulatory Authority — Registrasienommer 1695928."
+      "ppraDescription": "Property Practitioners Regulatory Authority. Registrasienommer 1695928."
     }
   },
   "services": {
@@ -440,7 +440,7 @@
       "error": "Iets het skeefgeloop. Probeer asseblief weer.",
       "successEyebrow": "Boodskap gestuur",
       "successHeading": "Ontvang, {name}.",
-      "successBody": "Ons Guest Relations-span antwoord binne werksure. Terwyl jy wag, stuur ons 'n boodskap op WhatsApp — ons antwoord persoonlik, gewoonlik binne 'n uur.",
+      "successBody": "Ons Guest Relations-span antwoord binne werksure. Terwyl jy wag, stuur ons 'n boodskap op WhatsApp. Ons antwoord persoonlik, gewoonlik binne 'n uur.",
       "successWa": "WhatsApp Guest Relations",
       "successAgain": "Stuur nog 'n boodskap"
     },
@@ -461,7 +461,7 @@
   },
   "footer": {
     "tagline": "Die handelsmerk wat jou terugliefhet.",
-    "description": "Urban Elephant het vinnig een van Kaapstad se top woonstelhotelle geword — amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en 'n kort entjie van alles wat jy kom besoek het.",
+    "description": "Urban Elephant het vinnig een van Kaapstad se top woonstelhotelle geword: amptelik gegradeer deur die Toerisme-graderingsraad van Suid-Afrika, professioneel bestuur, en 'n kort entjie van alles wat jy kom besoek het.",
     "sections": {
       "properties": "Eiendomme",
       "services": "Dienste",
@@ -502,11 +502,11 @@
     }
   },
   "theHerd": {
-    "metaTitle": "Die Trop — Urban Elephant Lojaliteitsprogram",
+    "metaTitle": "Die Trop: Urban Elephant Lojaliteitsprogram",
     "metaDescription": "Sluit aan by Die Trop, Urban Elephant se lojaliteitsprogram vir gaste wat aanhou tuis kom. Lede geniet eksklusiewe direkte tariewe, prioriteitsbesprekings, en herkenning by elke verblyf.",
     "eyebrow": "URBAN ELEPHANT LOJALITEIT",
     "title": "Die Trop. Vir gaste wat aanhou tuis kom.",
-    "subtitle": "Die Trop is Urban Elephant se lojaliteitsprogram — vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
+    "subtitle": "Die Trop is Urban Elephant se lojaliteitsprogram, vir gaste wat kies om weer en weer by ons te bly. Lede word herken, onthou, en beloon met eksklusiewe direkte tariewe en prioriteitsbesprekings by elke Urban Elephant-eiendom.",
     "welcomeEyebrow": "WELKOM BY DIE TROP",
     "welcomeTitle": "Welkom by die familie.",
     "welcomeBody1": "Ons is bly om jou te verwelkom by 'n gemeenskap van reisigers, ontdekkers en stadliefhebbers wat deurdagte verblywe, outentieke ervarings en die lewendige gees van Kaapstad waardeer.",
@@ -514,12 +514,12 @@
     "welcomeBody3": "By Urban Elephant glo ons gasvryheid moet persoonlik, moeiteloos en onvergeetlik voel. Of jy nou besig is om saak te doen, met vakansie is, of 'n lank-verwagte ontvlugting onderneem, ons span is verbind tot 'n uitsonderlike verblyf elke keer.",
     "welcomeBody4": "Ons moedig jou aan om ons versameling eiendomme te verken, plaaslike ervarings te ontdek, en die baie voordele wat met Die Trop kom, te geniet. Sou jy enige tyd hulp benodig, is ons span altyd hier om te help.",
     "whyEyebrow": "HOEKOM DIE TROP",
-    "whyTitle": "Lojaliteit, geheue, behoort — die manier wat olifante dit doen.",
-    "whyIntro": "Urban Elephant probeer nie 'n koue korporatiewe hotelketting wees nie. Ons wil hê gaste moet voel asof hulle aan iets behoort — 'n handelsmerk wat hulle onthou en waardeer. Soos 'n olifanttrop, gaan dit oor lojaliteit, verbinding, beskerming, geheue, en tuis terugkom.",
+    "whyTitle": "Lojaliteit, geheue, behoort. Die manier wat olifante dit doen.",
+    "whyIntro": "Urban Elephant probeer nie 'n koue korporatiewe hotelketting wees nie. Ons wil hê gaste moet voel asof hulle aan iets behoort: 'n handelsmerk wat hulle onthou en waardeer. Soos 'n olifanttrop, gaan dit oor lojaliteit, verbinding, beskerming, geheue, en tuis terugkom.",
     "reasons": {
       "loyalty": {
         "title": "Lojaliteit en geheue",
-        "description": "Olifante is bekend vir albei. Die Trop is gebou op die idee dat 'n handelsmerk sy gaste moet onthou — en hulle moet beloon vir die keuse om terug te kom."
+        "description": "Olifante is bekend vir albei. Die Trop is gebou op die idee dat 'n handelsmerk sy gaste moet onthou, en hulle moet beloon vir die keuse om terug te kom."
       },
       "protection": {
         "title": "Beskerming en herkenning",
@@ -527,11 +527,11 @@
       },
       "belonging": {
         "title": "Tuis terugkom",
-        "description": "Gaste wat herhaaldelik by ons bly, word deel van Die Trop. Dit is minder 'n puntestelsel en meer 'n erkenning dat jy Urban Elephant gekies het — en ons het jou ook gekies."
+        "description": "Gaste wat herhaaldelik by ons bly, word deel van Die Trop. Dit is minder 'n puntestelsel en meer 'n erkenning dat jy Urban Elephant gekies het, en ons het jou ook gekies."
       },
       "premium": {
         "title": "Emosioneel, nie transaksioneel nie",
-        "description": "Die Trop gaan nie oor myle en vlakke nie. Dit gaan oor die klein dingetjies — 'n bekende verwelkoming, jou gewone besprekingsvoorkeure onthou, en 'n eksklusiewe tarief wanneer jy direk bespreek."
+        "description": "Die Trop gaan nie oor myle en vlakke nie. Dit gaan oor die klein dingetjies: 'n bekende verwelkoming, jou gewone besprekingsvoorkeure onthou, en 'n eksklusiewe tarief wanneer jy direk bespreek."
       }
     },
     "benefitsEyebrow": "LIDVOORDELE",
@@ -540,7 +540,7 @@
       "rates": {
         "label": "Lidvoordeel",
         "title": "10% afslag op die laagste tarief",
-        "description": "Lede kry 10% afslag op die laagste beskikbare tarief wanneer hulle direk bespreek — toegepas met jou lidkode by uitklok."
+        "description": "Lede kry 10% afslag op die laagste beskikbare tarief wanneer hulle direk bespreek, toegepas met jou lidkode by uitklok."
       },
       "priority": {
         "label": "Lidvoordeel",
@@ -550,7 +550,7 @@
       "amenities": {
         "label": "Lidvoordeel",
         "title": "Verwelkomingsgemakke",
-        "description": "'n Klein dankie wat in jou woonstel wag wanneer jy bly — gekies deur Niles, nie 'n korporatiewe sjabloon nie."
+        "description": "'n Klein dankie wat in jou woonstel wag wanneer jy bly, gekies deur Niles, nie 'n korporatiewe sjabloon nie."
       },
       "offers": {
         "label": "Lidvoordeel",
@@ -560,8 +560,8 @@
     },
     "joinEyebrow": "SLUIT AAN BY DIE TROP",
     "joinTitle": "Teken in. Bly. Word onthou.",
-    "joinDescription": "Los jou naam en e-pos en ons stuur jou ledeverwelkoming met jou direkte-bespreking-afslagkode. Geen vlakke, geen fynskrif, geen gemorspos nie — net 'n stiller, beter manier om by ons te bly.",
-    "eligibility": "Die Trop is vir gaste wat reeds ten minste een keer by ons gebly het. Ons bevestig jou verblyf voordat ons jou lidmaatskap aktiveer — dis hoe ons dit hou vir gaste wat ons reeds ken.",
+    "joinDescription": "Los jou naam en e-pos en ons stuur jou ledeverwelkoming met jou direkte-bespreking-afslagkode. Geen vlakke, geen fynskrif, geen gemorspos nie. Net 'n stiller, beter manier om by ons te bly.",
+    "eligibility": "Die Trop is vir gaste wat reeds ten minste een keer by ons gebly het. Ons bevestig jou verblyf voordat ons jou lidmaatskap aktiveer. Dis hoe ons dit hou vir gaste wat ons reeds ken.",
     "form": {
       "nameLabel": "Voornaam",
       "emailLabel": "E-posadres",
@@ -569,12 +569,12 @@
       "submitting": "Sluit aan…",
       "disclaimer": "Deur aan te sluit stem jy in om af en toe e-posse van Urban Elephant te ontvang oor jou lidmaatskap. Skryf enige tyd uit.",
       "successEyebrow": "AMPER DAAR",
-      "successTitle": "Ons het jou e-pos oopgemaak — druk stuur.",
-      "successBody": "Jou aanmeldings-e-pos is gereed in jou e-poskliënt, geadresseer aan Karin. Stuur dit deur en ons stel jou op by Die Trop, en dan kom jou verwelkomingsbrief en lid-afslagkode per e-pos — dieselfde warm verwelkoming wat Die Trop al jare geskryf het."
+      "successTitle": "Ons het jou e-pos oopgemaak. Druk stuur.",
+      "successBody": "Jou aanmeldings-e-pos is gereed in jou e-poskliënt, geadresseer aan Karin. Stuur dit deur en ons stel jou op by Die Trop, en dan kom jou verwelkomingsbrief en lid-afslagkode per e-pos: dieselfde warm verwelkoming wat Die Trop al jare geskryf het."
     },
     "bookEyebrow": "LEDE BESPREEK DIREK",
     "bookTitle": "Reeds deel van Die Trop? Bespreek direk, kry jou lidtarief.",
-    "bookDescription": "Sodra jy aangesluit het, sal jou lid-afslagkode per e-pos arriveer. Pas dit toe op enige direkte bespreking — dis hoe die lojaliteitstarief vandag toegepas word, en die stelsel word outomaties soos die program ontvou.",
+    "bookDescription": "Sodra jy aangesluit het, sal jou lid-afslagkode per e-pos arriveer. Pas dit toe op enige direkte bespreking. Dis hoe die lojaliteitstarief vandag toegepas word, en die stelsel word outomaties soos die program ontvou.",
     "bookCta": "Bespreek Direk"
   },
   "notFound": {
@@ -583,13 +583,13 @@
     "backHome": "Terug na Tuis"
   },
   "faq": {
-    "metaTitle": "Urban Elephant Vrae — Alles wat jy moet weet voor jy aankom",
+    "metaTitle": "Urban Elephant Vrae: Alles wat jy moet weet voor jy aankom",
     "metaDescription": "Inklok, parkering, Wi-Fi, huishouding, lughawe-vervoer en meer. Die vrae wat ons gaste die meeste vra voor en tydens 'n verblyf by Urban Elephant Kaapstad.",
     "eyebrow": "GAS-VRAE",
     "title": "Alles wat jy moet weet voor jy aankom",
-    "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur ons Guest Relations-span 'n WhatsApp — ons antwoord persoonlik.",
+    "subtitle": "Die vrae wat ons gaste die meeste vra. As joune nie hier is nie, stuur ons Guest Relations-span 'n WhatsApp. Ons antwoord persoonlik.",
     "askLabel": "Het jy nog 'n vraag?",
-    "askDescription": "WhatsApp ons Guest Relations-span by +27 72 618 8140 of e-pos karin@urbanelephant.co.za — ons antwoord binne werksure.",
+    "askDescription": "WhatsApp ons Guest Relations-span by +27 72 618 8140 of e-pos karin@urbanelephant.co.za. Ons antwoord binne werksure.",
     "pickerEyebrow": "Kies jou woonstelhotel",
     "pickerHeading": "Vier amptelik gegradeerde hotelle. Een familie wat hulle bestuur.",
     "groups": {
@@ -686,18 +686,18 @@
   "meta": {
     "siteName": "Urban Elephant Hotel and Tours",
     "defaultTitle": "Urban Elephant | Amptelik Gegradeerde Woonstelhotelle in Kaapstad",
-    "defaultDescription": "Amptelik gegradeerde woonstelhotelle in Kaapstad se beste areas — TGCSA-gegradeer, professioneel bestuur, en familie-bestuur. Bespreek direk vir die beste tarief."
+    "defaultDescription": "Amptelik gegradeerde woonstelhotelle in Kaapstad se beste areas: TGCSA-gegradeer, professioneel bestuur, en familie-bestuur. Bespreek direk vir die beste tarief."
   },
   "seo": {
     "home": {
       "title": "Urban Elephant | Luukse Woonstelhotelle in Kaapstad",
-      "description": "Amptelik gegradeerde 4-ster luukse woonstelle in Kaapstad. Hotelgemak, ontwerp-gedrewe ruimtes, en die konsekwentheid van professionele bestuur — Urban Elephant.",
+      "description": "Amptelik gegradeerde 4-ster luukse woonstelle in Kaapstad. Hotelgemak, ontwerp-gedrewe ruimtes, en die konsekwentheid van professionele bestuur. Dit is Urban Elephant.",
       "ogTitle": "Urban Elephant | Luukse Woonstelhotelle in Kaapstad",
       "ogDescription": "Ervaar Kaapstad soos nog nooit tevore nie. Luukse woonstelhotelle met pragtige uitsigte en persoonlike diens."
     },
     "about": {
       "title": "Oor Ons",
-      "description": "Die familie agter Urban Elephant — Kaapstadse woonstelhotelle gegradeer deur die Toerisme-graderingsraad van Suid-Afrika.",
+      "description": "Die familie agter Urban Elephant: Kaapstadse woonstelhotelle gegradeer deur die Toerisme-graderingsraad van Suid-Afrika.",
       "ogTitle": "Oor Urban Elephant",
       "ogDescription": "Familie-besit, TGCSA-gegradeerde woonstelhotelle in Kaapstad."
     },
@@ -721,7 +721,7 @@
     },
     "faq": {
       "title": "Vrae",
-      "description": "Inklok, parkering, WiFi, huishouding, lughawe-vervoer — die vrae wat gaste die meeste vra.",
+      "description": "Inklok, parkering, WiFi, huishouding, lughawe-vervoer: die vrae wat gaste die meeste vra.",
       "ogTitle": "Vrae | Urban Elephant",
       "ogDescription": "Alles wat jy moet weet voor jou Kaapstad-verblyf."
     },
@@ -745,7 +745,7 @@
     },
     "propertyApplication": {
       "title": "Word 'n Vennoot",
-      "description": "Lys jou Kaapstadse woonstel by Urban Elephant — handgekies, pragtig gebrand en ten volle bestuur. Doen aansoek om by die familie aan te sluit.",
+      "description": "Lys jou Kaapstadse woonstel by Urban Elephant: handgekies, pragtig gebrand en ten volle bestuur. Doen aansoek om by die familie aan te sluit.",
       "ogTitle": "Word 'n Vennoot by Urban Elephant",
       "ogDescription": "Sluit aan by 'n florerende Kaapstadse hotelhandelsmerk. Ons brand, vul en bestuur jou woonstel ten volle."
     }
@@ -780,7 +780,7 @@
     "hero": {
       "eyebrow": "Word 'n Vennoot",
       "title": "Sluit aan by die Urban Elephant-familie",
-      "description": "As jy graag by 'n florerende, groeiende hotelhandelsmerk in Kaapstad wil aansluit, sal ons baie bly wees om van jou te hoor. Ons woonstelle word handgekies — kyk hieronder na wat ons soek.",
+      "description": "As jy graag by 'n florerende, groeiende hotelhandelsmerk in Kaapstad wil aansluit, sal ons baie bly wees om van jou te hoor. Ons woonstelle word handgekies. Kyk hieronder na wat ons soek.",
       "cta": "Doen aansoek"
     },
     "criteria": {
@@ -807,7 +807,7 @@
     "handle": {
       "eyebrow": "Ten volle bestuur",
       "heading": "Ons sorg vir alles",
-      "subheading": "Van die eerste foto tot die laaste uitboek is jou woonstel in goeie hande — en jou gaste ook.",
+      "subheading": "Van die eerste foto tot die laaste uitboek is jou woonstel in goeie hande, en jou gaste ook.",
       "setup": {
         "title": "Opstel & meublering",
         "body": "Ons rig in, meubileer en fotografeer jou woonstel sodat dit gereed is om gaste te ontvang."
@@ -818,7 +818,7 @@
       },
       "maintenance": {
         "title": "Instandhouding & sorg",
-        "body": "Skoonmaak, onderhoud en betroubare diensverskaffers — alles hanteer, altyd brandskoon."
+        "body": "Skoonmaak, onderhoud en betroubare diensverskaffers: alles hanteer, altyd brandskoon."
       },
       "guests": {
         "title": "Gaste & handelsmerk",
@@ -829,7 +829,7 @@
     "testimonials": {
       "eyebrow": "Eienaarsverhale",
       "heading": "Van ons eienaars",
-      "subheading": "Die families wat ons met hul woonstelle vertrou het — in hul eie woorde."
+      "subheading": "Die families wat ons met hul woonstelle vertrou het, in hul eie woorde."
     },
     "form": {
       "eyebrow": "Aansoek",
@@ -845,7 +845,7 @@
       "error": "Iets het verkeerd geloop. Probeer asseblief weer.",
       "successEyebrow": "Aansoek gestuur",
       "successHeading": "Dankie, {name}.",
-      "successBody": "Ons het jou aansoek ontvang en ons span sal binnekort in aanraking kom. Terwyl jy wag, stuur gerus vir ons 'n boodskap op WhatsApp — ons antwoord persoonlik.",
+      "successBody": "Ons het jou aansoek ontvang en ons span sal binnekort in aanraking kom. Terwyl jy wag, stuur gerus vir ons 'n boodskap op WhatsApp. Ons antwoord persoonlik.",
       "successWa": "WhatsApp Gasteverhoudinge",
       "successAgain": "Dien nog 'n aansoek in"
     },

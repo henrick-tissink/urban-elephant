@@ -30,7 +30,7 @@ export function TrustStrip() {
       <div className="container mx-auto px-6 lg:px-12 py-8 lg:py-10">
         <ScrollReveal>
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
-            {/* TGCSA — links to the official certificate PDF so the credential is verifiable */}
+            {/* TGCSA: links to the official certificate PDF so the credential is verifiable */}
             <li className="flex items-center gap-4 md:justify-center">
               <a
                 href="/documents/tgcsa-certificate.pdf"

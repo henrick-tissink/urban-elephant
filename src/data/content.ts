@@ -230,37 +230,37 @@ export const properties: Property[] = [
     shortLocation: "Cape Town CBD",
     name: "The Rose",
     tagline: {
-      en: "Meet The Rose — Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
-      af: "Ontmoet The Rose — Urban Elephant se nuutste blikvanger by 117 Strand Street, Kaapstad.",
-      de: "Lernen Sie The Rose kennen — Urban Elephants neuestes Glanzstück in der 117 Strand Street, Kapstadt.",
-      fr: "Découvrez The Rose — la dernière merveille d'Urban Elephant au 117 Strand Street, Le Cap.",
-      da: "Mød The Rose — Urban Elephants nyeste pragtstykke på 117 Strand Street, Cape Town.",
+      en: "Meet The Rose: Urban Elephant's latest showstopper at 117 Strand Street, Cape Town.",
+      af: "Ontmoet The Rose: Urban Elephant se nuutste blikvanger by 117 Strand Street, Kaapstad.",
+      de: "Lernen Sie The Rose kennen: Urban Elephants neuestes Glanzstück in der 117 Strand Street, Kapstadt.",
+      fr: "Découvrez The Rose : la dernière merveille d'Urban Elephant au 117 Strand Street, Le Cap.",
+      da: "Mød The Rose: Urban Elephants nyeste pragtstykke på 117 Strand Street, Cape Town.",
     },
     description: {
       en: [
         "Located in the charming neighbourhood of De Waterkant, Urban Elephant at The Rose combines modern luxury with one of Cape Town's most vibrant village atmospheres.",
         "Surrounded by cafés, restaurants, nightlife and cobblestone streets, The Rose offers beautifully designed 4-star apartments with the comfort and consistency of a professionally managed hotel stay.",
-        "Stylish, central and full of character — a stay designed to feel uniquely Cape Town.",
+        "Stylish, central and full of character: a stay designed to feel uniquely Cape Town.",
       ],
       af: [
         "Geleë in die bekoorlike buurt van De Waterkant, kombineer Urban Elephant by The Rose moderne luuksheid met een van Kaapstad se lewendigste dorpsatmosfere.",
         "Omring deur kafees, restaurante, naglewe en kasseisteenstrate, bied The Rose pragtig ontwerpte 4-ster woonstelle met die gemak en konsekwentheid van 'n professioneel bestuurde hotelverblyf.",
-        "Stylvol, sentraal en vol karakter — 'n verblyf wat ontwerp is om uniek Kaapstads te voel.",
+        "Stylvol, sentraal en vol karakter: 'n verblyf wat ontwerp is om uniek Kaapstads te voel.",
       ],
       de: [
         "Im charmanten Viertel De Waterkant gelegen, verbindet Urban Elephant im The Rose modernen Luxus mit einer der lebendigsten Dorfatmosphären Kapstadts.",
         "Umgeben von Cafés, Restaurants, Nachtleben und Kopfsteinpflasterstraßen bietet The Rose wunderschön gestaltete 4-Sterne-Apartments mit dem Komfort und der Beständigkeit eines professionell geführten Hotelaufenthalts.",
-        "Stilvoll, zentral und voller Charakter — ein Aufenthalt, der sich einzigartig nach Kapstadt anfühlt.",
+        "Stilvoll, zentral und voller Charakter: ein Aufenthalt, der sich einzigartig nach Kapstadt anfühlt.",
       ],
       fr: [
         "Situé dans le charmant quartier de De Waterkant, Urban Elephant au The Rose allie luxe moderne et l'une des ambiances de village les plus animées du Cap.",
         "Entouré de cafés, de restaurants, de lieux nocturnes et de rues pavées, The Rose propose des appartements 4 étoiles magnifiquement conçus, avec le confort et la constance d'un séjour hôtelier géré par des professionnels.",
-        "Élégant, central et plein de caractère — un séjour conçu pour respirer l'esprit unique du Cap.",
+        "Élégant, central et plein de caractère : un séjour conçu pour respirer l'esprit unique du Cap.",
       ],
       da: [
         "Beliggende i det charmerende kvarter De Waterkant kombinerer Urban Elephant på The Rose moderne luksus med en af Cape Towns mest livlige landsbystemninger.",
         "Omgivet af caféer, restauranter, natteliv og brostensbelagte gader tilbyder The Rose smukt indrettede 4-stjernede lejligheder med komforten og konsekvensen ved et professionelt drevet hotelophold.",
-        "Stilfuldt, centralt og fuld af karakter — et ophold designet til at føles helt unikt for Cape Town.",
+        "Stilfuldt, centralt og fuld af karakter: et ophold designet til at føles helt unikt for Cape Town.",
       ],
     },
     location: {
@@ -317,31 +317,31 @@ export const properties: Property[] = [
     },
     description: {
       en: [
-        "In the heart of De Waterkant — Cape Town's most fashionable village quarter — Urban Elephant at The Docklands offers 4-star apartment-hotel living with rooftop views from Table Mountain to the V&A Waterfront.",
+        "In the heart of De Waterkant, Cape Town's most fashionable village quarter, Urban Elephant at The Docklands offers 4-star apartment-hotel living with rooftop views from Table Mountain to the V&A Waterfront.",
         "Guests enjoy beautifully designed 4-star luxury apartments with secure access and hotel comfort throughout their stay, plus a rooftop pool deck where the city's skyline meets the harbour.",
         "Located moments from the V&A Waterfront, Bree Street's restaurants and the heart of Cape Town's business district, The Docklands places the city at your doorstep while offering the comfort, privacy and consistency Urban Elephant is known for.",
         "Secure on-site parking available.",
       ],
       af: [
-        "In die hart van De Waterkant — Kaapstad se mees modieuse dorpswyk — bied Urban Elephant by The Docklands 4-ster woonstelhotel-lewe met dakuitsigte van Tafelberg tot by die V&A Waterfront.",
+        "In die hart van De Waterkant, Kaapstad se mees modieuse dorpswyk, bied Urban Elephant by The Docklands 4-ster woonstelhotel-lewe met dakuitsigte van Tafelberg tot by die V&A Waterfront.",
         "Gaste geniet pragtig ontwerpte 4-ster luukse woonstelle met veilige toegang en hotelgemak dwarsdeur hul verblyf, plus 'n dakswembaddek waar die stad se silhoeët die hawe ontmoet.",
         "Net oomblikke van die V&A Waterfront, Bree Street se restaurante en die hart van Kaapstad se sakedistrik, plaas The Docklands die stad op jou voorstoep terwyl dit die gemak, privaatheid en konsekwentheid bied waarvoor Urban Elephant bekend is.",
         "Veilige parkering op die perseel beskikbaar.",
       ],
       de: [
-        "Im Herzen von De Waterkant — Kapstadts modischstem Dorfviertel — bietet Urban Elephant im The Docklands 4-Sterne-Apartmenthotel-Wohnen mit Dachterrassenblick vom Tafelberg bis zur V&A Waterfront.",
+        "Im Herzen von De Waterkant, Kapstadts modischstem Dorfviertel, bietet Urban Elephant im The Docklands 4-Sterne-Apartmenthotel-Wohnen mit Dachterrassenblick vom Tafelberg bis zur V&A Waterfront.",
         "Gäste genießen wunderschön gestaltete 4-Sterne-Luxusapartments mit sicherem Zugang und Hotelkomfort während ihres gesamten Aufenthalts sowie ein Pooldeck auf dem Dach, wo die Skyline der Stadt auf den Hafen trifft.",
         "Nur wenige Augenblicke von der V&A Waterfront, den Restaurants der Bree Street und dem Herzen von Kapstadts Geschäftsviertel entfernt, legt The Docklands Ihnen die Stadt zu Füßen und bietet zugleich den Komfort, die Privatsphäre und die Beständigkeit, für die Urban Elephant bekannt ist.",
         "Sicheres Parken vor Ort verfügbar.",
       ],
       fr: [
-        "Au cœur de De Waterkant — le quartier village le plus tendance du Cap — Urban Elephant au The Docklands propose un art de vivre en appart-hôtel 4 étoiles avec des vues depuis le toit, de la Montagne de la Table au V&A Waterfront.",
+        "Au cœur de De Waterkant, le quartier village le plus tendance du Cap, Urban Elephant au The Docklands propose un art de vivre en appart-hôtel 4 étoiles avec des vues depuis le toit, de la Montagne de la Table au V&A Waterfront.",
         "Les hôtes profitent d'appartements de luxe 4 étoiles magnifiquement conçus, avec un accès sécurisé et le confort d'un hôtel tout au long de leur séjour, ainsi qu'une terrasse-piscine sur le toit où la silhouette de la ville rejoint le port.",
         "À quelques instants du V&A Waterfront, des restaurants de Bree Street et du cœur du quartier d'affaires du Cap, The Docklands met la ville à votre porte tout en offrant le confort, l'intimité et la constance qui font la réputation d'Urban Elephant.",
         "Parking sécurisé disponible sur place.",
       ],
       da: [
-        "I hjertet af De Waterkant — Cape Towns mest moderne landsbykvarter — tilbyder Urban Elephant på The Docklands 4-stjernet apartment-hotelliv med tagudsigt fra Taffelbjerget til V&A Waterfront.",
+        "I hjertet af De Waterkant, Cape Towns mest moderne landsbykvarter, tilbyder Urban Elephant på The Docklands 4-stjernet apartment-hotelliv med tagudsigt fra Taffelbjerget til V&A Waterfront.",
         "Gæster nyder smukt indrettede 4-stjernede luksuslejligheder med sikker adgang og hotelkomfort under hele opholdet samt et pooldæk på taget, hvor byens skyline møder havnen.",
         "Beliggende blot få øjeblikke fra V&A Waterfront, Bree Streets restauranter og hjertet af Cape Towns forretningskvarter lægger The Docklands byen for dine fødder og tilbyder samtidig den komfort, det privatliv og den konsekvens, som Urban Elephant er kendt for.",
         "Sikker parkering på stedet tilgængelig.",
@@ -405,27 +405,27 @@ export const properties: Property[] = [
       en: [
         "Urban Elephant at Flamingo Express blends coastal calm with contemporary luxury in the heart of Sea Point.",
         "Designed for travellers who want more than just a place to sleep, these stylish 4-star apartments offer comfort, space and effortless access to Cape Town's famous promenade, cafés and beaches.",
-        "Relaxed, secure and professionally managed — this is seaside living, the Urban Elephant way.",
+        "Relaxed, secure and professionally managed. This is seaside living, the Urban Elephant way.",
       ],
       af: [
         "Urban Elephant by Flamingo Express vermeng die kalmte van die kus met eietydse luuksheid in die hart van Sea Point.",
         "Ontwerp vir reisigers wat meer as net 'n plek om te slaap wil hê, bied hierdie stylvolle 4-ster woonstelle gemak, ruimte en moeitelose toegang tot Kaapstad se beroemde promenade, kafees en strande.",
-        "Ontspanne, veilig en professioneel bestuur — dit is seekant-lewe, op die Urban Elephant manier.",
+        "Ontspanne, veilig en professioneel bestuur. Dit is seekant-lewe, op die Urban Elephant manier.",
       ],
       de: [
         "Urban Elephant im Flamingo Express verbindet die Ruhe der Küste mit zeitgemäßem Luxus im Herzen von Sea Point.",
         "Konzipiert für Reisende, die mehr als nur einen Schlafplatz suchen, bieten diese stilvollen 4-Sterne-Apartments Komfort, Raum und mühelosen Zugang zu Kapstadts berühmter Promenade, Cafés und Stränden.",
-        "Entspannt, sicher und professionell geführt — das ist Leben am Meer auf die Art von Urban Elephant.",
+        "Entspannt, sicher und professionell geführt: Das ist Leben am Meer auf die Art von Urban Elephant.",
       ],
       fr: [
         "Urban Elephant au Flamingo Express mêle le calme du littoral au luxe contemporain au cœur de Sea Point.",
         "Conçus pour les voyageurs qui veulent plus qu'un simple endroit où dormir, ces élégants appartements 4 étoiles offrent confort, espace et un accès sans effort à la célèbre promenade, aux cafés et aux plages du Cap.",
-        "Détendu, sécurisé et géré par des professionnels — c'est l'art de vivre en bord de mer, à la manière d'Urban Elephant.",
+        "Détendu, sécurisé et géré par des professionnels : c'est l'art de vivre en bord de mer, à la manière d'Urban Elephant.",
       ],
       da: [
         "Urban Elephant på Flamingo Express forener kystens ro med moderne luksus i hjertet af Sea Point.",
         "Designet til rejsende, der vil have mere end blot et sted at sove, tilbyder disse stilfulde 4-stjernede lejligheder komfort, plads og ubesværet adgang til Cape Towns berømte promenade, caféer og strande.",
-        "Afslappet, sikkert og professionelt drevet — dette er kystliv på Urban Elephants måde.",
+        "Afslappet, sikkert og professionelt drevet. Dette er kystliv på Urban Elephants måde.",
       ],
     },
     location: {
@@ -470,7 +470,7 @@ export const properties: Property[] = [
 
 // Tour copy lifted from the live urbanelephant.co.za "Tours" page so the new
 // site stops rendering empty detail pages. Prices and descriptions are Niles'
-// existing words — adjusting them is brand-voice work, not engineering.
+// existing words; adjusting them is brand-voice work, not engineering.
 export const tours: Tour[] = [
   {
     _id: "tour-aquila-safari",
@@ -494,23 +494,23 @@ export const tours: Tour[] = [
     },
     description: {
       en: [
-        "Discover Africa's iconic Big Five — lion, leopard, elephant, rhino, and buffalo — on a guided game drive at Aquila Private Game Reserve.",
+        "Discover Africa's iconic Big Five (lion, leopard, elephant, rhino, and buffalo) on a guided game drive at Aquila Private Game Reserve.",
         "Urban Elephant makes it easy for you to enjoy this authentic safari experience just a short drive from Cape Town. Transport can be arranged.",
       ],
       af: [
-        "Ontdek Afrika se ikoniese Groot Vyf — leeu, luiperd, olifant, renoster en buffel — op 'n geleide wildrit by Aquila Private Game Reserve.",
+        "Ontdek Afrika se ikoniese Groot Vyf (leeu, luiperd, olifant, renoster en buffel) op 'n geleide wildrit by Aquila Private Game Reserve.",
         "Urban Elephant maak dit maklik vir jou om hierdie egte safari-ervaring net 'n kort rit van Kaapstad af te geniet. Vervoer kan gereël word.",
       ],
       de: [
-        "Entdecken Sie Afrikas ikonische Big Five — Löwe, Leopard, Elefant, Nashorn und Büffel — auf einer geführten Pirschfahrt im Aquila Private Game Reserve.",
+        "Entdecken Sie Afrikas ikonische Big Five (Löwe, Leopard, Elefant, Nashorn und Büffel) auf einer geführten Pirschfahrt im Aquila Private Game Reserve.",
         "Urban Elephant macht es Ihnen leicht, dieses authentische Safari-Erlebnis nur eine kurze Fahrt von Kapstadt entfernt zu genießen. Transfer kann arrangiert werden.",
       ],
       fr: [
-        "Découvrez les emblématiques Big 5 d'Afrique — lion, léopard, éléphant, rhinocéros et buffle — lors d'un safari guidé à la réserve privée d'Aquila.",
+        "Découvrez les emblématiques Big 5 d'Afrique (lion, léopard, éléphant, rhinocéros et buffle) lors d'un safari guidé à la réserve privée d'Aquila.",
         "Urban Elephant vous permet de profiter facilement de cette expérience de safari authentique, à seulement quelques minutes de route du Cap. Le transport peut être organisé.",
       ],
       da: [
-        "Oplev Afrikas ikoniske Big Five — løve, leopard, elefant, næsehorn og bøffel — på en guidet safaritur i Aquila Private Game Reserve.",
+        "Oplev Afrikas ikoniske Big Five (løve, leopard, elefant, næsehorn og bøffel) på en guidet safaritur i Aquila Private Game Reserve.",
         "Urban Elephant gør det nemt for dig at nyde denne autentiske safarioplevelse blot en kort køretur fra Cape Town. Transport kan arrangeres.",
       ],
     },
@@ -629,23 +629,23 @@ export const tours: Tour[] = [
     },
     description: {
       en: [
-        "Urban Elephant has partnered with Wine Flies to offer curated Winelands experiences — from scheduled small-group tours to fully private, gourmet, and family-friendly itineraries.",
+        "Urban Elephant has partnered with Wine Flies to offer curated Winelands experiences, from scheduled small-group tours to fully private, gourmet, and family-friendly itineraries.",
         "Each tour blends local expertise with authentic encounters, giving you a beautifully crafted taste of the Cape's most iconic wine regions. Private tours from R4500 for four people.",
       ],
       af: [
-        "Urban Elephant het met Wine Flies saamgespan om gekureerde Wynland-ervarings aan te bied — van geskeduleerde kleingroeptoere tot heeltemal privaat, gourmet- en gesinsvriendelike reisplanne.",
+        "Urban Elephant het met Wine Flies saamgespan om gekureerde Wynland-ervarings aan te bied, van geskeduleerde kleingroeptoere tot heeltemal privaat, gourmet- en gesinsvriendelike reisplanne.",
         "Elke toer vermeng plaaslike kundigheid met egte ontmoetings en gee jou 'n pragtig saamgestelde smaak van die Kaap se mees ikoniese wynstreke. Privaat toere vanaf R4500 vir vier mense.",
       ],
       de: [
-        "Urban Elephant hat sich mit Wine Flies zusammengetan, um kuratierte Winelands-Erlebnisse anzubieten — von geplanten Kleingruppentouren bis hin zu vollständig privaten, gourmetorientierten und familienfreundlichen Reiserouten.",
+        "Urban Elephant hat sich mit Wine Flies zusammengetan, um kuratierte Winelands-Erlebnisse anzubieten, von geplanten Kleingruppentouren bis hin zu vollständig privaten, gourmetorientierten und familienfreundlichen Reiserouten.",
         "Jede Tour verbindet lokale Expertise mit authentischen Begegnungen und bietet Ihnen einen wunderbar komponierten Vorgeschmack auf die ikonischsten Weinregionen des Kaps. Private Touren ab R4500 für vier Personen.",
       ],
       fr: [
-        "Urban Elephant s'est associé à Wine Flies pour proposer des expériences œnologiques sur mesure dans les Winelands — des circuits programmés en petit groupe aux itinéraires entièrement privés, gourmands et adaptés aux familles.",
+        "Urban Elephant s'est associé à Wine Flies pour proposer des expériences œnologiques sur mesure dans les Winelands, des circuits programmés en petit groupe aux itinéraires entièrement privés, gourmands et adaptés aux familles.",
         "Chaque circuit mêle expertise locale et rencontres authentiques, vous offrant un avant-goût finement composé des régions viticoles les plus emblématiques du Cap. Circuits privés à partir de R4500 pour quatre personnes.",
       ],
       da: [
-        "Urban Elephant har indgået et samarbejde med Wine Flies om at tilbyde kuraterede Winelands-oplevelser — fra planlagte ture i små grupper til helt private, gourmet- og familievenlige rejseruter.",
+        "Urban Elephant har indgået et samarbejde med Wine Flies om at tilbyde kuraterede Winelands-oplevelser, fra planlagte ture i små grupper til helt private, gourmet- og familievenlige rejseruter.",
         "Hver tur forener lokal ekspertise med autentiske møder og giver dig en smukt sammensat smagsprøve på Kaplandets mest ikoniske vinregioner. Private ture fra R4500 for fire personer.",
       ],
     },
@@ -720,23 +720,23 @@ export const tours: Tour[] = [
     description: {
       en: [
         "Urban Elephant is proud to partner with Waterfront Charters to offer a curated collection of ocean experiences.",
-        "Choose from scenic coastal cruises, serene Prosecco mornings, iconic sunset champagne sails, or adventurous ocean safaris. Private charters are also available for romantic escapes, milestone celebrations and bespoke events — a truly unforgettable way to experience Cape Town from the water.",
+        "Choose from scenic coastal cruises, serene Prosecco mornings, iconic sunset champagne sails, or adventurous ocean safaris. Private charters are also available for romantic escapes, milestone celebrations and bespoke events. A truly unforgettable way to experience Cape Town from the water.",
       ],
       af: [
         "Urban Elephant is trots om met Waterfront Charters saam te span om 'n gekureerde versameling see-ervarings aan te bied.",
-        "Kies uit skilderagtige kustogte, rustige Prosecco-oggende, ikoniese sonsondergang-sjampanjetogte, of avontuurlike seesafari's. Privaat charters is ook beskikbaar vir romantiese ontvlugtings, mylpaalvierings en pasgemaakte geleenthede — 'n werklik onvergeetlike manier om Kaapstad van die water af te beleef.",
+        "Kies uit skilderagtige kustogte, rustige Prosecco-oggende, ikoniese sonsondergang-sjampanjetogte, of avontuurlike seesafari's. Privaat charters is ook beskikbaar vir romantiese ontvlugtings, mylpaalvierings en pasgemaakte geleenthede. 'n Werklik onvergeetlike manier om Kaapstad van die water af te beleef.",
       ],
       de: [
         "Urban Elephant ist stolz darauf, mit Waterfront Charters zusammenzuarbeiten, um eine kuratierte Auswahl an Ozeanerlebnissen anzubieten.",
-        "Wählen Sie zwischen malerischen Küstenfahrten, ruhigen Prosecco-Vormittagen, ikonischen Champagner-Sonnenuntergangsfahrten oder abenteuerlichen Ozeansafaris. Private Charter sind ebenfalls für romantische Auszeiten, besondere Feiern und maßgeschneiderte Veranstaltungen verfügbar — eine wahrhaft unvergessliche Art, Kapstadt vom Wasser aus zu erleben.",
+        "Wählen Sie zwischen malerischen Küstenfahrten, ruhigen Prosecco-Vormittagen, ikonischen Champagner-Sonnenuntergangsfahrten oder abenteuerlichen Ozeansafaris. Private Charter sind ebenfalls für romantische Auszeiten, besondere Feiern und maßgeschneiderte Veranstaltungen verfügbar: eine wahrhaft unvergessliche Art, Kapstadt vom Wasser aus zu erleben.",
       ],
       fr: [
         "Urban Elephant est fier de s'associer à Waterfront Charters pour proposer une collection sélectionnée d'expériences en mer.",
-        "Choisissez parmi des croisières côtières panoramiques, des matinées sereines au prosecco, d'emblématiques sorties au champagne au coucher du soleil ou d'aventureux safaris océaniques. Des affrètements privés sont également disponibles pour des escapades romantiques, des célébrations marquantes et des événements sur mesure — une façon véritablement inoubliable de découvrir Le Cap depuis l'eau.",
+        "Choisissez parmi des croisières côtières panoramiques, des matinées sereines au prosecco, d'emblématiques sorties au champagne au coucher du soleil ou d'aventureux safaris océaniques. Des affrètements privés sont également disponibles pour des escapades romantiques, des célébrations marquantes et des événements sur mesure : une façon véritablement inoubliable de découvrir Le Cap depuis l'eau.",
       ],
       da: [
         "Urban Elephant er stolt af at samarbejde med Waterfront Charters om at tilbyde en kurateret samling af oplevelser på havet.",
-        "Vælg mellem naturskønne kystture, rolige prosecco-formiddage, ikoniske champagnesejladser ved solnedgang eller eventyrlige havsafarier. Private charterture er også tilgængelige til romantiske udflugter, mærkedage og skræddersyede arrangementer — en virkelig uforglemmelig måde at opleve Cape Town fra vandet.",
+        "Vælg mellem naturskønne kystture, rolige prosecco-formiddage, ikoniske champagnesejladser ved solnedgang eller eventyrlige havsafarier. Private charterture er også tilgængelige til romantiske udflugter, mærkedage og skræddersyede arrangementer. En virkelig uforglemmelig måde at opleve Cape Town fra vandet.",
       ],
     },
     featured: true,
@@ -900,27 +900,27 @@ export const tours: Tour[] = [
     description: {
       en: [
         "Experience Cape Town in true style with our bespoke Harley-Davidson and Cadillac tour.",
-        "The journey begins in Camps Bay, cruising along the breathtaking Atlantic coastline towards Chapman's Peak Drive — one of the most scenic coastal roads in the world. Continue down to Hout Bay Beach, where ocean views and mountain backdrops meet in perfect harmony.",
+        "The journey begins in Camps Bay, cruising along the breathtaking Atlantic coastline towards Chapman's Peak Drive, one of the most scenic coastal roads in the world. Continue down to Hout Bay Beach, where ocean views and mountain backdrops meet in perfect harmony.",
         "Whether you're riding on the back of a Harley or relaxing in a classic Cadillac convertible, Urban Elephant delivers a luxury, tailor-made adventure designed for guests who appreciate elegance, freedom, and unforgettable moments.",
       ],
       af: [
         "Beleef Kaapstad met ware styl op ons pasgemaakte Harley-Davidson- en Cadillac-toer.",
-        "Die reis begin in Camps Bay en kuier langs die asemrowende Atlantiese kuslyn na Chapman's Peak Drive — een van die mees skilderagtige kuspaaie ter wêreld. Gaan voort af na Hout Bay Beach, waar see-uitsigte en bergagtergronde in perfekte harmonie ontmoet.",
+        "Die reis begin in Camps Bay en kuier langs die asemrowende Atlantiese kuslyn na Chapman's Peak Drive, een van die mees skilderagtige kuspaaie ter wêreld. Gaan voort af na Hout Bay Beach, waar see-uitsigte en bergagtergronde in perfekte harmonie ontmoet.",
         "Of jy nou agterop 'n Harley ry of in 'n klassieke Cadillac-kabriolet ontspan, Urban Elephant lewer 'n luukse, pasgemaakte avontuur ontwerp vir gaste wat elegansie, vryheid en onvergeetlike oomblikke waardeer.",
       ],
       de: [
         "Erleben Sie Kapstadt mit wahrem Stil bei unserer maßgeschneiderten Harley-Davidson- und Cadillac-Tour.",
-        "Die Reise beginnt in Camps Bay und führt entlang der atemberaubenden Atlantikküste zum Chapman's Peak Drive — einer der landschaftlich reizvollsten Küstenstraßen der Welt. Weiter geht es hinunter zum Hout Bay Beach, wo Meerblick und Bergkulissen in perfekter Harmonie aufeinandertreffen.",
-        "Ob Sie auf dem Rücksitz einer Harley fahren oder in einem klassischen Cadillac-Cabrio entspannen — Urban Elephant bietet ein luxuriöses, maßgeschneidertes Abenteuer für Gäste, die Eleganz, Freiheit und unvergessliche Momente schätzen.",
+        "Die Reise beginnt in Camps Bay und führt entlang der atemberaubenden Atlantikküste zum Chapman's Peak Drive, einer der landschaftlich reizvollsten Küstenstraßen der Welt. Weiter geht es hinunter zum Hout Bay Beach, wo Meerblick und Bergkulissen in perfekter Harmonie aufeinandertreffen.",
+        "Ob Sie auf dem Rücksitz einer Harley fahren oder in einem klassischen Cadillac-Cabrio entspannen: Urban Elephant bietet ein luxuriöses, maßgeschneidertes Abenteuer für Gäste, die Eleganz, Freiheit und unvergessliche Momente schätzen.",
       ],
       fr: [
         "Découvrez Le Cap avec un style inégalé lors de notre circuit sur mesure en Harley-Davidson et Cadillac.",
-        "Le voyage débute à Camps Bay, longeant le littoral atlantique à couper le souffle vers Chapman's Peak Drive — l'une des routes côtières les plus panoramiques du monde. Poursuivez jusqu'à Hout Bay Beach, où vues sur l'océan et toiles de fond montagneuses se rejoignent en parfaite harmonie.",
+        "Le voyage débute à Camps Bay, longeant le littoral atlantique à couper le souffle vers Chapman's Peak Drive, l'une des routes côtières les plus panoramiques du monde. Poursuivez jusqu'à Hout Bay Beach, où vues sur l'océan et toiles de fond montagneuses se rejoignent en parfaite harmonie.",
         "Que vous soyez à l'arrière d'une Harley ou détendu dans un cabriolet Cadillac classique, Urban Elephant propose une aventure de luxe sur mesure, conçue pour les hôtes qui apprécient l'élégance, la liberté et les moments inoubliables.",
       ],
       da: [
         "Oplev Cape Town med ægte stil på vores skræddersyede Harley-Davidson- og Cadillac-tur.",
-        "Rejsen begynder i Camps Bay og kører langs den betagende Atlanterhavskyst mod Chapman's Peak Drive — en af verdens mest naturskønne kystveje. Fortsæt ned til Hout Bay Beach, hvor havudsigt og bjergkulisser mødes i perfekt harmoni.",
+        "Rejsen begynder i Camps Bay og kører langs den betagende Atlanterhavskyst mod Chapman's Peak Drive, en af verdens mest naturskønne kystveje. Fortsæt ned til Hout Bay Beach, hvor havudsigt og bjergkulisser mødes i perfekt harmoni.",
         "Uanset om du sidder bag på en Harley eller slapper af i en klassisk Cadillac-cabriolet, leverer Urban Elephant et luksuriøst, skræddersyet eventyr designet til gæster, der værdsætter elegance, frihed og uforglemmelige øjeblikke.",
       ],
     },
@@ -958,7 +958,7 @@ export const tours: Tour[] = [
       ],
       de: [
         "Genießen Sie die Freiheit, Kapstadt mit einem privaten Fahrer in Ihrem eigenen Tempo zu erkunden.",
-        "Urban Elephant bietet einen ganztägigen Chauffeurservice, der auf Ihre Reiseroute zugeschnitten ist — ob Weinprobe, Sightseeing oder versteckte Schätze.",
+        "Urban Elephant bietet einen ganztägigen Chauffeurservice, der auf Ihre Reiseroute zugeschnitten ist, ob Weinprobe, Sightseeing oder versteckte Schätze.",
       ],
       fr: [
         "Profitez de la liberté d'explorer Le Cap à votre rythme avec un chauffeur privé.",
@@ -996,27 +996,27 @@ export const tours: Tour[] = [
       en: [
         "Step into the colourful heart of Cape Town's Bo-Kaap and discover the magic of home-cooked Cape Malay cuisine with the legendary Faeeza Abrahams.",
         "Born and raised in this historic neighbourhood, Faeeza welcomes guests into her family home for an unforgettable cooking experience filled with warmth, laughter, and mouthwatering aromas.",
-        "What began as a simple family dinner turned into one of Cape Town's most sought-after culinary encounters — featured on Netflix and beloved by travellers from around the world.",
+        "What began as a simple family dinner turned into one of Cape Town's most sought-after culinary encounters, featured on Netflix and beloved by travellers from around the world.",
       ],
       af: [
         "Betree die kleurvolle hart van Kaapstad se Bo-Kaap en ontdek die towerkrag van tuisgekookte Kaaps-Maleise kookkuns met die legendariese Faeeza Abrahams.",
         "Gebore en getoë in hierdie historiese buurt, verwelkom Faeeza gaste in haar familiehuis vir 'n onvergeetlike kookervaring vol warmte, gelag en heerlike geure.",
-        "Wat as 'n eenvoudige familie-ete begin het, het een van Kaapstad se mees gesogte kulinêre ontmoetings geword — vertoon op Netflix en geliefd by reisigers van regoor die wêreld.",
+        "Wat as 'n eenvoudige familie-ete begin het, het een van Kaapstad se mees gesogte kulinêre ontmoetings geword, vertoon op Netflix en geliefd by reisigers van regoor die wêreld.",
       ],
       de: [
         "Tauchen Sie ein in das bunte Herz von Kapstadts Bo-Kaap und entdecken Sie den Zauber hausgemachter kapmalaiischer Küche mit der legendären Faeeza Abrahams.",
         "In diesem historischen Viertel geboren und aufgewachsen, empfängt Faeeza ihre Gäste in ihrem Familienheim zu einem unvergesslichen Kocherlebnis voller Wärme, Lachen und köstlicher Aromen.",
-        "Was als einfaches Familienessen begann, wurde zu einer der begehrtesten kulinarischen Begegnungen Kapstadts — auf Netflix gezeigt und von Reisenden aus aller Welt geliebt.",
+        "Was als einfaches Familienessen begann, wurde zu einer der begehrtesten kulinarischen Begegnungen Kapstadts, auf Netflix gezeigt und von Reisenden aus aller Welt geliebt.",
       ],
       fr: [
         "Plongez au cœur coloré du Bo-Kaap du Cap et découvrez la magie de la cuisine cap-malaise faite maison avec la légendaire Faeeza Abrahams.",
         "Née et élevée dans ce quartier historique, Faeeza accueille ses hôtes dans sa maison familiale pour une expérience culinaire inoubliable, pleine de chaleur, de rires et d'arômes alléchants.",
-        "Ce qui a commencé comme un simple dîner de famille est devenu l'une des rencontres culinaires les plus prisées du Cap — diffusée sur Netflix et adorée par les voyageurs du monde entier.",
+        "Ce qui a commencé comme un simple dîner de famille est devenu l'une des rencontres culinaires les plus prisées du Cap, diffusée sur Netflix et adorée par les voyageurs du monde entier.",
       ],
       da: [
         "Træd ind i det farverige hjerte af Cape Towns Bo-Kaap og oplev magien ved hjemmelavet cape malay-køkken med den legendariske Faeeza Abrahams.",
         "Født og opvokset i dette historiske kvarter byder Faeeza gæster velkommen i sit familiehjem til en uforglemmelig madlavningsoplevelse fyldt med varme, latter og lækre dufte.",
-        "Det, der begyndte som en simpel familiemiddag, blev til et af Cape Towns mest eftertragtede kulinariske møder — vist på Netflix og elsket af rejsende fra hele verden.",
+        "Det, der begyndte som en simpel familiemiddag, blev til et af Cape Towns mest eftertragtede kulinariske møder, vist på Netflix og elsket af rejsende fra hele verden.",
       ],
     },
     featured: true,
@@ -1090,7 +1090,7 @@ export const reviews: Review[] = [
     author: "Raymond",
     authorLocation: "Tanzania",
     content:
-      "What I really liked about Urban Elephant was the perfect balance between luxury and comfort. The apartment was modern, spotless, and beautifully furnished with amazing views of Cape Town and Table Mountain. The location was excellent — close to the V&A Waterfront, restaurants, cafés, and nightlife, yet still peaceful and secure. The staff were friendly and responsive, and the whole place felt safe, stylish, and ideal for both relaxing and working remotely. Small details like strong WiFi, comfortable beds, rooftop pool, Netflix, and a fully equipped kitchen made the stay even better. I'd definitely stay there again.",
+      "What I really liked about Urban Elephant was the perfect balance between luxury and comfort. The apartment was modern, spotless, and beautifully furnished with amazing views of Cape Town and Table Mountain. The location was excellent: close to the V&A Waterfront, restaurants, cafés, and nightlife, yet still peaceful and secure. The staff were friendly and responsive, and the whole place felt safe, stylish, and ideal for both relaxing and working remotely. Small details like strong WiFi, comfortable beds, rooftop pool, Netflix, and a fully equipped kitchen made the stay even better. I'd definitely stay there again.",
     rating: 5,
     source: "booking",
     sourceScore: 10,
@@ -1114,7 +1114,7 @@ export const reviews: Review[] = [
     author: "Denise",
     authorLocation: "Italy",
     content:
-      "Best rooftop on V&A and Table Mountain. The safety first of all, there is always a guard at the reception. The location was super — in waterfront so near commercial and food services, the Table Mountain cable car is at 15min by car. The roof was amazing: best view of V&A, with barbecue and a pool to chill out. We had beautiful moments here! The apartment has all the necessary in the kitchen and it was really well cleaned.",
+      "Best rooftop on V&A and Table Mountain. The safety first of all, there is always a guard at the reception. The location was super, in waterfront so near commercial and food services, the Table Mountain cable car is at 15min by car. The roof was amazing: best view of V&A, with barbecue and a pool to chill out. We had beautiful moments here! The apartment has all the necessary in the kitchen and it was really well cleaned.",
     rating: 5,
     source: "booking",
     sourceScore: 10,
@@ -1150,7 +1150,7 @@ export const reviews: Review[] = [
     author: "Mthokozisi",
     authorLocation: "South Africa",
     content:
-      "I had an absolutely wonderful experience here. The apartment itself was exceptional — modern, clean, and very well-appointed. I was equally impressed by the facilities and the overall layout of the area, which felt incredibly safe and secure throughout my stay. What really set this place apart, however, was the staff. They are truly the best; you can tell they put genuine effort into making sure every guest is taken care of. I can't recommend this place enough, definitely gonna book again.",
+      "I had an absolutely wonderful experience here. The apartment itself was exceptional: modern, clean, and very well-appointed. I was equally impressed by the facilities and the overall layout of the area, which felt incredibly safe and secure throughout my stay. What really set this place apart, however, was the staff. They are truly the best; you can tell they put genuine effort into making sure every guest is taken care of. I can't recommend this place enough, definitely gonna book again.",
     rating: 5,
     source: "booking",
     sourceScore: 10,
@@ -1183,11 +1183,11 @@ export const attractions: Attraction[] = [
     category: "sightseeing",
     image: "/images/attractions/v-and-a-waterfront.png",
     description: {
-      en: "Cape Town's working harbour and the most-visited destination in South Africa — shops, restaurants, and the original Robben Island ferry, all along the water.",
-      af: "Kaapstad se werkende hawe en die mees besoekte bestemming in Suid-Afrika — winkels, restaurante en die oorspronklike Robbeneiland-veerboot, alles langs die water.",
-      de: "Kapstadts aktiver Hafen und das meistbesuchte Reiseziel Südafrikas — Geschäfte, Restaurants und die ursprüngliche Robben-Island-Fähre, alles direkt am Wasser.",
-      fr: "Le port en activité du Cap et la destination la plus visitée d'Afrique du Sud — boutiques, restaurants et le ferry historique de Robben Island, le tout au bord de l'eau.",
-      da: "Cape Towns aktive havn og Sydafrikas mest besøgte destination — butikker, restauranter og den oprindelige Robben Island-færge, alt sammen langs vandet.",
+      en: "Cape Town's working harbour and the most-visited destination in South Africa: shops, restaurants, and the original Robben Island ferry, all along the water.",
+      af: "Kaapstad se werkende hawe en die mees besoekte bestemming in Suid-Afrika: winkels, restaurante en die oorspronklike Robbeneiland-veerboot, alles langs die water.",
+      de: "Kapstadts aktiver Hafen und das meistbesuchte Reiseziel Südafrikas: Geschäfte, Restaurants und die ursprüngliche Robben-Island-Fähre, alles direkt am Wasser.",
+      fr: "Le port en activité du Cap et la destination la plus visitée d'Afrique du Sud : boutiques, restaurants et le ferry historique de Robben Island, le tout au bord de l'eau.",
+      da: "Cape Towns aktive havn og Sydafrikas mest besøgte destination: butikker, restauranter og den oprindelige Robben Island-færge, alt sammen langs vandet.",
     },
     hostNote: {
       en: "Go at golden hour. Stay on the harbour wall for sunset.",
@@ -1204,18 +1204,18 @@ export const attractions: Attraction[] = [
     category: "sightseeing",
     image: "/images/attractions/table-mountain.jpg",
     description: {
-      en: "A New 7 Wonder of Nature and the city's defining landmark — take the cableway up, or hike Platteklip if your knees can take it.",
-      af: "Een van die Nuwe 7 Natuurwonders en die stad se kenmerkende baken — neem die kabelbaan op, of stap Platteklip op as jou knieë dit kan vat.",
-      de: "Eines der neuen 7 Naturweltwunder und das prägende Wahrzeichen der Stadt — fahren Sie mit der Seilbahn hinauf oder wandern Sie den Platteklip hinauf, wenn Ihre Knie mitmachen.",
-      fr: "L'une des 7 nouvelles merveilles naturelles et le symbole de la ville — montez par le téléphérique, ou grimpez le Platteklip si vos genoux le supportent.",
-      da: "Et af verdens 7 nye naturvidundere og byens definerende vartegn — tag svævebanen op, eller vandr ad Platteklip, hvis dine knæ kan klare det.",
+      en: "A New 7 Wonder of Nature and the city's defining landmark. Take the cableway up, or hike Platteklip if your knees can take it.",
+      af: "Een van die Nuwe 7 Natuurwonders en die stad se kenmerkende baken. Neem die kabelbaan op, of stap Platteklip op as jou knieë dit kan vat.",
+      de: "Eines der neuen 7 Naturweltwunder und das prägende Wahrzeichen der Stadt. Fahren Sie mit der Seilbahn hinauf oder wandern Sie den Platteklip hinauf, wenn Ihre Knie mitmachen.",
+      fr: "L'une des 7 nouvelles merveilles naturelles et le symbole de la ville. Montez par le téléphérique, ou grimpez le Platteklip si vos genoux le supportent.",
+      da: "Et af verdens 7 nye naturvidundere og byens definerende vartegn. Tag svævebanen op, eller vandr ad Platteklip, hvis dine knæ kan klare det.",
     },
     hostNote: {
-      en: "Catch the first cable car at 8am — beat the wind, beat the queue.",
-      af: "Vang die eerste kabelbaan om 8vm — wees voor die wind, wees voor die tou.",
-      de: "Nehmen Sie die erste Seilbahn um 8 Uhr — dem Wind und der Warteschlange zuvorkommen.",
-      fr: "Prenez le premier téléphérique à 8 h — devancez le vent et la file d'attente.",
-      da: "Tag den første svævebane kl. 8 — vær foran vinden, vær foran køen.",
+      en: "Catch the first cable car at 8am: beat the wind, beat the queue.",
+      af: "Vang die eerste kabelbaan om 8vm: wees voor die wind, wees voor die tou.",
+      de: "Nehmen Sie die erste Seilbahn um 8 Uhr: So kommen Sie dem Wind und der Warteschlange zuvor.",
+      fr: "Prenez le premier téléphérique à 8 h : devancez le vent et la file d'attente.",
+      da: "Tag den første svævebane kl. 8: vær foran vinden, vær foran køen.",
     },
   },
   {
@@ -1225,11 +1225,11 @@ export const attractions: Attraction[] = [
     category: "culture",
     image: "/images/attractions/bo-kaap.jpg",
     description: {
-      en: "The colourful, cobble-stoned heart of Cape Malay culture — vibrant houses, warm hospitality and centuries of history a short walk from our CBD properties.",
-      af: "Die kleurvolle, kasseisteen-bestrate hart van die Kaaps-Maleise kultuur — lewendige huise, warm gasvryheid en eeue se geskiedenis 'n kort entjie van ons SSK-eiendomme.",
-      de: "Das bunte, mit Kopfsteinpflaster versehene Herz der kapmalaiischen Kultur — leuchtende Häuser, herzliche Gastfreundschaft und Jahrhunderte voller Geschichte, nur einen kurzen Spaziergang von unseren Unterkünften im CBD entfernt.",
-      fr: "Le cœur coloré et pavé de la culture cap-malaise — maisons éclatantes, hospitalité chaleureuse et des siècles d'histoire, à quelques pas de nos hébergements du centre-ville.",
-      da: "Det farverige, brostensbelagte hjerte af cape malay-kulturen — livlige huse, varm gæstfrihed og århundreders historie kun en kort gåtur fra vores boliger i CBD.",
+      en: "The colourful, cobble-stoned heart of Cape Malay culture: vibrant houses, warm hospitality and centuries of history, a short walk from our CBD properties.",
+      af: "Die kleurvolle, kasseisteen-bestrate hart van die Kaaps-Maleise kultuur: lewendige huise, warm gasvryheid en eeue se geskiedenis, 'n kort entjie van ons SSK-eiendomme.",
+      de: "Das bunte, mit Kopfsteinpflaster versehene Herz der kapmalaiischen Kultur: leuchtende Häuser, herzliche Gastfreundschaft und Jahrhunderte voller Geschichte, nur einen kurzen Spaziergang von unseren Unterkünften im CBD entfernt.",
+      fr: "Le cœur coloré et pavé de la culture cap-malaise : maisons éclatantes, hospitalité chaleureuse et des siècles d'histoire, à quelques pas de nos hébergements du centre-ville.",
+      da: "Det farverige, brostensbelagte hjerte af cape malay-kulturen: livlige huse, varm gæstfrihed og århundreders historie kun en kort gåtur fra vores boliger i CBD.",
     },
     hostNote: {
       en: "Sunday morning, after a coffee. Bring a camera; you'll need it.",
@@ -1249,11 +1249,11 @@ export const restaurants: Restaurant[] = [
     mealType: "dinner",
     image: "/images/restaurants/vixi-social-house.jpg",
     description: {
-      en: "A modern social-dining concept in De Waterkant — creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
-      af: "'n Moderne sosiale-ete-konsep in De Waterkant — kreatiewe klein gereggies, ambagskemerkelkies en 'n bruisende atmosfeer die meeste aande van die week.",
-      de: "Ein modernes Social-Dining-Konzept in De Waterkant — kreative kleine Gerichte, handgemachte Cocktails und an den meisten Abenden der Woche eine pulsierende Atmosphäre.",
-      fr: "Un concept moderne de cuisine conviviale à De Waterkant — petites assiettes créatives, cocktails artisanaux et une ambiance animée la plupart des soirs de la semaine.",
-      da: "Et moderne social-dining-koncept i De Waterkant — kreative småretter, håndlavede cocktails og en summende atmosfære de fleste aftener i ugen.",
+      en: "A modern social-dining concept in De Waterkant: creative small plates, craft cocktails, and a buzzing atmosphere most nights of the week.",
+      af: "'n Moderne sosiale-ete-konsep in De Waterkant: kreatiewe klein gereggies, ambagskemerkelkies en 'n bruisende atmosfeer die meeste aande van die week.",
+      de: "Ein modernes Social-Dining-Konzept in De Waterkant: kreative kleine Gerichte, handgemachte Cocktails und an den meisten Abenden der Woche eine pulsierende Atmosphäre.",
+      fr: "Un concept moderne de cuisine conviviale à De Waterkant : petites assiettes créatives, cocktails artisanaux et une ambiance animée la plupart des soirs de la semaine.",
+      da: "Et moderne social-dining-koncept i De Waterkant: kreative småretter, håndlavede cocktails og en summende atmosfære de fleste aftener i ugen.",
     },
     hostNote: {
       en: "Go for the small plates. Stay for the music.",
@@ -1263,11 +1263,11 @@ export const restaurants: Restaurant[] = [
       da: "Kom for småretterne. Bliv for musikken.",
     },
     perk: {
-      en: "Free welcome drink with any meal — we hand you a voucher when you arrive.",
-      af: "Gratis verwelkomingsdrankie met enige ete — ons oorhandig 'n koepon aan jou wanneer jy aankom.",
-      de: "Ein kostenloses Willkommensgetränk zu jeder Mahlzeit — wir überreichen Ihnen bei der Ankunft einen Gutschein.",
-      fr: "Boisson de bienvenue offerte avec tout repas — nous vous remettons un bon à votre arrivée.",
-      da: "Gratis velkomstdrink til ethvert måltid — vi giver dig en voucher, når du ankommer.",
+      en: "Free welcome drink with any meal. We hand you a voucher when you arrive.",
+      af: "Gratis verwelkomingsdrankie met enige ete. Ons oorhandig 'n koepon aan jou wanneer jy aankom.",
+      de: "Ein kostenloses Willkommensgetränk zu jeder Mahlzeit. Wir überreichen Ihnen bei der Ankunft einen Gutschein.",
+      fr: "Boisson de bienvenue offerte avec tout repas. Nous vous remettons un bon à votre arrivée.",
+      da: "Gratis velkomstdrink til ethvert måltid. Vi giver dig en voucher, når du ankommer.",
     },
   },
   {
@@ -1278,25 +1278,25 @@ export const restaurants: Restaurant[] = [
     image: "/images/restaurants/mulino.jpg",
     website: "https://mulino.co.za",
     description: {
-      en: "Breakfast on Bree Street, two doors from the morning — pastries from the counter, a proper espresso, and an industrial-chic room with green velvet chairs. Breakfast is served daily until 11:30.",
-      af: "Ontbyt in Bree Street, twee deure van die oggend af — gebak van die toonbank, 'n behoorlike espresso en 'n industrieel-sjiek vertrek met groen fluweelstoele. Ontbyt word daagliks tot 11:30 bedien.",
-      de: "Frühstück in der Bree Street, zwei Türen vom Morgen entfernt — Gebäck von der Theke, ein richtiger Espresso und ein Raum im Industrial-Chic mit grünen Samtstühlen. Frühstück gibt es täglich bis 11:30 Uhr.",
-      fr: "Le petit-déjeuner sur Bree Street, à deux portes du matin — viennoiseries du comptoir, un vrai espresso et une salle au chic industriel aux fauteuils de velours vert. Le petit-déjeuner est servi tous les jours jusqu'à 11h30.",
-      da: "Morgenmad på Bree Street, to døre fra morgenen — bagværk fra disken, en ordentlig espresso og et industrielt-chikt rum med grønne fløjlsstole. Der serveres morgenmad dagligt indtil 11:30.",
+      en: "Breakfast on Bree Street, two doors from the morning: pastries from the counter, a proper espresso, and an industrial-chic room with green velvet chairs. Breakfast is served daily until 11:30.",
+      af: "Ontbyt in Bree Street, twee deure van die oggend af: gebak van die toonbank, 'n behoorlike espresso en 'n industrieel-sjiek vertrek met groen fluweelstoele. Ontbyt word daagliks tot 11:30 bedien.",
+      de: "Frühstück in der Bree Street, zwei Türen vom Morgen entfernt: Gebäck von der Theke, ein richtiger Espresso und ein Raum im Industrial-Chic mit grünen Samtstühlen. Frühstück gibt es täglich bis 11:30 Uhr.",
+      fr: "Le petit-déjeuner sur Bree Street, à deux portes du matin : viennoiseries du comptoir, un vrai espresso et une salle au chic industriel aux fauteuils de velours vert. Le petit-déjeuner est servi tous les jours jusqu'à 11h30.",
+      da: "Morgenmad på Bree Street, to døre fra morgenen: bagværk fra disken, en ordentlig espresso og et industrielt-chikt rum med grønne fløjlsstole. Der serveres morgenmad dagligt indtil 11:30.",
     },
     hostNote: {
-      en: "Order from the counter and sit by the folding doors. Go before 11:30 — breakfast ends then.",
-      af: "Bestel by die toonbank en sit by die voudeure. Gaan voor 11:30 — ontbyt eindig dan.",
-      de: "Bestellen Sie an der Theke und setzen Sie sich an die Falttüren. Gehen Sie vor 11:30 Uhr — dann endet das Frühstück.",
-      fr: "Commandez au comptoir et installez-vous près des portes pliantes. Allez-y avant 11h30 — le petit-déjeuner s'arrête à cette heure-là.",
-      da: "Bestil ved disken og sæt dig ved foldedørene. Gå før 11:30 — der slutter morgenmaden.",
+      en: "Order from the counter and sit by the folding doors. Go before 11:30. Breakfast ends then.",
+      af: "Bestel by die toonbank en sit by die voudeure. Gaan voor 11:30. Ontbyt eindig dan.",
+      de: "Bestellen Sie an der Theke und setzen Sie sich an die Falttüren. Gehen Sie vor 11:30 Uhr, denn dann endet das Frühstück.",
+      fr: "Commandez au comptoir et installez-vous près des portes pliantes. Allez-y avant 11h30 : le petit-déjeuner s'arrête à cette heure-là.",
+      da: "Bestil ved disken og sæt dig ved foldedørene. Gå før 11:30, for der slutter morgenmaden.",
     },
     perk: {
-      en: "Free coffee with breakfast — we hand you a voucher when you arrive.",
-      af: "Gratis koffie met ontbyt — ons oorhandig 'n koepon aan jou wanneer jy aankom.",
-      de: "Ein kostenloser Kaffee zum Frühstück — wir überreichen Ihnen bei der Ankunft einen Gutschein.",
-      fr: "Café offert avec le petit-déjeuner — nous vous remettons un bon à votre arrivée.",
-      da: "Gratis kaffe til morgenmaden — vi giver dig en voucher, når du ankommer.",
+      en: "Free coffee with breakfast. We hand you a voucher when you arrive.",
+      af: "Gratis koffie met ontbyt. Ons oorhandig 'n koepon aan jou wanneer jy aankom.",
+      de: "Ein kostenloser Kaffee zum Frühstück. Wir überreichen Ihnen bei der Ankunft einen Gutschein.",
+      fr: "Café offert avec le petit-déjeuner. Nous vous remettons un bon à votre arrivée.",
+      da: "Gratis kaffe til morgenmaden. Vi giver dig en voucher, når du ankommer.",
     },
   },
   {
@@ -1313,43 +1313,43 @@ export const restaurants: Restaurant[] = [
       da: "Prisbelønnet steakhouse og vinbar ved V&A Waterfront med et vinkort på 600 vine og uhindret udsigt over havnen.",
     },
     hostNote: {
-      en: "The wine list runs 600 bottles deep — trust the sommelier.",
-      af: "Die wynkaart strek 600 bottels diep — vertrou die wynkenner.",
-      de: "Die Weinkarte umfasst 600 Flaschen — vertrauen Sie dem Sommelier.",
-      fr: "La carte des vins compte 600 bouteilles — faites confiance au sommelier.",
-      da: "Vinkortet rummer 600 flasker — stol på sommelieren.",
+      en: "The wine list runs 600 bottles deep. Trust the sommelier.",
+      af: "Die wynkaart strek 600 bottels diep. Vertrou die wynkenner.",
+      de: "Die Weinkarte umfasst 600 Flaschen. Vertrauen Sie dem Sommelier.",
+      fr: "La carte des vins compte 600 bouteilles. Faites confiance au sommelier.",
+      da: "Vinkortet rummer 600 flasker. Stol på sommelieren.",
     },
   },
 ];
 
 /**
- * Founder's letter for the /recommendations page — first-person voice
+ * Founder's letter for the /recommendations page, first-person voice
  * from Niles, used as the editorial intro to the curator's selections.
  */
 export const recommendationsLetter = {
   intro: {
     en: [
       "Cape Town gives you more than somewhere to stay. The mountain, the harbour, the streets that change neighbourhood every two blocks. We've been here long enough to know where to send guests, and what to skip.",
-      "This is our short list — three views every guest should see at least once, and three places we'd recommend to a friend for breakfast, lunch, and dinner. None of them pay us to be here.",
+      "This is our short list: three views every guest should see at least once, and three places we'd recommend to a friend for breakfast, lunch, and dinner. None of them pay us to be here.",
     ],
     af: [
       "Kaapstad gee jou meer as net 'n plek om te bly. Die berg, die hawe, die strate wat elke twee blokke van buurt verander. Ons is lank genoeg hier om te weet waarheen om gaste te stuur, en wat om oor te slaan.",
-      "Dit is ons kort lys — drie uitsigte wat elke gas ten minste een keer behoort te sien, en drie plekke wat ons aan 'n vriend sou aanbeveel vir ontbyt, middagete en aandete. Nie een van hulle betaal ons om hier te wees nie.",
+      "Dit is ons kort lys: drie uitsigte wat elke gas ten minste een keer behoort te sien, en drie plekke wat ons aan 'n vriend sou aanbeveel vir ontbyt, middagete en aandete. Nie een van hulle betaal ons om hier te wees nie.",
     ],
     de: [
       "Kapstadt bietet Ihnen mehr als nur einen Ort zum Übernachten. Der Berg, der Hafen, die Straßen, die alle zwei Blocks das Viertel wechseln. Wir sind lange genug hier, um zu wissen, wohin wir Gäste schicken und was man auslassen sollte.",
-      "Dies ist unsere kurze Liste — drei Aussichten, die jeder Gast mindestens einmal sehen sollte, und drei Orte, die wir einem Freund für Frühstück, Mittag- und Abendessen empfehlen würden. Keiner von ihnen bezahlt uns dafür, hier zu stehen.",
+      "Dies ist unsere kurze Liste: drei Aussichten, die jeder Gast mindestens einmal sehen sollte, und drei Orte, die wir einem Freund für Frühstück, Mittag- und Abendessen empfehlen würden. Keiner von ihnen bezahlt uns dafür, hier zu stehen.",
     ],
     fr: [
       "Le Cap vous offre bien plus qu'un simple endroit où séjourner. La montagne, le port, les rues qui changent de quartier tous les deux pâtés de maisons. Nous sommes ici depuis assez longtemps pour savoir où envoyer nos hôtes, et ce qu'il vaut mieux éviter.",
-      "Voici notre courte liste — trois panoramas que chaque hôte devrait voir au moins une fois, et trois adresses que nous recommanderions à un ami pour le petit-déjeuner, le déjeuner et le dîner. Aucun d'eux ne nous paie pour figurer ici.",
+      "Voici notre courte liste : trois panoramas que chaque hôte devrait voir au moins une fois, et trois adresses que nous recommanderions à un ami pour le petit-déjeuner, le déjeuner et le dîner. Aucun d'eux ne nous paie pour figurer ici.",
     ],
     da: [
       "Cape Town giver dig mere end blot et sted at bo. Bjerget, havnen, gaderne der skifter kvarter for hver anden husblok. Vi har været her længe nok til at vide, hvor vi skal sende gæster hen, og hvad man skal springe over.",
-      "Dette er vores korte liste — tre udsigter, enhver gæst bør se mindst én gang, og tre steder, vi ville anbefale en ven til morgenmad, frokost og aftensmad. Ingen af dem betaler os for at være her.",
+      "Dette er vores korte liste: tre udsigter, enhver gæst bør se mindst én gang, og tre steder, vi ville anbefale en ven til morgenmad, frokost og aftensmad. Ingen af dem betaler os for at være her.",
     ],
   },
-  signature: "— Niles",
+  signature: "Niles",
   signatureRole: {
     en: "Founder & Chief Elephant Wrangler",
     af: "Stigter & Hoof Olifant Tammer",

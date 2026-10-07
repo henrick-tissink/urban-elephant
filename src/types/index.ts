@@ -47,7 +47,7 @@ export interface Property {
   /**
    * Suburb only, for the hero property strip. `location` holds a street
    * address for some properties ("117 Strand Street, Cape Town"), which reads
-   * wrong in a row of place names — so this is set explicitly rather than
+   * wrong in a row of place names, so this is set explicitly rather than
    * parsed out of it.
    */
   shortLocation?: string;

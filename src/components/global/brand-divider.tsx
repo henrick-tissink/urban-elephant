@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 interface BrandDividerProps {
   /** Show the elephant icon in the center over the gradient line */
   withMark?: boolean;
-  /** Container background — defaults to white */
+  /** Container background, defaults to white */
   variant?: "light" | "dark";
   className?: string;
 }
@@ -12,7 +12,7 @@ interface BrandDividerProps {
 /**
  * Section transition: a thin brand-gradient hairline, optionally with the
  * elephant mark centered. Used between major sections to give the page a
- * recurring brand chapter mark — references the logo wordmark gradient.
+ * recurring brand chapter mark; references the logo wordmark gradient.
  */
 export function BrandDivider({
   withMark = false,

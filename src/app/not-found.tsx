@@ -36,7 +36,7 @@ export default function NotFound() {
             </h1>
 
             <p className="text-white/65 text-base lg:text-lg mt-8 max-w-xl text-balance leading-relaxed">
-              The page you were looking for isn&rsquo;t here — but Cape Town
+              The page you were looking for isn&rsquo;t here, but Cape Town
               itself rewards a wandering eye. Try one of these instead.
             </p>
 

@@ -1,6 +1,6 @@
 // Every "Book Direct" CTA hands the guest off to Nightsbridge in a new tab,
 // which means our tab survives underneath. We remember that a handoff happened
-// so <BookingRescue> can offer the hotline when the guest comes back to us —
+// so <BookingRescue> can offer the hotline when the guest comes back to us:
 // they're returning from a checkout they didn't finish, and at that moment a
 // human on the phone converts far better than a second attempt at the widget.
 
@@ -11,7 +11,7 @@ const RESCUE_KEY = "ue:rescue-shown";
 
 /** Returning inside this window reads as a misclick, not an abandoned checkout. */
 export const RESCUE_MIN_AWAY_MS = 3_000;
-/** After this long the trail is cold — they've moved on, don't ambush them. */
+/** After this long the trail is cold: they've moved on, don't ambush them. */
 export const RESCUE_MAX_AWAY_MS = 30 * 60_000;
 
 export type BookingHandoff = {
@@ -41,7 +41,7 @@ export function recordBookingHandoff(details: {
     const handoff: BookingHandoff = { ...details, at: Date.now() };
     window.sessionStorage.setItem(HANDOFF_KEY, JSON.stringify(handoff));
   } catch {
-    // Private mode / storage disabled — we simply lose the rescue, not the click.
+    // Private mode / storage disabled: we simply lose the rescue, not the click.
   }
 }
 
@@ -66,7 +66,7 @@ export function clearBookingHandoff(): void {
   }
 }
 
-/** The rescue is a once-per-session offer — twice is nagging. */
+/** The rescue is a once-per-session offer; twice is nagging. */
 export function hasSeenRescue(): boolean {
   if (typeof window === "undefined") return true;
   try {

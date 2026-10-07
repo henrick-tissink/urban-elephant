@@ -1,5 +1,5 @@
 // Lightweight, typed wrapper over gtag for conversion events. Safely no-ops
-// when analytics hasn't loaded — during SSR, or before the GA4 id is set — so
+// when analytics hasn't loaded (during SSR, or before the GA4 id is set) so
 // call sites never need to guard. Events show up in GA4 once NEXT_PUBLIC_GA4_ID
 // is configured (see components/global/analytics.tsx).
 

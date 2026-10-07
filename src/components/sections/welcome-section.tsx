@@ -22,7 +22,7 @@ export function WelcomeSection() {
                 className="object-cover"
                 loading="eager"
               />
-              {/* 4 Star eyebrow — restrained */}
+              {/* 4 Star eyebrow, restrained */}
               <div className="absolute bottom-6 left-6 flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 px-3 py-1.5 rounded-full">
                 <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-anchor)]" />
                 <p className="text-[11px] uppercase tracking-[0.2em] text-white/95">{t("tagline")}</p>

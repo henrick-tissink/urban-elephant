@@ -22,7 +22,7 @@ export function AboutPreview() {
               <div className="aspect-[4/5] relative overflow-hidden bg-stone-100">
                 <Image
                   src="/images/site/about.jpg"
-                  alt="Urban Elephant — Cape Town hospitality"
+                  alt="Urban Elephant, Cape Town hospitality"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -30,7 +30,7 @@ export function AboutPreview() {
                 />
               </div>
 
-              {/* Decorative gradient wash — references the logo without shouting */}
+              {/* Decorative gradient wash, references the logo without shouting */}
               <Parallax speed={0.2} direction="up" className="absolute -bottom-8 -right-8 w-48 h-48 -z-10">
                 <div
                   className="w-full h-full opacity-60"
@@ -44,7 +44,7 @@ export function AboutPreview() {
                   <p className="text-stone-600 italic mb-3 text-balance">
                     &ldquo;{t("founderQuote")}&rdquo;
                   </p>
-                  <p className="text-[var(--color-brand-anchor)] font-medium">— {t("founderName")}, {t("founderTitle")}</p>
+                  <p className="text-[var(--color-brand-anchor)] font-medium">{t("founderName")}, {t("founderTitle")}</p>
                 </div>
               </ScrollReveal>
             </div>

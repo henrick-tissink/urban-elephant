@@ -39,7 +39,7 @@ export function AboutPageContent() {
               <div className="aspect-[4/5] bg-stone-200 relative overflow-hidden">
                 <Image
                   src="/images/site/founder.png"
-                  alt={`${t("founderName")} — ${t("founderTitle")}`}
+                  alt={`${t("founderName")}, ${t("founderTitle")}`}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -64,7 +64,7 @@ export function AboutPageContent() {
                 <p className="text-[#24272a]/80">{t("team")}</p>
               </div>
 
-              {/* Credential — family voice meets official grading */}
+              {/* Credential: family voice meets official grading */}
               <div className="mt-10 pt-8 border-t border-stone-200 flex items-start gap-4">
                 <TGCSAStars count={4} size={24} className="mt-0.5" />
                 <p className="text-stone-500 text-xs uppercase tracking-[0.2em] leading-snug">
@@ -76,7 +76,7 @@ export function AboutPageContent() {
         </div>
       </section>
 
-      {/* Credentials — TGCSA plaque + Cape Town Tourism, with downloadable certificates */}
+      {/* Credentials: TGCSA plaque + Cape Town Tourism, with downloadable certificates */}
       <section className="py-16 lg:py-24 bg-stone-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -143,7 +143,7 @@ export function AboutPageContent() {
                     </div>
                   </a>
                 </li>
-                {/* PPRA — Property Practitioners Regulatory Authority. No PDF yet, just registration number. */}
+                {/* PPRA (Property Practitioners Regulatory Authority). No PDF yet, just registration number. */}
                 <li className="flex items-start gap-4 p-4 bg-white border border-stone-200/70">
                   <div className="shrink-0 w-12 h-12 flex items-center justify-center bg-[#24272a] text-white text-[11px] font-bold tracking-tight">
                     PPRA
@@ -176,7 +176,7 @@ export function AboutPageContent() {
                 </p>
               </div>
 
-              {/* Official Urban Elephant master mark — pink lockup with TGCSA stars baked in */}
+              {/* Official Urban Elephant master mark: pink lockup with TGCSA stars baked in */}
               <div className="bg-white p-6 lg:p-8 border border-stone-200/70 shadow-sm flex items-center gap-6">
                 <div className="relative w-28 h-32 shrink-0">
                   <Image

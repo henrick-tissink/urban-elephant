@@ -20,7 +20,7 @@ export function Hero() {
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [pickerOpen, setPickerOpen] = useState(false);
   // Only load the background video on larger screens that haven't asked to
-  // reduce motion. Phones and data-savers get the poster still instead — no
+  // reduce motion. Phones and data-savers get the poster still instead: no
   // multi-MB download over cellular, and the poster is the LCP either way.
   const [enableVideo, setEnableVideo] = useState(false);
 
@@ -126,12 +126,12 @@ export function Hero() {
           </video>
         )}
 
-        {/* Gradient Overlay — strengthened top scrim so the header logo and
+        {/* Gradient Overlay: strengthened top scrim so the header logo and
             pink tagline keep contrast against bright/golden video frames */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/35 to-black/75" />
       </div>
 
-      {/* Content — the reservations desk is the centrepiece, with online
+      {/* Content: the reservations desk is the centrepiece, with online
           booking offered alongside it rather than instead of it. pt-32 clears
           the fixed reservations bar + header stack. */}
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-center px-5 pb-12 pt-28 text-center sm:px-6 sm:pb-16 sm:pt-32">
@@ -146,7 +146,7 @@ export function Hero() {
             {t("tagline")}
           </motion.p>
 
-          {/* Main Title — sized down from text-8xl to make room for the
+          {/* Main Title: sized down from text-8xl to make room for the
               reservations centre below without pushing it off short screens. */}
           <div className="mb-8 md:mx-auto md:max-w-3xl">
             <TextReveal
@@ -168,7 +168,7 @@ export function Hero() {
             <ReservationsCentre onBookOnline={openPicker} />
           </motion.div>
 
-          {/* Brand slip-line — Niles' marketing tagline, present on every hero */}
+          {/* Brand slip-line: Niles' marketing tagline, present on every hero */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

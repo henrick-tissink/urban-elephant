@@ -37,16 +37,16 @@
   },
   "recommendations": {
     "title": "Jenseits der Haustür",
-    "description": "Drei Ausblicke, die jeder Gast sehen sollte, drei Orte, an die wir einen Freund zum Essen schicken würden — der Kurator-Tipp von Urban Elephant für Kapstadt.",
+    "description": "Drei Ausblicke, die jeder Gast sehen sollte, drei Orte, an die wir einen Freund zum Essen schicken würden. Der Kurator-Tipp von Urban Elephant für Kapstadt.",
     "eyebrow": "Zusammengestellt von Urban Elephant",
-    "subtitle": "Was wir Gäste sehen, essen und entdecken lassen — das Kapstadt, das wir einem Freund empfehlen würden.",
+    "subtitle": "Was wir Gäste sehen, essen und entdecken lassen: das Kapstadt, das wir einem Freund empfehlen würden.",
     "letterEyebrow": "Vom Gastgeber",
     "attractionsEyebrow": "Wahrzeichen Kapstadts",
     "attractionsTitle": "Drei Ausblicke, die Sie nicht verpassen sollten.",
     "attractionsDescription": "Der Berg, der Hafen, die Straßen, die alle zwei Blocks das Viertel wechseln. Beginnen Sie hier.",
     "restaurantsEyebrow": "Wo wir essen",
     "restaurantsTitle": "Wohin wir einen Freund schicken würden.",
-    "restaurantsDescription": "Eine kurze Liste von drei Orten — einer zum Frühstück, einer zum Mittagessen, einer zum Abendessen. Keiner von ihnen bezahlt uns dafür.",
+    "restaurantsDescription": "Eine kurze Liste von drei Orten: einer zum Frühstück, einer zum Mittagessen, einer zum Abendessen. Keiner von ihnen bezahlt uns dafür.",
     "hostNote": "Notiz des Gastgebers",
     "perkLabel": "Ein Geschenk von uns",
     "ctaEyebrow": "Möchten Sie mehr?",
@@ -88,7 +88,7 @@
     "bookCta": "Jetzt buchen",
     "bookCtaSub": "Online buchen",
     "reassurance": "Bestpreis garantiert · Keine Buchungsgebühren · Ratenzahlung möglich",
-    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen."
+    "whatsappMessage": "Hallo Urban Elephant, ich möchte einen Aufenthalt buchen."
   },
   "bookingPicker": {
     "eyebrow": "DIREKT BUCHEN",
@@ -103,14 +103,14 @@
     "eyebrow": "NOCH UNENTSCHLOSSEN?",
     "title": "Wir buchen es für Sie.",
     "titleProperty": "Wir buchen {property} für Sie.",
-    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten — bester Preis, keine Buchungsgebühr.",
-    "bodyClosed": "Unsere Reservierungsline öffnet um 8:30 Uhr. Schreiben Sie uns per WhatsApp und wir melden uns umgehend — bester Preis, keine Buchungsgebühr.",
+    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten. Bester Preis, keine Buchungsgebühr.",
+    "bodyClosed": "Unsere Reservierungsline öffnet um 8:30 Uhr. Schreiben Sie uns per WhatsApp und wir melden uns umgehend. Bester Preis, keine Buchungsgebühr.",
     "call": "{number} anrufen",
     "whatsapp": "Per WhatsApp buchen",
     "decline": "Nein danke, ich schaue mich nur um",
     "close": "Schließen",
-    "whatsappMessage": "Hallo Urban Elephant — ich wollte einen Aufenthalt buchen und bräuchte Hilfe.",
-    "whatsappMessageProperty": "Hallo Urban Elephant — ich wollte {property} buchen und bräuchte Hilfe."
+    "whatsappMessage": "Hallo Urban Elephant, ich wollte einen Aufenthalt buchen und bräuchte Hilfe.",
+    "whatsappMessageProperty": "Hallo Urban Elephant, ich wollte {property} buchen und bräuchte Hilfe."
   },
   "hotline": {
     "call": "{number} anrufen",
@@ -122,8 +122,8 @@
     "openNow": "Reservierung jetzt erreichbar",
     "hours": "Reservierung · 8:30–20:00 Uhr",
     "menuNumber": "Reservierung · {number} · 8:30–20:00 Uhr",
-    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen oder mich zu Ihren Touren erkundigen.",
-    "whatsappMessageProperty": "Hallo Urban Elephant — ich möchte {property} buchen.",
+    "whatsappMessage": "Hallo Urban Elephant, ich möchte einen Aufenthalt buchen oder mich zu Ihren Touren erkundigen.",
+    "whatsappMessageProperty": "Hallo Urban Elephant, ich möchte {property} buchen.",
     "barLabel": "Reservierung:",
     "barHours": "Täglich 8:30 – 20:00 Uhr",
     "barClosed": "Öffnet 8:30 Uhr",
@@ -133,13 +133,13 @@
     "eyebrow": "AUSSERHALB DER ÖFFNUNGSZEITEN",
     "title": "Wir rufen Sie zurück.",
     "titleProperty": "Wir rufen Sie zu {property} zurück.",
-    "body": "Unsere Reservierungsline ({number}) öffnet um 8:30 Uhr. Hinterlassen Sie Ihre Nummer und wir melden uns gleich morgens — bester Preis, keine Buchungsgebühr.",
+    "body": "Unsere Reservierungsline ({number}) öffnet um 8:30 Uhr. Hinterlassen Sie Ihre Nummer und wir melden uns gleich morgens. Bester Preis, keine Buchungsgebühr.",
     "nameLabel": "Ihr Name",
     "phoneLabel": "Ihre Telefonnummer",
     "datesLabel": "Gewünschte Daten (optional)",
     "submit": "Rückruf anfordern",
     "submitting": "Wird gesendet…",
-    "doneTitle": "Alles klar — wir melden uns.",
+    "doneTitle": "Alles klar. Wir melden uns.",
     "doneBody": "Jemand aus der Reservierung ruft Sie an, sobald wir um 8:30 Uhr öffnen.",
     "doneClose": "Schließen",
     "error": "Da ist etwas schiefgelaufen. Bitte versuchen Sie es über WhatsApp.",
@@ -148,20 +148,20 @@
   "talkToUs": {
     "eyebrow": "SPRECHEN SIE MIT UNS",
     "title": "Buchen Sie bei einem Menschen.",
-    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe — welches die Morgensonne einfängt, welches zu einer Familie passt, was sich in der Nähe lohnt. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten.",
-    "openNow": "Jetzt geöffnet — wir antworten meist innerhalb einer Minute",
-    "closedNow": "Jetzt geschlossen — wieder ab 8:30 Uhr",
+    "body": "Unser Reservierungsteam kennt jedes Apartment der Gruppe: welches die Morgensonne einfängt, welches zu einer Familie passt, was sich in der Nähe lohnt. Sagen Sie uns, was Sie brauchen, und wir bestätigen es in wenigen Minuten.",
+    "openNow": "Jetzt geöffnet. Wir antworten meist innerhalb einer Minute",
+    "closedNow": "Jetzt geschlossen. Wieder ab 8:30 Uhr",
     "hours": "Täglich 8:30–20:00 Uhr geöffnet",
     "whatsappCta": "WhatsApp {number}",
     "callbackCta": "Rückruf anfordern",
     "promise": "Bestpreis garantiert · Keine Buchungsgebühr · Bestätigung noch im Gespräch",
-    "whatsappMessage": "Hallo Urban Elephant — ich möchte einen Aufenthalt buchen."
+    "whatsappMessage": "Hallo Urban Elephant, ich möchte einen Aufenthalt buchen."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels Promo",
     "eyebrow": "URBAN ELEPHANT HOTELS",
     "title": "Willkommen in Kapstadt.",
-    "body": "Offiziell eingestufte 4-Sterne-Apartmenthotels — buchen Sie direkt für den besten Preis. Die Marke, die Sie zurückliebt.",
+    "body": "Offiziell eingestufte 4-Sterne-Apartmenthotels. Buchen Sie direkt für den besten Preis. Die Marke, die Sie zurückliebt.",
     "cta": "Direkt buchen",
     "ctaHref": "https://book.nightsbridge.com/30034",
     "close": "Promo schließen"
@@ -182,11 +182,11 @@
     "items": {
       "rates": {
         "title": "Unser Pride Promise",
-        "description": "10 % Rabatt auf jeden Preis, jedes Mal — nur bei Direktbuchung bei uns. Keine Codes, kein Kleingedrucktes."
+        "description": "10 % Rabatt auf jeden Preis, jedes Mal, wenn Sie direkt bei uns buchen. Keine Codes, kein Kleingedrucktes."
       },
       "offers": {
         "title": "Exklusive Angebote",
-        "description": "Mitglieder-Angebote, Aktionen und kuratierte Kapstadt-Erlebnisse — nur wenn Sie direkt buchen."
+        "description": "Mitglieder-Angebote, Aktionen und kuratierte Kapstadt-Erlebnisse, nur wenn Sie direkt buchen."
       },
       "flex": {
         "title": "Flexible Stornierung",
@@ -194,7 +194,7 @@
       },
       "concierge": {
         "title": "Persönlicher Concierge-Service",
-        "description": "Erleben Sie die Bequemlichkeit eines echten Rundum-Service. Von Unterkunft und Flughafentransfers bis hin zu Touren, Tischreservierungen und lokalen Erlebnissen — unser Team unterstützt Sie bei jedem Teil Ihrer Reise. Genießen Sie einen direkten Draht zu unserem Team für Buchungen, Empfehlungen und Unterstützung vor Ort — vor, während und nach Ihrem Aufenthalt."
+        "description": "Erleben Sie die Bequemlichkeit eines echten Rundum-Service. Von Unterkunft und Flughafentransfers bis hin zu Touren, Tischreservierungen und lokalen Erlebnissen: Unser Team unterstützt Sie bei jedem Teil Ihrer Reise. Genießen Sie einen direkten Draht zu unserem Team für Buchungen, Empfehlungen und Unterstützung vor Ort (vor, während und nach Ihrem Aufenthalt)."
       }
     }
   },
@@ -224,7 +224,7 @@
     "tagline": "BEI URBAN ELEPHANT",
     "title": "Wo Sie wohnen, sollte sich genauso unvergesslich anfühlen wie die Stadt selbst.",
     "description": "Von stilvollen Stadtapartments bis zu Rückzugsorten an der Küste ist jeder Urban Elephant-Aufenthalt sorgfältig gestaltet, um Komfort, Persönlichkeit und Beständigkeit auf Hotelniveau zu vereinen.",
-    "body": "Professionell verwaltet, wunderschön gelegen — das ist Unterkunft in Kapstadt, auf die Urban Elephant-Art."
+    "body": "Professionell verwaltet, wunderschön gelegen: Das ist Unterkunft in Kapstadt, auf die Urban Elephant-Art."
   },
   "properties": {
     "title": "Urban Elephant Hotels",
@@ -273,13 +273,13 @@
       "name": "Urban Elephant at Flamingo Express",
       "tagline": "Rückzugsort am Meer",
       "description": "Ihr Rückzugsort am Meer mit müheloser Eleganz.",
-      "body": "Jede Einheit besticht durch ein schlichtes, elegantes Design mit luxuriösen Akzenten – ideal für Berufstätige, Urlaubsreisende oder alle, die einen stilvollen Stützpunkt in Meeresnähe suchen."
+      "body": "Jede Einheit besticht durch ein schlichtes, elegantes Design mit luxuriösen Akzenten, ideal für Berufstätige, Urlaubsreisende oder alle, die einen stilvollen Stützpunkt in Meeresnähe suchen."
     },
     "rose": {
       "name": "Urban Elephant at The Rose",
       "tagline": "117 Strand Street",
-      "description": "Lernen Sie The Rose kennen – Urban Elephants neuestes Highlight in der 117 Strand Street, Kapstadt.",
-      "body": "Vom Tafelberg bis zum Lion's Head, vom farbenfrohen Bo-Kaap bis zum endlosen Atlantik – die 360-Grad-Kulisse ist wirklich auf einem ganz neuen Niveau. Kaffee bei Sonnenaufgang oder Ausblicke bei Sonnenuntergang? Ja, bitte."
+      "description": "Lernen Sie The Rose kennen: Urban Elephants neuestes Highlight in der 117 Strand Street, Kapstadt.",
+      "body": "Vom Tafelberg bis zum Lion's Head, vom farbenfrohen Bo-Kaap bis zum endlosen Atlantik: Die 360-Grad-Kulisse ist wirklich auf einem ganz neuen Niveau. Kaffee bei Sonnenaufgang oder Ausblicke bei Sonnenuntergang? Ja, bitte."
     },
     "pridePromiseNote": "Pride Promise: 10 % Rabatt bei Direktbuchung",
     "bookShort": "Buchen"
@@ -315,7 +315,7 @@
     "enterprise": {
       "kicker": "BEREITGESTELLT VON ENTERPRISE",
       "title": "Mieten Sie ein Auto für Ihr Kapstadt-Abenteuer.",
-      "body": "Durchstöbern Sie die gesamte südafrikanische Flotte von Enterprise und buchen Sie direkt unten. Beste Preise garantiert — keine Buchungsgebühren, keine versteckten Kosten, und unser Team kann die Abholung bei Ihrem Apartmenthotel arrangieren.",
+      "body": "Durchstöbern Sie die gesamte südafrikanische Flotte von Enterprise und buchen Sie direkt unten. Beste Preise garantiert: keine Buchungsgebühren, keine versteckten Kosten, und unser Team kann die Abholung bei Ihrem Apartmenthotel arrangieren.",
       "footnote": "Bevorzugen Sie eine persönliche Note? Schreiben Sie unserem Guest Relations-Team eine WhatsApp an +27 72 618 8140 und wir arrangieren Ihren Mietwagen, Transfers und alles andere, was Sie brauchen."
     },
     "footnote": "Bevorzugen Sie eine persönliche Note? Schreiben Sie unserem Guest Relations-Team eine WhatsApp an +27 72 618 8140 und wir arrangieren Ihren Mietwagen, Transfers und alles andere, was Sie brauchen."
@@ -341,24 +341,24 @@
     "title": "Ein herzliches Willkommen!",
     "subtitle": "LERNEN SIE DEN GRÜNDER KENNEN",
     "tagline": "Die Marke, die Sie zurückliebt",
-    "founderQuote": "Gastfreundschaft ist für mich mehr als nur ein Job – sie ist meine Leidenschaft.",
+    "founderQuote": "Gastfreundschaft ist für mich mehr als nur ein Job, sie ist meine Leidenschaft.",
     "founderName": "Niles",
     "founderTitle": "Gründer & Chief Elephant Wrangler",
-    "intro": "Hallo zusammen! Ich bin Niles – Gründer, Inhaber und selbsternannter Chief Elephant Wrangler bei Urban Elephant. Ursprünglich aus Großbritannien (wo das Wetter Charakter bildet), bin ich 2007 nach Kapstadt gezogen.",
+    "intro": "Hallo zusammen! Ich bin Niles: Gründer, Inhaber und selbsternannter Chief Elephant Wrangler bei Urban Elephant. Ursprünglich aus Großbritannien (wo das Wetter Charakter bildet), bin ich 2007 nach Kapstadt gezogen.",
     "story1": "Nachdem ich um die Welt gereist war und das Beste (und Schlechteste) gesehen hatte, was die Welt zu bieten hat, wusste ich, dass ich in der Mother City etwas wirklich Besonderes gefunden hatte. Also packte ich meine Koffer aus, ließ den Regenschirm zurück und machte mich daran, etwas ein wenig anderes in der Welt der Gastfreundschaft aufzubauen.",
-    "story2": "So entstand Urban Elephant – ein Ort, an dem Luxus auf Komfort trifft, an dem Stil nicht das Budget sprengt und an dem sich jeder Gast wie ein Rockstar fühlt (oder zumindest wie ein sehr gut umsorgter Mensch).",
+    "story2": "So entstand Urban Elephant: ein Ort, an dem Luxus auf Komfort trifft, an dem Stil nicht das Budget sprengt und an dem sich jeder Gast wie ein Rockstar fühlt (oder zumindest wie ein sehr gut umsorgter Mensch).",
     "story3": "Ich liebe es wirklich, neue Menschen kennenzulernen, ihre Geschichten zu hören und ihnen zu helfen, in Kapstadt unvergessliche Erinnerungen zu schaffen. Ich habe Urban Elephant rund um diese Idee aufgebaut: persönlicher, durchdachter Service, der die Extrameile geht (und manchmal die zusätzliche Flasche Wein).",
-    "story4": "Jedes Apartment ist so gestaltet, dass Sie sich wie zu Hause fühlen – nur besser. Denn seien wir ehrlich: Wer möchte zu Hause schon den Haushalt machen?",
-    "team": "Natürlich wäre nichts davon ohne mein großartiges Team möglich. Von unseren Superstar-Guest-Relations-Managern bis zu den Housekeeping-Helden, die alles makellos halten – sie sind das Herz von Urban Elephant. Sie sind freundlich, professionell und immer für einen guten Lacher zu haben – oder eine Restaurantempfehlung.",
+    "story4": "Jedes Apartment ist so gestaltet, dass Sie sich wie zu Hause fühlen, nur besser. Denn seien wir ehrlich: Wer möchte zu Hause schon den Haushalt machen?",
+    "team": "Natürlich wäre nichts davon ohne mein großartiges Team möglich. Von unseren Superstar-Guest-Relations-Managern bis zu den Housekeeping-Helden, die alles makellos halten: Sie sind das Herz von Urban Elephant. Sie sind freundlich, professionell und immer für einen guten Lacher zu haben, oder für eine Restaurantempfehlung.",
     "zola": {
       "title": "Zolas Geschichte",
       "subtitle": "Der Geist von Zola",
-      "imageAlt": "Zola – Der rosa Elefant",
-      "intro": "Jede Geschichte beginnt irgendwo — unsere begann mit einem rosa Elefanten namens Zola.",
+      "imageAlt": "Zola, der rosa Elefant",
+      "intro": "Jede Geschichte beginnt irgendwo. Unsere begann mit einem rosa Elefanten namens Zola.",
       "story1": "Als ich sechs Jahre alt war, war Zola mein ständiger Begleiter. Sie brachte Trost, Ruhe und eine stille Erinnerung daran, dass Auffallen etwas Schönes sein kann. Während mich Afrikas wilde Tiere faszinierten, war es dieser kleine rosa Elefant, der mich die Kraft von Individualität und Wärme lehrte.",
-      "story2": "Jahre später wurde diese einfache Lektion zum Herzen und Symbol von Urban Elephant — einer Marke, die auf Fürsorge, Charakter und Verbundenheit aufbaut.",
+      "story2": "Jahre später wurde diese einfache Lektion zum Herzen und Symbol von Urban Elephant, einer Marke, die auf Fürsorge, Charakter und Verbundenheit aufbaut.",
       "story3": "Zola lebt nun in unserem Emblem weiter. Ihr Name, der auf Xhosa „friedlich“ und „ruhig“ bedeutet, spiegelt das Gefühl wider, das jeder Gast erleben soll.",
-      "closing": "Bei Urban Elephant sind Sie mehr als ein Besucher. Sie sind Teil einer Geschichte, die Komfort, Kreativität und Zugehörigkeit feiert — dasselbe Gefühl, das Zola mir einst gab."
+      "closing": "Bei Urban Elephant sind Sie mehr als ein Besucher. Sie sind Teil einer Geschichte, die Komfort, Kreativität und Zugehörigkeit feiert: dasselbe Gefühl, das Zola mir einst gab."
     },
     "values": {
       "title": "Unsere Werte",
@@ -387,19 +387,19 @@
     "credentials": {
       "eyebrow": "OFFIZIELL EINGESTUFT",
       "title": "Die Plakette an der Wand, mit den Papieren als Beleg.",
-      "intro": "Urban Elephant ist offiziell als 4-Sterne-Apartmenthotel vom Tourism Grading Council of South Africa eingestuft und Mitglied von Cape Town Tourism. Beide Zertifikate sind öffentlich — sehen Sie sie sich unten an.",
-      "plaqueAlt": "Tourism Grading Council of South Africa — Apartmenthotel-Einstufungsplakette für Urban Elephant",
-      "lockupAlt": "Urban Elephant Kapstadt — offizielles 4-Sterne-Master-Logo",
+      "intro": "Urban Elephant ist offiziell als 4-Sterne-Apartmenthotel vom Tourism Grading Council of South Africa eingestuft und Mitglied von Cape Town Tourism. Beide Zertifikate sind öffentlich. Sehen Sie sie sich unten an.",
+      "plaqueAlt": "Tourism Grading Council of South Africa: Apartmenthotel-Einstufungsplakette für Urban Elephant",
+      "lockupAlt": "Urban Elephant Kapstadt, offizielles 4-Sterne-Master-Logo",
       "lockupLabel": "Offizielles Master-Zeichen",
       "lockupDescription": "Das Urban Elephant Kapstadt-Master-Logo, mit der integrierten Vier-Sterne-TGCSA-Einstufung.",
       "tgcsaLabel": "TGCSA-Einstufungszertifikat",
       "tgcsaDescription": "Offizielle 4-Sterne-Apartmenthotel-Einstufung vom Tourism Grading Council of South Africa.",
       "tgcsaCta": "TGCSA-Zertifikat ansehen",
       "cttLabel": "Cape Town Tourism-Mitgliedschaft",
-      "cttDescription": "Mitglied von Cape Town Tourism — der offiziellen Tourismusbehörde der Stadt.",
+      "cttDescription": "Mitglied von Cape Town Tourism, der offiziellen Tourismusbehörde der Stadt.",
       "cttCta": "CTT-Mitgliedschaft ansehen",
       "ppraLabel": "PPRA-registriert",
-      "ppraDescription": "Property Practitioners Regulatory Authority — Registrierungsnr. 1695928."
+      "ppraDescription": "Property Practitioners Regulatory Authority. Registrierungsnr. 1695928."
     }
   },
   "services": {
@@ -440,7 +440,7 @@
       "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
       "successEyebrow": "Nachricht gesendet",
       "successHeading": "Verstanden, {name}.",
-      "successBody": "Unser Guest Relations-Team antwortet innerhalb der Geschäftszeiten. Während Sie warten, schreiben Sie uns auf WhatsApp — wir antworten persönlich, meist innerhalb einer Stunde.",
+      "successBody": "Unser Guest Relations-Team antwortet innerhalb der Geschäftszeiten. Während Sie warten, schreiben Sie uns auf WhatsApp. Wir antworten persönlich, meist innerhalb einer Stunde.",
       "successWa": "WhatsApp Guest Relations",
       "successAgain": "Eine weitere Nachricht senden"
     },
@@ -461,7 +461,7 @@
   },
   "footer": {
     "tagline": "Die Marke, die Sie zurückliebt.",
-    "description": "Urban Elephant hat sich schnell zu einem von Kapstadts besten Apartmenthotels entwickelt — offiziell eingestuft vom Tourism Grading Council of South Africa, professionell verwaltet und nur einen kurzen Spaziergang von allem entfernt, was Sie sehen möchten.",
+    "description": "Urban Elephant hat sich schnell zu einem von Kapstadts besten Apartmenthotels entwickelt: offiziell eingestuft vom Tourism Grading Council of South Africa, professionell verwaltet und nur einen kurzen Spaziergang von allem entfernt, was Sie sehen möchten.",
     "sections": {
       "properties": "Unterkünfte",
       "services": "Dienstleistungen",
@@ -502,24 +502,24 @@
     }
   },
   "theHerd": {
-    "metaTitle": "Die Herde — Urban Elephant Treueprogramm",
+    "metaTitle": "Die Herde: Urban Elephant Treueprogramm",
     "metaDescription": "Treten Sie der Herde bei, Urban Elephants Treueprogramm für Gäste, die immer wieder nach Hause kommen. Mitglieder genießen exklusive Direktpreise, bevorzugte Buchung und Anerkennung bei jedem Aufenthalt.",
     "eyebrow": "URBAN ELEPHANT TREUE",
     "title": "Die Herde. Für Gäste, die immer wieder nach Hause kommen.",
-    "subtitle": "Die Herde ist Urban Elephants Treueprogramm — für Gäste, die sich entscheiden, wieder und wieder bei uns zu wohnen. Mitglieder werden erkannt, erinnert und mit exklusiven Direktpreisen und bevorzugter Buchung in jeder Urban Elephant-Unterkunft belohnt.",
+    "subtitle": "Die Herde ist Urban Elephants Treueprogramm für Gäste, die sich entscheiden, wieder und wieder bei uns zu wohnen. Mitglieder werden erkannt, erinnert und mit exklusiven Direktpreisen und bevorzugter Buchung in jeder Urban Elephant-Unterkunft belohnt.",
     "welcomeEyebrow": "WILLKOMMEN IN DER HERDE",
     "welcomeTitle": "Willkommen in der Familie.",
     "welcomeBody1": "Wir freuen uns, Sie in einer Gemeinschaft von Reisenden, Entdeckern und Stadtliebhabern willkommen zu heißen, die durchdachte Aufenthalte, authentische Erlebnisse und den lebendigen Geist Kapstadts zu schätzen wissen.",
     "welcomeBody2": "Als Mitglied der Herde genießen Sie Zugang zu exklusiven Vorteilen, die jeden Aufenthalt noch lohnender machen, darunter 10 % Rabatt auf den niedrigsten verfügbaren Preis bei Direktbuchung, bevorzugter Buchungszugang zu neuen Unterkünften und Hauptsaison-Verfügbarkeit, Willkommensgeschenke, die speziell für Ihren Aufenthalt vorbereitet werden, und exklusive Mitglieder-Angebote, Aktionen und kuratierte Kapstadt-Erlebnisse.",
-    "welcomeBody3": "Bei Urban Elephant glauben wir, dass Gastfreundschaft persönlich, mühelos und unvergesslich sein sollte. Ob Sie geschäftlich, zum Vergnügen oder für eine lang ersehnte Auszeit zu Besuch sind — unser Team setzt sich dafür ein, jeden Aufenthalt außergewöhnlich zu machen.",
+    "welcomeBody3": "Bei Urban Elephant glauben wir, dass Gastfreundschaft persönlich, mühelos und unvergesslich sein sollte. Ob Sie geschäftlich, zum Vergnügen oder für eine lang ersehnte Auszeit zu Besuch sind, unser Team setzt sich dafür ein, jeden Aufenthalt außergewöhnlich zu machen.",
     "welcomeBody4": "Wir laden Sie ein, unsere Sammlung von Unterkünften zu erkunden, lokale Erlebnisse zu entdecken und die vielen Vorteile zu genießen, die mit der Zugehörigkeit zur Herde einhergehen. Sollten Sie zu irgendeinem Zeitpunkt Hilfe benötigen, ist unser Team immer für Sie da.",
     "whyEyebrow": "WARUM DIE HERDE",
-    "whyTitle": "Treue, Erinnerung, Zugehörigkeit — so wie Elefanten es tun.",
-    "whyIntro": "Urban Elephant versucht nicht, eine kalte, unternehmerische Hotelkette zu sein. Wir möchten, dass sich Gäste so fühlen, als gehörten sie zu etwas — einer Marke, die sich an sie erinnert und sie schätzt. Wie eine Elefantenherde geht es um Treue, Verbindung, Schutz, Erinnerung und das Nachhausekommen.",
+    "whyTitle": "Treue, Erinnerung, Zugehörigkeit. So wie Elefanten es tun.",
+    "whyIntro": "Urban Elephant versucht nicht, eine kalte, unternehmerische Hotelkette zu sein. Wir möchten, dass sich Gäste so fühlen, als gehörten sie zu etwas: einer Marke, die sich an sie erinnert und sie schätzt. Wie eine Elefantenherde geht es um Treue, Verbindung, Schutz, Erinnerung und das Nachhausekommen.",
     "reasons": {
       "loyalty": {
         "title": "Treue und Erinnerung",
-        "description": "Elefanten sind für beides bekannt. Die Herde baut auf der Idee auf, dass eine Marke sich an ihre Gäste erinnern sollte — und sie dafür belohnen sollte, dass sie zurückkehren."
+        "description": "Elefanten sind für beides bekannt. Die Herde baut auf der Idee auf, dass eine Marke sich an ihre Gäste erinnern und sie dafür belohnen sollte, dass sie zurückkehren."
       },
       "protection": {
         "title": "Schutz und Anerkennung",
@@ -527,11 +527,11 @@
       },
       "belonging": {
         "title": "Nach Hause kommen",
-        "description": "Gäste, die wiederholt bei uns wohnen, werden Teil der Herde. Es ist weniger ein Punktesystem und mehr eine Anerkennung, dass Sie Urban Elephant gewählt haben — und wir Sie ebenfalls."
+        "description": "Gäste, die wiederholt bei uns wohnen, werden Teil der Herde. Es ist weniger ein Punktesystem und mehr eine Anerkennung, dass Sie Urban Elephant gewählt haben, und wir Sie ebenfalls."
       },
       "premium": {
         "title": "Emotional, nicht transaktional",
-        "description": "Bei der Herde geht es nicht um Meilen und Stufen. Es geht um die kleinen Dinge — ein vertrautes Willkommen, Ihre üblichen Buchungsvorlieben, an die man sich erinnert, und ein exklusiver Preis, wenn Sie direkt buchen."
+        "description": "Bei der Herde geht es nicht um Meilen und Stufen. Es geht um die kleinen Dinge: ein vertrautes Willkommen, Ihre üblichen Buchungsvorlieben, an die man sich erinnert, und ein exklusiver Preis, wenn Sie direkt buchen."
       }
     },
     "benefitsEyebrow": "MITGLIEDERVORTEILE",
@@ -540,7 +540,7 @@
       "rates": {
         "label": "Mitgliedervorteil",
         "title": "10 % Rabatt auf den niedrigsten Preis",
-        "description": "Mitglieder erhalten 10 % Rabatt auf den niedrigsten verfügbaren Preis bei Direktbuchung — angewendet mit Ihrem Mitgliedscode beim Checkout."
+        "description": "Mitglieder erhalten 10 % Rabatt auf den niedrigsten verfügbaren Preis bei Direktbuchung, angewendet mit Ihrem Mitgliedscode beim Checkout."
       },
       "priority": {
         "label": "Mitgliedervorteil",
@@ -550,7 +550,7 @@
       "amenities": {
         "label": "Mitgliedervorteil",
         "title": "Willkommensgeschenke",
-        "description": "Ein kleines Dankeschön, das in Ihrem Apartment auf Sie wartet, wann immer Sie übernachten — von Niles ausgewählt, keine Unternehmensvorlage."
+        "description": "Ein kleines Dankeschön, das in Ihrem Apartment auf Sie wartet, wann immer Sie übernachten, von Niles ausgewählt, keine Unternehmensvorlage."
       },
       "offers": {
         "label": "Mitgliedervorteil",
@@ -560,8 +560,8 @@
     },
     "joinEyebrow": "DER HERDE BEITRETEN",
     "joinTitle": "Anmelden. Bleiben. Erinnert werden.",
-    "joinDescription": "Hinterlassen Sie Ihren Namen und Ihre E-Mail und wir senden Ihnen Ihr Mitglieder-Willkommen mit Ihrem Direktbuchungs-Rabattcode. Keine Stufen, kein Kleingedrucktes, kein Spam — nur eine ruhigere, bessere Art, bei uns zu wohnen.",
-    "eligibility": "Die Herde ist für Gäste, die mindestens einmal bei uns gewohnt haben. Wir bestätigen Ihren Aufenthalt, bevor wir die Mitgliedschaft aktivieren — so behalten wir sie Gästen vor, die wir bereits kennen.",
+    "joinDescription": "Hinterlassen Sie Ihren Namen und Ihre E-Mail und wir senden Ihnen Ihr Mitglieder-Willkommen mit Ihrem Direktbuchungs-Rabattcode. Keine Stufen, kein Kleingedrucktes, kein Spam. Nur eine ruhigere, bessere Art, bei uns zu wohnen.",
+    "eligibility": "Die Herde ist für Gäste, die mindestens einmal bei uns gewohnt haben. Wir bestätigen Ihren Aufenthalt, bevor wir die Mitgliedschaft aktivieren. So behalten wir sie Gästen vor, die wir bereits kennen.",
     "form": {
       "nameLabel": "Vorname",
       "emailLabel": "E-Mail-Adresse",
@@ -569,12 +569,12 @@
       "submitting": "Wird beigetreten…",
       "disclaimer": "Mit Ihrem Beitritt erklären Sie sich damit einverstanden, gelegentlich E-Mails von Urban Elephant über Ihre Mitgliedschaft zu erhalten. Jederzeit abbestellbar.",
       "successEyebrow": "FAST GESCHAFFT",
-      "successTitle": "Wir haben Ihre E-Mail geöffnet — drücken Sie auf Senden.",
-      "successBody": "Ihre Anmelde-E-Mail ist in Ihrem E-Mail-Programm bereit, adressiert an Karin. Senden Sie sie ab und wir richten Sie in der Herde ein. Dann kommen Ihr Willkommensbrief und Ihr Mitglieder-Rabattcode per E-Mail — das gleiche herzliche Willkommen, das die Herde seit Jahren schreibt."
+      "successTitle": "Wir haben Ihre E-Mail geöffnet. Drücken Sie auf Senden.",
+      "successBody": "Ihre Anmelde-E-Mail ist in Ihrem E-Mail-Programm bereit, adressiert an Karin. Senden Sie sie ab und wir richten Sie in der Herde ein. Dann kommen Ihr Willkommensbrief und Ihr Mitglieder-Rabattcode per E-Mail: das gleiche herzliche Willkommen, das die Herde seit Jahren schreibt."
     },
     "bookEyebrow": "MITGLIEDER BUCHEN DIREKT",
     "bookTitle": "Schon in der Herde? Buchen Sie direkt und erhalten Sie Ihren Mitgliederpreis.",
-    "bookDescription": "Sobald Sie beigetreten sind, erhalten Sie Ihren Mitglieder-Rabattcode per E-Mail. Wenden Sie ihn bei jeder Direktbuchung an — so wird der Treuepreis heute gewährt, und das System wird automatisch, sobald das Programm ausgerollt wird.",
+    "bookDescription": "Sobald Sie beigetreten sind, erhalten Sie Ihren Mitglieder-Rabattcode per E-Mail. Wenden Sie ihn bei jeder Direktbuchung an. So wird der Treuepreis heute gewährt, und das System wird automatisch, sobald das Programm ausgerollt wird.",
     "bookCta": "Direkt buchen"
   },
   "notFound": {
@@ -583,13 +583,13 @@
     "backHome": "Zurück zur Startseite"
   },
   "faq": {
-    "metaTitle": "Urban Elephant Häufige Fragen — Alles, was Sie vor Ihrer Ankunft wissen müssen",
+    "metaTitle": "Urban Elephant Häufige Fragen: Alles, was Sie vor Ihrer Ankunft wissen müssen",
     "metaDescription": "Check-in, Parken, Wi-Fi, Housekeeping, Flughafentransfers und mehr. Die Fragen, die unsere Gäste am häufigsten vor und während eines Aufenthalts bei Urban Elephant Kapstadt stellen.",
     "eyebrow": "GÄSTEFRAGEN",
     "title": "Alles, was Sie vor Ihrer Ankunft wissen müssen",
-    "subtitle": "Die Fragen, die unsere Gäste am häufigsten stellen. Falls Ihre nicht dabei ist, schreiben Sie unserem Guest Relations-Team eine WhatsApp — wir antworten persönlich.",
+    "subtitle": "Die Fragen, die unsere Gäste am häufigsten stellen. Falls Ihre nicht dabei ist, schreiben Sie unserem Guest Relations-Team eine WhatsApp. Wir antworten persönlich.",
     "askLabel": "Haben Sie noch eine Frage?",
-    "askDescription": "Schreiben Sie unserem Guest Relations-Team eine WhatsApp an +27 72 618 8140 oder eine E-Mail an karin@urbanelephant.co.za — wir antworten innerhalb der Geschäftszeiten.",
+    "askDescription": "Schreiben Sie unserem Guest Relations-Team eine WhatsApp an +27 72 618 8140 oder eine E-Mail an karin@urbanelephant.co.za. Wir antworten innerhalb der Geschäftszeiten.",
     "pickerEyebrow": "Wählen Sie Ihr Apartmenthotel",
     "pickerHeading": "Vier offiziell eingestufte Hotels. Eine Familie, die sie führt.",
     "groups": {
@@ -686,18 +686,18 @@
   "meta": {
     "siteName": "Urban Elephant Hotel and Tours",
     "defaultTitle": "Urban Elephant | Offiziell eingestufte Apartmenthotels in Kapstadt",
-    "defaultDescription": "Offiziell eingestufte Apartmenthotels in den besten Lagen Kapstadts — TGCSA-eingestuft, professionell verwaltet und familiengeführt. Buchen Sie direkt für den besten Preis."
+    "defaultDescription": "Offiziell eingestufte Apartmenthotels in den besten Lagen Kapstadts: TGCSA-eingestuft, professionell verwaltet und familiengeführt. Buchen Sie direkt für den besten Preis."
   },
   "seo": {
     "home": {
       "title": "Urban Elephant | Luxus-Apartmenthotels in Kapstadt",
-      "description": "Offiziell eingestufte 4-Sterne-Luxusapartments in Kapstadt. Hotelkomfort, designorientierte Räume und die Beständigkeit professioneller Verwaltung — Urban Elephant.",
+      "description": "Offiziell eingestufte 4-Sterne-Luxusapartments in Kapstadt. Hotelkomfort, designorientierte Räume und die Beständigkeit professioneller Verwaltung. Das ist Urban Elephant.",
       "ogTitle": "Urban Elephant | Luxus-Apartmenthotels in Kapstadt",
       "ogDescription": "Erleben Sie Kapstadt wie nie zuvor. Luxus-Apartmenthotels mit atemberaubender Aussicht und persönlichem Service."
     },
     "about": {
       "title": "Über uns",
-      "description": "Die Familie hinter Urban Elephant — Kapstädter Apartmenthotels, eingestuft vom Tourism Grading Council of South Africa.",
+      "description": "Die Familie hinter Urban Elephant: Kapstädter Apartmenthotels, eingestuft vom Tourism Grading Council of South Africa.",
       "ogTitle": "Über Urban Elephant",
       "ogDescription": "Familiengeführte, TGCSA-eingestufte Apartmenthotels in Kapstadt."
     },
@@ -711,7 +711,7 @@
       "title": "Unterkünfte",
       "description": "Vier designorientierte Apartmenthotels in Kapstadts charaktervollsten Vierteln.",
       "ogTitle": "Apartmenthotels in Kapstadt | Urban Elephant",
-      "ogDescription": "Hotelkomfort mit der Privatsphäre eines Apartments — überall in Kapstadt."
+      "ogDescription": "Hotelkomfort mit der Privatsphäre eines Apartments, überall in Kapstadt."
     },
     "tours": {
       "title": "Touren & Erlebnisse",
@@ -721,7 +721,7 @@
     },
     "faq": {
       "title": "Häufige Fragen",
-      "description": "Check-in, Parken, WLAN, Housekeeping, Flughafentransfers — die Fragen, die unsere Gäste am häufigsten stellen.",
+      "description": "Check-in, Parken, WLAN, Housekeeping, Flughafentransfers: die Fragen, die unsere Gäste am häufigsten stellen.",
       "ogTitle": "Häufige Fragen | Urban Elephant",
       "ogDescription": "Alles, was Sie vor Ihrem Kapstadt-Aufenthalt wissen müssen."
     },
@@ -745,7 +745,7 @@
     },
     "propertyApplication": {
       "title": "Partner werden",
-      "description": "Bieten Sie Ihr Apartment in Kapstadt mit Urban Elephant an — handverlesen, wunderschön gebrandet und vollständig verwaltet. Bewerben Sie sich und werden Sie Teil der Familie.",
+      "description": "Bieten Sie Ihr Apartment in Kapstadt mit Urban Elephant an: handverlesen, wunderschön gebrandet und vollständig verwaltet. Bewerben Sie sich und werden Sie Teil der Familie.",
       "ogTitle": "Partner bei Urban Elephant werden",
       "ogDescription": "Werden Sie Teil einer florierenden Hotelmarke in Kapstadt. Wir branden, vermieten und verwalten Ihr Apartment vollständig."
     }
@@ -780,7 +780,7 @@
     "hero": {
       "eyebrow": "Partner werden",
       "title": "Werden Sie Teil der Urban-Elephant-Familie",
-      "description": "Wenn Sie sich einer aufstrebenden, wachsenden Hotelmarke in Kapstadt anschließen möchten, würden wir uns sehr freuen, von Ihnen zu hören. Unsere Apartments sind handverlesen — sehen Sie unten, worauf wir achten.",
+      "description": "Wenn Sie sich einer aufstrebenden, wachsenden Hotelmarke in Kapstadt anschließen möchten, würden wir uns sehr freuen, von Ihnen zu hören. Unsere Apartments sind handverlesen. Sehen Sie unten, worauf wir achten.",
       "cta": "Jetzt bewerben"
     },
     "criteria": {
@@ -807,7 +807,7 @@
     "handle": {
       "eyebrow": "Rundum verwaltet",
       "heading": "Wir kümmern uns um alles",
-      "subheading": "Vom ersten Foto bis zum letzten Check-out ist Ihr Apartment in guten Händen — und Ihre Gäste ebenso.",
+      "subheading": "Vom ersten Foto bis zum letzten Check-out ist Ihr Apartment in guten Händen, und Ihre Gäste ebenso.",
       "setup": {
         "title": "Einrichtung & Möblierung",
         "body": "Wir gestalten, möblieren und fotografieren Ihr Apartment, damit es bereit für Gäste ist."
@@ -818,7 +818,7 @@
       },
       "maintenance": {
         "title": "Wartung & Pflege",
-        "body": "Reinigung, Instandhaltung und zuverlässige Dienstleister — alles erledigt, immer makellos."
+        "body": "Reinigung, Instandhaltung und zuverlässige Dienstleister: alles erledigt, immer makellos."
       },
       "guests": {
         "title": "Gäste & Branding",
@@ -829,7 +829,7 @@
     "testimonials": {
       "eyebrow": "Eigentümerstimmen",
       "heading": "Von unseren Eigentümern",
-      "subheading": "Die Familien, die uns ihre Apartments anvertraut haben — in ihren eigenen Worten."
+      "subheading": "Die Familien, die uns ihre Apartments anvertraut haben, in ihren eigenen Worten."
     },
     "form": {
       "eyebrow": "Bewerbung",
@@ -845,7 +845,7 @@
       "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
       "successEyebrow": "Bewerbung gesendet",
       "successHeading": "Vielen Dank, {name}.",
-      "successBody": "Wir haben Ihre Bewerbung erhalten und unser Team wird sich in Kürze bei Ihnen melden. Während Sie warten, schreiben Sie uns gerne direkt auf WhatsApp — wir antworten persönlich.",
+      "successBody": "Wir haben Ihre Bewerbung erhalten und unser Team wird sich in Kürze bei Ihnen melden. Während Sie warten, schreiben Sie uns gerne direkt auf WhatsApp. Wir antworten persönlich.",
       "successWa": "WhatsApp Gästebetreuung",
       "successAgain": "Weitere Bewerbung senden"
     },

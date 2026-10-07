@@ -55,7 +55,7 @@ export function formatZar(amount: number): string {
   return `R${groupDigits(amount, " ")}`;
 }
 
-// Indicative FX rates from ZAR. UI-only — actual billing is in ZAR.
+// Indicative FX rates from ZAR. UI-only; actual billing is in ZAR.
 // Update quarterly. Last updated: 2026-05-22.
 export const INDICATIVE_FX = {
   en: {

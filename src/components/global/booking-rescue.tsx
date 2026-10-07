@@ -27,7 +27,7 @@ import {
  * Roughly 700 people a month reach the Nightsbridge booking engine from this
  * site and only a handful come out the other side as bookings. Because every
  * "Book Direct" CTA opens Nightsbridge in a new tab, our tab is still sitting
- * there when they give up — so the moment this one becomes visible again we
+ * there when they give up, so the moment this one becomes visible again we
  * offer the one booking channel we control end to end: a human on the phone.
  *
  * We can't see whether they actually booked (different domain), so the copy is
@@ -76,7 +76,7 @@ export function BookingRescue() {
     // Also check on mount, not just on the tab regaining focus. Some in-app
     // browsers (Instagram, Facebook) follow the "new tab" in place rather than
     // opening one, so the guest comes back via a fresh page load and no
-    // visibility change ever fires — the breadcrumb in sessionStorage is the
+    // visibility change ever fires. The breadcrumb in sessionStorage is the
     // only trace left of the handoff.
     consider();
 
@@ -88,7 +88,7 @@ export function BookingRescue() {
     };
   }, []);
 
-  // While the rescue is up, stand the hotline buttons down — the panel already
+  // While the rescue is up, stand the hotline buttons down. The panel already
   // carries Call and WhatsApp, and two overlapping offers in the same corner
   // read as clutter (see globals.css).
   useEffect(() => {

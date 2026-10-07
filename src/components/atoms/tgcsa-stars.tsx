@@ -13,7 +13,7 @@ interface Props {
 /**
  * Renders N copies of the official TGCSA grading star (SA flag insignia).
  * Used wherever the site shows a property's grading or the brand-level
- * credential — replaces generic Lucide stars so the rating reads as
+ * credential. Replaces generic Lucide stars so the rating reads as
  * "awarded by TGCSA" rather than "added by us".
  */
 export function TGCSAStars({

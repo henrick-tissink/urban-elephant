@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Brand palette — gradient stops from logo-full.svg wordmark */
+  /* Brand palette: gradient stops from logo-full.svg wordmark */
   --color-brand-anchor:    #ff00ff;
   --color-brand-saturated: #ff28ff;
   --color-brand-mid:       #ff83ff;
   --color-brand-soft:      #ffc6ff;
   --color-brand-wash:      #ffefff;
 
-  /* Legacy pink ramp — kept for existing utilities */
+  /* Legacy pink ramp, kept for existing utilities */
   --color-pink-50:  #ffefff;
   --color-pink-100: #ffe6ff;
   --color-pink-200: #ffc6ff;
@@ -43,7 +43,7 @@
   --accent-light: #ffefff;
   --accent-dark: #cc00cc;
 
-  /* Brand mark gradient — usable as background */
+  /* Brand mark gradient, usable as background */
   --gradient-brand: linear-gradient(135deg,
     #ff00ff 0%,
     #ff28ff 12%,
@@ -70,7 +70,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Typography — Biko is the only site font. It's a single-weight (400)
+/* Typography. Biko is the only site font. It's a single-weight (400)
    static OTF, so all "lighter than 400" requests render at 400 (browsers
    don't synthesize lighter), and "heavier than 500" requests get
    browser faux-bold. Heading defaults are bumped so strokes hold up at
@@ -92,7 +92,7 @@ h3, h4, h5, h6 {
 /* Faux-bold rescue: any heading with a "lighter than normal" weight
    class would otherwise render at Biko's native 400 and look spindly
    at display sizes. Bump to 600 so the browser faux-bolds. Body
-   paragraphs using font-light stay at 400 — readable native Biko. */
+   paragraphs using font-light stay at 400, readable native Biko. */
 :is(h1, h2, h3, h4, h5, h6).font-thin,
 :is(h1, h2, h3, h4, h5, h6).font-extralight,
 :is(h1, h2, h3, h4, h5, h6).font-light,
@@ -135,7 +135,7 @@ h3, h4, h5, h6 {
   background: #cc00cc;
 }
 
-/* Focus styles — accessible brand anchor with corner offset */
+/* Focus styles: accessible brand anchor with corner offset */
 :focus-visible {
   outline: 2px solid var(--color-brand-anchor);
   outline-offset: 3px;
@@ -147,7 +147,7 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
-/* Skip-to-content link — visually hidden until focused */
+/* Skip-to-content link, visually hidden until focused */
 .skip-link {
   position: absolute;
   top: 0;
@@ -180,7 +180,7 @@ a:focus-visible {
   }
 }
 
-/* Editorial drop cap — first letter in display Biko, faux-bold for stroke weight */
+/* Editorial drop cap: first letter in display Biko, faux-bold for stroke weight */
 .drop-cap::first-letter {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
@@ -193,7 +193,7 @@ a:focus-visible {
   letter-spacing: -0.04em;
 }
 
-/* Editorial pull quote — oversized Biko, faux-bold for stroke weight */
+/* Editorial pull quote: oversized Biko, faux-bold for stroke weight */
 .pull-quote {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   font-weight: 600;
@@ -203,7 +203,7 @@ a:focus-visible {
   text-wrap: balance;
 }
 
-/* Editorial typographic list — rule between items, no bullets */
+/* Editorial typographic list: rule between items, no bullets */
 .editorial-list {
   list-style: none;
   padding: 0;
@@ -220,7 +220,7 @@ a:focus-visible {
   border-bottom: 1px solid var(--color-stone-200, #e7e5e4);
 }
 
-/* Brand gradient hairline — used as a section divider */
+/* Brand gradient hairline, used as a section divider */
 .brand-hairline {
   height: 1px;
   background: var(--gradient-brand);
@@ -262,7 +262,7 @@ a, button {
   margin-right: auto;
 }
 
-/* Brand gradient text utility — clips the logo gradient onto type */
+/* Brand gradient text utility: clips the logo gradient onto type */
 .text-gradient-brand {
   background: var(--gradient-brand);
   -webkit-background-clip: text;
@@ -283,7 +283,7 @@ a, button {
   color: #ffffff;
 }
 
-/* Reservation hotline — lift above the property "book direct" sticky bar
+/* Reservation hotline: lift above the property "book direct" sticky bar
    when it's on screen (property-detail sets body[data-booking-bar="1"]). */
 .reservation-hotline {
   transition: bottom 0.3s ease;
@@ -320,7 +320,7 @@ html[data-menu-open] .reservation-hotline-bar {
   transition: opacity 0.2s ease;
 }
 
-/* Giving Back — night-sky star field (Rachel's Wishes). Twinkles only when
+/* Giving Back: night-sky star field (Rachel's Wishes). Twinkles only when
    the visitor hasn't asked to reduce motion. */
 .rw-star {
   position: absolute;

@@ -14,9 +14,9 @@ export async function generateMetadata({
   return detailPageMetadata({
     locale: locale as Locale,
     path: "/giving-back",
-    title: "Giving Back — Rachel's Wishes",
+    title: "Giving Back: Rachel's Wishes",
     description:
-      "Urban Elephant proudly partners with Rachel's Wishes, a Western Cape charity improving the lives of vulnerable children and families — founded in memory of Rachel Adcock.",
+      "Urban Elephant proudly partners with Rachel's Wishes, a Western Cape charity improving the lives of vulnerable children and families, founded in memory of Rachel Adcock.",
   });
 }
 

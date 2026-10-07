@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   title: {
     template: "%s | Urban Elephant Hotel and Tours",
     default:
-      "Urban Elephant Hotel and Tours — Luxury Serviced Apartments & Tours in Cape Town",
+      "Urban Elephant Hotel and Tours | Luxury Serviced Apartments & Tours in Cape Town",
   },
   authors: [{ name: "Urban Elephant Hotel and Tours" }],
   creator: "Urban Elephant Hotel and Tours",

@@ -89,7 +89,7 @@ function buildHtml(data: ApplicationPayload): string {
 function buildText(data: ApplicationPayload): string {
   const { name, email, phone, propertyLocation, numberOfUnits, propertyDescription } = data;
   return [
-    "NEW PROPERTY APPLICATION — Urban Elephant",
+    "NEW PROPERTY APPLICATION: Urban Elephant",
     "",
     `Name:        ${name}`,
     `Email:       ${email}`,
@@ -101,7 +101,7 @@ function buildText(data: ApplicationPayload): string {
     "Property description:",
     propertyDescription,
     "",
-    "— Sent from urbanelephant.co.za",
+    "Sent from urbanelephant.co.za",
   ].join("\n");
 }
 
@@ -141,7 +141,7 @@ export async function POST(request: NextRequest) {
     const { error } = await resend.emails.send({
       from,
       to: [to],
-      subject: `[Urban Elephant] Property application — ${data.name}`,
+      subject: `[Urban Elephant] Property application: ${data.name}`,
       html: buildHtml(data),
       text: buildText(data),
       replyTo: data.email,

@@ -5,8 +5,8 @@ import { z } from "zod";
 const contactSchema = z
   .object({
     name: z.string().min(2, "Name must be at least 2 characters"),
-    // Optional so an out-of-hours callback request can be name + number only —
-    // asking a guest for an email address just to be phoned back loses leads.
+    // Optional so an out-of-hours callback request can be name + number only.
+    // Asking a guest for an email address just to be phoned back loses leads.
     email: z.string().email("Invalid email address").optional(),
     phone: z.string().optional(),
     subject: z.string().min(3, "Subject must be at least 3 characters"),
@@ -104,7 +104,7 @@ function buildHtml(data: ContactPayload): string {
 function buildText(data: ContactPayload): string {
   const { name, email, phone, subject, message, property, tour, dates, guests } = data;
   return [
-    "NEW CONTACT FORM SUBMISSION — Urban Elephant",
+    "NEW CONTACT FORM SUBMISSION: Urban Elephant",
     "",
     `Name:    ${name}`,
     email ? `Email:   ${email}` : null,
@@ -119,7 +119,7 @@ function buildText(data: ContactPayload): string {
     "Message:",
     message,
     "",
-    "— Sent from urbanelephant.co.za",
+    "Sent from urbanelephant.co.za",
   ]
     .filter((line) => line !== null)
     .join("\n");

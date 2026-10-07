@@ -37,16 +37,16 @@
   },
   "recommendations": {
     "title": "Uden for hoveddøren",
-    "description": "Tre udsigter enhver gæst bør se, tre steder vi ville sende en ven hen for at spise — Urban Elephants kuratornote til Cape Town.",
+    "description": "Tre udsigter enhver gæst bør se, tre steder vi ville sende en ven hen for at spise. Urban Elephants kuratornote til Cape Town.",
     "eyebrow": "Kurateret af Urban Elephant",
-    "subtitle": "Hvad vi sender gæster ud for at se, spise og udforske — det Cape Town vi ville anbefale til en ven.",
+    "subtitle": "Hvad vi sender gæster ud for at se, spise og udforske: det Cape Town vi ville anbefale til en ven.",
     "letterEyebrow": "Fra værten",
     "attractionsEyebrow": "Cape Towns ikoner",
     "attractionsTitle": "Tre udsigter du ikke bør gå glip af.",
     "attractionsDescription": "Bjerget, havnen, gaderne der skifter kvarter for hver anden husblok. Begynd her.",
     "restaurantsEyebrow": "Hvor vi spiser",
     "restaurantsTitle": "Hvor vi ville sende en ven hen.",
-    "restaurantsDescription": "En kort liste med tre steder — et til morgenmad, et til frokost, et til aftensmad. Ingen af dem betaler os for at være her.",
+    "restaurantsDescription": "En kort liste med tre steder: et til morgenmad, et til frokost, et til aftensmad. Ingen af dem betaler os for at være her.",
     "hostNote": "Værtens note",
     "perkLabel": "En gave fra os",
     "ctaEyebrow": "Vil du have mere?",
@@ -88,7 +88,7 @@
     "bookCta": "Book nu",
     "bookCtaSub": "Online booking",
     "reassurance": "Bedste pris garanteret · Intet bookinggebyr · Betalingsplaner tilgængelige",
-    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold."
+    "whatsappMessage": "Hej Urban Elephant, jeg vil gerne booke et ophold."
   },
   "bookingPicker": {
     "eyebrow": "BOOK DIREKTE",
@@ -103,14 +103,14 @@
     "eyebrow": "STADIG I TVIVL?",
     "title": "Lad os booke det for dig.",
     "titleProperty": "Lad os booke {property} for dig.",
-    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen. Fortæl os, hvad du har brug for, så bekræfter vi det på et par minutter — bedste pris, intet bookinggebyr.",
-    "bodyClosed": "Vores reservationslinje åbner kl. 8.30. Skriv til os på WhatsApp, så vender vi tilbage med det samme — bedste pris, intet bookinggebyr.",
+    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen. Fortæl os, hvad du har brug for, så bekræfter vi det på et par minutter. Bedste pris, intet bookinggebyr.",
+    "bodyClosed": "Vores reservationslinje åbner kl. 8.30. Skriv til os på WhatsApp, så vender vi tilbage med det samme. Bedste pris, intet bookinggebyr.",
     "call": "Ring {number}",
     "whatsapp": "Book på WhatsApp",
     "decline": "Nej tak, jeg kigger bare",
     "close": "Luk",
-    "whatsappMessage": "Hej Urban Elephant — jeg prøvede at booke et ophold og kunne godt bruge hjælp.",
-    "whatsappMessageProperty": "Hej Urban Elephant — jeg prøvede at booke {property} og kunne godt bruge hjælp."
+    "whatsappMessage": "Hej Urban Elephant, jeg prøvede at booke et ophold og kunne godt bruge hjælp.",
+    "whatsappMessageProperty": "Hej Urban Elephant, jeg prøvede at booke {property} og kunne godt bruge hjælp."
   },
   "hotline": {
     "call": "Ring {number}",
@@ -122,8 +122,8 @@
     "openNow": "Reservationer åbne nu",
     "hours": "Reservationer · 8.30–20.00",
     "menuNumber": "Reservationer · {number} · 8.30–20.00",
-    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold eller høre om jeres ture.",
-    "whatsappMessageProperty": "Hej Urban Elephant — jeg vil gerne booke {property}.",
+    "whatsappMessage": "Hej Urban Elephant, jeg vil gerne booke et ophold eller høre om jeres ture.",
+    "whatsappMessageProperty": "Hej Urban Elephant, jeg vil gerne booke {property}.",
     "barLabel": "Reservationer:",
     "barHours": "Dagligt 8.30 – 20.00",
     "barClosed": "Åbner kl. 8.30",
@@ -133,13 +133,13 @@
     "eyebrow": "UDEN FOR ÅBNINGSTID",
     "title": "Vi ringer dig op.",
     "titleProperty": "Vi ringer dig op om {property}.",
-    "body": "Vores reservationslinje ({number}) åbner kl. 8.30. Læg dit nummer, så ringer vi til dig først på dagen — bedste pris, intet bookinggebyr.",
+    "body": "Vores reservationslinje ({number}) åbner kl. 8.30. Læg dit nummer, så ringer vi til dig først på dagen. Bedste pris, intet bookinggebyr.",
     "nameLabel": "Dit navn",
     "phoneLabel": "Dit telefonnummer",
     "datesLabel": "Datoer du overvejer (valgfrit)",
     "submit": "Bed om at blive ringet op",
     "submitting": "Sender…",
-    "doneTitle": "Modtaget — vi vender tilbage.",
+    "doneTitle": "Modtaget. Vi vender tilbage.",
     "doneBody": "En fra reservationen ringer til dig, så snart vi åbner kl. 8.30.",
     "doneClose": "Luk",
     "error": "Noget gik galt. Prøv WhatsApp i stedet.",
@@ -148,20 +148,20 @@
   "talkToUs": {
     "eyebrow": "TAL MED OS",
     "title": "Book hos et menneske.",
-    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen — hvilken der fanger morgensolen, hvilken der passer til en familie, hvad der er værd at opleve i nærheden. Fortæl os, hvad du har brug for, så bekræfter vi det på få minutter.",
-    "openNow": "Åbent nu — vi svarer normalt inden for et minut",
-    "closedNow": "Lukket nu — åbner igen kl. 8.30",
+    "body": "Vores reservationsteam kender hver eneste lejlighed i gruppen: hvilken der fanger morgensolen, hvilken der passer til en familie, hvad der er værd at opleve i nærheden. Fortæl os, hvad du har brug for, så bekræfter vi det på få minutter.",
+    "openNow": "Åbent nu. Vi svarer normalt inden for et minut",
+    "closedNow": "Lukket nu. Åbner igen kl. 8.30",
     "hours": "Åbent dagligt 8.30–20.00",
     "whatsappCta": "WhatsApp {number}",
     "callbackCta": "Bed om at blive ringet op",
     "promise": "Bedste pris garanteret · Intet bookinggebyr · Bekræftet mens du er i røret",
-    "whatsappMessage": "Hej Urban Elephant — jeg vil gerne booke et ophold."
+    "whatsappMessage": "Hej Urban Elephant, jeg vil gerne booke et ophold."
   },
   "promo": {
     "imageAlt": "Urban Elephant Hotels-kampagne",
     "eyebrow": "URBAN ELEPHANT HOTELS",
     "title": "Velkommen til Cape Town.",
-    "body": "Officielt klassificerede 4-stjernede lejlighedshoteller — book direkte for den bedste pris. Mærket der elsker dig tilbage.",
+    "body": "Officielt klassificerede 4-stjernede lejlighedshoteller. Book direkte for den bedste pris. Mærket der elsker dig tilbage.",
     "cta": "Book direkte",
     "ctaHref": "https://book.nightsbridge.com/30034",
     "close": "Luk promo"
@@ -182,11 +182,11 @@
     "items": {
       "rates": {
         "title": "Vores Pride Promise",
-        "description": "10% rabat på enhver pris, hver gang — kun når du booker direkte hos os. Ingen koder, ingen betingelser."
+        "description": "10% rabat på enhver pris, hver gang du booker direkte hos os. Ingen koder, ingen betingelser."
       },
       "offers": {
         "title": "Eksklusive tilbud",
-        "description": "Medlemstilbud, kampagner og kuraterede Cape Town-oplevelser — kun når du booker direkte."
+        "description": "Medlemstilbud, kampagner og kuraterede Cape Town-oplevelser, kun når du booker direkte."
       },
       "flex": {
         "title": "Fleksibel afbestilling",
@@ -194,7 +194,7 @@
       },
       "concierge": {
         "title": "Personlig concierge-service",
-        "description": "Oplev bekvemmeligheden ved en ægte one-stop-shop. Fra indkvartering og lufthavnstransfer til ture, bordreservationer og lokale oplevelser er vores team her for at hjælpe med hver del af din rejse. Nyd en direkte linje til vores team for bookinger, anbefalinger og support på stedet — før, under og efter dit ophold."
+        "description": "Oplev bekvemmeligheden ved en ægte one-stop-shop. Fra indkvartering og lufthavnstransfer til ture, bordreservationer og lokale oplevelser er vores team her for at hjælpe med hver del af din rejse. Nyd en direkte linje til vores team for bookinger, anbefalinger og support på stedet, før, under og efter dit ophold."
       }
     }
   },
@@ -224,7 +224,7 @@
     "tagline": "HOS URBAN ELEPHANT",
     "title": "Hvor du bor bør føles lige så mindeværdigt som byen selv.",
     "description": "Fra stilfulde bylejligheder til kystophold er hvert Urban Elephant-ophold omhyggeligt designet til at kombinere komfort, personlighed og ensartethed på hotelniveau.",
-    "body": "Professionelt drevet, smukt beliggende — dette er indkvartering i Cape Town på Urban Elephant-måden."
+    "body": "Professionelt drevet, smukt beliggende. Dette er indkvartering i Cape Town på Urban Elephant-måden."
   },
   "properties": {
     "title": "Urban Elephant Hotels",
@@ -273,12 +273,12 @@
       "name": "Urban Elephant at Flamingo Express",
       "tagline": "Kystophold",
       "description": "Dit kystophold med ubesværet elegance.",
-      "body": "Hver enhed har et enkelt, elegant design med luksuriøse detaljer - ideelt for arbejdende fagfolk, ferierejsende eller enhver, der søger en stilfuld base nær havet."
+      "body": "Hver enhed har et enkelt, elegant design med luksuriøse detaljer, ideelt for arbejdende fagfolk, ferierejsende eller enhver, der søger en stilfuld base nær havet."
     },
     "rose": {
       "name": "Urban Elephant at The Rose",
       "tagline": "117 Strand Street",
-      "description": "Mød The Rose - Urban Elephants seneste blikfang på 117 Strand Street, Cape Town.",
+      "description": "Mød The Rose: Urban Elephants seneste blikfang på 117 Strand Street, Cape Town.",
       "body": "Fra Taffelbjerget til Lion's Head, det farverige Bo-Kaap til det endeløse Atlanterhav, er 360-graders udsigten virkelig næste niveau. Morgenkaffe ved solopgang eller udsigt ved solnedgang? Ja tak."
     },
     "pridePromiseNote": "Pride Promise: 10% rabat ved direkte booking",
@@ -315,7 +315,7 @@
     "enterprise": {
       "kicker": "DREVET AF ENTERPRISE",
       "title": "Lej en bil til dit Cape Town-eventyr.",
-      "body": "Gennemse Enterprises fulde sydafrikanske flåde og book direkte nedenfor. Bedste priser garanteret — ingen bookinggebyrer, ingen skjulte omkostninger, og vores team kan arrangere afhentning fra dit lejlighedshotel.",
+      "body": "Gennemse Enterprises fulde sydafrikanske flåde og book direkte nedenfor. Bedste priser garanteret: ingen bookinggebyrer, ingen skjulte omkostninger, og vores team kan arrangere afhentning fra dit lejlighedshotel.",
       "footnote": "Foretrækker du et personligt præg? Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140, så arrangerer vi din lejebil, transfers og alt andet, du har brug for."
     },
     "footnote": "Foretrækker du et personligt præg? Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140, så arrangerer vi din lejebil, transfers og alt andet, du har brug for."
@@ -341,24 +341,24 @@
     "title": "Et meget varmt velkommen!",
     "subtitle": "MØD GRUNDLÆGGEREN",
     "tagline": "Mærket der elsker dig tilbage",
-    "founderQuote": "Gæstfrihed er mere end bare et job for mig—det er min passion.",
+    "founderQuote": "Gæstfrihed er mere end bare et job for mig. Det er min passion.",
     "founderName": "Niles",
     "founderTitle": "Grundlægger & Chief Elephant Wrangler",
-    "intro": "Hej der! Jeg er Niles—grundlægger, ejer og selvudnævnt Chief Elephant Wrangler hos Urban Elephant. Oprindeligt fra Storbritannien (hvor vejret opbygger karakter) flyttede jeg til Cape Town tilbage i 2007.",
+    "intro": "Hej der! Jeg er Niles: grundlægger, ejer og selvudnævnt Chief Elephant Wrangler hos Urban Elephant. Oprindeligt fra Storbritannien (hvor vejret opbygger karakter) flyttede jeg til Cape Town tilbage i 2007.",
     "story1": "Efter at have rejst verden rundt og set det bedste (og værste), verden har at byde på, vidste jeg, at jeg havde fundet noget virkelig særligt i Mother City. Så jeg pakkede mine tasker ud, droppede paraplyen og satte mig for at bygge noget lidt anderledes i gæstfrihedens verden.",
-    "story2": "Sådan blev Urban Elephant født—et sted hvor luksus møder komfort, hvor stil ikke koster en formue, og hvor hver gæst føler sig som en rockstjerne (eller i det mindste et meget velplejet menneske).",
+    "story2": "Sådan blev Urban Elephant født: et sted hvor luksus møder komfort, hvor stil ikke koster en formue, og hvor hver gæst føler sig som en rockstjerne (eller i det mindste et meget velplejet menneske).",
     "story3": "Jeg elsker oprigtigt at møde nye mennesker, høre deres historier og hjælpe dem med at skabe utrolige minder, mens de er i Cape Town. Jeg har bygget Urban Elephant op omkring denne idé: personlig, omtænksom service, der gør det lille ekstra (og nogle gange den ekstra flaske vin).",
-    "story4": "Hver lejlighed er designet til at få dig til at føle dig hjemme—men bedre. For lad os være ærlige, hvem vil lave rengøring derhjemme?",
-    "team": "Selvfølgelig ville intet af dette være muligt uden mit fantastiske team. Fra vores superstjerne Guest Relations-ansvarlige til rengøringsheltene, der holder alt skinnende rent, er de hjertet i Urban Elephant. De er venlige, professionelle og altid klar til et godt grin—eller en restaurantanbefaling.",
+    "story4": "Hver lejlighed er designet til at få dig til at føle dig hjemme, men bedre. For lad os være ærlige, hvem vil lave rengøring derhjemme?",
+    "team": "Selvfølgelig ville intet af dette være muligt uden mit fantastiske team. Fra vores superstjerne Guest Relations-ansvarlige til rengøringsheltene, der holder alt skinnende rent, er de hjertet i Urban Elephant. De er venlige, professionelle og altid klar til et godt grin, eller en restaurantanbefaling.",
     "zola": {
       "title": "Zolas historie",
       "subtitle": "Zolas ånd",
-      "imageAlt": "Zola - Den pink elefant",
-      "intro": "Enhver historie begynder et sted — vores begyndte med en pink elefant ved navn Zola.",
+      "imageAlt": "Zola, den pink elefant",
+      "intro": "Enhver historie begynder et sted. Vores begyndte med en pink elefant ved navn Zola.",
       "story1": "Da jeg var seks år gammel, var Zola min konstante følgesvend. Hun bragte trøst, ro og en stille påmindelse om, at det at skille sig ud kunne være noget smukt. Mens jeg var fascineret af Afrikas vilde dyr, var det denne lille pink elefant, der lærte mig styrken i individualitet og varme.",
-      "story2": "År senere blev den enkle lektion hjertet og symbolet for Urban Elephant — et mærke bygget på omsorg, karakter og forbindelse.",
+      "story2": "År senere blev den enkle lektion hjertet og symbolet for Urban Elephant, et mærke bygget på omsorg, karakter og forbindelse.",
       "story3": "Zola lever nu videre i vores symbol. Hendes navn, som betyder 'fredfyldt' og 'rolig' på xhosa, afspejler den følelse, vi ønsker, at hver gæst skal opleve.",
-      "closing": "Hos Urban Elephant er du mere end en besøgende. Du er en del af en historie, der fejrer komfort, kreativitet og tilhørsforhold — den samme følelse, som Zola engang gav mig."
+      "closing": "Hos Urban Elephant er du mere end en besøgende. Du er en del af en historie, der fejrer komfort, kreativitet og tilhørsforhold: den samme følelse, som Zola engang gav mig."
     },
     "values": {
       "title": "Vores værdier",
@@ -387,19 +387,19 @@
     "credentials": {
       "eyebrow": "OFFICIELT KLASSIFICERET",
       "title": "Plaketten på væggen, med papirerne til at bakke den op.",
-      "intro": "Urban Elephant er officielt klassificeret som et 4-stjernet lejlighedshotel af Sydafrikas turismeklassificeringsråd og medlem af Cape Town Tourism. Begge certifikater er offentlige — se dem nedenfor.",
-      "plaqueAlt": "Sydafrikas turismeklassificeringsråd — klassificeringsplakette for lejlighedshotel til Urban Elephant",
-      "lockupAlt": "Urban Elephant Cape Town — officielt 4-stjernet master-logo",
+      "intro": "Urban Elephant er officielt klassificeret som et 4-stjernet lejlighedshotel af Sydafrikas turismeklassificeringsråd og medlem af Cape Town Tourism. Begge certifikater er offentlige. Se dem nedenfor.",
+      "plaqueAlt": "Sydafrikas turismeklassificeringsråd: klassificeringsplakette for lejlighedshotel til Urban Elephant",
+      "lockupAlt": "Urban Elephant Cape Town, officielt 4-stjernet master-logo",
       "lockupLabel": "Officielt mastermærke",
       "lockupDescription": "Urban Elephant Cape Town-master-logoet, med den firestjernede TGCSA-klassificering indbygget.",
       "tgcsaLabel": "TGCSA-klassificeringscertifikat",
       "tgcsaDescription": "Officiel 4-stjernet lejlighedshotel-klassificering fra Sydafrikas turismeklassificeringsråd.",
       "tgcsaCta": "Se TGCSA-certifikat",
       "cttLabel": "Cape Town Tourism-medlemskab",
-      "cttDescription": "Medlem af Cape Town Tourism — byens officielle turismemyndighed.",
+      "cttDescription": "Medlem af Cape Town Tourism, byens officielle turismemyndighed.",
       "cttCta": "Se CTT-medlemskab",
       "ppraLabel": "PPRA-registreret",
-      "ppraDescription": "Property Practitioners Regulatory Authority — Registreringsnr. 1695928."
+      "ppraDescription": "Property Practitioners Regulatory Authority. Registreringsnr. 1695928."
     }
   },
   "services": {
@@ -440,7 +440,7 @@
       "error": "Noget gik galt. Prøv venligst igen.",
       "successEyebrow": "Besked sendt",
       "successHeading": "Modtaget, {name}.",
-      "successBody": "Vores Guest Relations-team svarer inden for arbejdstiden. Mens du venter, så skriv til os på WhatsApp — vi svarer personligt, normalt inden for en time.",
+      "successBody": "Vores Guest Relations-team svarer inden for arbejdstiden. Mens du venter, så skriv til os på WhatsApp. Vi svarer personligt, normalt inden for en time.",
       "successWa": "WhatsApp Guest Relations",
       "successAgain": "Send en ny besked"
     },
@@ -461,7 +461,7 @@
   },
   "footer": {
     "tagline": "Mærket der elsker dig tilbage.",
-    "description": "Urban Elephant er hurtigt blevet et af Cape Towns førende lejlighedshoteller — officielt klassificeret af Sydafrikas turismeklassificeringsråd, professionelt drevet og en kort gåtur fra alt, hvad du kom for at se.",
+    "description": "Urban Elephant er hurtigt blevet et af Cape Towns førende lejlighedshoteller: officielt klassificeret af Sydafrikas turismeklassificeringsråd, professionelt drevet og en kort gåtur fra alt, hvad du kom for at se.",
     "sections": {
       "properties": "Ejendomme",
       "services": "Tjenester",
@@ -502,11 +502,11 @@
     }
   },
   "theHerd": {
-    "metaTitle": "Flokken — Urban Elephant loyalitetsprogram",
+    "metaTitle": "Flokken: Urban Elephant loyalitetsprogram",
     "metaDescription": "Bliv en del af Flokken, Urban Elephants loyalitetsprogram for gæster, der bliver ved med at komme hjem. Medlemmer nyder eksklusive direkte priser, prioriteret booking og anerkendelse ved hvert ophold.",
     "eyebrow": "URBAN ELEPHANT LOYALITET",
     "title": "Flokken. For gæster der bliver ved med at komme hjem.",
-    "subtitle": "Flokken er Urban Elephants loyalitetsprogram — for gæster, der vælger at bo hos os igen og igen. Medlemmer bliver anerkendt, husket og belønnet med eksklusive direkte priser og prioriteret booking på hver Urban Elephant-ejendom.",
+    "subtitle": "Flokken er Urban Elephants loyalitetsprogram for gæster, der vælger at bo hos os igen og igen. Medlemmer bliver anerkendt, husket og belønnet med eksklusive direkte priser og prioriteret booking på hver Urban Elephant-ejendom.",
     "welcomeEyebrow": "VELKOMMEN TIL FLOKKEN",
     "welcomeTitle": "Velkommen til familien.",
     "welcomeBody1": "Vi er glade for at byde dig velkommen til et fællesskab af rejsende, opdagelsesrejsende og byelskere, der sætter pris på omtænksomme ophold, autentiske oplevelser og Cape Towns livlige ånd.",
@@ -514,12 +514,12 @@
     "welcomeBody3": "Hos Urban Elephant mener vi, at gæstfrihed bør føles personlig, ubesværet og mindeværdig. Uanset om du besøger for forretning, fornøjelse eller en længe ventet flugt, er vores team forpligtet til at gøre hvert ophold enestående.",
     "welcomeBody4": "Vi opfordrer dig til at udforske vores samling af ejendomme, opdage lokale oplevelser og nyde de mange fordele, der følger med at være en del af Flokken. Skulle du have brug for hjælp på noget tidspunkt, er vores team altid her for at hjælpe.",
     "whyEyebrow": "HVORFOR FLOKKEN",
-    "whyTitle": "Loyalitet, hukommelse, tilhørsforhold — på elefanternes måde.",
-    "whyIntro": "Urban Elephant forsøger ikke at være en kold, korporativ hotelkæde. Vi vil have, at gæster skal føle, at de hører til noget — et mærke, der husker dem og værdsætter dem. Som en elefantflok handler idéen om loyalitet, forbindelse, beskyttelse, hukommelse og at vende hjem.",
+    "whyTitle": "Loyalitet, hukommelse, tilhørsforhold. På elefanternes måde.",
+    "whyIntro": "Urban Elephant forsøger ikke at være en kold, korporativ hotelkæde. Vi vil have, at gæster skal føle, at de hører til noget: et mærke, der husker dem og værdsætter dem. Som en elefantflok handler idéen om loyalitet, forbindelse, beskyttelse, hukommelse og at vende hjem.",
     "reasons": {
       "loyalty": {
         "title": "Loyalitet og hukommelse",
-        "description": "Elefanter er kendt for begge dele. Flokken er bygget på idéen om, at et mærke bør huske sine gæster — og belønne dem for at vælge at komme tilbage."
+        "description": "Elefanter er kendt for begge dele. Flokken er bygget på idéen om, at et mærke bør huske sine gæster, og belønne dem for at vælge at komme tilbage."
       },
       "protection": {
         "title": "Beskyttelse og anerkendelse",
@@ -527,11 +527,11 @@
       },
       "belonging": {
         "title": "At vende hjem",
-        "description": "Gæster, der bor hos os gentagne gange, bliver en del af Flokken. Det er mindre et pointsystem og mere en anerkendelse af, at du har valgt Urban Elephant — og vi har valgt dig tilbage."
+        "description": "Gæster, der bor hos os gentagne gange, bliver en del af Flokken. Det er mindre et pointsystem og mere en anerkendelse af, at du har valgt Urban Elephant, og vi har valgt dig tilbage."
       },
       "premium": {
         "title": "Følelsesmæssigt, ikke transaktionelt",
-        "description": "Flokken handler ikke om miles og niveauer. Det handler om de små ting — en velkendt velkomst, dine sædvanlige bookingpræferencer husket og en eksklusiv pris, når du booker direkte."
+        "description": "Flokken handler ikke om miles og niveauer. Det handler om de små ting: en velkendt velkomst, dine sædvanlige bookingpræferencer husket og en eksklusiv pris, når du booker direkte."
       }
     },
     "benefitsEyebrow": "MEDLEMSFORDELE",
@@ -540,7 +540,7 @@
       "rates": {
         "label": "Medlemsfordel",
         "title": "10% rabat på den laveste pris",
-        "description": "Medlemmer får 10% rabat på den laveste tilgængelige pris, når de booker direkte — anvendt med din medlemskode ved checkout."
+        "description": "Medlemmer får 10% rabat på den laveste tilgængelige pris, når de booker direkte, anvendt med din medlemskode ved checkout."
       },
       "priority": {
         "label": "Medlemsfordel",
@@ -550,7 +550,7 @@
       "amenities": {
         "label": "Medlemsfordel",
         "title": "Velkomstgaver",
-        "description": "En lille tak, der venter i din lejlighed, hver gang du bor — udvalgt af Niles, ikke en korporativ skabelon."
+        "description": "En lille tak, der venter i din lejlighed, hver gang du bor, udvalgt af Niles, ikke en korporativ skabelon."
       },
       "offers": {
         "label": "Medlemsfordel",
@@ -560,8 +560,8 @@
     },
     "joinEyebrow": "BLIV EN DEL AF FLOKKEN",
     "joinTitle": "Tilmeld dig. Bo. Bliv husket.",
-    "joinDescription": "Efterlad dit navn og din e-mail, så sender vi din medlemsvelkomst med din rabatkode til direkte booking. Ingen niveauer, ingen finurligheder med småt, ingen spam — bare en roligere, bedre måde at bo hos os på.",
-    "eligibility": "Flokken er for gæster, der har boet hos os mindst én gang. Vi bekræfter dit ophold, før vi aktiverer medlemskabet — sådan holder vi det for gæster, vi allerede kender.",
+    "joinDescription": "Efterlad dit navn og din e-mail, så sender vi din medlemsvelkomst med din rabatkode til direkte booking. Ingen niveauer, ingen finurligheder med småt, ingen spam. Bare en roligere, bedre måde at bo hos os på.",
+    "eligibility": "Flokken er for gæster, der har boet hos os mindst én gang. Vi bekræfter dit ophold, før vi aktiverer medlemskabet. Sådan holder vi det for gæster, vi allerede kender.",
     "form": {
       "nameLabel": "Fornavn",
       "emailLabel": "E-mailadresse",
@@ -569,12 +569,12 @@
       "submitting": "Tilmelder…",
       "disclaimer": "Ved at tilmelde dig accepterer du at modtage lejlighedsvise e-mails fra Urban Elephant om dit medlemskab. Afmeld når som helst.",
       "successEyebrow": "NÆSTEN DER",
-      "successTitle": "Vi har åbnet din e-mail — tryk send.",
-      "successBody": "Dit udkast til tilmelding er klar i dit e-mailprogram, adresseret til Karin. Send den afsted, så sætter vi dig op i Flokken, og derefter ankommer dit velkomstbrev og din medlemsrabatkode via e-mail — den samme varme velkomst, som Flokken har skrevet i årevis."
+      "successTitle": "Vi har åbnet din e-mail. Tryk send.",
+      "successBody": "Dit udkast til tilmelding er klar i dit e-mailprogram, adresseret til Karin. Send den afsted, så sætter vi dig op i Flokken, og derefter ankommer dit velkomstbrev og din medlemsrabatkode via e-mail: den samme varme velkomst, som Flokken har skrevet i årevis."
     },
     "bookEyebrow": "MEDLEMMER BOOKER DIREKTE",
     "bookTitle": "Allerede en del af Flokken? Book direkte, få din medlemspris.",
-    "bookDescription": "Når du har tilmeldt dig, ankommer din medlemsrabatkode via e-mail. Anvend den på enhver direkte booking — sådan honoreres loyalitetsprisen i dag, og systemet bliver automatisk, efterhånden som programmet rulles ud.",
+    "bookDescription": "Når du har tilmeldt dig, ankommer din medlemsrabatkode via e-mail. Anvend den på enhver direkte booking. Sådan honoreres loyalitetsprisen i dag, og systemet bliver automatisk, efterhånden som programmet rulles ud.",
     "bookCta": "Book direkte"
   },
   "notFound": {
@@ -583,13 +583,13 @@
     "backHome": "Tilbage til hjem"
   },
   "faq": {
-    "metaTitle": "Urban Elephant ofte stillede spørgsmål — alt du skal vide, før du ankommer",
+    "metaTitle": "Urban Elephant ofte stillede spørgsmål: alt du skal vide, før du ankommer",
     "metaDescription": "Indtjekning, parkering, Wi-Fi, rengøring, lufthavnstransfer og mere. De spørgsmål vores gæster oftest stiller før og under et ophold hos Urban Elephant Cape Town.",
     "eyebrow": "GÆSTESPØRGSMÅL",
     "title": "Alt du skal vide, før du ankommer",
-    "subtitle": "De spørgsmål vores gæster oftest stiller. Hvis dit ikke er her, så send vores Guest Relations-team en WhatsApp — vi svarer personligt.",
+    "subtitle": "De spørgsmål vores gæster oftest stiller. Hvis dit ikke er her, så send vores Guest Relations-team en WhatsApp. Vi svarer personligt.",
     "askLabel": "Har du stadig et spørgsmål?",
-    "askDescription": "Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140 eller send en e-mail til karin@urbanelephant.co.za — vi svarer inden for arbejdstiden.",
+    "askDescription": "Skriv til vores Guest Relations-team på WhatsApp på +27 72 618 8140 eller send en e-mail til karin@urbanelephant.co.za. Vi svarer inden for arbejdstiden.",
     "pickerEyebrow": "Vælg dit lejlighedshotel",
     "pickerHeading": "Fire officielt klassificerede hoteller. Én familie, der driver dem.",
     "groups": {
@@ -686,18 +686,18 @@
   "meta": {
     "siteName": "Urban Elephant Hotel and Tours",
     "defaultTitle": "Urban Elephant | Officielt klassificerede lejlighedshoteller i Cape Town",
-    "defaultDescription": "Officielt klassificerede lejlighedshoteller i Cape Towns bedste områder — TGCSA-klassificeret, professionelt drevet og familiedrevet. Book direkte for den bedste pris."
+    "defaultDescription": "Officielt klassificerede lejlighedshoteller i Cape Towns bedste områder: TGCSA-klassificeret, professionelt drevet og familiedrevet. Book direkte for den bedste pris."
   },
   "seo": {
     "home": {
       "title": "Urban Elephant | Luksus-lejlighedshoteller i Cape Town",
-      "description": "Officielt klassificerede 4-stjernede luksuslejligheder i Cape Town. Hotelkomfort, designdrevne rum og pålideligheden ved professionel drift — Urban Elephant.",
+      "description": "Officielt klassificerede 4-stjernede luksuslejligheder i Cape Town. Hotelkomfort, designdrevne rum og pålideligheden ved professionel drift. Det er Urban Elephant.",
       "ogTitle": "Urban Elephant | Luksus-lejlighedshoteller i Cape Town",
       "ogDescription": "Oplev Cape Town som aldrig før. Luksus-lejlighedshoteller med betagende udsigter og personlig service."
     },
     "about": {
       "title": "Om os",
-      "description": "Familien bag Urban Elephant — lejlighedshoteller i Cape Town klassificeret af Sydafrikas turismeklassificeringsråd.",
+      "description": "Familien bag Urban Elephant: lejlighedshoteller i Cape Town klassificeret af Sydafrikas turismeklassificeringsråd.",
       "ogTitle": "Om Urban Elephant",
       "ogDescription": "Familieejede, TGCSA-klassificerede lejlighedshoteller i Cape Town."
     },
@@ -721,7 +721,7 @@
     },
     "faq": {
       "title": "Ofte stillede spørgsmål",
-      "description": "Indtjekning, parkering, WiFi, rengøring, lufthavnstransfer — de spørgsmål gæster oftest stiller.",
+      "description": "Indtjekning, parkering, WiFi, rengøring, lufthavnstransfer: de spørgsmål gæster oftest stiller.",
       "ogTitle": "Ofte stillede spørgsmål | Urban Elephant",
       "ogDescription": "Alt du skal vide før dit ophold i Cape Town."
     },
@@ -745,7 +745,7 @@
     },
     "propertyApplication": {
       "title": "Bliv partner",
-      "description": "Udlej din lejlighed i Cape Town med Urban Elephant — håndplukket, smukt brandet og fuldt administreret. Ansøg om at blive en del af familien.",
+      "description": "Udlej din lejlighed i Cape Town med Urban Elephant: håndplukket, smukt brandet og fuldt administreret. Ansøg om at blive en del af familien.",
       "ogTitle": "Bliv partner hos Urban Elephant",
       "ogDescription": "Bliv en del af et blomstrende hotelbrand i Cape Town. Vi brander, udlejer og administrerer din lejlighed fuldt ud."
     }
@@ -780,7 +780,7 @@
     "hero": {
       "eyebrow": "Bliv partner",
       "title": "Bliv en del af Urban Elephant-familien",
-      "description": "Hvis du gerne vil være en del af et blomstrende og voksende hotelbrand i Cape Town, vil vi meget gerne høre fra dig. Vores lejligheder er håndplukkede — se nedenfor, hvad vi kigger efter.",
+      "description": "Hvis du gerne vil være en del af et blomstrende og voksende hotelbrand i Cape Town, vil vi meget gerne høre fra dig. Vores lejligheder er håndplukkede. Se nedenfor, hvad vi kigger efter.",
       "cta": "Ansøg nu"
     },
     "criteria": {
@@ -807,7 +807,7 @@
     "handle": {
       "eyebrow": "Fuldt administreret",
       "heading": "Vi tager os af alt",
-      "subheading": "Fra det første foto til den sidste udtjekning er din lejlighed i gode hænder — og det er dine gæster også.",
+      "subheading": "Fra det første foto til den sidste udtjekning er din lejlighed i gode hænder, og det er dine gæster også.",
       "setup": {
         "title": "Indretning & møblering",
         "body": "Vi indretter, møblerer og fotograferer din lejlighed, så den er klar til at modtage gæster."
@@ -818,7 +818,7 @@
       },
       "maintenance": {
         "title": "Vedligeholdelse & pleje",
-        "body": "Rengøring, vedligeholdelse og pålidelige serviceudbydere — alt håndteres, altid pletfrit."
+        "body": "Rengøring, vedligeholdelse og pålidelige serviceudbydere: alt håndteres, altid pletfrit."
       },
       "guests": {
         "title": "Gæster & branding",
@@ -829,7 +829,7 @@
     "testimonials": {
       "eyebrow": "Ejerhistorier",
       "heading": "Fra vores ejere",
-      "subheading": "De familier, der har betroet os deres lejligheder — med deres egne ord."
+      "subheading": "De familier, der har betroet os deres lejligheder, med deres egne ord."
     },
     "form": {
       "eyebrow": "Ansøgning",
@@ -845,7 +845,7 @@
       "error": "Noget gik galt. Prøv venligst igen.",
       "successEyebrow": "Ansøgning sendt",
       "successHeading": "Tak, {name}.",
-      "successBody": "Vi har modtaget din ansøgning, og vores team kontakter dig snart. Mens du venter, er du velkommen til at skrive direkte til os på WhatsApp — vi svarer personligt.",
+      "successBody": "Vi har modtaget din ansøgning, og vores team kontakter dig snart. Mens du venter, er du velkommen til at skrive direkte til os på WhatsApp. Vi svarer personligt.",
       "successWa": "WhatsApp Gæsterelationer",
       "successAgain": "Send en ny ansøgning"
     },

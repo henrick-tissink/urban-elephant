@@ -21,7 +21,7 @@ interface Props {
  * Out-of-hours callback request.
  *
  * The reservations desk is staffed 08:30–20:00 SAST, but the site sells in five
- * languages across European time zones — outside those hours a `tel:` link just
+ * languages across European time zones. Outside those hours a `tel:` link just
  * rings an empty office and the lead is gone. This turns that dead click into a
  * lead: name and number are all we ask for, everything else is optional.
  */
@@ -65,8 +65,8 @@ export function CallbackRequest({ open, onClose, property, source }: Props) {
           name,
           phone,
           subject: property
-            ? `Callback request — ${property}`
-            : "Callback request — reservations",
+            ? `Callback request: ${property}`
+            : "Callback request: reservations",
           // The desk reads this in the email, so spell out what they need to do.
           message: [
             `${name} asked us to call them back about a booking.`,

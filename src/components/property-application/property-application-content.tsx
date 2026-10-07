@@ -55,7 +55,7 @@ const OWNER_TESTIMONIALS: { quote: string; author: string }[] = [
   },
   {
     quote:
-      "We loved staying in Urban Elephant's apartments during our visits to Cape Town. When we got our own apartments, there was no question — only Urban Elephant could take care of them. Niles and his team were incredibly helpful from the start, with a keen eye for detail and a commitment to creating a beautiful experience for both guests and owners.",
+      "We loved staying in Urban Elephant's apartments during our visits to Cape Town. When we got our own apartments, there was no question: only Urban Elephant could take care of them. Niles and his team were incredibly helpful from the start, with a keen eye for detail and a commitment to creating a beautiful experience for both guests and owners.",
     author: "Kira-Clarissa Kaiser",
   },
   {
@@ -82,7 +82,7 @@ type ApplicationFormData = z.infer<typeof applicationSchema>;
 
 function buildWaPrefill(data: ApplicationFormData): string {
   const lines = [
-    `Dear Guest Relations, this is ${data.name} — I just submitted a property application via the website.`,
+    `Dear Guest Relations, this is ${data.name}. I just submitted a property application via the website.`,
     `Property location: ${data.propertyLocation}`,
     `Number of units: ${data.numberOfUnits}`,
   ];
@@ -154,7 +154,7 @@ export function PropertyApplicationContent({
 
   return (
     <>
-      {/* Hero — full-bleed rooftop pool with dark overlay */}
+      {/* Hero: full-bleed rooftop pool with dark overlay */}
       <section className="relative min-h-[88vh] flex items-end overflow-hidden">
         <Image
           src="/images/properties/16-on-bree/hero.jpg"
@@ -164,9 +164,9 @@ export function PropertyApplicationContent({
           sizes="100vw"
           className="object-cover"
         />
-        {/* top gradient — keeps the transparent header legible */}
+        {/* top gradient, keeps the transparent header legible */}
         <div className="absolute inset-x-0 top-0 h-44 bg-gradient-to-b from-[#1a1c1e]/75 to-transparent" />
-        {/* bottom gradient — anchors the headline */}
+        {/* bottom gradient, anchors the headline */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#1a1c1e] via-[#1a1c1e]/45 to-transparent" />
         <div className="relative container mx-auto px-6 lg:px-12 pb-16 lg:pb-24 pt-40">
           <ScrollReveal className="max-w-3xl">
@@ -221,7 +221,7 @@ export function PropertyApplicationContent({
         </div>
       </section>
 
-      {/* What we handle — editorial split with a furnished interior */}
+      {/* What we handle: editorial split with a furnished interior */}
       <section className="py-16 lg:py-24 bg-[#24272a] overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -274,7 +274,7 @@ export function PropertyApplicationContent({
         </div>
       </section>
 
-      {/* Owner testimonials — led by the founder */}
+      {/* Owner testimonials, led by the founder */}
       <section className="py-16 lg:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16 lg:mb-20">
@@ -284,7 +284,7 @@ export function PropertyApplicationContent({
                 <div className="relative aspect-[3/4] w-full overflow-hidden">
                   <Image
                     src="/images/site/founder.png"
-                    alt={`${tAbout("founderName")} — ${tAbout("founderTitle")}`}
+                    alt={`${tAbout("founderName")}, ${tAbout("founderTitle")}`}
                     fill
                     sizes="(min-width: 1024px) 40vw, 90vw"
                     className="object-cover"

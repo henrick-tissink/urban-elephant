@@ -13,7 +13,7 @@
  */
 export const promoConfig = {
   enabled: true,
-  /** Bump this any time the promo content changes — re-engages dismissed users */
+  /** Bump this any time the promo content changes; re-engages dismissed users */
   version: "v1",
   image: "/images/site/popup.png",
   /** ms after page mount before the popup appears */

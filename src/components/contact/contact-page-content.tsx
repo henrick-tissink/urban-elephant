@@ -18,7 +18,7 @@ const GUEST_RELATIONS_WHATSAPP = "27726188140";
 
 function buildWaPrefill(data: ContactFormData): string {
   const lines = [
-    `Dear Guest Relations, this is ${data.name} — I just sent a message via the website.`,
+    `Dear Guest Relations, this is ${data.name}. I just sent a message via the website.`,
     data.tour ? `Tour: ${data.tour}` : null,
     data.property ? `Property: ${data.property}` : null,
     `Subject: ${data.subject}`,

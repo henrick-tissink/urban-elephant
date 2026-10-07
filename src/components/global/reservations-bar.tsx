@@ -18,7 +18,7 @@ import {
  * The reservations line, pinned above the header on every page.
  *
  * A floating button in the bottom-right corner is where the web has agreed
- * help widgets live — no amount of labelling overrides that. Putting the
+ * help widgets live; no amount of labelling overrides that. Putting the
  * number in the site's chrome, permanently, is what graded hotels do and is
  * the only placement that says "there is a desk you can ring" rather than
  * "click here for support".
@@ -78,14 +78,14 @@ export function ReservationsBar() {
           <span className="font-bold tracking-wide">{PHONE_DISPLAY}</span>
           <span className="hidden items-center gap-1.5 pl-3 text-white/50 md:inline-flex">
             <Clock className="h-3 w-3 flex-shrink-0" aria-hidden />
-            {/* Still swaps to "Opens 8:30am" out of hours — more use than a
+            {/* Still swaps to "Opens 8:30am" out of hours, more use than a
                 static line when someone is looking at this at 11pm. */}
             {openNow === false ? t("barClosed") : t("barHours")}
           </span>
         </a>
 
         <div className="flex flex-shrink-0 items-center gap-4">
-          {/* On phones the bottom bar already carries a big WhatsApp button —
+          {/* On phones the bottom bar already carries a big WhatsApp button;
               repeating it up here would just be noise. */}
           <a
             href={waHref}

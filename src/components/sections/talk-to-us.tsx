@@ -19,7 +19,7 @@ import {
  * The reservations desk, given a section of its own.
  *
  * A floating button says "support". A band with the number set large says the
- * hotel has people you can talk to — and booking by phone is the one route that
+ * hotel has people you can talk to, and booking by phone is the one route that
  * never hands the guest to a third-party checkout. It doubles as the canonical
  * name/address/phone block for local SEO, so the number here must stay in step
  * with the Google Business Profile.
@@ -51,7 +51,7 @@ export function TalkToUs() {
               {t("body")}
             </p>
 
-            {/* The number, set large — the point of the whole section. */}
+            {/* The number, set large: the point of the whole section. */}
             <a
               href={`tel:${PHONE_E164}`}
               onClick={() => track("call_click", { source: "talk_to_us" })}

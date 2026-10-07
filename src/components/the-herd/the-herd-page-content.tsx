@@ -24,13 +24,13 @@ export function TheHerdPageContent() {
   // Stopgap until Marshall wires the backend: opens the user's email
   // client with a pre-filled signup to Karin. Their email proves intent
   // and gives Karin the data she needs to onboard them manually. The
-  // success state is honest — it tells the user the email was opened
+  // success state is honest: it tells the user the email was opened
   // and asks them to send it.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent("The Herd — new member signup");
+    const subject = encodeURIComponent("The Herd: new member signup");
     const body = encodeURIComponent(
-      `New Herd member signup\n\nName: ${name}\nEmail: ${email}\n\n— Sent from urbanelephant.co.za/the-herd`,
+      `New Herd member signup\n\nName: ${name}\nEmail: ${email}\n\nSent from urbanelephant.co.za/the-herd`,
     );
     window.location.href = `mailto:${SIGNUP_RECIPIENT}?subject=${subject}&body=${body}`;
     setFormState("success");
@@ -60,7 +60,7 @@ export function TheHerdPageContent() {
         </div>
       </section>
 
-      {/* Welcome letter — verbatim from Bapata, the official member welcome */}
+      {/* Welcome letter, verbatim from Bapata, the official member welcome */}
       <section className="py-20 lg:py-28 bg-stone-50">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-3xl mx-auto">
@@ -78,14 +78,14 @@ export function TheHerdPageContent() {
                 <p>{t("welcomeBody4")}</p>
               </div>
               <p className="mt-10 text-stone-500 text-xs uppercase tracking-[0.2em]">
-                — Urban Elephant
+                Urban Elephant
               </p>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* Why The Herd — Bapata's brand reasoning bullets */}
+      {/* Why The Herd: Bapata's brand reasoning bullets */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="max-w-3xl mb-14 lg:mb-20">
@@ -228,7 +228,7 @@ export function TheHerdPageContent() {
         </div>
       </section>
 
-      {/* Book direct — closes the loop for existing/returning members */}
+      {/* Book direct: closes the loop for existing/returning members */}
       <section className="py-20 lg:py-28 bg-[#24272a] text-white relative overflow-hidden">
         <div
           className="absolute -top-1/3 -right-1/4 w-[80%] h-[160%] opacity-25 blur-3xl pointer-events-none"

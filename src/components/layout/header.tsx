@@ -69,7 +69,7 @@ export function Header() {
   }, [pathname]);
 
   // The menu carries its own Call/WhatsApp, and the global hotline bar is fixed
-  // above it — without this it would sit on top of the open menu (globals.css).
+  // above it. Without this it would sit on top of the open menu (globals.css).
   useEffect(() => {
     const root = document.documentElement;
     if (isMobileMenuOpen) root.setAttribute("data-menu-open", "");
@@ -151,7 +151,7 @@ export function Header() {
                 </motion.div>
               ))}
 
-              {/* More dropdown — holds secondary nav items */}
+              {/* More dropdown: holds secondary nav items */}
               <motion.div
                 ref={moreRef}
                 initial={{ opacity: 0, y: -10 }}
@@ -205,7 +205,7 @@ export function Header() {
                 </AnimatePresence>
               </motion.div>
 
-              {/* No phone link here on purpose — the reservations bar directly
+              {/* No phone link here on purpose: the reservations bar directly
                   above carries the number, the hours and a Call action on every
                   page. A second one in the nav is clutter, and cramming the
                   digits in at laptop widths was what broke this before. */}
@@ -238,7 +238,7 @@ export function Header() {
               </motion.div>
             </div>
 
-            {/* Mobile Menu Button — no phone glyph beside it: the reservations
+            {/* Mobile Menu Button, no phone glyph beside it: the reservations
                 bar above shows the number, and the bottom bar carries the tap
                 targets. Three phone affordances stacked is noise, not emphasis. */}
             <div className="xl:hidden relative z-10 flex items-center gap-1">
@@ -322,7 +322,7 @@ export function Header() {
                     {t("bookNow")}
                   </Button>
 
-                  {/* The hotline sits beside Book Now, not below the fold —
+                  {/* The hotline sits beside Book Now, not below the fold:
                       talking to someone is an equal way to book. */}
                   <div className="grid grid-cols-2 gap-3">
                     <a

@@ -13,7 +13,7 @@ interface TextRevealProps {
   once?: boolean;
   /**
    * Words are laid out as flex items in a wrapping row, and `text-align` has
-   * no effect on how flex items pack — so alignment has to be set here. Without
+   * no effect on how flex items pack, so alignment has to be set here. Without
    * this the lines sit flush-left inside whatever box contains them, which is
    * what made the hero headline look off-centre against a centred eyebrow.
    */

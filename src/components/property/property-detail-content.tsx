@@ -116,12 +116,12 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
 
   return (
     <article className="bg-white">
-      {/* Hero — full-bleed image with type sitting OVER the photograph */}
+      {/* Hero: full-bleed image with type sitting OVER the photograph */}
       <header className="relative h-[88vh] min-h-[640px] w-full overflow-hidden bg-[#24272a]">
         {property.heroImage && (
           <Image
             src={property.heroImage}
-            alt={`Urban Elephant at ${property.name} — 4-star apartment hotel in ${pickOptional(property.location, locale) ?? "Cape Town"}`}
+            alt={`Urban Elephant at ${property.name}, 4-star apartment hotel in ${pickOptional(property.location, locale) ?? "Cape Town"}`}
             fill
             priority
             sizes="100vw"
@@ -204,7 +204,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                       <Image
                         src={pair.image}
-                        alt={`Urban Elephant at ${property.name} apartment interior, ${pickOptional(property.location, locale) ?? "Cape Town"} — view ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name} apartment interior, ${pickOptional(property.location, locale) ?? "Cape Town"}, view ${i + 1}`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 60vw"
                         className="object-cover"
@@ -259,7 +259,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
 
       <BrandDivider withMark />
 
-      {/* The Details — three column editorial block */}
+      {/* The Details: three column editorial block */}
       <section className="py-20 lg:py-28">
         <div className="container mx-auto px-6 lg:px-12">
           <ScrollReveal className="text-center mb-16">
@@ -340,7 +340,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         </div>
       </section>
 
-      {/* Amenities — typographic list */}
+      {/* Amenities: typographic list */}
       {property.amenities && property.amenities.length > 0 && (
         <>
           <BrandDivider />
@@ -377,7 +377,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         </>
       )}
 
-      {/* Guest reviews — what real guests said about this property */}
+      {/* Guest reviews: what real guests said about this property */}
       {propertyReviews.length > 0 && (
         <>
           <BrandDivider />
@@ -404,7 +404,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                           {review.author}
                           {review.authorLocation && (
                             <span className="text-white/50 font-light">
-                              {" "}— {review.authorLocation}
+                              {", "}{review.authorLocation}
                             </span>
                           )}
                         </p>
@@ -428,7 +428,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         </>
       )}
 
-      {/* Property-specific FAQs — unique per-property content for SEO + UX */}
+      {/* Property-specific FAQs: unique per-property content for SEO + UX */}
       {faqs.length > 0 && (
         <>
           <BrandDivider />
@@ -515,7 +515,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
                     >
                       <Image
                         src={image}
-                        alt={`Urban Elephant at ${property.name}, ${pickOptional(property.location, locale) ?? "Cape Town"} — apartment and amenities, image ${i + 1}`}
+                        alt={`Urban Elephant at ${property.name}, ${pickOptional(property.location, locale) ?? "Cape Town"}: apartment and amenities, image ${i + 1}`}
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
                         className="object-cover hover:scale-[1.02] transition-transform duration-700 ease-out"
@@ -529,7 +529,7 @@ export function PropertyDetailContent({ property, faqs = [] }: PropertyDetailCon
         </>
       )}
 
-      {/* Sticky booking bar — appears once user scrolls past hero */}
+      {/* Sticky booking bar, appears once user scrolls past hero */}
       <div
         className={`fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-stone-200 shadow-[0_-8px_32px_rgba(0,0,0,0.06)] transition-transform duration-500 ease-out ${
           showBookingBar ? "translate-y-0" : "translate-y-full"

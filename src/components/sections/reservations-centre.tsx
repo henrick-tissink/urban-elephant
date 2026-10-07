@@ -19,7 +19,7 @@ import { PHONE_E164, PHONE_DISPLAY, whatsappLink } from "@/lib/contact";
  * The reservations desk, given the middle of the hero.
  *
  * Niles' first ask was to get the booking hotline front and centre. Everything
- * before this put it beside the online path; this makes it the centrepiece —
+ * before this put it beside the online path; this makes it the centrepiece:
  * the number is the largest single element on the page, and the three ways to
  * reach us sit directly under it.
  *
@@ -47,7 +47,7 @@ export function ReservationsCentre({ onBookOnline }: { onBookOnline: () => void 
       </p>
       <p className="mt-2 text-[13px] text-white/60 sm:text-sm">{t("subtitle")}</p>
 
-      {/* The number itself — the largest single thing on the page. */}
+      {/* The number itself, the largest single thing on the page. */}
       <a
         href={`tel:${PHONE_E164}`}
         onClick={() => track("call_click", { source: "hero_centre" })}
@@ -63,7 +63,7 @@ export function ReservationsCentre({ onBookOnline }: { onBookOnline: () => void 
 
       <hr className="mx-auto mt-6 w-full max-w-2xl sm:mt-7 border-0 border-t border-white/15" />
 
-      {/* Proof points — 2×2 on phones, a single row from md up. */}
+      {/* Proof points: 2×2 on phones, a single row from md up. */}
       <ul className="mx-auto mt-5 grid w-full grid-cols-2 gap-x-3 gap-y-4 sm:mt-6 sm:gap-x-5 md:grid-cols-4">
         {features.map(({ Icon, label, sub }) => (
           <li key={label} className="flex items-center gap-2.5 text-left md:justify-center">
@@ -101,7 +101,7 @@ export function ReservationsCentre({ onBookOnline }: { onBookOnline: () => void 
           {t("whatsappCta")}
         </a>
 
-        {/* Online booking stays available — the phone is co-primary, not the
+        {/* Online booking stays available: the phone is co-primary, not the
             only way through. */}
         <button
           type="button"

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 
 // Urban Elephant's Enterprise Partner Booking Kit bundle. IATA + commission
-// account number are baked in by Enterprise — 10% commission auto-pays
+// account number are baked in by Enterprise: 10% commission auto-pays
 // monthly on any reservation booked via this widget. Adam Masterson at
 // Enterprise issues the bundle code; ping him if it ever stops resolving.
 const PBK_BUNDLE_BASE =
@@ -30,7 +30,7 @@ declare global {
 export function CarHireWidget() {
   const t = useTranslations("a11y");
   useEffect(() => {
-    // Configure the widget BEFORE the bundle script loads — Enterprise's
+    // Configure the widget BEFORE the bundle script loads, because Enterprise's
     // bundle reads window.pbk on init. Re-setting on each mount means
     // navigating away and back gets a fresh booking flow.
     window.pbk = {
@@ -57,7 +57,7 @@ export function CarHireWidget() {
 
     return () => {
       // destroy() is added by the bundle after it loads. In React strict-mode
-      // dev remounts the cleanup can fire before that — optional-chain handles it.
+      // dev remounts the cleanup can fire before that; optional-chain handles it.
       window.pbk?.destroy?.();
       link.remove();
       script.remove();

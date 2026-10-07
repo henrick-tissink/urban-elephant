@@ -3,14 +3,14 @@
 // display form for the places where the number should read as a number rather
 // than an icon. Hours 08:30–20:00 SAST (UTC+2, no DST).
 
-/** tel: target — international format. */
+/** tel: target, international format. */
 export const PHONE_E164 = "+27213001044";
 /** How the number is printed on the page. Keep in step with the Google Business Profile. */
 export const PHONE_DISPLAY = "021 300 1044";
 // TEMPORARY (06 Aug 2026): WhatsApp Business suspended 082 222 4959 for 24h
 // mid-campaign, so the hotline falls back to 079 138 0907 until it is restored.
 // Revert both constants to 082 222 4959 / 27822224959 once the suspension lifts.
-/** wa.me target — international, no plus. */
+/** wa.me target, international, no plus. */
 export const WHATSAPP_E164 = "27791380907";
 /** How the WhatsApp number is printed on the page. */
 export const WHATSAPP_DISPLAY = "079 138 0907";
@@ -30,7 +30,7 @@ export function whatsappLink(message: string): string {
 
 /**
  * The property the visitor is currently looking at, if any. The hotline lives
- * in the root layout — above the page in the tree — so a React context set by
+ * in the root layout (above the page in the tree) so a React context set by
  * a property page can't reach it. The property page publishes its name on the
  * body instead (same trick as `data-booking-bar`), and the hotline reads it.
  */

@@ -55,7 +55,7 @@ export function Footer({ settings, properties = [] }: FooterProps) {
               {t("description")}
             </p>
 
-            {/* TGCSA credential — visual proof for the prose above */}
+            {/* TGCSA credential: visual proof for the prose above */}
             <div className="flex items-start gap-3 mb-6">
               <TGCSAStars count={4} size={20} className="mt-0.5" />
               <p className="text-stone-500 text-[11px] uppercase tracking-[0.18em] leading-snug max-w-[16rem]">

@@ -128,7 +128,7 @@ export function FaqPageContent() {
         </div>
       </section>
 
-      {/* Property picker — convert FAQ traffic to property pages */}
+      {/* Property picker: convert FAQ traffic to property pages */}
       <BrandDivider />
       <section className="py-20 lg:py-28 bg-stone-50 border-t border-stone-200">
         <div className="container mx-auto px-6 lg:px-12">
@@ -152,7 +152,7 @@ export function FaqPageContent() {
                     <div className="relative aspect-[4/3] overflow-hidden bg-stone-100">
                       <Image
                         src={property.heroImage}
-                        alt={`Urban Elephant at ${property.name} — ${pickOptional(property.location, locale) ?? "Cape Town"}`}
+                        alt={`Urban Elephant at ${property.name}, ${pickOptional(property.location, locale) ?? "Cape Town"}`}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                         className="object-cover group-hover:scale-[1.04] transition-transform duration-700 ease-out"
