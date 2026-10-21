@@ -55,7 +55,7 @@ export const PRIVACY_POLICY = {
         "Yoco, for card payments.",
         "Meta (WhatsApp Business Platform), to send and receive WhatsApp messages.",
         "Our email and hosting providers, who send our emails and run our guest app and its database.",
-        "Google, for website analytics.",
+        "Google, for website analytics and advertising measurement.",
       ],
     },
     {
