@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/faq", changeFrequency: "monthly", priority: 0.7 },
     { path: "/property-application", changeFrequency: "monthly", priority: 0.5 },
     { path: "/contact", changeFrequency: "monthly", priority: 0.6 },
+    { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.2 },
     ...properties.map(
       (p): Entry => ({
         path: `/properties/${p.slug}`,
