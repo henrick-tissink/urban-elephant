@@ -54,9 +54,8 @@ export const PRIVACY_POLICY = {
         "Nightsbridge, for reservations.",
         "Yoco, for card payments.",
         "Meta (WhatsApp Business Platform), to send and receive WhatsApp messages.",
-        "Resend, to send email.",
-        "Supabase and Hetzner, who host our guest app and its database.",
-        "Google, for website analytics and advertising measurement.",
+        "Our email and hosting providers, who send our emails and run our guest app and its database.",
+        "Google, for website analytics.",
       ],
     },
     {
